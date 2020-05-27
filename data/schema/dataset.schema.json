@@ -1,0 +1,231 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "id": "population",
+            "title": "solde naturel vs solde migratoire per year",
+            "timeformat": "YYYY",
+            "legend": {
+                "v": "solde naturel",
+                "v1": "solde migratoire"
+            },
+            "values": [
+                {
+                    "t": "1840",
+                    "v": 2710,
+                    "v1": -20
+                }
+            ]
+        }
+    ],
+    "required": [
+        "id",
+        "title",
+        "timeformat",
+        "legend",
+        "values"
+    ],
+    "additionalProperties": true,
+    "properties": {
+        "id": {
+            "$id": "#/properties/id",
+            "type": "string",
+            "title": "The id schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "population"
+            ]
+        },
+        "title": {
+            "$id": "#/properties/title",
+            "type": "string",
+            "title": "The title schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "solde naturel vs solde migratoire per year"
+            ]
+        },
+        "timeformat": {
+            "$id": "#/properties/timeformat",
+            "type": "string",
+            "title": "The timeformat schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "YYYY"
+            ]
+        },
+        "legend": {
+            "$id": "#/properties/legend",
+            "type": "object",
+            "title": "The legend schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "v": "solde naturel",
+                    "v1": "solde migratoire"
+                }
+            ],
+            "required": [
+                "v"
+            ],
+            "additionalProperties": true,
+            "properties": {
+                "v": {
+                    "$id": "#/properties/legend/properties/v",
+                    "type": "string",
+                    "title": "The v schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "solde naturel"
+                    ]
+                },
+                "v1": {
+                    "$id": "#/properties/legend/properties/v1",
+                    "type": "string",
+                    "title": "The v1 schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "solde migratoire"
+                    ]
+                }
+            }
+        },
+        "values": {
+            "$id": "#/properties/values",
+            "type": "array",
+            "title": "The values schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "examples": [
+                [
+                    {
+                        "t": "1840",
+                        "v": 2710,
+                        "v1": -20
+                    }
+                ]
+            ],
+            "additionalItems": true,
+            "items": {
+                "anyOf": [
+                    {
+                        "$id": "#/properties/values/items/anyOf/0",
+                        "type": "object",
+                        "title": "The first anyOf schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": {},
+                        "examples": [
+                            {
+                                "t": "1840",
+                                "v": 2710,
+                                "v1": -20,
+                                "h": "HIGHLIGHT",
+                                "label": "counting start officially",
+                                "seeAlso": [
+                                    "t01m01s01"
+                                ]
+                            }
+                        ],
+                        "required": [
+                            "t",
+                            "v"
+                        ],
+                        "additionalProperties": true,
+                        "properties": {
+                            "t": {
+                                "$id": "#/properties/values/items/anyOf/0/properties/t",
+                                "type": "string",
+                                "title": "The t schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "1840"
+                                ]
+                            },
+                            "v": {
+                                "$id": "#/properties/values/items/anyOf/0/properties/v",
+                                "type": "integer",
+                                "title": "The v schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": 0,
+                                "examples": [
+                                    2710
+                                ]
+                            },
+                            "v1": {
+                                "$id": "#/properties/values/items/anyOf/0/properties/v1",
+                                "type": "integer",
+                                "title": "The v1 schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": 0,
+                                "examples": [
+                                    -20
+                                ]
+                            },
+                            "h": {
+                                "$id": "#/properties/values/items/anyOf/0/properties/h",
+                                "type": "string",
+                                "title": "The h schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "HIGHLIGHT"
+                                ]
+                            },
+                            "label": {
+                                "$id": "#/properties/values/items/anyOf/0/properties/label",
+                                "type": "string",
+                                "title": "The label schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "counting start officially"
+                                ]
+                            },
+                            "seeAlso": {
+                                "$id": "#/properties/values/items/anyOf/0/properties/seeAlso",
+                                "type": "array",
+                                "title": "The seeAlso schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": [],
+                                "examples": [
+                                    [
+                                        "t01m01s01"
+                                    ]
+                                ],
+                                "additionalItems": true,
+                                "items": {
+                                    "anyOf": [
+                                        {
+                                            "$id": "#/properties/values/items/anyOf/0/properties/seeAlso/items/anyOf/0",
+                                            "type": "string",
+                                            "title": "The first anyOf schema",
+                                            "description": "An explanation about the purpose of this instance.",
+                                            "default": "",
+                                            "examples": [
+                                                "t01m01s01"
+                                            ]
+                                        }
+                                    ],
+                                    "$id": "#/properties/values/items/anyOf/0/properties/seeAlso/items"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "$id": "#/properties/values/items"
+            }
+        }
+    }
+}

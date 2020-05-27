@@ -1,0 +1,381 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "id": "t01",
+            "title": "Population et migrations",
+            "dataset": "population",
+            "modules": [
+                {
+                    "id": "t01m01",
+                    "title": "Of life and deaths",
+                    "dataset": "population-solde",
+                    "steps": [
+                        {
+                            "id": "t01m01s01",
+                            "title": "una tristezza",
+                            "startDate": "1840-01-01",
+                            "endDate": "1840-12-23",
+                            "attachments": [
+                                {
+                                    "title": "Circulaire N°9479 concernant, entre autres, l'inscriptions des enfants morts-nés.",
+                                    "url": "http://legilux.public.lu/eli/etat/leg/cmin/1840/12/23/n1/jo"
+                                }
+                            ],
+                            "seeAlso": [
+                                "t01m04s01"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "required": [
+        "id",
+        "title",
+        "dataset",
+        "modules"
+    ],
+    "additionalProperties": true,
+    "properties": {
+        "id": {
+            "$id": "#/properties/id",
+            "type": "string",
+            "title": "The id schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "t01"
+            ]
+        },
+        "title": {
+            "$id": "#/properties/title",
+            "type": "string",
+            "title": "The title schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Population et migrations"
+            ]
+        },
+        "dataset": {
+            "$id": "#/properties/dataset",
+            "type": "string",
+            "title": "The dataset schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "population"
+            ]
+        },
+        "modules": {
+            "$id": "#/properties/modules",
+            "type": "array",
+            "title": "The modules schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "examples": [
+                [
+                    {
+                        "id": "t01m01",
+                        "title": "Of life and deaths",
+                        "dataset": "population-solde",
+                        "steps": [
+                            {
+                                "id": "t01m01s01",
+                                "title": "una tristezza",
+                                "startDate": "1840-01-01",
+                                "endDate": "1840-12-23",
+                                "attachments": [
+                                    {
+                                        "title": "Circulaire N°9479 concernant, entre autres, l'inscriptions des enfants morts-nés.",
+                                        "url": "http://legilux.public.lu/eli/etat/leg/cmin/1840/12/23/n1/jo"
+                                    }
+                                ],
+                                "seeAlso": [
+                                    "t01m04s01"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            ],
+            "additionalItems": true,
+            "items": {
+                "anyOf": [
+                    {
+                        "$id": "#/properties/modules/items/anyOf/0",
+                        "type": "object",
+                        "title": "The first anyOf schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": {},
+                        "examples": [
+                            {
+                                "id": "t01m01",
+                                "title": "Of life and deaths",
+                                "dataset": "population-solde",
+                                "steps": [
+                                    {
+                                        "id": "t01m01s01",
+                                        "title": "una tristezza",
+                                        "startDate": "1840-01-01",
+                                        "endDate": "1840-12-23",
+                                        "attachments": [
+                                            {
+                                                "title": "Circulaire N°9479 concernant, entre autres, l'inscriptions des enfants morts-nés.",
+                                                "url": "http://legilux.public.lu/eli/etat/leg/cmin/1840/12/23/n1/jo"
+                                            }
+                                        ],
+                                        "seeAlso": [
+                                            "t01m04s01"
+                                        ]
+                                    }
+                                ]
+                            }
+                        ],
+                        "required": [
+                            "id",
+                            "title",
+                            "dataset",
+                            "steps"
+                        ],
+                        "additionalProperties": true,
+                        "properties": {
+                            "id": {
+                                "$id": "#/properties/modules/items/anyOf/0/properties/id",
+                                "type": "string",
+                                "title": "The id schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "t01m01"
+                                ]
+                            },
+                            "title": {
+                                "$id": "#/properties/modules/items/anyOf/0/properties/title",
+                                "type": "string",
+                                "title": "The title schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "Of life and deaths"
+                                ]
+                            },
+                            "dataset": {
+                                "$id": "#/properties/modules/items/anyOf/0/properties/dataset",
+                                "type": "string",
+                                "title": "The dataset schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "population-solde"
+                                ]
+                            },
+                            "steps": {
+                                "$id": "#/properties/modules/items/anyOf/0/properties/steps",
+                                "type": "array",
+                                "title": "The steps schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": [],
+                                "examples": [
+                                    [
+                                        {
+                                            "id": "t01m01s01",
+                                            "title": "una tristezza",
+                                            "startDate": "1840-01-01",
+                                            "endDate": "1840-12-23",
+                                            "attachments": [
+                                                {
+                                                    "title": "Circulaire N°9479 concernant, entre autres, l'inscriptions des enfants morts-nés.",
+                                                    "url": "http://legilux.public.lu/eli/etat/leg/cmin/1840/12/23/n1/jo"
+                                                }
+                                            ],
+                                            "seeAlso": [
+                                                "t01m04s01"
+                                            ]
+                                        }
+                                    ]
+                                ],
+                                "additionalItems": true,
+                                "items": {
+                                    "anyOf": [
+                                        {
+                                            "$id": "#/properties/modules/items/anyOf/0/properties/steps/items/anyOf/0",
+                                            "type": "object",
+                                            "title": "The first anyOf schema",
+                                            "description": "An explanation about the purpose of this instance.",
+                                            "default": {},
+                                            "examples": [
+                                                {
+                                                    "id": "t01m01s01",
+                                                    "title": "una tristezza",
+                                                    "startDate": "1840-01-01",
+                                                    "endDate": "1840-12-23",
+                                                    "attachments": [
+                                                        {
+                                                            "title": "Circulaire N°9479 concernant, entre autres, l'inscriptions des enfants morts-nés.",
+                                                            "url": "http://legilux.public.lu/eli/etat/leg/cmin/1840/12/23/n1/jo"
+                                                        }
+                                                    ],
+                                                    "seeAlso": [
+                                                        "t01m04s01"
+                                                    ]
+                                                }
+                                            ],
+                                            "required": [
+                                                "id",
+                                                "title",
+                                                "startDate",
+                                                "endDate"
+                                            ],
+                                            "additionalProperties": true,
+                                            "properties": {
+                                                "id": {
+                                                    "$id": "#/properties/modules/items/anyOf/0/properties/steps/items/anyOf/0/properties/id",
+                                                    "type": "string",
+                                                    "title": "The id schema",
+                                                    "description": "An explanation about the purpose of this instance.",
+                                                    "default": "",
+                                                    "examples": [
+                                                        "t01m01s01"
+                                                    ]
+                                                },
+                                                "title": {
+                                                    "$id": "#/properties/modules/items/anyOf/0/properties/steps/items/anyOf/0/properties/title",
+                                                    "type": "string",
+                                                    "title": "The title schema",
+                                                    "description": "An explanation about the purpose of this instance.",
+                                                    "default": "",
+                                                    "examples": [
+                                                        "una tristezza"
+                                                    ]
+                                                },
+                                                "startDate": {
+                                                    "$id": "#/properties/modules/items/anyOf/0/properties/steps/items/anyOf/0/properties/startDate",
+                                                    "type": "string",
+                                                    "title": "The startDate schema",
+                                                    "description": "An explanation about the purpose of this instance.",
+                                                    "default": "",
+                                                    "examples": [
+                                                        "1840-01-01"
+                                                    ]
+                                                },
+                                                "endDate": {
+                                                    "$id": "#/properties/modules/items/anyOf/0/properties/steps/items/anyOf/0/properties/endDate",
+                                                    "type": "string",
+                                                    "title": "The endDate schema",
+                                                    "description": "An explanation about the purpose of this instance.",
+                                                    "default": "",
+                                                    "examples": [
+                                                        "1840-12-23"
+                                                    ]
+                                                },
+                                                "attachments": {
+                                                    "$id": "#/properties/modules/items/anyOf/0/properties/steps/items/anyOf/0/properties/attachments",
+                                                    "type": "array",
+                                                    "title": "The attachments schema",
+                                                    "description": "An explanation about the purpose of this instance.",
+                                                    "default": [],
+                                                    "examples": [
+                                                        [
+                                                            {
+                                                                "title": "Circulaire N°9479 concernant, entre autres, l'inscriptions des enfants morts-nés.",
+                                                                "url": "http://legilux.public.lu/eli/etat/leg/cmin/1840/12/23/n1/jo"
+                                                            }
+                                                        ]
+                                                    ],
+                                                    "additionalItems": true,
+                                                    "items": {
+                                                        "anyOf": [
+                                                            {
+                                                                "$id": "#/properties/modules/items/anyOf/0/properties/steps/items/anyOf/0/properties/attachments/items/anyOf/0",
+                                                                "type": "object",
+                                                                "title": "The first anyOf schema",
+                                                                "description": "An explanation about the purpose of this instance.",
+                                                                "default": {},
+                                                                "examples": [
+                                                                    {
+                                                                        "title": "Circulaire N°9479 concernant, entre autres, l'inscriptions des enfants morts-nés.",
+                                                                        "url": "http://legilux.public.lu/eli/etat/leg/cmin/1840/12/23/n1/jo"
+                                                                    }
+                                                                ],
+                                                                "required": [
+                                                                    "title",
+                                                                    "url"
+                                                                ],
+                                                                "additionalProperties": true,
+                                                                "properties": {
+                                                                    "title": {
+                                                                        "$id": "#/properties/modules/items/anyOf/0/properties/steps/items/anyOf/0/properties/attachments/items/anyOf/0/properties/title",
+                                                                        "type": "string",
+                                                                        "title": "The title schema",
+                                                                        "description": "An explanation about the purpose of this instance.",
+                                                                        "default": "",
+                                                                        "examples": [
+                                                                            "Circulaire N°9479 concernant, entre autres, l'inscriptions des enfants morts-nés."
+                                                                        ]
+                                                                    },
+                                                                    "url": {
+                                                                        "$id": "#/properties/modules/items/anyOf/0/properties/steps/items/anyOf/0/properties/attachments/items/anyOf/0/properties/url",
+                                                                        "type": "string",
+                                                                        "title": "The url schema",
+                                                                        "description": "An explanation about the purpose of this instance.",
+                                                                        "default": "",
+                                                                        "examples": [
+                                                                            "http://legilux.public.lu/eli/etat/leg/cmin/1840/12/23/n1/jo"
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        ],
+                                                        "$id": "#/properties/modules/items/anyOf/0/properties/steps/items/anyOf/0/properties/attachments/items"
+                                                    }
+                                                },
+                                                "seeAlso": {
+                                                    "$id": "#/properties/modules/items/anyOf/0/properties/steps/items/anyOf/0/properties/seeAlso",
+                                                    "type": "array",
+                                                    "title": "The seeAlso schema",
+                                                    "description": "An explanation about the purpose of this instance.",
+                                                    "default": [],
+                                                    "examples": [
+                                                        [
+                                                            "t01m04s01"
+                                                        ]
+                                                    ],
+                                                    "additionalItems": true,
+                                                    "items": {
+                                                        "anyOf": [
+                                                            {
+                                                                "$id": "#/properties/modules/items/anyOf/0/properties/steps/items/anyOf/0/properties/seeAlso/items/anyOf/0",
+                                                                "type": "string",
+                                                                "title": "The first anyOf schema",
+                                                                "description": "An explanation about the purpose of this instance.",
+                                                                "default": "",
+                                                                "examples": [
+                                                                    "t01m04s01"
+                                                                ]
+                                                            }
+                                                        ],
+                                                        "$id": "#/properties/modules/items/anyOf/0/properties/steps/items/anyOf/0/properties/seeAlso/items"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "$id": "#/properties/modules/items/anyOf/0/properties/steps/items"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "$id": "#/properties/modules/items"
+            }
+        }
+    }
+}
