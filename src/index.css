@@ -1,16 +1,22 @@
 * {
-
 }
 
 body {
   margin: 0;
 }
 
-html, body, #root {
+html,
+body,
+#root {
   height: 100%;
 }
 
-
-.chapter-1 {
-  background-color: #D0EDF1;
+.stickyHeader {
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: transparent;
+  z-index: 999;
 }

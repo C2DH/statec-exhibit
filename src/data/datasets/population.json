@@ -5,12 +5,13 @@
   "legend": {
     "v": "people per year"
   },
-  "values": [{
+  "values": [
+    {
       "t": "1840",
       "v": 170500,
       "h": "HIGHLIGHT",
       "label": "counting start officially",
-      "seeAlso": [ "t01m01s01" ]
+      "seeAlso": ["t01m01s01"]
     },
     {
       "t": "1841",
@@ -29,7 +30,7 @@
       "v": 178207,
       "h": "PEAK",
       "label": "huge increment",
-      "seeAlso": [ "t01m01s02" ]
+      "seeAlso": ["t01m01s02"]
     },
     {
       "t": "1845",
@@ -52,7 +53,7 @@
       "v": 186856,
       "h": "WARNING",
       "label": "incomplete data for this year",
-      "seeAlso": [ "t01m01s03" ]
+      "seeAlso": ["t01m01s03"]
     },
     {
       "t": "1850",
@@ -714,5 +715,5 @@
       "t": "2014",
       "v": 549491
     }
-  ],
+  ]
 }
