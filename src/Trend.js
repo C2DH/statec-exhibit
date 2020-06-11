@@ -24,6 +24,7 @@ const Trend = ({
   colorB,
   trendName,
   progress,
+  negative,
 }) => {
   const [show, setShow] = useState(false);
   const [pathLength, setPathLength] = useState(1000);
@@ -105,12 +106,20 @@ const Trend = ({
           id={`${trendName}Gradient`}
           x1="0%"
           y1="0%"
-          x2="100%"
-          y2="0%"
-          gradientUnits="userSpaceOnUse"
+          x2="0%"
+          y2="100%"
+          gradientUnits="objectBoundingBox"
         >
-          <stop offset="0%" stopColor={colorA} stopOpacity={0.5} />
-          <stop offset="100%" stopColor={colorB} stopOpacity={0.5} />
+          <stop
+            offset="0%"
+            stopColor={negative ? colorA : colorB}
+            stopOpacity={1}
+          />
+          <stop
+            offset="100%"
+            stopColor={negative ? colorB : colorA}
+            stopOpacity={1}
+          />
         </linearGradient>
       </defs>
       <g transform={`translate(16, 10)`}>
@@ -149,7 +158,7 @@ const Trend = ({
                       y1={trendHeight}
                       x2={scaleX(date)}
                       y2={y2}
-                      stroke={colorB}
+                      stroke={'#E99AA9'}
                       strokeWidth={0.5}
                       strokeDasharray="4 2"
                     />
@@ -187,7 +196,7 @@ const Trend = ({
                 data={data}
                 x={(d) => scaleX(x(d))}
                 y={(d) => scaleY2(y(d))}
-                y0={svgHeight - 30}
+                y0={negative ? 0 : svgHeight - 30}
                 yScale={scaleY2}
                 fill={`url(#${trendName}Gradient)`}
                 fillOpacity={j}
@@ -235,8 +244,6 @@ const Trend = ({
                 }}
                 x={(d) => scaleX(x(d))}
                 y={(d) => scaleY2(y(d))}
-                stroke={colorB}
-                strokeWidth={isMobileWithTablet ? 0.5 : 1}
                 curve={curveMonotoneX}
                 strokeDasharray={pathLength}
                 strokeDashoffset={j}
@@ -290,17 +297,17 @@ const Trend = ({
         <g>
           <Line
             from={{ x: timelineScale(progress), y: 0 }}
-            to={{ x: timelineScale(progress), y: svgHeight }}
-            stroke={colorB}
+            to={{ x: timelineScale(progress), y: svgHeight - 4 }}
+            stroke={'#E99AA9'}
             strokeWidth={2}
             style={{ pointerEvents: 'none' }}
             strokeDasharray="2,2"
           />
           <circle
             cx={timelineScale(progress)}
-            cy={0}
+            cy={4}
             r={4}
-            fill="black"
+            fill={'#E99AA9'}
             fillOpacity={0.1}
             stroke="black"
             strokeOpacity={0.1}
@@ -309,54 +316,56 @@ const Trend = ({
           />
           <circle
             cx={timelineScale(progress)}
-            cy={0}
+            cy={4}
             r={4}
-            fill={colorB}
-            stroke="white"
+            fill={'none'}
+            stroke={'#E99AA9'}
             strokeWidth={2}
             style={{ pointerEvents: 'none' }}
           />
         </g>
       )}
-      <g transform={`translate(21, 8)`}>
-        <AxisBottom
-          top={trendHeight - 10}
-          left={0}
-          scale={scaleX}
-          numTicks={isMobileWithTablet ? 4 : 8}
-          label="Time"
-        >
-          {(axis) => {
-            const tickLabelSize = 14;
-            const tickRotate = 0;
-            const tickColor = '#000';
-            const axisCenter = (axis.axisToPoint.x - axis.axisFromPoint.x) / 2;
-            return (
-              <g className="my-custom-bottom-axis">
-                {axis.ticks.map((tick, i) => {
-                  const tickX = tick.to.x;
-                  const tickY = tick.to.y + tickLabelSize + axis.tickLength;
-                  return (
-                    <Group
-                      key={`vx-tick-${tick.value}-${i}`}
-                      className={'vx-axis-tick'}
-                    >
-                      <text
-                        transform={`translate(${tickX}, ${tickY}) rotate(${tickRotate})`}
-                        fontSize={tickLabelSize}
-                        textAnchor="middle"
-                        fill={tickColor}
+      {!negative && (
+        <g transform={`translate(21, 8)`}>
+          <AxisBottom
+            top={trendHeight - 10}
+            left={0}
+            scale={scaleX}
+            numTicks={isMobileWithTablet ? 4 : 8}
+            label="Time"
+          >
+            {(axis) => {
+              const tickLabelSize = 14;
+              const tickRotate = 0;
+              const axisCenter =
+                (axis.axisToPoint.x - axis.axisFromPoint.x) / 2;
+              return (
+                <g className="my-custom-bottom-axis">
+                  {axis.ticks.map((tick, i) => {
+                    const tickX = tick.to.x;
+                    const tickY = tick.to.y + tickLabelSize + axis.tickLength;
+                    return (
+                      <Group
+                        key={`vx-tick-${tick.value}-${i}`}
+                        className={'vx-axis-tick'}
                       >
-                        {tick.formattedValue}
-                      </text>
-                    </Group>
-                  );
-                })}
-              </g>
-            );
-          }}
-        </AxisBottom>
-      </g>
+                        <text
+                          transform={`translate(${tickX}, ${tickY}) rotate(${tickRotate})`}
+                          fontSize={tickLabelSize}
+                          textAnchor="middle"
+                          fill={'#5295AA'}
+                        >
+                          {tick.formattedValue}
+                        </text>
+                      </Group>
+                    );
+                  })}
+                </g>
+              );
+            }}
+          </AxisBottom>
+        </g>
+      )}
     </svg>
   );
 };
