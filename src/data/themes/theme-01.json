@@ -1,78 +1,47 @@
 {
-  "id": "t01",
-  "title": "Population et migrations",
+  "id": "a-country-of-migrations",
+  "title": "A Country of migrations",
   "dataset": "population",
-  "modules": [{
-      "id": "t01m01",
-      "title": "Of life and deaths",
-      "dataset": "population-solde",
-      "steps": [{
-        "id": "t01m01s01",
-        "title": "una tristezza",
-        "startDate": "1840-01-01",
-        "endDate": "1840-12-23",
-        "attachments": [{
-          "title": "Circulaire N°9479 concernant, entre autres, l'inscriptions des enfants morts-nés.",
-          "url": "http://legilux.public.lu/eli/etat/leg/cmin/1840/12/23/n1/jo"
-        }],
-        "seeAlso": ["t01m04s01"]
-      }]
-    },
+  "modules": [
     {
-      "id": "t01m02",
-      "title": "Composition of migration",
-      "dataset": "density-of-inhabitants",
-      "steps": [{
-          "id": "t01m02s01",
-          "title": "a school for migrants?",
-          "startDate": "1843-07-26",
-          "endDate": "1843-07-26",
-          "layout": "flowers",
-          "attachments": [{
-            "title": "Loi du 26 juillet 1843, N° 1709b, sur l'instruction primaire.",
-            "url": "http://legilux.public.lu/eli/etat/leg/loi/1843/07/26/n1/jo"
-          }]
+      "id": "a-third-world-country",
+      "title": "Luxembourg a third world country",
+      "datasetHeading": "population-solde",
+      "dataset": "population-destination",
+      "layout": "flowers",
+      "attachments": [
+        {
+          "startDate": "1840-01-01",
+          "endDate": "1840-12-23",
+          "title": "Circulaire N°9479 concernant, entre autres, l'inscriptions des enfants morts-nés.",
+          "type": "pdf",
+          "url": "http://legilux.public.lu/eli/etat/leg/cmin/1840/12/23/n1/jo"
         },
         {
-          "id": "t01m02s02",
-          "title": "another school for migrants?",
           "startDate": "1843-07-26",
           "endDate": "1843-07-26",
-          "layout": "flowers",
-          "attachments": [{
-            "title": "Loi du 26 juillet 1843, N° 1709b, sur l'instruction primaire.",
-            "url": "http://legilux.public.lu/eli/etat/leg/loi/1843/07/26/n1/jo"
-          }]
+          "title": "Loi du 26 juillet 1843, N° 1709b, sur l'instruction primaire.",
+          "type": "pdf",
+          "url": "http://legilux.public.lu/eli/etat/leg/loi/1843/07/26/n1/jo"
         }
       ]
     },
     {
-      "id": "t01m03",
-      "title": "Life expectancy",
-      "steps": [],
-      "dataset": ""
+      "id": "a-country-of-migrations",
+      "title": "Transatlantic emigrations",
+      "datasetHeading": "population-solde",
+      "dataset": "transatlantic-emigrations",
+      "layout": "flowers",
+      "attachments": []
     },
     {
-      "id": "t01m04",
-      "title": "Natality rate, children and mortality rate",
-      "dataset": "number-of-births",
-      "steps": [{
-        "id": "t01m01s01",
-        "title": "German Zollverein in 1842 didn't stop people fleeing the country",
-        "description": "from wikiedia: By the Treaty of London in 1839, the status of the grand duchy became fully sovereign and in personal union to the king of the Netherlands. In turn, the predominantly Oil-speaking geographically larger western part of the duchy was ceded to Belgium as the province de Luxembourg. This loss left the Grand Duchy of Luxembourg a predominantly German state, although French cultural influence remained strong. The loss of Belgian markets also caused painful economic problems for the state. Recognising this, the grand duke integrated it into the German Zollverein in 1842. Nevertheless, Luxembourg remained an underdeveloped agrarian country for most of the century. As a result of this, about **one in five** of the inhabitants emigrated to the United States between 1841 and 1891.",
-        "startDate": "1840-01-01",
-        "endDate": "1840-12-23",
-        "attachments": [{
-          "title": "Circulaire N°9479 concernant, entre autres, l'inscriptions des enfants morts-nés.",
-          "url": "http://legilux.public.lu/eli/etat/leg/cmin/1840/12/23/n1/jo"
-        }]
-      }]
-    },
-    {
-      "id": "t01m05",
-      "title": "Mariages et divorces",
-      "dataset": "number-of-births",
-      "steps": []
+      "id": "the-portuguese decennias",
+      "title": "The Portuguese decennias",
+      "subheading": "En 1969, les Portugais apparaissent pour la première fois comme catégorie séparée dans les statistiques des soldes migratoires. En 1970, ils constituent le groupe d’arrivants le plus important et le resteront de manière presque continue.",
+      "datasetHeading": "population-solde",
+      "dataset": "population-destination",
+      "layout": "flowers",
+      "attachments": []
     }
   ]
 }
