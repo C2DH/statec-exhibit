@@ -8,7 +8,7 @@ import { AreaClosed, LinePath, Line } from '@vx/shape';
 import { curveMonotoneX } from '@vx/curve';
 import { AxisBottom } from '@vx/axis';
 import { Group } from '@vx/group';
-import { isMobileWithTablet } from './constants';
+import { isMobileWithTablet } from '../constants';
 
 const Trend = ({
   data,
