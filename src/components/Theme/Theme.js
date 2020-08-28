@@ -20,11 +20,11 @@ const Theme = ({
         <div className="mt3" style={{ marginLeft: '10%' }}>
           <Trend
             data={populationDataset.values}
-            height={80}
+            height={70}
             valueKey="v"
             timeKey="t"
-            colorA={'#93C5D6'}
-            colorB={'#BAE8DB'}
+            colorB={'#86B9D4'}
+            colorA={'#BAE8DB'}
             trendName={'populationTrend'}
             negative={false}
           />
@@ -36,10 +36,10 @@ const Theme = ({
       >
         <div className="section">
           <h1 className="tc">{theme.title}</h1>
-          {/* <h2>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua
-            </h2> */}
+          <h2 className="sans fw3">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua
+          </h2>
         </div>
       </div>
       <div>
@@ -55,7 +55,8 @@ const Theme = ({
           {theme.modules.map((mod) => {
             const datasetName = mod.dataset;
             const flowerDataset = require(`../../data/datasets/${datasetName}.json`);
-
+            const moduleDatasetName = mod.datasetHeading;
+            const moduleDataset = require(`../../data/datasets/${moduleDatasetName}.json`);
             return (
               <Step data={1} key={mod.id}>
                 <div
@@ -68,12 +69,13 @@ const Theme = ({
                 >
                   <div className="section">
                     <Trend
-                      data={themeDataset.values}
-                      height={window.innerHeight * 0.25}
+                      data={moduleDataset.values}
+                      height={window.innerHeight * 0.2}
                       valueKey="v"
                       timeKey="t"
-                      colorA={'#93C5D6'}
-                      colorB={'#BAE8DB'}
+                      highlightKey="h"
+                      colorB={'#86B9D4'}
+                      colorA={'#BAE8DB'}
                       trendName={theme.id}
                       progress={progress}
                       negative={true}
@@ -82,14 +84,27 @@ const Theme = ({
                       <h3>{mod.title}</h3>
                       {mod.subheading && <p>{mod.subheading}</p>}
                     </div>
-                    <div className="">
-                      <Flower
-                        colorA={'#F2C4B0'}
-                        colorB={'#E989A9'}
-                        data={flowerDataset.values[0]}
-                        height={window.innerHeight * 0.35}
-                        title={flowerDataset.title}
-                      />
+                    <div className="vizContainer">
+                      {flowerDataset.values.map((v) => {
+                        return (
+                          <div style={{ width: '20%' }}>
+                            <Flower
+                              colorA={'#F2C4B0'}
+                              colorB={'#E989A9'}
+                              data={v}
+                              height={window.innerHeight * 0.2}
+                            />
+                          </div>
+                        );
+                      })}
+                      <div style={{ width: '20%' }}>
+                        <h3>{flowerDataset.title || 'Lorem ipsum'}</h3>
+                        <h5>{flowerDataset.subheading || 'Lorem ipsum'}</h5>
+                        <p>
+                          {flowerDataset.paragraphs ||
+                            'Lorem ipsum dolorem sit amet'}
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>

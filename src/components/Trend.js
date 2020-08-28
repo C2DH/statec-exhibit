@@ -19,6 +19,7 @@ const Trend = ({
   activeIndex,
   valueKey,
   timeKey,
+  highlightKey,
   height,
   colorA,
   colorB,
@@ -57,7 +58,7 @@ const Trend = ({
     ? window.innerWidth * 0.8
     : window.innerWidth * 0.8;
   const svgHeight = height;
-  const trendHeight = svgHeight - 30;
+  const trendHeight = svgHeight;
   const startDate = moment('1840-01-01');
   const endDate = moment('2014-01-01');
 
@@ -68,15 +69,13 @@ const Trend = ({
     return d[valueKey];
   };
 
-  const scaleX = scaleTime()
-    .domain([startDate, endDate])
-    .range([0, svgWidth - 40]);
+  const scaleX = scaleTime().domain([startDate, endDate]).range([0, svgWidth]);
 
-  const max = extent(data, (d) => d[valueKey])[1];
+  const [min, max] = extent(data, (d) => d[valueKey]);
 
-  const scaleY = scaleLinear().domain([0, max]).range([0, trendHeight]);
+  const scaleY = scaleLinear().domain([min, max]).range([0, trendHeight]);
 
-  const scaleY2 = scaleLinear().domain([max, 0]).range([0, trendHeight]);
+  const scaleY2 = scaleLinear().domain([max, min]).range([0, trendHeight]);
 
   const timelineScale = scaleLinear()
     .range([0, svgWidth])
@@ -95,7 +94,7 @@ const Trend = ({
       x="0px"
       y="0px"
       width={svgWidth}
-      height={svgHeight}
+      height={200}
       style={{
         border: '0px solid rgba(0,0,0,0.2)',
         margin: 'auto',
@@ -122,7 +121,7 @@ const Trend = ({
           />
         </linearGradient>
       </defs>
-      <g transform={`translate(16, 10)`}>
+      {/* <g transform={`translate(0, 0)`}>
         {parsedData.map((d, i) => {
           const date = moment(d[timeKey]);
           const value = d[valueKey];
@@ -168,8 +167,8 @@ const Trend = ({
             </g>
           );
         })}
-      </g>
-      <g transform={`translate(16, 10)`}>
+      </g> */}
+      <g transform={`translate(0, 0)`}>
         <Animate
           show={show}
           start={() => ({
@@ -196,7 +195,7 @@ const Trend = ({
                 data={data}
                 x={(d) => scaleX(x(d))}
                 y={(d) => scaleY2(y(d))}
-                y0={negative ? 0 : svgHeight - 30}
+                y0={negative ? 0 : svgHeight}
                 yScale={scaleY2}
                 fill={`url(#${trendName}Gradient)`}
                 fillOpacity={j}
@@ -209,7 +208,7 @@ const Trend = ({
           }}
         </Animate>
       </g>
-      <g transform={`translate(16, 10)`}>
+      <g transform={`translate(0, 0)`}>
         <Animate
           show={show}
           start={() => ({
@@ -253,29 +252,23 @@ const Trend = ({
           }}
         </Animate>
       </g>
-      {
-        <g transform={`translate(16, 15)`}>
+      {/* Highlight circles */}
+      {negative && (
+        <g transform={`translate(0, 0)`}>
           {data.map((d, i) => {
             const date = moment(d[timeKey]);
             const value = d[valueKey];
 
-            if (d.peak) {
+            if (d.h) {
               return (
                 <g key={i} onClick={() => toggleNote(d.note)}>
                   <circle
                     id={`circle-${i}`}
                     cx={scaleX(date)}
                     cy={trendHeight - scaleY(value)}
-                    fill={'#43449a'}
-                    r={4}
-                  />
-                  <circle
-                    id={`circle-${i}`}
-                    cx={scaleX(date)}
-                    cy={trendHeight - scaleY(value)}
                     stroke={'#43449a'}
                     fill={'transparent'}
-                    r={10}
+                    r={6}
                   />
                   <text
                     dx={
@@ -291,19 +284,29 @@ const Trend = ({
             }
           })}
         </g>
-      }
-
+      )}
+      {min < 9 && (
+        <g>
+          <Line
+            from={{ x: timelineScale(0), y: scaleY(0) }}
+            to={{ x: timelineScale(100), y: scaleY(0) }}
+            stroke={'rgba(0,0,0,.5)'}
+            strokeWidth={1}
+            style={{ pointerEvents: 'none' }}
+            strokeDasharray={[2, 2]}
+          />
+        </g>
+      )}
       {progress && (
         <g>
           <Line
             from={{ x: timelineScale(progress), y: 0 }}
-            to={{ x: timelineScale(progress), y: svgHeight - 4 }}
+            to={{ x: timelineScale(progress), y: svgHeight }}
             stroke={'#E99AA9'}
-            strokeWidth={2}
+            strokeWidth={4}
             style={{ pointerEvents: 'none' }}
-            strokeDasharray="2,2"
           />
-          <circle
+          {/* <circle
             cx={timelineScale(progress)}
             cy={4}
             r={4}
@@ -322,7 +325,7 @@ const Trend = ({
             stroke={'#E99AA9'}
             strokeWidth={2}
             style={{ pointerEvents: 'none' }}
-          />
+          /> */}
         </g>
       )}
       {!negative && (
@@ -353,7 +356,7 @@ const Trend = ({
                           transform={`translate(${tickX}, ${tickY}) rotate(${tickRotate})`}
                           fontSize={tickLabelSize}
                           textAnchor="middle"
-                          fill={'#5295AA'}
+                          fill={'rgba(166,4,16,0.5)'}
                         >
                           {tick.formattedValue}
                         </text>

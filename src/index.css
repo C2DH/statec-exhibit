@@ -49,6 +49,10 @@ h2 {
   line-height: 50px;
 }
 
+.sans {
+  font-family: Porpora, Arial, sans-serif;
+}
+
 .stickyHeader {
   width: 100%;
   height: 100px;
@@ -70,4 +74,11 @@ h2 {
   color: #d1646c;
   font-family: SneakyTimes, serif;
   font-size: 18px;
+}
+
+/* THEME */
+
+.vizContainer {
+  display: flex;
+  width: 100%;
 }

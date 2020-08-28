@@ -3,7 +3,10 @@ import Bezier from './Bezier';
 import { extent, merge } from 'd3-array';
 import { scaleLinear, scaleTime } from 'd3-scale';
 
-const Flower = ({ colorA, colorB, data, height, title }) => {
+const nMinPetals = 8;
+
+const Flower = ({ colorA, colorB, data, height }) => {
+  const title = data.group;
   const dataArray = Object.values(data.keys);
   const keysArray = Object.keys(data.keys);
   const dates = keysArray.map((d) => {
@@ -18,7 +21,10 @@ const Flower = ({ colorA, colorB, data, height, title }) => {
   const radius = height / 3.5;
   const circumference = 2 * Math.PI * radius;
   const nOfPetals = dataArray.length;
-  const petalMaxWidth = parseInt(circumference / (nOfPetals - 1));
+  const petalMaxWidth =
+    nOfPetals > nMinPetals
+      ? parseInt(circumference / (nOfPetals - 1))
+      : parseInt(circumference / nMinPetals);
   const angleD = (Math.PI * 2) / nOfPetals;
   const scaleY = scaleLinear().domain([0, 1000]).range([0, petalMaxWidth]);
   // const scaleWidth = scaleLinear()
@@ -48,7 +54,10 @@ const Flower = ({ colorA, colorB, data, height, title }) => {
           {dataArray.map((d, i) => {
             const angle = i * angleD;
             const deg = angle * (180 / Math.PI);
-            const petalWidth = parseInt(circumference / (nOfPetals - 1));
+            const petalWidth =
+              nOfPetals > nMinPetals
+                ? parseInt(circumference / (nOfPetals - 1))
+                : parseInt(circumference / nMinPetals);
             const curveHeight = scaleY(d.v);
             // const date = dates[i];
             // const petalWidth =
@@ -104,11 +113,16 @@ const Flower = ({ colorA, colorB, data, height, title }) => {
         style={{
           color: '#d1646c',
           fontSize: '14px',
+          justifyContent: 'center',
           textAlign: 'center',
           position: 'absolute',
           top: '50%',
           width: '50%',
           left: '25%',
+          height: '30px',
+          marginTop: '-15px',
+          display: 'flex',
+          alignItems: 'center',
         }}
       >
         {title}
