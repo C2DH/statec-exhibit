@@ -2,10 +2,11 @@ import React, { useEffect, useState } from 'react';
 import Bezier from './Bezier';
 import { extent, merge } from 'd3-array';
 import { scaleLinear, scaleTime } from 'd3-scale';
+import moment from 'moment';
 
 const nMinPetals = 8;
 
-const Flower = ({ colorA, colorB, data, height }) => {
+const Flower = ({ colorA, colorB, data, height, progress }) => {
   const title = data.group;
   const dataArray = Object.values(data.keys);
   const keysArray = Object.keys(data.keys);
@@ -31,8 +32,15 @@ const Flower = ({ colorA, colorB, data, height }) => {
   //   .domain([0, Number(maxDate) - Number(minDate) - 1])
   //   .range([0, circumference]);
 
+  const startDate = moment('1840-01-01');
+  const endDate = moment('2014-01-01');
+  const scaleX = scaleTime().domain([startDate, endDate]).range([0, 0.5]);
+
   // console.log(Number(maxDate) - Number(minDate) - 1);
   // console.log(circumference);
+
+  const progressData = scaleX.invert(progress.toFixed(3));
+  const progressYear = moment(progressData).year();
 
   return (
     <div style={{ position: 'relative', width: height }}>
@@ -69,6 +77,21 @@ const Flower = ({ colorA, colorB, data, height }) => {
             //   'petalWidth',
             //   date.length === 1 ? 1 : Number(date[1]) - Number(date[0]),
             // );
+            let selected = false;
+            const keyYear = keysArray[i];
+            if (keyYear.includes('-')) {
+              const [minKey, maxKey] = keyYear.split('-');
+              if (
+                progressYear >= Number(minKey) &&
+                progressYear <= Number(maxKey)
+              ) {
+                selected = true;
+              }
+            } else {
+              if (Number(keyYear) === progressYear) {
+                selected = true;
+              }
+            }
 
             return (
               <g
@@ -88,6 +111,7 @@ const Flower = ({ colorA, colorB, data, height }) => {
                     width={petalWidth}
                     c1={petalWidth * 0.2}
                     c2={petalWidth * 0.1}
+                    selected={selected}
                   />
                 </g>
               </g>

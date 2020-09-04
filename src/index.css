@@ -65,15 +65,48 @@ h2 {
 
 .section {
   padding-top: 120px;
-  width: 80%;
-  margin: 0 10%;
+  width: 90%;
+  margin: 0 5%;
 }
 
-.sectionText {
-  margin-top: 60px;
+.sectionTitle {
+  position: absolute;
   color: #d1646c;
   font-family: SneakyTimes, serif;
   font-size: 18px;
+  left: -285px;
+  width: 500px;
+  height: 30px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  transform: rotate(-90deg);
+  transform-origin: center;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.sectionText {
+  margin-top: 30px;
+  color: #d1646c;
+  font-family: SneakyTimes, serif;
+  font-size: 18px;
+}
+
+.sectionText h3,
+.trendText h3 {
+  margin-top: 30px;
+  font-family: SneakyTimes, serif;
+  font-size: 18px;
+  color: black;
+  text-transform: capitalize;
+}
+
+.sectionText p {
+  margin-top: 30px;
+  font-family: SneakyTimes, serif;
+  font-size: 15px;
+  color: black;
 }
 
 /* THEME */

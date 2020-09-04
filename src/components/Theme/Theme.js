@@ -17,7 +17,7 @@ const Theme = ({
   return (
     <Fragment>
       <div className="stickyHeader">
-        <div className="mt3" style={{ marginLeft: '10%' }}>
+        <div className="mt3" style={{ marginLeft: '5%' }}>
           <Trend
             data={populationDataset.values}
             height={70}
@@ -46,19 +46,19 @@ const Theme = ({
         <Scrollama
           onStepEnter={onStepEnter}
           onStepExit={onStepExit}
-          progress={true}
+          progress
           onStepProgress={onStepProgress}
-          debug={true}
-          offset={0}
+          offset={0.2}
           threshold={2}
         >
-          {theme.modules.map((mod) => {
+          {theme.modules.map((mod, i) => {
             const datasetName = mod.dataset;
             const flowerDataset = require(`../../data/datasets/${datasetName}.json`);
             const moduleDatasetName = mod.datasetHeading;
             const moduleDataset = require(`../../data/datasets/${moduleDatasetName}.json`);
+            console.log(i);
             return (
-              <Step data={1} key={mod.id}>
+              <Step data={i} key={i}>
                 <div
                   className="w-100 chapter-1"
                   style={{
@@ -68,6 +68,7 @@ const Theme = ({
                   }}
                 >
                   <div className="section">
+                    <div className="sectionTitle">{mod.title}</div>
                     <Trend
                       data={moduleDataset.values}
                       height={window.innerHeight * 0.2}
@@ -80,24 +81,32 @@ const Theme = ({
                       progress={progress}
                       negative={true}
                     />
+                    <div className="trendText">
+                      <h3>{moduleDataset.title}</h3>
+                    </div>
+                    <hr></hr>
                     <div className="sectionText">
-                      <h3>{mod.title}</h3>
-                      {mod.subheading && <p>{mod.subheading}</p>}
+                      <h3>{flowerDataset.title}</h3>
+                      {flowerDataset.subheading && (
+                        <p>{flowerDataset.subheading}</p>
+                      )}
                     </div>
                     <div className="vizContainer">
-                      {flowerDataset.values.map((v) => {
+                      {flowerDataset.values.map((v, j) => {
                         return (
-                          <div style={{ width: '20%' }}>
+                          <div style={{ width: '15%' }}>
                             <Flower
                               colorA={'#F2C4B0'}
                               colorB={'#E989A9'}
                               data={v}
-                              height={window.innerHeight * 0.2}
+                              height={window.innerWidth * 0.15}
+                              progress={progress}
+                              key={`flower-${j}`}
                             />
                           </div>
                         );
                       })}
-                      <div style={{ width: '20%' }}>
+                      <div style={{ width: '40%', paddingLeft: '30px' }}>
                         <h3>{flowerDataset.title || 'Lorem ipsum'}</h3>
                         <h5>{flowerDataset.subheading || 'Lorem ipsum'}</h5>
                         <p>

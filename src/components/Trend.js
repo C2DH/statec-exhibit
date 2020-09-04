@@ -55,8 +55,8 @@ const Trend = ({
   }, [activeIndex]);
 
   const svgWidth = isMobileWithTablet
-    ? window.innerWidth * 0.8
-    : window.innerWidth * 0.8;
+    ? window.innerWidth * 0.9
+    : window.innerWidth * 0.9;
   const svgHeight = height;
   const trendHeight = svgHeight;
   const startDate = moment('1840-01-01');
@@ -121,53 +121,7 @@ const Trend = ({
           />
         </linearGradient>
       </defs>
-      {/* <g transform={`translate(0, 0)`}>
-        {parsedData.map((d, i) => {
-          const date = moment(d[timeKey]);
-          const value = d[valueKey];
 
-          const startAnimation = trendHeight;
-
-          return (
-            <g key={i}>
-              <Animate
-                show={show}
-                start={() => ({
-                  y2: startAnimation,
-                })}
-                enter={() => ({
-                  y2: [trendHeight - scaleY(value)],
-                  timing: { duration: 1000, ease: easeQuadOut, delay: 500 },
-                })}
-                update={() => ({
-                  y2: [trendHeight - scaleY(value)],
-                  timing: { duration: 1000, ease: easeQuadOut, delay: 500 },
-                })}
-                leave={() => ({
-                  y2: [0],
-                  timing: { duration: 0 },
-                })}
-              >
-                {(state) => {
-                  const { y2 } = state;
-                  return (
-                    <line
-                      id={`line-${i}`}
-                      x1={scaleX(date)}
-                      y1={trendHeight}
-                      x2={scaleX(date)}
-                      y2={y2}
-                      stroke={'#E99AA9'}
-                      strokeWidth={0.5}
-                      strokeDasharray="4 2"
-                    />
-                  );
-                }}
-              </Animate>
-            </g>
-          );
-        })}
-      </g> */}
       <g transform={`translate(0, 0)`}>
         <Animate
           show={show}
@@ -287,16 +241,75 @@ const Trend = ({
       )}
       {min < 9 && (
         <g>
-          <Line
-            from={{ x: timelineScale(0), y: scaleY(0) }}
-            to={{ x: timelineScale(100), y: scaleY(0) }}
-            stroke={'rgba(0,0,0,.5)'}
-            strokeWidth={1}
-            style={{ pointerEvents: 'none' }}
-            strokeDasharray={[2, 2]}
-          />
+          <g>
+            <Line
+              from={{ x: timelineScale(0), y: scaleY(0) }}
+              to={{ x: timelineScale(100), y: scaleY(0) }}
+              stroke={'rgba(0,0,0,.5)'}
+              strokeWidth={1}
+              style={{ pointerEvents: 'none' }}
+              strokeDasharray={[1, 6]}
+            />
+          </g>
+          <g>
+            <Line
+              from={{ x: timelineScale(0), y: scaleY(max / 2) }}
+              to={{ x: timelineScale(100), y: scaleY(max / 2) }}
+              stroke={'rgba(0,0,0,.5)'}
+              strokeWidth={1}
+              style={{ pointerEvents: 'none' }}
+              strokeDasharray={[1, 6]}
+            />
+          </g>
         </g>
       )}
+      <g transform={`translate(0, 0)`}>
+        {parsedData.map((d, i) => {
+          const date = moment(d[timeKey]);
+          const value = d[valueKey];
+
+          const startAnimation = trendHeight;
+
+          return (
+            <g key={i}>
+              <Animate
+                show={show}
+                start={() => ({
+                  y2: startAnimation,
+                })}
+                enter={() => ({
+                  y2: [0],
+                  timing: { duration: 1000, ease: easeQuadOut, delay: 500 },
+                })}
+                update={() => ({
+                  y2: [0],
+                  timing: { duration: 1000, ease: easeQuadOut, delay: 500 },
+                })}
+                leave={() => ({
+                  y2: [0],
+                  timing: { duration: 0 },
+                })}
+              >
+                {(state) => {
+                  const { y2 } = state;
+                  return (
+                    <line
+                      id={`line-${i}`}
+                      x1={scaleX(date)}
+                      y1={trendHeight}
+                      x2={scaleX(date)}
+                      y2={y2}
+                      stroke={'#E99AA9'}
+                      strokeWidth={0.5}
+                      strokeDasharray="4 4"
+                    />
+                  );
+                }}
+              </Animate>
+            </g>
+          );
+        })}
+      </g>
       {progress && (
         <g>
           <Line
@@ -329,7 +342,7 @@ const Trend = ({
         </g>
       )}
       {!negative && (
-        <g transform={`translate(21, 8)`}>
+        <g transform={`translate(0, 4)`}>
           <AxisBottom
             top={trendHeight - 10}
             left={0}
