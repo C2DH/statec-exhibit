@@ -48,7 +48,7 @@ const Theme = ({
           onStepExit={onStepExit}
           progress
           onStepProgress={onStepProgress}
-          offset={0.2}
+          offset={0}
           threshold={2}
         >
           {theme.modules.map((mod, i) => {
