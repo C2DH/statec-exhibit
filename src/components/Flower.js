@@ -20,7 +20,7 @@ const Flower = ({ colorA, colorB, colorC, data, height, progress }) => {
   const flattenDates = merge(dates);
   const [minDate, maxDate] = extent(flattenDates, (d) => d);
   const [min, max] = extent(dataArray, (d) => d.v);
-  const radius = height / 3.5;
+  const radius = height / 3;
   const circumference = 2 * Math.PI * radius;
   const nOfPetals = dataArray.length;
   const petalMaxWidth =
@@ -28,9 +28,7 @@ const Flower = ({ colorA, colorB, colorC, data, height, progress }) => {
       ? parseInt(circumference / (nOfPetals - 1))
       : parseInt(circumference / nMinPetals);
   const angleD = (Math.PI * 2) / nOfPetals;
-  const scaleY = scaleLinear()
-    .domain([min, max])
-    .range([0, petalMaxWidth * 1.2]);
+  const scaleY = scaleLinear().domain([min, max]).range([0, petalMaxWidth]);
 
   const startDate = moment(minDate);
   const endDate = moment(maxDate);

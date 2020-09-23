@@ -7,7 +7,7 @@ const Container = ({ flowerDataset, progress }) => {
   //const props = useSpring({ opacity: 1, from: { opacity: 0 } });
 
   const opacityScale = scaleLinear()
-    .domain([0, 0.2, 0.8, 1])
+    .domain([0, 0.2, 0.8, 0.95])
     .range([0, 1, 1, 0]);
 
   return (

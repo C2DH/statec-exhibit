@@ -71,6 +71,7 @@ h2 {
 
 .scrollSection {
   width: 90%;
+  opacity: 0;
 }
 
 .section-small {
@@ -87,11 +88,10 @@ h2 {
   color: #d1646c;
   font-family: SneakyTimes, serif;
   font-size: 18px;
-  left: -285px;
+  left: -85px;
   width: 500px;
-  height: 30px;
-  top: 0;
-  bottom: 0;
+  height: 100%;
+  top: 50%;
   margin: auto;
   transform: rotate(-90deg);
   transform-origin: center;
@@ -100,7 +100,6 @@ h2 {
 }
 
 .sectionText {
-  margin-top: 30px;
   color: #d1646c;
   font-family: SneakyTimes, serif;
   font-size: 18px;
