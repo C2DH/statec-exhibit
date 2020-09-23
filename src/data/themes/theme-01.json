@@ -24,6 +24,13 @@
           "type": "pdf",
           "url": "http://legilux.public.lu/eli/etat/leg/loi/1843/07/26/n1/jo"
         }
+      ],
+      "paragraphs": [
+        {
+          "year": "1839",
+          "text": "In 1839, after almost half of the old Duchy of Luxembourg was ceded to Belgium, and the Grand Duchy of Luxembourg remained a mere 2,589 km2 as territory, 169,920 inhabitants were counted.",
+          "source": "... (todo)"
+        }
       ]
     },
     {
@@ -39,7 +46,7 @@
       "title": "The Portuguese decennias",
       "subheading": "En 1969, les Portugais apparaissent pour la première fois comme catégorie séparée dans les statistiques des soldes migratoires. En 1970, ils constituent le groupe d’arrivants le plus important et le resteront de manière presque continue.",
       "datasetHeading": "population-solde",
-      "dataset": "population-destination",
+      "dataset": "arrivals-by-nationalities",
       "layout": "flowers",
       "attachments": []
     }
