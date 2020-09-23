@@ -20,8 +20,6 @@ const Flower = ({ colorA, colorB, colorC, data, height, progress }) => {
   const flattenDates = merge(dates);
   const [minDate, maxDate] = extent(flattenDates, (d) => d);
   const [min, max] = extent(dataArray, (d) => d.v);
-  console.log(min, max);
-
   const radius = height / 3.5;
   const circumference = 2 * Math.PI * radius;
   const nOfPetals = dataArray.length;

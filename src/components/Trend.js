@@ -83,7 +83,7 @@ const Trend = ({
 
   const timelineScale = scaleLinear()
     .range([0, graphWidth])
-    .domain([0, 0.5])
+    .domain([0.2, 0.8])
     .clamp(true);
 
   const parsedData = data.filter((d, i) => {

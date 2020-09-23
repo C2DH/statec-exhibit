@@ -4,7 +4,7 @@ import Trend from './components/Trend';
 import populationDataset from './data/datasets/population.json';
 import landing from './assets/images/landing.svg';
 import theme from './data/themes/theme-01.json';
-import Flower from './components/Flower';
+import Container from './components/Container';
 
 class Test extends Component {
   state = {
@@ -18,7 +18,8 @@ class Test extends Component {
       element.children[0].style.position = 'fixed';
       element.children[0].style.top = '50vh';
       element.children[0].style.paddingTop = 0;
-      element.children[0].style.left = 0;
+      element.children[0].style.left = '5%';
+      element.children[0].style.width = '90%';
     }
     this.setState({ data });
   };
@@ -29,6 +30,8 @@ class Test extends Component {
       element.children[0].style.position = 'relative';
       element.children[0].style.top = '0';
       element.children[0].style.paddingTop = '50vh';
+      element.children[0].style.left = '0';
+      element.children[0].style.width = '100%';
     }
   };
 
@@ -59,11 +62,11 @@ class Test extends Component {
             <div
               className="w-100 chapter-1"
               style={{
-                backgroundColor: '#D0E4E7',
+                backgroundColor: 'rgb(208, 228, 231)',
                 paddingBottom: window.innerHeight * 0.05,
               }}
             >
-              <div className="section" styl>
+              <div className="section" style={{ paddingTop: '30px' }}>
                 <div
                   style={{
                     position: 'sticky',
@@ -86,10 +89,7 @@ class Test extends Component {
                         trendName={'populationTrend'}
                         negative={false}
                       />
-                      <div
-                        className="moduleTitle"
-                        style={{ top: 10, left: '10vw' }}
-                      >
+                      <div className="moduleTitle" style={{ top: 10 }}>
                         Population (1840-2014)
                       </div>
                     </div>
@@ -119,7 +119,7 @@ class Test extends Component {
                     progress
                     onStepProgress={this.onStepProgress}
                     offset={0.5}
-                    threshold={0}
+                    threshold={2}
                   >
                     {theme.modules.map((mod, i) => {
                       const datasetName = mod.dataset;
@@ -127,66 +127,11 @@ class Test extends Component {
                       const moduleDatasetName = mod.datasetHeading;
                       return (
                         <Step data={i} key={i}>
-                          <div style={{ height: '250vh' }}>
-                            <div className="section" style={{ paddingTop: 0 }}>
-                              <div className="sectionText">
-                                <div
-                                  className="moduleTitle"
-                                  style={{ position: 'relative' }}
-                                >
-                                  {flowerDataset.title}
-                                </div>
-                                {flowerDataset.subheading && (
-                                  <div className="moduleSubTitle">
-                                    {flowerDataset.subheading}
-                                  </div>
-                                )}
-                                {flowerDataset.paragraphs && (
-                                  <p className="moduleParagraph">
-                                    {flowerDataset.paragraphs}
-                                  </p>
-                                )}
-                              </div>
-                              <div className="vizContainer">
-                                <div
-                                  style={{
-                                    width: '60%',
-                                    display: 'flex',
-                                    overflow: 'hidden',
-                                  }}
-                                >
-                                  {flowerDataset.values.map((v, j) => {
-                                    return (
-                                      <div
-                                        style={{ width: '50%' }}
-                                        key={`flower-${j}`}
-                                      >
-                                        <Flower
-                                          colorA={'#F2C4B0'}
-                                          colorB={'#E8BCA9'}
-                                          colorC={'#E989A9'}
-                                          data={v}
-                                          height={window.innerWidth * 0.25}
-                                          progress={progress}
-                                          key={`flower-${j}`}
-                                        />
-                                      </div>
-                                    );
-                                  })}
-                                </div>
-                                <div
-                                  style={{ width: '40%', paddingLeft: '30px' }}
-                                >
-                                  <div className="peakDate">{`Peak date ${i}`}</div>
-                                  <div className="peakTitle">
-                                    Peak explanation lorem ipsum dolor sit amet,
-                                    consectetur adipiscing elit, sed do eiusmod
-                                    tempor incididunt ut labore et dolore magna
-                                    aliqua.
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
+                          <div style={{ height: '250vh', paddingTop: '50vh' }}>
+                            <Container
+                              flowerDataset={flowerDataset}
+                              progress={progress}
+                            />
                           </div>
                         </Step>
                       );
