@@ -71,8 +71,11 @@ h2 {
 
 .section-small {
   padding-top: 140px;
-  width: 70%;
+  width: 80%;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .sectionTitle {
@@ -120,4 +123,41 @@ h2 {
 .vizContainer {
   display: flex;
   width: 100%;
+  height: 40vh;
+}
+
+.moduleTitle {
+  position: absolute;
+  left: 5vw;
+  font-family: SneakyTimes, serif;
+  font-size: 26px;
+  color: white;
+  opacity: 1;
+  text-transform: capitalize;
+}
+
+div.moduleSubTitle {
+  font-family: SneakyTimes, serif;
+  margin-left: 5vw;
+  margin-top: 5px;
+  font-size: 18px;
+  color: white;
+  opacity: 1;
+  text-transform: capitalize;
+}
+
+p.moduleParagraph {
+  font-family: Porpora;
+  margin-left: 5vw;
+  margin-top: 5px;
+  font-size: 14px;
+  color: white;
+  opacity: 1;
+}
+
+.hr {
+  width: 100%;
+  height: 1px;
+  background-color: #433aa9;
+  margin: 45px 0;
 }

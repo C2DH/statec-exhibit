@@ -6,7 +6,7 @@ import moment from 'moment';
 
 const nMinPetals = 8;
 
-const Flower = ({ colorA, colorB, data, height, progress }) => {
+const Flower = ({ colorA, colorB, colorC, data, height, progress }) => {
   const title = data.group;
   const dataArray = Object.values(data.keys);
   const keysArray = Object.keys(data.keys);
@@ -55,12 +55,13 @@ const Flower = ({ colorA, colorB, data, height, progress }) => {
             gradientUnits="objectBoundingBox"
           >
             <stop offset="0%" stopColor={colorA} stopOpacity={1} />
-            <stop offset="100%" stopColor={colorB} stopOpacity={1} />
+            <stop offset="55%" stopColor={colorB} stopOpacity={1} />
+            <stop offset="100%" stopColor={colorC} stopOpacity={1} />
           </linearGradient>
         </defs>
         <g transform={`translate(${height / 2},${height / 2})`}>
           {dataArray.map((d, i) => {
-            const angle = i * angleD;
+            const angle = i * angleD + Math.PI;
             const deg = angle * (180 / Math.PI);
             const petalWidth =
               nOfPetals > nMinPetals
@@ -79,6 +80,7 @@ const Flower = ({ colorA, colorB, data, height, progress }) => {
             // );
             let selected = false;
             const keyYear = keysArray[i];
+            console.log('keyYear', keyYear, 'progressYear', progressYear);
             if (keyYear.includes('-')) {
               const [minKey, maxKey] = keyYear.split('-');
               if (
@@ -98,6 +100,7 @@ const Flower = ({ colorA, colorB, data, height, progress }) => {
                 transform={`translate(${Math.sin(angle) * radius}, ${
                   Math.cos(angle) * radius
                 })`}
+                key={`petal-${i}`}
               >
                 <g
                   transform={`translate(-${

@@ -63,9 +63,9 @@ const Bezier = ({ width, height, c1, c2, selected }) => {
       C ${controlPoint3} ${controlPoint4} ${endPoint}
       L ${startPoint}
     `}
-        fill={selected ? 'red' : `url(#bezierGradient)`}
-        stroke="none"
-        strokeWidth={5}
+        fill={`url(#bezierGradient)`}
+        stroke={selected ? 'rgba(209,100,108,1)' : 'none'}
+        strokeWidth={2}
       />
 
       {/* <path
