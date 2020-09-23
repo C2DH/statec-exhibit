@@ -1,10 +1,11 @@
 {
   "id": "transatlantic-emigrations",
-  "title": "Emigrations vers les pays d'outre-mer",
-  "subheading": "Années 1904-1922",
+  "title": "Migrations to overseas countries",
+  "subheading": "Years 1904-1922",
   "paragraphs": [
     "Statistique établie sur la base de relevés fourins par les agences d'émigration"
   ],
+  "source": "„Statistiques historiques“, Statec, 9999",
   "timeformat": "YYYY",
   "legend": {
     "v": "people per year"
