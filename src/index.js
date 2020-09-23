@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import 'tachyons';
 import './index.css';
 import Home from './Home';
+import Test from './Test';
 
 class App extends React.Component {
   render() {
@@ -12,6 +13,7 @@ class App extends React.Component {
         <div className="">
           <Switch>
             <Route exact path="/" component={Home} />
+            <Route exact path="/test" component={Test} />
           </Switch>
         </div>
       </BrowserRouter>
