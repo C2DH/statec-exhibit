@@ -57,6 +57,8 @@ const Trend = ({
   const svgWidth = isMobileWithTablet
     ? window.innerWidth * 0.9
     : window.innerWidth * 0.9;
+  const marginLeft = window.innerWidth * 0.1;
+  const graphWidth = svgWidth - marginLeft;
   const svgHeight = height;
   const trendHeight = svgHeight;
   const startDate = moment('1840-01-01');
@@ -69,7 +71,9 @@ const Trend = ({
     return d[valueKey];
   };
 
-  const scaleX = scaleTime().domain([startDate, endDate]).range([0, svgWidth]);
+  const scaleX = scaleTime()
+    .domain([startDate, endDate])
+    .range([0, graphWidth]);
 
   const [min, max] = extent(data, (d) => d[valueKey]);
 
@@ -78,12 +82,12 @@ const Trend = ({
   const scaleY2 = scaleLinear().domain([max, min]).range([0, trendHeight]);
 
   const timelineScale = scaleLinear()
-    .range([0, svgWidth])
+    .range([0, graphWidth])
     .domain([0, 0.5])
     .clamp(true);
 
   const parsedData = data.filter((d, i) => {
-    if (i % 12 === 0) {
+    if (i % 10 === 0) {
       return d;
     }
   });
@@ -122,7 +126,7 @@ const Trend = ({
         </linearGradient>
       </defs>
 
-      <g transform={`translate(0, 0)`}>
+      <g transform={`translate(${marginLeft}, 0)`}>
         <Animate
           show={show}
           start={() => ({
@@ -162,7 +166,7 @@ const Trend = ({
           }}
         </Animate>
       </g>
-      <g transform={`translate(0, 0)`}>
+      <g transform={`translate(${marginLeft}, 0)`}>
         <Animate
           show={show}
           start={() => ({
@@ -208,7 +212,7 @@ const Trend = ({
       </g>
       {/* Highlight circles */}
       {negative && (
-        <g transform={`translate(0, 0)`}>
+        <g transform={`translate(${marginLeft}, 0)`}>
           {data.map((d, i) => {
             const date = moment(d[timeKey]);
             const value = d[valueKey];
@@ -240,7 +244,7 @@ const Trend = ({
         </g>
       )}
       {min < 9 && (
-        <g>
+        <g transform={`translate(${marginLeft}, 0)`}>
           <g>
             <Line
               from={{ x: timelineScale(0), y: scaleY(0) }}
@@ -263,7 +267,7 @@ const Trend = ({
           </g>
         </g>
       )}
-      <g transform={`translate(0, 0)`}>
+      <g transform={`translate(${marginLeft}, 0)`}>
         {parsedData.map((d, i) => {
           const date = moment(d[timeKey]);
           const value = d[valueKey];
@@ -311,7 +315,7 @@ const Trend = ({
         })}
       </g>
       {progress && (
-        <g>
+        <g transform={`translate(${marginLeft}, 0)`}>
           <Line
             from={{ x: timelineScale(progress), y: 0 }}
             to={{ x: timelineScale(progress), y: svgHeight }}
@@ -342,7 +346,7 @@ const Trend = ({
         </g>
       )}
       {!negative && (
-        <g transform={`translate(0, 4)`}>
+        <g transform={`translate(${marginLeft}, 4)`}>
           <AxisBottom
             top={trendHeight - 10}
             left={0}
@@ -368,7 +372,7 @@ const Trend = ({
                         <text
                           transform={`translate(${tickX}, ${tickY}) rotate(${tickRotate})`}
                           fontSize={tickLabelSize}
-                          textAnchor="middle"
+                          textAnchor="start"
                           fill={'rgba(166,4,16,0.5)'}
                         >
                           {tick.formattedValue}

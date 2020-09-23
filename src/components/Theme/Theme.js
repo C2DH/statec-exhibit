@@ -34,7 +34,7 @@ const Theme = ({
         className="w-100 chapter-2"
         style={{ backgroundColor: '#FFD8C2', height: '100vh' }}
       >
-        <div className="section">
+        <div className="section-small">
           <h1 className="tc">{theme.title}</h1>
           <h2 className="sans fw3">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

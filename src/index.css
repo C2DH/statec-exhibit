@@ -36,7 +36,7 @@ h5,
 h6,
 .title {
   color: #d1646c;
-  font-family: SneakyTimes, serif;
+  font-family: 'SneakyTimes', serif;
 }
 
 h1 {
@@ -67,6 +67,12 @@ h2 {
   padding-top: 120px;
   width: 90%;
   margin: 0 5%;
+}
+
+.section-small {
+  padding-top: 140px;
+  width: 70%;
+  margin: auto;
 }
 
 .sectionTitle {
