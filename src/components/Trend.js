@@ -6,7 +6,7 @@ import { Animate } from 'react-move';
 import { easeQuadOut } from 'd3-ease';
 import { AreaClosed, LinePath, Line } from '@vx/shape';
 import { curveMonotoneX } from '@vx/curve';
-import { AxisBottom } from '@vx/axis';
+import { AxisBottom, AxisLeft } from '@vx/axis';
 import { Group } from '@vx/group';
 import { isMobileWithTablet } from '../constants';
 
@@ -57,6 +57,8 @@ const Trend = ({
   const svgWidth = isMobileWithTablet
     ? window.innerWidth * 0.9
     : window.innerWidth * 0.9;
+  const marginLeft = window.innerWidth * 0.05;
+  const graphWidth = svgWidth - marginLeft;
   const svgHeight = height;
   const trendHeight = svgHeight;
   const startDate = moment('1840-01-01');
@@ -69,7 +71,9 @@ const Trend = ({
     return d[valueKey];
   };
 
-  const scaleX = scaleTime().domain([startDate, endDate]).range([0, svgWidth]);
+  const scaleX = scaleTime()
+    .domain([startDate, endDate])
+    .range([0, graphWidth]);
 
   const [min, max] = extent(data, (d) => d[valueKey]);
 
@@ -78,12 +82,12 @@ const Trend = ({
   const scaleY2 = scaleLinear().domain([max, min]).range([0, trendHeight]);
 
   const timelineScale = scaleLinear()
-    .range([0, svgWidth])
+    .range([0, graphWidth])
     .domain([0, 0.5])
     .clamp(true);
 
   const parsedData = data.filter((d, i) => {
-    if (i % 12 === 0) {
+    if (i % 10 === 0) {
       return d;
     }
   });
@@ -94,7 +98,7 @@ const Trend = ({
       x="0px"
       y="0px"
       width={svgWidth}
-      height={200}
+      height={svgHeight}
       style={{
         border: '0px solid rgba(0,0,0,0.2)',
         margin: 'auto',
@@ -104,25 +108,19 @@ const Trend = ({
         <linearGradient
           id={`${trendName}Gradient`}
           x1="0%"
-          y1="0%"
+          y1={negative ? '100%' : '0%'}
           x2="0%"
-          y2="100%"
+          y2={negative ? '0%' : '100%'}
           gradientUnits="objectBoundingBox"
         >
-          <stop
-            offset="0%"
-            stopColor={negative ? colorA : colorB}
-            stopOpacity={1}
-          />
-          <stop
-            offset="100%"
-            stopColor={negative ? colorB : colorA}
-            stopOpacity={1}
-          />
+          <stop offset="0%" stopColor={'#86B9D4'} stopOpacity={1} />
+          <stop offset="14.46%" stopColor={'#93C5D6'} stopOpacity={1} />
+          <stop offset="44.26%" stopColor={'#A9D8D9'} stopOpacity={1} />
+          <stop offset="73.17%" stopColor={'#B6E4DA'} stopOpacity={1} />
+          <stop offset="100%" stopColor={'#BAE8DB'} stopOpacity={1} />
         </linearGradient>
       </defs>
-
-      <g transform={`translate(0, 0)`}>
+      <g transform={`translate(${marginLeft}, 0)`}>
         <Animate
           show={show}
           start={() => ({
@@ -162,7 +160,7 @@ const Trend = ({
           }}
         </Animate>
       </g>
-      <g transform={`translate(0, 0)`}>
+      <g transform={`translate(${marginLeft}, 0)`}>
         <Animate
           show={show}
           start={() => ({
@@ -208,7 +206,7 @@ const Trend = ({
       </g>
       {/* Highlight circles */}
       {negative && (
-        <g transform={`translate(0, 0)`}>
+        <g transform={`translate(${marginLeft}, 0)`}>
           {data.map((d, i) => {
             const date = moment(d[timeKey]);
             const value = d[valueKey];
@@ -240,30 +238,50 @@ const Trend = ({
         </g>
       )}
       {min < 9 && (
-        <g>
-          <g>
-            <Line
-              from={{ x: timelineScale(0), y: scaleY(0) }}
-              to={{ x: timelineScale(100), y: scaleY(0) }}
-              stroke={'rgba(0,0,0,.5)'}
-              strokeWidth={1}
-              style={{ pointerEvents: 'none' }}
-              strokeDasharray={[1, 6]}
-            />
-          </g>
-          <g>
-            <Line
-              from={{ x: timelineScale(0), y: scaleY(max / 2) }}
-              to={{ x: timelineScale(100), y: scaleY(max / 2) }}
-              stroke={'rgba(0,0,0,.5)'}
-              strokeWidth={1}
-              style={{ pointerEvents: 'none' }}
-              strokeDasharray={[1, 6]}
-            />
-          </g>
+        <g transform={`translate(${marginLeft}, 0)`}>
+          <Line
+            from={{ x: timelineScale(0), y: scaleY(0) }}
+            to={{ x: timelineScale(100), y: scaleY(0) }}
+            stroke={'rgba(0,0,0,.5)'}
+            strokeWidth={1}
+            style={{ pointerEvents: 'none' }}
+            strokeDasharray={[1, 6]}
+          />
+          <Line
+            from={{ x: timelineScale(0), y: scaleY(-1000) }}
+            to={{ x: timelineScale(100), y: scaleY(-1000) }}
+            stroke={'rgba(0,0,0,.5)'}
+            strokeWidth={1}
+            style={{ pointerEvents: 'none' }}
+            strokeDasharray={[1, 6]}
+          />
+          <Line
+            from={{ x: timelineScale(0), y: scaleY(1000) }}
+            to={{ x: timelineScale(100), y: scaleY(1000) }}
+            stroke={'rgba(0,0,0,.5)'}
+            strokeWidth={1}
+            style={{ pointerEvents: 'none' }}
+            strokeDasharray={[1, 6]}
+          />
+          <Line
+            from={{ x: timelineScale(0), y: scaleY(2000) }}
+            to={{ x: timelineScale(100), y: scaleY(2000) }}
+            stroke={'rgba(0,0,0,.5)'}
+            strokeWidth={1}
+            style={{ pointerEvents: 'none' }}
+            strokeDasharray={[1, 6]}
+          />
+          <Line
+            from={{ x: timelineScale(0), y: scaleY(3000) }}
+            to={{ x: timelineScale(100), y: scaleY(3000) }}
+            stroke={'rgba(0,0,0,.5)'}
+            strokeWidth={1}
+            style={{ pointerEvents: 'none' }}
+            strokeDasharray={[1, 6]}
+          />
         </g>
       )}
-      <g transform={`translate(0, 0)`}>
+      <g transform={`translate(${marginLeft}, 0)`}>
         {parsedData.map((d, i) => {
           const date = moment(d[timeKey]);
           const value = d[valueKey];
@@ -311,7 +329,7 @@ const Trend = ({
         })}
       </g>
       {progress && (
-        <g>
+        <g transform={`translate(${marginLeft}, 0)`}>
           <Line
             from={{ x: timelineScale(progress), y: 0 }}
             to={{ x: timelineScale(progress), y: svgHeight }}
@@ -319,30 +337,10 @@ const Trend = ({
             strokeWidth={4}
             style={{ pointerEvents: 'none' }}
           />
-          {/* <circle
-            cx={timelineScale(progress)}
-            cy={4}
-            r={4}
-            fill={'#E99AA9'}
-            fillOpacity={0.1}
-            stroke="black"
-            strokeOpacity={0.1}
-            strokeWidth={2}
-            style={{ pointerEvents: 'none' }}
-          />
-          <circle
-            cx={timelineScale(progress)}
-            cy={4}
-            r={4}
-            fill={'none'}
-            stroke={'#E99AA9'}
-            strokeWidth={2}
-            style={{ pointerEvents: 'none' }}
-          /> */}
         </g>
       )}
       {!negative && (
-        <g transform={`translate(0, 4)`}>
+        <g transform={`translate(${marginLeft}, 4)`}>
           <AxisBottom
             top={trendHeight - 10}
             left={0}
@@ -368,7 +366,7 @@ const Trend = ({
                         <text
                           transform={`translate(${tickX}, ${tickY}) rotate(${tickRotate})`}
                           fontSize={tickLabelSize}
-                          textAnchor="middle"
+                          textAnchor="start"
                           fill={'rgba(166,4,16,0.5)'}
                         >
                           {tick.formattedValue}
@@ -382,6 +380,29 @@ const Trend = ({
           </AxisBottom>
         </g>
       )}
+      <g transform={`translate(${marginLeft}, 4)`}>
+        <AxisLeft
+          top={0}
+          left={0}
+          scale={negative ? scaleY : scaleY2}
+          numTicks={negative ? 4 : 2}
+          hideAxisLine={true}
+          hideTicks={true}
+          label=""
+          stroke="#1b1a1e"
+          tickLabelProps={(value, index) => ({
+            fill: 'rgba(0,0,0,.5)',
+            textAnchor: 'end',
+            fontSize: 11,
+            fontFamily: 'Porpora',
+            dx: '-0.3em',
+            dy: '0',
+          })}
+          tickComponent={({ formattedValue, ...tickProps }) => (
+            <text {...tickProps}>{formattedValue}</text>
+          )}
+        />
+      </g>
     </svg>
   );
 };
