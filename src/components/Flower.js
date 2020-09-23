@@ -19,6 +19,9 @@ const Flower = ({ colorA, colorB, colorC, data, height, progress }) => {
   });
   const flattenDates = merge(dates);
   const [minDate, maxDate] = extent(flattenDates, (d) => d);
+  const [min, max] = extent(dataArray, (d) => d.v);
+  console.log(min, max);
+
   const radius = height / 3.5;
   const circumference = 2 * Math.PI * radius;
   const nOfPetals = dataArray.length;
@@ -27,17 +30,13 @@ const Flower = ({ colorA, colorB, colorC, data, height, progress }) => {
       ? parseInt(circumference / (nOfPetals - 1))
       : parseInt(circumference / nMinPetals);
   const angleD = (Math.PI * 2) / nOfPetals;
-  const scaleY = scaleLinear().domain([0, 1000]).range([0, petalMaxWidth]);
-  // const scaleWidth = scaleLinear()
-  //   .domain([0, Number(maxDate) - Number(minDate) - 1])
-  //   .range([0, circumference]);
+  const scaleY = scaleLinear()
+    .domain([min, max])
+    .range([0, petalMaxWidth * 1.2]);
 
-  const startDate = moment('1840-01-01');
-  const endDate = moment('2014-01-01');
+  const startDate = moment(minDate);
+  const endDate = moment(maxDate);
   const scaleX = scaleTime().domain([startDate, endDate]).range([0, 0.5]);
-
-  // console.log(Number(maxDate) - Number(minDate) - 1);
-  // console.log(circumference);
 
   const progressData = scaleX.invert(progress.toFixed(3));
   const progressYear = moment(progressData).year();

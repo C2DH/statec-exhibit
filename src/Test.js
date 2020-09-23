@@ -4,6 +4,7 @@ import Trend from './components/Trend';
 import populationDataset from './data/datasets/population.json';
 import landing from './assets/images/landing.svg';
 import theme from './data/themes/theme-01.json';
+import Flower from './components/Flower';
 
 class Test extends Component {
   state = {
@@ -17,6 +18,7 @@ class Test extends Component {
       element.children[0].style.position = 'fixed';
       element.children[0].style.top = '50vh';
       element.children[0].style.paddingTop = 0;
+      element.children[0].style.left = 0;
     }
     this.setState({ data });
   };
@@ -26,6 +28,7 @@ class Test extends Component {
     if (element.children[0]) {
       element.children[0].style.position = 'relative';
       element.children[0].style.top = '0';
+      element.children[0].style.paddingTop = '50vh';
     }
   };
 
@@ -67,10 +70,14 @@ class Test extends Component {
                     top: 0,
                     zIndex: 3,
                     backgroundColor: 'rgb(208, 228, 231)',
+                    height: '50vh',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    justifyContent: 'justify-between',
                   }}
                 >
-                  <div className="">
-                    <div className="mt3">
+                  <div style={{ height: '170px' }}>
+                    <div className="mt3" style={{ paddingTop: '50px' }}>
                       <Trend
                         data={populationDataset.values}
                         height={70}
@@ -103,15 +110,15 @@ class Test extends Component {
                       aaaaa
                     </div>
                   </div>
+                  <div className="hr"></div>
                 </div>
-                <div className="hr"></div>
-                <div>
+                <div style={{ overflow: 'hidden' }}>
                   <Scrollama
                     onStepEnter={this.onStepEnter}
                     onStepExit={this.onStepExit}
                     progress
                     onStepProgress={this.onStepProgress}
-                    offset={0}
+                    offset={0.5}
                     threshold={0}
                   >
                     {theme.modules.map((mod, i) => {
@@ -121,20 +128,24 @@ class Test extends Component {
                       return (
                         <Step data={i} key={i}>
                           <div style={{ height: '250vh' }}>
-                            <div
-                              className="section"
-                              style={{ paddingTop: '50vh' }}
-                            >
+                            <div className="section" style={{ paddingTop: 0 }}>
                               <div className="sectionText">
                                 <div
                                   className="moduleTitle"
                                   style={{ position: 'relative' }}
                                 >
-                                  aaaaa
+                                  {flowerDataset.title}
                                 </div>
-                                <div className="moduleSubTitle">aaaaa</div>
-
-                                <p className="moduleParagraph">aaaaa</p>
+                                {flowerDataset.subheading && (
+                                  <div className="moduleSubTitle">
+                                    {flowerDataset.subheading}
+                                  </div>
+                                )}
+                                {flowerDataset.paragraphs && (
+                                  <p className="moduleParagraph">
+                                    {flowerDataset.paragraphs}
+                                  </p>
+                                )}
                               </div>
                               <div className="vizContainer">
                                 <div
@@ -143,12 +154,28 @@ class Test extends Component {
                                     display: 'flex',
                                     overflow: 'hidden',
                                   }}
-                                ></div>
+                                >
+                                  {flowerDataset.values.map((v, j) => {
+                                    return (
+                                      <div
+                                        style={{ width: '50%' }}
+                                        key={`flower-${j}`}
+                                      >
+                                        <Flower
+                                          colorA={'#F2C4B0'}
+                                          colorB={'#E8BCA9'}
+                                          colorC={'#E989A9'}
+                                          data={v}
+                                          height={window.innerWidth * 0.25}
+                                          progress={progress}
+                                          key={`flower-${j}`}
+                                        />
+                                      </div>
+                                    );
+                                  })}
+                                </div>
                                 <div
-                                  style={{
-                                    width: '40%',
-                                    paddingLeft: '30px',
-                                  }}
+                                  style={{ width: '40%', paddingLeft: '30px' }}
                                 >
                                   <div className="peakDate">{`Peak date ${i}`}</div>
                                   <div className="peakTitle">
