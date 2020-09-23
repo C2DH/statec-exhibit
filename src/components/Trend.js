@@ -98,7 +98,7 @@ const Trend = ({
       x="0px"
       y="0px"
       width={svgWidth}
-      height={svgHeight}
+      height={negative ? svgHeight : 200}
       style={{
         border: '0px solid rgba(0,0,0,0.2)',
         margin: 'auto',
@@ -218,11 +218,10 @@ const Trend = ({
                     id={`circle-${i}`}
                     cx={scaleX(date)}
                     cy={trendHeight - scaleY(value)}
-                    stroke={'#43449a'}
-                    fill={'transparent'}
-                    r={6}
+                    fill={'#D1646C'}
+                    r={8}
                   />
-                  <text
+                  {/* <text
                     dx={
                       isMobileWithTablet ? scaleX(date) + 20 : scaleX(date) - 20
                     }
@@ -230,7 +229,7 @@ const Trend = ({
                     textAnchor={isMobileWithTablet ? 'start' : 'end'}
                   >
                     {date.format('MMMM YYYY')}
-                  </text>
+                  </text> */}
                 </g>
               );
             }
@@ -366,7 +365,7 @@ const Trend = ({
                         <text
                           transform={`translate(${tickX}, ${tickY}) rotate(${tickRotate})`}
                           fontSize={tickLabelSize}
-                          textAnchor="start"
+                          textAnchor="middle"
                           fill={'rgba(166,4,16,0.5)'}
                         >
                           {tick.formattedValue}

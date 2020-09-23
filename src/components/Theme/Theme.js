@@ -79,7 +79,7 @@ const Theme = ({
                         progress={progress}
                         negative={true}
                       />
-                      <div className="moduleTitle" style={{ bottom: 0 }}>
+                      <div className="moduleTitle" style={{ bottom: -16 }}>
                         {moduleDataset.title}
                       </div>
                     </div>
@@ -128,12 +128,12 @@ const Theme = ({
                         })}
                       </div>
                       <div style={{ width: '40%', paddingLeft: '30px' }}>
-                        <h3>Peak date</h3>
-                        <h5>
+                        <div className="peakDate">Peak date</div>
+                        <div className="peakTitle">
                           Peak explanation lorem ipsum dolor sit amet,
                           consectetur adipiscing elit, sed do eiusmod tempor
                           incididunt ut labore et dolore magna aliqua.
-                        </h5>
+                        </div>
                       </div>
                     </div>
                   </div>

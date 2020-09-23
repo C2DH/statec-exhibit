@@ -155,9 +155,33 @@ p.moduleParagraph {
   opacity: 1;
 }
 
+.peakDate {
+  font-family: Sneaky;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 36px;
+  /* identical to box height */
+
+  text-decoration-line: underline;
+
+  color: #d1646c;
+}
+
+.peakTitle {
+  font-family: Sneaky;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 36px;
+  color: #d1646c;
+  margin-top: 30px;
+}
+
 .hr {
   width: 100%;
   height: 1px;
   background-color: #433aa9;
-  margin: 45px 0;
+  margin: 45px 0 30px 0;
+  opacity: 0.8;
 }
