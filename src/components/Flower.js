@@ -80,7 +80,7 @@ const Flower = ({ colorA, colorB, colorC, data, height, progress }) => {
             // );
             let selected = false;
             const keyYear = keysArray[i];
-            console.log('keyYear', keyYear, 'progressYear', progressYear);
+            //console.log('keyYear', keyYear, 'progressYear', progressYear);
             if (keyYear.includes('-')) {
               const [minKey, maxKey] = keyYear.split('-');
               if (
