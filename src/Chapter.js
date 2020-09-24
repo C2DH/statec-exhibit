@@ -63,6 +63,8 @@ class Chapter extends Component {
     const themeDataset = require(`./data/datasets/${themeDatasetName}.json`);
     const moduleDataset = require(`./data/datasets/population-solde.json`);
 
+    console.log('here');
+
     return (
       <div className="w-100">
         {heading && (
