@@ -109,7 +109,7 @@ class Chapter extends Component {
                   zIndex: 3,
                   backgroundColor: color,
                   height: '50vh',
-                  paddingTop: '15px',
+                  paddingTop: '1vh',
                   display: 'flex',
                   flexDirection: 'column',
                   justifyContent: 'justify-between',
@@ -121,7 +121,7 @@ class Chapter extends Component {
                     title={populationDataset.title}
                     data={populationDataset.values}
                     progress={progress}
-                    height={window.innerHeight * 0.1}
+                    height={window.innerHeight * 0.24 - 100}
                     valueKey="v"
                     timeKey="t"
                     trendName={'populationTrend'}
@@ -132,7 +132,7 @@ class Chapter extends Component {
                   <Trend
                     title={moduleDataset.title}
                     data={moduleDataset.values}
-                    height={window.innerHeight * 0.15}
+                    height={window.innerHeight * 0.25 - 63}
                     valueKey="v"
                     timeKey="t"
                     highlightKey="h"

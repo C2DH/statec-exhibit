@@ -10,7 +10,7 @@ import { AxisBottom, AxisLeft } from '@vx/axis';
 import { Group } from '@vx/group';
 import { isMobileWithTablet } from '../constants';
 import { red } from '../constants';
-
+import { useStore } from '../store';
 const Trend = ({
   data,
   toggleNote,
@@ -98,6 +98,9 @@ const Trend = ({
   const actualYear = progress
     ? scaleX.invert(timelineScale(progress)).getFullYear()
     : null;
+
+  useStore.setState({ actualYear: actualYear });
+
   const actualValue = data.find((d) => {
     return d.t === String(actualYear);
   });
@@ -421,7 +424,7 @@ const Trend = ({
               fontSize: 11,
               fontFamily: 'Porpora',
               dx: '-4vw',
-              dy: '1vh',
+              dy: '.5vh',
             })}
             tickComponent={({ formattedValue, ...tickProps }) => (
               <text {...tickProps}>{formattedValue}</text>

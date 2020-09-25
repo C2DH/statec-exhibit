@@ -4,9 +4,11 @@ import { extent, merge } from 'd3-array';
 import { scaleLinear, scaleTime } from 'd3-scale';
 import moment from 'moment';
 import { red } from '../constants';
+import { useStore } from '../store';
+
 const nMinPetals = 8;
 
-const Flower = ({ colorA, colorB, colorC, data, height, progress }) => {
+const Flower = ({ colorA, colorB, colorC, data, height }) => {
   const title = data.group;
   let selectedTime = null;
   const dataArray = Object.values(data.keys);
@@ -21,7 +23,7 @@ const Flower = ({ colorA, colorB, colorC, data, height, progress }) => {
   const flattenDates = merge(dates);
   const [minDate, maxDate] = extent(flattenDates, (d) => d);
   const [min, max] = extent(dataArray, (d) => d.v);
-  const radius = height / 3.5;
+  const radius = height / 4;
   const circumference = 2 * Math.PI * radius;
   const nOfPetals = dataArray.length;
   const petalMaxWidth =
@@ -38,8 +40,10 @@ const Flower = ({ colorA, colorB, colorC, data, height, progress }) => {
   const endDate = moment(maxDate);
   const scaleX = scaleTime().domain([startDate, endDate]).range([0, 0.5]);
 
-  const progressData = scaleX.invert(progress.toFixed(3));
-  const progressYear = moment(progressData).year();
+  // const progressData = scaleX.invert(progress.toFixed(3));
+  // const progressYear = moment(progressData).year();
+  const progressYear = useStore.getState().actualYear;
+  console.log('progressYear', progressYear);
 
   return (
     <div style={{ position: 'relative', width: height }}>
@@ -72,7 +76,8 @@ const Flower = ({ colorA, colorB, colorC, data, height, progress }) => {
         </defs>
         <g transform={`translate(${height / 2},${height / 2})`}>
           {dataArray.map((d, i) => {
-            const angle = i * angleD + Math.PI;
+            const angle = (dataArray.length - i) * angleD + Math.PI;
+            console.log('angle', angle);
             const deg = angle * (180 / Math.PI);
             const petalWidth =
               nOfPetals > nMinPetals
@@ -146,7 +151,7 @@ const Flower = ({ colorA, colorB, colorC, data, height, progress }) => {
         dx={2}
         style={{
           color: red,
-          fontSize: '20px',
+          fontSize: '1.4vw',
           justifyContent: 'center',
           textAlign: 'center',
           position: 'absolute',
