@@ -8,6 +8,30 @@
       "title": "Luxembourg a third world country",
       "datasetHeading": "population-solde",
       "dataset": "population-destination",
+      "subheading": "Lorem ipsum dolorem sit amet",
+      "layout": "text",
+      "attachments": [
+        {
+          "startDate": "1840-01-01",
+          "endDate": "1840-12-23",
+          "title": "Circulaire N°9479 concernant, entre autres, l'inscriptions des enfants morts-nés.",
+          "type": "pdf",
+          "url": "http://legilux.public.lu/eli/etat/leg/cmin/1840/12/23/n1/jo"
+        },
+        {
+          "startDate": "1843-07-26",
+          "endDate": "1843-07-26",
+          "title": "Loi du 26 juillet 1843, N° 1709b, sur l'instruction primaire.",
+          "type": "pdf",
+          "url": "http://legilux.public.lu/eli/etat/leg/loi/1843/07/26/n1/jo"
+        }
+      ]
+    },
+    {
+      "id": "a-third-world-country",
+      "title": "Luxembourg a third world country",
+      "datasetHeading": "population-solde",
+      "dataset": "population-destination",
       "layout": "flowers",
       "attachments": [
         {
@@ -36,6 +60,15 @@
     {
       "id": "a-country-of-migrations",
       "title": "Lxembourg wasn't immune to overseas appeal...",
+      "subheading": "Lorem ipsum dolorem sit amet",
+      "datasetHeading": "population-solde",
+      "dataset": "transatlantic-emigrations",
+      "layout": "text",
+      "attachments": []
+    },
+    {
+      "id": "a-country-of-migrations",
+      "title": "Lxembourg wasn't immune to overseas appeal...",
       "datasetHeading": "population-solde",
       "dataset": "transatlantic-emigrations",
       "layout": "flowers",
@@ -45,7 +78,26 @@
       "title": "Which nationality have people that leave Luxembourg? 1",
       "datasetHeading": "trend-excess-arrivals-departures",
       "dataset": "departures-summary",
+      "layout": "text",
       "subheading": "We can get the general dynamic of people arriving or leaving Luxembourg: from 1960to 2011 we count 545 000 arrivals and 370 000 departure in total. The number of arrivals is always bigger that the number of departures except for 1967 due to the economic crisis",
+      "paragraphs": [
+        {
+          "year": "1960-1975",
+          "text": "Les départs tendent cependant plutôt à diminuer légèrement au cours des années 1960, puis se stabilisent jusqu’au milieu des années 1990.",
+          "source": "(todo)"
+        },
+        {
+          "year": "1975-1985",
+          "text": "La crise des années 1975-1985 se répercute sur les migrations (chute des arrivées et ce sont surtout les Portugais qui jouent le rôle d'ajustement)",
+          "source": "(todo)"
+        }
+      ]
+    },
+    {
+      "title": "Which nationality have people that leave Luxembourg? 1",
+      "datasetHeading": "trend-excess-arrivals-departures",
+      "dataset": "departures-summary",
+      "layout": "flowers",
       "paragraphs": [
         {
           "year": "1960-1975",
@@ -63,7 +115,24 @@
       "title": "Which nationality have people that leave Luxembourg? 2",
       "datasetHeading": "trend-excess-arrivals-departures",
       "dataset": "departures-by-nationalities",
-      "subheading": "Dataset more specific on departures by nationality"
+      "subheading": "Dataset more specific on departures by nationality",
+      "layout": "text"
+    },
+    {
+      "title": "Which nationality have people that leave Luxembourg? 2",
+      "datasetHeading": "trend-excess-arrivals-departures",
+      "dataset": "departures-by-nationalities",
+      "subheading": "Dataset more specific on departures by nationality",
+      "layout": "flowers"
+    },
+    {
+      "id": "the-portuguese decennias",
+      "title": "The Portuguese decennias",
+      "subheading": "En 1969, les Portugais apparaissent pour la première fois comme catégorie séparée dans les statistiques des soldes migratoires. En 1970, ils constituent le groupe d’arrivants le plus important et le resteront de manière presque continue.",
+      "datasetHeading": "population-solde",
+      "dataset": "arrivals-by-nationalities",
+      "layout": "text",
+      "attachments": []
     },
     {
       "id": "the-portuguese decennias",
@@ -72,6 +141,14 @@
       "datasetHeading": "population-solde",
       "dataset": "arrivals-by-nationalities",
       "layout": "flowers",
+      "attachments": []
+    },
+    {
+      "id": "a-country-of-migrations",
+      "title": "Going abroad: overall departures",
+      "datasetHeading": "population-solde",
+      "dataset": "departures-summary",
+      "layout": "text",
       "attachments": []
     },
     {

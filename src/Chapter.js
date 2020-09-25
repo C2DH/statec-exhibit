@@ -4,6 +4,7 @@ import Trend from './components/Trend';
 import populationDataset from './data/datasets/population.json';
 import landing from './assets/images/landing.svg';
 import Container from './components/Container';
+import TextContainer from './components/TextContainer';
 
 class Chapter extends Component {
   constructor(props) {
@@ -28,7 +29,7 @@ class Chapter extends Component {
   onStepEnter = ({ element, data }) => {
     if (element.children[0]) {
       element.children[0].style.position = 'fixed';
-      element.children[0].style.top = '50vh';
+      element.children[0].style.top = '48vh';
       element.children[0].style.paddingTop = 0;
       element.children[0].style.left = '5%';
       element.children[0].style.width = '90%';
@@ -62,8 +63,6 @@ class Chapter extends Component {
     const themeDatasetName = theme.dataset;
     const themeDataset = require(`./data/datasets/${themeDatasetName}.json`);
     const moduleDataset = require(`./data/datasets/population-solde.json`);
-
-    console.log('here');
 
     return (
       <div className="w-100">
@@ -113,23 +112,23 @@ class Chapter extends Component {
                 }}
               >
                 <div style={{ height: '170px' }}>
-                  <div className="mt3" style={{ paddingTop: '50px' }}>
+                  <div className="mt3" style={{ paddingTop: '15px' }}>
                     <Trend
+                      title={populationDataset.title}
                       data={populationDataset.values}
+                      progress={progress}
                       height={70}
                       valueKey="v"
                       timeKey="t"
                       trendName={'populationTrend'}
                       negative={false}
                     />
-                    <div className="moduleTitle" style={{ top: 10 }}>
-                      Population (1840-2014)
-                    </div>
                   </div>
                 </div>
                 <div className="sectionTitle">{theme.title}</div>
                 <div className="relative">
                   <Trend
+                    title={moduleDataset.title}
                     data={moduleDataset.values}
                     height={window.innerHeight * 0.2}
                     valueKey="v"
@@ -139,9 +138,6 @@ class Chapter extends Component {
                     progress={progress}
                     negative={true}
                   />
-                  <div className="moduleTitle" style={{ bottom: -30 }}>
-                    {moduleDataset.title}
-                  </div>
                 </div>
                 <div className="hr"></div>
               </div>
@@ -154,17 +150,28 @@ class Chapter extends Component {
                   offset={0.42}
                   threshold={0}
                 >
-                  {theme.modules.map((mod, i) => {
-                    const datasetName = mod.dataset;
-                    const flowerDataset = require(`./data/datasets/${datasetName}.json`);
-                    const moduleDatasetName = mod.datasetHeading;
+                  {theme.modules.map((module, i) => {
+                    const datasetName = module.dataset;
+                    const moduleDataset = require(`./data/datasets/${datasetName}.json`);
+                    const moduleDatasetName = module.datasetHeading;
                     return (
                       <Step data={i} key={i}>
-                        <div style={{ height: '200vh', paddingTop: '50vh' }}>
-                          <Container
-                            flowerDataset={flowerDataset}
-                            progress={i === data ? progress : 0}
-                          />
+                        <div style={{ height: '200vh', paddingTop: '48vh' }}>
+                          {module.layout === 'flowers' && (
+                            <Container
+                              module={module}
+                              moduleDataset={moduleDataset}
+                              progress={i === data ? progress : 0}
+                              shouldRender={i === data}
+                            />
+                          )}
+                          {module.layout === 'text' && (
+                            <TextContainer
+                              module={module}
+                              progress={i === data ? progress : 0}
+                              shouldRender={i === data}
+                            />
+                          )}
                         </div>
                       </Step>
                     );

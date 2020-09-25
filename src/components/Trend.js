@@ -26,6 +26,7 @@ const Trend = ({
   trendName,
   progress,
   negative,
+  title,
 }) => {
   const [show, setShow] = useState(false);
   const [pathLength, setPathLength] = useState(1000);
@@ -92,136 +93,154 @@ const Trend = ({
     }
   });
 
-  return (
-    <svg
-      className="viz"
-      x="0px"
-      y="0px"
-      width={svgWidth}
-      height={negative ? svgHeight : 200}
-      style={{
-        border: '0px solid rgba(0,0,0,0.2)',
-        margin: 'auto',
-      }}
-    >
-      <defs>
-        <linearGradient
-          id={`${trendName}Gradient`}
-          x1="0%"
-          y1={negative ? '100%' : '0%'}
-          x2="0%"
-          y2={negative ? '0%' : '100%'}
-          gradientUnits="objectBoundingBox"
-        >
-          <stop offset="0%" stopColor={'#86B9D4'} stopOpacity={1} />
-          <stop offset="14.46%" stopColor={'#93C5D6'} stopOpacity={1} />
-          <stop offset="44.26%" stopColor={'#A9D8D9'} stopOpacity={1} />
-          <stop offset="73.17%" stopColor={'#B6E4DA'} stopOpacity={1} />
-          <stop offset="100%" stopColor={'#BAE8DB'} stopOpacity={1} />
-        </linearGradient>
-      </defs>
-      <g transform={`translate(${marginLeft}, 0)`}>
-        <Animate
-          show={show}
-          start={() => ({
-            j: 0,
-            timing: { duration: 300, ease: easeQuadOut },
-          })}
-          enter={() => ({
-            j: [1],
-            timing: { duration: 1000, ease: easeQuadOut, delay: 500 },
-          })}
-          update={() => ({
-            j: [1],
-            timing: { duration: 1000, ease: easeQuadOut, delay: 500 },
-          })}
-          leave={() => ({
-            j: [0],
-            timing: { duration: 0 },
-          })}
-        >
-          {(state) => {
-            const { j } = state;
-            return (
-              <AreaClosed
-                data={data}
-                x={(d) => scaleX(x(d))}
-                y={(d) => scaleY2(y(d))}
-                y0={negative ? 0 : svgHeight}
-                yScale={scaleY2}
-                fill={`url(#${trendName}Gradient)`}
-                fillOpacity={j}
-                strokeWidth={0}
-                curve={curveMonotoneX}
-                // strokeDasharray={5000}
-                // strokeDashoffset={j}
-              />
-            );
-          }}
-        </Animate>
-      </g>
-      <g transform={`translate(${marginLeft}, 0)`}>
-        <Animate
-          show={show}
-          start={() => ({
-            j: pathLength,
-            o: 0,
-          })}
-          enter={() => ({
-            j: [0],
-            o: [1],
-            timing: { duration: 1400, delay: 0, ease: easeQuadOut },
-          })}
-          update={() => ({
-            j: [0],
-            o: [1],
-            timing: { duration: 1400, ease: easeQuadOut },
-          })}
-          leave={() => ({
-            j: [pathLength],
-            o: [0],
-            timing: { duration: 0 },
-          })}
-        >
-          {(state) => {
-            const { j, o } = state;
-            return (
-              <LinePath
-                data={data}
-                innerRef={(node) => {
-                  if (node) {
-                    setPathLength(node.getTotalLength());
-                  }
-                }}
-                x={(d) => scaleX(x(d))}
-                y={(d) => scaleY2(y(d))}
-                curve={curveMonotoneX}
-                strokeDasharray={pathLength}
-                strokeDashoffset={j}
-                opacity={o}
-              />
-            );
-          }}
-        </Animate>
-      </g>
-      {/* Highlight circles */}
-      {negative && (
-        <g transform={`translate(${marginLeft}, 0)`}>
-          {data.map((d, i) => {
-            const date = moment(d[timeKey]);
-            const value = d[valueKey];
+  const actualYear = progress
+    ? scaleX.invert(timelineScale(progress)).getFullYear()
+    : null;
+  const actualValue = data.find((d) => {
+    return d.t === String(actualYear);
+  });
 
-            if (d.h) {
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column' }}>
+      {!negative && (
+        <div style={{ display: 'flex', alignItems: 'center' }}>
+          <div className="moduleTitle">{title}</div>
+          <div className="moduleProgress">
+            {progress
+              ? `${actualYear}: ${actualValue ? actualValue.v : null}`
+              : ''}
+          </div>
+        </div>
+      )}
+      <svg
+        className="viz"
+        x="0px"
+        y="0px"
+        width={svgWidth}
+        height={negative ? svgHeight : 200}
+        style={{
+          border: '0px solid rgba(0,0,0,0.2)',
+          margin: 'auto',
+        }}
+      >
+        <defs>
+          <linearGradient
+            id={`${trendName}Gradient`}
+            x1="0%"
+            y1={negative ? '100%' : '0%'}
+            x2="0%"
+            y2={negative ? '0%' : '100%'}
+            gradientUnits="objectBoundingBox"
+          >
+            <stop offset="0%" stopColor={'#86B9D4'} stopOpacity={1} />
+            <stop offset="14.46%" stopColor={'#93C5D6'} stopOpacity={1} />
+            <stop offset="44.26%" stopColor={'#A9D8D9'} stopOpacity={1} />
+            <stop offset="73.17%" stopColor={'#B6E4DA'} stopOpacity={1} />
+            <stop offset="100%" stopColor={'#BAE8DB'} stopOpacity={1} />
+          </linearGradient>
+        </defs>
+        <g transform={`translate(${marginLeft}, 0)`}>
+          <Animate
+            show={show}
+            start={() => ({
+              j: 0,
+              timing: { duration: 300, ease: easeQuadOut },
+            })}
+            enter={() => ({
+              j: [1],
+              timing: { duration: 1000, ease: easeQuadOut, delay: 500 },
+            })}
+            update={() => ({
+              j: [1],
+              timing: { duration: 1000, ease: easeQuadOut, delay: 500 },
+            })}
+            leave={() => ({
+              j: [0],
+              timing: { duration: 0 },
+            })}
+          >
+            {(state) => {
+              const { j } = state;
               return (
-                <g key={i} onClick={() => toggleNote(d.note)}>
-                  <circle
-                    id={`circle-${i}`}
-                    cx={scaleX(date)}
-                    cy={trendHeight - scaleY(value)}
-                    fill={'#D1646C'}
-                    r={8}
-                  />
-                  {/* <text
+                <AreaClosed
+                  data={data}
+                  x={(d) => scaleX(x(d))}
+                  y={(d) => scaleY2(y(d))}
+                  y0={negative ? 0 : svgHeight}
+                  yScale={scaleY2}
+                  fill={`url(#${trendName}Gradient)`}
+                  fillOpacity={j}
+                  strokeWidth={0}
+                  curve={curveMonotoneX}
+                  // strokeDasharray={5000}
+                  // strokeDashoffset={j}
+                />
+              );
+            }}
+          </Animate>
+        </g>
+        <g transform={`translate(${marginLeft}, 0)`}>
+          <Animate
+            show={show}
+            start={() => ({
+              j: pathLength,
+              o: 0,
+            })}
+            enter={() => ({
+              j: [0],
+              o: [1],
+              timing: { duration: 1400, delay: 0, ease: easeQuadOut },
+            })}
+            update={() => ({
+              j: [0],
+              o: [1],
+              timing: { duration: 1400, ease: easeQuadOut },
+            })}
+            leave={() => ({
+              j: [pathLength],
+              o: [0],
+              timing: { duration: 0 },
+            })}
+          >
+            {(state) => {
+              const { j, o } = state;
+              return (
+                <LinePath
+                  data={data}
+                  innerRef={(node) => {
+                    if (node) {
+                      setPathLength(node.getTotalLength());
+                    }
+                  }}
+                  x={(d) => scaleX(x(d))}
+                  y={(d) => scaleY2(y(d))}
+                  curve={curveMonotoneX}
+                  strokeDasharray={pathLength}
+                  strokeDashoffset={j}
+                  opacity={o}
+                />
+              );
+            }}
+          </Animate>
+        </g>
+        {/* Highlight circles */}
+        {negative && (
+          <g transform={`translate(${marginLeft}, 0)`}>
+            {data.map((d, i) => {
+              const date = moment(d[timeKey]);
+              const value = d[valueKey];
+
+              if (d.h) {
+                return (
+                  <g key={i} onClick={() => toggleNote(d.note)}>
+                    <circle
+                      id={`circle-${i}`}
+                      cx={scaleX(date)}
+                      cy={trendHeight - scaleY(value)}
+                      fill={'#D1646C'}
+                      r={8}
+                    />
+                    {/* <text
                     dx={
                       isMobileWithTablet ? scaleX(date) + 20 : scaleX(date) - 20
                     }
@@ -230,179 +249,192 @@ const Trend = ({
                   >
                     {date.format('MMMM YYYY')}
                   </text> */}
-                </g>
-              );
-            }
-          })}
-        </g>
-      )}
-      {min < 9 && (
+                  </g>
+                );
+              }
+            })}
+          </g>
+        )}
+        {min < 9 && (
+          <g transform={`translate(${marginLeft}, 0)`}>
+            <Line
+              from={{ x: timelineScale(0), y: scaleY(0) }}
+              to={{ x: timelineScale(100), y: scaleY(0) }}
+              stroke={'rgba(0,0,0,.5)'}
+              strokeWidth={1}
+              style={{ pointerEvents: 'none' }}
+              strokeDasharray={[1, 6]}
+            />
+            <Line
+              from={{ x: timelineScale(0), y: scaleY(-1000) }}
+              to={{ x: timelineScale(100), y: scaleY(-1000) }}
+              stroke={'rgba(0,0,0,.5)'}
+              strokeWidth={1}
+              style={{ pointerEvents: 'none' }}
+              strokeDasharray={[1, 6]}
+            />
+            <Line
+              from={{ x: timelineScale(0), y: scaleY(1000) }}
+              to={{ x: timelineScale(100), y: scaleY(1000) }}
+              stroke={'rgba(0,0,0,.5)'}
+              strokeWidth={1}
+              style={{ pointerEvents: 'none' }}
+              strokeDasharray={[1, 6]}
+            />
+            <Line
+              from={{ x: timelineScale(0), y: scaleY(2000) }}
+              to={{ x: timelineScale(100), y: scaleY(2000) }}
+              stroke={'rgba(0,0,0,.5)'}
+              strokeWidth={1}
+              style={{ pointerEvents: 'none' }}
+              strokeDasharray={[1, 6]}
+            />
+            <Line
+              from={{ x: timelineScale(0), y: scaleY(3000) }}
+              to={{ x: timelineScale(100), y: scaleY(3000) }}
+              stroke={'rgba(0,0,0,.5)'}
+              strokeWidth={1}
+              style={{ pointerEvents: 'none' }}
+              strokeDasharray={[1, 6]}
+            />
+          </g>
+        )}
         <g transform={`translate(${marginLeft}, 0)`}>
-          <Line
-            from={{ x: timelineScale(0), y: scaleY(0) }}
-            to={{ x: timelineScale(100), y: scaleY(0) }}
-            stroke={'rgba(0,0,0,.5)'}
-            strokeWidth={1}
-            style={{ pointerEvents: 'none' }}
-            strokeDasharray={[1, 6]}
-          />
-          <Line
-            from={{ x: timelineScale(0), y: scaleY(-1000) }}
-            to={{ x: timelineScale(100), y: scaleY(-1000) }}
-            stroke={'rgba(0,0,0,.5)'}
-            strokeWidth={1}
-            style={{ pointerEvents: 'none' }}
-            strokeDasharray={[1, 6]}
-          />
-          <Line
-            from={{ x: timelineScale(0), y: scaleY(1000) }}
-            to={{ x: timelineScale(100), y: scaleY(1000) }}
-            stroke={'rgba(0,0,0,.5)'}
-            strokeWidth={1}
-            style={{ pointerEvents: 'none' }}
-            strokeDasharray={[1, 6]}
-          />
-          <Line
-            from={{ x: timelineScale(0), y: scaleY(2000) }}
-            to={{ x: timelineScale(100), y: scaleY(2000) }}
-            stroke={'rgba(0,0,0,.5)'}
-            strokeWidth={1}
-            style={{ pointerEvents: 'none' }}
-            strokeDasharray={[1, 6]}
-          />
-          <Line
-            from={{ x: timelineScale(0), y: scaleY(3000) }}
-            to={{ x: timelineScale(100), y: scaleY(3000) }}
-            stroke={'rgba(0,0,0,.5)'}
-            strokeWidth={1}
-            style={{ pointerEvents: 'none' }}
-            strokeDasharray={[1, 6]}
-          />
-        </g>
-      )}
-      <g transform={`translate(${marginLeft}, 0)`}>
-        {parsedData.map((d, i) => {
-          const date = moment(d[timeKey]);
-          const value = d[valueKey];
+          {parsedData.map((d, i) => {
+            const date = moment(d[timeKey]);
+            const value = d[valueKey];
 
-          const startAnimation = trendHeight;
+            const startAnimation = trendHeight;
 
-          return (
-            <g key={i}>
-              <Animate
-                show={show}
-                start={() => ({
-                  y2: startAnimation,
-                })}
-                enter={() => ({
-                  y2: [0],
-                  timing: { duration: 1000, ease: easeQuadOut, delay: 500 },
-                })}
-                update={() => ({
-                  y2: [0],
-                  timing: { duration: 1000, ease: easeQuadOut, delay: 500 },
-                })}
-                leave={() => ({
-                  y2: [0],
-                  timing: { duration: 0 },
-                })}
-              >
-                {(state) => {
-                  const { y2 } = state;
-                  return (
-                    <line
-                      id={`line-${i}`}
-                      x1={scaleX(date)}
-                      y1={trendHeight}
-                      x2={scaleX(date)}
-                      y2={y2}
-                      stroke={'#E99AA9'}
-                      strokeWidth={0.5}
-                      strokeDasharray="4 4"
-                    />
-                  );
-                }}
-              </Animate>
-            </g>
-          );
-        })}
-      </g>
-      {progress && (
-        <g transform={`translate(${marginLeft}, 0)`}>
-          <Line
-            from={{ x: timelineScale(progress), y: 0 }}
-            to={{ x: timelineScale(progress), y: svgHeight }}
-            stroke={'#E99AA9'}
-            strokeWidth={4}
-            style={{ pointerEvents: 'none' }}
-          />
-        </g>
-      )}
-      {!negative && (
-        <g transform={`translate(${marginLeft}, 4)`}>
-          <AxisBottom
-            top={trendHeight - 10}
-            left={0}
-            scale={scaleX}
-            numTicks={isMobileWithTablet ? 4 : 8}
-            label="Time"
-          >
-            {(axis) => {
-              const tickLabelSize = 14;
-              const tickRotate = 0;
-              const axisCenter =
-                (axis.axisToPoint.x - axis.axisFromPoint.x) / 2;
-              return (
-                <g className="my-custom-bottom-axis">
-                  {axis.ticks.map((tick, i) => {
-                    const tickX = tick.to.x;
-                    const tickY = tick.to.y + tickLabelSize + axis.tickLength;
-                    return (
-                      <Group
-                        key={`vx-tick-${tick.value}-${i}`}
-                        className={'vx-axis-tick'}
-                      >
-                        <text
-                          transform={`translate(${tickX}, ${tickY}) rotate(${tickRotate})`}
-                          fontSize={tickLabelSize}
-                          textAnchor="middle"
-                          fill={'rgba(166,4,16,0.5)'}
-                        >
-                          {tick.formattedValue}
-                        </text>
-                      </Group>
-                    );
+            return (
+              <g key={i}>
+                <Animate
+                  show={show}
+                  start={() => ({
+                    y2: startAnimation,
                   })}
-                </g>
-              );
-            }}
-          </AxisBottom>
-        </g>
-      )}
-      <g transform={`translate(${marginLeft}, 4)`}>
-        <AxisLeft
-          top={0}
-          left={0}
-          scale={negative ? scaleY : scaleY2}
-          numTicks={negative ? 4 : 2}
-          hideAxisLine={true}
-          hideTicks={true}
-          label=""
-          stroke="#1b1a1e"
-          tickLabelProps={(value, index) => ({
-            fill: 'rgba(0,0,0,.5)',
-            textAnchor: 'end',
-            fontSize: 11,
-            fontFamily: 'Porpora',
-            dx: '-0.3em',
-            dy: '0',
+                  enter={() => ({
+                    y2: [0],
+                    timing: { duration: 1000, ease: easeQuadOut, delay: 500 },
+                  })}
+                  update={() => ({
+                    y2: [0],
+                    timing: { duration: 1000, ease: easeQuadOut, delay: 500 },
+                  })}
+                  leave={() => ({
+                    y2: [0],
+                    timing: { duration: 0 },
+                  })}
+                >
+                  {(state) => {
+                    const { y2 } = state;
+                    return (
+                      <line
+                        id={`line-${i}`}
+                        x1={scaleX(date)}
+                        y1={trendHeight}
+                        x2={scaleX(date)}
+                        y2={y2}
+                        stroke={'#E99AA9'}
+                        strokeWidth={0.5}
+                        strokeDasharray="4 4"
+                      />
+                    );
+                  }}
+                </Animate>
+              </g>
+            );
           })}
-          tickComponent={({ formattedValue, ...tickProps }) => (
-            <text {...tickProps}>{formattedValue}</text>
-          )}
-        />
-      </g>
-    </svg>
+        </g>
+        {/* PROGRESS BAR*/}
+        {progress && (
+          <g transform={`translate(${marginLeft}, 0)`}>
+            <Line
+              from={{ x: timelineScale(progress), y: 0 }}
+              to={{ x: timelineScale(progress), y: svgHeight }}
+              stroke={'#E99AA9'}
+              strokeWidth={4}
+              style={{ pointerEvents: 'none' }}
+            />
+          </g>
+        )}
+        {/* AXES */}
+        {!negative && (
+          <g transform={`translate(${marginLeft}, 4)`}>
+            <AxisBottom
+              top={trendHeight - 10}
+              left={0}
+              scale={scaleX}
+              numTicks={isMobileWithTablet ? 4 : 8}
+              label="Time"
+            >
+              {(axis) => {
+                const tickLabelSize = 14;
+                const tickRotate = 0;
+                const axisCenter =
+                  (axis.axisToPoint.x - axis.axisFromPoint.x) / 2;
+                return (
+                  <g className="my-custom-bottom-axis">
+                    {axis.ticks.map((tick, i) => {
+                      const tickX = tick.to.x;
+                      const tickY = tick.to.y + tickLabelSize + axis.tickLength;
+                      return (
+                        <Group
+                          key={`vx-tick-${tick.value}-${i}`}
+                          className={'vx-axis-tick'}
+                        >
+                          <text
+                            transform={`translate(${tickX}, ${tickY}) rotate(${tickRotate})`}
+                            fontSize={tickLabelSize}
+                            textAnchor="middle"
+                            fill={'rgba(166,4,16,0.5)'}
+                          >
+                            {tick.formattedValue}
+                          </text>
+                        </Group>
+                      );
+                    })}
+                  </g>
+                );
+              }}
+            </AxisBottom>
+          </g>
+        )}
+        <g transform={`translate(${marginLeft}, 4)`}>
+          <AxisLeft
+            top={0}
+            left={0}
+            scale={scaleY2}
+            numTicks={negative ? 4 : 2}
+            hideAxisLine={true}
+            hideTicks={true}
+            label=""
+            stroke="#1b1a1e"
+            tickLabelProps={(value, index) => ({
+              fill: 'rgba(0,0,0,.5)',
+              textAnchor: 'start',
+              fontSize: 11,
+              fontFamily: 'Porpora',
+              dx: '-60px',
+              dy: '0',
+            })}
+            tickComponent={({ formattedValue, ...tickProps }) => (
+              <text {...tickProps}>{formattedValue}</text>
+            )}
+          />
+        </g>
+      </svg>
+      {negative && (
+        <div style={{ display: 'flex' }}>
+          <div className="moduleTitle">{title}</div>
+          <div className="moduleProgress">
+            {progress
+              ? `${actualYear}: ${actualValue ? actualValue.v : null}`
+              : ''}
+          </div>
+        </div>
+      )}
+    </div>
   );
 };
 

@@ -6,7 +6,7 @@ class Home extends Component {
   render() {
     return (
       <div className="w-100">
-        <Chapter theme={theme01} heading={true} color={'rgb(208, 228, 231)'} />
+        <Chapter theme={theme01} heading={true} color={'rgb(217,238,241)'} />
       </div>
     );
   }

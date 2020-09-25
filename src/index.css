@@ -88,7 +88,7 @@ h2 {
   color: #d1646c;
   font-family: SneakyTimes, serif;
   font-size: 18px;
-  left: -85px;
+  left: -92px;
   width: 500px;
   height: 100%;
   top: 50%;
@@ -130,12 +130,13 @@ h2 {
 }
 
 .moduleTitle {
-  position: absolute;
-  left: 5vw;
+  position: relative;
   font-family: SneakyTimes, serif;
-  font-size: 26px;
-  color: white;
+  font-size: 20px;
+  line-height: 24px;
+  color: black;
   opacity: 1;
+  margin: 5px 0;
   text-transform: capitalize;
 }
 
@@ -144,17 +145,17 @@ div.moduleSubTitle {
   margin-left: 5vw;
   margin-top: 5px;
   font-size: 18px;
-  color: white;
+  color: black;
   opacity: 1;
   text-transform: capitalize;
 }
 
 p.moduleParagraph {
   font-family: Porpora;
-  margin-left: 5vw;
+  margin-left: 0;
   margin-top: 5px;
   font-size: 14px;
-  color: white;
+  color: black;
   opacity: 1;
 }
 
@@ -189,4 +190,34 @@ p.moduleParagraph {
   opacity: 0.8;
   position: absolute;
   bottom: 0;
+}
+
+.textContainerTitle {
+  font-family: Sneaky;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 36px;
+  color: #d1646c;
+  text-decoration: underline;
+}
+
+.textContainerSubTitle {
+  font-family: Sneaky;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 36px;
+  color: #d1646c;
+  margin-top: 30px;
+}
+
+.moduleProgress {
+  font-family: Porpora;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  color: #d1646c;
+  line-height: 2;
+  margin-left: 15px;
 }
