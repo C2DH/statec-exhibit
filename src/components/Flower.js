@@ -8,7 +8,7 @@ import { useStore } from '../store';
 
 const nMinPetals = 8;
 
-const Flower = ({ colorA, colorB, colorC, data, height }) => {
+const Flower = ({ colorA, colorB, colorC, data, width, height }) => {
   const title = data.group;
   let selectedTime = null;
   const dataArray = Object.values(data.keys);
@@ -23,7 +23,8 @@ const Flower = ({ colorA, colorB, colorC, data, height }) => {
   const flattenDates = merge(dates);
   const [minDate, maxDate] = extent(flattenDates, (d) => d);
   const [min, max] = extent(dataArray, (d) => d.v);
-  const radius = height / 4;
+  const dimension = Math.min(width, height);
+  const radius = dimension / 4;
   const circumference = 2 * Math.PI * radius;
   const nOfPetals = dataArray.length;
   const petalMaxWidth =
@@ -46,20 +47,8 @@ const Flower = ({ colorA, colorB, colorC, data, height }) => {
   console.log('progressYear', progressYear);
 
   return (
-    <div style={{ position: 'relative', width: height }}>
-      <div
-        style={{
-          color: red,
-          fontSize: '20px',
-          justifyContent: 'center',
-          textAlign: 'center',
-          display: 'flex',
-          alignItems: 'center',
-        }}
-      >
-        {selectedTime}
-      </div>
-      <svg width={height} height={height}>
+    <div style={{ position: 'relative', width: dimension }}>
+      <svg width={dimension} height={dimension}>
         <defs>
           <linearGradient
             id={`bezierGradient`}
@@ -74,7 +63,7 @@ const Flower = ({ colorA, colorB, colorC, data, height }) => {
             <stop offset="100%" stopColor={colorC} stopOpacity={1} />
           </linearGradient>
         </defs>
-        <g transform={`translate(${height / 2},${height / 2})`}>
+        <g transform={`translate(${dimension / 2},${dimension / 2})`}>
           {dataArray.map((d, i) => {
             const angle = (dataArray.length - i) * angleD + Math.PI;
             console.log('angle', angle);
@@ -165,6 +154,8 @@ const Flower = ({ colorA, colorB, colorC, data, height }) => {
         }}
       >
         {title}
+        <br />
+        {selectedTime}
       </div>
     </div>
   );

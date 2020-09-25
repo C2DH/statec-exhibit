@@ -39,13 +39,14 @@ const Container = ({ moduleDataset, progress, shouldRender }) => {
           {shouldRender &&
             moduleDataset.values.map((v, j) => {
               return (
-                <div key={`flower-${j}`}>
+                <div key={`flower-${j}`} style={{ width: '25%' }}>
                   <Flower
                     colorA={'#FFCCB6'}
                     colorB={'#f8b294'}
                     colorC={'#F77DA6'}
                     data={v}
                     height={window.innerHeight * 0.4}
+                    width={window.innerWidth * 0.28}
                     progress={progressScale(progress)}
                     key={`flower-${j}`}
                   />
