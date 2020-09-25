@@ -9,6 +9,7 @@ import { curveMonotoneX } from '@vx/curve';
 import { AxisBottom, AxisLeft } from '@vx/axis';
 import { Group } from '@vx/group';
 import { isMobileWithTablet } from '../constants';
+import { red } from '../constants';
 
 const Trend = ({
   data,
@@ -27,6 +28,7 @@ const Trend = ({
   progress,
   negative,
   title,
+  source,
 }) => {
   const [show, setShow] = useState(false);
   const [pathLength, setPathLength] = useState(1000);
@@ -103,12 +105,17 @@ const Trend = ({
   return (
     <div style={{ display: 'flex', flexDirection: 'column' }}>
       {!negative && (
-        <div style={{ display: 'flex', alignItems: 'center' }}>
-          <div className="moduleTitle">{title}</div>
+        <div style={{ display: 'flex', alignItems: 'baseline' }}>
+          <div
+            className="moduleTitle"
+            style={{ display: 'flex', flexDirection: 'column' }}
+          >
+            {title}
+            <div className="dataSource">{source || 'source to add'}</div>
+          </div>
           <div className="moduleProgress">
-            {progress
-              ? `${actualYear}: ${actualValue ? actualValue.v : null}`
-              : ''}
+            {progress && <span className="underline mr2">{actualYear}:</span>}
+            {progress && actualValue ? actualValue.v : null}
           </div>
         </div>
       )}
@@ -133,10 +140,8 @@ const Trend = ({
             gradientUnits="objectBoundingBox"
           >
             <stop offset="0%" stopColor={'#86B9D4'} stopOpacity={1} />
-            <stop offset="14.46%" stopColor={'#93C5D6'} stopOpacity={1} />
-            <stop offset="44.26%" stopColor={'#A9D8D9'} stopOpacity={1} />
-            <stop offset="73.17%" stopColor={'#B6E4DA'} stopOpacity={1} />
-            <stop offset="100%" stopColor={'#BAE8DB'} stopOpacity={1} />
+            <stop offset="61%" stopColor={'#93DFCF'} stopOpacity={1} />
+            <stop offset="100%" stopColor={'#A9ECD9'} stopOpacity={1} />
           </linearGradient>
         </defs>
         <g transform={`translate(${marginLeft}, 0)`}>
@@ -237,7 +242,7 @@ const Trend = ({
                       id={`circle-${i}`}
                       cx={scaleX(date)}
                       cy={trendHeight - scaleY(value)}
-                      fill={'#D1646C'}
+                      fill={red}
                       r={8}
                     />
                     {/* <text
@@ -387,7 +392,7 @@ const Trend = ({
                             transform={`translate(${tickX}, ${tickY}) rotate(${tickRotate})`}
                             fontSize={tickLabelSize}
                             textAnchor="middle"
-                            fill={'rgba(166,4,16,0.5)'}
+                            fill={red}
                           >
                             {tick.formattedValue}
                           </text>
@@ -415,8 +420,8 @@ const Trend = ({
               textAnchor: 'start',
               fontSize: 11,
               fontFamily: 'Porpora',
-              dx: '-60px',
-              dy: '0',
+              dx: '-4vw',
+              dy: '1vh',
             })}
             tickComponent={({ formattedValue, ...tickProps }) => (
               <text {...tickProps}>{formattedValue}</text>
@@ -425,12 +430,17 @@ const Trend = ({
         </g>
       </svg>
       {negative && (
-        <div style={{ display: 'flex' }}>
-          <div className="moduleTitle">{title}</div>
+        <div style={{ display: 'flex', alignItems: 'baseline' }}>
+          <div
+            className="moduleTitle"
+            style={{ display: 'flex', flexDirection: 'column' }}
+          >
+            {title}
+            <div className="dataSource">{source || 'source to add'}</div>
+          </div>
           <div className="moduleProgress">
-            {progress
-              ? `${actualYear}: ${actualValue ? actualValue.v : null}`
-              : ''}
+            {progress && <span className="underline mr2">{actualYear}:</span>}
+            {progress && actualValue ? actualValue.v : null}
           </div>
         </div>
       )}

@@ -6,3 +6,5 @@ export const isMobileWithTablet = isMobile
       : false
     : true
   : false;
+
+export const red = '#d8434e';

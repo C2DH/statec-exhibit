@@ -3,11 +3,12 @@ import Bezier from './Bezier';
 import { extent, merge } from 'd3-array';
 import { scaleLinear, scaleTime } from 'd3-scale';
 import moment from 'moment';
-
+import { red } from '../constants';
 const nMinPetals = 8;
 
 const Flower = ({ colorA, colorB, colorC, data, height, progress }) => {
   const title = data.group;
+  let selectedTime = null;
   const dataArray = Object.values(data.keys);
   const keysArray = Object.keys(data.keys);
   const dates = keysArray.map((d) => {
@@ -28,7 +29,9 @@ const Flower = ({ colorA, colorB, colorC, data, height, progress }) => {
       ? parseInt(circumference / (nOfPetals - 1))
       : parseInt(circumference / nMinPetals);
   const angleD = (Math.PI * 2) / nOfPetals;
-  const scaleY = scaleLinear().domain([min, max]).range([0, petalMaxWidth]);
+  const scaleY = scaleLinear()
+    .domain([min, max])
+    .range([0, petalMaxWidth < 30 ? 30 : petalMaxWidth]);
 
   const startDate = moment(minDate);
   const endDate = moment(maxDate);
@@ -39,6 +42,18 @@ const Flower = ({ colorA, colorB, colorC, data, height, progress }) => {
 
   return (
     <div style={{ position: 'relative', width: height }}>
+      <div
+        style={{
+          color: red,
+          fontSize: '20px',
+          justifyContent: 'center',
+          textAlign: 'center',
+          display: 'flex',
+          alignItems: 'center',
+        }}
+      >
+        {selectedTime}
+      </div>
       <svg width={height} height={height}>
         <defs>
           <linearGradient
@@ -50,7 +65,7 @@ const Flower = ({ colorA, colorB, colorC, data, height, progress }) => {
             gradientUnits="objectBoundingBox"
           >
             <stop offset="0%" stopColor={colorA} stopOpacity={1} />
-            <stop offset="55%" stopColor={colorB} stopOpacity={1} />
+            <stop offset="48%" stopColor={colorB} stopOpacity={1} />
             <stop offset="100%" stopColor={colorC} stopOpacity={1} />
           </linearGradient>
         </defs>
@@ -83,10 +98,12 @@ const Flower = ({ colorA, colorB, colorC, data, height, progress }) => {
                 progressYear <= Number(maxKey)
               ) {
                 selected = true;
+                selectedTime = keyYear;
               }
             } else {
               if (Number(keyYear) === progressYear) {
                 selected = true;
+                selectedTime = keyYear;
               }
             }
 
@@ -115,13 +132,7 @@ const Flower = ({ colorA, colorB, colorC, data, height, progress }) => {
               </g>
             );
           })}
-          <circle
-            cx={0}
-            cy={0}
-            r={radius * 1.03}
-            stroke={'none'}
-            fill="white"
-          />
+          <circle cx={0} cy={0} r={radius * 1} stroke={'none'} fill="#EDEDED" />
 
           {/* <g
           transform={`matrix(sx, 0, 0, ${sy}, ${cx}-${sx}*${cx}, ${cy}-${sy}*${cy})`}
@@ -133,8 +144,8 @@ const Flower = ({ colorA, colorB, colorC, data, height, progress }) => {
       <div
         dx={2}
         style={{
-          color: '#d1646c',
-          fontSize: '14px',
+          color: red,
+          fontSize: '20px',
           justifyContent: 'center',
           textAlign: 'center',
           position: 'absolute',

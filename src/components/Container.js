@@ -37,11 +37,11 @@ const Container = ({ moduleDataset, progress, shouldRender }) => {
               return (
                 <div style={{ width: '25%' }} key={`flower-${j}`}>
                   <Flower
-                    colorA={'#F2C4B0'}
-                    colorB={'#E8BCA9'}
-                    colorC={'#E989A9'}
+                    colorA={'#FFCCB6'}
+                    colorB={'#f8b294'}
+                    colorC={'#F77DA6'}
                     data={v}
-                    height={window.innerWidth * 0.2}
+                    height={window.innerWidth * 0.25}
                     progress={progress}
                     key={`flower-${j}`}
                   />

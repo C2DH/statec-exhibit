@@ -35,7 +35,7 @@ h4,
 h5,
 h6,
 .title {
-  color: #d1646c;
+  color: #d8434e;
   font-family: 'SneakyTimes', serif;
 }
 
@@ -84,23 +84,14 @@ h2 {
 }
 
 .sectionTitle {
-  position: absolute;
-  color: #d1646c;
-  font-family: SneakyTimes, serif;
+  color: #d8434e;
+  font-family: Porpora;
   font-size: 18px;
-  left: -92px;
-  width: 500px;
-  height: 100%;
-  top: 50%;
-  margin: auto;
-  transform: rotate(-90deg);
-  transform-origin: center;
-  text-transform: uppercase;
   text-align: center;
 }
 
 .sectionText {
-  color: #d1646c;
+  color: #d8434e;
   font-family: SneakyTimes, serif;
   font-size: 18px;
 }
@@ -169,7 +160,7 @@ p.moduleParagraph {
 
   text-decoration-line: underline;
 
-  color: #d1646c;
+  color: #d8434e;
 }
 
 .peakTitle {
@@ -178,7 +169,7 @@ p.moduleParagraph {
   font-weight: normal;
   font-size: 30px;
   line-height: 36px;
-  color: #d1646c;
+  color: #d8434e;
   margin-top: 30px;
 }
 
@@ -186,10 +177,7 @@ p.moduleParagraph {
   width: 100%;
   height: 1px;
   background-color: #433aa9;
-  margin-top: 45px;
   opacity: 0.8;
-  position: absolute;
-  bottom: 0;
 }
 
 .textContainerTitle {
@@ -198,7 +186,7 @@ p.moduleParagraph {
   font-weight: normal;
   font-size: 40px;
   line-height: 36px;
-  color: #d1646c;
+  color: #d8434e;
   text-decoration: underline;
 }
 
@@ -208,7 +196,7 @@ p.moduleParagraph {
   font-weight: normal;
   font-size: 30px;
   line-height: 36px;
-  color: #d1646c;
+  color: #d8434e;
   margin-top: 30px;
 }
 
@@ -217,7 +205,20 @@ p.moduleParagraph {
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
-  color: #d1646c;
-  line-height: 2;
+  color: #d8434e;
   margin-left: 15px;
+}
+
+.dataSource {
+  font-family: Porpora;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.underline {
+  text-decoration: underline;
 }

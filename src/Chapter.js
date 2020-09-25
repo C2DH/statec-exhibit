@@ -105,14 +105,16 @@ class Chapter extends Component {
                   top: 0,
                   zIndex: 3,
                   backgroundColor: color,
-                  height: '45vh',
+                  height: 'calc(46vh + 15px)',
+                  paddingTop: '15px',
                   display: 'flex',
                   flexDirection: 'column',
                   justifyContent: 'justify-between',
                 }}
               >
-                <div style={{ height: '170px' }}>
-                  <div className="mt3" style={{ paddingTop: '15px' }}>
+                <div style={{ height: '20vh' }}>
+                  <div className="sectionTitle">{theme.title}</div>
+                  <div className="mt3">
                     <Trend
                       title={populationDataset.title}
                       data={populationDataset.values}
@@ -125,8 +127,7 @@ class Chapter extends Component {
                     />
                   </div>
                 </div>
-                <div className="sectionTitle">{theme.title}</div>
-                <div className="relative">
+                <div className="relative" style={{ height: '25vh' }}>
                   <Trend
                     title={moduleDataset.title}
                     data={moduleDataset.values}
