@@ -180,6 +180,10 @@ p.moduleParagraph {
   opacity: 0.8;
 }
 
+.textContainer {
+  margin-top: 15px;
+}
+
 .textContainerTitle {
   font-family: Sneaky;
   font-style: normal;

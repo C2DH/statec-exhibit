@@ -10,6 +10,10 @@ const Container = ({ moduleDataset, progress, shouldRender }) => {
     .domain([0, 0.2, 0.8, 0.95])
     .range([0, 1, 1, 0]);
 
+  const progressScale = scaleLinear()
+    .domain([0, 0.2, 0.8, 0.95])
+    .range([0, 0, 1, 0]);
+
   return (
     <animated.div
       className="scrollSection"
@@ -42,7 +46,7 @@ const Container = ({ moduleDataset, progress, shouldRender }) => {
                     colorC={'#F77DA6'}
                     data={v}
                     height={window.innerWidth * 0.25}
-                    progress={progress}
+                    progress={progressScale(progress)}
                     key={`flower-${j}`}
                   />
                 </div>

@@ -29,7 +29,7 @@ class Chapter extends Component {
   onStepEnter = ({ element, data }) => {
     if (element.children[0]) {
       element.children[0].style.position = 'fixed';
-      element.children[0].style.top = '48vh';
+      element.children[0].style.top = '50vh';
       element.children[0].style.paddingTop = 0;
       element.children[0].style.left = '5%';
       element.children[0].style.width = '90%';
@@ -98,40 +98,41 @@ class Chapter extends Component {
               paddingBottom: window.innerHeight * 0.05,
             }}
           >
-            <div className="section" style={{ paddingTop: '30px' }}>
+            <div
+              className="section"
+              style={{ paddingTop: '30px', backgroundColor: color }}
+            >
               <div
                 style={{
                   position: 'sticky',
                   top: 0,
                   zIndex: 3,
                   backgroundColor: color,
-                  height: 'calc(46vh + 15px)',
+                  height: '50vh',
                   paddingTop: '15px',
                   display: 'flex',
                   flexDirection: 'column',
                   justifyContent: 'justify-between',
                 }}
               >
-                <div style={{ height: '20vh' }}>
+                <div style={{ height: '24vh' }}>
                   <div className="sectionTitle">{theme.title}</div>
-                  <div className="mt3">
-                    <Trend
-                      title={populationDataset.title}
-                      data={populationDataset.values}
-                      progress={progress}
-                      height={70}
-                      valueKey="v"
-                      timeKey="t"
-                      trendName={'populationTrend'}
-                      negative={false}
-                    />
-                  </div>
+                  <Trend
+                    title={populationDataset.title}
+                    data={populationDataset.values}
+                    progress={progress}
+                    height={window.innerHeight * 0.1}
+                    valueKey="v"
+                    timeKey="t"
+                    trendName={'populationTrend'}
+                    negative={false}
+                  />
                 </div>
                 <div className="relative" style={{ height: '25vh' }}>
                   <Trend
                     title={moduleDataset.title}
                     data={moduleDataset.values}
-                    height={window.innerHeight * 0.2}
+                    height={window.innerHeight * 0.15}
                     valueKey="v"
                     timeKey="t"
                     highlightKey="h"

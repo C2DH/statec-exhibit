@@ -124,7 +124,7 @@ const Trend = ({
         x="0px"
         y="0px"
         width={svgWidth}
-        height={negative ? svgHeight : 200}
+        height={negative ? svgHeight : svgHeight + 30}
         style={{
           border: '0px solid rgba(0,0,0,0.2)',
           margin: 'auto',
@@ -430,7 +430,9 @@ const Trend = ({
         </g>
       </svg>
       {negative && (
-        <div style={{ display: 'flex', alignItems: 'baseline' }}>
+        <div
+          style={{ display: 'flex', alignItems: 'baseline', marginTop: '15px' }}
+        >
           <div
             className="moduleTitle"
             style={{ display: 'flex', flexDirection: 'column' }}
