@@ -72,21 +72,18 @@
       "datasetHeading": "population-solde",
       "dataset": "transatlantic-emigrations",
       "layout": "flowers",
-      "attachments": []
-    },
-    {
-      "title": "Which nationality have people that leave Luxembourg? 1",
-      "datasetHeading": "trend-excess-arrivals-departures",
-      "dataset": "departures-summary",
-      "layout": "text",
-      "subheading": "We can get the general dynamic of people arriving or leaving Luxembourg: from 1960to 2011 we count 545 000 arrivals and 370 000 departure in total. The number of arrivals is always bigger that the number of departures except for 1967 due to the economic crisis",
+      "attachments": [],
       "paragraphs": [
         {
+          "from": 1840,
+          "to": 1906,
           "year": "1960-1975",
           "text": "Les départs tendent cependant plutôt à diminuer légèrement au cours des années 1960, puis se stabilisent jusqu’au milieu des années 1990.",
           "source": "(todo)"
         },
         {
+          "from": 1907,
+          "to": 2014,
           "year": "1975-1985",
           "text": "La crise des années 1975-1985 se répercute sur les migrations (chute des arrivées et ce sont surtout les Portugais qui jouent le rôle d'ajustement)",
           "source": "(todo)"
@@ -100,6 +97,8 @@
       "layout": "flowers",
       "paragraphs": [
         {
+          "from": 1960,
+          "to": 1975,
           "year": "1960-1975",
           "text": "Les départs tendent cependant plutôt à diminuer légèrement au cours des années 1960, puis se stabilisent jusqu’au milieu des années 1990.",
           "source": "(todo)"
