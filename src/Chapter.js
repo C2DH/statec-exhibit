@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import { Scrollama, Step } from 'react-scrollama';
 import Trend from './components/Trend';
+import Narrative from './components/Narrative';
 import populationDataset from './data/datasets/population.json';
 import landing from './assets/images/landing.svg';
 import Container from './components/Container';
@@ -142,6 +143,12 @@ class Chapter extends Component {
                   />
                 </div>
                 <div className="hr"></div>
+                <div>
+                  <Narrative
+                    chapter={theme.modules[data]}
+                    progress={progress}
+                  />
+                </div>
               </div>
               <div style={{ overflow: 'hidden' }}>
                 <Scrollama
