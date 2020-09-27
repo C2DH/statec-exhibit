@@ -123,6 +123,11 @@ const Flower = ({ colorA, colorB, colorC, data, width, height }) => {
                     c2={petalWidth * 0.1}
                     selected={selected}
                   />
+                  <text 
+                    style={{
+                      display: selected ? 'block' : 'none'
+                    }}
+                    dy={-10}>{d.v}</text>
                 </g>
               </g>
             );
