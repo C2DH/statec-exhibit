@@ -167,7 +167,15 @@
       "attachments": [],
       "from": 1960,
       "to": 2010,
-      "groups": ["total", "european countries"]
+      "groups": ["total", "european countries", "unknown"],
+      "paragraphs": [
+        {
+          "from": 1940,
+          "to": 2018,
+          "year": "Arrivals",
+          "text": " The data of entries and exits are only available from the 150s onwards."
+        }
+      ]
     },
     {
       "title": "Arrivals by nationalities: the portuguese decennias and GDP",
