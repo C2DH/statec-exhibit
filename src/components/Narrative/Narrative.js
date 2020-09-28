@@ -22,9 +22,13 @@ const Narrative = ({
     return null;
   }
 
+  const localParagraph = chapter.paragraphs.find(p => localYear >= p.from && localYear <= p.to)
+
   return (
-    <div className={styles.wrapper}>
-      <h1 className={styles.h1}>{ localYear }</h1>
+    <div className={styles.wrapper} style={{
+      paddingTop: chapter.layout==='text' ? '20vh': 0
+    }}>
+      <h1 className={styles.h1}>{ localParagraph ? localParagraph.year : localYear }</h1>
       <div className={styles.paragraphs}>
         {chapter.paragraphs.map((paragraph, i) => {
           const isParagraphVisible = localYear >= paragraph.from && localYear <= paragraph.to;
