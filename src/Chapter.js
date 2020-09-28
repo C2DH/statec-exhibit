@@ -119,6 +119,7 @@ class Chapter extends Component {
                   <div className="sectionTitle">{theme.title}</div>
                   <Trend
                     title={populationDataset.title}
+                    legend={populationDataset.legend}
                     data={populationDataset.values}
                     progress={progress}
                     height={window.innerHeight * 0.24 - 100}
@@ -132,6 +133,7 @@ class Chapter extends Component {
                   <Trend
                     title={moduleDataset.title}
                     data={moduleDataset.values}
+                    legend={moduleDataset.legend}
                     height={window.innerHeight * 0.25 - 63}
                     valueKey="v"
                     timeKey="t"
