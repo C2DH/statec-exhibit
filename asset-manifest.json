@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/statec-exhibit/static/css/main.903d6580.chunk.css",
+    "main.js": "/statec-exhibit/static/js/main.9f84a5e8.chunk.js",
+    "main.js.map": "/statec-exhibit/static/js/main.9f84a5e8.chunk.js.map",
+    "runtime-main.js": "/statec-exhibit/static/js/runtime-main.8f765d72.js",
+    "runtime-main.js.map": "/statec-exhibit/static/js/runtime-main.8f765d72.js.map",
+    "static/css/2.c6861289.chunk.css": "/statec-exhibit/static/css/2.c6861289.chunk.css",
+    "static/js/2.718db898.chunk.js": "/statec-exhibit/static/js/2.718db898.chunk.js",
+    "static/js/2.718db898.chunk.js.map": "/statec-exhibit/static/js/2.718db898.chunk.js.map",
+    "index.html": "/statec-exhibit/index.html",
+    "precache-manifest.5d8bc8e34a8be3324b4e1a0aa05121f3.js": "/statec-exhibit/precache-manifest.5d8bc8e34a8be3324b4e1a0aa05121f3.js",
+    "service-worker.js": "/statec-exhibit/service-worker.js",
+    "static/css/2.c6861289.chunk.css.map": "/statec-exhibit/static/css/2.c6861289.chunk.css.map",
+    "static/css/main.903d6580.chunk.css.map": "/statec-exhibit/static/css/main.903d6580.chunk.css.map",
+    "static/js/2.718db898.chunk.js.LICENSE.txt": "/statec-exhibit/static/js/2.718db898.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/statec-exhibit/static/media/Sneaky-Times.ceb70cc9.woff2",
+    "static/media/landing.svg": "/statec-exhibit/static/media/landing.8c215141.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8f765d72.js",
+    "static/css/2.c6861289.chunk.css",
+    "static/js/2.718db898.chunk.js",
+    "static/css/main.903d6580.chunk.css",
+    "static/js/main.9f84a5e8.chunk.js"
+  ]
+}
