@@ -63,8 +63,7 @@ class Chapter extends Component {
     const { theme, heading, color } = this.props;
     const themeDatasetName = theme.dataset;
     const themeDataset = require(`./data/datasets/${themeDatasetName}.json`);
-    const moduleDataset = require(`./data/datasets/population-solde.json`);
-
+    const moduleDataset = require(`./data/datasets/${theme.modules[data].datasetHeading}.json`);
     return (
       <div className="w-100">
         {heading && (
@@ -165,7 +164,10 @@ class Chapter extends Component {
                     const moduleDatasetName = module.datasetHeading;
                     return (
                       <Step data={i} key={i}>
-                        <div style={{ height: '200vh', paddingTop: '48vh' }}>
+                        <div style={{
+                          height: '200vh',
+                          paddingTop: module.layout === 'text' ? '60vh': '18vh'
+                        }}>
                           {module.layout === 'flowers' && (
                             <Container
                               module={module}
