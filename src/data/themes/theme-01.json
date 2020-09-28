@@ -162,21 +162,31 @@
       "title": "Arrivals summary",
       "subheading": "first at the end of the 1890, in the 1920s, at the end of the 1960s and the first t years of the 1970, and from 1985 onwards) which are linked to the economic expansion.",
       "datasetHeading": "migratory-balance",
-      "dataset": "transatlantic-emigrations",
-      "layout": "text",
+      "dataset": "arrivals-summary",
+      "layout": "flowers",
       "attachments": [],
       "from": 1960,
-      "to": 2010
+      "to": 2010,
+      "groups": ["total", "european countries"]
     },
     {
       "title": "Arrivals by nationalities: the portuguese decennias and GDP",
       "subheading": "first at the end of the 1890, in the 1920s, at the end of the 1960s and the first t years of the 1970, and from 1985 onwards) which are linked to the economic expansion.",
       "datasetHeading": "migratory-balance",
-      "dataset": "transatlantic-emigrations",
-      "layout": "text",
+      "dataset": "arrivals-by-nationalities",
+      "layout": "flowers",
       "attachments": [],
       "from": 1840,
-      "to": 1960
+      "to": 1960,
+      "groups": ["Belgium", "France", "Germany"],
+      "paragraphs": [
+        {
+          "from": 1960,
+          "to": 1970,
+          "year": "60s",
+          "text": "60s"
+        }
+      ]
     },
     {
       "title": "Departures summary",

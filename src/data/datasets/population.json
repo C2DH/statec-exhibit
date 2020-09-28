@@ -3,7 +3,7 @@
   "title": "population total per year",
   "timeformat": "YYYY",
   "legend": {
-    "v": "people per year"
+    "v": "inhabitants"
   },
   "values": [
     {
