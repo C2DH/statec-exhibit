@@ -29,6 +29,7 @@ const Trend = ({
   negative,
   title,
   source,
+  legend,
 }) => {
   const [show, setShow] = useState(false);
   const [pathLength, setPathLength] = useState(1000);
@@ -118,7 +119,9 @@ const Trend = ({
           </div>
           <div className="moduleProgress">
             {progress && <span className="underline mr2">{actualYear}:</span>}
-            {progress && actualValue ? actualValue.v : null}
+            <b>{progress && actualValue ? actualValue.v : null}</b>
+            &nbsp;
+            {progress && legend ? legend.v : null}
           </div>
         </div>
       )}

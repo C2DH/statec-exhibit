@@ -2,86 +2,211 @@
   "id": "a-country-of-migrations",
   "title": "A Country of migrations",
   "dataset": "population",
+  "datasetHeading": "number-of-births",
   "modules": [
     {
-      "id": "a-third-world-country",
-      "title": "Luxembourg a third world country",
-      "datasetHeading": "population-solde",
-      "dataset": "population-destination",
-      "subheading": "Lorem ipsum dolorem sit amet",
+      "title": "In 1839, after almost half of the old Duchy of Luxembourg was ceded to Belgium, and the Grand Duchy of Luxembourg remained a mere 2,589 km2 as territory, 169,920 inhabitants were counted.",
+      "subheading": "This is the story of how and why people moved in and out from Luxembourg, narrated through numbers.",
+      "datasetHeading": "density-of-inhabitants",
+      "dataset": "population",
       "layout": "text",
-      "attachments": [
+      "from": 1840,
+      "to": 1990,
+      "paragraphs": [
         {
-          "startDate": "1840-01-01",
-          "endDate": "1840-12-23",
-          "title": "Circulaire N°9479 concernant, entre autres, l'inscriptions des enfants morts-nés.",
-          "type": "pdf",
-          "url": "http://legilux.public.lu/eli/etat/leg/cmin/1840/12/23/n1/jo"
+          "from": 1920,
+          "to": 1930,
+          "year": "1920's",
+          "text": "Increase right after the first world war.",
+          "source": "(todo)"
         },
         {
-          "startDate": "1843-07-26",
-          "endDate": "1843-07-26",
-          "title": "Loi du 26 juillet 1843, N° 1709b, sur l'instruction primaire.",
-          "type": "pdf",
-          "url": "http://legilux.public.lu/eli/etat/leg/loi/1843/07/26/n1/jo"
+          "from": 1920,
+          "to": 1930,
+          "year": "1960's",
+          "text": "...and around 1960 (the Protuguese decennias)",
+          "source": "(todo)"
         }
       ]
     },
     {
-      "id": "a-third-world-country",
-      "title": "Luxembourg a third world country",
-      "datasetHeading": "population-solde",
-      "dataset": "population-destination",
+      "title": "Since 1839, Luxembourg has always been a country of migration(s)",
+      "subheading": "An emigration country up to the 1900s and an immigration country from de interwar period onwards",
+      "datasetHeading": "number-of-births",
+      "dataset": "population-by-gender",
       "layout": "flowers",
-      "attachments": [
+      "from": 1840,
+      "to": 1920,
+      "paragraphs": [
         {
-          "startDate": "1840-01-01",
-          "endDate": "1840-12-23",
-          "title": "Circulaire N°9479 concernant, entre autres, l'inscriptions des enfants morts-nés.",
-          "type": "pdf",
-          "url": "http://legilux.public.lu/eli/etat/leg/cmin/1840/12/23/n1/jo"
+          "from": 1840,
+          "to": 1860,
+          "year": "1840-1860",
+          "text": "Since 1839, Luxembourg has always been a country of migration(s): an emigration country up to the 1900s and an immigration country from de interwar period onwards",
+          "source": "(todo)"
         },
         {
-          "startDate": "1843-07-26",
-          "endDate": "1843-07-26",
-          "title": "Loi du 26 juillet 1843, N° 1709b, sur l'instruction primaire.",
-          "type": "pdf",
-          "url": "http://legilux.public.lu/eli/etat/leg/loi/1843/07/26/n1/jo"
+          "from": 1861,
+          "to": 1870,
+          "year": "1860's",
+          "text": "Luxembourg was plagued by a Cholera pandemic in 1865. More than 3,546 people died in less than 2 years.",
+          "source": "Pandemics before coronavirus: Cholera, Black Death, Spanish Flu in Luxembourg",
+          "sourceUrl": "https://today.rtl.lu/culture/exhibitions-and-history/a/1451963.html"
+        },
+        {
+          "from": 1871,
+          "to": 1880,
+          "year": "1870's and 1880's",
+          "text": "..."
+        },
+        {
+          "from": 1880,
+          "to": 1905,
+          "year": "after the 1880's",
+          "text": "A relatively big number of families start entering the country. More and more births are registered"
+        },
+        {
+          "from": 1906,
+          "to": 1914,
+          "year": "1900-1914",
+          "text": "Before the first wolrd war. More men than women. A drop of number of births"
+        },
+        {
+          "from": 1960,
+          "to": 1990,
+          "year": "1960-today",
+          "text": "aujourd’hui près de la moitié dela population est de nationalité étrangère et plus de 60% de la population on tun arrière-fond migratoire (père ou mère immigrée) "
         }
       ],
-      "paragraphs": [
+      "attachments": [
         {
-          "year": "1839",
-          "text": "In 1839, after almost half of the old Duchy of Luxembourg was ceded to Belgium, and the Grand Duchy of Luxembourg remained a mere 2,589 km2 as territory, 169,920 inhabitants were counted.",
-          "source": "... (todo)"
+          "startDate": "1840-01-01",
+          "endDate": "1840-12-23",
+          "title": "Circulaire N°9479 concernant, entre autres, l'inscriptions des enfants morts-nés.",
+          "type": "pdf",
+          "url": "http://legilux.public.lu/eli/etat/leg/cmin/1840/12/23/n1/jo"
+        },
+        {
+          "startDate": "1843-07-26",
+          "endDate": "1843-07-26",
+          "title": "Loi du 26 juillet 1843, N° 1709b, sur l'instruction primaire.",
+          "type": "pdf",
+          "url": "http://legilux.public.lu/eli/etat/leg/loi/1843/07/26/n1/jo"
         }
       ]
     },
     {
-      "id": "a-country-of-migrations",
       "title": "Lxembourg wasn't immune to overseas appeal...",
       "subheading": "Lorem ipsum dolorem sit amet",
-      "datasetHeading": "population-solde",
-      "dataset": "transatlantic-emigrations",
-      "layout": "text",
-      "attachments": []
-    },
-    {
-      "id": "a-country-of-migrations",
-      "title": "Lxembourg wasn't immune to overseas appeal...",
-      "datasetHeading": "population-solde",
+      "datasetHeading": "migratory-balance",
       "dataset": "transatlantic-emigrations",
       "layout": "flowers",
-      "attachments": []
+      "attachments": [],
+      "from": 1904,
+      "to": 1922,
+      "paragraphs": [
+        {
+          "from": 1840,
+          "to": 1900,
+          "year": "1900",
+          "text": "Luxembourg wasn't immune to overseas appeal. At the beginning of the 1900, transatlantic ships opened the way to the US and to other overseas country.",
+          "source": "(todo)"
+        },
+        {
+          "from": 1901,
+          "to": 1910,
+          "year": "1906-1907",
+          "text": "Luxembourgers leaving to overseas countries",
+          "source": "(todo)"
+        },
+        {
+          "from": 1911,
+          "to": 1922,
+          "year": "1909-1922",
+          "text": "The first world war.",
+          "source": "(todo)"
+        }
+      ]
+    },
+    {
+      "title": "But even then, there have been peaks in immigration",
+      "subheading": "first at the end of the 1890, in the 1920s, at the end of the 1960s and the first t years of the 1970, and from 1985 onwards) which are linked to the economic expansion.",
+      "datasetHeading": "migratory-balance",
+      "dataset": "transatlantic-emigrations",
+      "layout": "text",
+      "attachments": [],
+      "from": 1890,
+      "to": 1960,
+      "paragraphs":[
+        {
+          "from": 1890,
+          "to": 1909,
+          "year": "1890-1900",
+          "text": "First wave of immigration in Luxembourg"
+        },
+        {
+          "from": 1920,
+          "to": 1929,
+          "year": "1920's",
+          "text": "Second wave of immigration in Luxembourg"
+        },
+        {
+          "from": 1940,
+          "to": 1950,
+          "year": "1940-1950",
+          "text": "Second world war."
+        }
+      ]
+    },
+    {
+      "title": "Arrivals summary",
+      "subheading": "first at the end of the 1890, in the 1920s, at the end of the 1960s and the first t years of the 1970, and from 1985 onwards) which are linked to the economic expansion.",
+      "datasetHeading": "migratory-balance",
+      "dataset": "arrivals-summary",
+      "layout": "flowers",
+      "attachments": [],
+      "from": 1960,
+      "to": 2010,
+      "groups": ["total", "european countries"]
+    },
+    {
+      "title": "Arrivals by nationalities: the portuguese decennias and GDP",
+      "subheading": "first at the end of the 1890, in the 1920s, at the end of the 1960s and the first t years of the 1970, and from 1985 onwards) which are linked to the economic expansion.",
+      "datasetHeading": "migratory-balance",
+      "dataset": "arrivals-by-nationalities",
+      "layout": "flowers",
+      "attachments": [],
+      "from": 1840,
+      "to": 1960,
+      "groups": ["Belgium", "France", "Germany"],
+      "paragraphs": [
+        {
+          "from": 1960,
+          "to": 1970,
+          "year": "60s",
+          "text": "60s"
+        }
+      ]
+    },
+    {
+      "title": "Departures summary",
+      "subheading": "first at the end of the 1890, in the 1920s, at the end of the 1960s and the first t years of the 1970, and from 1985 onwards) which are linked to the economic expansion.",
+      "datasetHeading": "migratory-balance",
+      "dataset": "transatlantic-emigrations",
+      "layout": "text",
+      "attachments": [],
+      "from": 1960,
+      "to": 2010
     },
     {
       "title": "Which nationality have people that leave Luxembourg? 1",
       "datasetHeading": "trend-excess-arrivals-departures",
       "dataset": "departures-summary",
-      "layout": "text",
-      "subheading": "We can get the general dynamic of people arriving or leaving Luxembourg: from 1960to 2011 we count 545 000 arrivals and 370 000 departure in total. The number of arrivals is always bigger that the number of departures except for 1967 due to the economic crisis",
+      "layout": "flowers",
       "paragraphs": [
         {
+          "from": 1960,
+          "to": 1975,
           "year": "1960-1975",
           "text": "Les départs tendent cependant plutôt à diminuer légèrement au cours des années 1960, puis se stabilisent jusqu’au milieu des années 1990.",
           "source": "(todo)"
@@ -92,72 +217,6 @@
           "source": "(todo)"
         }
       ]
-    },
-    {
-      "title": "Which nationality have people that leave Luxembourg? 1",
-      "datasetHeading": "trend-excess-arrivals-departures",
-      "dataset": "departures-summary",
-      "layout": "flowers",
-      "paragraphs": [
-        {
-          "year": "1960-1975",
-          "text": "Les départs tendent cependant plutôt à diminuer légèrement au cours des années 1960, puis se stabilisent jusqu’au milieu des années 1990.",
-          "source": "(todo)"
-        },
-        {
-          "year": "1975-1985",
-          "text": "La crise des années 1975-1985 se répercute sur les migrations (chute des arrivées et ce sont surtout les Portugais qui jouent le rôle d'ajustement)",
-          "source": "(todo)"
-        }
-      ]
-    },
-    {
-      "title": "Which nationality have people that leave Luxembourg? 2",
-      "datasetHeading": "trend-excess-arrivals-departures",
-      "dataset": "departures-by-nationalities",
-      "subheading": "Dataset more specific on departures by nationality",
-      "layout": "text"
-    },
-    {
-      "title": "Which nationality have people that leave Luxembourg? 2",
-      "datasetHeading": "trend-excess-arrivals-departures",
-      "dataset": "departures-by-nationalities",
-      "subheading": "Dataset more specific on departures by nationality",
-      "layout": "flowers"
-    },
-    {
-      "id": "the-portuguese decennias",
-      "title": "The Portuguese decennias",
-      "subheading": "En 1969, les Portugais apparaissent pour la première fois comme catégorie séparée dans les statistiques des soldes migratoires. En 1970, ils constituent le groupe d’arrivants le plus important et le resteront de manière presque continue.",
-      "datasetHeading": "population-solde",
-      "dataset": "arrivals-by-nationalities",
-      "layout": "text",
-      "attachments": []
-    },
-    {
-      "id": "the-portuguese decennias",
-      "title": "The Portuguese decennias",
-      "subheading": "En 1969, les Portugais apparaissent pour la première fois comme catégorie séparée dans les statistiques des soldes migratoires. En 1970, ils constituent le groupe d’arrivants le plus important et le resteront de manière presque continue.",
-      "datasetHeading": "population-solde",
-      "dataset": "arrivals-by-nationalities",
-      "layout": "flowers",
-      "attachments": []
-    },
-    {
-      "id": "a-country-of-migrations",
-      "title": "Going abroad: overall departures",
-      "datasetHeading": "population-solde",
-      "dataset": "departures-summary",
-      "layout": "text",
-      "attachments": []
-    },
-    {
-      "id": "a-country-of-migrations",
-      "title": "Going abroad: overall departures",
-      "datasetHeading": "population-solde",
-      "dataset": "departures-summary",
-      "layout": "flowers",
-      "attachments": []
     }
   ]
 }

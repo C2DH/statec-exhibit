@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import { Scrollama, Step } from 'react-scrollama';
 import Trend from './components/Trend';
+import Narrative from './components/Narrative';
 import populationDataset from './data/datasets/population.json';
 import landing from './assets/images/landing.svg';
 import Container from './components/Container';
@@ -62,8 +63,7 @@ class Chapter extends Component {
     const { theme, heading, color } = this.props;
     const themeDatasetName = theme.dataset;
     const themeDataset = require(`./data/datasets/${themeDatasetName}.json`);
-    const moduleDataset = require(`./data/datasets/population-solde.json`);
-
+    const moduleDataset = require(`./data/datasets/${theme.modules[data].datasetHeading}.json`);
     return (
       <div className="w-100">
         {heading && (
@@ -119,6 +119,7 @@ class Chapter extends Component {
                   <div className="sectionTitle">{theme.title}</div>
                   <Trend
                     title={populationDataset.title}
+                    legend={populationDataset.legend}
                     data={populationDataset.values}
                     progress={progress}
                     height={window.innerHeight * 0.24 - 100}
@@ -132,6 +133,7 @@ class Chapter extends Component {
                   <Trend
                     title={moduleDataset.title}
                     data={moduleDataset.values}
+                    legend={moduleDataset.legend}
                     height={window.innerHeight * 0.25 - 63}
                     valueKey="v"
                     timeKey="t"
@@ -142,6 +144,12 @@ class Chapter extends Component {
                   />
                 </div>
                 <div className="hr"></div>
+                <div>
+                  <Narrative
+                    chapter={theme.modules[data]}
+                    progress={progress}
+                  />
+                </div>
               </div>
               <div style={{ overflow: 'hidden' }}>
                 <Scrollama
@@ -158,7 +166,10 @@ class Chapter extends Component {
                     const moduleDatasetName = module.datasetHeading;
                     return (
                       <Step data={i} key={i}>
-                        <div style={{ height: '200vh', paddingTop: '48vh' }}>
+                        <div style={{
+                          height: '200vh',
+                          paddingTop: module.layout === 'text' ? '60vh': '18vh'
+                        }}>
                           {module.layout === 'flowers' && (
                             <Container
                               module={module}

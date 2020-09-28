@@ -3,7 +3,7 @@ import { useSpring, animated } from 'react-spring';
 import { scaleLinear } from 'd3-scale';
 import Flower from './Flower';
 
-const Container = ({ moduleDataset, progress, shouldRender }) => {
+const Container = ({ module, moduleDataset, progress, shouldRender }) => {
   //const props = useSpring({ opacity: 1, from: { opacity: 0 } });
 
   const opacityScale = scaleLinear()
@@ -37,7 +37,13 @@ const Container = ({ moduleDataset, progress, shouldRender }) => {
           }}
         >
           {shouldRender &&
-            moduleDataset.values.map((v, j) => {
+            moduleDataset.values.filter((v, i) => {
+              // use the `groups` properties to filter flowers
+              if (!Array.isArray(module.groups)) {
+                return v;
+              }
+              return module.groups.includes(v.group);
+            }).map((v, j) => {
               return (
                 <div key={`flower-${j}`} style={{ width: '25%' }}>
                   <Flower
