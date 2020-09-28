@@ -119,8 +119,9 @@ const Trend = ({
           </div>
           <div className="moduleProgress">
             {progress && <span className="underline mr2">{actualYear}:</span>}
-            {progress && actualValue ? actualValue.v : null}
-            {progress && legend?.v ? legend.v : null}
+            <b>{progress && actualValue ? actualValue.v : null}</b>
+            &nbsp;
+            {progress && legend ? legend.v : null}
           </div>
         </div>
       )}
