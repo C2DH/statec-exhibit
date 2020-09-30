@@ -27,7 +27,8 @@
           "text": "...and around 1960 (the Protuguese decennias)",
           "source": "(todo)"
         }
-      ]
+      ],
+      "focus": ""
     },
     {
       "title": "Since 1839, Luxembourg has always been a country of migration(s)",
@@ -93,7 +94,8 @@
           "type": "pdf",
           "url": "http://legilux.public.lu/eli/etat/leg/loi/1843/07/26/n1/jo"
         }
-      ]
+      ],
+      "focus": "Men with Luxembougish nationality"
     },
     {
       "title": "Lxembourg wasn't immune to overseas appeal...",
@@ -126,7 +128,8 @@
           "text": "The first world war.",
           "source": "(todo)"
         }
-      ]
+      ],
+      "focus": "Etrangers"
     },
     {
       "title": "But even then, there have been peaks in immigration",
@@ -137,7 +140,7 @@
       "attachments": [],
       "from": 1890,
       "to": 1960,
-      "paragraphs":[
+      "paragraphs": [
         {
           "from": 1890,
           "to": 1909,

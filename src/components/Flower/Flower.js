@@ -3,8 +3,9 @@ import Bezier from './Bezier';
 import { extent, merge } from 'd3-array';
 import { scaleLinear, scaleTime } from 'd3-scale';
 import moment from 'moment';
-import { red } from '../constants';
-import { useStore } from '../store';
+import { red } from '../../constants';
+import { useStore } from '../../store';
+import { isMobileWithTablet } from '../../constants';
 
 const nMinPetals = 8;
 
@@ -24,7 +25,7 @@ const Flower = ({ colorA, colorB, colorC, data, width, height }) => {
   const [minDate, maxDate] = extent(flattenDates, (d) => d);
   const [min, max] = extent(dataArray, (d) => d.v);
   const dimension = Math.min(width, height);
-  const radius = dimension / 4;
+  const radius = isMobileWithTablet ? dimension / 3.5 : dimension / 4;
   const circumference = 2 * Math.PI * radius;
   const nOfPetals = dataArray.length;
   const petalMaxWidth =
@@ -32,7 +33,6 @@ const Flower = ({ colorA, colorB, colorC, data, width, height }) => {
       ? parseInt(circumference / (nOfPetals - 1))
       : parseInt(circumference / nMinPetals);
   const angleD = (Math.PI * 2) / nOfPetals;
-  console.log('petalMaxWidth', petalMaxWidth);
   const scaleY = scaleLinear()
     .domain([min, max])
     .range([0, petalMaxWidth < 30 ? 30 : petalMaxWidth * 1.2]);
@@ -40,14 +40,16 @@ const Flower = ({ colorA, colorB, colorC, data, width, height }) => {
   const startDate = moment(minDate);
   const endDate = moment(maxDate);
   const scaleX = scaleTime().domain([startDate, endDate]).range([0, 0.5]);
-
-  // const progressData = scaleX.invert(progress.toFixed(3));
-  // const progressYear = moment(progressData).year();
   const progressYear = useStore.getState().actualYear;
-  console.log('progressYear', progressYear);
 
   return (
-    <div style={{ position: 'relative', width: dimension }}>
+    <div
+      style={{
+        position: 'relative',
+        width: dimension,
+        margin: isMobileWithTablet ? '0 auto' : 0,
+      }}
+    >
       <svg width={dimension} height={dimension}>
         <defs>
           <linearGradient
@@ -66,26 +68,14 @@ const Flower = ({ colorA, colorB, colorC, data, width, height }) => {
         <g transform={`translate(${dimension / 2},${dimension / 2})`}>
           {dataArray.map((d, i) => {
             const angle = (dataArray.length - i) * angleD + Math.PI;
-            console.log('angle', angle);
             const deg = angle * (180 / Math.PI);
             const petalWidth =
               nOfPetals > nMinPetals
                 ? parseInt(circumference / (nOfPetals - 1))
                 : parseInt(circumference / nMinPetals);
             const curveHeight = scaleY(d.v);
-            // const date = dates[i];
-            // const petalWidth =
-            //   scaleWidth(
-            //     date.length === 1 ? 1 : Number(date[1]) - Number(date[0]),
-            //   ) * 2;
-
-            // console.log(
-            //   'petalWidth',
-            //   date.length === 1 ? 1 : Number(date[1]) - Number(date[0]),
-            // );
             let selected = false;
             const keyYear = keysArray[i];
-            //console.log('keyYear', keyYear, 'progressYear', progressYear);
             if (keyYear.includes('-')) {
               const [minKey, maxKey] = keyYear.split('-');
               if (
@@ -123,29 +113,26 @@ const Flower = ({ colorA, colorB, colorC, data, width, height }) => {
                     c2={petalWidth * 0.1}
                     selected={selected}
                   />
-                  <text 
+                  <text
                     style={{
-                      display: selected ? 'block' : 'none'
+                      display: selected ? 'block' : 'none',
                     }}
-                    dy={-10}>{d.v}</text>
+                    dy={-10}
+                  >
+                    {d.v}
+                  </text>
                 </g>
               </g>
             );
           })}
           <circle cx={0} cy={0} r={radius * 1} stroke={'none'} fill="#EDEDED" />
-
-          {/* <g
-          transform={`matrix(sx, 0, 0, ${sy}, ${cx}-${sx}*${cx}, ${cy}-${sy}*${cy})`}
-        >
-          <Bezier height={100} width={100} c1={20} c2={10} />
-        </g> */}
         </g>
       </svg>
       <div
         dx={2}
         style={{
           color: red,
-          fontSize: '1.4vw',
+          fontSize: isMobileWithTablet ? '5vw' : '1.2vw',
           justifyContent: 'center',
           textAlign: 'center',
           position: 'absolute',

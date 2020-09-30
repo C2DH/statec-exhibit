@@ -1,11 +1,14 @@
 import React, { Component, Fragment } from 'react';
 import { Scrollama, Step } from 'react-scrollama';
-import Trend from './components/Trend';
-import Narrative from './components/Narrative';
-import populationDataset from './data/datasets/population.json';
-import landing from './assets/images/landing.svg';
-import Container from './components/Container';
-import TextContainer from './components/TextContainer';
+import Trend from '../Trend';
+import Narrative from '../Narrative';
+import populationDataset from '../../data/datasets/population.json';
+import landing from '../../assets/images/landing.svg';
+import Container from './Container';
+import TextContainer from './TextContainer';
+import { isMobileWithTablet } from '../../constants';
+import logo1 from '../../assets/images/Statec-logo.png';
+import logo2 from '../../assets/images/UNI_C2DH_noir_transp.png';
 
 class Chapter extends Component {
   constructor(props) {
@@ -61,28 +64,16 @@ class Chapter extends Component {
   render() {
     const { progress, data } = this.state;
     const { theme, heading, color } = this.props;
-    const themeDatasetName = theme.dataset;
-    const themeDataset = require(`./data/datasets/${themeDatasetName}.json`);
-    const moduleDataset = require(`./data/datasets/${theme.modules[data].datasetHeading}.json`);
+    const moduleDataset = require(`../../data/datasets/${theme.modules[data].datasetHeading}.json`);
+
     return (
       <div className="w-100">
         {heading && (
-          <div
-            className="w-100 chapter-2"
-            style={{ backgroundColor: '#FFD8C2', height: '100vh' }}
-          >
-            <div
-              className="absolute"
-              style={{
-                backgroundColor: '#FFD8C2',
-                top: 0,
-                left: 0,
-                bottom: 0,
-                right: 0,
-                zIndex: 2,
-              }}
-            >
+          <div className="heroContainer">
+            <div className="heroContainerWrapper">
               <div className="section-small">
+                <img src={logo1} alt={'Statec logo'} width={160} />
+                <img src={logo2} alt={'UNI C2DH logo'} width={160} />
                 <h1 className="tc">Les chiffres des migrations</h1>
                 <h2 className="sans fw3 mt0">Framing Luxembourg</h2>
                 <img src={landing} width={250} />
@@ -127,6 +118,8 @@ class Chapter extends Component {
                     timeKey="t"
                     trendName={'populationTrend'}
                     negative={false}
+                    from={theme.modules[data].from}
+                    to={theme.modules[data].to}
                   />
                 </div>
                 <div className="relative" style={{ height: '25vh' }}>
@@ -141,15 +134,19 @@ class Chapter extends Component {
                     trendName={theme.id}
                     progress={progress}
                     negative={true}
+                    from={theme.modules[data].from}
+                    to={theme.modules[data].to}
                   />
                 </div>
                 <div className="hr"></div>
-                <div>
+                {!isMobileWithTablet && (
                   <Narrative
                     chapter={theme.modules[data]}
                     progress={progress}
+                    from={theme.modules[data].from}
+                    to={theme.modules[data].to}
                   />
-                </div>
+                )}
               </div>
               <div style={{ overflow: 'hidden' }}>
                 <Scrollama
@@ -162,20 +159,23 @@ class Chapter extends Component {
                 >
                   {theme.modules.map((module, i) => {
                     const datasetName = module.dataset;
-                    const moduleDataset = require(`./data/datasets/${datasetName}.json`);
-                    const moduleDatasetName = module.datasetHeading;
+                    const moduleDataset = require(`../../data/datasets/${datasetName}.json`);
                     return (
                       <Step data={i} key={i}>
-                        <div style={{
-                          height: '200vh',
-                          paddingTop: module.layout === 'text' ? '60vh': '18vh'
-                        }}>
+                        <div
+                          style={{
+                            height: '200vh',
+                            paddingTop:
+                              module.layout === 'text' ? '60vh' : '18vh',
+                          }}
+                        >
                           {module.layout === 'flowers' && (
                             <Container
                               module={module}
                               moduleDataset={moduleDataset}
                               progress={i === data ? progress : 0}
                               shouldRender={i === data}
+                              focus={theme.modules[data].focus || null}
                             />
                           )}
                           {module.layout === 'text' && (
@@ -191,6 +191,7 @@ class Chapter extends Component {
                   })}
                 </Scrollama>
               </div>
+              <div style={{ height: '120px' }}></div>
             </div>
           </div>
         </div>

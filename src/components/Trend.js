@@ -11,38 +11,36 @@ import { Group } from '@vx/group';
 import { isMobileWithTablet } from '../constants';
 import { red } from '../constants';
 import { useStore } from '../store';
+
 const Trend = ({
+  id,
   data,
   toggleNote,
-  activateNote,
-  deactivateNote,
-  id,
   activeIndex,
   valueKey,
   timeKey,
-  highlightKey,
   height,
-  colorA,
-  colorB,
   trendName,
   progress,
   negative,
   title,
   source,
   legend,
+  from,
+  to,
 }) => {
   const [show, setShow] = useState(false);
   const [pathLength, setPathLength] = useState(1000);
-  useEffect(() => {
-    let peak = data[0].hasPeak || false;
-    let peakData = data.find((d) => d.peak);
-    const note = peakData ? peakData.note : null;
-    if (peak) {
-      //activateNote(note);
-    } else {
-      //deactivateNote();
-    }
-  }, [data]);
+  // useEffect(() => {
+  //   let peak = data[0].hasPeak || false;
+  //   let peakData = data.find((d) => d.peak);
+  //   const note = peakData ? peakData.note : null;
+  //   if (peak) {
+  //     //activateNote(note);
+  //   } else {
+  //     //deactivateNote();
+  //   }
+  // }, [data]);
 
   useEffect(() => {
     setShow(false);
@@ -85,8 +83,15 @@ const Trend = ({
 
   const scaleY2 = scaleLinear().domain([max, min]).range([0, trendHeight]);
 
-  const timelineScale = scaleLinear()
-    .range([0, graphWidth])
+  // const timelineScale = scaleLinear()
+  //   .range([0, graphWidth])
+  //   .domain([0.2, 0.8])
+  //   .clamp(true);
+
+  const fromDate = moment(`${from}-01-01`);
+  const toDate = moment(`${to}-01-01`);
+  const progressScale = scaleLinear()
+    .range([from ? scaleX(fromDate) : 0, to ? scaleX(toDate) : graphWidth])
     .domain([0.2, 0.8])
     .clamp(true);
 
@@ -97,7 +102,7 @@ const Trend = ({
   });
 
   const actualYear = progress
-    ? scaleX.invert(timelineScale(progress)).getFullYear()
+    ? scaleX.invert(progressScale(progress)).getFullYear()
     : null;
 
   useStore.setState({ actualYear: actualYear });
@@ -106,8 +111,18 @@ const Trend = ({
     return d.t === String(actualYear);
   });
 
+  const opacityScale = scaleLinear()
+    .domain([0, 0.2, 0.8, 0.95])
+    .range([0, 1, 1, 0]);
+
   return (
-    <div style={{ display: 'flex', flexDirection: 'column' }}>
+    <div
+      style={{
+        display: 'flex',
+        flexDirection: 'column',
+        opacity: negative ? opacityScale(progress) : 1,
+      }}
+    >
       {!negative && (
         <div style={{ display: 'flex', alignItems: 'baseline' }}>
           <div
@@ -130,7 +145,7 @@ const Trend = ({
         x="0px"
         y="0px"
         width={svgWidth}
-        height={negative ? svgHeight : svgHeight + 30}
+        height={negative ? svgHeight + 5 : svgHeight + 30}
         style={{
           border: '0px solid rgba(0,0,0,0.2)',
           margin: 'auto',
@@ -249,7 +264,7 @@ const Trend = ({
                       cx={scaleX(date)}
                       cy={trendHeight - scaleY(value)}
                       fill={red}
-                      r={8}
+                      r={5}
                     />
                     {/* <text
                     dx={
@@ -264,50 +279,6 @@ const Trend = ({
                 );
               }
             })}
-          </g>
-        )}
-        {min < 9 && (
-          <g transform={`translate(${marginLeft}, 0)`}>
-            <Line
-              from={{ x: timelineScale(0), y: scaleY(0) }}
-              to={{ x: timelineScale(100), y: scaleY(0) }}
-              stroke={'rgba(0,0,0,.5)'}
-              strokeWidth={1}
-              style={{ pointerEvents: 'none' }}
-              strokeDasharray={[1, 6]}
-            />
-            <Line
-              from={{ x: timelineScale(0), y: scaleY(-1000) }}
-              to={{ x: timelineScale(100), y: scaleY(-1000) }}
-              stroke={'rgba(0,0,0,.5)'}
-              strokeWidth={1}
-              style={{ pointerEvents: 'none' }}
-              strokeDasharray={[1, 6]}
-            />
-            <Line
-              from={{ x: timelineScale(0), y: scaleY(1000) }}
-              to={{ x: timelineScale(100), y: scaleY(1000) }}
-              stroke={'rgba(0,0,0,.5)'}
-              strokeWidth={1}
-              style={{ pointerEvents: 'none' }}
-              strokeDasharray={[1, 6]}
-            />
-            <Line
-              from={{ x: timelineScale(0), y: scaleY(2000) }}
-              to={{ x: timelineScale(100), y: scaleY(2000) }}
-              stroke={'rgba(0,0,0,.5)'}
-              strokeWidth={1}
-              style={{ pointerEvents: 'none' }}
-              strokeDasharray={[1, 6]}
-            />
-            <Line
-              from={{ x: timelineScale(0), y: scaleY(3000) }}
-              to={{ x: timelineScale(100), y: scaleY(3000) }}
-              stroke={'rgba(0,0,0,.5)'}
-              strokeWidth={1}
-              style={{ pointerEvents: 'none' }}
-              strokeDasharray={[1, 6]}
-            />
           </g>
         )}
         <g transform={`translate(${marginLeft}, 0)`}>
@@ -361,8 +332,8 @@ const Trend = ({
         {progress && (
           <g transform={`translate(${marginLeft}, 0)`}>
             <Line
-              from={{ x: timelineScale(progress), y: 0 }}
-              to={{ x: timelineScale(progress), y: svgHeight }}
+              from={{ x: progressScale(progress), y: 0 }}
+              to={{ x: progressScale(progress), y: svgHeight }}
               stroke={'#E99AA9'}
               strokeWidth={4}
               style={{ pointerEvents: 'none' }}
@@ -414,17 +385,17 @@ const Trend = ({
         <g transform={`translate(${marginLeft}, 4)`}>
           <AxisLeft
             top={0}
-            left={0}
+            left={graphWidth}
             scale={scaleY2}
             numTicks={negative ? 4 : 2}
             hideAxisLine={true}
-            hideTicks={true}
+            hideTicks={false}
             label=""
             stroke="#1b1a1e"
             tickLabelProps={(value, index) => ({
               fill: 'rgba(0,0,0,.5)',
               textAnchor: 'start',
-              fontSize: 11,
+              fontSize: isMobileWithTablet ? 6 : 11,
               fontFamily: 'Porpora',
               dx: '-4vw',
               dy: '.5vh',
@@ -432,6 +403,9 @@ const Trend = ({
             tickComponent={({ formattedValue, ...tickProps }) => (
               <text {...tickProps}>{formattedValue}</text>
             )}
+            tickLength={graphWidth}
+            tickStroke={'rgba(0,0,0,.5)'}
+            tickClassName={'tickTrend'}
           />
         </g>
       </svg>
@@ -456,4 +430,4 @@ const Trend = ({
   );
 };
 
-export default Trend;
+export default React.memo(Trend);

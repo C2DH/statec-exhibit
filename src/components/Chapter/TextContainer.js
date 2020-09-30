@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import { useSpring, animated } from 'react-spring';
+import React from 'react';
+import { animated } from 'react-spring';
 import { scaleLinear } from 'd3-scale';
 
 const TextContainer = ({ module, progress }) => {

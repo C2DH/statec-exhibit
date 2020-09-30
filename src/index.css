@@ -61,6 +61,39 @@ h2 {
   left: 0;
   background: transparent;
   z-index: 999;
+  display: flex;
+  padding: 5px 15px;
+  justify-content: space-between;
+}
+
+.stickyHeader a {
+  font-family: Porpora;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #433aa9;
+  text-decoration: none;
+}
+
+.stickyHeader a:hover {
+  text-decoration: underline;
+}
+
+.heroContainer {
+  height: 100vh;
+  width: 100%;
+  background-color: #ffd8c2;
+}
+
+.heroContainerWrapper {
+  position: absolute;
+  background-color: #ffd8c2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
 }
 
 .section {
@@ -225,4 +258,39 @@ p.moduleParagraph {
 
 .underline {
   text-decoration: underline;
+}
+
+.tickTrend {
+  stroke-dasharray: 1 6;
+}
+
+@media screen and (max-width: 600px) {
+  .section-small {
+    padding-top: 80px;
+  }
+
+  h1 {
+    font-size: 40px;
+    line-height: 1;
+  }
+
+  h2 {
+    font-size: 28px;
+    line-height: 1;
+  }
+
+  .moduleTitle {
+    font-size: 14px;
+  }
+  .moduleProgress {
+    font-size: 12px;
+  }
+  .textContainerTitle {
+    font-size: 20px;
+    line-height: 1;
+  }
+  .textContainerSubTitle {
+    font-size: 20px;
+    line-height: 1;
+  }
 }
