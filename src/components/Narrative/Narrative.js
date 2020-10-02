@@ -23,16 +23,11 @@ const Narrative = ({ chapter, progress, from, to }) => {
   );
 
   return (
-    <div
-      className={styles.wrapper}
-      style={{
-        paddingTop: chapter.layout === 'text' ? '20vh' : 0,
-      }}
-    >
-      <h1 className={styles.h1}>
+    <div className={styles.wrapper}>
+      <div className={styles.narrativeTitle}>
         {localParagraph ? localParagraph.year : localYear}
-      </h1>
-      <div className={styles.paragraphs}>
+      </div>
+      <div className={styles.narrativeParagraph}>
         {chapter.paragraphs.map((paragraph, i) => {
           const isParagraphVisible =
             localYear >= paragraph.from && localYear <= paragraph.to;

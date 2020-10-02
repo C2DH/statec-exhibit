@@ -40,13 +40,13 @@ h6,
 }
 
 h1 {
-  font-size: 65px;
-  line-height: 78px;
+  font-size: 8vh;
+  line-height: 1;
 }
 
 h2 {
-  font-size: 40px;
-  line-height: 50px;
+  font-size: 6vh;
+  line-height: 1;
 }
 
 .sans {
@@ -55,18 +55,19 @@ h2 {
 
 .stickyHeader {
   width: 100%;
-  height: 100px;
+  height: 50px;
   position: fixed;
   top: 0;
   left: 0;
   background: transparent;
   z-index: 999;
   display: flex;
-  padding: 5px 15px;
+  padding: 10px 15px;
   justify-content: space-between;
+  align-items: center;
 }
 
-.stickyHeader a {
+.stickyHeaderLink {
   font-family: Porpora;
   font-style: normal;
   font-weight: normal;
@@ -74,9 +75,10 @@ h2 {
   line-height: 19px;
   color: #433aa9;
   text-decoration: none;
+  cursor: pointer;
 }
 
-.stickyHeader a:hover {
+.stickyHeaderLink:hover {
   text-decoration: underline;
 }
 
@@ -108,7 +110,7 @@ h2 {
 }
 
 .section-small {
-  padding-top: 140px;
+  padding-top: 8vh;
   width: 80%;
   margin: auto;
   display: flex;
@@ -127,6 +129,7 @@ h2 {
   color: #d8434e;
   font-family: SneakyTimes, serif;
   font-size: 18px;
+  height: 45px;
 }
 
 .sectionText h3,
@@ -221,10 +224,9 @@ p.moduleParagraph {
   font-family: Sneaky;
   font-style: normal;
   font-weight: normal;
-  font-size: 40px;
-  line-height: 36px;
+  font-size: 30px;
+  line-height: 1.2;
   color: #d8434e;
-  text-decoration: underline;
 }
 
 .textContainerSubTitle {
@@ -232,9 +234,8 @@ p.moduleParagraph {
   font-style: normal;
   font-weight: normal;
   font-size: 30px;
-  line-height: 36px;
+  line-height: 1.2;
   color: #d8434e;
-  margin-top: 30px;
 }
 
 .moduleProgress {
@@ -252,7 +253,7 @@ p.moduleParagraph {
   font-weight: normal;
   font-size: 12px;
   line-height: 14px;
-
+  margin-top: 5px;
   color: rgba(0, 0, 0, 0.5);
 }
 

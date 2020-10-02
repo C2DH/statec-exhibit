@@ -3,6 +3,7 @@ import { animated } from 'react-spring';
 import { scaleLinear } from 'd3-scale';
 import Flower from '../Flower/Flower';
 import { isMobileWithTablet } from '../../constants';
+import Narrative from '../Narrative/Narrative';
 
 const Container = ({
   module,
@@ -10,6 +11,9 @@ const Container = ({
   progress,
   shouldRender,
   focus,
+  from,
+  to,
+  chapter,
 }) => {
   //const props = useSpring({ opacity: 1, from: { opacity: 0 } });
   const opacityScale = scaleLinear()
@@ -37,7 +41,7 @@ const Container = ({
       <div className="vizContainer">
         <div
           style={{
-            width: '100%',
+            width: '50%',
             display: 'flex',
             overflow: 'hidden',
           }}
@@ -55,12 +59,13 @@ const Container = ({
                   return module.groups.includes(v.group);
                 }
               })
+              .slice(0, 2)
               .map((v, j) => {
                 return (
                   <div
                     key={`flower-${j}`}
                     style={{
-                      width: isMobileWithTablet ? '100%' : '25%',
+                      width: isMobileWithTablet ? '100%' : '50%',
                       paddingTop: isMobileWithTablet ? 0 : '4vh',
                     }}
                   >
@@ -76,8 +81,8 @@ const Container = ({
                       }
                       width={
                         isMobileWithTablet
-                          ? window.innerWidth * 0.7
-                          : window.innerWidth * 0.28
+                          ? window.innerWidth * 0.6
+                          : window.innerWidth * 0.24
                       }
                       progress={progressScale(progress)}
                       key={`flower-${j}`}
@@ -86,14 +91,27 @@ const Container = ({
                 );
               })}
         </div>
-        {/* <div style={{ width: '40%', paddingLeft: '30px' }}>
-          <div className="peakDate">{`Peak date ${progress}`}</div>
-          <div className="peakTitle">
-            Peak explanation lorem ipsum dolor sit amet, consectetur adipiscing
-            elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-            aliqua.
+        <div
+          className="textContainer"
+          style={{ width: '50%', fontSize: '25px' }}
+        >
+          <div
+            style={{
+              width: '100%',
+              height: '90%',
+              backgroundColor: 'rgba(0,0,0,0.02)',
+              paddingLeft: '10px',
+              fontSize: '25px',
+            }}
+          >
+            <Narrative
+              chapter={chapter}
+              progress={progress}
+              from={from}
+              to={to}
+            />
           </div>
-        </div> */}
+        </div>
       </div>
     </animated.div>
   );

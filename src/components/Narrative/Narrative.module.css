@@ -1,16 +1,27 @@
-.wrapper{
+.wrapper {
   display: flex;
   justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  padding: 10px;
 }
 
-.paragraphs{
+.narrativeTitle,
+.narrativeParagraph {
+  font-family: Sneaky;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 1.2;
+  color: #d8434e;
+}
+
+.paragraphs {
   max-width: 50%;
   padding-left: 1rem;
   margin-left: 1rem;
   border-left: 1px solid red;
 }
 
-.paragraphs p{
+.paragraphs p {
   display: none;
 }

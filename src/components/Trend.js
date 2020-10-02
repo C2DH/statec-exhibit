@@ -59,10 +59,11 @@ const Trend = ({
   const svgWidth = isMobileWithTablet
     ? window.innerWidth * 0.9
     : window.innerWidth * 0.9;
+  const marginTop = 10;
   const marginLeft = window.innerWidth * 0.05;
   const graphWidth = svgWidth - marginLeft;
   const svgHeight = height;
-  const trendHeight = svgHeight;
+  const trendHeight = svgHeight - marginTop;
   const startDate = moment('1840-01-01');
   const endDate = moment('2014-01-01');
 
@@ -133,7 +134,7 @@ const Trend = ({
             <div className="dataSource">{source || 'source to add'}</div>
           </div>
           <div className="moduleProgress">
-            {progress && <span className="underline mr2">{actualYear}:</span>}
+            {/* {progress && <span className="underline mr2">{actualYear}:</span>} */}
             <b>{progress && actualValue ? actualValue.v : null}</b>
             &nbsp;
             {progress && legend ? legend.v : null}
@@ -165,7 +166,7 @@ const Trend = ({
             <stop offset="100%" stopColor={'#A9ECD9'} stopOpacity={1} />
           </linearGradient>
         </defs>
-        <g transform={`translate(${marginLeft}, 0)`}>
+        <g transform={`translate(${marginLeft}, ${marginTop})`}>
           <Animate
             show={show}
             start={() => ({
@@ -205,7 +206,7 @@ const Trend = ({
             }}
           </Animate>
         </g>
-        <g transform={`translate(${marginLeft}, 0)`}>
+        <g transform={`translate(${marginLeft}, ${marginTop})`}>
           <Animate
             show={show}
             start={() => ({
@@ -251,7 +252,7 @@ const Trend = ({
         </g>
         {/* Highlight circles */}
         {negative && (
-          <g transform={`translate(${marginLeft}, 0)`}>
+          <g transform={`translate(${marginLeft}, ${marginTop})`}>
             {data.map((d, i) => {
               const date = moment(d[timeKey]);
               const value = d[valueKey];
@@ -281,7 +282,7 @@ const Trend = ({
             })}
           </g>
         )}
-        <g transform={`translate(${marginLeft}, 0)`}>
+        <g transform={`translate(${marginLeft}, ${marginTop})`}>
           {parsedData.map((d, i) => {
             const date = moment(d[timeKey]);
             const value = d[valueKey];
@@ -330,19 +331,30 @@ const Trend = ({
         </g>
         {/* PROGRESS BAR*/}
         {progress && (
-          <g transform={`translate(${marginLeft}, 0)`}>
+          <g transform={`translate(${marginLeft}, ${marginTop})`}>
             <Line
-              from={{ x: progressScale(progress), y: 0 }}
-              to={{ x: progressScale(progress), y: svgHeight }}
-              stroke={'#E99AA9'}
-              strokeWidth={4}
+              from={{ x: progressScale(progress), y: negative ? 0 : 30 }}
+              to={{
+                x: progressScale(progress),
+                y: negative ? svgHeight - 30 : svgHeight,
+              }}
+              stroke={'#D1646C'}
+              strokeWidth={2}
               style={{ pointerEvents: 'none' }}
             />
+            <text
+              dx={progressScale(progress) - 15}
+              dy={negative ? svgHeight - 10 : 18}
+              fill={'#D1646C'}
+              fontSize="14"
+            >
+              {actualYear}
+            </text>
           </g>
         )}
         {/* AXES */}
         {!negative && (
-          <g transform={`translate(${marginLeft}, 4)`}>
+          <g transform={`translate(${marginLeft}, ${marginTop + 10})`}>
             <AxisBottom
               top={trendHeight - 10}
               left={0}
@@ -382,7 +394,7 @@ const Trend = ({
             </AxisBottom>
           </g>
         )}
-        <g transform={`translate(${marginLeft}, 4)`}>
+        <g transform={`translate(${marginLeft}, ${marginTop})`}>
           <AxisLeft
             top={0}
             left={graphWidth}
@@ -411,7 +423,7 @@ const Trend = ({
       </svg>
       {negative && (
         <div
-          style={{ display: 'flex', alignItems: 'baseline', marginTop: '15px' }}
+          style={{ display: 'flex', alignItems: 'baseline', marginTop: '0' }}
         >
           <div
             className="moduleTitle"
@@ -421,7 +433,7 @@ const Trend = ({
             <div className="dataSource">{source || 'source to add'}</div>
           </div>
           <div className="moduleProgress">
-            {progress && <span className="underline mr2">{actualYear}:</span>}
+            {/* {progress && <span className="underline mr2">{actualYear}:</span>} */}
             {progress && actualValue ? actualValue.v : null}
           </div>
         </div>

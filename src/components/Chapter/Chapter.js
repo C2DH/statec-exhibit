@@ -1,7 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import { Scrollama, Step } from 'react-scrollama';
 import Trend from '../Trend';
-import Narrative from '../Narrative';
 import populationDataset from '../../data/datasets/population.json';
 import landing from '../../assets/images/landing.svg';
 import Container from './Container';
@@ -67,21 +66,38 @@ class Chapter extends Component {
     const moduleDataset = require(`../../data/datasets/${theme.modules[data].datasetHeading}.json`);
 
     return (
-      <div className="w-100">
+      <div
+        className="w-100"
+        style={{
+          backgroundColor: color,
+        }}
+      >
         {heading && (
           <div className="heroContainer">
             <div className="heroContainerWrapper">
               <div className="section-small">
-                <img src={logo1} alt={'Statec logo'} width={160} />
-                <img src={logo2} alt={'UNI C2DH logo'} width={160} />
+                <img
+                  src={logo1}
+                  alt={'Statec logo'}
+                  style={{ height: '8vh' }}
+                />
+                <img
+                  src={logo2}
+                  alt={'UNI C2DH logo'}
+                  style={{ height: '8vh' }}
+                />
                 <h1 className="tc">Les chiffres des migrations</h1>
                 <h2 className="sans fw3 mt0">Framing Luxembourg</h2>
-                <img src={landing} width={250} />
+                <img src={landing} style={{ height: '30vh' }} />
               </div>
             </div>
           </div>
         )}
-        <div>
+        <div
+          style={{
+            backgroundColor: color,
+          }}
+        >
           <div
             className="w-100 chapter-1"
             style={{
@@ -100,14 +116,16 @@ class Chapter extends Component {
                   zIndex: 3,
                   backgroundColor: color,
                   height: '50vh',
-                  paddingTop: '1vh',
+                  paddingTop: '2vh',
                   display: 'flex',
                   flexDirection: 'column',
                   justifyContent: 'justify-between',
                 }}
               >
                 <div style={{ height: '24vh' }}>
-                  <div className="sectionTitle">{theme.title}</div>
+                  <div className="sectionTitle" style={{ height: '20px' }}>
+                    {/*theme.title*/}
+                  </div>
                   <Trend
                     title={populationDataset.title}
                     legend={populationDataset.legend}
@@ -127,7 +145,7 @@ class Chapter extends Component {
                     title={moduleDataset.title}
                     data={moduleDataset.values}
                     legend={moduleDataset.legend}
-                    height={window.innerHeight * 0.25 - 63}
+                    height={window.innerHeight * 0.24 - 63}
                     valueKey="v"
                     timeKey="t"
                     highlightKey="h"
@@ -139,14 +157,6 @@ class Chapter extends Component {
                   />
                 </div>
                 <div className="hr"></div>
-                {!isMobileWithTablet && (
-                  <Narrative
-                    chapter={theme.modules[data]}
-                    progress={progress}
-                    from={theme.modules[data].from}
-                    to={theme.modules[data].to}
-                  />
-                )}
               </div>
               <div style={{ overflow: 'hidden' }}>
                 <Scrollama
@@ -176,6 +186,9 @@ class Chapter extends Component {
                               progress={i === data ? progress : 0}
                               shouldRender={i === data}
                               focus={theme.modules[data].focus || null}
+                              chapter={theme.modules[data]}
+                              from={theme.modules[data].from}
+                              to={theme.modules[data].to}
                             />
                           )}
                           {module.layout === 'text' && (
@@ -183,6 +196,9 @@ class Chapter extends Component {
                               module={module}
                               progress={i === data ? progress : 0}
                               shouldRender={i === data}
+                              chapter={theme.modules[data]}
+                              from={theme.modules[data].from}
+                              to={theme.modules[data].to}
                             />
                           )}
                         </div>
