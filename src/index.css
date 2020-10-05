@@ -98,6 +98,10 @@ h2 {
   z-index: 2;
 }
 
+.heroContainerWrapper.withCover{
+  background-color: #ffd8c2d6;
+}
+
 .section {
   padding-top: 120px;
   width: 90%;
