@@ -29,7 +29,9 @@ const TextContainer = ({ module, progress, from, to, chapter }) => {
             {module.title}
           </div>
           {module.subheading && (
-            <div className="textContainerSubTitle">{module.subheading}</div>
+            <div className="textContainerSubTitle" dangerouslySetInnerHTML={{
+              __html: module.subheading
+            }}/>
           )}
           {/* {module.paragraphs && (
           <p className="moduleParagraph">{module.paragraphs}</p>
