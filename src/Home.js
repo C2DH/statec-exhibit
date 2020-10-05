@@ -8,6 +8,12 @@ import { useStore } from './store';
 function Home() {
   return (
     <div className="w-100" style={{ backgroundColor: 'rgb(217,238,241)' }}>
+      <div className="w-100 vh-100 position-fixed" style={{
+        backgroundImage: `url(${theme01.cover.url})`,
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
+        position: 'absolute',
+      }}></div>
       <div className="stickyHeader">
         <div
           className="stickyHeaderLink"
@@ -28,7 +34,7 @@ function Home() {
       </div>
       <About />
       <Contents />
-      <Chapter theme={theme01} heading={true} color={'rgb(217,238,241)'} />
+      <Chapter theme={theme01} heading={true} color={'rgba(217,238,241)'} />
     </div>
   );
 }
