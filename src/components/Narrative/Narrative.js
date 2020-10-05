@@ -24,9 +24,10 @@ const Narrative = ({ chapter, progress, from, to }) => {
 
   return (
     <div className={styles.wrapper}>
-      <div className={styles.narrativeTitle}>
-        {localParagraph ? localParagraph.year : localYear}
-      </div>
+      <div className={styles.narrativeTitle}>{localYear}</div>
+      {localParagraph?.title &&
+        <h3>{localParagraph.title}</h3>
+      }
       <div className={styles.narrativeParagraph}>
         {chapter.paragraphs.map((paragraph, i) => {
           const isParagraphVisible =
