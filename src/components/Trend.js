@@ -28,7 +28,9 @@ const Trend = ({
   legend,
   from,
   to,
-}) => {
+  paragraphs = [],
+  hotspots = [],
+} = {}) => {
   const [show, setShow] = useState(false);
   const [pathLength, setPathLength] = useState(1000);
   // useEffect(() => {
@@ -115,6 +117,20 @@ const Trend = ({
   const opacityScale = scaleLinear()
     .domain([0, 0.2, 0.8, 0.95])
     .range([0, 1, 1, 0]);
+  
+  // visualize rectangle related to current narrative paragraph
+  const currentParagraphs = paragraphs.map((p) => ({
+    fromDate: moment(`${p.from}-01-01`),
+    toDate: moment(`${p.to}-01-01`),
+    isVisible: actualYear >= p.from && actualYear <= p.to
+  }))
+  
+  const currentHotspots = hotspots.map((h) => ({
+    t: moment(`${h.t}-01-01`),
+    label: h.label,
+    type: h.h,
+    isVisible: actualYear >= h.from && actualYear <= h.to
+  }))
 
   return (
     <div
@@ -167,6 +183,20 @@ const Trend = ({
           </linearGradient>
         </defs>
         <g transform={`translate(${marginLeft}, ${marginTop})`}>
+          {currentParagraphs.map((p, i) => {
+            const px = scaleX(p.fromDate)
+            const pw = Math.abs(scaleX(p.toDate) - px)
+            return (
+              <rect
+                fill={p.isVisible ? red : "#eee"}
+                key={i}
+                x={px}
+                y={0}
+                height={trendHeight}
+                width={pw}>
+              </rect>
+            )
+          })}
           <Animate
             show={show}
             start={() => ({
@@ -204,7 +234,41 @@ const Trend = ({
                 />
               );
             }}
+            
           </Animate>
+          <LinePath
+            className="values"
+            data={data}
+            x={(d) => scaleX(x(d))}
+            y={(d) => scaleY2(y(d))}
+            strokeWidth={1}
+            stroke="black"
+            strokeOpacity={1}
+            curve={curveMonotoneX}
+          />
+          <line
+            x1={scaleX(fromDate)}
+            x2={scaleX(toDate)}
+            y1={negative ? trendHeight : 1} y2={negative ? trendHeight : 1}
+            stroke={red} strokeWidth={1}></line>
+          <line
+            className="toZero"
+            x1={0}
+            x2={graphWidth}
+            y1={scaleY2(0)} y2={scaleY2(0)}
+            stroke={"black"} strokeWidth={1}>
+          </line>
+          {currentHotspots.map((d, i) => {
+            return (
+              <circle
+                key={i}
+                cx={scaleX(d.t)}
+                cy={trendHeight}
+                fill={red}
+                r={5}
+              />
+            )
+          })}
         </g>
         <g transform={`translate(${marginLeft}, ${marginTop})`}>
           <Animate
