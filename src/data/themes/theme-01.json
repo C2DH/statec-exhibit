@@ -1,223 +1,110 @@
 {
   "id": "a-country-of-migrations",
   "title": "A Country of migrations",
-  "dataset": "population",
-  "datasetHeading": "number-of-births",
+  "dataset": "trend-lux-population-growth",
+  "datasetHeading": "trend-lux-population-foreigner-growth",
+  "cover": {
+    "url": "https://live.staticflickr.com/8308/7787067926_77f29e31f4_b_d.jpg",
+    "caption": "Bus at the border between Luxembourg and France in 1948",
+    "source": "Foto: Gösta Nordin. Date: 1948. Photo Nr: 2218-96, Stockholm Transport Museum"
+  },
   "modules": [
     {
-      "title": "In 1839, after almost half of the old Duchy of Luxembourg was ceded to Belgium, and the Grand Duchy of Luxembourg remained a mere 2,589 km2 as territory, 169,920 inhabitants were counted.",
-      "subheading": "This is the story of how and why people moved in and out from Luxembourg, narrated through numbers.",
-      "datasetHeading": "density-of-inhabitants",
-      "dataset": "population",
+      "title": "Une croissance démographique exceptionnelle sur le long terme.",
+      "subheading": "La population du Luxembourg a plus que triplé depuis 1839 (date de l'indpendance du pays). De quelque <b>170.000</b> habitants en 1839 , la population du Grand-Duché passe à plus de <b>600.000</b> aujourd'hui.",
+      "datasetHeading": "population-balance",
+      "dataset": "trend-lux-population-growth",
       "layout": "text",
       "from": 1840,
-      "to": 1990,
+      "to": 2014,
       "paragraphs": [
         {
-          "from": 1920,
-          "to": 1930,
-          "year": "1920's",
-          "text": "Increase right after the first world war.",
-          "source": "(todo)"
-        },
-        {
-          "from": 1920,
-          "to": 1930,
-          "year": "1960's",
-          "text": "...and around 1960 (the Protuguese decennias)",
-          "source": "(todo)"
+            "from": 1860,
+            "to": 2000,
+            "text": "La croissance démographique se retrouve évidemment dans l'augmentation de la densité de la population qui passe d'environ 70 habitants au km2 dans les années 1840 à plus de 210 habitants au km2 en 2020."
         }
-      ],
-      "focus": ""
+      ]
     },
     {
-      "title": "Since 1839, Luxembourg has always been a country of migration(s)",
-      "subheading": "An emigration country up to the 1900s and an immigration country from de interwar period onwards",
-      "datasetHeading": "number-of-births",
-      "dataset": "population-by-gender",
-      "layout": "flowers",
+      "title": "L'ensemble de la période allant de l'indépendance du Grand-Duché en 1839 jusqu'aux années 1890 est marquée par une croissance démographique relativement lente.",
+      "subheading": "Elle est liée à une croissance économique hésitante et des conditions de vie qui restent précaires, la véritable industrialisation du pays ne prenant son envol que dans les 1880. L'excédent naturel est cependant positif étant donné que la mortalité (surtout infantile) recule plus fortement que la natalité.",
+      "datasetHeading": "natural-balance",
+      "dataset": "trend-lux-population-growth",
+      "layout": "text",
       "from": 1840,
-      "to": 1920,
+      "to": 2014
+    },
+    {
+      "title": "Une première accélération (modérée) de la croissance de la population",
+      "layout": "flowers",
+      "from": 1880,
+      "to": 2014,
+      "datasetHeading": "population-balance",
+      "dataset": "groups-first-industrialisation-1880-1900",
       "paragraphs": [
-        {
-          "from": 1840,
-          "to": 1860,
-          "year": "1840-1860",
-          "text": "Since 1839, Luxembourg has always been a country of migration(s): an emigration country up to the 1900s and an immigration country from de interwar period onwards",
-          "source": "(todo)"
-        },
-        {
-          "from": 1861,
-          "to": 1870,
-          "year": "1860's",
-          "text": "Luxembourg was plagued by a Cholera pandemic in 1865. More than 3,546 people died in less than 2 years.",
-          "source": "Pandemics before coronavirus: Cholera, Black Death, Spanish Flu in Luxembourg",
-          "sourceUrl": "https://today.rtl.lu/culture/exhibitions-and-history/a/1451963.html"
-        },
-        {
-          "from": 1871,
-          "to": 1880,
-          "year": "1870's and 1880's",
-          "text": "..."
-        },
         {
           "from": 1880,
-          "to": 1905,
-          "year": "after the 1880's",
-          "text": "A relatively big number of families start entering the country. More and more births are registered"
-        },
-        {
-          "from": 1906,
-          "to": 1914,
-          "year": "1900-1914",
-          "text": "Before the first wolrd war. More men than women. A drop of number of births"
-        },
-        {
-          "from": 1960,
-          "to": 1990,
-          "year": "1960-today",
-          "text": "aujourd’hui près de la moitié dela population est de nationalité étrangère et plus de 60% de la population on tun arrière-fond migratoire (père ou mère immigrée) "
-        }
-      ],
-      "attachments": [
-        {
-          "startDate": "1840-01-01",
-          "endDate": "1840-12-23",
-          "title": "Circulaire N°9479 concernant, entre autres, l'inscriptions des enfants morts-nés.",
-          "type": "pdf",
-          "url": "http://legilux.public.lu/eli/etat/leg/cmin/1840/12/23/n1/jo"
-        },
-        {
-          "startDate": "1843-07-26",
-          "endDate": "1843-07-26",
-          "title": "Loi du 26 juillet 1843, N° 1709b, sur l'instruction primaire.",
-          "type": "pdf",
-          "url": "http://legilux.public.lu/eli/etat/leg/loi/1843/07/26/n1/jo"
-        }
-      ],
-      "focus": "Men with Luxembougish nationality"
-    },
-    {
-      "title": "Lxembourg wasn't immune to overseas appeal...",
-      "subheading": "Lorem ipsum dolorem sit amet",
-      "datasetHeading": "migratory-balance",
-      "dataset": "transatlantic-emigrations",
-      "layout": "flowers",
-      "attachments": [],
-      "from": 1904,
-      "to": 1922,
-      "paragraphs": [
-        {
-          "from": 1840,
           "to": 1900,
-          "year": "1900",
-          "text": "Luxembourg wasn't immune to overseas appeal. At the beginning of the 1900, transatlantic ships opened the way to the US and to other overseas country.",
-          "source": "(todo)"
-        },
-        {
-          "from": 1901,
-          "to": 1910,
-          "year": "1906-1907",
-          "text": "Luxembourgers leaving to overseas countries",
-          "source": "(todo)"
-        },
-        {
-          "from": 1911,
-          "to": 1922,
-          "year": "1909-1922",
-          "text": "The first world war.",
-          "source": "(todo)"
+          "text": "Une première accélération (modérée) de la croissance de la population intervient dans les deux décennies précédant la première guerre mondiale qui voit un premier boom de la sidérurgie. La première grande usine sidérurgique commence à produire de l'acier à Dudelange en 1885."
         }
       ],
-      "focus": "Etrangers"
+      "moduleHotspots": [
+        {
+          "t": "1885",
+          "l": "Dudelange ARBED",
+          "v": 0
+        }
+      ]
     },
     {
-      "title": "But even then, there have been peaks in immigration",
-      "subheading": "first at the end of the 1890, in the 1920s, at the end of the 1960s and the first t years of the 1970, and from 1985 onwards) which are linked to the economic expansion.",
-      "datasetHeading": "migratory-balance",
-      "dataset": "transatlantic-emigrations",
-      "layout": "text",
-      "attachments": [],
-      "from": 1890,
-      "to": 1960,
+      "title": "A partir de la fin des années 1890, les capitaux allemands (le Luxembougr fait partie du Zollverein à partir de 1842) investissent massivement dans la sidérurgie",
+      "layout": "flowers",
+      "from": 1900,
+      "to": 2014,
+      "datasetHeading": "population-balance",
+      "dataset": "groups-first-industrialisation-1880-1900",
       "paragraphs": [
         {
-          "from": 1890,
-          "to": 1909,
-          "year": "1890-1900",
-          "text": "First wave of immigration in Luxembourg"
-        },
+          "from": 1905,
+          "to": 1910,
+          "text": "A partir de la fin des années 1890, les capitaux allemands (le Luxembougr fait partie du Zollverein à partir de 1842) investissent massivement dans la sidérurgie (Differdange, Belval etc.) contribuant ainsi à l'expansion économique qui va de pair avec une croissance importante de la population dont le nopmbre passe de 210.000 en 1890 à 260.000 en 1910. Un pays d'émigration est devenu un pays d'immigration."
+        }
+      ]
+    },
+    {
+      "title": "L'entrée en guerre est synonyme d'une stagnation démographique au Grand-Duché de Luxembourg.",
+      "subheading": "Beaucoup d'immigrés partent, la mortalité augmente, et les naissances diminuent. Les événements économiques qui suivent la guerre (sortie du Zollverein et création de l'UEBL) et sociaux (grèves, tensions politiques) retardent la sortie du marasme économique.",
+      "layout": "text",
+      "from": 1910,
+      "to": 2014,
+      "datasetHeading": "population-balance",
+      "dataset": "groups-first-industrialisation-1880-1900",
+      "paragraphs": [
         {
           "from": 1920,
-          "to": 1929,
-          "year": "1920's",
-          "text": "Second wave of immigration in Luxembourg"
-        },
-        {
-          "from": 1940,
-          "to": 1950,
-          "year": "1940-1950",
-          "text": "Second world war."
+          "to": 1930,
+          "text": "La deuxième moitié des années 1920 est synonyme d'une accélération économique, notamment de la production sidérurgique. La démographie suit ce mouvement ascendant."
         }
       ]
     },
     {
-      "title": "Arrivals summary",
-      "subheading": "first at the end of the 1890, in the 1920s, at the end of the 1960s and the first t years of the 1970, and from 1985 onwards) which are linked to the economic expansion.",
-      "datasetHeading": "migratory-balance",
-      "dataset": "arrivals-summary",
-      "layout": "flowers",
-      "attachments": [],
-      "from": 1960,
-      "to": 2010,
-      "groups": ["total", "european countries"]
-    },
-    {
-      "title": "Arrivals by nationalities: the portuguese decennias and GDP",
-      "subheading": "first at the end of the 1890, in the 1920s, at the end of the 1960s and the first t years of the 1970, and from 1985 onwards) which are linked to the economic expansion.",
-      "datasetHeading": "migratory-balance",
-      "dataset": "arrivals-by-nationalities",
-      "layout": "flowers",
-      "attachments": [],
-      "from": 1840,
-      "to": 1960,
-      "groups": ["Belgium", "France", "Germany"],
-      "paragraphs": [
-        {
-          "from": 1960,
-          "to": 1970,
-          "year": "60s",
-          "text": "60s"
-        }
-      ]
-    },
-    {
-      "title": "Departures summary",
-      "subheading": "first at the end of the 1890, in the 1920s, at the end of the 1960s and the first t years of the 1970, and from 1985 onwards) which are linked to the economic expansion.",
-      "datasetHeading": "migratory-balance",
-      "dataset": "transatlantic-emigrations",
+      "title": "En 1930, la crise économique mondiale, qui a débuté en 1929 par le krach de Wallstreet, commence à avoir un impact au Luxembourg.",
+      "subheading": "Le chômage augmente, la production sidérurgique diminue, les comptes publics sont sous tension.",
       "layout": "text",
-      "attachments": [],
-      "from": 1960,
-      "to": 2010
-    },
-    {
-      "title": "Which nationality have people that leave Luxembourg? 1",
-      "datasetHeading": "trend-excess-arrivals-departures",
-      "dataset": "departures-summary",
-      "layout": "flowers",
+      "from": 1930,
+      "to": 2014,
+      "datasetHeading": "population-balance",
+      "dataset": "groups-first-industrialisation-1880-1900",
       "paragraphs": [
         {
-          "from": 1960,
-          "to": 1975,
-          "year": "1960-1975",
-          "text": "Les départs tendent cependant plutôt à diminuer légèrement au cours des années 1960, puis se stabilisent jusqu’au milieu des années 1990.",
-          "source": "(todo)"
+          "from": 1930,
+          "to": 1935,
+          "text": "La population diminue de 1930 à 1935  (quelque 300 personnes en moins), puis rebondit dans des proportions modestes dans la deuxième moitié des années 1930."
         },
         {
-          "year": "1975-1985",
-          "text": "La crise des années 1975-1985 se répercute sur les migrations (chute des arrivées et ce sont surtout les Portugais qui jouent le rôle d'ajustement)",
-          "source": "(todo)"
+          "from": 1935,
+          "to": 1947,
+          "text": "La deuxième guerre mondiale a des répercussions importantes damns le domaine démographique. La mortalité augmente (victimes directes de la guerre, conditions de subsistance difficiles), la natalité diminue. Entre 1935 et 1946, la population résidente passe de  297.000 en 1935 à 291.000 en 1947."
         }
       ]
     }
