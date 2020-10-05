@@ -69,12 +69,12 @@ class Chapter extends Component {
       <div
         className="w-100"
         style={{
-          backgroundColor: color,
+          backgroundColor: color
         }}
       >
         {heading && (
           <div className="heroContainer">
-            <div className="heroContainerWrapper">
+            <div className="heroContainerWrapper withCover">
               <div className="section-small">
                 <img
                   src={logo1}
@@ -88,7 +88,7 @@ class Chapter extends Component {
                 />
                 <h1 className="tc">Les chiffres des migrations</h1>
                 <h2 className="sans fw3 mt0">Framing Luxembourg</h2>
-                <img src={landing} style={{ height: '30vh' }} />
+                <img src={landing} alt="scroll" style={{ height: '30vh' }} />
               </div>
             </div>
           </div>
@@ -124,7 +124,7 @@ class Chapter extends Component {
               >
                 <div style={{ height: '24vh' }}>
                   <div className="sectionTitle" style={{ height: '20px' }}>
-                    {/*theme.title*/}
+                    {theme.title}
                   </div>
                   <Trend
                     title={populationDataset.title}
@@ -154,6 +154,8 @@ class Chapter extends Component {
                     negative={true}
                     from={theme.modules[data].from}
                     to={theme.modules[data].to}
+                    hotspots={theme.modules[data].moduleHotspots}
+                    paragraphs={theme.modules[data].paragraphs}
                   />
                 </div>
                 <div className="hr"></div>
@@ -193,6 +195,7 @@ class Chapter extends Component {
                           )}
                           {module.layout === 'text' && (
                             <TextContainer
+                              index={i}
                               module={module}
                               progress={i === data ? progress : 0}
                               shouldRender={i === data}
