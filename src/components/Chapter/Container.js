@@ -29,15 +29,6 @@ const Container = ({
       className="scrollSection"
       style={{ opacity: opacityScale(progress) }}
     >
-      <div className="sectionText">
-        <div className="moduleTitle" style={{ position: 'relative' }}>
-          {moduleDataset.title}
-          {moduleDataset.subheading ? `, ${moduleDataset.subheading}` : ''}
-        </div>
-        {moduleDataset.paragraphs && (
-          <p className="moduleParagraph">{moduleDataset.paragraphs}</p>
-        )}
-      </div>
       <div className="vizContainer">
         <div
           style={{
@@ -112,6 +103,15 @@ const Container = ({
             />
           </div>
         </div>
+      </div>
+      <div className="sectionText">
+        <div className="moduleTitle" style={{ position: 'relative' }}>
+          {moduleDataset.title}
+          {moduleDataset.subheading ? `, ${moduleDataset.subheading}` : ''}
+        </div>
+        {moduleDataset.paragraphs && (
+          <p className="moduleParagraph">{moduleDataset.paragraphs}</p>
+        )}
       </div>
     </animated.div>
   );
