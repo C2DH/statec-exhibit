@@ -3,7 +3,7 @@ import { animated } from 'react-spring';
 import { scaleLinear } from 'd3-scale';
 import Narrative from '../Narrative/Narrative';
 
-const TextContainer = ({ module, progress, from, to, chapter }) => {
+const TextContainer = ({ index, module, progress, from, to, chapter }) => {
   //const props = useSpring({ opacity: 1, from: { opacity: 0 } });
 
   const opacityScale = scaleLinear()
@@ -25,6 +25,7 @@ const TextContainer = ({ module, progress, from, to, chapter }) => {
           className="textContainer"
           style={{ width: '50%', paddingRight: '15px' }}
         >
+          <div>{index + 1}</div>
           <div className="textContainerTitle" style={{ position: 'relative' }}>
             {module.title}
           </div>
