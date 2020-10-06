@@ -109,10 +109,12 @@ const Trend = ({
     : null;
 
   useStore.setState({ actualYear: actualYear });
-
-  const actualValue = data.find((d) => {
-    return d.t === String(actualYear);
-  });
+  
+  const valuesIndexByTime = data.reduce((sum, elt) => {
+    sum[String(elt.t)] = elt.v;
+    return sum
+  }, {})
+  const actualValue = valuesIndexByTime[String(actualYear)];
 
   const opacityScale = scaleLinear()
     .domain([0, 0.2, 0.8, 0.95])
@@ -127,6 +129,7 @@ const Trend = ({
   
   const currentHotspots = hotspots.map((h) => ({
     t: moment(`${h.t}-01-01`),
+    v: valuesIndexByTime[h.t],
     label: h.label,
     type: h.h,
     isVisible: actualYear >= h.from && actualYear <= h.to
@@ -135,6 +138,7 @@ const Trend = ({
   return (
     <div
       style={{
+        position: 'relative',
         display: 'flex',
         flexDirection: 'column',
         opacity: negative ? opacityScale(progress) : 1,
@@ -188,10 +192,12 @@ const Trend = ({
             const pw = Math.abs(scaleX(p.toDate) - px)
             return (
               <rect
-                fill={p.isVisible ? red : "#eee"}
+                fill={p.isVisible ? red : "#ccc"}
                 key={i}
                 x={px}
                 y={0}
+                stroke={"white"}
+                strokeWidth={2}
                 height={trendHeight}
                 width={pw}>
               </rect>
@@ -243,14 +249,16 @@ const Trend = ({
             y={(d) => scaleY2(y(d))}
             strokeWidth={1}
             stroke="black"
-            strokeOpacity={1}
+            strokeOpacity={.2}
             curve={curveMonotoneX}
           />
-          <line
-            x1={scaleX(fromDate)}
-            x2={scaleX(toDate)}
-            y1={negative ? trendHeight : 1} y2={negative ? trendHeight : 1}
-            stroke={red} strokeWidth={1}></line>
+          {/*
+            <line
+              x1={scaleX(fromDate)}
+              x2={scaleX(toDate)}
+              y1={negative ? trendHeight : 1} y2={negative ? trendHeight : 1}
+              stroke={red} strokeWidth={1}></line>
+          */}
           <line
             className="toZero"
             x1={0}
@@ -263,9 +271,9 @@ const Trend = ({
               <circle
                 key={i}
                 cx={scaleX(d.t)}
-                cy={trendHeight}
+                cy={scaleY2(d.v)}
                 fill={red}
-                r={5}
+                r={4}
               />
             )
           })}
@@ -406,14 +414,6 @@ const Trend = ({
               strokeWidth={2}
               style={{ pointerEvents: 'none' }}
             />
-            <text
-              dx={progressScale(progress) - 15}
-              dy={negative ? svgHeight - 10 : 18}
-              fill={'#D1646C'}
-              fontSize="14"
-            >
-              {actualYear}
-            </text>
           </g>
         )}
         {/* AXES */}
@@ -485,6 +485,19 @@ const Trend = ({
           />
         </g>
       </svg>
+      <div style={{
+        position: 'absolute', 
+        bottom: negative ? '37px' : 'auto',
+        top: negative ? 'auto' : '44px'
+      }}>
+        <div style={{
+          transform: `translateX(${progressScale(progress) + marginLeft}px)`,
+          width: "100px",
+          marginLeft: "-50px",
+          textAlign: "center",
+        }}
+        ><span style={{background: red, color: "white", padding:"2px 4px"}}>{actualYear}</span></div>
+      </div>
       {negative && (
         <div
           style={{ display: 'flex', alignItems: 'baseline', marginTop: '0' }}
