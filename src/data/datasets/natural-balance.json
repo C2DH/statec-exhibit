@@ -1,9 +1,10 @@
 {
-  "title": "Natural surplus, per year",
+  "title": "Natural balance, per year",
   "timeformat": "YYYY",
   "legend": {
-    "v": "Difference between the number of births and the number of deaths for the given year"
+    "v": "%"
   },
+  "description": "Difference between the number of births and the number of deaths for the given year",
   "source": "STATEC",
   "sourceUrl": "https://statistiques.public.lu/stat/TableViewer/tableView.aspx?ReportId=12868&IF_Language=eng&MainTheme=2&FldrName=2",
   "values": [
