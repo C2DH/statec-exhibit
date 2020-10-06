@@ -225,21 +225,24 @@ p.moduleParagraph {
 }
 
 .textContainerTitle {
-  font-family: Sneaky;
+  /* font-family: Sneaky; */
+  font-family: Porpora, Arial, sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: bold;
   font-size: 30px;
-  line-height: 1.2;
+  line-height: 1.25;
   color: #d8434e;
+  margin-bottom: 15px;
 }
 
 .textContainerSubTitle {
   font-family: Sneaky;
   font-style: normal;
   font-weight: normal;
-  font-size: 30px;
-  line-height: 1.2;
-  color: #d8434e;
+  font-size: 25px;
+  line-height: 1.25;
+  /* color: #d8434e; */
+  color: black;
 }
 
 .moduleProgress {
