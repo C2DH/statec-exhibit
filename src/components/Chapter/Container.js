@@ -14,6 +14,7 @@ const Container = ({
   from,
   to,
   chapter,
+  extentValues
 }) => {
   //const props = useSpring({ opacity: 1, from: { opacity: 0 } });
   const opacityScale = scaleLinear()
@@ -65,6 +66,7 @@ const Container = ({
                       colorB={'#f8b294'}
                       colorC={'#F77DA6'}
                       data={v}
+                      extentValues={extentValues}
                       height={
                         isMobileWithTablet
                           ? window.innerHeight * 0.5

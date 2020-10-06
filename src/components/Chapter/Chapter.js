@@ -203,6 +203,7 @@ class Chapter extends Component {
                               shouldRender={i === data}
                               focus={theme.modules[data].focus || null}
                               chapter={theme.modules[data]}
+                              extentValues={theme.modules[data].extent}
                               from={theme.modules[data].from}
                               to={theme.modules[data].to}
                             />
