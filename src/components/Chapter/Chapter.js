@@ -159,9 +159,7 @@ class Chapter extends Component {
                     paragraphs={theme.modules[data].paragraphs}
                   />
                 </div>
-                {/*
                 <div className="hr"></div>
-                */}
               </div>
               <div style={{ overflow: 'hidden' }}>
                 <Scrollama
