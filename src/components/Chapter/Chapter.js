@@ -5,6 +5,7 @@ import populationDataset from '../../data/datasets/population.json';
 import landing from '../../assets/images/landing.svg';
 import Container from './Container';
 import TextContainer from './TextContainer';
+import ImageContainer from '../ImageContainer';
 import { isMobileWithTablet } from '../../constants';
 import logo1 from '../../assets/images/Statec-logo.png';
 import logo2 from '../../assets/images/UNI_C2DH_noir_transp.png';
@@ -86,8 +87,8 @@ class Chapter extends Component {
                   alt={'UNI C2DH logo'}
                   style={{ height: '8vh' }}
                 />
-                <h1 className="tc">Les chiffres des migrations</h1>
-                <h2 className="sans fw3 mt0">Framing Luxembourg</h2>
+                <h2 className="sans">Framing Luxembourg</h2>
+                <h1 className="tc  fw3 mt0">Les chiffres des migrations</h1>
                 <img src={landing} alt="scroll" style={{ height: '30vh' }} />
               </div>
             </div>
@@ -158,7 +159,9 @@ class Chapter extends Component {
                     paragraphs={theme.modules[data].paragraphs}
                   />
                 </div>
+                {/*
                 <div className="hr"></div>
+                */}
               </div>
               <div style={{ overflow: 'hidden' }}>
                 <Scrollama
@@ -181,6 +184,17 @@ class Chapter extends Component {
                               module.layout === 'text' ? '60vh' : '18vh',
                           }}
                         >
+                          {module.layout === 'image' && (
+                            <ImageContainer
+                              index={i}
+                              module={module}
+                              progress={i === data ? progress : 0}
+                              shouldRender={i === data}
+                              chapter={theme.modules[data]}
+                              from={theme.modules[data].from}
+                              to={theme.modules[data].to}
+                            />
+                          )}
                           {module.layout === 'flowers' && (
                             <Container
                               module={module}
