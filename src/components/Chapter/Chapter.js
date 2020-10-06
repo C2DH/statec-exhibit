@@ -1,7 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import { Scrollama, Step } from 'react-scrollama';
 import Trend from '../Trend';
-import populationDataset from '../../data/datasets/population.json';
 import landing from '../../assets/images/landing.svg';
 import Container from './Container';
 import TextContainer from './TextContainer';
@@ -18,6 +17,7 @@ class Chapter extends Component {
       steps: [],
       progress: 0,
     };
+    this.themeDataset = require(`../../data/datasets/${props.theme.dataset}.json`);
   }
 
   componentDidMount() {
@@ -88,7 +88,7 @@ class Chapter extends Component {
                   style={{ height: '8vh' }}
                 />
                 <h2 className="sans">Framing Luxembourg</h2>
-                <h1 className="tc  fw3 mt0">Les chiffres des migrations</h1>
+                <h1 className="tc  fw3 mt0">{theme.title}</h1>
                 <img src={landing} alt="scroll" style={{ height: '30vh' }} />
               </div>
             </div>
@@ -128,9 +128,9 @@ class Chapter extends Component {
                     {theme.title}
                   </div>
                   <Trend
-                    title={populationDataset.title}
-                    legend={populationDataset.legend}
-                    data={populationDataset.values}
+                    title={this.themeDataset.title}
+                    legend={this.themeDataset.legend}
+                    data={this.themeDataset.values}
                     progress={progress}
                     height={window.innerHeight * 0.24 - 100}
                     valueKey="v"
@@ -171,8 +171,10 @@ class Chapter extends Component {
                   threshold={0}
                 >
                   {theme.modules.map((module, i) => {
-                    const datasetName = module.dataset;
-                    const moduleDataset = require(`../../data/datasets/${datasetName}.json`);
+                    let moduleDataset = null;
+                    if (module.dataset) {
+                      moduleDataset = require(`../../data/datasets/${module.dataset}.json`);
+                    }
                     return (
                       <Step data={i} key={i}>
                         <div
@@ -193,7 +195,7 @@ class Chapter extends Component {
                               to={theme.modules[data].to}
                             />
                           )}
-                          {module.layout === 'flowers' && (
+                          {module.layout === 'flowers' && moduleDataset && (
                             <Container
                               module={module}
                               moduleDataset={moduleDataset}
