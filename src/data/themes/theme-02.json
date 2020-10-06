@@ -14,6 +14,8 @@
       "subheading": "Si le solde naturel, c'est-à-dire l'excédent des naissances sur les décès) reste positif, c'est grâce à la baissede la mortalité due au progrès médical et sanitaire et à l’amélioration des conditions de vie (logement, régime alimentaire …).  Au 20ème siècle le solde naturel est tendanciellement plus faible qu’au 19ème siècle, ce qui est dû à la la natalité qui continue à se tasser suite à une fécondité (le nombre d'enfants par femme) qui est en recul. Et il y a quelques périodes où même la baisse de la mortalité n’arrive pas à équilibrer cette tendance de la baisse de la natalité.",
       "layout": "text",
       "datasetHeading": "birth-rate",
+      "from": 1840,
+      "to": 1880,
       "paragraphs": [
         {
           "from": 1840,
@@ -26,6 +28,44 @@
           "to": 1868,
           "text": "La mortalité augmente fortement (épidémie du choléra) et n'est pas compensée par la natalité. Comme en même temps les gens partent à l’étranger, le Luxembourg perd des habitants à cette époque). En 1866 la population recule de 3.500 habitants. En 1867, la perte d'habitants est similaire, mais c'est l'émigration seule qui en est responsable."
         },
+        { "from": 1885, "to": 1910 },
+        { "from": 1917, "to": 1918 },
+        { "from": 1920, "to": 1935 },
+        { "from": 1944, "to": 1947 },
+        { "from": 1960, "to": 1970 },
+        { "from": 1990, "to": 2000 }
+      ]
+    },
+    {
+      "from": 1882,
+      "to": 1912,
+      "layout": "flowers",
+      "datasetHeading": "birth-rate",
+      "dataset": "groups-first-industrialisation-1880-1900",
+      "extent": [0, 14],
+      "paragraphs": [
+        { "from": 1840, "to": 1846 },
+        { "from": 1866, "to": 1868 },
+        {
+          "from": 1885,
+          "to": 1910,
+          "text": "Malgré la phase de croissance économique forte de 1885 à 1913, le mouvement d’émigration de Luxembourgeois reprend, parallèlement à l’immigration qui croît. La courbe du solde migratoire (à droite) devient positif à la fin des années 1890"
+        },
+        { "from": 1917, "to": 1918 },
+        { "from": 1920, "to": 1935 },
+        { "from": 1944, "to": 1947 },
+        { "from": 1960, "to": 1970 },
+        { "from": 1990, "to": 2000 }
+      ]
+    },
+    {
+      "from": 1912,
+      "to": 2012,
+      "layout": "text",
+      "title": "",
+      "subheading": "",
+      "datasetHeading": "birth-rate",
+      "paragraphs": [
         {
           "from": 1917, 
           "to": 1918,
