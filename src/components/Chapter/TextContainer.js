@@ -19,7 +19,9 @@ const TextContainer = ({ index, module, progress, from, to, chapter }) => {
         flexDirection: 'column',
       }}
     >
-      <div className="sectionText"></div>
+      {/*
+        <div className="sectionText"></div>
+      */}
       <div style={{ display: 'flex' }}>
         <div
           className="textContainer"
