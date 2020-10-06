@@ -5,14 +5,24 @@
   padding: 10px;
 }
 
-.narrativeTitle,
-.narrativeParagraph {
-  font-family: Sneaky;
-  font-style: normal;
-  font-weight: normal;
+.narrativeTitle{
   font-size: 25px;
   line-height: 1.2;
-  color: #d8434e;
+  /* color: #d8434e; */
+}
+
+.narrativeTitle,
+.narrativeParagraph {
+  font-style: normal;
+  font-weight: normal;
+  
+  /* #d8434e; */
+}
+
+.narrativeParagraph {
+  font-size: 20px;
+  line-height: 1.2;
+  color: black;
 }
 
 .paragraphs {
@@ -24,4 +34,8 @@
 
 .paragraphs p {
   display: none;
+}
+
+figcaption{
+  font-size: 15px;
 }
