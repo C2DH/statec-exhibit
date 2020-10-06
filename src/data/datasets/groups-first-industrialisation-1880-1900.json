@@ -6,7 +6,7 @@
   },
   "values": [
     {
-      "group": "Taux d'accroissement naturel (‰)",
+      "group": "Taux d'accroissement naturel",
       "keys": {
         "1885": {
           "v": 9.15
