@@ -12,6 +12,19 @@ import { isMobileWithTablet } from '../constants';
 import { red } from '../constants';
 import { useStore } from '../store';
 
+const TrendLegend = ({ progress, value, date, legend}) => {
+  return (
+    <div className="moduleProgress">
+      {progress && value !== undefined && (
+        <div>
+          <span className="underline mr2">{value}</span>
+          <span>{legend?.v} in {date}</span>
+        </div>
+      )}
+    </div>
+  )
+}
+
 const Trend = ({
   id,
   data,
@@ -115,7 +128,6 @@ const Trend = ({
     return sum
   }, {})
   const actualValue = valuesIndexByTime[String(actualYear)];
-
   const opacityScale = scaleLinear()
     .domain([0, 0.2, 0.8, 0.95])
     .range([0, 1, 1, 0]);
@@ -153,12 +165,7 @@ const Trend = ({
             {title}
             <div className="dataSource">{source || 'source to add'}</div>
           </div>
-          <div className="moduleProgress">
-            {/* {progress && <span className="underline mr2">{actualYear}:</span>} */}
-            <b>{progress && actualValue ? actualValue.v : null}</b>
-            &nbsp;
-            {progress && legend ? legend.v : null}
-          </div>
+          <TrendLegend progress={progress} value={actualValue} date={actualYear} legend={legend}/>
         </div>
       )}
       <svg
@@ -509,10 +516,7 @@ const Trend = ({
             {title}
             <div className="dataSource">{source || 'source to add'}</div>
           </div>
-          <div className="moduleProgress">
-            {/* {progress && <span className="underline mr2">{actualYear}:</span>} */}
-            {progress && actualValue ? actualValue.v : null}
-          </div>
+          <TrendLegend progress={progress} value={actualValue} date={actualYear} legend={legend}/>
         </div>
       )}
     </div>
