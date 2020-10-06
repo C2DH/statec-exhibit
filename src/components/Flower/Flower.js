@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Bezier from './Bezier';
 import { extent, merge } from 'd3-array';
-import { scaleLinear, scaleTime } from 'd3-scale';
+import { scaleLinear, scaleTime, scalePow } from 'd3-scale';
 import moment from 'moment';
 import { red } from '../../constants';
 import { useStore } from '../../store';
@@ -9,7 +9,7 @@ import { isMobileWithTablet } from '../../constants';
 
 const nMinPetals = 8;
 
-const Flower = ({ colorA, colorB, colorC, data, width, height }) => {
+const Flower = ({ colorA, colorB, colorC, data, width, height, extentValues = []} = {}) => {
   const title = data.group;
   let selectedTime = null;
   const dataArray = Object.values(data.keys);
@@ -23,7 +23,9 @@ const Flower = ({ colorA, colorB, colorC, data, width, height }) => {
   });
   const flattenDates = merge(dates);
   const [minDate, maxDate] = extent(flattenDates, (d) => d);
-  const [min, max] = extent(dataArray, (d) => d.v);
+  const [min, max] = extentValues.length
+    ? extentValues
+    : extent(dataArray, (d) => Math.max(0, d.v));
   const dimension = Math.min(width, height);
   const radius = isMobileWithTablet ? dimension / 3.5 : dimension / 4;
   const circumference = 2 * Math.PI * radius;
@@ -33,10 +35,14 @@ const Flower = ({ colorA, colorB, colorC, data, width, height }) => {
       ? parseInt(circumference / (nOfPetals - 1))
       : parseInt(circumference / nMinPetals);
   const angleD = (Math.PI * 2) / nOfPetals;
-  const scaleY = scaleLinear()
+  const scaleY = scalePow().exponent(2)
     .domain([min, max])
-    .range([0, petalMaxWidth < 30 ? 30 : petalMaxWidth * 1.2]);
-
+    .clamp(true)
+    .range([2, petalMaxWidth < 50 ? 50 : petalMaxWidth * 1.2]);
+  const scaleYUnclamped = scalePow().exponent(2)
+    .domain([min, max])
+    .clamp(false)
+    .range([2, petalMaxWidth < 50 ? 50 : petalMaxWidth * 1.2]);
   const startDate = moment(minDate);
   const endDate = moment(maxDate);
   const scaleX = scaleTime().domain([startDate, endDate]).range([0, 0.5]);
@@ -67,6 +73,7 @@ const Flower = ({ colorA, colorB, colorC, data, width, height }) => {
         </defs>
         <g transform={`translate(${dimension / 2},${dimension / 2})`}>
           {dataArray.map((d, i) => {
+            const isNegative = d.v < 0;
             const angle = (dataArray.length - i) * angleD + Math.PI;
             const deg = angle * (180 / Math.PI);
             const petalWidth =
