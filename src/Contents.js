@@ -12,6 +12,7 @@ const Contents = ({ history }) => {
 
   const goTo = (path) => {
     history.push(path);
+    closeMenu();
   };
 
   const closeMenu = () => {
@@ -54,6 +55,19 @@ const Contents = ({ history }) => {
             }  tl relative menu-link`}
           >
             Chapter 1
+          </div>
+        </div>
+        <div
+          className="flex flex-column justify-center ph4 pointer mv4 mv0-ns"
+          onClick={() => goTo('/family')}
+        >
+          <div className=" tl menu-title">CHAPTER 2</div>
+          <div
+            className={`${
+              actualPath === '/chapter1' ? 'active' : ''
+            }  tl relative menu-link`}
+          >
+            Family Life
           </div>
         </div>
 
