@@ -12,18 +12,20 @@ import { isMobileWithTablet } from '../constants';
 import { red } from '../constants';
 import { useStore } from '../store';
 
-const TrendLegend = ({ progress, value, date, legend}) => {
+const TrendLegend = ({ progress, value, date, legend }) => {
   return (
     <div className="moduleProgress">
       {progress && value !== undefined && (
         <div>
           <span className="underline mr2">{value}</span>
-          <span>{legend?.v} in {date}</span>
+          <span>
+            {legend?.v} in {date}
+          </span>
         </div>
       )}
     </div>
-  )
-}
+  );
+};
 
 const Trend = ({
   id,
@@ -122,30 +124,30 @@ const Trend = ({
     : null;
 
   useStore.setState({ actualYear: actualYear });
-  
+
   const valuesIndexByTime = data.reduce((sum, elt) => {
     sum[String(elt.t)] = elt.v;
-    return sum
-  }, {})
+    return sum;
+  }, {});
   const actualValue = valuesIndexByTime[String(actualYear)];
   const opacityScale = scaleLinear()
     .domain([0, 0.2, 0.8, 0.95])
     .range([0, 1, 1, 0]);
-  
+
   // visualize rectangle related to current narrative paragraph
   const currentParagraphs = paragraphs.map((p) => ({
     fromDate: moment(`${p.from}-01-01`),
     toDate: moment(`${p.to}-01-01`),
-    isVisible: actualYear >= p.from && actualYear <= p.to
-  }))
-  
+    isVisible: actualYear >= p.from && actualYear <= p.to,
+  }));
+
   const currentHotspots = hotspots.map((h) => ({
     t: moment(`${h.t}-01-01`),
     v: valuesIndexByTime[h.t],
     label: h.label,
     type: h.h,
-    isVisible: actualYear >= h.from && actualYear <= h.to
-  }))
+    isVisible: actualYear >= h.from && actualYear <= h.to,
+  }));
 
   return (
     <div
@@ -165,7 +167,12 @@ const Trend = ({
             {title}
             <div className="dataSource">{source || 'source to add'}</div>
           </div>
-          <TrendLegend progress={progress} value={actualValue} date={actualYear} legend={legend}/>
+          <TrendLegend
+            progress={progress}
+            value={actualValue}
+            date={actualYear}
+            legend={legend}
+          />
         </div>
       )}
       <svg
@@ -195,20 +202,20 @@ const Trend = ({
         </defs>
         <g transform={`translate(${marginLeft}, ${marginTop})`}>
           {currentParagraphs.map((p, i) => {
-            const px = scaleX(p.fromDate)
-            const pw = Math.abs(scaleX(p.toDate) - px)
+            const px = scaleX(p.fromDate);
+            const pw = Math.abs(scaleX(p.toDate) - px);
             return (
               <rect
-                fill={p.isVisible ? red : "#ccc"}
+                fill={p.isVisible ? red : '#ccc'}
                 key={i}
                 x={px}
                 y={0}
-                stroke={"white"}
+                stroke={'white'}
                 strokeWidth={2}
                 height={trendHeight}
-                width={pw}>
-              </rect>
-            )
+                width={pw}
+              ></rect>
+            );
           })}
           <Animate
             show={show}
@@ -247,7 +254,6 @@ const Trend = ({
                 />
               );
             }}
-            
           </Animate>
           <LinePath
             className="values"
@@ -256,7 +262,7 @@ const Trend = ({
             y={(d) => scaleY2(y(d))}
             strokeWidth={1}
             stroke="black"
-            strokeOpacity={.2}
+            strokeOpacity={0.2}
             curve={curveMonotoneX}
           />
           {/*
@@ -270,9 +276,11 @@ const Trend = ({
             className="toZero"
             x1={0}
             x2={graphWidth}
-            y1={scaleY2(0)} y2={scaleY2(0)}
-            stroke={"black"} strokeWidth={1}>
-          </line>
+            y1={scaleY2(0)}
+            y2={scaleY2(0)}
+            stroke={'black'}
+            strokeWidth={1}
+          ></line>
           {currentHotspots.map((d, i) => {
             return (
               <circle
@@ -282,7 +290,7 @@ const Trend = ({
                 fill={red}
                 r={4}
               />
-            )
+            );
           })}
         </g>
         <g transform={`translate(${marginLeft}, ${marginTop})`}>
@@ -338,7 +346,7 @@ const Trend = ({
 
               if (d.h) {
                 return (
-                  <g key={i} onClick={() => toggleNote(d.note)}>
+                  <g key={i}>
                     <circle
                       id={`circle-${i}`}
                       cx={scaleX(date)}
@@ -492,18 +500,25 @@ const Trend = ({
           />
         </g>
       </svg>
-      <div style={{
-        position: 'absolute', 
-        bottom: negative ? '37px' : 'auto',
-        top: negative ? 'auto' : '44px'
-      }}>
-        <div style={{
-          transform: `translateX(${progressScale(progress) + marginLeft}px)`,
-          width: "100px",
-          marginLeft: "-50px",
-          textAlign: "center",
+      <div
+        style={{
+          position: 'absolute',
+          bottom: negative ? '37px' : 'auto',
+          top: negative ? 'auto' : '44px',
         }}
-        ><span style={{background: red, color: "white", padding:"2px 4px"}}>{actualYear}</span></div>
+      >
+        <div
+          style={{
+            transform: `translateX(${progressScale(progress) + marginLeft}px)`,
+            width: '100px',
+            marginLeft: '-50px',
+            textAlign: 'center',
+          }}
+        >
+          <span style={{ background: red, color: 'white', padding: '2px 4px' }}>
+            {actualYear}
+          </span>
+        </div>
       </div>
       {negative && (
         <div
@@ -516,7 +531,12 @@ const Trend = ({
             {title}
             <div className="dataSource">{source || 'source to add'}</div>
           </div>
-          <TrendLegend progress={progress} value={actualValue} date={actualYear} legend={legend}/>
+          <TrendLegend
+            progress={progress}
+            value={actualValue}
+            date={actualYear}
+            legend={legend}
+          />
         </div>
       )}
     </div>

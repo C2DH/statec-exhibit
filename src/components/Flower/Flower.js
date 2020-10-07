@@ -9,7 +9,15 @@ import { isMobileWithTablet } from '../../constants';
 
 const nMinPetals = 8;
 
-const Flower = ({ colorA, colorB, colorC, data, width, height, extentValues = []} = {}) => {
+const Flower = ({
+  colorA,
+  colorB,
+  colorC,
+  data,
+  width,
+  height,
+  extentValues = [],
+} = {}) => {
   const title = data.group;
   let selectedTime = null;
   const dataArray = Object.values(data.keys);
@@ -35,11 +43,13 @@ const Flower = ({ colorA, colorB, colorC, data, width, height, extentValues = [
       ? parseInt(circumference / (nOfPetals - 1))
       : parseInt(circumference / nMinPetals);
   const angleD = (Math.PI * 2) / nOfPetals;
-  const scaleY = scalePow().exponent(2)
+  const scaleY = scalePow()
+    .exponent(2)
     .domain([min, max])
     .clamp(true)
     .range([2, petalMaxWidth < 50 ? 50 : petalMaxWidth * 1.2]);
-  const scaleYUnclamped = scalePow().exponent(2)
+  const scaleYUnclamped = scalePow()
+    .exponent(2)
     .domain([min, max])
     .clamp(false)
     .range([2, petalMaxWidth < 50 ? 50 : petalMaxWidth * 1.2]);
@@ -72,6 +82,7 @@ const Flower = ({ colorA, colorB, colorC, data, width, height, extentValues = [
           </linearGradient>
         </defs>
         <g transform={`translate(${dimension / 2},${dimension / 2})`}>
+          <circle cx={0} cy={0} r={radius * 1} stroke={'none'} fill="#EDEDED" />
           {dataArray.map((d, i) => {
             const isNegative = d.v < 0;
             const angle = (dataArray.length - i) * angleD + Math.PI;
@@ -103,7 +114,7 @@ const Flower = ({ colorA, colorB, colorC, data, width, height, extentValues = [
               <g
                 transform={`translate(${Math.sin(angle) * radius}, ${
                   Math.cos(angle) * radius
-                })`}
+                }) ${isNegative ? 'rotate(180)' : 'rotate(0)'}`}
                 key={`petal-${i}`}
               >
                 <g
@@ -132,7 +143,6 @@ const Flower = ({ colorA, colorB, colorC, data, width, height, extentValues = [
               </g>
             );
           })}
-          <circle cx={0} cy={0} r={radius * 1} stroke={'none'} fill="#EDEDED" />
         </g>
       </svg>
       <div
