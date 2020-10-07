@@ -17,7 +17,6 @@ class Chapter extends Component {
       steps: [],
       progress: 0,
     };
-    this.themeDataset = require(`../../data/datasets/${props.theme.dataset}.json`);
   }
 
   componentDidMount() {
@@ -65,7 +64,8 @@ class Chapter extends Component {
     const { progress, data } = this.state;
     const { theme, heading, color } = this.props;
     const moduleDataset = require(`../../data/datasets/${theme.modules[data].datasetHeading}.json`);
-
+    const themeDataset = require(`../../data/datasets/${theme.dataset}.json`);
+    
     return (
       <div
         className="w-100"
@@ -128,9 +128,9 @@ class Chapter extends Component {
                     {theme.title}
                   </div>
                   <Trend
-                    title={this.themeDataset.title}
-                    legend={this.themeDataset.legend}
-                    data={this.themeDataset.values}
+                    title={themeDataset.title}
+                    legend={themeDataset.legend}
+                    data={themeDataset.values}
                     progress={progress}
                     height={window.innerHeight * 0.24 - 100}
                     valueKey="v"
