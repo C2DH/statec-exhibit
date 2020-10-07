@@ -1,8 +1,7 @@
 {
   "id": "a-country-of-migrations",
   "title": "Les chiffres des migrations",
-  "dataset": "trend-lux-population-growth",
-  "datasetHeading": "trend-lux-population-foreigner-growth",
+  "dataset": "population",
   "cover": {
     "url": "https://live.staticflickr.com/8308/7787067926_77f29e31f4_b_d.jpg",
     "caption": "Bus at the border between Luxembourg and France in 1948",
