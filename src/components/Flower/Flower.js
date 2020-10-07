@@ -91,7 +91,7 @@ const Flower = ({
               nOfPetals > nMinPetals
                 ? parseInt(circumference / (nOfPetals - 1))
                 : parseInt(circumference / nMinPetals);
-            const curveHeight = scaleY(d.v);
+            const curveHeight = scaleYUnclamped(d.v);
             let selected = false;
             const keyYear = keysArray[i];
             if (keyYear.includes('-')) {
@@ -110,19 +110,31 @@ const Flower = ({
               }
             }
 
+            if (selected) {
+              console.log((dataArray.length - i) * angleD);
+            }
+
             return (
               <g
                 transform={`translate(${Math.sin(angle) * radius}, ${
                   Math.cos(angle) * radius
-                }) ${isNegative ? 'rotate(180)' : 'rotate(0)'}`}
+                }) `}
                 key={`petal-${i}`}
               >
+                <text
+                  style={{
+                    display: selected ? 'block' : 'none',
+                    textAnchor: Math.sin(angle) < 0 ? 'start' : 'end',
+                  }}
+                  dx={Math.sin(angle) * radius * 0.3}
+                  dy={Math.cos(angle) * radius * 0.3}
+                >
+                  {d.v}
+                </text>
                 <g
-                  transform={`translate(-${
-                    petalWidth / 2
-                  },-${curveHeight}) rotate(${-deg + 180}, ${
-                    petalWidth / 2
-                  }, ${curveHeight})`}
+                  transform={`translate(-${petalWidth / 2},${
+                    curveHeight * -1
+                  }) rotate(${-deg + 180}, ${petalWidth / 2}, ${curveHeight})`}
                 >
                   <Bezier
                     height={curveHeight}
@@ -131,14 +143,6 @@ const Flower = ({
                     c2={petalWidth * 0.1}
                     selected={selected}
                   />
-                  <text
-                    style={{
-                      display: selected ? 'block' : 'none',
-                    }}
-                    dy={-10}
-                  >
-                    {d.v}
-                  </text>
                 </g>
               </g>
             );
