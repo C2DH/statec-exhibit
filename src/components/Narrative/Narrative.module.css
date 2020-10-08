@@ -5,9 +5,10 @@
   padding: 10px;
 }
 
-.narrativeTitle{
-  font-size: 25px;
+.narrativeTitle {
+  font-size: 2.5vh;
   line-height: 1.2;
+  margin-top: 15px;
   /* color: #d8434e; */
 }
 
@@ -15,12 +16,12 @@
 .narrativeParagraph {
   font-style: normal;
   font-weight: normal;
-  
+
   /* #d8434e; */
 }
 
 .narrativeParagraph {
-  font-size: 20px;
+  font-size: 2vh;
   line-height: 1.2;
   color: black;
 }
@@ -36,6 +37,6 @@
   display: none;
 }
 
-figcaption{
+figcaption {
   font-size: 15px;
 }

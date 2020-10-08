@@ -121,16 +121,6 @@ const Flower = ({
                 }) `}
                 key={`petal-${i}`}
               >
-                <text
-                  style={{
-                    display: selected ? 'block' : 'none',
-                    textAnchor: Math.sin(angle) < 0 ? 'start' : 'end',
-                  }}
-                  dx={Math.sin(angle) * radius * 0.3}
-                  dy={Math.cos(angle) * radius * 0.3}
-                >
-                  {d.v}
-                </text>
                 <g
                   transform={`translate(-${petalWidth / 2},${
                     curveHeight * -1
@@ -144,6 +134,18 @@ const Flower = ({
                     selected={selected}
                   />
                 </g>
+                <text
+                  style={{
+                    display: selected ? 'block' : 'none',
+                    textAnchor: 'middle',
+                    transform: `rotate(${-deg})`,
+                    dominantBaseline: 'central',
+                  }}
+                  dx={Math.sin(angle) * radius * 0.5}
+                  dy={Math.cos(angle) * radius * 0.5}
+                >
+                  {d.v}
+                </text>
               </g>
             );
           })}

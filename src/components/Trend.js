@@ -201,22 +201,6 @@ const Trend = ({
           </linearGradient>
         </defs>
         <g transform={`translate(${marginLeft}, ${marginTop})`}>
-          {currentParagraphs.map((p, i) => {
-            const px = scaleX(p.fromDate);
-            const pw = Math.abs(scaleX(p.toDate) - px);
-            return (
-              <rect
-                fill={p.isVisible ? red : '#ccc'}
-                key={i}
-                x={px}
-                y={0}
-                stroke={'white'}
-                strokeWidth={2}
-                height={trendHeight}
-                width={pw}
-              ></rect>
-            );
-          })}
           <Animate
             show={show}
             start={() => ({
@@ -413,6 +397,31 @@ const Trend = ({
                   }}
                 </Animate>
               </g>
+            );
+          })}
+
+          {currentParagraphs.map((p, i) => {
+            const filteredData = data.filter((d) => {
+              return (
+                Number(d.t) >= Number(p.fromDate.year()) &&
+                Number(d.t) <= Number(p.toDate.year())
+              );
+            });
+            return (
+              <LinePath
+                data={filteredData}
+                innerRef={(node) => {
+                  if (node) {
+                    setPathLength(node.getTotalLength());
+                  }
+                }}
+                x={(d) => scaleX(x(d))}
+                y={(d) => scaleY2(y(d))}
+                curve={curveMonotoneX}
+                strokeDasharray={pathLength}
+                stroke={p.isVisible ? '#D1646C' : '#ccc'}
+                strokeWidth={3}
+              />
             );
           })}
         </g>

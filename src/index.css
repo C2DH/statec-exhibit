@@ -229,7 +229,7 @@ p.moduleParagraph {
   font-family: Porpora, Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 3vh;
   line-height: 1.25;
   color: #d8434e;
   margin-bottom: 15px;
@@ -239,7 +239,7 @@ p.moduleParagraph {
   font-family: Sneaky;
   font-style: normal;
   font-weight: normal;
-  font-size: 25px;
+  font-size: 2.4vh;
   line-height: 1.25;
   /* color: #d8434e; */
   color: black;
