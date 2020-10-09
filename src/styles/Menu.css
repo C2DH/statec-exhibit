@@ -36,6 +36,11 @@
   font-size: 28px;
 }
 
+.menu .menu-link.active,
+.menu .menu-link:hover {
+  text-decoration: underline;
+}
+
 @media only screen and (min-width: 767px) {
   .menu .menu-title {
     font-size: 22px;

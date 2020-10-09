@@ -1,9 +1,6 @@
 import React, { Component, Fragment, Suspense } from 'react';
 import { Scrollama, Step } from 'react-scrollama';
-import landing from '../../assets/images/landing.svg';
 import { isMobileWithTablet } from '../../constants';
-import logo1 from '../../assets/images/Statec-logo.png';
-import logo2 from '../../assets/images/UNI_C2DH_noir_transp.png';
 
 const Container = React.lazy(() => import('./Container'));
 const TextContainer = React.lazy(() => import('./TextContainer'));
@@ -65,7 +62,7 @@ class Chapter extends Component {
 
   render() {
     const { progress, data } = this.state;
-    const { theme, heading, color } = this.props;
+    const { theme, headColor, color, chapterIndex } = this.props;
     const moduleDataset = require(`../../data/datasets/${theme.modules[data].datasetHeading}.json`);
     const themeDataset = require(`../../data/datasets/${theme.dataset}.json`);
 
@@ -76,27 +73,30 @@ class Chapter extends Component {
           backgroundColor: color,
         }}
       >
-        {heading && (
-          <div className="heroContainer">
-            <div className="heroContainerWrapper withCover">
-              <div className="section-small">
-                <img
-                  src={logo1}
-                  alt={'Statec logo'}
-                  style={{ height: '8vh' }}
-                />
-                <img
-                  src={logo2}
-                  alt={'UNI C2DH logo'}
-                  style={{ height: '8vh' }}
-                />
-                <h2 className="sans">Framing Luxembourg</h2>
-                <h1 className="tc  fw3 mt0">{theme.title}</h1>
-                <img src={landing} alt="scroll" style={{ height: '30vh' }} />
-              </div>
+        <div className="chapterCover">
+          <div
+            style={{
+              backgroundImage: `url(${theme.cover.url})`,
+              backgroundRepeat: 'no-repeat',
+              backgroundSize: 'cover',
+              top: '10%',
+              left: '10%',
+              right: '10%',
+              bottom: '10%',
+              position: 'absolute',
+              zIndex: 0,
+            }}
+          ></div>
+          <div
+            className="chapterCoverWrapper withCover"
+            style={{ backgroundColor: headColor }}
+          >
+            <div className="section-small">
+              <h2 className="sans">{`Chapter ${chapterIndex}`}</h2>
+              <h1 className="tc  fw3 mt0">{theme.title}</h1>
             </div>
           </div>
-        )}
+        </div>
         <div
           style={{
             backgroundColor: color,

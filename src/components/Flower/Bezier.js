@@ -64,7 +64,7 @@ const Bezier = ({ width, height, c1, c2, selected }) => {
       L ${startPoint}
     `}
         fill={`url(#bezierGradient)`}
-        stroke={selected && height > 0 ? 'rgba(209,100,108,1)' : 'none'}
+        stroke={selected ? 'rgba(209,100,108,1)' : 'none'}
         strokeWidth={2}
       />
 
