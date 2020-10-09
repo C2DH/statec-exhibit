@@ -17,20 +17,25 @@ const ImageContainer = ({ index, module, progress, from, to, chapter }) => {
       }}
     >
       <div style={{ display: 'flex' }}>
-        <div className="imageContainer" style={{ width: '60%', paddingRight: '15px' }}>
+        <div
+          className="imageContainer"
+          style={{ width: '60%', paddingRight: '15px' }}
+        >
           <figure>
-            <img src={module.image.src}/>
+            <img src={module.image.src} />
           </figure>
           <div>{index + 1}</div>
           <div className="textContainerTitle" style={{ position: 'relative' }}>
             {module.title}
           </div>
           {module.subheading && (
-            <div className="textContainerSubTitle" dangerouslySetInnerHTML={{
-              __html: module.subheading
-            }}/>
+            <div
+              className="textContainerSubTitle"
+              dangerouslySetInnerHTML={{
+                __html: module.subheading,
+              }}
+            />
           )}
-          
         </div>
         <div
           className="textContainer"
@@ -55,7 +60,7 @@ const ImageContainer = ({ index, module, progress, from, to, chapter }) => {
         </div>
       </div>
     </animated.div>
-  )
-}
-  
+  );
+};
+
 export default ImageContainer;

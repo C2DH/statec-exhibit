@@ -1,13 +1,16 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component, Fragment, Suspense } from 'react';
 import { Scrollama, Step } from 'react-scrollama';
-import Trend from '../Trend';
 import landing from '../../assets/images/landing.svg';
-import Container from './Container';
-import TextContainer from './TextContainer';
-import ImageContainer from '../ImageContainer';
 import { isMobileWithTablet } from '../../constants';
 import logo1 from '../../assets/images/Statec-logo.png';
 import logo2 from '../../assets/images/UNI_C2DH_noir_transp.png';
+
+const Container = React.lazy(() => import('./Container'));
+const TextContainer = React.lazy(() => import('./TextContainer'));
+const ImageContainer = React.lazy(() =>
+  import('../ImageContainer/ImageContainer'),
+);
+const Trend = React.lazy(() => import('../Trend'));
 
 class Chapter extends Component {
   constructor(props) {
@@ -65,12 +68,12 @@ class Chapter extends Component {
     const { theme, heading, color } = this.props;
     const moduleDataset = require(`../../data/datasets/${theme.modules[data].datasetHeading}.json`);
     const themeDataset = require(`../../data/datasets/${theme.dataset}.json`);
-    
+
     return (
       <div
         className="w-100"
         style={{
-          backgroundColor: color
+          backgroundColor: color,
         }}
       >
         {heading && (
@@ -123,43 +126,45 @@ class Chapter extends Component {
                   justifyContent: 'justify-between',
                 }}
               >
-                <div style={{ height: '24vh' }}>
-                  <div className="sectionTitle" style={{ height: '20px' }}>
-                    {theme.title}
+                <Suspense fallback={''}>
+                  <div style={{ height: '24vh' }}>
+                    <div className="sectionTitle" style={{ height: '20px' }}>
+                      {theme.title}
+                    </div>
+                    <Trend
+                      title={themeDataset.title}
+                      legend={themeDataset.legend}
+                      data={themeDataset.values}
+                      progress={progress}
+                      height={window.innerHeight * 0.24 - 100}
+                      valueKey="v"
+                      timeKey="t"
+                      trendName={'populationTrend'}
+                      negative={false}
+                      from={theme.modules[data].from}
+                      to={theme.modules[data].to}
+                    />
                   </div>
-                  <Trend
-                    title={themeDataset.title}
-                    legend={themeDataset.legend}
-                    data={themeDataset.values}
-                    progress={progress}
-                    height={window.innerHeight * 0.24 - 100}
-                    valueKey="v"
-                    timeKey="t"
-                    trendName={'populationTrend'}
-                    negative={false}
-                    from={theme.modules[data].from}
-                    to={theme.modules[data].to}
-                  />
-                </div>
-                <div className="relative" style={{ height: '25vh' }}>
-                  <Trend
-                    title={moduleDataset.title}
-                    data={moduleDataset.values}
-                    legend={moduleDataset.legend}
-                    height={window.innerHeight * 0.24 - 63}
-                    valueKey="v"
-                    timeKey="t"
-                    highlightKey="h"
-                    trendName={theme.id}
-                    progress={progress}
-                    negative={true}
-                    from={theme.modules[data].from}
-                    to={theme.modules[data].to}
-                    hotspots={theme.modules[data].moduleHotspots}
-                    paragraphs={theme.modules[data].paragraphs}
-                  />
-                </div>
-                <div className="hr"></div>
+                  <div className="relative" style={{ height: '25vh' }}>
+                    <Trend
+                      title={moduleDataset.title}
+                      data={moduleDataset.values}
+                      legend={moduleDataset.legend}
+                      height={window.innerHeight * 0.24 - 63}
+                      valueKey="v"
+                      timeKey="t"
+                      highlightKey="h"
+                      trendName={theme.id}
+                      progress={progress}
+                      negative={true}
+                      from={theme.modules[data].from}
+                      to={theme.modules[data].to}
+                      hotspots={theme.modules[data].moduleHotspots}
+                      paragraphs={theme.modules[data].paragraphs}
+                    />
+                  </div>
+                  <div className="hr"></div>
+                </Suspense>
               </div>
               <div style={{ overflow: 'hidden' }}>
                 <Scrollama
@@ -184,41 +189,43 @@ class Chapter extends Component {
                               module.layout === 'text' ? '60vh' : '18vh',
                           }}
                         >
-                          {module.layout === 'image' && (
-                            <ImageContainer
-                              index={i}
-                              module={module}
-                              progress={i === data ? progress : 0}
-                              shouldRender={i === data}
-                              chapter={theme.modules[data]}
-                              from={theme.modules[data].from}
-                              to={theme.modules[data].to}
-                            />
-                          )}
-                          {module.layout === 'flowers' && moduleDataset && (
-                            <Container
-                              module={module}
-                              moduleDataset={moduleDataset}
-                              progress={i === data ? progress : 0}
-                              shouldRender={i === data}
-                              focus={theme.modules[data].focus || null}
-                              chapter={theme.modules[data]}
-                              extentValues={theme.modules[data].extent}
-                              from={theme.modules[data].from}
-                              to={theme.modules[data].to}
-                            />
-                          )}
-                          {module.layout === 'text' && (
-                            <TextContainer
-                              index={i}
-                              module={module}
-                              progress={i === data ? progress : 0}
-                              shouldRender={i === data}
-                              chapter={theme.modules[data]}
-                              from={theme.modules[data].from}
-                              to={theme.modules[data].to}
-                            />
-                          )}
+                          <Suspense fallback={''}>
+                            {module.layout === 'image' && (
+                              <ImageContainer
+                                index={i}
+                                module={module}
+                                progress={i === data ? progress : 0}
+                                shouldRender={i === data}
+                                chapter={theme.modules[data]}
+                                from={theme.modules[data].from}
+                                to={theme.modules[data].to}
+                              />
+                            )}
+                            {module.layout === 'flowers' && moduleDataset && (
+                              <Container
+                                module={module}
+                                moduleDataset={moduleDataset}
+                                progress={i === data ? progress : 0}
+                                shouldRender={i === data}
+                                focus={theme.modules[data].focus || null}
+                                chapter={theme.modules[data]}
+                                extentValues={theme.modules[data].extent}
+                                from={theme.modules[data].from}
+                                to={theme.modules[data].to}
+                              />
+                            )}
+                            {module.layout === 'text' && (
+                              <TextContainer
+                                index={i}
+                                module={module}
+                                progress={i === data ? progress : 0}
+                                shouldRender={i === data}
+                                chapter={theme.modules[data]}
+                                from={theme.modules[data].from}
+                                to={theme.modules[data].to}
+                              />
+                            )}
+                          </Suspense>
                         </div>
                       </Step>
                     );

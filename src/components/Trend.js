@@ -190,9 +190,9 @@ const Trend = ({
           <linearGradient
             id={`${trendName}Gradient`}
             x1="0%"
-            y1={negative ? '100%' : '0%'}
+            y1={'0%'}
             x2="0%"
-            y2={negative ? '0%' : '100%'}
+            y2={'100%'}
             gradientUnits="objectBoundingBox"
           >
             <stop offset="0%" stopColor={'#86B9D4'} stopOpacity={1} />
@@ -227,7 +227,7 @@ const Trend = ({
                   data={data}
                   x={(d) => scaleX(x(d))}
                   y={(d) => scaleY2(y(d))}
-                  y0={negative ? 0 : svgHeight}
+                  y0={svgHeight}
                   yScale={scaleY2}
                   fill={`url(#${trendName}Gradient)`}
                   fillOpacity={j}
@@ -409,6 +409,7 @@ const Trend = ({
             });
             return (
               <LinePath
+                key={`linepath-${i}`}
                 data={filteredData}
                 innerRef={(node) => {
                   if (node) {

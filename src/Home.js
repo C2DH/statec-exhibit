@@ -1,28 +1,37 @@
-import React, { Component } from 'react';
-import About from './About';
+import React, { Suspense } from 'react';
 import Chapter from './components/Chapter/Chapter';
-import Contents from './Contents';
 import theme01 from './data/themes/theme-01.json';
 import theme02 from './data/themes/theme-02.json';
 import { useStore } from './store';
 
+const Contents = React.lazy(() => import('./Contents'));
+const About = React.lazy(() => import('./About'));
+
 const AvailableThemes = Object.freeze({
-  [theme01.id]: theme01, 
-  [theme02.id]: theme02
-})
+  [theme01.id]: theme01,
+  [theme02.id]: theme02,
+});
 const DefaultThemeId = String(theme01.id);
 
-const Home = ({ match: { params: { themeId } } }) => {
-  const currentTheme = AvailableThemes[String(themeId)] ?? AvailableThemes[DefaultThemeId];
+const Home = ({
+  match: {
+    params: { themeId },
+  },
+}) => {
+  const currentTheme =
+    AvailableThemes[String(themeId)] ?? AvailableThemes[DefaultThemeId];
   console.info('current theme:', themeId, currentTheme.title);
   return (
     <div className="w-100" style={{ backgroundColor: 'rgb(217,238,241)' }}>
-      <div className="w-100 vh-100 position-fixed" style={{
-        backgroundImage: `url(${currentTheme.cover.url})`,
-        backgroundRepeat: 'no-repeat',
-        backgroundSize: 'cover',
-        position: 'absolute',
-      }}></div>
+      <div
+        className="w-100 vh-100 position-fixed"
+        style={{
+          backgroundImage: `url(${currentTheme.cover.url})`,
+          backgroundRepeat: 'no-repeat',
+          backgroundSize: 'cover',
+          position: 'absolute',
+        }}
+      ></div>
       <div className="stickyHeader">
         <div
           className="stickyHeaderLink"
@@ -41,11 +50,17 @@ const Home = ({ match: { params: { themeId } } }) => {
           About
         </div>
       </div>
-      <About />
-      <Contents />
-      <Chapter theme={currentTheme} heading={true} color={'rgba(217,238,241)'} />
+      <Suspense fallback={''}>
+        <About />
+        <Contents />
+      </Suspense>
+      <Chapter
+        theme={currentTheme}
+        heading={true}
+        color={'rgba(217,238,241)'}
+      />
     </div>
   );
-}
+};
 
 export default Home;
