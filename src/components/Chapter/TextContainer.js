@@ -11,7 +11,7 @@ const TextContainer = ({ index, module, progress, from, to, chapter }) => {
     .range([0, 1, 1, 0]);
 
   return (
-    <animated.div
+    <div
       className="scrollSection"
       style={{
         opacity: opacityScale(progress),
@@ -62,7 +62,7 @@ const TextContainer = ({ index, module, progress, from, to, chapter }) => {
           </div>
         </div>
       </div>
-    </animated.div>
+    </div>
   );
 };
 
