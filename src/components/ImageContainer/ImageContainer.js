@@ -45,7 +45,7 @@ const ImageContainer = ({ index, module, progress, from, to, chapter }) => {
             style={{
               width: '100%',
               height: '90%',
-              backgroundColor: 'rgba(0,0,0,0.02)',
+              // backgroundColor: 'rgba(0,0,0,0.02)',
               paddingLeft: '10px',
               fontSize: '25px',
             }}

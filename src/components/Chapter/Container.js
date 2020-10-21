@@ -14,10 +14,9 @@ const Container = ({
   from,
   to,
   chapter,
-  extentValues
+  extentValues,
 }) => {
-
-  console.log('progress')
+  console.log('progress');
   //const props = useSpring({ opacity: 1, from: { opacity: 0 } });
   const opacityScale = scaleLinear()
     .domain([0, 0.2, 0.8, 0.95])
@@ -28,10 +27,7 @@ const Container = ({
     .range([0, 0, 1, 0]);
 
   return (
-    <div
-      className="scrollSection"
-      style={{ opacity: opacityScale(progress) }}
-    >
+    <div className="scrollSection" style={{ opacity: opacityScale(progress) }}>
       <div className="vizContainer">
         <div
           style={{
@@ -53,7 +49,7 @@ const Container = ({
                   return module.groups.includes(v.group);
                 }
               })
-              .slice(0, 2)
+              .slice(0, isMobileWithTablet ? 1 : 2)
               .map((v, j) => {
                 return (
                   <div
@@ -61,6 +57,8 @@ const Container = ({
                     style={{
                       width: isMobileWithTablet ? '100%' : '50%',
                       paddingTop: isMobileWithTablet ? 0 : '4vh',
+                      display: 'flex',
+                      alignItems: 'center',
                     }}
                   >
                     <Flower
@@ -71,12 +69,12 @@ const Container = ({
                       extentValues={extentValues}
                       height={
                         isMobileWithTablet
-                          ? window.innerHeight * 0.5
+                          ? window.innerHeight * 0.4
                           : window.innerHeight * 0.4
                       }
                       width={
                         isMobileWithTablet
-                          ? window.innerWidth * 0.6
+                          ? window.innerWidth * 0.4
                           : window.innerWidth * 0.24
                       }
                       progress={progressScale(progress)}
@@ -94,7 +92,7 @@ const Container = ({
             style={{
               width: '100%',
               height: '90%',
-              backgroundColor: 'rgba(0,0,0,0.02)',
+              //backgroundColor: 'rgba(0,0,0,0.02)',
               paddingLeft: '10px',
               fontSize: '25px',
             }}

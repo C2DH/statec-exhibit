@@ -130,9 +130,6 @@ const Trend = ({
     return sum;
   }, {});
   const actualValue = valuesIndexByTime[String(actualYear)];
-  const opacityScale = scaleLinear()
-    .domain([0, 0.2, 0.8, 0.95])
-    .range([0, 1, 1, 0]);
 
   // visualize rectangle related to current narrative paragraph
   const currentParagraphs = paragraphs.map((p) => ({
@@ -155,7 +152,7 @@ const Trend = ({
         position: 'relative',
         display: 'flex',
         flexDirection: 'column',
-        opacity: negative ? opacityScale(progress) : 1,
+        opacity: negative ? 1 : 1,
       }}
     >
       {!negative && (

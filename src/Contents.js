@@ -45,19 +45,20 @@ const Contents = ({ history }) => {
             Home
           </div>
         </div>
-        {/* <div
+
+        <div
           className="flex flex-column justify-center ph4 pointer mv4 mv0-ns"
-          onClick={() => goTo('/chapter1')}
+          onClick={() => goTo('/a-country-of-migration')}
         >
           <div className=" tl menu-title">CHAPTER 1</div>
           <div
             className={`${
-              actualPath === '/chapter1' ? 'active' : ''
+              actualPath === '/a-country-of-migration' ? 'active' : ''
             }  tl relative menu-link`}
           >
-            Chapter 1
+            A Country of Migrations
           </div>
-        </div> */}
+        </div>
         <div
           className="flex flex-column justify-center ph4 pointer mv4 mv0-ns"
           onClick={() => goTo('/family')}

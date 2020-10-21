@@ -62,7 +62,14 @@ class Chapter extends Component {
 
   render() {
     const { progress, data } = this.state;
-    const { theme, headColor, color, chapterIndex, showCover=true, showTitle=true } = this.props;
+    const {
+      theme,
+      headColor,
+      color,
+      chapterIndex,
+      showCover = true,
+      showTitle = true,
+    } = this.props;
     const moduleDataset = require(`../../data/datasets/${theme.modules[data].datasetHeading}.json`);
     const themeDataset = require(`../../data/datasets/${theme.dataset}.json`);
 
@@ -130,9 +137,11 @@ class Chapter extends Component {
               >
                 <Suspense fallback={''}>
                   <div style={{ height: '24vh' }}>
-                    {showTitle && (<div className="sectionTitle" style={{ height: '20px' }}>
-                      {theme.title}
-                    </div>)}
+                    {showTitle && (
+                      <div className="sectionTitle" style={{ height: '20px' }}>
+                        {theme.title}
+                      </div>
+                    )}
                     <Trend
                       title={themeDataset.title}
                       legend={themeDataset.legend}

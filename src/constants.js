@@ -6,5 +6,7 @@ export const isMobileWithTablet = isMobile
       : false
     : true
   : false;
+export const isMobileC = isMobile ? true : false;
+export const isTabletC = isTablet ? true : false;
 
 export const red = '#d8434e';

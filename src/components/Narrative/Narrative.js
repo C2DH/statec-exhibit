@@ -3,15 +3,6 @@ import moment from 'moment';
 import { scaleTime } from 'd3-scale';
 import styles from './Narrative.module.css';
 
-const NarrativeFigure = ({ src, caption, alt }) => {
-  return (
-    <figure style={{height: '20vh'}}>
-      <img src={src} style={{objectFit: 'contain', height:'100%'}} alt={alt}/>
-      <figcaption dangerouslySetInnerHTML={{__html: caption}} />
-    </figure>
-  )
-}
-
 const Narrative = ({ chapter, progress, from, to }) => {
   const isVisible = !!chapter.paragraphs?.length;
   const startDate = from ? moment(`${from}-01-01`) : moment('1840-01-01');
@@ -30,21 +21,21 @@ const Narrative = ({ chapter, progress, from, to }) => {
   const localParagraph = chapter.paragraphs.find(
     (p) => localYear >= p.from && localYear <= p.to,
   );
-  
+
   const hasCover = !!localParagraph?.cover;
 
   return (
     <div className={styles.wrapper}>
       <div className={styles.localYear}>{localYear}</div>
-      {localParagraph?.title &&
+      {localParagraph?.title && (
         <div className={styles.narrativeTitle}>{localParagraph.title}</div>
-      }
-      {hasCover && (
+      )}
+      {/* {hasCover && (
         <NarrativeFigure
           src={localParagraph.cover.url}
           alt={localParagraph.cover.alt}
           caption={localParagraph.cover.caption} />
-      )}
+      )} */}
       <div className={styles.narrativeParagraph}>
         {chapter.paragraphs.map((paragraph, i) => {
           const isParagraphVisible =
@@ -56,7 +47,7 @@ const Narrative = ({ chapter, progress, from, to }) => {
               }}
               key={i}
               dangerouslySetInnerHTML={{
-                __html: paragraph.text
+                __html: paragraph.text,
               }}
             />
           );

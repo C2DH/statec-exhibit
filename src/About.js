@@ -47,17 +47,7 @@ const About = () => {
             culpa qui officia deserunt mollit anim id est laborum."
           </p>
         </div>
-        <div className="tl fw7 about-subtitle">
-          <a className="" href="" target="_blank">
-            Federica Fragapane
-          </a>
-        </div>
-        <div className="tl mt3  about-subtitle">Development</div>
-        <div className="tl fw7 about-subtitle">
-          <a className="" href="" target="_blank">
-            Paolo Corti
-          </a>
-        </div>
+
         <div
           className="close-about svg-hover pointer"
           onClick={closeLegend}

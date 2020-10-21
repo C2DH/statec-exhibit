@@ -5,7 +5,7 @@ import { scaleLinear, scaleTime, scalePow } from 'd3-scale';
 import moment from 'moment';
 import { red } from '../../constants';
 import { useStore } from '../../store';
-import { isMobileWithTablet } from '../../constants';
+import { isMobileWithTablet, isTabletC } from '../../constants';
 
 const nMinPetals = 8;
 
@@ -155,15 +155,18 @@ const Flower = ({
         dx={2}
         style={{
           color: red,
-          fontSize: isMobileWithTablet ? '5vw' : '1.2vw',
+          fontSize: isMobileWithTablet
+            ? isTabletC
+              ? '24px'
+              : '14px'
+            : '1.2vw',
           justifyContent: 'center',
           textAlign: 'center',
-          position: 'absolute',
-          top: '50%',
-          width: '50%',
-          left: '25%',
-          height: '30px',
-          marginTop: '-15px',
+          position: 'relative',
+          //top: '50%',
+          width: isMobileWithTablet ? '100%' : '50%',
+          left: '0',
+          marginTop: '0px',
           display: 'flex',
           alignItems: 'center',
         }}
