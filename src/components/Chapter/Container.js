@@ -16,6 +16,8 @@ const Container = ({
   chapter,
   extentValues
 }) => {
+
+  console.log('progress')
   //const props = useSpring({ opacity: 1, from: { opacity: 0 } });
   const opacityScale = scaleLinear()
     .domain([0, 0.2, 0.8, 0.95])
@@ -26,7 +28,7 @@ const Container = ({
     .range([0, 0, 1, 0]);
 
   return (
-    <animated.div
+    <div
       className="scrollSection"
       style={{ opacity: opacityScale(progress) }}
     >
@@ -115,7 +117,7 @@ const Container = ({
           <p className="moduleParagraph">{moduleDataset.paragraphs}</p>
         )}
       </div>
-    </animated.div>
+    </div>
   );
 };
 

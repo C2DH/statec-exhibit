@@ -62,7 +62,7 @@ class Chapter extends Component {
 
   render() {
     const { progress, data } = this.state;
-    const { theme, headColor, color, chapterIndex } = this.props;
+    const { theme, headColor, color, chapterIndex, showCover=true, showTitle=true } = this.props;
     const moduleDataset = require(`../../data/datasets/${theme.modules[data].datasetHeading}.json`);
     const themeDataset = require(`../../data/datasets/${theme.dataset}.json`);
 
@@ -73,30 +73,32 @@ class Chapter extends Component {
           backgroundColor: color,
         }}
       >
-        <div className="chapterCover">
-          <div
-            style={{
-              backgroundImage: `url(${theme.cover.url})`,
-              backgroundRepeat: 'no-repeat',
-              backgroundSize: 'cover',
-              top: '10%',
-              left: '10%',
-              right: '10%',
-              bottom: '10%',
-              position: 'absolute',
-              zIndex: 0,
-            }}
-          ></div>
-          <div
-            className="chapterCoverWrapper withCover"
-            style={{ backgroundColor: headColor }}
-          >
-            <div className="section-small">
-              <h2 className="sans">{`Chapter ${chapterIndex}`}</h2>
-              <h1 className="tc  fw3 mt0">{theme.title}</h1>
+        {showCover && (
+          <div className="chapterCover">
+            <div
+              style={{
+                backgroundImage: `url(${theme.cover.url})`,
+                backgroundRepeat: 'no-repeat',
+                backgroundSize: 'cover',
+                top: '10%',
+                left: '10%',
+                right: '10%',
+                bottom: '10%',
+                position: 'absolute',
+                zIndex: 0,
+              }}
+            ></div>
+            <div
+              className="chapterCoverWrapper withCover"
+              style={{ backgroundColor: headColor }}
+            >
+              <div className="section-small">
+                <h2 className="sans">{`Chapter ${chapterIndex}`}</h2>
+                <h1 className="tc  fw3 mt0">{theme.title}</h1>
+              </div>
             </div>
           </div>
-        </div>
+        )}
         <div
           style={{
             backgroundColor: color,
@@ -128,9 +130,9 @@ class Chapter extends Component {
               >
                 <Suspense fallback={''}>
                   <div style={{ height: '24vh' }}>
-                    <div className="sectionTitle" style={{ height: '20px' }}>
+                    {showTitle && (<div className="sectionTitle" style={{ height: '20px' }}>
                       {theme.title}
-                    </div>
+                    </div>)}
                     <Trend
                       title={themeDataset.title}
                       legend={themeDataset.legend}

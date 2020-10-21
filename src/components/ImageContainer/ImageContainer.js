@@ -8,7 +8,7 @@ const ImageContainer = ({ index, module, progress, from, to, chapter }) => {
     .domain([0, 0.2, 0.8, 0.95])
     .range([0, 1, 1, 0]);
   return (
-    <animated.div
+    <div
       className="scrollSection"
       style={{
         opacity: opacityScale(progress),
@@ -59,7 +59,7 @@ const ImageContainer = ({ index, module, progress, from, to, chapter }) => {
           </div>
         </div>
       </div>
-    </animated.div>
+    </div>
   );
 };
 
