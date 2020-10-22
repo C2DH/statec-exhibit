@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
-import { useStore } from '../../store'
-import styles from './Header.module.css'
-import { Link } from 'react-router-dom'
+import React, { Component } from 'react';
+import { useStore } from '../../store';
+import styles from './Header.module.css';
+import { Link } from 'react-router-dom';
 
 class Header extends Component {
   constructor(props) {
@@ -18,9 +18,9 @@ class Header extends Component {
   componentWillUnmount() {
     window.removeEventListener('scroll', this.handleScroll.bind(this));
   }
-  
+
   shouldComponentUpdate(nextProps, { isTitleVisible }) {
-    return this.state.isTitleVisible !== isTitleVisible
+    return this.state.isTitleVisible !== isTitleVisible;
   }
 
   handleScroll(event) {
@@ -32,27 +32,36 @@ class Header extends Component {
     const { isTitleVisible } = this.state;
     return (
       <header className={styles.stickyHeader}>
-        <div 
+        <div
           className={styles.stickyHeaderLink}
-          onClick={() => useStore.setState({ menuOpen: true, aboutOpen: false })}
+          onClick={() =>
+            useStore.setState({ menuOpen: true, aboutOpen: false })
+          }
         >
           Table of Contents
         </div>
-        <div className={styles.title} style={{
-          transform: isTitleVisible ? 'translateY(0px)': 'translateY(-100px)' 
-        }}>
-          <Link to="/">Framing Luxembourg</Link>
+        <div
+          className={styles.title}
+          style={{
+            transform: isTitleVisible
+              ? 'translateY(0px)'
+              : 'translateY(-100px)',
+          }}
+        >
+          <a href="/">Framing Luxembourg</a>
         </div>
         <div
           className={styles.stickyHeaderLink}
-          style={{textAlign: 'right'}}
-          onClick={() => useStore.setState({ aboutOpen: true, menuOpen: false })}
+          style={{ textAlign: 'right' }}
+          onClick={() =>
+            useStore.setState({ aboutOpen: true, menuOpen: false })
+          }
         >
           About
         </div>
       </header>
-    )
+    );
   }
 }
 
-export default Header
+export default Header;
