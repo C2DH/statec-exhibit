@@ -44,7 +44,7 @@ const STEPS = [
 const Covers = ({ index, direction }) => {
   const step = STEPS[index > -1 ? index : 0]
   const { backgroundColor, backgroundClipPath } = step
-  console.info('update',index, direction)
+  // console.info('update',index, direction)
   const transitions = useTransition(step, item => item.id, 
     direction === 'down' 
     ? {
@@ -66,7 +66,7 @@ clipPath: backgroundClipPath, transition: 'clip-path .5s ease-in-out'}}>
         style={{ ...props, backgroundImage: `linear-gradient(${item.backgroundColor},${item.backgroundColor}),url(${item.url})` }}
       />
     ))}
-    <div style={{position: 'absolute', bottom: '0', zIndex: 1, left: '0', right:'0', top: '0', backgroundColor, opacity: .5 }} />
+    <div style={{position: 'absolute', bottom: '0', zIndex: 1, left: '0', right:'0', top: '0', backgroundColor, opacity: .65 }} />
     </div>
   )
 }
@@ -110,15 +110,15 @@ const Home = () => {
         <Step data={2}>
           <div className={`${styles.stepWrapper} ${currentStep.index===2 ? styles.stepWrapperActive : ''}`}>
             <h2 className={`${styles.chapterNumber} sans f2-ns`}>Chapter 1</h2>
-            <h2 className={`${styles.chapterTitle} f2-ns`}>
+            <h2 className={`${styles.chapterTitle} f-4-ns`}>
               <a href="/a-country-of-migration">A Country of Migrations</a>
             </h2>
           </div>
         </Step>
         <Step data={3}>
           <div className={`${styles.stepWrapper} ${currentStep.index===3 ? styles.stepWrapperActive : ''}`}>
-            <h2 className={`${styles.chapterNumber} sans`}>Chapter 2</h2>
-            <h2 className={styles.chapterTitle}>
+            <h2 className={`${styles.chapterNumber} sans f2-ns`}>Chapter 2</h2>
+            <h2 className={`${styles.chapterTitle} f-4-ns`} >
               <a href="/family">Family Life</a>
             </h2>
           </div>
