@@ -1,0 +1,30 @@
+
+.chapterNumber {
+  font-weight: normal;
+  padding: 0;
+  margin: 0;
+  text-align: center
+}
+.chapterTitle{
+  
+  text-align: center;
+}
+.chapterTitle a {
+  color: var(--secondary);
+  font-weight: normal;
+  padding: 0;
+  margin: 0;
+}
+
+.stepWrapper{
+  padding: 40vh 10px 20vh;
+}
+.stepWrapperActive{
+  /* border-left: 2px solid var(--secondary); */
+}
+
+@media (min-width: 600px) {
+  .stepWrapper{
+    padding: 40vh 150px 20vh
+  }
+}
