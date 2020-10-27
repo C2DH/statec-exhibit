@@ -1,0 +1,45 @@
+
+.chapterNumber {
+  font-weight: normal;
+  padding: 0;
+  margin: 0;
+  text-align: center
+}
+.chapterTitle{
+  
+  text-align: center;
+}
+.chapterTitle a {
+  color: var(--secondary);
+  font-weight: normal;
+  padding: 0;
+  margin: 0;
+}
+
+.stepWrapper{
+  padding: 40vh 10px 20vh;
+}
+.stepChapterWrapper{
+  padding: 5vh 10px 5vh;
+  /* opacity: .5; */
+}
+.stepChapterWrapper a{
+  text-decoration: none;
+}
+.stepChapterWrapper.stepWrapperActive{
+  /* opacity: 1; */
+  /* border-left: 2px solid var(--primary);
+  border-right: 2px solid var(--primary); */
+}
+.stepChapterWrapper.stepWrapperActive a{
+  text-decoration: underline;
+}
+
+@media (min-width: 600px) {
+  .stepWrapper{
+    padding: 40vh 150px 20vh
+  }
+  .stepChapterWrapper{
+    padding: 5vh 150px 5vh;
+  }
+}
