@@ -76,6 +76,7 @@ const TextContainer = ({ index, module, progress, from, to, chapter }) => {
             width: isMobileWithTablet ? '100%' : '50%',
             paddingRight: '15px',
             height: isMobileWithTablet ? '50%' : '100%',
+            display: isMobileWithTablet ? 'none' : 'flex',
           }}
         >
           {/*  */}

@@ -32,7 +32,7 @@ class Chapter extends Component {
   onStepEnter = ({ element, data }) => {
     if (element.children[0]) {
       element.children[0].style.position = 'fixed';
-      element.children[0].style.top = '50vh';
+      element.children[0].style.top = isMobileWithTablet ? '60vh' : '50vh';
       element.children[0].style.paddingTop = 0;
       element.children[0].style.left = '5%';
       element.children[0].style.width = '90%';
@@ -128,7 +128,7 @@ class Chapter extends Component {
                   top: 0,
                   zIndex: 3,
                   backgroundColor: color,
-                  height: '50vh',
+                  height: isMobileWithTablet ? '60vh' : '50vh',
                   paddingTop: '2vh',
                   display: 'flex',
                   flexDirection: 'column',
@@ -136,7 +136,7 @@ class Chapter extends Component {
                 }}
               >
                 <Suspense fallback={''}>
-                  <div style={{ height: '24vh' }}>
+                  <div style={{ height: isMobileWithTablet ? '30vh' : '24vh' }}>
                     {showTitle && (
                       <div className="sectionTitle" style={{ height: '20px' }}>
                         {theme.title}
@@ -156,12 +156,19 @@ class Chapter extends Component {
                       to={theme.modules[data].to}
                     />
                   </div>
-                  <div className="relative" style={{ height: '25vh' }}>
+                  <div
+                    className="relative"
+                    style={{ height: isMobileWithTablet ? '30vh' : '25vh' }}
+                  >
                     <Trend
                       title={moduleDataset.title}
                       data={moduleDataset.values}
                       legend={moduleDataset.legend}
-                      height={window.innerHeight * 0.24 - 63}
+                      height={
+                        isMobileWithTablet
+                          ? window.innerHeight * 0.3 - 63
+                          : window.innerHeight * 0.24 - 63
+                      }
                       valueKey="v"
                       timeKey="t"
                       highlightKey="h"

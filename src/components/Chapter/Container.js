@@ -32,7 +32,7 @@ const Container = ({
         <div
           style={{
             width: '50%',
-            display: 'flex',
+            display: isMobileWithTablet ? 'none' : 'flex',
             overflow: 'hidden',
           }}
         >
@@ -86,14 +86,17 @@ const Container = ({
         </div>
         <div
           className="textContainer"
-          style={{ width: '50%', fontSize: '25px' }}
+          style={{
+            width: isMobileWithTablet ? '100%' : '50%',
+            fontSize: '25px',
+          }}
         >
           <div
             style={{
               width: '100%',
               height: '90%',
               //backgroundColor: 'rgba(0,0,0,0.02)',
-              paddingLeft: '10px',
+              paddingLeft: isMobileWithTablet ? 0 : '10px',
               fontSize: '25px',
             }}
           >
@@ -106,7 +109,10 @@ const Container = ({
           </div>
         </div>
       </div>
-      <div className="sectionText">
+      <div
+        className="sectionText"
+        style={{ display: isMobileWithTablet ? 'none' : 'flex' }}
+      >
         <div className="moduleTitle" style={{ position: 'relative' }}>
           {moduleDataset.title}
           {moduleDataset.subheading ? `, ${moduleDataset.subheading}` : ''}

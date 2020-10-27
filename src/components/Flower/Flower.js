@@ -164,7 +164,7 @@ const Flower = ({
           textAlign: 'center',
           position: 'absolute',
           bottom: '0',
-          width: isMobileWithTablet ? '100%' : '50%',
+          width: isMobileWithTablet ? '100%' : '100%',
           left: '0',
           marginTop: '0px',
           display: 'flex',
