@@ -31,6 +31,9 @@ body,
 :root {
   --primary: #d8434e;
   --secondary: #433aa9;
+  --accent: #ffd8c2;
+  --theme-01: #D9EEF1;
+  --theme-02: #FFF0BD;
 }
 
 h1,
@@ -311,3 +314,17 @@ p.moduleParagraph {
     line-height: 1;
   }
 }
+
+
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  will-change: opacity;
+  background-blend-mode:multiply;
+}
+
