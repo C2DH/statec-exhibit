@@ -28,8 +28,8 @@
 }
 .stepChapterWrapper.stepWrapperActive{
   /* opacity: 1; */
-  border-left: 2px solid var(--primary);
-  border-right: 2px solid var(--primary);
+  /* border-left: 2px solid var(--primary);
+  border-right: 2px solid var(--primary); */
 }
 .stepChapterWrapper.stepWrapperActive a{
   text-decoration: underline;
