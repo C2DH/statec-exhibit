@@ -108,7 +108,7 @@ const Home = () => {
           </div>
         </Step>
         <Step data={2}>
-          <div className={`${styles.stepWrapper} ${currentStep.index===2 ? styles.stepWrapperActive : ''}`}>
+          <div className={`${styles.stepChapterWrapper} ${currentStep.index===2 ? styles.stepWrapperActive : ''}`}>
             <h2 className={`${styles.chapterNumber} sans f2-ns`}>Chapter 1</h2>
             <h2 className={`${styles.chapterTitle} f-4-ns`}>
               <a href="/a-country-of-migration">A Country of Migrations</a>
@@ -116,7 +116,7 @@ const Home = () => {
           </div>
         </Step>
         <Step data={3}>
-          <div className={`${styles.stepWrapper} ${currentStep.index===3 ? styles.stepWrapperActive : ''}`}>
+          <div className={`${styles.stepChapterWrapper} ${currentStep.index===3 ? styles.stepWrapperActive : ''}`}>
             <h2 className={`${styles.chapterNumber} sans f2-ns`}>Chapter 2</h2>
             <h2 className={`${styles.chapterTitle} f-4-ns`} >
               <a href="/family">Family Life</a>

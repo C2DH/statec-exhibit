@@ -19,12 +19,27 @@
 .stepWrapper{
   padding: 40vh 10px 20vh;
 }
-.stepWrapperActive{
-  /* border-left: 2px solid var(--secondary); */
+.stepChapterWrapper{
+  padding: 5vh 10px 5vh;
+  /* opacity: .5; */
+}
+.stepChapterWrapper a{
+  text-decoration: none;
+}
+.stepChapterWrapper.stepWrapperActive{
+  /* opacity: 1; */
+  border-left: 2px solid var(--primary);
+  border-right: 2px solid var(--primary);
+}
+.stepChapterWrapper.stepWrapperActive a{
+  text-decoration: underline;
 }
 
 @media (min-width: 600px) {
   .stepWrapper{
     padding: 40vh 150px 20vh
+  }
+  .stepChapterWrapper{
+    padding: 5vh 150px 5vh;
   }
 }
