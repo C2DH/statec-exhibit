@@ -13,6 +13,7 @@ const NarrativeFigure = ({ src, caption, alt }) => {
         backgroundImage: `url(${src})`,
         minHeight: '40vh',
         backgroundSize: 'cover',
+        width: '100%',
         margin: '0 auto',
       }}
     >
@@ -77,6 +78,7 @@ const TextContainer = ({ index, module, progress, from, to, chapter }) => {
             paddingRight: '15px',
             height: isMobileWithTablet ? '50%' : '100%',
             display: isMobileWithTablet ? 'none' : 'flex',
+            flexDirection: isMobileWithTablet ? 'none' : 'column',
           }}
         >
           {/*  */}
