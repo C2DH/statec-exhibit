@@ -25,7 +25,6 @@
   margin-left: 5vh;
   margin-right: 5vh;
   border-bottom: 1px solid blue;
-  border-top: 1px solid blue;
 }
 .stepChapterWrapper a{
   text-decoration: none;
@@ -64,7 +63,7 @@
     padding: 40vh 150px 20vh
   }
   .stepChapterWrapper{
-    padding: 5vh 150px 5vh;
+    padding: 25vh 150px 25vh;
     max-width: 50%;
     margin: 0 auto;
   }
