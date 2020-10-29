@@ -22,6 +22,10 @@
 .stepChapterWrapper{
   padding: 5vh 10px 5vh;
   /* opacity: .5; */
+  margin-left: 5vh;
+  margin-right: 5vh;
+  border-bottom: 1px solid blue;
+  border-top: 1px solid blue;
 }
 .stepChapterWrapper a{
   text-decoration: none;
@@ -35,11 +39,39 @@
   text-decoration: underline;
 }
 
+.backgroundFrame{
+  position: fixed;
+  z-index: -1;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  overflow: hidden;
+}
+
+.backgroundFrameOverlay{
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  left: 0;
+  right:0;
+  top: 0;
+  opacity: .65;
+}
+
 @media (min-width: 600px) {
   .stepWrapper{
     padding: 40vh 150px 20vh
   }
   .stepChapterWrapper{
     padding: 5vh 150px 5vh;
+    max-width: 50%;
+    margin: 0 auto;
+  }
+  .backgroundFrame{
+    top: 50px;
+    left: 50px;
+    right: 50px;
+    bottom: 50px;
   }
 }

@@ -44,29 +44,27 @@ const STEPS = [
 const Covers = ({ index, direction }) => {
   const step = STEPS[index > -1 ? index : 0]
   const { backgroundColor, backgroundClipPath } = step
-  // console.info('update',index, direction)
   const transitions = useTransition(step, item => item.id, 
     direction === 'down' 
     ? {
-      from: {  transform: 'translate3d(0%,100%,0)' },
-      enter: {  transform: 'translate3d(0%,0,0)' },
-      leave: {  transform: 'translate3d(0,-100%,0)' },
+      from: {  transform: 'translate(0%,100%)' },
+      enter: {  transform: 'translate(0%,0)' },
+      leave: {  transform: 'translate(0,-100%)' },
     } 
     : {
-      from: {  transform: 'translate3d(0%,-100%,0)' },
-      enter: {  transform: 'translate3d(0%,0,0)' },
-      leave: {  transform: 'translate3d(0,100%,0)' },
+      from: {  transform: 'translate(0%,-100%)' },
+      enter: {  transform: 'translate(0%,0)' },
+      leave: {  transform: 'translate(0,100%)' },
     })
   return (
-    <div style={{position: 'fixed', bottom: '50px', zIndex: -1, left: '50px', right:'50px', top: '50px',
-clipPath: backgroundClipPath, transition: 'clip-path .5s ease-in-out'}}>
-    {transitions.map(({ item, props, key }) => (
-      <animated.div key={key}
-        className="bg"
-        style={{ ...props, backgroundImage: `linear-gradient(${item.backgroundColor},${item.backgroundColor}),url(${item.url})` }}
-      />
-    ))}
-    <div style={{position: 'absolute', bottom: '0', zIndex: 1, left: '0', right:'0', top: '0', backgroundColor, opacity: .65 }} />
+    <div className={styles.backgroundFrame} style={{clipPath: backgroundClipPath, transition: 'clip-path .5s ease-in-out'}}>
+      {transitions.map(({ item, props, key }) => (
+        <animated.div key={key}
+          className="bg"
+          style={{ ...props, willChange:'transform', backgroundImage: `url(${item.url})` }}
+        />
+      ))}
+      <div className={styles.backgroundFrameOverlay} style={{backgroundColor}}/>
     </div>
   )
 }

@@ -325,6 +325,6 @@ p.moduleParagraph {
   background-size: cover;
   background-position: center;
   will-change: opacity;
-  background-blend-mode:multiply;
+  /* background-blend-mode:multiply; */
 }
 
