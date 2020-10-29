@@ -188,12 +188,21 @@
       "paragraphs": [
         {
           "from": 1990,
+          "to": 2000,
+          "cover": {
+            "url": "https://siena.rosselcdn.net/sites/default/files/dpistyles_v2/ena_16_9_extra_big/2018/08/08/node_263401/856501/public/2018/08/08/B9716563393Z.1_20180808140151_000%2BGPEBQN7IQ.2-0.jpg?itok=YzdsQXgL1533729719",
+            "caption": "Traffic at the border between France and Luxembourg"
+          },
+          "text": "C'est la diversité des origines des migrants à partir des années 1990 qui doit être relevée. Les migrants viennent des pays voisins (la part des Français dans la population augmente), mais désormais également nombreux de pays non-européens (Etats-Unis, Inde, Chine, par exemple)"
+        },
+        {
+          "from": 2000,
           "to": 2014,
           "cover": {
             "url": "https://siena.rosselcdn.net/sites/default/files/dpistyles_v2/ena_16_9_extra_big/2018/08/08/node_263401/856501/public/2018/08/08/B9716563393Z.1_20180808140151_000%2BGPEBQN7IQ.2-0.jpg?itok=YzdsQXgL1533729719",
             "caption": "Traffic at the border between France and Luxembourg"
           },
-          "text": ""
+          "text": "Les migrants de pays qui avaient déjà une histoire d'immigration au Luxembourg (Portugal, Italie) sont également assez nombreux au sein de la vague d'immigration récente. Le profil des qualifications et des formations des immigrés est également de plus en plus diversifié; ils occupent à la fois des emplois hautement qualifiés et des emplois peu qualifiés."
         }
       ]
     }
