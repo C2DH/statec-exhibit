@@ -95,9 +95,22 @@ class Chapter extends Component {
                 zIndex: 0,
               }}
             ></div>
+            <div 
+              style={{ 
+                top: '10%',
+                left: '10%',
+                right: '10%',
+                bottom: '10%',
+                position: 'absolute',
+                zIndex: 1,
+                backgroundColor: headColor,
+                opacity: .65
+              }}
+            >
+            </div>
             <div
               className="chapterCoverWrapper withCover"
-              style={{ backgroundColor: headColor }}
+              
             >
               <div className="section-small">
                 <h2 className="sans">{`Chapter ${chapterIndex}`}</h2>
