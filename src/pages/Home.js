@@ -57,6 +57,7 @@ const Covers = ({ index, direction }) => {
       leave: {  transform: 'translate(0,100%)' },
     })
   return (
+    <div className={styles.backgroundFrameWrapper}>
     <div className={styles.backgroundFrame} style={{clipPath: backgroundClipPath, transition: 'clip-path .5s ease-in-out'}}>
       {transitions.map(({ item, props, key }) => (
         <animated.div key={key}
@@ -65,6 +66,7 @@ const Covers = ({ index, direction }) => {
         />
       ))}
       <div className={styles.backgroundFrameOverlay} style={{backgroundColor}}/>
+    </div>
     </div>
   )
 }

@@ -20,6 +20,7 @@
 body {
   margin: 0;
   font-family: Porpora, Arial, sans-serif;
+  height: 100vh;
 }
 
 html,

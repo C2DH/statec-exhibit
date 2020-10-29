@@ -20,11 +20,13 @@
   padding: 40vh 10px 20vh;
 }
 .stepChapterWrapper{
-  padding: 5vh 10px 5vh;
+  padding: 25vh 10px 25vh;
   /* opacity: .5; */
   margin-left: 5vh;
   margin-right: 5vh;
-  border-bottom: 1px solid blue;
+  /* border-bottom: 1px solid blue; */
+  /* opacity: 0; */
+  /* transition: opacity .6s ease-in-out; */
 }
 .stepChapterWrapper a{
   text-decoration: none;
@@ -38,13 +40,21 @@
   text-decoration: underline;
 }
 
-.backgroundFrame{
+.backgroundFrameWrapper{
   position: fixed;
   z-index: -1;
-  top: 10px;
-  left: 10px;
-  right: 10px;
-  bottom: 10px;
+  top: -200px;
+  left: -200px;
+  right: -200px;
+  bottom: -200px;
+}
+
+.backgroundFrame{
+  position: absolute;
+  top: 210px;
+  left: 210px;
+  right: 210px;
+  bottom: 210px;
   overflow: hidden;
 }
 
@@ -68,9 +78,9 @@
     margin: 0 auto;
   }
   .backgroundFrame{
-    top: 50px;
-    left: 50px;
-    right: 50px;
-    bottom: 50px;
+    top: 250px;
+    left: 250px;
+    right: 250px;
+    bottom: 250px;
   }
 }
