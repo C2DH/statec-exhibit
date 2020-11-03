@@ -31,10 +31,10 @@ body,
 
 :root {
   --primary: #d8434e;
-  --secondary: #433aa9;
-  --accent: #ffd8c2;
-  --theme-01: #D9EEF1;
-  --theme-02: #FFF0BD;
+  --secondary: #2b219f;
+  --accent: #ffc09d;
+  --theme-01: #bfe8ed;
+  --theme-02: #b4ebc8;
 }
 
 h1,
@@ -46,6 +46,7 @@ h6,
 .title {
   color: var(--secondary);
   font-family: 'SneakyTimes', serif;
+  font-weight: 100;
 }
 
 h1 {
@@ -58,6 +59,10 @@ h2 {
   line-height: 1;
 }
 
+.secondary {
+  color: #2b219f;
+}
+
 .sans {
   font-family: Porpora, Arial, sans-serif;
 }
@@ -65,13 +70,13 @@ h2 {
 .heroContainer {
   height: 100vh;
   width: 100%;
-  background-color: #ffd8c2;
+  background-color: #ffc09d;
   position: relative;
 }
 
 .heroContainerWrapper {
   position: absolute;
-  background-color: #ffd8c2;
+  background-color: #ffc09d;
   top: 0;
   left: 0;
   bottom: 0;
@@ -80,7 +85,7 @@ h2 {
 }
 
 .heroContainerWrapper.withCover {
-  background-color: #ffd8c2d6;
+  background-color: #ffc09dd6;
 }
 
 .chapterCover {
@@ -111,7 +116,7 @@ h2 {
 
 .chapterCoverWrapper .section-small h1,
 .chapterCoverWrapper .section-small h2 {
-  color: #433aa9;
+  color: #2b219f;
 }
 
 .section {
@@ -177,7 +182,7 @@ h2 {
   font-family: SneakyTimes, serif;
   font-size: 20px;
   line-height: 24px;
-  color: black;
+  color: #2b219f;
   opacity: 1;
   margin: 5px 0;
   text-transform: capitalize;
@@ -228,7 +233,7 @@ p.moduleParagraph {
 .hr {
   width: 100%;
   height: 1px;
-  background-color: #433aa9;
+  background-color: #2b219f;
   opacity: 0.8;
 }
 
@@ -237,10 +242,8 @@ p.moduleParagraph {
 }
 
 .textContainerTitle {
-  /* font-family: Sneaky; */
-  font-family: Porpora, Arial, sans-serif;
+  font-family: Sneaky;
   font-style: normal;
-  font-weight: bold;
   font-size: 2.6vh;
   line-height: 1.25;
   color: #d8434e;
@@ -253,8 +256,7 @@ p.moduleParagraph {
   font-weight: normal;
   font-size: 2.2vh;
   line-height: 1.25;
-  /* color: #d8434e; */
-  color: black;
+  color: #2b219f;
 }
 
 .moduleProgress {
@@ -316,7 +318,6 @@ p.moduleParagraph {
   }
 }
 
-
 .bg {
   position: absolute;
   top: 0;
@@ -328,4 +329,3 @@ p.moduleParagraph {
   will-change: opacity;
   /* background-blend-mode:multiply; */
 }
-

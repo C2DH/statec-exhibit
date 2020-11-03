@@ -6,10 +6,11 @@
 }
 
 .narrativeTitle {
-  font-size: 2.5vh;
+  font-size: 2.2vh;
   line-height: 1.2;
   margin-top: 15px;
-  /* color: #d8434e; */
+  font-family: Sneaky;
+  color: #2b219f;
 }
 
 .narrativeTitle,
@@ -21,9 +22,10 @@
 }
 
 .narrativeParagraph {
-  font-size: 2vh;
+  font-size: 2.2vh;
   line-height: 1.2;
-  color: black;
+  font-family: Sneaky;
+  color: #2b219f;
 }
 
 .paragraphs {
@@ -39,6 +41,13 @@
 
 figcaption {
   font-size: 15px;
+}
+
+.localYear {
+  font-size: 2.2vh;
+  text-decoration: underline;
+  color: #d8434e;
+  font-family: Sneaky;
 }
 
 @media screen and (max-width: 600px) {

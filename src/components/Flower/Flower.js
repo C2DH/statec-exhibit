@@ -140,6 +140,8 @@ const Flower = ({
                     textAnchor: 'middle',
                     transform: `rotate(${-deg})`,
                     dominantBaseline: 'central',
+                    color: '#2b219f',
+                    fontSize: '12px',
                   }}
                   dx={Math.sin(angle) * radius * 0.5}
                   dy={Math.cos(angle) * radius * 0.5}
@@ -154,26 +156,31 @@ const Flower = ({
       <div
         dx={2}
         style={{
-          color: red,
+          color: '#2b219f',
+          fontFamily: 'Sneaky',
           fontSize: isMobileWithTablet
             ? isTabletC
               ? '24px'
               : '14px'
-            : '1.2vw',
+            : '1.3vw',
           justifyContent: 'center',
           textAlign: 'center',
           position: 'absolute',
-          bottom: '0',
+          top: isMobileWithTablet ? '0' : '-10px',
           width: isMobileWithTablet ? '100%' : '100%',
           left: '0',
           marginTop: '0px',
           display: 'flex',
           alignItems: 'center',
+          flexDirection: 'column',
         }}
       >
-        {title}
+        {title} - {selectedTime}
         <br />
-        {selectedTime}
+        <div style={{ color: 'black', fontSize: '11px' }}>
+          Length of the petal = data in the indicated years
+        </div>
+        <br></br>
       </div>
     </div>
   );

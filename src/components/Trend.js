@@ -159,10 +159,12 @@ const Trend = ({
         <div style={{ display: 'flex', alignItems: 'baseline' }}>
           <div
             className="moduleTitle"
-            style={{ display: 'flex', flexDirection: 'column' }}
+            style={{ display: 'flex', alignItems: 'center' }}
           >
             {title}
-            <div className="dataSource">{source || 'source to add'}</div>
+            <div className="dataSource" style={{ marginLeft: '15px' }}>
+              {source || 'source to add'}
+            </div>
           </div>
           <TrendLegend
             progress={progress}
@@ -259,7 +261,7 @@ const Trend = ({
             x2={graphWidth}
             y1={scaleY2(0)}
             y2={scaleY2(0)}
-            stroke={'black'}
+            stroke={'rgba(0,0,0,0.5'}
             strokeWidth={1}
           ></line>
           {currentHotspots.map((d, i) => {
@@ -386,7 +388,7 @@ const Trend = ({
                         y1={trendHeight}
                         x2={scaleX(date)}
                         y2={y2}
-                        stroke={'#E99AA9'}
+                        stroke={'rgba(0,0,0,0.3)'}
                         strokeWidth={0.5}
                         strokeDasharray="4 4"
                       />
@@ -468,6 +470,7 @@ const Trend = ({
                             fontSize={tickLabelSize}
                             textAnchor="middle"
                             fill={red}
+                            style={{ fontFamily: 'Sneaky' }}
                           >
                             {tick.formattedValue}
                           </text>
@@ -502,7 +505,7 @@ const Trend = ({
               <text {...tickProps}>{formattedValue}</text>
             )}
             tickLength={graphWidth}
-            tickStroke={'rgba(0,0,0,.5)'}
+            tickStroke={'rgba(0,0,0,.3)'}
             tickClassName={'tickTrend'}
           />
         </g>
@@ -533,10 +536,12 @@ const Trend = ({
         >
           <div
             className="moduleTitle"
-            style={{ display: 'flex', flexDirection: 'column' }}
+            style={{ display: 'flex', alignItems: 'center' }}
           >
             {title}
-            <div className="dataSource">{source || 'source to add'}</div>
+            <div className="dataSource" style={{ marginLeft: '15px' }}>
+              {source || 'source to add'}
+            </div>
           </div>
           <TrendLegend
             progress={progress}

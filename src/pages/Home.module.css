@@ -1,12 +1,10 @@
-
 .chapterNumber {
   font-weight: normal;
   padding: 0;
   margin: 0;
-  text-align: center
+  text-align: center;
 }
-.chapterTitle{
-  
+.chapterTitle {
   text-align: center;
 }
 .chapterTitle a {
@@ -16,10 +14,10 @@
   margin: 0;
 }
 
-.stepWrapper{
+.stepWrapper {
   padding: 40vh 10px 20vh;
 }
-.stepChapterWrapper{
+.stepChapterWrapper {
   padding: 25vh 10px 25vh;
   /* opacity: .5; */
   margin-left: 5vh;
@@ -28,19 +26,19 @@
   /* opacity: 0; */
   /* transition: opacity .6s ease-in-out; */
 }
-.stepChapterWrapper a{
+.stepChapterWrapper a {
   text-decoration: none;
 }
-.stepChapterWrapper.stepWrapperActive{
+.stepChapterWrapper.stepWrapperActive {
   /* opacity: 1; */
   /* border-left: 2px solid var(--primary);
   border-right: 2px solid var(--primary); */
 }
-.stepChapterWrapper.stepWrapperActive a{
+.stepChapterWrapper.stepWrapperActive a {
   text-decoration: underline;
 }
 
-.backgroundFrameWrapper{
+.backgroundFrameWrapper {
   position: fixed;
   z-index: -1;
   top: -200px;
@@ -49,7 +47,7 @@
   bottom: -200px;
 }
 
-.backgroundFrame{
+.backgroundFrame {
   position: absolute;
   top: 210px;
   left: 210px;
@@ -58,26 +56,26 @@
   overflow: hidden;
 }
 
-.backgroundFrameOverlay{
+.backgroundFrameOverlay {
   position: absolute;
   bottom: 0;
   z-index: 1;
   left: 0;
-  right:0;
+  right: 0;
   top: 0;
-  opacity: .65;
+  opacity: 0.65;
 }
 
 @media (min-width: 600px) {
-  .stepWrapper{
-    padding: 40vh 150px 20vh
+  .stepWrapper {
+    padding: 40vh 150px 20vh;
   }
-  .stepChapterWrapper{
+  .stepChapterWrapper {
     padding: 25vh 150px 25vh;
-    max-width: 50%;
+    /* max-width: 50%; */
     margin: 0 auto;
   }
-  .backgroundFrame{
+  .backgroundFrame {
     top: 250px;
     left: 250px;
     right: 250px;
