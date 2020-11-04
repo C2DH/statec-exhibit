@@ -2,15 +2,15 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 10px;
+  padding: 0 10px;
 }
 
 .narrativeTitle {
-  font-size: 2.2vh;
+  font-size: 2.4vh;
   line-height: 1.2;
   margin-top: 15px;
   font-family: Sneaky;
-  color: #2b219f;
+  color: #4d4a6d;
 }
 
 .narrativeTitle,
@@ -22,10 +22,11 @@
 }
 
 .narrativeParagraph {
-  font-size: 2.2vh;
+  font-size: 2.4vh;
   line-height: 1.2;
+
   font-family: Sneaky;
-  color: #2b219f;
+  color: #4d4a6d;
 }
 
 .paragraphs {
@@ -44,9 +45,9 @@ figcaption {
 }
 
 .localYear {
-  font-size: 2.2vh;
+  font-size: 2.8vh;
   text-decoration: underline;
-  color: #d8434e;
+  color: #4d4a6d;
   font-family: Sneaky;
 }
 

@@ -50,7 +50,7 @@ const Contents = ({ history }) => {
           className="flex flex-column justify-center ph4 pointer mv4 mv0-ns"
           onClick={() => goTo('/a-country-of-migration')}
         >
-          <div className=" tl menu-title">CHAPTER 1</div>
+          <div className=" tl menu-title">Chapter 1</div>
           <div
             className={`${
               actualPath === '/a-country-of-migration' ? 'active' : ''
@@ -63,7 +63,7 @@ const Contents = ({ history }) => {
           className="flex flex-column justify-center ph4 pointer mv4 mv0-ns"
           onClick={() => goTo('/family')}
         >
-          <div className=" tl menu-title">CHAPTER 2</div>
+          <div className=" tl menu-title">Chapter 2</div>
           <div
             className={`${
               actualPath === '/family' ? 'active' : ''

@@ -44,6 +44,7 @@ const Narrative = ({ chapter, progress, from, to }) => {
             <p
               style={{
                 display: isParagraphVisible ? 'block' : 'none',
+                margin: '5px 0',
               }}
               key={i}
               dangerouslySetInnerHTML={{

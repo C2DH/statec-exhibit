@@ -161,10 +161,7 @@ const Trend = ({
             className="moduleTitle"
             style={{ display: 'flex', alignItems: 'center' }}
           >
-            {title}
-            <div className="dataSource" style={{ marginLeft: '15px' }}>
-              {source || 'source to add'}
-            </div>
+            &darr;&nbsp;{title}
           </div>
           <TrendLegend
             progress={progress}
@@ -172,6 +169,9 @@ const Trend = ({
             date={actualYear}
             legend={legend}
           />
+          <div className="dataSource" style={{ marginLeft: '15px' }}>
+            {source || 'source to add'}
+          </div>
         </div>
       )}
       <svg
@@ -244,8 +244,8 @@ const Trend = ({
             x={(d) => scaleX(x(d))}
             y={(d) => scaleY2(y(d))}
             strokeWidth={1}
-            stroke="black"
-            strokeOpacity={0.2}
+            stroke="#86b9d4"
+            strokeOpacity={1}
             curve={curveMonotoneX}
           />
           {/*
@@ -264,7 +264,7 @@ const Trend = ({
             stroke={'rgba(0,0,0,0.5'}
             strokeWidth={1}
           ></line>
-          {currentHotspots.map((d, i) => {
+          {/* {currentHotspots.map((d, i) => {
             return (
               <circle
                 key={i}
@@ -274,7 +274,7 @@ const Trend = ({
                 r={4}
               />
             );
-          })}
+          })} */}
         </g>
         <g transform={`translate(${marginLeft}, ${marginTop})`}>
           <Animate
@@ -419,8 +419,8 @@ const Trend = ({
                 y={(d) => scaleY2(y(d))}
                 curve={curveMonotoneX}
                 strokeDasharray={pathLength}
-                stroke={p.isVisible ? '#D1646C' : '#ccc'}
-                strokeWidth={3}
+                stroke={p.isVisible ? '#D1646C' : '#80b5d0'}
+                strokeWidth={2}
               />
             );
           })}
@@ -495,10 +495,10 @@ const Trend = ({
             stroke="#1b1a1e"
             tickLabelProps={(value, index) => ({
               fill: 'rgba(0,0,0,.5)',
-              textAnchor: 'start',
+              textAnchor: 'end',
               fontSize: isMobileWithTablet ? 6 : 11,
               fontFamily: 'Porpora',
-              dx: '-4vw',
+              dx: '-1vw',
               dy: '.5vh',
             })}
             tickComponent={({ formattedValue, ...tickProps }) => (
@@ -514,7 +514,7 @@ const Trend = ({
         style={{
           position: 'absolute',
           bottom: negative ? '37px' : 'auto',
-          top: negative ? 'auto' : '44px',
+          top: negative ? 'auto' : '54px',
         }}
       >
         <div
@@ -525,7 +525,14 @@ const Trend = ({
             textAlign: 'center',
           }}
         >
-          <span style={{ background: red, color: 'white', padding: '2px 4px' }}>
+          <span
+            style={{
+              background: red,
+              color: 'white',
+              padding: '2px 4px',
+              fontFamily: 'SneakyTimes, serif',
+            }}
+          >
             {actualYear}
           </span>
         </div>
@@ -538,10 +545,7 @@ const Trend = ({
             className="moduleTitle"
             style={{ display: 'flex', alignItems: 'center' }}
           >
-            {title}
-            <div className="dataSource" style={{ marginLeft: '15px' }}>
-              {source || 'source to add'}
-            </div>
+            &uarr;&nbsp;{title}
           </div>
           <TrendLegend
             progress={progress}
@@ -549,6 +553,9 @@ const Trend = ({
             date={actualYear}
             legend={legend}
           />
+          <div className="dataSource" style={{ marginLeft: '15px' }}>
+            {source || 'source to add'}
+          </div>
         </div>
       )}
     </div>

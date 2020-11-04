@@ -5,7 +5,7 @@
   "dataset": "population",
   "backgroundColor": "var(--theme-01)",
   "cover": {
-    "url": "https://live.staticflickr.com/8308/7787067926_77f29e31f4_b_d.jpg",
+    "url": "/1.cap1.jpg",
     "caption": "Bus at the border between Luxembourg and France in 1948",
     "source": "Foto: Gösta Nordin. Date: 1948. Photo Nr: 2218-96, Stockholm Transport Museum"
   },
@@ -106,7 +106,7 @@
         },
         {
           "from": 1865,
-          "to":1867,
+          "to": 1867,
           "text": "A côté des difficultés de subsistance alimentaire, des fléaux de santé publique assaillent les habitants du pays où les conditions sanitaires - beaucoup de logements isalubres notamment - sont précaires. Le choléra ravage le pays en 1866. Les répercussions sur la mortalité mais également sur le solde migratoire (une immigration en croissance) en sont la conséquence."
         },
         {
@@ -140,12 +140,12 @@
           "text": "Le rôle de \"soupape de sécurité\" que jouent les travailleurs étrangers est particulièrement visible dans les années 1930. La crise économique mondiale qui se déclenche en 1929 ébranle le Luxembourg à partir de 1930. Les étrangers, les premiers touchés par la réduction de l'emploi (particulièrement dans la sidérurgie) partent en nombre. En 1930, on compte 56.000 étrangers au Luxembourg. En 1935 ils ne sont plus que 38.000. Le retournement passager de la conjoncture dans un sens plus positif en 1935-37 va de pair avec un recours aaccru à la main-d'oeuvre étrangère."
         },
         {
-          "from": 1938, 
+          "from": 1938,
           "to": 1940,
           "text": "Les tensions internationales qui marquent la fin des années 1930 et le début de la guerre conduisent à un nouveau départ massif des étrangers."
         },
         {
-          "from": 1946, 
+          "from": 1946,
           "to": 1948,
           "text": "En 1947, on ne compte plus que 29.000 non-nationaux résidant au Luxembourg soit à peu près le nombre de 1900."
         },
@@ -158,7 +158,7 @@
           "from": 1970,
           "to": 1974,
           "text": "Suivant une période passagère de croissance faible de l'industrie sidérurgique et minière à la fin des années 1960 (où l'excédent migratoire est passagèrement en recul), le début des années 1970 voit un véritable \"boom\" de la sidérurgie allant de pair avec une croissance exceptionnelle de l'économie en général jusuq'à la crise pétrolière. Le recours à la main-d'oeuvre étrangère s'intensifie à cette époque. La composante italienne de l'immigration commence à se contracter; ce qui est également dû à l'évolution relativement favorable de l'écomie italienne. C'est l'immigration du Portugal - pays avec lequel un traité de main-d'oeuvre est signée - qui prend le relais. Il s'agit essentiellement d'une immigration familiale. C'est cette immigration qui permet de répondre notamment à la demande de main-d'oeuvre dans le secteur de la construction."
-        }, 
+        },
         {
           "from": 1975,
           "to": 1980,

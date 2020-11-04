@@ -109,7 +109,7 @@ const Container = ({
           </div>
         </div>
       </div>
-      <div
+      {/* <div
         className="sectionText"
         style={{ display: isMobileWithTablet ? 'none' : 'flex' }}
       >
@@ -120,7 +120,7 @@ const Container = ({
         {moduleDataset.paragraphs && (
           <p className="moduleParagraph">{moduleDataset.paragraphs}</p>
         )}
-      </div>
+      </div> */}
     </div>
   );
 };

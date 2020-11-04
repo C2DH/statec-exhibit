@@ -162,11 +162,11 @@ const Flower = ({
             ? isTabletC
               ? '24px'
               : '14px'
-            : '1.3vw',
+            : '1.8vh',
           justifyContent: 'center',
           textAlign: 'center',
           position: 'absolute',
-          top: isMobileWithTablet ? '0' : '-10px',
+          top: isMobileWithTablet ? '0' : '0',
           width: isMobileWithTablet ? '100%' : '100%',
           left: '0',
           marginTop: '0px',
@@ -177,7 +177,16 @@ const Flower = ({
       >
         {title} - {selectedTime}
         <br />
-        <div style={{ color: 'black', fontSize: '11px' }}>
+        <div
+          style={{
+            fontFamily: 'Porpora, sans-serif',
+            fontWeight: 'normal',
+            fontSize: '12px',
+            lineHeight: '14px',
+            marginTop: '5px',
+            color: 'rgba(0, 0, 0, 0.5)',
+          }}
+        >
           Length of the petal = data in the indicated years
         </div>
         <br></br>

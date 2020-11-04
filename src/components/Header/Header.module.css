@@ -1,17 +1,16 @@
 .stickyHeader {
-  width: 100%;
+  width: 90%;
   height: 50px;
   position: fixed;
   top: 0;
-  left: 0;
+  left: 5%;
   background: transparent;
   z-index: 999;
   display: flex;
-  padding: 10px 15px;
+  padding: 15px 0;
   justify-content: space-between;
   align-items: center;
 }
-
 
 .stickyHeaderLink {
   font-family: Porpora, sans-serif;
@@ -19,7 +18,7 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 19px;
-  color: var(--secondary);
+  color: 'black';
   text-decoration: none;
   cursor: pointer;
   width: 100px;
@@ -30,7 +29,7 @@
   text-decoration: underline;
 }
 
-.stickyHeader > div.title{
+.stickyHeader > div.title {
   text-align: center;
   color: var(--secondary);
   font-family: Porpora, sans-serif;
@@ -38,16 +37,16 @@
   line-height: 18px;
   width: 100px;
   will-change: transform;
-  position:relative;
+  position: relative;
   transition: transform 0.6s cubic-bezier(0.85, 0, 0.15, 1);
 }
-.stickyHeader > div.title a{
-  color: var(--secondary);
+.stickyHeader > div.title a {
+  color: black;
   text-decoration: none;
 }
 
-.stickyHeader > div.title::before,
-.stickyHeader > div.title::after{
+/* .stickyHeader > div.title::before,
+.stickyHeader > div.title::after {
   position: absolute;
   content: '';
   width: 20px;
@@ -55,18 +54,18 @@
   background-color: var(--secondary);
   height: 1px;
 }
-.stickyHeader > div.title::before{
+.stickyHeader > div.title::before {
   left: -30px;
 }
-.stickyHeader > div.title::after{
+.stickyHeader > div.title::after {
   right: -30px;
-}
+} */
 
 @media screen and (min-width: 600px) {
-  .stickyHeaderLink{
+  .stickyHeaderLink {
     width: 150px;
   }
-  .stickyHeader > div.title{
+  .stickyHeader > div.title {
     line-height: 50px;
     width: auto;
   }

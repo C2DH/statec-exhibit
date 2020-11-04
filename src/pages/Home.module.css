@@ -9,7 +9,7 @@
 }
 .chapterTitle a {
   color: var(--secondary);
-  font-weight: normal;
+  font-weight: 100;
   padding: 0;
   margin: 0;
 }
@@ -34,7 +34,7 @@
   /* border-left: 2px solid var(--primary);
   border-right: 2px solid var(--primary); */
 }
-.stepChapterWrapper.stepWrapperActive a {
+.stepChapterWrapper a:hover {
   text-decoration: underline;
 }
 
@@ -49,10 +49,10 @@
 
 .backgroundFrame {
   position: absolute;
-  top: 210px;
-  left: 210px;
-  right: 210px;
-  bottom: 210px;
+  top: 32%;
+  left: 32%;
+  right: 32%;
+  bottom: 32%;
   overflow: hidden;
 }
 
@@ -76,9 +76,9 @@
     margin: 0 auto;
   }
   .backgroundFrame {
-    top: 250px;
-    left: 250px;
-    right: 250px;
-    bottom: 250px;
+    top: 28%;
+    left: 28%;
+    right: 28%;
+    bottom: 28%;
   }
 }

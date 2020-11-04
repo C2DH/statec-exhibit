@@ -93,9 +93,9 @@ const TextContainer = ({ index, module, progress, from, to, chapter }) => {
             />
           ) : (
             <Fragment>
-              {!isMobileWithTablet && (
+              {/* {!isMobileWithTablet && (
                 <div className={'secondary'}>{index + 1}</div>
-              )}
+              )} */}
               <div
                 className="textContainerTitle"
                 style={{ position: 'relative' }}

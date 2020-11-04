@@ -4,25 +4,25 @@ import { useTransition, animated } from 'react-spring';
 import { useStore } from '../store';
 import { Scrollama, Step } from 'react-scrollama';
 import styles from './Home.module.css';
-import landing0 from '../assets/images/0.landing.jpg';
+import { isMobileWithTablet } from '../constants';
 
 const STEPS = [
   {
     id: 0,
     backgroundColor: 'var(--accent)',
-    backgroundClipPath: 'polygon(20% 20%, 80% 20%, 80% 80%, 20% 80%)',
-    url: landing0,
+    backgroundClipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)',
+    url: '/0.landing.jpg',
   },
   {
     id: 2,
     backgroundColor: 'var(--accent)',
-    backgroundClipPath: 'polygon(50% 20%, 50% 20%, 50% 80%, 50% 80%)',
+    backgroundClipPath: 'polygon(50% 0%, 50% 0%, 50% 100%, 50% 100%)',
     //url: 'https://ww1.lu/media/image/snapshots/nxwsWaG.medium.jpg',
   },
   {
     id: 3,
     backgroundColor: 'var(--accent)',
-    backgroundClipPath: 'polygon(20% 20%, 80% 20%, 80% 80%, 20% 80%)',
+    backgroundClipPath: 'polygon(50% 0%, 50% 0%, 50% 100%, 50% 100%)',
     //url: 'https://live.staticflickr.com/8086/8403972132_d29349e32d_k_d.jpg',
   },
 ];
@@ -101,11 +101,19 @@ const Home = () => {
               }}
             >
               <h1 className="f2 f1-m tc mv0">
-                <span style={{ color: 'var(--secondary)', fontSize: '8vw' }}>
+                <span
+                  style={{
+                    color: 'var(--secondary)',
+                    fontSize: isMobileWithTablet ? '16vw' : '8vw',
+                  }}
+                >
                   Framing Luxembourg
                 </span>
               </h1>
-              <h2 className="f3-ns f5 fw1 lh-title tc mt0-ns mt4">
+              <h2
+                className="fw1 lh-title tc mt3"
+                style={{ fontSize: isMobileWithTablet ? '4vw' : '2vw' }}
+              >
                 <span>
                   In the 19th century, statistics became a central tool for
                   framing social realities.
@@ -132,14 +140,48 @@ const Home = () => {
               currentStep.index === 2 ? styles.stepWrapperActive : ''
             }`}
           >
-            <h2 className={`${styles.chapterNumber} sans f2-ns`}>Chapter 1</h2>
-            <h2 className={`${styles.chapterTitle} f-4-ns`}>
-              <a href="/a-country-of-migration">A Country of Migrations</a>
-            </h2>
-            <h2 className={`${styles.chapterNumber} sans f2-ns`}>Chapter 2</h2>
-            <h2 className={`${styles.chapterTitle} f-4-ns`}>
-              <a href="/family">Family Life</a>
-            </h2>
+            <div className="block mb4">
+              <h2
+                className={`${styles.chapterNumber} sans f2-ns`}
+                style={{
+                  fontSize: '2.5vw',
+                }}
+              >
+                Chapter 1
+              </h2>
+              <h2
+                className={`${styles.chapterTitle}`}
+                style={{
+                  fontSize: '4.5vw',
+                  marginTop: '10px',
+                  marginBottom: '80px',
+                }}
+              >
+                <a href="/a-country-of-migration">A Country of Migrations</a>
+              </h2>
+              <h2
+                className={`${styles.chapterNumber} sans f2-ns`}
+                style={{
+                  fontSize: '2.5vw',
+                }}
+              >
+                Chapter 2
+              </h2>
+              <h2
+                className={`${styles.chapterTitle}`}
+                style={{
+                  fontSize: '4.5vw',
+                  marginTop: '10px',
+                  marginBottom: '80px',
+                }}
+              >
+                <a href="/family">Family Life</a>
+              </h2>
+            </div>
+            <div className="flex items-center justify-center ph4 mv4 mv3-ns">
+              <img src="/statec-logo-blu.png" height={40} className="mr2" />
+              <img src="/UNI_C2DH_blu.png" height={40} className="ml2" />
+            </div>
           </div>
         </Step>
         {/* <Step data={3}>

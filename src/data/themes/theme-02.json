@@ -5,7 +5,7 @@
   "dataset": "natural-balance-rate",
   "backgroundColor": "var(--theme-02)",
   "cover": {
-    "url": "https://live.staticflickr.com/8308/7787067926_77f29e31f4_b_d.jpg",
+    "url": "/2.cap2.jpg",
     "caption": "Bus at the border between Luxembourg and France in 1948",
     "source": "Foto: Gösta Nordin. Date: 1948. Photo Nr: 2218-96, Stockholm Transport Museum"
   },
@@ -68,13 +68,13 @@
       "datasetHeading": "birth-rate",
       "paragraphs": [
         {
-          "from": 1917, 
+          "from": 1917,
           "to": 1918,
           "title": "Après 1866, les années 1917-1918 sont la deuxième période au cours de laquelle la variation naturelle de la population est négative.",
           "text": "Cela résulte à la fois de l'augmentation de la mortalité et d'une diminution des naissances. Le solde naturel passe de +2.600 en 1913 à -1.200 en 1918. Ce sont évidemment les conditions de vie précaires de la guerre (difficutés de ravitaillement, par exemple) qui expliquent largement le phénomène, mais la baisse de la natalité est plus structurelle que conjoncturelle. Le nombre d'enfants par femmes (la fécondité) est en baisse continue. "
         },
         {
-          "from": 1920, 
+          "from": 1920,
           "to": 1935,
           "title": "Après la première guerre mondiale, la natalité n'atteint jamais son niveau d'avant-guerre et dans les années 1930 entame une nouvelle phase descendante.",
           "text": "L'excédent des naissances sur les décès est donc en recul."

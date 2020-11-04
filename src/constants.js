@@ -9,4 +9,4 @@ export const isMobileWithTablet = isMobile
 export const isMobileC = isMobile ? true : false;
 export const isTabletC = isTablet ? true : false;
 
-export const red = '#d8434e';
+export const red = '#d03a45';

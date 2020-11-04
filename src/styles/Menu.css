@@ -1,7 +1,7 @@
 .menu {
   height: 100%;
   overflow: hidden;
-  background-color: #ffd8c2;
+  background-color: var(--accent);
   transform: translate(-100%, 0%);
   pointer-events: none;
   transition: 0.5s transform;
@@ -34,6 +34,7 @@
 
 .menu .menu-link {
   font-size: 28px;
+  font-family: 'SneakyTimes', serif;
 }
 
 .menu .menu-link.active,

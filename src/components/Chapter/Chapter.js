@@ -92,10 +92,10 @@ class Chapter extends Component {
                 right: '10%',
                 bottom: '10%',
                 position: 'absolute',
-                zIndex: 0,
+                backgroundColor: color,
               }}
             ></div>
-            <div 
+            {/* <div 
               style={{ 
                 top: '10%',
                 left: '10%',
@@ -107,14 +107,25 @@ class Chapter extends Component {
                 opacity: .65
               }}
             >
-            </div>
-            <div
-              className="chapterCoverWrapper withCover"
-              
-            >
+            </div> */}
+            <div className="chapterCoverWrapper withCover">
               <div className="section-small">
-                <h2 className="sans">{`Chapter ${chapterIndex}`}</h2>
-                <h1 className="tc  fw3 mt0">{theme.title}</h1>
+                <h2
+                  className="sans mv0"
+                  style={{
+                    fontSize: '2.5vw',
+                  }}
+                >{`Chapter ${chapterIndex}`}</h2>
+                <h1
+                  className="tc"
+                  style={{
+                    fontSize: '4.5vw',
+                    marginTop: '10px',
+                    marginBottom: '80px',
+                  }}
+                >
+                  {theme.title}
+                </h1>
               </div>
             </div>
           </div>
@@ -149,9 +160,21 @@ class Chapter extends Component {
                 }}
               >
                 <Suspense fallback={''}>
-                  <div style={{ height: isMobileWithTablet ? '30vh' : '24vh' }}>
+                  <div
+                    style={{
+                      height: isMobileWithTablet ? '30vh' : '24vh',
+                      paddingTop: '15px',
+                    }}
+                  >
                     {showTitle && (
-                      <div className="sectionTitle" style={{ height: '20px' }}>
+                      <div
+                        className="sectionTitle"
+                        style={{
+                          height: '20px',
+                          marginTop: '-15px',
+                          fontSize: '16px',
+                        }}
+                      >
                         {theme.title}
                       </div>
                     )}
