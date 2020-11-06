@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 // import { Link } from 'react-router-dom';
-import { useTransition, animated } from 'react-spring';
 import { useStore } from '../store';
 import { Scrollama, Step } from 'react-scrollama';
 import styles from './Home.module.css';
 import { isMobileWithTablet } from '../constants';
+import Covers from '../components/Cover/Cover';
 
 const STEPS = [
   {
@@ -27,53 +27,6 @@ const STEPS = [
   },
 ];
 
-const Covers = ({ index, direction }) => {
-  const step = STEPS[index > -1 ? index : 0];
-  const { backgroundColor, backgroundClipPath } = step;
-  const transitions = useTransition(
-    step,
-    (item) => item.id,
-    direction === 'down'
-      ? {
-          from: { transform: 'translate(0%,0%)' },
-          enter: { transform: 'translate(0%,0)' },
-          leave: { transform: 'translate(0,0%)' },
-        }
-      : {
-          from: { transform: 'translate(0%,0%)' },
-          enter: { transform: 'translate(0%,0)' },
-          leave: { transform: 'translate(0,0%)' },
-        },
-  );
-  return (
-    <div className={styles.backgroundFrameWrapper}>
-      <div
-        className={styles.backgroundFrame}
-        style={{
-          clipPath: backgroundClipPath,
-          transition: 'clip-path .5s ease-in-out',
-        }}
-      >
-        {transitions.map(({ item, props, key }) => (
-          <animated.div
-            key={key}
-            className="bg"
-            style={{
-              ...props,
-              willChange: 'transform',
-              backgroundImage: `url(${item.url})`,
-            }}
-          />
-        ))}
-        {/* <div
-          className={styles.backgroundFrameOverlay}
-          style={{ backgroundColor }}
-        /> */}
-      </div>
-    </div>
-  );
-};
-
 const Home = () => {
   const [currentStep, setCurrentStep] = useState({
     index: -1,
@@ -86,7 +39,11 @@ const Home = () => {
   };
   return (
     <div className="home">
-      <Covers index={currentStep.index} direction={currentStep.direction} />
+      <Covers
+        index={currentStep.index}
+        direction={currentStep.direction}
+        steps={STEPS}
+      />
       <Scrollama onStepEnter={handleStepEnter} offset={0.5}>
         <Step data={0}>
           <div style={{ height: '100vh', overflow: 'hidden' }}>

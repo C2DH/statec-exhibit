@@ -1,6 +1,8 @@
 import React, { Component, Fragment, Suspense } from 'react';
 import { Scrollama, Step } from 'react-scrollama';
 import { isMobileWithTablet } from '../../constants';
+import { Spring, animated, config } from 'react-spring/renderprops';
+import { duration } from 'moment';
 
 const Container = React.lazy(() => import('./Container'));
 const TextContainer = React.lazy(() => import('./TextContainer'));
@@ -16,6 +18,7 @@ class Chapter extends Component {
       data: 0,
       steps: [],
       progress: 0,
+      scrolled: false,
     };
   }
 
@@ -61,7 +64,7 @@ class Chapter extends Component {
   };
 
   render() {
-    const { progress, data } = this.state;
+    const { progress, data, scrolled } = this.state;
     const {
       theme,
       headColor,
@@ -72,7 +75,6 @@ class Chapter extends Component {
     } = this.props;
     const moduleDataset = require(`../../data/datasets/${theme.modules[data].datasetHeading}.json`);
     const themeDataset = require(`../../data/datasets/${theme.dataset}.json`);
-
     return (
       <div
         className="w-100"
@@ -83,49 +85,68 @@ class Chapter extends Component {
         {showCover && (
           <div className="chapterCover">
             <div
+              className="chapterFrameWrapper"
               style={{
-                backgroundImage: `url(${theme.cover.url})`,
-                backgroundRepeat: 'no-repeat',
-                backgroundSize: 'cover',
-                top: '10%',
-                left: '10%',
-                right: '10%',
-                bottom: '10%',
-                position: 'absolute',
                 backgroundColor: color,
-              }}
-            ></div>
-            {/* <div 
-              style={{ 
-                top: '10%',
-                left: '10%',
-                right: '10%',
-                bottom: '10%',
-                position: 'absolute',
+                width: '100%',
+                height: '100vh',
                 zIndex: 1,
-                backgroundColor: headColor,
-                opacity: .65
+                position: 'absolute',
               }}
             >
-            </div> */}
-            <div className="chapterCoverWrapper withCover">
-              <div className="section-small">
-                <h2
-                  className="sans mv0"
-                  style={{
-                    fontSize: '2.5vw',
-                  }}
-                >{`Chapter ${chapterIndex}`}</h2>
-                <h1
-                  className="tc"
-                  style={{
-                    fontSize: '4.5vw',
-                    marginTop: '10px',
-                    marginBottom: '80px',
-                  }}
-                >
-                  {theme.title}
-                </h1>
+              <Spring
+                to={{
+                  backgroundClipPath:
+                    'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)',
+                }}
+                from={{
+                  backgroundClipPath:
+                    'polygon(50% 0%, 50% 0%, 50% 100%, 50% 100%)',
+                }}
+                config={{
+                  duration: 500,
+                  tension: 0,
+                  friction: 0,
+                  precision: 0.01,
+                }}
+              >
+                {(props) => (
+                  <animated.div
+                    className="chapterFrame"
+                    style={{
+                      transition: 'clip-path .5s ease-in-out',
+                      clipPath: props.backgroundClipPath,
+                    }}
+                  >
+                    <div
+                      className="bg"
+                      style={{
+                        willChange: 'transform',
+                        backgroundImage: `url(${theme.cover.url})`,
+                      }}
+                    />
+                  </animated.div>
+                )}
+              </Spring>
+              <div className="chapterCoverWrapper withCover">
+                <div className="section-small">
+                  <h2
+                    className="sans mv0"
+                    style={{
+                      fontSize: '2vw',
+                    }}
+                  >{`Chapter ${chapterIndex}`}</h2>
+                  <h1
+                    className="tc"
+                    style={{
+                      fontSize: '8vw',
+                      marginTop: '10px',
+                      marginBottom: '80px',
+                    }}
+                  >
+                    {theme.title}
+                  </h1>
+                </div>
               </div>
             </div>
           </div>

@@ -30,7 +30,7 @@ body,
 }
 
 :root {
-  --primary: #d8434e;
+  --primary: #d03a45;
   --secondary: #2b219f;
   --accent: #ffc09d;
   --theme-01: #bfe8ed;
@@ -217,7 +217,7 @@ p.moduleParagraph {
 
   text-decoration-line: underline;
 
-  color: #d8434e;
+  color: #d03a45;
 }
 
 .peakTitle {
@@ -226,7 +226,7 @@ p.moduleParagraph {
   font-weight: normal;
   font-size: 30px;
   line-height: 36px;
-  color: #d8434e;
+  color: #d03a45;
   margin-top: 30px;
 }
 
@@ -264,7 +264,7 @@ p.moduleParagraph {
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
-  color: #d8434e;
+  color: #d03a45;
   margin-left: 15px;
 }
 
@@ -328,4 +328,13 @@ p.moduleParagraph {
   background-position: center;
   will-change: opacity;
   /* background-blend-mode:multiply; */
+}
+
+.chapterFrame {
+  position: absolute;
+  top: 18%;
+  left: 18%;
+  right: 18%;
+  bottom: 18%;
+  overflow: hidden;
 }

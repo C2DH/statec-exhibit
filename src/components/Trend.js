@@ -525,16 +525,18 @@ const Trend = ({
             textAlign: 'center',
           }}
         >
-          <span
-            style={{
-              background: red,
-              color: 'white',
-              padding: '2px 4px',
-              fontFamily: 'SneakyTimes, serif',
-            }}
-          >
-            {actualYear}
-          </span>
+          {actualYear && (
+            <span
+              style={{
+                background: red,
+                color: 'white',
+                padding: '2px 4px',
+                fontFamily: 'SneakyTimes, serif',
+              }}
+            >
+              {actualYear}
+            </span>
+          )}
         </div>
       </div>
       {negative && (
