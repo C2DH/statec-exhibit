@@ -4,6 +4,7 @@ import { animated } from 'react-spring';
 import { scaleLinear, scaleTime } from 'd3-scale';
 import Narrative from '../Narrative/Narrative';
 import { isMobileWithTablet, isMobile, isTablet } from '../../constants';
+import Link from '../Link';
 
 const NarrativeFigure = ({ src, caption, alt }) => {
   return (
@@ -25,7 +26,16 @@ const NarrativeFigure = ({ src, caption, alt }) => {
   );
 };
 
-const TextContainer = ({ index, module, progress, from, to, chapter }) => {
+const TextContainer = ({
+  index,
+  module,
+  progress,
+  from,
+  to,
+  chapter,
+  isLast,
+  chapterIndex,
+}) => {
   //const props = useSpring({ opacity: 1, from: { opacity: 0 } });
 
   const opacityScale = scaleLinear()
@@ -139,6 +149,7 @@ const TextContainer = ({ index, module, progress, from, to, chapter }) => {
           </div>
         </div>
       </div>
+      {isLast && <Link chapterIndex={chapterIndex} />}
     </div>
   );
 };

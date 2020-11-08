@@ -4,6 +4,7 @@ import { scaleLinear } from 'd3-scale';
 import Flower from '../Flower/Flower';
 import { isMobileWithTablet } from '../../constants';
 import Narrative from '../Narrative/Narrative';
+import Link from '../Link';
 
 const Container = ({
   module,
@@ -15,8 +16,10 @@ const Container = ({
   to,
   chapter,
   extentValues,
+  isLast,
+  chapterIndex,
 }) => {
-  console.log('progress');
+  console.log('isLast', isLast);
   //const props = useSpring({ opacity: 1, from: { opacity: 0 } });
   const opacityScale = scaleLinear()
     .domain([0, 0.2, 0.8, 0.95])
@@ -121,6 +124,7 @@ const Container = ({
           <p className="moduleParagraph">{moduleDataset.paragraphs}</p>
         )}
       </div> */}
+      {isLast && <Link chapterIndex={chapterIndex} />}
     </div>
   );
 };

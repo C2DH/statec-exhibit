@@ -255,6 +255,7 @@ class Chapter extends Component {
                     if (module.dataset) {
                       moduleDataset = require(`../../data/datasets/${module.dataset}.json`);
                     }
+                    console.log(theme.modules.length - 1, i);
                     return (
                       <Step data={i} key={i}>
                         <div
@@ -265,17 +266,6 @@ class Chapter extends Component {
                           }}
                         >
                           <Suspense fallback={''}>
-                            {module.layout === 'image' && (
-                              <ImageContainer
-                                index={i}
-                                module={module}
-                                progress={i === data ? progress : 0}
-                                shouldRender={i === data}
-                                chapter={theme.modules[data]}
-                                from={theme.modules[data].from}
-                                to={theme.modules[data].to}
-                              />
-                            )}
                             {module.layout === 'flowers' && moduleDataset && (
                               <Container
                                 module={module}
@@ -287,6 +277,8 @@ class Chapter extends Component {
                                 extentValues={theme.modules[data].extent}
                                 from={theme.modules[data].from}
                                 to={theme.modules[data].to}
+                                isLast={i === theme.modules.length - 1}
+                                chapterIndex={chapterIndex}
                               />
                             )}
                             {module.layout === 'text' && (
@@ -298,6 +290,8 @@ class Chapter extends Component {
                                 chapter={theme.modules[data]}
                                 from={theme.modules[data].from}
                                 to={theme.modules[data].to}
+                                isLast={i === theme.modules.length - 1}
+                                chapterIndex={chapterIndex}
                               />
                             )}
                           </Suspense>
