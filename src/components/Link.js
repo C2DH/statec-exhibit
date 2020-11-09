@@ -1,4 +1,5 @@
 import React from 'react';
+import { isMobileWithTablet } from '../../constants';
 
 const chapterMeta = {
   '1': {
@@ -15,15 +16,19 @@ function Link({ chapterIndex }) {
     <div
       style={{
         position: 'fixed',
-        top: '90vh',
-        left: '50%',
+        top: isMobileWithTablet ? 'auto' : '90vh',
+        bottom: isMobileWithTablet ? '3vh' : 'auto',
+        left: isMobileWithTablet ? 'auto' : '50%',
+        right: isMobileWithTablet ? '5%' : 'auto',
         fontSize: '2.4vh',
         fontFamily: 'Sneaky',
-        color: '#4d4a6d !important',
         paddingLeft: '10px',
       }}
     >
-      <a href={chapterMeta[chapterIndex].link}>
+      <a
+        href={chapterMeta[chapterIndex].link}
+        style={{ color: '#4d4a6d !important' }}
+      >
         {chapterIndex == 1 ? `↓ Next Chapter` : `↑ Previous Chapter`}
       </a>
     </div>
