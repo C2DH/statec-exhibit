@@ -1,5 +1,5 @@
 import React from 'react';
-import { isMobileWithTablet } from '../../constants';
+import { isMobileWithTablet } from '../constants';
 
 const chapterMeta = {
   '1': {
