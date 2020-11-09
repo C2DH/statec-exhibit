@@ -54,6 +54,10 @@ figcaption {
     padding: 0px;
   }
   .narrativeTitle {
+    font-size: 16px;
+  }
+
+  .narrativeParagraph {
     font-size: 14px;
   }
 }

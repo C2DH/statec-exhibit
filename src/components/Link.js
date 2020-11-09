@@ -15,11 +15,11 @@ function Link({ chapterIndex }) {
     <div
       style={{
         position: 'fixed',
-        bottom: '5%',
+        top: '90vh',
         left: '50%',
         fontSize: '2.4vh',
         fontFamily: 'Sneaky',
-        color: '#4d4a6d',
+        color: '#4d4a6d !important',
         paddingLeft: '10px',
       }}
     >

@@ -133,7 +133,7 @@ class Chapter extends Component {
                   <h2
                     className="sans mv0"
                     style={{
-                      fontSize: '2vw',
+                      fontSize: isMobileWithTablet ? '4.5vw' : '2.5vw',
                     }}
                   >{`Chapter ${chapterIndex}`}</h2>
                   <h1

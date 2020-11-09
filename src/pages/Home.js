@@ -101,7 +101,7 @@ const Home = () => {
               <h2
                 className={`${styles.chapterNumber} sans f2-ns`}
                 style={{
-                  fontSize: '2.5vw',
+                  fontSize: isMobileWithTablet ? '4.5vw' : '2.5vw',
                 }}
               >
                 Chapter 1
@@ -109,7 +109,7 @@ const Home = () => {
               <h2
                 className={`${styles.chapterTitle}`}
                 style={{
-                  fontSize: '4.5vw',
+                  fontSize: isMobileWithTablet ? '9vw' : '4.5vw',
                   marginTop: '10px',
                   marginBottom: '80px',
                 }}
@@ -119,7 +119,7 @@ const Home = () => {
               <h2
                 className={`${styles.chapterNumber} sans f2-ns`}
                 style={{
-                  fontSize: '2.5vw',
+                  fontSize: isMobileWithTablet ? '4.5vw' : '2.5vw',
                 }}
               >
                 Chapter 2
@@ -127,7 +127,7 @@ const Home = () => {
               <h2
                 className={`${styles.chapterTitle}`}
                 style={{
-                  fontSize: '4.5vw',
+                  fontSize: isMobileWithTablet ? '9vw' : '4.5vw',
                   marginTop: '10px',
                   marginBottom: '80px',
                 }}
