@@ -84,8 +84,8 @@ const Home = () => {
             <div className="mw9 center pa4 pt5-ns ph5-l">
               <h2 className="f2-ns f3 fw1 lh-title tc">
                 Through the categories they offer, they made things visible but
-                hide others. Telling the history of how a territory was “put
-                into numbers” over the last 200 years makes unveil the different
+                hid others. Telling the history of how a territory was “put
+                into numbers” over the last 200 years unveils the different
                 stories that the Luxembourg state choose to tell.
               </h2>
             </div>

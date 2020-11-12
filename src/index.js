@@ -34,3 +34,9 @@ class App extends React.Component {
 
 ReactDOM.render(<App />, document.getElementById('root'));
 //registerServiceWorker();
+
+console.info('version',
+  process.env.REACT_APP_GIT_TAG,
+  process.env.REACT_APP_GIT_BRANCH,
+  `\nhttps://github.com/C2DH/statec-exhibit/commit/${process.env.REACT_APP_GIT_REVISION}`
+)

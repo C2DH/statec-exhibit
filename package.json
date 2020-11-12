@@ -38,6 +38,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "build-ci": "CI= react-scripts build",
+    "build-noindex": "react-scripts build && echo 'User-agent: *\nDisallow: /' | cat > build/robots.txt && echo '/* /index.html  200' | cat >build/_redirects",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
