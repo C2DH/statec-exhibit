@@ -27,13 +27,26 @@
       "paragraphs": [
         {
           "from": 1840,
+          "to": 1860,
+          "text": ""
+        },
+        {
+          "from": 1860,
           "to": 1880,
-          "text": "L'ensemble de la période allant de l'indépendance du Grand-Duché en 1839 jusqu'aux années 1890 est marquée par une croissance démographique relativement lente liée à une croissance économique hésitante et des conditions de vie qui restent précaires, la véritable industrialisation du pays ne prenant son envol que dans les 1880. L'excédent naturel est cependant positif étant donné que la mortalité (surtout infantile) recule plus fortement que la natalité."
+          "text": "L'ensemble de la période allant de l'indépendance du Grand-Duché en 1839 jusqu'aux années 1890 est marquée par une croissance démographique relativement lente liée à une croissance économique hésitante et des conditions de vie qui restent précaires, la véritable industrialisation du pays ne prenant son envol que dans les 1880. L'excédent naturel est cependant positif étant donné que la mortalité (surtout infantile) recule plus fortement que la natalité.",
+          "cover": {
+            "url": "/media/images/ICO-3-1-04638.medium-h.jpg",
+            "caption": "Traffic at the border between France and Luxembourg"
+          }
         },
         {
           "from": 1884,
           "to": 1886,
-          "text": "La première grande usine sidérurgique commence à produire de l'acier à Dudelange en 1885."
+          "text": "La première grande usine sidérurgique commence à produire de l'acier à Dudelange en 1885.",
+          "cover": {
+            "url": "/media/images/statec_004.medium-h.jpg",
+            "caption": "Usine"
+          }
         },
         {
           "from": 1890,
@@ -43,14 +56,27 @@
         {
           "from": 1900,
           "to": 1910,
-          "text": "A partir de la fin des années 1890, les capitaux allemands (le Luxembougr fait partie du Zollverein à partir de 1842) investissent massivement dans la sidérurgie (Differdange, Belval etc.) contribuant ainsi à l'expansion économique qui va de pair avec une croissance importante de la population dont le nopmbre passe de 210.000 en 1890 à 260.000 en 1910. Un pays d'émigration devient un pays d'immigration."
+          "text": "A partir de la fin des années 1890, les capitaux allemands (le Luxembougr fait partie du Zollverein à partir de 1842) investissent massivement dans la sidérurgie (Differdange, Belval etc.) contribuant ainsi à l'expansion économique qui va de pair avec une croissance importante de la population dont le nopmbre passe de 210.000 en 1890 à 260.000 en 1910. Un pays d'émigration devient un pays d'immigration.",
+          "cover": {
+            "url": "/media/images/statec_006.medium-h.jpg",
+            "caption": "Usine"
+          }
         },
         {
           "from": 1916,
-          "to": 1920,
+          "to": 1918,
           "text": "L'entrée en guerre est synonyme d'une stagnation démographique au Grand-Duché de Luxembourg. Beaucoup d'immigrés partent, la mortalité augmente, et les naissances diminuent. Les événements économiques qui suivent la guerre (sortie du Zollverein et création de l'UEBL) et sociaux (grèves, tensions politiques) retardent la sortie du marasme économique.",
           "cover": {
-            "url": "https://ww1.lu/media/image/snapshots/6SBc3s5.full.jpg",
+            "url": "/media/images/statec_007.medium-h.jpg",
+            "caption": "<i>Volksküche</i>, 25 September 1916, Archives OGBL"
+          }
+        },
+        {
+          "from": 1919,
+          "to": 1922,
+          "text": "L'entrée en guerre est synonyme d'une stagnation démographique au Grand-Duché de Luxembourg. Beaucoup d'immigrés partent, la mortalité augmente, et les naissances diminuent. Les événements économiques qui suivent la guerre (sortie du Zollverein et création de l'UEBL) et sociaux (grèves, tensions politiques) retardent la sortie du marasme économique.",
+          "cover": {
+            "url": "https://ww1.lu//media/image/snapshots/6SBc3s5.full.jpg",
             "caption": "<i>Volksküche</i>, 25 September 1916, Archives OGBL"
           }
         },
@@ -68,18 +94,30 @@
           "from": 1935,
           "to": 1947,
           "title": "La Deuxième Guerre mondiale a des répercussions importantes damns le domaine démographique.",
-          "text": "La mortalité augmente (victimes directes de la guerre, conditions de subsistance difficiles), la natalité diminue. Entre 1935 et 1946, la population résidente passe de 297.000 en 1935 à 291.000 en 1947."
+          "text": "La mortalité augmente (victimes directes de la guerre, conditions de subsistance difficiles), la natalité diminue. Entre 1935 et 1946, la population résidente passe de 297.000 en 1935 à 291.000 en 1947.",
+          "cover": {
+            "url": "/media/images/statec_001.medium-h.jpg",
+            "caption": "<i>Volksküche</i>, 25 September 1916, Archives OGBL"
+          }
         },
         {
           "from": 1950,
           "to": 1975,
           "title": "A partir de la fin des années 1940, le Luxembourg entre dans une phase de croissance économique continue et soutenue. On a pu appeler cette période qui dure jusqu'à la crise économique et sidérurgique du milieu des années 1970 les \"Trente Glorieuses\". ",
-          "text": "L'augmentation de la population est parallèle à ce nouvement haussier continue. Cette croissance est due essentiellement à l'immigration étant donné que la natalité (et la fécondité) des résidents diminue au cours de cette période. Même la diminution importante de la mortalité n'empêche pas que l'évolution naturelle de la population (naissances - décès) soit très modeste."
+          "text": "L'augmentation de la population est parallèle à ce nouvement haussier continue. Cette croissance est due essentiellement à l'immigration étant donné que la natalité (et la fécondité) des résidents diminue au cours de cette période. Même la diminution importante de la mortalité n'empêche pas que l'évolution naturelle de la population (naissances - décès) soit très modeste.",
+          "cover": {
+            "url": "/media/images/statec_012.medium-h.jpg",
+            "caption": ""
+          }
         },
         {
           "from": 1975,
           "to": 1985,
-          "text": "De 1975 à 1985, le Luxembourg ne sortira pas véritablement de la crise économique. Elle marque le début du processus de rétrécissement du secteur sidérurgique qui avait constitué jusque-là la branche économique qui fut à la base de l'essor économique du pays. Quant à la population, malgré la crise, elle continue son mouvement à la hausse. En fait, en même temps que la sidérurgie subit un processus de consolidation, d'autres secteurs économiques, et plus particulièrement le secteur financier, commencent à se développer."
+          "text": "De 1975 à 1985, le Luxembourg ne sortira pas véritablement de la crise économique. Elle marque le début du processus de rétrécissement du secteur sidérurgique qui avait constitué jusque-là la branche économique qui fut à la base de l'essor économique du pays. Quant à la population, malgré la crise, elle continue son mouvement à la hausse. En fait, en même temps que la sidérurgie subit un processus de consolidation, d'autres secteurs économiques, et plus particulièrement le secteur financier, commencent à se développer.",
+          "cover": {
+            "url": "/media/images/statec_012.medium-h.jpg",
+            "caption": ""
+          }
         },
         {
           "from": 2008,
