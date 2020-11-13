@@ -40,7 +40,8 @@
     "build-ci": "CI= react-scripts build",
     "build-noindex": "react-scripts build && echo 'User-agent: *\nDisallow: /' | cat > build/robots.txt && echo '/* /index.html  200' | cat >build/_redirects",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "setup-images": "node src/setupImages"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -58,6 +59,7 @@
     ]
   },
   "devDependencies": {
-    "prettier": "^2.0.5"
+    "prettier": "^2.0.5",
+    "sharp": "^0.26.2"
   }
 }
