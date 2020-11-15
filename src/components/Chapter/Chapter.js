@@ -218,6 +218,7 @@ class Chapter extends Component {
                     style={{ height: isMobileWithTablet ? '30vh' : '25vh' }}
                   >
                     <Trend
+                      id={moduleDataset.id}
                       title={moduleDataset.title}
                       data={moduleDataset.values}
                       legend={moduleDataset.legend}
