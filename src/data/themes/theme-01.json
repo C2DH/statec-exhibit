@@ -13,6 +13,25 @@
     {
       "title": "Une croissance démographique exceptionnelle sur le long terme.",
       "subheading": "La population du Luxembourg a plus que triplé depuis 1839 (date de l'indpendance du pays). De quelque <b>170.000</b> habitants en 1839 , la population du Grand-Duché passe à plus de <b>600.000</b> aujourd'hui.",
+      "datasetHeading": "population-growth-details",
+      "dataset": "trend-lux-population-growth",
+      "layout": "text",
+      "from": 1840,
+      "to": 2014,
+      "valueFrom": -8,
+      "valueTo": 40,
+      "additionalTrends": ["v1", "v2"],
+      "paragraphs": [
+        {
+          "from": 1840,
+          "to": 1860,
+          "text": ""
+        }
+      ]
+    },
+    {
+      "title": "Une croissance démographique exceptionnelle sur le long terme.",
+      "subheading": "La population du Luxembourg a plus que triplé depuis 1839 (date de l'indpendance du pays). De quelque <b>170.000</b> habitants en 1839 , la population du Grand-Duché passe à plus de <b>600.000</b> aujourd'hui.",
       "datasetHeading": "population-balance",
       "dataset": "trend-lux-population-growth",
       "layout": "text",
@@ -22,6 +41,26 @@
         {
           "t": "1885",
           "l": "La première grande usine sidérurgique commence à produire de l'acier à Dudelange en 1885."
+        },
+        {
+          "t": "1916",
+          "l": "Famine"
+        },
+        {
+          "t": "1917",
+          "l": "Attaques aériennes sur Dudelange le 6 décembre 1917"
+        },
+        {
+          "t": "1941",
+          "l": "Occupation allemande"
+        },
+        {
+          "t": "1964",
+          "l": "Développement des infrastructures"
+        },
+        {
+          "t": "1997",
+          "l": "International banking in boulevard Royal"
         }
       ],
       "paragraphs": [
@@ -63,21 +102,21 @@
           }
         },
         {
-          "from": 1916,
-          "to": 1918,
-          "text": "L'entrée en guerre est synonyme d'une stagnation démographique au Grand-Duché de Luxembourg. Beaucoup d'immigrés partent, la mortalité augmente, et les naissances diminuent. Les événements économiques qui suivent la guerre (sortie du Zollverein et création de l'UEBL) et sociaux (grèves, tensions politiques) retardent la sortie du marasme économique.",
-          "cover": {
-            "url": "/media/images/statec_007.medium-h.jpg",
-            "caption": "<i>Volksküche</i>, 25 September 1916, Archives OGBL"
-          }
-        },
-        {
-          "from": 1919,
-          "to": 1922,
+          "from": 1915,
+          "to": 1916,
           "text": "L'entrée en guerre est synonyme d'une stagnation démographique au Grand-Duché de Luxembourg. Beaucoup d'immigrés partent, la mortalité augmente, et les naissances diminuent. Les événements économiques qui suivent la guerre (sortie du Zollverein et création de l'UEBL) et sociaux (grèves, tensions politiques) retardent la sortie du marasme économique.",
           "cover": {
             "url": "https://ww1.lu//media/image/snapshots/6SBc3s5.full.jpg",
             "caption": "<i>Volksküche</i>, 25 September 1916, Archives OGBL"
+          }
+        },
+        {
+          "from": 1917,
+          "to": 1922,
+          "text": "L'entrée en guerre est synonyme d'une stagnation démographique au Grand-Duché de Luxembourg. Beaucoup d'immigrés partent, la mortalité augmente, et les naissances diminuent. Les événements économiques qui suivent la guerre (sortie du Zollverein et création de l'UEBL) et sociaux (grèves, tensions politiques) retardent la sortie du marasme économique.",
+          "cover": {
+            "url": "/media/images/statec_007.medium-h.jpg",
+            "caption": "Attaques aériennes sur Dudelange le 6 décembre 1917. Archives de la Ville de Dudelange, Fonds Jean-Pierre Conrardy"
           }
         },
         {
@@ -93,11 +132,11 @@
         {
           "from": 1935,
           "to": 1947,
-          "title": "La Deuxième Guerre mondiale a des répercussions importantes damns le domaine démographique.",
+          "title": "La Deuxième Guerre mondiale a des répercussions importantes dans le domaine démographique.",
           "text": "La mortalité augmente (victimes directes de la guerre, conditions de subsistance difficiles), la natalité diminue. Entre 1935 et 1946, la population résidente passe de 297.000 en 1935 à 291.000 en 1947.",
           "cover": {
             "url": "/media/images/statec_001.medium-h.jpg",
-            "caption": "<i>Volksküche</i>, 25 September 1916, Archives OGBL"
+            "caption": "Le \"Gauleiter\" Simon salue l'armée allemande au garde-à-vous sur la place de l'hôtel de ville lors de la fête du travail du 1er mai 1941. Archives de la Ville de Dudelange - Fonds Jean-Pierre Conrardy"
           }
         },
         {
@@ -107,18 +146,25 @@
           "text": "L'augmentation de la population est parallèle à ce nouvement haussier continue. Cette croissance est due essentiellement à l'immigration étant donné que la natalité (et la fécondité) des résidents diminue au cours de cette période. Même la diminution importante de la mortalité n'empêche pas que l'évolution naturelle de la population (naissances - décès) soit très modeste.",
           "cover": {
             "url": "/media/images/statec_012.medium-h.jpg",
-            "caption": ""
+            "caption": "Construction du pont Grande-Duchesse Charlotte en 1964. © Photothèque de la Ville de Luxembourg/Théo Mey",
+            "textColor": "black"
           }
         },
         {
           "from": 1975,
           "to": 1985,
-          "text": "De 1975 à 1985, le Luxembourg ne sortira pas véritablement de la crise économique. Elle marque le début du processus de rétrécissement du secteur sidérurgique qui avait constitué jusque-là la branche économique qui fut à la base de l'essor économique du pays. Quant à la population, malgré la crise, elle continue son mouvement à la hausse. En fait, en même temps que la sidérurgie subit un processus de consolidation, d'autres secteurs économiques, et plus particulièrement le secteur financier, commencent à se développer.",
+          "text": "De 1975 à 1985, le Luxembourg ne sortira pas véritablement de la crise économique. Elle marque le début du processus de rétrécissement du secteur sidérurgique qui avait constitué jusque-là la branche économique qui fut à la base de l'essor économique du pays. Quant à la population, malgré la crise, elle continue son mouvement à la hausse. En fait, en même temps que la sidérurgie subit un processus de consolidation, d'autres secteurs économiques, et plus particulièrement le secteur financier, commencent à se développer."
+        },
+        {
+          "from": 1985,
+          "to": 1998,
+          "text": "A partir des années 1980, le Luxembourg entre dans un cyle de croissance effrénée basée sur le secteur bancaire et financier qui a vu se développer en parallèle un secteur des services aux entreprises très varié (du nettoyage aux sociétés de consultance, ...) très gourmand en main-d'oeuvre à la fois qualifiée et non-qualifiée. A cette demande, ce n'est que la main-d'oeuvre immigrée qui a pu y répondre. Si les taux de croissance édu PIB des 30 années suivant la deuxième guerre mondiale sont encore proches de ceux des pays voisins, le Luxembourg se détache du peloton à partir des annnées 1980. La croissance démographique exceptionnelle en est le reflet.",
           "cover": {
-            "url": "/media/images/statec_012.medium-h.jpg",
-            "caption": ""
+            "url": "/media/images/statec_013.medium-h.jpg",
+            "caption": "Depuis les années 1980, les banques de renommée nationale et internationale se sont installées boulevard Royal. Photo de 1997. © Photothèque de la Ville de Luxembourg/Jean-Pierre Fiedler"
           }
         },
+
         {
           "from": 2008,
           "to": 2014,
