@@ -6,9 +6,9 @@ import { duration } from 'moment';
 
 const Container = React.lazy(() => import('./Container'));
 const TextContainer = React.lazy(() => import('./TextContainer'));
-const ImageContainer = React.lazy(() =>
-  import('../ImageContainer/ImageContainer'),
-);
+// const ImageContainer = React.lazy(() =>
+//   import('../ImageContainer/ImageContainer'),
+// );
 const Trend = React.lazy(() => import('../Trend'));
 
 class Chapter extends Component {
@@ -64,10 +64,10 @@ class Chapter extends Component {
   };
 
   render() {
-    const { progress, data, scrolled } = this.state;
+    const { progress, data } = this.state;
     const {
       theme,
-      headColor,
+      // headColor,
       color,
       chapterIndex,
       showCover = true,
@@ -75,6 +75,7 @@ class Chapter extends Component {
     } = this.props;
     const moduleDataset = require(`../../data/datasets/${theme.modules[data].datasetHeading}.json`);
     const themeDataset = require(`../../data/datasets/${theme.dataset}.json`);
+
     return (
       <div
         className="w-100"
@@ -235,8 +236,11 @@ class Chapter extends Component {
                       negative={true}
                       from={theme.modules[data].from}
                       to={theme.modules[data].to}
+                      valueFrom={theme.modules[data].valueFrom}
+                      valueTo={theme.modules[data].valueTo}
                       hotspots={theme.modules[data].moduleHotspots}
                       paragraphs={theme.modules[data].paragraphs}
+                      additionalTrends={theme.modules[data].additionalTrends}
                     />
                   </div>
                   <div className="hr"></div>

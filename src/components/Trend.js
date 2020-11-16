@@ -14,6 +14,7 @@ import TrendAxisBottomGraphics from './TrendAxisBottomGraphics'
 import TrendAxisLeftGraphics from './TrendAxisLeftGraphics'
 import TrendLineGraphics from './TrendLineGraphics'
 import TrendVerticalDashedLineGraphics from './TrendVerticalDashedLineGraphics'
+import TrendAdditionalLineGraphics from './TrendAdditionalLineGraphics'
 
 const TrendLegend = ({ progress, value, date, legend }) => {
   return (
@@ -46,8 +47,11 @@ const Trend = ({
   legend,
   from,
   to,
+  valueFrom,
+  valueTo,
   paragraphs = [],
   hotspots = [],
+  additionalTrends = []
 } = {}) => {
   const [show, setShow] = useState(false);
   const [pathLength, setPathLength] = useState(1000);
@@ -98,12 +102,13 @@ const Trend = ({
     .domain([startDate, endDate])
     .range([0, graphWidth]);
 
-  const [min, max] = extent(data, (d) => d[valueKey]);
+  const [min, max] = isNaN(valueFrom) || isNaN(valueTo)
+    ? extent(data, (d) => d[valueKey])
+    : [valueFrom, valueTo]
 
   const scaleY = scaleLinear().domain([min, max]).range([0, trendHeight]);
-
   const scaleY2 = scaleLinear().domain([max, min]).range([0, trendHeight]);
-
+  // console.info('TrendAdditionalLineGraphics', additionalTrends)
   // const timelineScale = scaleLinear()
   //   .range([0, graphWidth])
   //   .domain([0.2, 0.8])
@@ -261,6 +266,16 @@ const Trend = ({
           </Animate>
         </g>
 
+        {negative && additionalTrends.length &&
+          <TrendAdditionalLineGraphics
+            id={id} additionalTrends={additionalTrends} show={show}
+            values={values}
+            marginLeft={marginLeft}
+            marginTop={marginTop}
+            scaleX={scaleX}
+            scaleY={scaleY2}
+          />
+        }
         <TrendVerticalDashedLineGraphics
           id={id}
           show={show}
