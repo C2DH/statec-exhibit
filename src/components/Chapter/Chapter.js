@@ -75,7 +75,6 @@ class Chapter extends Component {
     } = this.props;
     const moduleDataset = require(`../../data/datasets/${theme.modules[data].datasetHeading}.json`);
     const themeDataset = require(`../../data/datasets/${theme.dataset}.json`);
-
     return (
       <div
         className="w-100"
@@ -212,6 +211,10 @@ class Chapter extends Component {
                       negative={false}
                       from={theme.modules[data].from}
                       to={theme.modules[data].to}
+                      valueFrom={theme.modules[data].datasetValueFrom}
+                      valueTo={theme.modules[data].datasetValueTo}
+                      additionalTrends={theme.modules[data].datasetAdditionalTrends}
+                      additionalTrendsColors={theme.modules[data].datasetAdditionalTrendsColors}
                     />
                   </div>
                   <div
@@ -236,11 +239,12 @@ class Chapter extends Component {
                       negative={true}
                       from={theme.modules[data].from}
                       to={theme.modules[data].to}
-                      valueFrom={theme.modules[data].valueFrom}
-                      valueTo={theme.modules[data].valueTo}
+                      valueFrom={theme.modules[data].datasetHeadingValueFrom}
+                      valueTo={theme.modules[data].datasetHeadingValueTo}
                       hotspots={theme.modules[data].moduleHotspots}
                       paragraphs={theme.modules[data].paragraphs}
-                      additionalTrends={theme.modules[data].additionalTrends}
+                      additionalTrends={theme.modules[data].datasetHeadingAdditionalTrends}
+                      additionalTrendsColors={theme.modules[data].datasetHeadingAdditionalTrendsColors}
                     />
                   </div>
                   <div className="hr"></div>
