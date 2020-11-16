@@ -15,21 +15,8 @@ import TrendAxisLeftGraphics from './TrendAxisLeftGraphics'
 import TrendLineGraphics from './TrendLineGraphics'
 import TrendVerticalDashedLineGraphics from './TrendVerticalDashedLineGraphics'
 import TrendAdditionalLineGraphics from './TrendAdditionalLineGraphics'
+import TrendLegend from './TrendLegend'
 
-const TrendLegend = ({ progress, value, date, legend }) => {
-  return (
-    <div className="moduleProgress">
-      {progress && value !== undefined && (
-        <div>
-          <span className="underline mr2">{value}</span>
-          <span>
-            {legend?.v} in {date}
-          </span>
-        </div>
-      )}
-    </div>
-  );
-};
 
 const Trend = ({
   id,
@@ -51,9 +38,10 @@ const Trend = ({
   valueTo,
   paragraphs = [],
   hotspots = [],
-  additionalTrends = []
+  additionalTrends = [],
+  additionalTrendsColors = []
 } = {}) => {
-  const [show, setShow] = useState(false);
+  const [show, setShow] = useState(true);
   const [pathLength, setPathLength] = useState(1000);
   // useEffect(() => {
   //   let peak = data[0].hasPeak || false;
@@ -66,19 +54,8 @@ const Trend = ({
   //   }
   // }, [data]);
 
-  useEffect(() => {
-    setShow(false);
-    setTimeout(() => {
-      setShow(true);
-    }, 500);
-  }, [id]);
 
-  useEffect(() => {
-    setShow(false);
-    setTimeout(() => {
-      setShow(true);
-    }, 1000);
-  }, [activeIndex]);
+  console.info('rerendering')
 
   const svgWidth = isMobileWithTablet
     ? window.innerWidth * 0.9
@@ -121,11 +98,15 @@ const Trend = ({
     .domain([0.2, 0.8])
     .clamp(true);
 
-  const values = useMemo(() => data.map(d => ({
-    ...d,
-    time: moment(d[timeKey]),
-    value: d[valueKey],
-  })), [data, timeKey, valueKey]);
+  const values = useMemo(() => data.map((d) => {
+    const time = moment(d[timeKey])
+    return {
+      ...d,
+      time,
+      timeFullYear: time.year(),
+      value: d[valueKey],
+    }
+  }), [data, timeKey, valueKey]);
 
   const actualYear = progress
     ? scaleX.invert(progressScale(progress)).getFullYear()
@@ -134,7 +115,7 @@ const Trend = ({
   useStore.setState({ actualYear: actualYear });
 
   const valuesIndexByTime = data.reduce((sum, elt) => {
-    sum[String(elt.t)] = elt.v;
+    sum[String(elt.t)] = elt;
     return sum;
   }, {});
   const actualValue = valuesIndexByTime[String(actualYear)];
@@ -145,6 +126,8 @@ const Trend = ({
     toDate: moment(`${p.to}-01-01`),
     isVisible: actualYear >= p.from && actualYear <= p.to,
   })), [paragraphs, actualYear]);
+
+  const currentParagraph = useMemo(() => currentParagraphs.find((p) => p.isVisible), [currentParagraphs])
 
   const currentHotspots =  useMemo(() => hotspots.map((h) => ({
     t: moment(`${h.t}-01-01`),
@@ -176,10 +159,9 @@ const Trend = ({
             value={actualValue}
             date={actualYear}
             legend={legend}
+            additionalTrendsColors={additionalTrendsColors}
+            additionalTrends={additionalTrends}
           />
-          <div className="dataSource" style={{ marginLeft: '15px' }}>
-            {source || 'source to add'}
-          </div>
         </div>
       )}
       <svg
@@ -220,7 +202,7 @@ const Trend = ({
           width={graphWidth}
           fill={`url(#${trendName}Gradient)`}
         />
-
+{/*
         <g transform={`translate(${marginLeft}, ${marginTop})`}>
           <Animate
             show={show}
@@ -265,15 +247,19 @@ const Trend = ({
             }}
           </Animate>
         </g>
+      */}
 
-        {negative && additionalTrends.length &&
+        {additionalTrends.length &&
           <TrendAdditionalLineGraphics
             id={id} additionalTrends={additionalTrends} show={show}
+            additionalTrendsColors={additionalTrendsColors}
+            currentParagraph={currentParagraph}
             values={values}
             marginLeft={marginLeft}
             marginTop={marginTop}
             scaleX={scaleX}
             scaleY={scaleY2}
+            cx={actualYear}
           />
         }
         <TrendVerticalDashedLineGraphics
@@ -402,14 +388,13 @@ const Trend = ({
             value={actualValue}
             date={actualYear}
             legend={legend}
+            additionalTrendsColors={additionalTrendsColors}
+            additionalTrends={additionalTrends}
           />
-          <div className="dataSource" style={{ marginLeft: '15px' }}>
-            {source || 'source to add'}
-          </div>
         </div>
       )}
     </div>
   );
 };
 
-export default React.memo(Trend);
+export default Trend;
