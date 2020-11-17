@@ -13,6 +13,7 @@ import TrendAxisLeftGraphics from './TrendAxisLeftGraphics'
 import TrendLineGraphics from './TrendLineGraphics'
 import TrendVerticalDashedLineGraphics from './TrendVerticalDashedLineGraphics'
 import TrendAdditionalLineGraphics from './TrendAdditionalLineGraphics'
+import TrendParagraphsGraphics from './TrendParagraphsGraphics'
 import TrendLegend from './TrendLegend'
 
 
@@ -119,29 +120,35 @@ const Trend = ({
 
   useStore.setState({ actualYear: actualYear });
 
-  const valuesIndexByTime = data.reduce((sum, elt) => {
+  const valuesIndexByTime = values.reduce((sum, elt) => {
     sum[String(elt.t)] = elt;
     return sum;
   }, {});
   const actualValue = valuesIndexByTime[String(actualYear)];
 
   // visualize rectangle related to current narrative paragraph
-  const currentParagraphs = useMemo(() => paragraphs.map((p) => ({
+  const currentParagraphs = useMemo(() => paragraphs.map((p, i) => ({
+    idx: i,
+    values: values.filter((value) =>
+      value[timeKey] >= p.from && value[timeKey] <= p.to
+    ),
     fromDate: moment(`${p.from}-01-01`),
     toDate: moment(`${p.to}-01-01`),
+    actualYear,
     isVisible: actualYear >= p.from && actualYear <= p.to,
-  })), [paragraphs, actualYear]);
+  })), [paragraphs, timeKey, actualYear, values]);
 
   const currentParagraph = useMemo(() => currentParagraphs.find((p) => p.isVisible), [currentParagraphs])
-
-  const currentHotspots =  useMemo(() => hotspots.map((h) => ({
-    t: moment(`${h.t}-01-01`),
-    v: valuesIndexByTime[h.t],
+  const currentHotspots = useMemo(() => hotspots.map((h) => ({
+    ...valuesIndexByTime[h.t],
     label: h.label,
     type: h.h,
-    isVisible: actualYear >= h.from && actualYear <= h.to,
-  })), [hotspots, actualYear, valuesIndexByTime]);
+  })), [hotspots, valuesIndexByTime]);
 
+  const currentHotspot = actualValue
+    ? currentHotspots.find(d => actualValue[timeKey] >= d[timeKey] && actualValue[timeKey] <= d[timeKey])
+    : null
+  console.info('currentHotspot', currentHotspot)
   return (
     <div
       style={{
@@ -281,39 +288,24 @@ const Trend = ({
           values={values.filter((d, i) => i % 10 === 0)}
         />
 
-        <g className="TrendParagraphsHighlightGraphics" transform={`translate(${marginLeft}, ${marginTop})`}>
-          {currentParagraphs.map((p, i) => {
-            const filteredData = values.filter((d) => {
-              return (
-                Number(d.t) >= Number(p.fromDate.year()) &&
-                Number(d.t) <= Number(p.toDate.year())
-              );
-            });
-            return (
-              <LinePath
-                key={`linepath-${i}`}
-                data={filteredData}
-                innerRef={(node) => {
-                  if (node) {
-                    setPathLength(node.getTotalLength());
-                  }
-                }}
-                x={(d) => scaleX(x(d))}
-                y={(d) => scaleY2(y(d))}
-                curve={curveMonotoneX}
-                strokeDasharray={pathLength}
-                stroke={p.isVisible ? '#D1646C' : '#80b5d0'}
-                strokeWidth={2}
-              />
-            );
-          })}
-        </g>
+        <TrendParagraphsGraphics
+          id={id}
+          paragraphs={currentParagraphs}
+          currentParagraph={currentParagraph}
+          marginLeft={marginLeft}
+          marginTop={marginTop}
+          windowDimensions={windowDimensions}
+          scaleX={scaleX}
+          scaleY={scaleY2}
+        />
         <TrendHotspostsGraphics
           id={id}
           hotspots={currentHotspots}
           windowDimensions={windowDimensions}
           marginLeft={marginLeft}
           marginTop={marginTop}
+          fill='transparent'
+          stroke={red}
           scaleX={scaleX}
           scaleY={scaleY2} />
         {/* PROGRESS BAR*/}

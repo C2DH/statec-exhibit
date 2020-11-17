@@ -6,16 +6,28 @@ class TrendHotspotsGraphics extends React.Component{
   }
 
   render() {
-    console.info('rendering TrendStaticGraphics', this.props.id)
-    const {marginLeft, marginTop, hotspots, scaleX, scaleY, radius=4} = this.props;
+    console.info('rendering TrendStaticGraphics', this.props.id, this.props.hotspots)
+    const {
+      marginLeft,
+      marginTop,
+      hotspots,
+      scaleX,
+      scaleY,
+      radius=5,
+      fill,
+      stroke,
+      strokeWidth=2
+    } = this.props;
     return <g transform={`translate(${marginLeft}, ${marginTop})`}>
       {hotspots.map((d, i) => {
         return (
           <circle
             key={i}
-            cx={scaleX(d.t)}
+            cx={scaleX(d.time)}
             cy={scaleY(d.v)}
-            fill='red'
+            stroke={stroke}
+            fill={fill}
+            strokeWidth={strokeWidth}
             r={radius}
           />
         );
