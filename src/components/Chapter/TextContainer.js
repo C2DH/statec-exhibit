@@ -5,6 +5,8 @@ import { scaleLinear, scaleTime } from 'd3-scale';
 import Narrative from '../Narrative/Narrative';
 import { isMobileWithTablet, isMobile, isTablet } from '../../constants';
 import Link from '../Link';
+import MediaImage from '../MediaImage'
+
 
 const NarrativeFigure = ({ src, caption, alt }) => {
   return (
@@ -96,11 +98,17 @@ const TextContainer = ({
           <p className="moduleParagraph">{module.paragraphs}</p>
         )} */}
           {hasCover ? (
-            <NarrativeFigure
-              src={localParagraph.cover.url}
-              alt={localParagraph.cover.alt}
-              caption={localParagraph.cover.caption}
-            />
+            localParagraph.cover.id
+            ? <MediaImage
+                id={localParagraph.cover.id}
+                alt={localParagraph.cover.alt}
+                caption={localParagraph.cover.caption}
+              />
+            : <NarrativeFigure
+                src={localParagraph.cover.url}
+                alt={localParagraph.cover.alt}
+                caption={localParagraph.cover.caption}
+              />
           ) : (
             <Fragment>
               {/* {!isMobileWithTablet && (

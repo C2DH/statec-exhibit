@@ -53,12 +53,20 @@
         {
           "from": 1891,
           "to": 1910,
-          "text": "A partir de la fin des années 1890, les capitaux allemands (le Luxembourg fait partie du Zollverein à partir de 1842) investissent massivement dans la sidérurgie (Differdange, Belval etc.) contribuant ainsi à l'expansion économique qui va de pair avec une croissance importante de la population dont le nombre passe de 210.000 en 1890 à 260.000 en 1910. Un <b>pays d'émigration</b> ecommence à devenir un <b>pays d'immigration</b>, même si beaucoup de résidents du Luxembourg continuent à partir à l'étranger."
+          "text": "A partir de la fin des années 1890, les capitaux allemands (le Luxembourg fait partie du Zollverein à partir de 1842) investissent massivement dans la sidérurgie (Differdange, Belval etc.) contribuant ainsi à l'expansion économique qui va de pair avec une croissance importante de la population dont le nombre passe de 210.000 en 1890 à 260.000 en 1910. Un <b>pays d'émigration</b> ecommence à devenir un <b>pays d'immigration</b>, même si beaucoup de résidents du Luxembourg continuent à partir à l'étranger.",
+          "cover": {
+            "id": "statec_004.png",
+            "caption": "<i>Vue aérienne de Dudelange.</i> <br />Archives de la Ville de Dudelange - Fonds Rudy Kremer"
+          }
         },
         {
           "from": 1929,
           "to": 1940,
-          "text": "En 1930, la crise économique mondiale, qui a débuté en 1929 par le krach de Wallstreet, commence à avoir un impact au Luxembourg. Le chômage augmente, la production sidérurgique diminue, les comptes publics sont sous tension. La population diminue de 1930 à 1935  (quelque 300 personnes en moins), puis rebondit dans des proportions modestes dans la deuxième moitié des années 1930."
+          "text": "En 1930, la crise économique mondiale, qui a débuté en 1929 par le krach de Wallstreet, commence à avoir un impact au Luxembourg. Le chômage augmente, la production sidérurgique diminue, les comptes publics sont sous tension. La population diminue de 1930 à 1935  (quelque 300 personnes en moins), puis rebondit dans des proportions modestes dans la deuxième moitié des années 1930.",
+          "cover": {
+            "id": "statec_007.png",
+            "caption": "Traffic at the border between France and Luxembourg"
+          }
         },
         {
           "from": 1980,
