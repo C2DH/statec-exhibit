@@ -5,7 +5,8 @@ import { LinePath } from '@vx/shape';
 class TrendParagraphsGraphics extends React.Component{
   shouldComponentUpdate(nextProps) {
     return this.props.id !== nextProps.id ||
-      this.props.currentParagraph?.idx !== nextProps.currentParagraph?.idx
+      this.props.currentParagraph?.idx !== nextProps.currentParagraph?.idx ||
+      this.props.windowDimensions !== nextProps.windowDimensions
   }
 
   render() {
