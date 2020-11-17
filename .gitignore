@@ -28,3 +28,4 @@ yarn-error.log*
 # hide media folder
 src/media/**/*
 !src/media/.gitkeep
+!src/media/index.json
