@@ -1,31 +1,21 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useMemo } from 'react';
 import moment from 'moment';
 import { scaleTime, scaleLinear } from 'd3-scale';
 import { extent } from 'd3-array';
-import { Animate } from 'react-move';
-import { easeQuadOut } from 'd3-ease';
-import { AreaClosed, LinePath, Line } from '@vx/shape';
+import { LinePath, Line } from '@vx/shape';
 import { curveMonotoneX } from '@vx/curve';
-import { AxisBottom, AxisLeft } from '@vx/axis';
-import { Group } from '@vx/group';
 import { isMobileWithTablet } from '../constants';
 import { red } from '../constants';
 import { useStore } from '../store';
+import TrendHotspostsGraphics from './TrendHotspostsGraphics'
+import TrendAxisBottomGraphics from './TrendAxisBottomGraphics'
+import TrendAxisLeftGraphics from './TrendAxisLeftGraphics'
+import TrendLineGraphics from './TrendLineGraphics'
+import TrendVerticalDashedLineGraphics from './TrendVerticalDashedLineGraphics'
+import TrendAdditionalLineGraphics from './TrendAdditionalLineGraphics'
+import TrendParagraphsGraphics from './TrendParagraphsGraphics'
+import TrendLegend from './TrendLegend'
 
-const TrendLegend = ({ progress, value, date, legend }) => {
-  return (
-    <div className="moduleProgress">
-      {progress && value !== undefined && (
-        <div>
-          <span className="underline mr2">{value}</span>
-          <span>
-            {legend?.v} in {date}
-          </span>
-        </div>
-      )}
-    </div>
-  );
-};
 
 const Trend = ({
   id,
@@ -43,10 +33,14 @@ const Trend = ({
   legend,
   from,
   to,
+  valueFrom,
+  valueTo,
   paragraphs = [],
   hotspots = [],
+  additionalTrends = [],
+  additionalTrendsColors = []
 } = {}) => {
-  const [show, setShow] = useState(false);
+  const [show, setShow] = useState(true);
   const [pathLength, setPathLength] = useState(1000);
   // useEffect(() => {
   //   let peak = data[0].hasPeak || false;
@@ -63,21 +57,17 @@ const Trend = ({
     setShow(false);
     setTimeout(() => {
       setShow(true);
-    }, 500);
-  }, [id]);
+    }, 1500);
+  }, [id, activeIndex]);
 
-  useEffect(() => {
-    setShow(false);
-    setTimeout(() => {
-      setShow(true);
-    }, 1000);
-  }, [activeIndex]);
+  console.info('rerendering')
 
   const svgWidth = isMobileWithTablet
     ? window.innerWidth * 0.9
     : window.innerWidth * 0.9;
   const marginTop = 10;
   const marginLeft = window.innerWidth * 0.05;
+  const windowDimensions = [ window.innerWidth, window.innerHeight ].join('-')
   const graphWidth = svgWidth - marginLeft;
   const svgHeight = height;
   const trendHeight = svgHeight - marginTop;
@@ -95,12 +85,13 @@ const Trend = ({
     .domain([startDate, endDate])
     .range([0, graphWidth]);
 
-  const [min, max] = extent(data, (d) => d[valueKey]);
+  const [min, max] = isNaN(valueFrom) || isNaN(valueTo)
+    ? extent(data, (d) => d[valueKey])
+    : [valueFrom, valueTo]
 
   const scaleY = scaleLinear().domain([min, max]).range([0, trendHeight]);
-
   const scaleY2 = scaleLinear().domain([max, min]).range([0, trendHeight]);
-
+  // console.info('TrendAdditionalLineGraphics', additionalTrends)
   // const timelineScale = scaleLinear()
   //   .range([0, graphWidth])
   //   .domain([0.2, 0.8])
@@ -113,11 +104,15 @@ const Trend = ({
     .domain([0.2, 0.8])
     .clamp(true);
 
-  const parsedData = data.filter((d, i) => {
-    if (i % 10 === 0) {
-      return d;
+  const values = useMemo(() => data.map((d) => {
+    const time = moment(d[timeKey])
+    return {
+      ...d,
+      time,
+      timeFullYear: time.year(),
+      value: d[valueKey],
     }
-  });
+  }), [data, timeKey, valueKey]);
 
   const actualYear = progress
     ? scaleX.invert(progressScale(progress)).getFullYear()
@@ -125,27 +120,35 @@ const Trend = ({
 
   useStore.setState({ actualYear: actualYear });
 
-  const valuesIndexByTime = data.reduce((sum, elt) => {
-    sum[String(elt.t)] = elt.v;
+  const valuesIndexByTime = values.reduce((sum, elt) => {
+    sum[String(elt.t)] = elt;
     return sum;
   }, {});
   const actualValue = valuesIndexByTime[String(actualYear)];
 
   // visualize rectangle related to current narrative paragraph
-  const currentParagraphs = paragraphs.map((p) => ({
+  const currentParagraphs = useMemo(() => paragraphs.map((p, i) => ({
+    idx: i,
+    values: values.filter((value) =>
+      value[timeKey] >= p.from && value[timeKey] <= p.to
+    ),
     fromDate: moment(`${p.from}-01-01`),
     toDate: moment(`${p.to}-01-01`),
+    actualYear,
     isVisible: actualYear >= p.from && actualYear <= p.to,
-  }));
+  })), [paragraphs, timeKey, actualYear, values]);
 
-  const currentHotspots = hotspots.map((h) => ({
-    t: moment(`${h.t}-01-01`),
-    v: valuesIndexByTime[h.t],
+  const currentParagraph = useMemo(() => currentParagraphs.find((p) => p.isVisible), [currentParagraphs])
+  const currentHotspots = useMemo(() => hotspots.map((h) => ({
+    ...valuesIndexByTime[h.t],
     label: h.label,
     type: h.h,
-    isVisible: actualYear >= h.from && actualYear <= h.to,
-  }));
+  })), [hotspots, valuesIndexByTime]);
 
+  const currentHotspot = actualValue
+    ? currentHotspots.find(d => actualValue[timeKey] >= d[timeKey] && actualValue[timeKey] <= d[timeKey])
+    : null
+  console.info('currentHotspot', currentHotspot)
   return (
     <div
       style={{
@@ -168,10 +171,9 @@ const Trend = ({
             value={actualValue}
             date={actualYear}
             legend={legend}
+            additionalTrendsColors={additionalTrendsColors}
+            additionalTrends={additionalTrends}
           />
-          <div className="dataSource" style={{ marginLeft: '15px' }}>
-            {source || 'source to add'}
-          </div>
         </div>
       )}
       <svg
@@ -199,83 +201,21 @@ const Trend = ({
             <stop offset="100%" stopColor={'#A9ECD9'} stopOpacity={1} />
           </linearGradient>
         </defs>
-        <g transform={`translate(${marginLeft}, ${marginTop})`}>
-          <Animate
-            show={show}
-            start={() => ({
-              j: 0,
-              timing: { duration: 300, ease: easeQuadOut },
-            })}
-            enter={() => ({
-              j: [1],
-              timing: { duration: 1000, ease: easeQuadOut, delay: 500 },
-            })}
-            update={() => ({
-              j: [1],
-              timing: { duration: 1000, ease: easeQuadOut, delay: 500 },
-            })}
-            leave={() => ({
-              j: [0],
-              timing: { duration: 0 },
-            })}
-          >
-            {(state) => {
-              const { j } = state;
-              return (
-                <AreaClosed
-                  data={data}
-                  x={(d) => scaleX(x(d))}
-                  y={(d) => scaleY2(y(d))}
-                  y0={svgHeight}
-                  yScale={scaleY2}
-                  fill={`url(#${trendName}Gradient)`}
-                  fillOpacity={j}
-                  strokeWidth={0}
-                  curve={curveMonotoneX}
-                  // strokeDasharray={5000}
-                  // strokeDashoffset={j}
-                />
-              );
-            }}
-          </Animate>
-          <LinePath
-            className="values"
-            data={data}
-            x={(d) => scaleX(x(d))}
-            y={(d) => scaleY2(y(d))}
-            strokeWidth={1}
-            stroke="#86b9d4"
-            strokeOpacity={1}
-            curve={curveMonotoneX}
-          />
-          {/*
-            <line
-              x1={scaleX(fromDate)}
-              x2={scaleX(toDate)}
-              y1={negative ? trendHeight : 1} y2={negative ? trendHeight : 1}
-              stroke={red} strokeWidth={1}></line>
-          */}
-          <line
-            className="toZero"
-            x1={0}
-            x2={graphWidth}
-            y1={scaleY2(0)}
-            y2={scaleY2(0)}
-            stroke={'rgba(0,0,0,0.5'}
-            strokeWidth={1}
-          ></line>
-          {/* {currentHotspots.map((d, i) => {
-            return (
-              <circle
-                key={i}
-                cx={scaleX(d.t)}
-                cy={scaleY2(d.v)}
-                fill={red}
-                r={4}
-              />
-            );
-          })} */}
-        </g>
+
+        <TrendLineGraphics
+          id={id}
+          show={show}
+          windowDimensions={windowDimensions}
+          marginLeft={marginLeft}
+          marginTop={marginTop}
+          values={values}
+          scaleX={scaleX}
+          scaleY={scaleY2}
+          height={svgHeight}
+          width={graphWidth}
+          fill={`url(#${trendName}Gradient)`}
+        />
+{/*
         <g transform={`translate(${marginLeft}, ${marginTop})`}>
           <Animate
             show={show}
@@ -320,111 +260,54 @@ const Trend = ({
             }}
           </Animate>
         </g>
-        {/* Highlight circles */}
-        {negative && (
-          <g transform={`translate(${marginLeft}, ${marginTop})`}>
-            {data.map((d, i) => {
-              const date = moment(d[timeKey]);
-              const value = d[valueKey];
+      */}
 
-              if (d.h) {
-                return (
-                  <g key={i}>
-                    <circle
-                      id={`circle-${i}`}
-                      cx={scaleX(date)}
-                      cy={trendHeight - scaleY(value)}
-                      fill={red}
-                      r={5}
-                    />
-                    {/* <text
-                    dx={
-                      isMobileWithTablet ? scaleX(date) + 20 : scaleX(date) - 20
-                    }
-                    dy={trendHeight - scaleY(value) + 2}
-                    textAnchor={isMobileWithTablet ? 'start' : 'end'}
-                  >
-                    {date.format('MMMM YYYY')}
-                  </text> */}
-                  </g>
-                );
-              }
-            })}
-          </g>
-        )}
-        <g transform={`translate(${marginLeft}, ${marginTop})`}>
-          {parsedData.map((d, i) => {
-            const date = moment(d[timeKey]);
-            const value = d[valueKey];
+        {additionalTrends.length &&
+          <TrendAdditionalLineGraphics
+            id={id} additionalTrends={additionalTrends} show={show}
+            additionalTrendsColors={additionalTrendsColors}
+            currentParagraph={currentParagraph}
+            values={values}
+            windowDimensions={windowDimensions}
+            marginLeft={marginLeft}
+            marginTop={marginTop}
+            scaleX={scaleX}
+            scaleY={scaleY2}
+            cx={actualYear}
+          />
+        }
+        <TrendVerticalDashedLineGraphics
+          id={id}
+          show={show}
+          windowDimensions={windowDimensions}
+          marginLeft={marginLeft}
+          marginTop={marginTop}
+          trendHeight={trendHeight}
+          scale={scaleX}
+          timeKey={'time'}
+          values={values.filter((d, i) => i % 10 === 0)}
+        />
 
-            const startAnimation = trendHeight;
-
-            return (
-              <g key={i}>
-                <Animate
-                  show={show}
-                  start={() => ({
-                    y2: startAnimation,
-                  })}
-                  enter={() => ({
-                    y2: [0],
-                    timing: { duration: 1000, ease: easeQuadOut, delay: 500 },
-                  })}
-                  update={() => ({
-                    y2: [0],
-                    timing: { duration: 1000, ease: easeQuadOut, delay: 500 },
-                  })}
-                  leave={() => ({
-                    y2: [0],
-                    timing: { duration: 0 },
-                  })}
-                >
-                  {(state) => {
-                    const { y2 } = state;
-                    return (
-                      <line
-                        id={`line-${i}`}
-                        x1={scaleX(date)}
-                        y1={trendHeight}
-                        x2={scaleX(date)}
-                        y2={y2}
-                        stroke={'rgba(0,0,0,0.3)'}
-                        strokeWidth={0.5}
-                        strokeDasharray="4 4"
-                      />
-                    );
-                  }}
-                </Animate>
-              </g>
-            );
-          })}
-
-          {currentParagraphs.map((p, i) => {
-            const filteredData = data.filter((d) => {
-              return (
-                Number(d.t) >= Number(p.fromDate.year()) &&
-                Number(d.t) <= Number(p.toDate.year())
-              );
-            });
-            return (
-              <LinePath
-                key={`linepath-${i}`}
-                data={filteredData}
-                innerRef={(node) => {
-                  if (node) {
-                    setPathLength(node.getTotalLength());
-                  }
-                }}
-                x={(d) => scaleX(x(d))}
-                y={(d) => scaleY2(y(d))}
-                curve={curveMonotoneX}
-                strokeDasharray={pathLength}
-                stroke={p.isVisible ? '#D1646C' : '#80b5d0'}
-                strokeWidth={2}
-              />
-            );
-          })}
-        </g>
+        <TrendParagraphsGraphics
+          id={id}
+          paragraphs={currentParagraphs}
+          currentParagraph={currentParagraph}
+          marginLeft={marginLeft}
+          marginTop={marginTop}
+          windowDimensions={windowDimensions}
+          scaleX={scaleX}
+          scaleY={scaleY2}
+        />
+        <TrendHotspostsGraphics
+          id={id}
+          hotspots={currentHotspots}
+          windowDimensions={windowDimensions}
+          marginLeft={marginLeft}
+          marginTop={marginTop}
+          fill='transparent'
+          stroke={red}
+          scaleX={scaleX}
+          scaleY={scaleY2} />
         {/* PROGRESS BAR*/}
         {progress && (
           <g transform={`translate(${marginLeft}, ${marginTop})`}>
@@ -441,74 +324,28 @@ const Trend = ({
           </g>
         )}
         {/* AXES */}
-        {!negative && (
-          <g transform={`translate(${marginLeft}, ${marginTop + 10})`}>
-            <AxisBottom
-              top={trendHeight - 10}
-              left={0}
-              scale={scaleX}
-              numTicks={isMobileWithTablet ? 4 : 8}
-              label="Time"
-            >
-              {(axis) => {
-                const tickLabelSize = 14;
-                const tickRotate = 0;
-                const axisCenter =
-                  (axis.axisToPoint.x - axis.axisFromPoint.x) / 2;
-                return (
-                  <g className="my-custom-bottom-axis">
-                    {axis.ticks.map((tick, i) => {
-                      const tickX = tick.to.x;
-                      const tickY = tick.to.y + tickLabelSize + axis.tickLength;
-                      return (
-                        <Group
-                          key={`vx-tick-${tick.value}-${i}`}
-                          className={'vx-axis-tick'}
-                        >
-                          <text
-                            transform={`translate(${tickX}, ${tickY}) rotate(${tickRotate})`}
-                            fontSize={tickLabelSize}
-                            textAnchor="middle"
-                            fill={red}
-                            style={{ fontFamily: 'Sneaky' }}
-                          >
-                            {tick.formattedValue}
-                          </text>
-                        </Group>
-                      );
-                    })}
-                  </g>
-                );
-              }}
-            </AxisBottom>
-          </g>
-        )}
-        <g transform={`translate(${marginLeft}, ${marginTop})`}>
-          <AxisLeft
-            top={0}
-            left={graphWidth}
-            scale={scaleY2}
-            numTicks={negative ? 4 : 2}
-            hideAxisLine={true}
-            hideTicks={false}
-            label=""
-            stroke="#1b1a1e"
-            tickLabelProps={(value, index) => ({
-              fill: 'rgba(0,0,0,.5)',
-              textAnchor: 'end',
-              fontSize: isMobileWithTablet ? 6 : 11,
-              fontFamily: 'Porpora',
-              dx: '-1vw',
-              dy: '.5vh',
-            })}
-            tickComponent={({ formattedValue, ...tickProps }) => (
-              <text {...tickProps}>{formattedValue}</text>
-            )}
-            tickLength={graphWidth}
-            tickStroke={'rgba(0,0,0,.3)'}
-            tickClassName={'tickTrend'}
-          />
-        </g>
+        {!negative && <TrendAxisBottomGraphics
+          id={id}
+          windowDimensions={windowDimensions}
+          marginLeft={marginLeft}
+          marginTop={marginTop}
+          axisOffsetTop={trendHeight - 10}
+          scale={scaleX}
+          numTicks={isMobileWithTablet ? 4 : 8}
+          textColor={red}
+        />
+        }
+        <TrendAxisLeftGraphics
+          id={id}
+          windowDimensions={windowDimensions}
+          marginLeft={marginLeft}
+          marginTop={marginTop}
+          scale={scaleY2}
+          numTicks={negative ? 4 : 2}
+          width={graphWidth}
+          axisOffsetLeft={graphWidth}
+          fontSize={isMobileWithTablet ? 6 : 11}
+        />
       </svg>
       <div
         style={{
@@ -554,14 +391,13 @@ const Trend = ({
             value={actualValue}
             date={actualYear}
             legend={legend}
+            additionalTrendsColors={additionalTrendsColors}
+            additionalTrends={additionalTrends}
           />
-          <div className="dataSource" style={{ marginLeft: '15px' }}>
-            {source || 'source to add'}
-          </div>
         </div>
       )}
     </div>
   );
 };
 
-export default React.memo(Trend);
+export default Trend;

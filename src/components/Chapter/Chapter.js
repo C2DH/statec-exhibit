@@ -6,9 +6,9 @@ import { duration } from 'moment';
 
 const Container = React.lazy(() => import('./Container'));
 const TextContainer = React.lazy(() => import('./TextContainer'));
-const ImageContainer = React.lazy(() =>
-  import('../ImageContainer/ImageContainer'),
-);
+// const ImageContainer = React.lazy(() =>
+//   import('../ImageContainer/ImageContainer'),
+// );
 const Trend = React.lazy(() => import('../Trend'));
 
 class Chapter extends Component {
@@ -64,10 +64,10 @@ class Chapter extends Component {
   };
 
   render() {
-    const { progress, data, scrolled } = this.state;
+    const { progress, data } = this.state;
     const {
       theme,
-      headColor,
+      // headColor,
       color,
       chapterIndex,
       showCover = true,
@@ -211,6 +211,10 @@ class Chapter extends Component {
                       negative={false}
                       from={theme.modules[data].from}
                       to={theme.modules[data].to}
+                      valueFrom={theme.modules[data].datasetValueFrom}
+                      valueTo={theme.modules[data].datasetValueTo}
+                      additionalTrends={theme.modules[data].datasetAdditionalTrends}
+                      additionalTrendsColors={theme.modules[data].datasetAdditionalTrendsColors}
                     />
                   </div>
                   <div
@@ -218,6 +222,7 @@ class Chapter extends Component {
                     style={{ height: isMobileWithTablet ? '30vh' : '25vh' }}
                   >
                     <Trend
+                      id={moduleDataset.id}
                       title={moduleDataset.title}
                       data={moduleDataset.values}
                       legend={moduleDataset.legend}
@@ -234,8 +239,12 @@ class Chapter extends Component {
                       negative={true}
                       from={theme.modules[data].from}
                       to={theme.modules[data].to}
+                      valueFrom={theme.modules[data].datasetHeadingValueFrom}
+                      valueTo={theme.modules[data].datasetHeadingValueTo}
                       hotspots={theme.modules[data].moduleHotspots}
                       paragraphs={theme.modules[data].paragraphs}
+                      additionalTrends={theme.modules[data].datasetHeadingAdditionalTrends}
+                      additionalTrendsColors={theme.modules[data].datasetHeadingAdditionalTrendsColors}
                     />
                   </div>
                   <div className="hr"></div>

@@ -19,7 +19,10 @@ const ChapterContainer = ({
   const currentTheme =
     AvailableThemes[String(themeId)] ?? AvailableThemes[DefaultThemeId];
   console.info('current theme:', themeId, currentTheme.title);
-  useStore.setState({ backgroundColor: currentTheme.backgroundColor })
+  React.useEffect(() => {
+    useStore.setState({ backgroundColor: currentTheme.backgroundColor })
+  }, [currentTheme])
+
   return (
     <div className="w-100">
     <Suspense>
