@@ -13,6 +13,37 @@
     {
       "title": "Une croissance démographique exceptionnelle sur le long terme.",
       "subheading": "La population du Luxembourg a plus que triplé depuis 1839 (date de l'indpendance du pays). De quelque <b>170.000</b> habitants en 1839 , la population du Grand-Duché passe à plus de <b>600.000</b> aujourd'hui.",
+      "datasetHeading": "population-balance",
+      "dataset": "trend-lux-population-growth",
+      "layout": "text",
+      "from": 1840,
+      "to": 2014,
+      "moduleHotspots": [
+        {
+          "t": "1860",
+          "l": ""
+        },
+        {
+          "t": "1905",
+          "l": ""
+        }
+      ],
+      "paragraphs": [
+        {
+          "from": 1840,
+          "to": 1890,
+          "text": "L'ensemble de la période allant de l'indépendance du Grand-Duché en 1839 jusqu'aux années 1890  est marquée par une croissance démographique relativement lente liée à une croissance économique hésitante et des conditions de vie qui restent précaires."
+        },
+        {
+          "from": 1890,
+          "to": 1910,
+          "text": "A partir de la fin des années 1890, les capitaux allemands (le Luxembourg fait partie du Zollverein à partir de 1842) investissent massivement dans la sidérurgie (Differdange, Belval etc.) contribuant ainsi à l'expansion économique qui va de pair avec une croissance importante de la population dont le nombre passe de 210.000 en 1890 à 260.000 en 1910. Un <b>pays d'émigration</b> ecommence à devenir un <b>pays d'immigration</b>, même si beaucoup de résidents du Luxembourg continuent à partir à l'étranger."
+        }
+      ]
+    },
+    {
+      "title": "Une croissance démographique exceptionnelle sur le long terme.",
+      "subheading": "La population du Luxembourg a plus que triplé depuis 1839 (date de l'indpendance du pays). De quelque <b>170.000</b> habitants en 1839 , la population du Grand-Duché passe à plus de <b>600.000</b> aujourd'hui.",
       "datasetHeading": "population-growth-details",
       "dataset": "trend-lux-population-growth",
       "layout": "text",

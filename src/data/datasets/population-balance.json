@@ -1,12 +1,12 @@
 
 {
-  "id": "population-demographic-balance",
+  "id": "population-balance",
   "title": "Demographic balance",
   "timeformat": "YYYY",
   "legend": {
     "v": "people"
   },
-  "description": "Sum of the natural balance and the migration balance registered for the given year",
+  "description": "Sum of the natural balance and the migration balance registered for the given year, in number of people",
   "source": "STATEC",
   "sourceUrl": "https://statistiques.public.lu/stat/TableViewer/tableView.aspx?ReportId=12868&IF_Language=eng&MainTheme=2&FldrName=2",
   "values": [
