@@ -18,6 +18,10 @@
       "layout": "text",
       "from": 1840,
       "to": 2014,
+      "datasetValueFrom": 150000,
+      "datasetValueTo": 800000,
+      "datasetAdditionalTrends": ["v"],
+      "datasetAdditionalTrendsColors": ["var(--primary)"],
       "moduleHotspots": [
         {
           "t": "1860",
@@ -70,8 +74,37 @@
       ]
     },
     {
+      "title": "Une histoire à trois variables!",
+      "subheading": "Jusqu’aux années 1960 l’évolution du solde global s’explique essentiellement par le par le jeu entre <b>taux de mortalité</b> et <b>taux de natalité</b> appelé le <b>solde naturel</b>.",
+      "layout": "text",
+      "from": 1840,
+      "to": 1960,
+      "datasetHeading": "population-balance-details",
+      "dataset": "trend-lux-population-growth",
+      "datasetHeadingAdditionalTrends": ["v", "v1", "v2", "v3", "v4"],
+      "datasetHeadingAdditionalTrendsColors": ["var(--primary)", "black","green", "blue", "gold"],
+      "datasetValueFrom": 150000,
+      "datasetValueTo": 800000,
+      "datasetHeadingValueFrom": -8000,
+      "datasetHeadingValueTo": 8000,
+      "moduleHotspots": [
+        {
+          "t": "1940",
+          "l": ""
+        }
+      ],
+      "paragraphs": [
+        {
+          "from": 1935,
+          "to": 1947,
+          "title": "La deuxième guerre mondiale a des répercussions importantes damns le domaine démographique.",
+          "text": "La mortalité augmente (victimes directes de la guerre, conditions de subsistance difficiles), la natalité diminue. Entre 1935 et 1946, la population résidente passe de 297.000 en 1935 à 291.000 en 1947"
+        }
+      ]
+    },
+    {
       "title": "Une croissance démographique exceptionnelle sur le long terme.",
-      "subheading": "La population du Luxembourg a plus que triplé depuis 1839 (date de l'indpendance du pays). De quelque <b>170.000</b> habitants en 1839 , la population du Grand-Duché passe à plus de <b>600.000</b> aujourd'hui.",
+      "subheading": "La population du Luxembourg a plus que triplé depuis 1839 (date de l'indpendance du pays). De quelque <b>170.000</b> habitants en 1839, la population du Grand-Duché passe à plus de <b>600.000</b> aujourd'hui.",
       "datasetHeading": "population-growth-details",
       "dataset": "trend-lux-population-growth",
       "layout": "text",
@@ -81,6 +114,12 @@
       "datasetHeadingValueTo": 40,
       "datasetHeadingAdditionalTrends": ["v", "v1", "v2"],
       "datasetHeadingAdditionalTrendsColors": ["red", "green", "blue"],
+      "moduleHotspots": [
+        {
+          "t": "1940",
+          "l": ""
+        }
+      ],
       "paragraphs": [
         {
           "from": 1840,
