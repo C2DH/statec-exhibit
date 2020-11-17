@@ -2,7 +2,7 @@ import React from 'react'
 
 class TrendHotspotsGraphics extends React.Component{
   shouldComponentUpdate(nextProps) {
-    return this.props.id !== nextProps.id
+    return this.props.id !== nextProps.id || this.props.windowDimensions !== nextProps.windowDimensions
   }
 
   render() {

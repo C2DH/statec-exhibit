@@ -2,8 +2,6 @@ import React, { useEffect, useState, useMemo } from 'react';
 import moment from 'moment';
 import { scaleTime, scaleLinear } from 'd3-scale';
 import { extent } from 'd3-array';
-import { Animate } from 'react-move';
-import { easeQuadOut } from 'd3-ease';
 import { LinePath, Line } from '@vx/shape';
 import { curveMonotoneX } from '@vx/curve';
 import { isMobileWithTablet } from '../constants';
@@ -54,6 +52,12 @@ const Trend = ({
   //   }
   // }, [data]);
 
+  useEffect(() => {
+    setShow(false);
+    setTimeout(() => {
+      setShow(true);
+    }, 100);
+  }, [id, activeIndex]);
 
   console.info('rerendering')
 
@@ -62,6 +66,7 @@ const Trend = ({
     : window.innerWidth * 0.9;
   const marginTop = 10;
   const marginLeft = window.innerWidth * 0.05;
+  const windowDimensions = [ window.innerWidth, window.innerHeight ].join('-')
   const graphWidth = svgWidth - marginLeft;
   const svgHeight = height;
   const trendHeight = svgHeight - marginTop;
@@ -193,6 +198,7 @@ const Trend = ({
         <TrendLineGraphics
           id={id}
           show={show}
+          windowDimensions={windowDimensions}
           marginLeft={marginLeft}
           marginTop={marginTop}
           values={values}
@@ -255,6 +261,7 @@ const Trend = ({
             additionalTrendsColors={additionalTrendsColors}
             currentParagraph={currentParagraph}
             values={values}
+            windowDimensions={windowDimensions}
             marginLeft={marginLeft}
             marginTop={marginTop}
             scaleX={scaleX}
@@ -265,6 +272,7 @@ const Trend = ({
         <TrendVerticalDashedLineGraphics
           id={id}
           show={show}
+          windowDimensions={windowDimensions}
           marginLeft={marginLeft}
           marginTop={marginTop}
           trendHeight={trendHeight}
@@ -303,6 +311,7 @@ const Trend = ({
         <TrendHotspostsGraphics
           id={id}
           hotspots={currentHotspots}
+          windowDimensions={windowDimensions}
           marginLeft={marginLeft}
           marginTop={marginTop}
           scaleX={scaleX}
@@ -325,6 +334,7 @@ const Trend = ({
         {/* AXES */}
         {!negative && <TrendAxisBottomGraphics
           id={id}
+          windowDimensions={windowDimensions}
           marginLeft={marginLeft}
           marginTop={marginTop}
           axisOffsetTop={trendHeight - 10}
@@ -335,6 +345,7 @@ const Trend = ({
         }
         <TrendAxisLeftGraphics
           id={id}
+          windowDimensions={windowDimensions}
           marginLeft={marginLeft}
           marginTop={marginTop}
           scale={scaleY2}

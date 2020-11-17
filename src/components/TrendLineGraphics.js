@@ -8,7 +8,7 @@ import { AreaClosed, LinePath } from '@vx/shape';
 class TrendLineGraphics extends React.Component{
   shouldComponentUpdate(nextProps) {
     return  this.props.id !== nextProps.id ||
-      this.props.show !== nextProps.show
+      this.props.show !== nextProps.show || this.props.windowDimensions !== nextProps.windowDimensions
   }
 
   render() {

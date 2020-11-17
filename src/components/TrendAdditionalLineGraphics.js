@@ -5,13 +5,12 @@ import { LinePath } from '@vx/shape'
 
 class TrendAdditionalLines extends React.Component{
   shouldComponentUpdate(nextProps) {
-    return  this.props.id !== nextProps.id
+    return  this.props.id !== nextProps.id || this.props.windowDimensions !== nextProps.windowDimensions
   }
 
   render() {
     const {
       additionalTrends,
-      additionalTrendsColors,
       values,
       scaleX,
       scaleY

@@ -4,7 +4,7 @@ import { AxisLeft } from '@vx/axis'
 
 class TrendAxisLeftGraphics extends React.Component {
   shouldComponentUpdate(nextProps) {
-    return this.props.id !== nextProps.id
+    return this.props.id !== nextProps.id || this.props.windowDimensions !== nextProps.windowDimensions
   }
 
   render() {
