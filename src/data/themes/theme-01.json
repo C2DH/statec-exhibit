@@ -26,6 +26,18 @@
         {
           "t": "1905",
           "l": ""
+        },
+        {
+          "t": "1930",
+          "l": ""
+        },
+        {
+          "t": "1985",
+          "l": ""
+        },
+        {
+          "t": "2008",
+          "l": ""
         }
       ],
       "paragraphs": [
@@ -35,9 +47,25 @@
           "text": "L'ensemble de la période allant de l'indépendance du Grand-Duché en 1839 jusqu'aux années 1890  est marquée par une croissance démographique relativement lente liée à une croissance économique hésitante et des conditions de vie qui restent précaires."
         },
         {
-          "from": 1890,
+          "from": 1891,
           "to": 1910,
           "text": "A partir de la fin des années 1890, les capitaux allemands (le Luxembourg fait partie du Zollverein à partir de 1842) investissent massivement dans la sidérurgie (Differdange, Belval etc.) contribuant ainsi à l'expansion économique qui va de pair avec une croissance importante de la population dont le nombre passe de 210.000 en 1890 à 260.000 en 1910. Un <b>pays d'émigration</b> ecommence à devenir un <b>pays d'immigration</b>, même si beaucoup de résidents du Luxembourg continuent à partir à l'étranger."
+        },
+        {
+          "from": 1929,
+          "to": 1940,
+          "text": "En 1930, la crise économique mondiale, qui a débuté en 1929 par le krach de Wallstreet, commence à avoir un impact au Luxembourg. Le chômage augmente, la production sidérurgique diminue, les comptes publics sont sous tension. La population diminue de 1930 à 1935  (quelque 300 personnes en moins), puis rebondit dans des proportions modestes dans la deuxième moitié des années 1930."
+        },
+        {
+          "from": 1980,
+          "to": 2007,
+          "text": "A partir des années 1980, le Luxembourg entre dans un cyle de croissance effrénée basée sur le secteur bancaire et financier qui a vu se développer en parallèle un secteur des services aux entreprises très varié (du nettoyage aux sociétés de consultance, ...) très gourmand en main-d'oeuvre à la fois qualifiée et non-qualifiée. A cette demande de main-d'oeuvre, ce n'est que la main-d'oeuvre immigrée qui a pu y répondre."
+        },
+        {
+          "from": 2008,
+          "to": 2014,
+          "title": "En 2008, la crise financière se déclenche et n'épargne pas le Luxembourg. ",
+          "text": "Les pouvoirs publics doivent notamment intervenir dans le sauvetage des banques systémiques. Néanmoins, même si la récession fut profonde, le Luxembourg est assez résilient. La croissance démographique, toujours due à l'immigration, ne fut que marginalement affectée par ces évènements. La pression sur le marché du logement est non-négligeable et les infrastructures publiques (notamment dans le domaine de la mobilité) doivent suivre cette évolution."
         }
       ]
     },
