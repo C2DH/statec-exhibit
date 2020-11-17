@@ -57,7 +57,7 @@ const Trend = ({
     setShow(false);
     setTimeout(() => {
       setShow(true);
-    }, 100);
+    }, 1500);
   }, [id, activeIndex]);
 
   console.info('rerendering')
