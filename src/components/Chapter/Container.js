@@ -19,7 +19,7 @@ const Container = ({
   isLast,
   chapterIndex,
 }) => {
-  console.log('isLast', isLast);
+  console.log('progress', progress);
   //const props = useSpring({ opacity: 1, from: { opacity: 0 } });
   const opacityScale = scaleLinear()
     .domain([0, 0.2, 0.8, 0.95])

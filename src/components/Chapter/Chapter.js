@@ -2,14 +2,14 @@ import React, { Component, Fragment, Suspense } from 'react';
 import { Scrollama, Step } from 'react-scrollama';
 import { isMobileWithTablet } from '../../constants';
 import { Spring, animated, config } from 'react-spring/renderprops';
+import Container from './Container';
+import TextContainer from './TextContainer';
+import Trend from '../Trend';
 import { duration } from 'moment';
 
-const Container = React.lazy(() => import('./Container'));
-const TextContainer = React.lazy(() => import('./TextContainer'));
 // const ImageContainer = React.lazy(() =>
 //   import('../ImageContainer/ImageContainer'),
 // );
-const Trend = React.lazy(() => import('../Trend'));
 
 class Chapter extends Component {
   constructor(props) {
@@ -44,7 +44,6 @@ class Chapter extends Component {
   };
 
   onStepExit = ({ element, direction, data }) => {
-    console.log('onStepExit');
     if (element.children[0]) {
       element.children[0].style.position = 'relative';
       element.children[0].style.top = '0';
@@ -75,6 +74,9 @@ class Chapter extends Component {
     } = this.props;
     const moduleDataset = require(`../../data/datasets/${theme.modules[data].datasetHeading}.json`);
     const themeDataset = require(`../../data/datasets/${theme.dataset}.json`);
+
+    console.log(data);
+
     return (
       <div
         className="w-100"
@@ -114,14 +116,14 @@ class Chapter extends Component {
                   <animated.div
                     className="chapterFrame"
                     style={{
-                      transition: 'clip-path .5s ease-in-out',
+                      // transition: 'clip-path .5s ease-in-out',
                       clipPath: props.backgroundClipPath,
                     }}
                   >
                     <div
                       className="bg"
                       style={{
-                        willChange: 'transform',
+                        // willChange: 'transform',
                         backgroundImage: `url(${theme.cover.url})`,
                       }}
                     />
@@ -180,75 +182,81 @@ class Chapter extends Component {
                   justifyContent: 'justify-between',
                 }}
               >
-                <Suspense fallback={''}>
-                  <div
-                    style={{
-                      height: isMobileWithTablet ? '30vh' : '24vh',
-                      paddingTop: '15px',
-                    }}
-                  >
-                    {showTitle && (
-                      <div
-                        className="sectionTitle"
-                        style={{
-                          height: '20px',
-                          marginTop: '-15px',
-                          fontSize: '16px',
-                        }}
-                      >
-                        {theme.title}
-                      </div>
-                    )}
-                    <Trend
-                      title={themeDataset.title}
-                      legend={themeDataset.legend}
-                      data={themeDataset.values}
-                      progress={progress}
-                      height={window.innerHeight * 0.24 - 100}
-                      valueKey="v"
-                      timeKey="t"
-                      trendName={'populationTrend'}
-                      negative={false}
-                      from={theme.modules[data].from}
-                      to={theme.modules[data].to}
-                      valueFrom={theme.modules[data].datasetValueFrom}
-                      valueTo={theme.modules[data].datasetValueTo}
-                      additionalTrends={theme.modules[data].datasetAdditionalTrends}
-                      additionalTrendsColors={theme.modules[data].datasetAdditionalTrendsColors}
-                    />
-                  </div>
-                  <div
-                    className="relative"
-                    style={{ height: isMobileWithTablet ? '30vh' : '25vh' }}
-                  >
-                    <Trend
-                      id={moduleDataset.id}
-                      title={moduleDataset.title}
-                      data={moduleDataset.values}
-                      legend={moduleDataset.legend}
-                      height={
-                        isMobileWithTablet
-                          ? window.innerHeight * 0.3 - 63
-                          : window.innerHeight * 0.24 - 63
-                      }
-                      valueKey="v"
-                      timeKey="t"
-                      highlightKey="h"
-                      trendName={theme.id}
-                      progress={progress}
-                      negative={true}
-                      from={theme.modules[data].from}
-                      to={theme.modules[data].to}
-                      valueFrom={theme.modules[data].datasetHeadingValueFrom}
-                      valueTo={theme.modules[data].datasetHeadingValueTo}
-                      hotspots={theme.modules[data].moduleHotspots}
-                      paragraphs={theme.modules[data].paragraphs}
-                      additionalTrends={theme.modules[data].datasetHeadingAdditionalTrends}
-                      additionalTrendsColors={theme.modules[data].datasetHeadingAdditionalTrendsColors}
-                    />
-                  </div>
-                  <div className="hr"></div>
-                </Suspense>
+                <div
+                  style={{
+                    height: isMobileWithTablet ? '30vh' : '24vh',
+                    paddingTop: '15px',
+                  }}
+                >
+                  {showTitle && (
+                    <div
+                      className="sectionTitle"
+                      style={{
+                        height: '20px',
+                        marginTop: '-15px',
+                        fontSize: '16px',
+                      }}
+                    >
+                      {theme.title}
+                    </div>
+                  )}
+                  <Trend
+                    title={themeDataset.title}
+                    legend={themeDataset.legend}
+                    data={themeDataset.values}
+                    progress={progress}
+                    height={window.innerHeight * 0.24 - 100}
+                    valueKey="v"
+                    timeKey="t"
+                    trendName={'populationTrend'}
+                    negative={false}
+                    from={theme.modules[data].from}
+                    to={theme.modules[data].to}
+                    valueFrom={theme.modules[data].datasetValueFrom}
+                    valueTo={theme.modules[data].datasetValueTo}
+                    additionalTrends={
+                      theme.modules[data].datasetAdditionalTrends
+                    }
+                    additionalTrendsColors={
+                      theme.modules[data].datasetAdditionalTrendsColors
+                    }
+                  />
+                </div>
+                <div
+                  className="relative"
+                  style={{ height: isMobileWithTablet ? '30vh' : '25vh' }}
+                >
+                  <Trend
+                    id={moduleDataset.id}
+                    title={moduleDataset.title}
+                    data={moduleDataset.values}
+                    legend={moduleDataset.legend}
+                    height={
+                      isMobileWithTablet
+                        ? window.innerHeight * 0.3 - 63
+                        : window.innerHeight * 0.24 - 63
+                    }
+                    valueKey="v"
+                    timeKey="t"
+                    highlightKey="h"
+                    trendName={theme.id}
+                    progress={progress}
+                    negative={true}
+                    from={theme.modules[data].from}
+                    to={theme.modules[data].to}
+                    valueFrom={theme.modules[data].datasetHeadingValueFrom}
+                    valueTo={theme.modules[data].datasetHeadingValueTo}
+                    hotspots={theme.modules[data].moduleHotspots}
+                    paragraphs={theme.modules[data].paragraphs}
+                    additionalTrends={
+                      theme.modules[data].datasetHeadingAdditionalTrends
+                    }
+                    additionalTrendsColors={
+                      theme.modules[data].datasetHeadingAdditionalTrendsColors
+                    }
+                  />
+                </div>
+                <div className="hr"></div>
               </div>
               <div style={{ overflow: 'hidden' }}>
                 <Scrollama
@@ -264,9 +272,9 @@ class Chapter extends Component {
                     if (module.dataset) {
                       moduleDataset = require(`../../data/datasets/${module.dataset}.json`);
                     }
-                    console.log(theme.modules.length - 1, i);
+                    console.log(module);
                     return (
-                      <Step data={i} key={i}>
+                      <Step data={i} key={`theme-${chapterIndex}-${i}`}>
                         <div
                           style={{
                             height: '200vh',
@@ -274,36 +282,34 @@ class Chapter extends Component {
                               module.layout === 'text' ? '60vh' : '18vh',
                           }}
                         >
-                          <Suspense fallback={''}>
-                            {module.layout === 'flowers' && moduleDataset && (
-                              <Container
-                                module={module}
-                                moduleDataset={moduleDataset}
-                                progress={i === data ? progress : 0}
-                                shouldRender={i === data}
-                                focus={theme.modules[data].focus || null}
-                                chapter={theme.modules[data]}
-                                extentValues={theme.modules[data].extent}
-                                from={theme.modules[data].from}
-                                to={theme.modules[data].to}
-                                isLast={i === theme.modules.length - 1}
-                                chapterIndex={chapterIndex}
-                              />
-                            )}
-                            {module.layout === 'text' && (
-                              <TextContainer
-                                index={i}
-                                module={module}
-                                progress={i === data ? progress : 0}
-                                shouldRender={i === data}
-                                chapter={theme.modules[data]}
-                                from={theme.modules[data].from}
-                                to={theme.modules[data].to}
-                                isLast={i === theme.modules.length - 1}
-                                chapterIndex={chapterIndex}
-                              />
-                            )}
-                          </Suspense>
+                          {module.layout === 'flowers' && moduleDataset && (
+                            <Container
+                              module={module}
+                              moduleDataset={moduleDataset}
+                              progress={i === data ? progress : 0}
+                              shouldRender={i === data}
+                              focus={theme.modules[data].focus || null}
+                              chapter={theme.modules[data]}
+                              extentValues={theme.modules[data].extent}
+                              from={theme.modules[data].from}
+                              to={theme.modules[data].to}
+                              isLast={i === theme.modules.length - 1}
+                              chapterIndex={chapterIndex}
+                            />
+                          )}
+                          {module.layout === 'text' && (
+                            <TextContainer
+                              index={i}
+                              module={module}
+                              progress={i === data ? progress : 0}
+                              shouldRender={i === data}
+                              chapter={theme.modules[data]}
+                              from={theme.modules[data].from}
+                              to={theme.modules[data].to}
+                              isLast={i === theme.modules.length - 1}
+                              chapterIndex={chapterIndex}
+                            />
+                          )}
                         </div>
                       </Step>
                     );

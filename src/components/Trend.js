@@ -7,15 +7,14 @@ import { curveMonotoneX } from '@vx/curve';
 import { isMobileWithTablet } from '../constants';
 import { red } from '../constants';
 import { useStore } from '../store';
-import TrendHotspostsGraphics from './TrendHotspostsGraphics'
-import TrendAxisBottomGraphics from './TrendAxisBottomGraphics'
-import TrendAxisLeftGraphics from './TrendAxisLeftGraphics'
-import TrendLineGraphics from './TrendLineGraphics'
-import TrendVerticalDashedLineGraphics from './TrendVerticalDashedLineGraphics'
-import TrendAdditionalLineGraphics from './TrendAdditionalLineGraphics'
-import TrendParagraphsGraphics from './TrendParagraphsGraphics'
-import TrendLegend from './TrendLegend'
-
+import TrendHotspostsGraphics from './TrendHotspostsGraphics';
+import TrendAxisBottomGraphics from './TrendAxisBottomGraphics';
+import TrendAxisLeftGraphics from './TrendAxisLeftGraphics';
+import TrendLineGraphics from './TrendLineGraphics';
+import TrendVerticalDashedLineGraphics from './TrendVerticalDashedLineGraphics';
+import TrendAdditionalLineGraphics from './TrendAdditionalLineGraphics';
+import TrendParagraphsGraphics from './TrendParagraphsGraphics';
+import TrendLegend from './TrendLegend';
 
 const Trend = ({
   id,
@@ -38,7 +37,7 @@ const Trend = ({
   paragraphs = [],
   hotspots = [],
   additionalTrends = [],
-  additionalTrendsColors = []
+  additionalTrendsColors = [],
 } = {}) => {
   const [show, setShow] = useState(true);
   const [pathLength, setPathLength] = useState(1000);
@@ -60,14 +59,12 @@ const Trend = ({
     }, 1500);
   }, [id, activeIndex]);
 
-  console.info('rerendering')
-
   const svgWidth = isMobileWithTablet
     ? window.innerWidth * 0.9
     : window.innerWidth * 0.9;
   const marginTop = 10;
   const marginLeft = window.innerWidth * 0.05;
-  const windowDimensions = [ window.innerWidth, window.innerHeight ].join('-')
+  const windowDimensions = [window.innerWidth, window.innerHeight].join('-');
   const graphWidth = svgWidth - marginLeft;
   const svgHeight = height;
   const trendHeight = svgHeight - marginTop;
@@ -85,9 +82,10 @@ const Trend = ({
     .domain([startDate, endDate])
     .range([0, graphWidth]);
 
-  const [min, max] = isNaN(valueFrom) || isNaN(valueTo)
-    ? extent(data, (d) => d[valueKey])
-    : [valueFrom, valueTo]
+  const [min, max] =
+    isNaN(valueFrom) || isNaN(valueTo)
+      ? extent(data, (d) => d[valueKey])
+      : [valueFrom, valueTo];
 
   const scaleY = scaleLinear().domain([min, max]).range([0, trendHeight]);
   const scaleY2 = scaleLinear().domain([max, min]).range([0, trendHeight]);
@@ -104,15 +102,19 @@ const Trend = ({
     .domain([0.2, 0.8])
     .clamp(true);
 
-  const values = useMemo(() => data.map((d) => {
-    const time = moment(d[timeKey])
-    return {
-      ...d,
-      time,
-      timeFullYear: time.year(),
-      value: d[valueKey],
-    }
-  }), [data, timeKey, valueKey]);
+  const values = useMemo(
+    () =>
+      data.map((d) => {
+        const time = moment(d[timeKey]);
+        return {
+          ...d,
+          time,
+          timeFullYear: time.year(),
+          value: d[valueKey],
+        };
+      }),
+    [data, timeKey, valueKey],
+  );
 
   const actualYear = progress
     ? scaleX.invert(progressScale(progress)).getFullYear()
@@ -127,28 +129,43 @@ const Trend = ({
   const actualValue = valuesIndexByTime[String(actualYear)];
 
   // visualize rectangle related to current narrative paragraph
-  const currentParagraphs = useMemo(() => paragraphs.map((p, i) => ({
-    idx: i,
-    values: values.filter((value) =>
-      value[timeKey] >= p.from && value[timeKey] <= p.to
-    ),
-    fromDate: moment(`${p.from}-01-01`),
-    toDate: moment(`${p.to}-01-01`),
-    actualYear,
-    isVisible: actualYear >= p.from && actualYear <= p.to,
-  })), [paragraphs, timeKey, actualYear, values]);
+  const currentParagraphs = useMemo(
+    () =>
+      paragraphs.map((p, i) => ({
+        idx: i,
+        values: values.filter(
+          (value) => value[timeKey] >= p.from && value[timeKey] <= p.to,
+        ),
+        fromDate: moment(`${p.from}-01-01`),
+        toDate: moment(`${p.to}-01-01`),
+        actualYear,
+        isVisible: actualYear >= p.from && actualYear <= p.to,
+      })),
+    [paragraphs, timeKey, actualYear, values],
+  );
 
-  const currentParagraph = useMemo(() => currentParagraphs.find((p) => p.isVisible), [currentParagraphs])
-  const currentHotspots = useMemo(() => hotspots.map((h) => ({
-    ...valuesIndexByTime[h.t],
-    label: h.label,
-    type: h.h,
-  })), [hotspots, valuesIndexByTime]);
+  const currentParagraph = useMemo(
+    () => currentParagraphs.find((p) => p.isVisible),
+    [currentParagraphs],
+  );
+  const currentHotspots = useMemo(
+    () =>
+      hotspots.map((h) => ({
+        ...valuesIndexByTime[h.t],
+        label: h.label,
+        type: h.h,
+      })),
+    [hotspots, valuesIndexByTime],
+  );
 
   const currentHotspot = actualValue
-    ? currentHotspots.find(d => actualValue[timeKey] >= d[timeKey] && actualValue[timeKey] <= d[timeKey])
-    : null
-  console.info('currentHotspot', currentHotspot)
+    ? currentHotspots.find(
+        (d) =>
+          actualValue[timeKey] >= d[timeKey] &&
+          actualValue[timeKey] <= d[timeKey],
+      )
+    : null;
+
   return (
     <div
       style={{
@@ -215,7 +232,7 @@ const Trend = ({
           width={graphWidth}
           fill={`url(#${trendName}Gradient)`}
         />
-{/*
+        {/*
         <g transform={`translate(${marginLeft}, ${marginTop})`}>
           <Animate
             show={show}
@@ -262,9 +279,11 @@ const Trend = ({
         </g>
       */}
 
-        {additionalTrends.length &&
+        {additionalTrends.length && (
           <TrendAdditionalLineGraphics
-            id={id} additionalTrends={additionalTrends} show={show}
+            id={id}
+            additionalTrends={additionalTrends}
+            show={show}
             additionalTrendsColors={additionalTrendsColors}
             currentParagraph={currentParagraph}
             values={values}
@@ -275,7 +294,7 @@ const Trend = ({
             scaleY={scaleY2}
             cx={actualYear}
           />
-        }
+        )}
         <TrendVerticalDashedLineGraphics
           id={id}
           show={show}
@@ -304,10 +323,11 @@ const Trend = ({
           windowDimensions={windowDimensions}
           marginLeft={marginLeft}
           marginTop={marginTop}
-          fill='transparent'
+          fill="transparent"
           stroke={red}
           scaleX={scaleX}
-          scaleY={scaleY2} />
+          scaleY={scaleY2}
+        />
         {/* PROGRESS BAR*/}
         {progress && (
           <g transform={`translate(${marginLeft}, ${marginTop})`}>
@@ -324,17 +344,18 @@ const Trend = ({
           </g>
         )}
         {/* AXES */}
-        {!negative && <TrendAxisBottomGraphics
-          id={id}
-          windowDimensions={windowDimensions}
-          marginLeft={marginLeft}
-          marginTop={marginTop}
-          axisOffsetTop={trendHeight - 10}
-          scale={scaleX}
-          numTicks={isMobileWithTablet ? 4 : 8}
-          textColor={red}
-        />
-        }
+        {!negative && (
+          <TrendAxisBottomGraphics
+            id={id}
+            windowDimensions={windowDimensions}
+            marginLeft={marginLeft}
+            marginTop={marginTop}
+            axisOffsetTop={trendHeight - 10}
+            scale={scaleX}
+            numTicks={isMobileWithTablet ? 4 : 8}
+            textColor={red}
+          />
+        )}
         <TrendAxisLeftGraphics
           id={id}
           windowDimensions={windowDimensions}

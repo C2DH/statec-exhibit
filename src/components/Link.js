@@ -27,7 +27,7 @@ function Link({ chapterIndex }) {
     >
       <a
         href={chapterMeta[chapterIndex].link}
-        style={{ color: '#4d4a6d !important' }}
+        style={{ color: 'rgb(77, 74, 109)' }}
       >
         {chapterIndex == 1 ? `↓ Next Chapter` : `↑ Previous Chapter`}
       </a>
