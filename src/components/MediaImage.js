@@ -41,23 +41,10 @@ class MediaImage extends React.Component {
     this.loadingImage = image
   }
 
-  style = loading => {
-    return {
-      transition: '0.16s opacity ease-in',
-      opacity: `${loading ? 0.2 : 1}`,
-      width: '100%',
-      height: '100%',
-      objectFit: 'contain',
-      border: '1px solid black',
-      background: 'black',
-      overflow: 'hidden',
-      objectPosition: 'center'
-    }
-  }
 
   render() {
     const { currentImage, loading } = this.state
-    const { alt, caption = '' } = this.props
+    const { caption = '' } = this.props
     return <figure
       style={{
         display: 'flex',
@@ -68,17 +55,20 @@ class MediaImage extends React.Component {
       }}
     >
       <div style={{
-        // backgroundImage: `url(${currentImageBase64})`,
-        // backgroundSize: 'contain',
-        // backgroundPosition: 'center',
-        flex: '0 1 auto',
+        backgroundImage: `url(${currentImage})`,
+        backgroundColor: 'black',
+        transition: '0.16s opacity ease-in',
+        opacity: `${loading ? 0.2 : 1}`,
+        backgroundSize: 'contain',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        flexGrow: 1,
         overflow: 'hidden',
       }}>
-        <img style={this.style(loading)} src={currentImage} alt={alt}/>
       </div>
       <figcaption
         dangerouslySetInnerHTML={{ __html: caption }}
-        style={{ padding: '5px', flex: '1 1 auto'}}
+        style={{ padding: '5px', flexShrink: '1'}}
       />
     </figure>
     // return <img style={this.style(loading)} src={currentImage} alt={alt} {...rest}/>
