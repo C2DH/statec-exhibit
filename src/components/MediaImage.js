@@ -44,16 +44,17 @@ class MediaImage extends React.Component {
 
   render() {
     const { currentImage, loading } = this.state
-    const { caption = '' } = this.props
+    const { caption='', height='40vh', paddingTop=5 } = this.props
     return <figure
       style={{
         display: 'flex',
         flexDirection: 'column',
-        height: '40vh',
+        height,
         width: '100%',
         margin: '0 auto',
       }}
     >
+      <div style={{height:paddingTop, backgroundColor: 'black'}}></div>
       <div style={{
         backgroundImage: `url(${currentImage})`,
         backgroundColor: 'black',
@@ -66,6 +67,7 @@ class MediaImage extends React.Component {
         overflow: 'hidden',
       }}>
       </div>
+      <div style={{height:paddingTop, backgroundColor: 'black'}}></div>
       <figcaption
         dangerouslySetInnerHTML={{ __html: caption }}
         style={{ padding: '5px', flexShrink: '1'}}
