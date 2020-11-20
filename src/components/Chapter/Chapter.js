@@ -30,6 +30,9 @@ class Chapter extends Component {
       );
       this.setState({ steps: steps });
     }
+    setTimeout(() => {
+      window.dispatchEvent(new Event('resize'));
+    }, 20)
   }
 
   onStepEnter = ({ element, data }) => {
@@ -75,7 +78,7 @@ class Chapter extends Component {
     const moduleDataset = require(`../../data/datasets/${theme.modules[data].datasetHeading}.json`);
     const themeDataset = require(`../../data/datasets/${theme.dataset}.json`);
 
-    console.log(data);
+    console.log('rendering chapter', data);
 
     return (
       <div
@@ -272,7 +275,6 @@ class Chapter extends Component {
                     if (module.dataset) {
                       moduleDataset = require(`../../data/datasets/${module.dataset}.json`);
                     }
-                    console.log(module);
                     return (
                       <Step data={i} key={`theme-${chapterIndex}-${i}`}>
                         <div
