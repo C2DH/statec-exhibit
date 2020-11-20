@@ -44,7 +44,7 @@ class MediaImage extends React.Component {
 
   render() {
     const { currentImage, loading } = this.state
-    const { caption='', height='40vh', paddingTop=5 } = this.props
+    const { caption='', height='40vh', padding=5 } = this.props
     return <figure
       style={{
         display: 'flex',
@@ -54,7 +54,7 @@ class MediaImage extends React.Component {
         margin: '0 auto',
       }}
     >
-      <div style={{height:paddingTop, backgroundColor: 'black'}}></div>
+      <div style={{height:padding, backgroundColor: 'black'}}></div>
       <div style={{
         backgroundImage: `url(${currentImage})`,
         backgroundColor: 'black',
@@ -65,12 +65,14 @@ class MediaImage extends React.Component {
         backgroundRepeat: 'no-repeat',
         flexGrow: 1,
         overflow: 'hidden',
+        borderLeft: `${padding}px solid`,
+        borderRight: `${padding}px solid`
       }}>
       </div>
-      <div style={{height:paddingTop, backgroundColor: 'black'}}></div>
+      <div style={{height:padding, backgroundColor: 'black'}}></div>
       <figcaption
         dangerouslySetInnerHTML={{ __html: caption }}
-        style={{ padding: '5px', flexShrink: '1'}}
+        style={{ padding, flexShrink: '1'}}
       />
     </figure>
     // return <img style={this.style(loading)} src={currentImage} alt={alt} {...rest}/>
