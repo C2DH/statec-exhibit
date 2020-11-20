@@ -33,6 +33,22 @@
             "width": null,
             "height": 480
           }
+        },
+        "large-w": {
+          "url": "/media/images/ICO-3-1-02784.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 1080,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/ICO-3-1-02784.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 960
+          }
         }
       },
       "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAUCAYAAACeXl35AAAACXBIWXMAAAsTAAALEwEAmpwYAAAFB0lEQVRIx22V60/PbxjHPzYPoprSiRw6SDllKrFQYQ7p5JRTjklKhaGRapJThq2IloUxlnIID0ybB42WemhtFUUUHpg/4v37va7fPmbze3Dvvj/397qv6329r/d1fZ2vX7+KNTQ0ZOvz58+/15cvX/66c5drz8LO9fPn+vN+eHjYluNeug/d7w8fPmhgYEAjIyO/77H59OmTBgcHbXfX/wXl2wXGN36+ffsm5+PHj+YA55xdp2/fvlVHR4cZuo6xwwYw/f399s3Zfe+eXVvu3G8A4MshAIYsEOHw3bt3unv3rh48eKBfv379Rbnr7M2bN3r//r16e3vV09OjJ0+eqK+vz8AQxLUl0Pfv3/Xjxw85N2/e1JUrV3Tjxg29ePFC1dXVunz5smpra3Xo0CE7X7p0Sa9evVJbW5vu3Lmjx48f6/nz5yoqKlJ5ebnOnj2ryspK8/Ho0SPb8YNv3rW2turly5fq6uqSc+TIEV24cEE5OTnavXu3CgoKzFlnZ6cB4FFJSYmwW7x4sfLz81VWVmbfpaWlZn/48GHbs7OztWbNGh08eFBPnz7V69evde3aNZ04ccIA1NXVyWlpabFaNTc3q76+3n64d++erWfPnun+/fu6deuWcnNzFRgYqL1796qxsdHuobCqqkr79++3ALNmzdKYMWMMWGFhoYHat2+fdu7cqS1btuj48eNyQMUiO+gjo+vXr+vixYtGFXTinKzmz59vARsaGnTy5ElDjhPoPHPmjLZt26Zly5YpIiJCwcHBCg0N1cSJExUUFCQfHx/FxcXJmTlzpqZMmSJfX1/NmTPHkJBdRUWFBYGGpqYmnTp1yrIkyIYNG6x+nNlXr16ttWvXmsOkpCQlJydr1apV5m/27NlasWKF3WdmZsrhEhTjx4+3FRYWZkFxsnXrVqvHnj17rF7ssbGxWrJkieLj45Wenq7U1FQtX75cp0+f1ubNm3XgwAF7g+COHTumjRs32lsyJwHHz89Pnp6e8vb2luM4hghqFi1apBkzZmjp0qWGbt68eXYGYFRUlMLDwzV16lRbIM/LyzO6ERVBObNTS9jhLUAchEBW1IedDFJSUhQZGalp06YpISHBMkIQ1Gb69OmaNGmSQkJCFBAQYAFR5sqVKw0YeiAYYgEIDBC0uLhYR48eleMWFyOQgJS6oLDt27dr3bp12rFjh4lq165d5px6AYog7ADCMWcopBTQu2nTJrvjm9ZBWA7UIBhQUwvoQurQirKgkMDUAZoRWHR0tNUHhZIJtjjHKVkgpoyMDAN5/vx5C4Rwampq5IAOp9A5evRojRo1yoyZIPDu7+9v6GnsCRMm2KLeBAT5ggULLNPExETrYQYILQMbAIIparlw4UKbQA4Z4ZSaUU9qBB30IVSOHTvWFEubEAxlIiAUh9PJkyebgGgDAqIBao0qCYgN4BkWLAvoNqaXl5fRx7zEiIBQSfMzb8eNG2dsAIpxiNAAyz11vXr16u8WQ0BQSQ2hlUn28OFDOdSNnoLjuXPn2gO4J0MM+Tdgyp87d85UCe2od/369eaYO8DCCr3IezRBvREhjOCfadTd3S2HQEyOrKwspaWlGTJ6iX+Gnz9/2tRh2rS3t/83mv7tVRwgEg8PDwtGAHzABgCYpzExMcYCgel15i1/CA7/BDglG2hhmjDCEAX3ZAILoOMB9QIYIuJMfyI83nAHEMAjKPoQMeED1m7fvq1/AOLNKApjI8vWAAAAAElFTkSuQmCC"
@@ -69,6 +85,22 @@
             "size": "medium-h",
             "width": null,
             "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/ICO-3-1-04638.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 1080,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/ICO-3-1-04638.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 960
           }
         }
       },
@@ -107,6 +139,22 @@
             "width": null,
             "height": 480
           }
+        },
+        "large-w": {
+          "url": "/media/images/statec_001.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 1080,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/statec_001.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 960
+          }
         }
       },
       "base64": "data:image/png;base64,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"
@@ -143,6 +191,22 @@
             "size": "medium-h",
             "width": null,
             "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/statec_002.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 1080,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/statec_002.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 960
           }
         }
       },
@@ -181,11 +245,28 @@
             "width": null,
             "height": 480
           }
+        },
+        "large-w": {
+          "url": "/media/images/statec_003.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 1080,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/statec_003.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 960
+          }
         }
       },
       "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAUCAYAAABxnDbHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFNUlEQVRIxz2VT1BPcRTF35ZMbZQyhSQmlURIUSopqRQqRNFfQkjSP/8qo1BmGlGRlKZS0lTDDBo1U2O0srGoTRZ2rewtrvmcGRZv3vu9d7/3nnPuuffnfPr0yT58+GDfvn2zwcFBGx4etsbGRsvLy7OWlharqqqy5uZmO3/+vN27d89aW1utpKTEbt68aU+ePLGZmRlramqy4uJi6+rq0vOzZ89sbGzMxsfHlZM8FRUVdu3aNcU4ExMTCpienrZ3797ZmzdvlPD06dMqWFZWZrdu3dKhq1evKumpU6csPj7erly5Yj9//rS7d+/ajh07rLq62h49emTl5eU2MDCgAn19fcp34cIFgb1z5445HR0dCuIDh86cOWO3b99WIu6wy8/P1/fCwkLFREdHm5eXlx06dEhxJ0+etH379glMQUGB+fn5WVpamhR79eqV1dTUWHJyssC/ffvWnPv379uWLVssNDTUjhw5YpcuXbLJyUn7/PmzPXz40Hp7e62/v1/yFhUV2dGjR23z5s12/fp1KdPe3i51UAu5Z2dnpU5UVJQAvH792qamppQHtZBeRWtray0lJcV27txpmZmZhuSdnZ2WlZUlZqDevn27bdu2zby9vW39+vWSdmRkxPAEbC9fvizFYAWjjRs3ijFyfv/+3X79+mVtbW2S2CHoxYsX6lFgYKDt2bPHYmJiJClyJSYmSjre8xu2hw8fltHCwsIEjO+olZCQIGAREREWFxdnZ8+eFWvOoBRMiXdIRm8wDQiR7/jx4wqmDxgEdA0NDUb/6TMFs7Ozbc2aNZIa5v7+/oqFHYpRiPN4AUn37t1rx44dk0EdCtXV1ckwJD948KDt37/fUlNTxS44OFiHGRvko++wIQ52ISEhUigoKEgAkHX37t1qU1JSku7kPnDggMhhRocRQGt6RCGQ0AekiYyMlMygRn7A0F8Kb926Vc8ACw8PVyzvYA3Q9PR0FcFQqAfT2NhYqaSRefDggYb7xIkTdu7cObtx44b6unz5cnNzc5OMLi4uYkM/AwICNDIkcXd3l7noL+xRAVYYC+XIR+uYCoiJaXd3txyKSSgMG5i4urqa4zjqL3LxDBDGAskoQuzq1avN19fXMjIy1AbeU5QCkKGnKMfM4gvinNHRUSHCCMgCagLYILCrr6/XOK1du9aePn2quaysrJSrQY20sONOQWTGJxRkfom9ePGiWoh3ZCTWFkzWrVunxLCYn5+3r1+/agQwChcoScL+ZGn8cz0FYcp5nAtwjEVPWYMUYpFgQgqyFxz6h0ko6OHhIanZw0NDQ5KvtLRUaw4G9Bx5AMo5DMI8co4+syRY7owMpkJW8uFi+o3x+O7wAddSdMWKFRpiWDFT9Hlpacl+/PjxX0L6jZtxYU5OjmZz06ZNtmHDBhWYm5vTnwIjxqwDjl6jGg5mfBx2I05j5rA7C58xgR3yLC4uygwU5BBmohBbJzc3V3Li7lWrVmnXotCXL18EFFC8w6DkYHyQ2nn+/LkkRBKcSGKMRVH2L4fZu8uWLZOEtAIPwBx5AcrFUqCXxLKTFxYWRIC9DglWIK7GWA4a4y6K4tyVK1eKAZLA9M+fP1rqAIIR5iF2165dMh1nMBqMkZ1c/LH//v1bwDEe75lT4rk779+/FyIY4jgfHx99hAVD3dPTYy9fvpQxAAQYnPtvobMk6CmyIx2MGKXHjx+rIM9cjCBntZE+fvyo+UNS7M0i58Ktnp6e///KMBobiB5REKMhFf1i6zDbjBJzTe/+FWZUAILMkMNIfwET4t7enE8klwAAAABJRU5ErkJggg=="
     },
     "statec_004.png": {
+      "caption": "Vue aérienne de Dudelange prise à bord de l'avion Prince Jean de Luxembourg, aviateur L. Hemmer, vue générale de l'usine avec les deux châteaux d'eau. <br/> Archives de la Ville de Dudelange - Fonds Rudy Kremer",
       "resolutions": {
         "thumb-w": {
           "url": "/media/images/statec_004.thumb-w.jpg",
@@ -217,6 +298,22 @@
             "size": "medium-h",
             "width": null,
             "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/statec_004.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 1080,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/statec_004.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 960
           }
         }
       },
@@ -255,6 +352,22 @@
             "width": null,
             "height": 480
           }
+        },
+        "large-w": {
+          "url": "/media/images/statec_005.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 1080,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/statec_005.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 960
+          }
         }
       },
       "base64": "data:image/png;base64,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"
@@ -291,6 +404,22 @@
             "size": "medium-h",
             "width": null,
             "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/statec_006.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 1080,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/statec_006.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 960
           }
         }
       },
@@ -329,6 +458,22 @@
             "width": null,
             "height": 480
           }
+        },
+        "large-w": {
+          "url": "/media/images/statec_007.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 1080,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/statec_007.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 960
+          }
         }
       },
       "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAUCAYAAABWMrcvAAAACXBIWXMAAAsTAAALEwEAmpwYAAADcElEQVQ4yyWUa1dUVRjHz8fonS1dtkq8ogEiKVSDXJS4hCiIXEYEBoYZYGaYG8wwApIoSOBwvxSThEL2ilVKULnM0C5YowKDEKUgWquVfYBfzzm92Guffc7+P//LfvZRnq//wZ8bTxm/fo0rYwGufz7OhDyPf3aVL25Mcufud9y+8y2hpXn+efkXa09XUDbWfmdleZH+4QECoyNcnRgT8Cf0DfXTO9jH4MdDtF1u55tbM7z892/W11ZRPgoMc7nXT/25Rjp6/AQ+DQhggI5uP40XztN0sYUmmVs725lffMSLF2sophoLphorRqsFl8+L74NzmGxW7J46uvp76ezpYmQ0IIyDBMau8HzjCYrZbsXp88jwUu1yapULDQYS0tMpNZtEWgcDInFCvKpSg8E5lJzTesqt1dQ2nqWwzEBpVSX68jJKBJB5KpdsfSEOb51YUBlHmJ65gaK+zCsppkIkFRhKMcpcbqnG19yEWjBbryctJ4eLHZdEql/YBlDSsrPJPVOkfcjIzRV/NooqjFr1SnuNtnbWe4Spm5b2Vnr6u1Bik5LIKsiXUcD+d3U4JICW9jaqnE46ZWNr54f4+7q5JN5Uppa28yj7DsYSl3yEU8VniNbFY3W7qGtswNPUQImpAmuti+bWC5pclclV71aZkolPTRNQMZl5eeLNhllkqUV0KSnabBOgw+vBLpLdvjqUQ4mJpGRlkVN0Wou80mHHIAmqSaaK3+Mi3eJyaPGrx2J12VFeD9/La3vCiYiNI/3kSQzVVdSIL7PdTnJmJsUmk1aotNKsSa0960HZvGMHm7aFsffgIfF0GFVukdGosWRIEVWW2i0nCgs4nJqKWwW9GradLTt3sXV3OLuiYwiLiCIrP58YCWV39AFZR/JWQoImd3tkFPqyUpR4QUfrdGx7M4Ijx47x3vET7DkQoyX6ypat7Izar3WI2gDvHD0qLVaC0tDSLA1qIen9TOkEC4kZGWwW5jf2RbBJVETGvS0BOcSjTWRW/x/E6LVRhkaGBVAlJ+/VOl49K1utmzIJxSKJ9gwOMPnlJNNfTzH7/S2U+3P3mJ29zVczN5mavinzFPd+vMuDR0EeryyxurpMKDTP4uJDlh8vEFoIovx6/wfmfpJNwZ/lBi/IdV7l2bMnrMtvQN00//AXbYQWH7D625IG+g+Amo9ETsGzDQAAAABJRU5ErkJggg=="
@@ -365,6 +510,22 @@
             "size": "medium-h",
             "width": null,
             "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/statec_008.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 1080,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/statec_008.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 960
           }
         }
       },
@@ -403,6 +564,22 @@
             "width": null,
             "height": 480
           }
+        },
+        "large-w": {
+          "url": "/media/images/statec_009.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 1080,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/statec_009.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 960
+          }
         }
       },
       "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAUCAYAAACaq43EAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFYElEQVRIx02V60+PfxjH72ctc+rgXCJCDHMcWSRJTmPL+XycTJpMzGElZUIpWg4lhyIjJVkK0YGoCMWYYtk86En/w9te1293Pw8++54+3+t9vQ/XdTsNDQ2qra3Vq1ev9OLFCz179kw1NTWqr6/XnTt3tHr1aiUkJOjGjRvq7OxUd3e3SktLlZubq0WLFmnLli3Kzs7WlStX9Pz5c6v19OlTVVdXWz3qvnnzRuA0NjaqpaXFjvP+/Xu9fv3aTl1dnd69e2evb9++1enTpzVnzhw7UVFRunz5shWJi4tTdHS0jh49qvT0dCsOKI1+/vxZra2tKikpMWCXGP9ramrSly9f/gP+9OmTgXABQA7dwjonJ8cAFyxYoODgYPXt21ebNm3Svn37dOnSJTvcq6ysVGFhoQG7zFGEezRLfRSkNvdpwmlvb9fHjx+tG6SAcUVFhbKyspSWlqZly5Zp0KBB6tOnj6ZOnaqdO3caOL/dunVLDx8+1LVr13ThwgUDQw2s2bt3r0aNGqVx48bp6tWrBg5zCKKI8+PHDyE3P1RVVenevXt68uSJ8vPzdezYMSuGjzSQnJysVatWacOGDTp16pQyMjJMlaSkJB0/ftxkT0xMtOamTZumAQMGWMNhYWFmB6wBb2trk4MnsKQTQB88eKBv374Z60OHDpn3XESeR48eafny5Vq7dq3JCDD3yQJ3jxw5opMnT1ogUalfv35mz+DBg1VQUKAPHz4YFq8OMiMxSSUMMP/586d5debMGf3+/dtAuQfArFmzrPjFixdVVlZmhWAdGxurXbt2mdSLFy+Wj4+Pgfbv31+enp4mP3bCGDIO6ITp/v37evnypen/588fk51GsMIFgNWKFSsUHx+v4uJiff361YKVmZlp323evFlbt25VSEhID1svLy95eHiYVf+Oq0NBPiAzIL9+/dL379+ts46ODnV1dVlTWIHUBw8e7JGb9OJramqqAa9fv97OjBkzetgC3KtXL02ePNnqYCH/c5qbm60TpHaBSfrjx4+Vl5dn40CCCRNsJk6cqCFDhmjSpEn2PbJzCBfekviZM2caYxe4d+/eGjNmjG7fvq3y8nJbMA6eAswHtMdLAseonD9/XtevX7dz8+ZNSy+dMyIkm5E5fPiwMQacwG3bts0S/S8w7EePHq27d+/axMDaQVKo4ymRJ9GAk9aioiILGYflgFQ7duwwT8+ePWsKECY2WExMjNasWWPBYt4B5Xh7e9tI0Sz1IEiWHHdHIy3gdEPYWCCk+sSJE0pJSTFw0rtx40Zbl4QFnwHGd95HRkZq/vz5lnxmGLakG4+RH4JkCWUc0kloAOY9C4BNhH8UJDQHDhywJhihlStXWrJht2TJElsW+/fvt0QDCgDAzK7LGtmDgoIsA9xhDTswBJiRIWDnzp2zpw0rkNljPpGS8NAUks6dO9eeTAATJhd43rx5lmg3gL6+vsaY14CAAPN5xIgRJrtDyniSAIoHjAchQBJYb9++3aSG/e7duw1o6dKlWrdunYEsXLjQWPM5PDxcU6ZM0fjx4zVs2DAD9PPzsybY2zxoxo4dq+HDh/8PjNSEB2D8BIzdTEEYIzkpJlAkmyJDhw7teWRyCBVsKMzKBBhQWMIW8JEjR8rf318OwcJ0lgjAzC3SEySkZgvhDSFjc8EaAHycMGGCQkNDjcX06dOtoYEDB5q8brBgDhjgvCK5AZNqWOM1UuMt6SZobKHAwEALBHuauUb+PXv22PaChSstjGmGmWWEYIsiAKIAYLwH2KRGZjzFYx6FPHFoBFkBhQksYUzACNbs2bMVERHRw5QRo0kY4akrJ2xdUBfYBf8LruaimMMq5ewAAAAASUVORK5CYII="
@@ -439,6 +616,22 @@
             "size": "medium-h",
             "width": null,
             "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/statec_010.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 1080,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/statec_010.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 960
           }
         }
       },
