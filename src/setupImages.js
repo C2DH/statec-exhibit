@@ -1,6 +1,7 @@
 const fs = require('fs')
 const path = require('path')
 const sharp = require('sharp')
+const MediaIndex = require('./media/index.json')
 // script to
 const sourcePath = 'src/media/raw/images'
 const targetPath = 'public/media/images'
@@ -11,23 +12,26 @@ const targetParams = [
   ['thumb-h', null, 250],
   ['medium-w', 640, null],
   ['medium-h', null, 480],
+  ['large-w', 1080, null],
+  ['large-h', null, 960]
 ]
 console.log('sourcePath =', sourcePath)
 console.log('targetPath =', targetPath)
 console.log('mediaUrl =', mediaUrl)
 console.log('targetParams =', targetParams)
 console.log('mediaIndexPath =', mediaIndexPath)
-
+// console.log(MediaIndex.images)
 fs.readdir(sourcePath, async(err, files) => {
   if (err)
     throw err
   console.log(files)
   const mediaIndex = {
-    images: {}
+    ...MediaIndex
   }
   for (let filename of files) {
     const sourceFilepath = path.join(sourcePath, filename)
     mediaIndex.images[filename] = {
+      ...mediaIndex.images[filename],
       resolutions: {}
     }
     await sharp(sourceFilepath)
