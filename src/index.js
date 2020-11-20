@@ -10,6 +10,7 @@ import About from './About';
 import Contents from './Contents';
 
 const ChapterContainer = lazy(() => import('./ChapterContainer'));
+const DocumentViewer = lazy(() => import('./pages/DocumentViewer'));
 
 class App extends React.Component {
   render() {
@@ -24,6 +25,7 @@ class App extends React.Component {
         <Suspense fallback={<div>Loading...</div>}>
           <Switch>
             <Route exact path="/" component={Home} />
+            <Route path="/doc/:documentId" component={DocumentViewer} />
             <Route path="/:themeId" component={ChapterContainer} />
           </Switch>
         </Suspense>
