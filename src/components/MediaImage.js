@@ -1,6 +1,6 @@
 import React from 'react'
 import MediaIndex from '../media/index.json'
-
+import {Link} from 'react-router-dom'
 
 class MediaImage extends React.Component {
   state = {
@@ -44,7 +44,7 @@ class MediaImage extends React.Component {
 
   render() {
     const { currentImage, loading } = this.state
-    const { caption='', height='40vh', padding=5 } = this.props
+    const { caption='', height='40vh', padding=5, title='', id, to } = this.props
     return <figure
       style={{
         display: 'flex',
@@ -54,6 +54,10 @@ class MediaImage extends React.Component {
         margin: '0 auto',
       }}
     >
+      {title.length && (<h2 className="textContainerTitle" style={{
+        marginTop: 0,
+        // font-size: inherit,
+      }}>{title}</h2>)}
       <div style={{height:padding, backgroundColor: 'black'}}></div>
       <div style={{
         backgroundImage: `url(${currentImage})`,
@@ -66,14 +70,23 @@ class MediaImage extends React.Component {
         flexGrow: 1,
         overflow: 'hidden',
         borderLeft: `${padding}px solid`,
-        borderRight: `${padding}px solid`
+        borderRight: `${padding}px solid`,
+        position: 'relative'
       }}>
+      {to && <Link to={to} className="absolute tc" style={{
+        bottom:0, right:0,
+        backgroundColor: 'var(--accent)',
+        height: 30,
+        width: 30,
+        lineHeight: '30px'
+      }}>◹ </Link>}
       </div>
       <div style={{height:padding, backgroundColor: 'black'}}></div>
       <figcaption
         dangerouslySetInnerHTML={{ __html: caption }}
         style={{ padding, flexShrink: '1'}}
       />
+
     </figure>
     // return <img style={this.style(loading)} src={currentImage} alt={alt} {...rest}/>
   }

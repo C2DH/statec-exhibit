@@ -103,6 +103,8 @@ const TextContainer = ({
                 id={localParagraph.cover.id}
                 alt={localParagraph.cover.alt}
                 caption={localParagraph.cover.caption}
+                title={module.title}
+                to={`/doc/${localParagraph.cover.id}`}
               />
             : <NarrativeFigure
                 src={localParagraph.cover.url}
