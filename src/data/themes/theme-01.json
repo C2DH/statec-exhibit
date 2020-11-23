@@ -20,6 +20,8 @@
       "to": 2014,
       "datasetValueFrom": 150000,
       "datasetValueTo": 800000,
+      "datasetHeadingValueFrom": -8000,
+      "datasetHeadingValueTo": 18000,
       "datasetAdditionalTrends": ["v"],
       "datasetAdditionalTrendsColors": ["var(--primary)"],
       "moduleHotspots": [
@@ -83,18 +85,20 @@
     },
     {
       "title": "Une histoire à trois variables!",
-      "subheading": "Jusqu’aux années 1960 l’évolution du solde global s’explique essentiellement par le par le jeu entre <b>taux de mortalité</b> et <b>taux de natalité</b> appelé le <b>solde naturel</b>.",
+      "subheading": "Jusqu’aux années 1960 l’évolution du <b style='color:var(--primary);text-decoration:underline'>solde global</b> s’explique essentiellement par le par le jeu entre <em>taux de mortalité</em> et <em>taux de natalité</em> appelé le <b style='color:black;text-decoration:underline'>solde naturel</b>.",
       "layout": "text",
       "from": 1840,
       "to": 1960,
       "datasetHeading": "population-balance-details",
       "dataset": "trend-lux-population-growth",
-      "datasetHeadingAdditionalTrends": ["v", "v1", "v2", "v3", "v4"],
-      "datasetHeadingAdditionalTrendsColors": ["var(--primary)", "black","green", "blue", "gold"],
+      "datasetAdditionalTrends": ["v"],
+      "datasetAdditionalTrendsColors": ["var(--primary)"],
+      "datasetHeadingAdditionalTrends": ["v", "v1"],
+      "datasetHeadingAdditionalTrendsColors": ["var(--primary)", "black"],
       "datasetValueFrom": 150000,
       "datasetValueTo": 800000,
       "datasetHeadingValueFrom": -8000,
-      "datasetHeadingValueTo": 8000,
+      "datasetHeadingValueTo": 18000,
       "moduleHotspots": [
         {
           "t": "1940",
