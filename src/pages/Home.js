@@ -6,6 +6,7 @@ import { Scrollama, Step } from 'react-scrollama';
 import styles from './Home.module.css';
 import { isMobileWithTablet } from '../constants';
 import Covers from '../components/Cover/Cover';
+import { animated, useSpring } from 'react-spring';
 
 const STEPS = [
   {
@@ -45,6 +46,11 @@ const Home = () => {
     setCurrentStep({ index: data, direction });
     useStore.setState({ backgroundColor: STEPS[data].backgroundColor });
   };
+
+  const props = useSpring({
+    opacity: currentStep.index === 0 ? 1 : 0,
+  });
+
   return (
     <div className="home">
       <Covers
@@ -55,7 +61,7 @@ const Home = () => {
       <Scrollama onStepEnter={handleStepEnter} offset={0.5}>
         <Step data={0}>
           <div style={{ height: '100vh', overflow: 'hidden' }}>
-            <div
+            <animated.div
               className="mw9 center pa4 ph5-l"
               style={{
                 display: 'flex',
@@ -63,6 +69,7 @@ const Home = () => {
                 alignItems: 'center',
                 flexDirection: 'column',
                 height: '100vh',
+                opacity: props.opacity,
               }}
             >
               <h1 className="f2 f1-m tc mv0">
@@ -79,18 +86,18 @@ const Home = () => {
                 className="fw1 lh-title tc mt3"
                 style={{ fontSize: isMobileWithTablet ? '4vw' : '2vw' }}
               >
-                <span>
-                  {t('pagesHomeSubheading')}
-                </span>
+                <span>{t('pagesHomeSubheading')}</span>
               </h2>
-            </div>
+            </animated.div>
           </div>
         </Step>
         <Step data={1}>
           <div className={styles.stepWrapper}>
             <div className="mw9 center pa4 pt5-ns ph5-l">
               <h2 className="f2-ns f3 fw1 lh-title tc">
-                {t('pagesHomeParagraph01')}<br/><br/>
+                {t('pagesHomeParagraph01')}
+                <br />
+                <br />
                 {t('pagesHomeParagraph02')}
               </h2>
             </div>

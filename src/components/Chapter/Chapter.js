@@ -1,4 +1,4 @@
-import React, { Component} from 'react';
+import React, { Component } from 'react';
 import { Scrollama, Step } from 'react-scrollama';
 import { isMobileWithTablet } from '../../constants';
 import { Spring, animated } from 'react-spring/renderprops';
@@ -26,9 +26,19 @@ class Chapter extends Component {
       this.setState({ steps: steps });
     }
     this.timerID = setTimeout(() => {
-      console.info('Chapter @componentDidMount: resize should update Scrollama')
+      console.info(
+        'Chapter @componentDidMount: resize should update Scrollama',
+      );
       window.dispatchEvent(new Event('resize'));
-    }, 20)
+    }, 20);
+
+    const img = new Image();
+    img.src = this.props.theme.cover.url; // by setting an src, you trigger browser download
+
+    img.onload = () => {
+      // when it finishes loading, update the component state
+      this.setState({ imageIsReady: true });
+    };
   }
 
   componentWillUnmount() {
@@ -66,7 +76,7 @@ class Chapter extends Component {
   };
 
   render() {
-    const { progress, data } = this.state;
+    const { progress, data, imageIsReady } = this.state;
     const {
       theme,
       // headColor,
@@ -108,51 +118,56 @@ class Chapter extends Component {
                   backgroundClipPath:
                     'polygon(50% 0%, 50% 0%, 50% 100%, 50% 100%)',
                 }}
-                config={{
-                  duration: 500,
-                  tension: 0,
-                  friction: 0,
-                  precision: 0.01,
-                }}
+                delay={1000}
               >
                 {(props) => (
                   <animated.div
                     className="chapterFrame"
                     style={{
-                      // transition: 'clip-path .5s ease-in-out',
                       clipPath: props.backgroundClipPath,
                     }}
                   >
-                    <div
-                      className="bg"
-                      style={{
-                        // willChange: 'transform',
-                        backgroundImage: `url(${theme.cover.url})`,
-                      }}
-                    />
+                    <img src={theme.cover.url} />
                   </animated.div>
                 )}
               </Spring>
-              <div className="chapterCoverWrapper withCover">
-                <div className="section-small">
-                  <h2
-                    className="sans mv0"
-                    style={{
-                      fontSize: isMobileWithTablet ? '4.5vw' : '2.5vw',
-                    }}
-                  >{`Chapter ${chapterIndex}`}</h2>
-                  <h1
-                    className="tc"
-                    style={{
-                      fontSize: '8vw',
-                      marginTop: '10px',
-                      marginBottom: '80px',
-                    }}
-                  >
-                    {theme.title}
-                  </h1>
-                </div>
-              </div>
+              <Spring
+                to={{
+                  opacity: 1,
+                }}
+                from={{
+                  opacity: 0,
+                }}
+                delay={100}
+              >
+                {(props) => (
+                  <div className="chapterCoverWrapper withCover">
+                    <animated.div
+                      className="section-small"
+                      style={{
+                        opacity: props.opacity,
+                      }}
+                    >
+                      <h2
+                        className="sans mv0"
+                        style={{
+                          fontSize: isMobileWithTablet ? '4.5vw' : '2.5vw',
+                        }}
+                      >{`Chapter ${chapterIndex}`}</h2>
+                      <h1
+                        className="tc"
+                        style={{
+                          fontSize: '8vw',
+                          marginTop: '10px',
+                          marginBottom: '80px',
+                        }}
+                      >
+                        {theme.title}
+                      </h1>
+                    </animated.div>
+                  </div>
+                )}
+              </Spring>
             </div>
           </div>
         )}
