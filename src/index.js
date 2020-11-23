@@ -1,6 +1,9 @@
 import React, { Suspense, lazy } from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import i18n from 'i18next';
+import moment from 'moment';
+import { initReactI18next } from 'react-i18next';
 import 'tachyons';
 import './index.css';
 import Header from './components/Header';
@@ -8,9 +11,11 @@ import MainBackground from './components/MainBackground';
 import Home from './pages/Home';
 import About from './About';
 import Contents from './Contents';
+import translations from './translations'
 
 const ChapterContainer = lazy(() => import('./ChapterContainer'));
 const DocumentViewer = lazy(() => import('./pages/DocumentViewer'));
+
 
 class App extends React.Component {
   render() {
@@ -34,7 +39,29 @@ class App extends React.Component {
   }
 }
 
-ReactDOM.render(<App />, document.getElementById('root'));
+
+i18n
+  .use(initReactI18next) // passes i18n down to react-i18next
+  .init({
+    resources: translations,
+    lng: 'en-US',
+    interpolation: {
+      escapeValue: false, // react already safes from xss
+      format: function(value, format, lng) {
+        if(value instanceof Date) {
+          if (format === 'fromNow') {
+            return moment(value).fromNow()
+          }
+          return moment(value).format(format)
+        }
+        return value;
+      }
+    }
+  }).then( () => {
+    console.info('translations loaded')
+    ReactDOM.render(<App />, document.getElementById('root'));
+  })
+
 //registerServiceWorker();
 
 console.info('version',
