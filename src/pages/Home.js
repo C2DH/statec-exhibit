@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 // import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { useStore } from '../store';
 import { Scrollama, Step } from 'react-scrollama';
 import styles from './Home.module.css';
@@ -14,9 +15,15 @@ const STEPS = [
     url: '/0.landing.jpg',
   },
   {
+    id: 1,
+    backgroundColor: 'var(--accent)',
+    backgroundClipPath: 'polygon(49% 0%, 49% 0%, 51% 100%, 51% 100%)',
+    //url: 'https://ww1.lu/media/image/snapshots/nxwsWaG.medium.jpg',
+  },
+  {
     id: 2,
     backgroundColor: 'var(--accent)',
-    backgroundClipPath: 'polygon(50% 0%, 50% 0%, 50% 100%, 50% 100%)',
+    backgroundClipPath: 'polygon(49% 0%, 49% 0%, 51% 100%, 51% 100%)',
     //url: 'https://ww1.lu/media/image/snapshots/nxwsWaG.medium.jpg',
   },
   {
@@ -28,6 +35,7 @@ const STEPS = [
 ];
 
 const Home = () => {
+  const { t } = useTranslation();
   const [currentStep, setCurrentStep] = useState({
     index: -1,
     direction: 'down',
@@ -64,7 +72,7 @@ const Home = () => {
                     fontSize: isMobileWithTablet ? '16vw' : '8vw',
                   }}
                 >
-                  Framing Luxembourg
+                  {t('pagesHomeTitle')}
                 </span>
               </h1>
               <h2
@@ -72,8 +80,7 @@ const Home = () => {
                 style={{ fontSize: isMobileWithTablet ? '4vw' : '2vw' }}
               >
                 <span>
-                  In the 19th century, statistics became a central tool for
-                  framing social realities.
+                  {t('pagesHomeSubheading')}
                 </span>
               </h2>
             </div>
@@ -83,10 +90,8 @@ const Home = () => {
           <div className={styles.stepWrapper}>
             <div className="mw9 center pa4 pt5-ns ph5-l">
               <h2 className="f2-ns f3 fw1 lh-title tc">
-                Through the categories they offer, they made things visible but
-                hid others. Telling the history of how a territory was “put
-                into numbers” over the last 200 years unveils the different
-                stories that the Luxembourg state choose to tell.
+                {t('pagesHomeParagraph01')}<br/><br/>
+                {t('pagesHomeParagraph02')}
               </h2>
             </div>
           </div>

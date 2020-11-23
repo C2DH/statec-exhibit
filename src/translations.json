@@ -1,0 +1,14 @@
+{
+  "en-US": {
+    "translation": {
+      "demographicBalance": "person",
+      "demographicBalance_plural": "people",
+      "demographicBalanceWithCount": "<b>{{count}}</b> person in {{year}}",
+      "demographicBalanceWithCount_plural": "<b>{{count}}</b> people in {{year}}",
+      "pagesHomeSubheading": "A history of Luxemborug in statistics / a history of statistics in Luxembourg",
+      "pagesHomeTitle": "Framing Luxembourg",
+      "pagesHomeParagraph01": "In the 19th century, statistics became a central tool for framing social realities.",
+      "pagesHomeParagraph02": "Through the categories they offer, they made things visible but hid others. Telling the history of how a territory was “put into numbers” over the last 200 years unveils the different stories that the Luxembourg state choose to tell."
+    }
+  }
+}
