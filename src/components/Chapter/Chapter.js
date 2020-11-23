@@ -1,15 +1,10 @@
-import React, { Component, Fragment, Suspense } from 'react';
+import React, { Component} from 'react';
 import { Scrollama, Step } from 'react-scrollama';
 import { isMobileWithTablet } from '../../constants';
-import { Spring, animated, config } from 'react-spring/renderprops';
+import { Spring, animated } from 'react-spring/renderprops';
 import Container from './Container';
 import TextContainer from './TextContainer';
 import Trend from '../Trend';
-import { duration } from 'moment';
-
-// const ImageContainer = React.lazy(() =>
-//   import('../ImageContainer/ImageContainer'),
-// );
 
 class Chapter extends Component {
   constructor(props) {
@@ -30,9 +25,14 @@ class Chapter extends Component {
       );
       this.setState({ steps: steps });
     }
-    setTimeout(() => {
+    this.timerID = setTimeout(() => {
+      console.info('Chapter @componentDidMount: resize should update Scrollama')
       window.dispatchEvent(new Event('resize'));
     }, 20)
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.timerID);
   }
 
   onStepEnter = ({ element, data }) => {
