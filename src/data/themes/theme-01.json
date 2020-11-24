@@ -84,7 +84,7 @@
       ]
     },
     {
-      "title": "Une histoire à trois variables!",
+      "title": "Une histoire à trois variables! 1/2",
       "subheading": "Jusqu’aux années 1960 l’évolution du <b style='color:var(--primary);text-decoration:underline'>solde global</b> s’explique essentiellement par le par le jeu entre <em>taux de mortalité</em> et <em>taux de natalité</em> appelé le <b style='color:black;text-decoration:underline'>solde naturel</b>.",
       "layout": "text",
       "from": 1840,
@@ -115,7 +115,158 @@
       ]
     },
     {
-      "title": "Une croissance démographique exceptionnelle sur le long terme.",
+      "title": "Une histoire à trois variables! 2/2",
+      "subheading": "Après les années 1960 .... solde migratoire",
+      "layout": "text",
+      "from": 1960,
+      "to": 2014,
+      "datasetHeading": "population-balance-details",
+      "dataset": "trend-lux-population-growth",
+      "datasetAdditionalTrends": ["v"],
+      "datasetAdditionalTrendsColors": ["var(--primary)"],
+      "datasetHeadingAdditionalTrends": ["v", "v1", "v4"],
+      "datasetHeadingAdditionalTrendsColors": ["var(--primary)", "black", "blue"],
+      "datasetValueFrom": 150000,
+      "datasetValueTo": 800000,
+      "datasetHeadingValueFrom": -8000,
+      "datasetHeadingValueTo": 18000,
+      "moduleHotspots": [
+        {
+          "t": "1970",
+          "l": ""
+        }
+      ],
+      "paragraphs": [
+        {
+          "from": 1960,
+          "to": 1970,
+          "text": "D’abord immigration allemande (sidérurgie/mines), puis italienne à partir de la fin du 19ème siècle  (sidérurgie/mines) et jusque dans les années 1960"
+        },
+        {
+          "from": 1971,
+          "to": 1980,
+          "text": "immigration portugaise (à partir de la fin des années 1960, surtout dans le secteur de la construction)"
+        }
+      ]
+    },
+    {
+      "title": "Un pays de migrations",
+      "subheading": "",
+      "layout": "text",
+      "from": 1840,
+      "to": 2014,
+      "datasetHeading": "population-balance-details",
+      "dataset": "trend-lux-population-growth",
+      "datasetAdditionalTrends": ["v"],
+      "datasetAdditionalTrendsColors": ["var(--primary)"],
+      "datasetHeadingAdditionalTrends": ["v", "v4"],
+      "datasetHeadingAdditionalTrendsColors": ["var(--primary)", "blue"],
+      "datasetValueFrom": 150000,
+      "datasetValueTo": 800000,
+      "datasetHeadingValueFrom": -8000,
+      "datasetHeadingValueTo": 18000,
+      "moduleHotspots": [
+        {
+          "t": "1970",
+          "l": ""
+        }
+      ],
+      "paragraphs": [
+        {
+          "from": 1840,
+          "to": 1900,
+          "text": "Pays pauvre au 19e siècle, le Luxembourg connaît longtemps un solde migratoire négatif, comme la plupart des pays européens. "
+        },
+        {
+          "from": 1901,
+          "to": 1950,
+          "text": "A partir du 20e siècle, un certain équilibre s’installe même si en moments de crise (crise économique, guerres) , des pics d’émigration peuvent encore être observés."
+        },
+        {
+          "from": 1960,
+          "to": 1990,
+          "text": "A partir des années 1960, le Luxembourg devient largement un pays d’immigration avec un solde migratoire positif important."
+        }
+      ]
+    },
+    {
+      "title": "Un pays de migrations (2/2)",
+      "subheading": "",
+      "datasetHeading": "migratory-balance",
+      "dataset": "arrivals-by-nationalities",
+      "layout": "flowers",
+      "from": 1950,
+      "to": 1980,
+      "extent": [0, 2500],
+      "groups": ["France", "Germany"],
+      "paragraphs": [
+        {
+          "from": 1962,
+          "to": 1970,
+          "year": "60s",
+          "text": "60s"
+        }
+      ]
+    },
+    {
+      "title": "Un pays de migrations (Germany vs Italy)",
+      "subheading": "",
+      "datasetHeading": "migratory-balance",
+      "dataset": "arrivals-by-nationalities",
+      "layout": "flowers",
+      "from": 1950,
+      "to": 1980,
+      "extent": [0, 6000],
+      "groups": ["Germany", "Italy"],
+      "paragraphs": [
+        {
+          "from": 1960,
+          "to": 1970,
+          "year": "60s",
+          "text": "60s"
+        }
+      ]
+    },
+    {
+      "title": "Un pays de migrations (Italy vs Portugal)",
+      "subheading": "",
+      "datasetHeading": "migratory-balance",
+      "dataset": "arrivals-by-nationalities",
+      "layout": "flowers",
+      "from": 1950,
+      "to": 1980,
+      "extent": [0, 6000],
+      "groups": ["Italy", "Portugal"],
+      "paragraphs": [
+        {
+          "from": 1960,
+          "to": 1970,
+          "year": "60s",
+          "text": "60s"
+        }
+      ]
+    },
+    {
+      "title": "Un pays de migrations (Italy vs Portugal)",
+      "subheading": "",
+      "datasetHeading": "migratory-balance",
+      "dataset": "arrivals-by-nationalities",
+      "layout": "flowers",
+      "from": 1980,
+      "to": 2000,
+      "extent": [0, 6000],
+      "groups": ["Italy", "Portugal"],
+      "paragraphs": [
+        {
+          "from": 1980,
+          "to": 2000,
+          "year": "80s",
+          "text": "80s"
+        }
+      ]
+    },
+    {
+      "title": "(old) Une croissance démographique exceptionnelle sur le long terme.",
       "subheading": "La population du Luxembourg a plus que triplé depuis 1839 (date de l'indpendance du pays). De quelque <b>170.000</b> habitants en 1839, la population du Grand-Duché passe à plus de <b>600.000</b> aujourd'hui.",
       "datasetHeading": "population-growth-details",
       "dataset": "trend-lux-population-growth",
@@ -141,7 +292,7 @@
       ]
     },
     {
-      "title": "Une croissance démographique exceptionnelle sur le long terme.",
+      "title": "(old) Une croissance démographique exceptionnelle sur le long terme.",
       "subheading": "La population du Luxembourg a plus que triplé depuis 1839 (date de l'indpendance du pays). De quelque <b>170.000</b> habitants en 1839 , la population du Grand-Duché passe à plus de <b>600.000</b> aujourd'hui.",
       "datasetHeading": "population-balance",
       "dataset": "trend-lux-population-growth",
