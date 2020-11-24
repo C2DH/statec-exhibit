@@ -17,11 +17,26 @@ const Flower = ({
   width,
   height,
   extentValues = [],
+  extentDates = [],
+  fill="#EDEDED",
+  stroke="black",
 } = {}) => {
   const title = data.group;
   let selectedTime = null;
-  const dataArray = Object.values(data.keys);
-  const keysArray = Object.keys(data.keys);
+  // console.info('Flower extentDates', extentDates, data):
+  let entries = Object.entries(data.keys)
+  if (extentDates.length) {
+    entries = entries.filter(([key, value]) => {
+      const year = parseInt(key, 10)
+      return year >= extentDates[0] && year <= extentDates[1]
+    })
+  }
+  const dataArray = [] // Object.values(data.keys);
+  const keysArray = [] // Object.keys(data.keys);
+  entries.forEach(([key, value]) => {
+    dataArray.push(value)
+    keysArray.push(key)
+  })
   const dates = keysArray.map((d) => {
     if (d.includes('-')) {
       const splitted = d.split('-');
@@ -66,6 +81,10 @@ const Flower = ({
         margin: isMobileWithTablet ? '0 auto' : 0,
       }}
     >
+      <div className="tc absolute h-50 bl" style={{
+        left: '50%',
+        zIndex:-1,
+      }}><span className="pl2">{minDate}</span></div>
       <svg width={dimension} height={dimension}>
         <defs>
           <linearGradient
@@ -81,8 +100,11 @@ const Flower = ({
             <stop offset="100%" stopColor={colorC} stopOpacity={1} />
           </linearGradient>
         </defs>
+        <g transform={`translate(${dimension / 2},0)`}>
+          <text>{minDate}</text>
+        </g>
         <g transform={`translate(${dimension / 2},${dimension / 2})`}>
-          <circle cx={0} cy={0} r={radius * 1} stroke={'none'} fill="#EDEDED" />
+          <circle cx={0} cy={0} r={radius * 1} stroke={stroke} fill={fill} />
           {dataArray.map((d, i) => {
             const isNegative = d.v < 0;
             const angle = (dataArray.length - i) * angleD + Math.PI;
@@ -166,9 +188,11 @@ const Flower = ({
           justifyContent: 'center',
           textAlign: 'center',
           position: 'absolute',
-          top: isMobileWithTablet ? '0' : '0',
-          width: isMobileWithTablet ? '100%' : '100%',
-          left: '0',
+          // top: isMobileWithTablet ? '0' : '0',
+          // width: isMobileWithTablet ? '100%' : '100%',
+          bottom: 0,
+          left: 20,
+          right: 20,
           marginTop: '0px',
           display: 'flex',
           alignItems: 'center',

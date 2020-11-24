@@ -52,6 +52,7 @@ const Container = ({
                   return module.groups.includes(v.group);
                 }
               })
+              // filter by date
               .slice(0, isMobileWithTablet ? 1 : 2)
               .map((v, j) => {
                 return (
@@ -61,7 +62,7 @@ const Container = ({
                       width: isMobileWithTablet ? '100%' : '50%',
                       paddingTop: isMobileWithTablet ? 0 : '4vh',
                       display: 'flex',
-                      alignItems: 'center',
+                      alignItems: 'top',
                     }}
                   >
                     <Flower
@@ -69,6 +70,7 @@ const Container = ({
                       colorB={'#f8b294'}
                       colorC={'#F77DA6'}
                       data={v}
+                      extentDates={[from, to]}
                       extentValues={extentValues}
                       height={
                         isMobileWithTablet
