@@ -159,7 +159,6 @@ const TextContainer = ({
           </div>
         </div>
       </div>
-      {isLast && <Link chapterIndex={chapterIndex} />}
     </div>
   );
 };
