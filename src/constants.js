@@ -10,3 +10,13 @@ export const isMobileC = isMobile ? true : false;
 export const isTabletC = isTablet ? true : false;
 
 export const red = '#d03a45';
+
+export const ChapterRouteIndex = { to:'/', label: 'ChapterRouteIndex'}
+export const ChapterRouteCountryOfMigration = { to:'/a-country-of-migration', label: 'ChapterRouteCountryOfMigration'}
+export const ChapterRouteFamily = { to:'/family', label: 'ChapterRouteFamily'}
+
+export const ChapterRoutes = [
+  ChapterRouteIndex,
+  ChapterRouteCountryOfMigration,
+  ChapterRouteFamily
+]
