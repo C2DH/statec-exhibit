@@ -66,6 +66,17 @@
   opacity: 0.65;
 }
 
+.bg {
+  position: absolute;
+  top: 15%;
+  bottom: 15%;
+  left: 15%;
+  right: 15%;
+  background-size: cover;
+  background-position: 50%;
+  will-change: opacity;
+}
+
 @media (min-width: 600px) {
   .stepWrapper {
     padding: 40vh 150px 20vh;

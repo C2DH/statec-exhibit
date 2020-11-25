@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useTransition, animated, useSpring } from 'react-spring';
 import styles from '../../pages/Home.module.css';
+import { isMobileWithTablet } from '../../constants';
 
 const Cover = ({ steps, index, direction }) => {
   const step = steps[index > -1 ? index : 0];
@@ -47,17 +48,28 @@ const Cover = ({ steps, index, direction }) => {
           transitionDelay: '.8s',
         }}
       >
-        <animated.div
-          className="bg"
-          style={{
-            clipPath: props.backgroundClipPath,
-            display: 'flex',
-            alignItems: 'center',
-            opacity: props.opacity,
-          }}
-        >
-          <img src={step.url} />
-        </animated.div>
+        {isMobileWithTablet ? (
+          <animated.div
+            className="bg"
+            style={{
+              ...props,
+              willChange: 'transform',
+              backgroundImage: `url(${step.url})`,
+            }}
+          />
+        ) : (
+          <animated.div
+            className="bg"
+            style={{
+              clipPath: props.backgroundClipPath,
+              display: 'flex',
+              alignItems: 'center',
+              opacity: props.opacity,
+            }}
+          >
+            <img src={step.url} />
+          </animated.div>
+        )}
       </div>
     </div>
   );

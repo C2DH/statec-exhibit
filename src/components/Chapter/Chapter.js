@@ -109,28 +109,54 @@ class Chapter extends Component {
                 position: 'absolute',
               }}
             >
-              <Spring
-                to={{
-                  backgroundClipPath:
-                    'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)',
-                }}
-                from={{
-                  backgroundClipPath:
-                    'polygon(50% 0%, 50% 0%, 50% 100%, 50% 100%)',
-                }}
-                delay={1000}
-              >
-                {(props) => (
-                  <animated.div
-                    className="chapterFrame"
-                    style={{
-                      clipPath: props.backgroundClipPath,
-                    }}
-                  >
-                    <img src={theme.cover.url} />
-                  </animated.div>
-                )}
-              </Spring>
+              {isMobileWithTablet ? (
+                <Spring
+                  to={{
+                    backgroundClipPath:
+                      'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)',
+                  }}
+                  from={{
+                    backgroundClipPath:
+                      'polygon(50% 0%, 50% 0%, 50% 100%, 50% 100%)',
+                  }}
+                  delay={1000}
+                >
+                  {(props) => (
+                    <animated.div
+                      className="bg"
+                      style={{
+                        // willChange: 'transform',
+                        clipPath: props.backgroundClipPath,
+                        backgroundImage: `url(${theme.cover.url})`,
+                        opacity: props.opacity,
+                      }}
+                    />
+                  )}
+                </Spring>
+              ) : (
+                <Spring
+                  to={{
+                    backgroundClipPath:
+                      'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)',
+                  }}
+                  from={{
+                    backgroundClipPath:
+                      'polygon(50% 0%, 50% 0%, 50% 100%, 50% 100%)',
+                  }}
+                  delay={1000}
+                >
+                  {(props) => (
+                    <animated.div
+                      className="chapterFrame"
+                      style={{
+                        clipPath: props.backgroundClipPath,
+                      }}
+                    >
+                      <img src={theme.cover.url} />
+                    </animated.div>
+                  )}
+                </Spring>
+              )}
               <Spring
                 to={{
                   opacity: 1,
@@ -157,7 +183,7 @@ class Chapter extends Component {
                       <h1
                         className="tc"
                         style={{
-                          fontSize: '8vw',
+                          fontSize: isMobileWithTablet ? '16vw' : '8vw',
                           marginTop: '10px',
                           marginBottom: '80px',
                         }}
