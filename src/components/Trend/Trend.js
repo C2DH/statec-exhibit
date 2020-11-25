@@ -37,6 +37,7 @@ const Trend = ({
   hotspots = [],
   additionalTrends = [],
   additionalTrendsColors = [],
+  additionalTrendsLegend,
 } = {}) => {
   const [show, setShow] = useState(true);
   const [pathLength, setPathLength] = useState(1000);
@@ -187,6 +188,7 @@ const Trend = ({
             value={actualValue}
             date={actualYear}
             legend={legend}
+            additionalTrendsLegend={additionalTrendsLegend}
             additionalTrendsColors={additionalTrendsColors}
             additionalTrends={additionalTrends}
           />
@@ -411,6 +413,7 @@ const Trend = ({
             value={actualValue}
             date={actualYear}
             legend={legend}
+            additionalTrendsLegend={additionalTrendsLegend}
             additionalTrendsColors={additionalTrendsColors}
             additionalTrends={additionalTrends}
           />
