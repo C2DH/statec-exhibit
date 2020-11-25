@@ -44,7 +44,7 @@ class MediaImage extends React.Component {
 
   render() {
     const { currentImage, loading } = this.state
-    const { caption='', height='40vh', padding=5, title='', id, to } = this.props
+    const { caption='', height='40vh', padding=5, title='', to } = this.props
     return <figure
       style={{
         display: 'flex',
@@ -54,7 +54,7 @@ class MediaImage extends React.Component {
         margin: '0 auto',
       }}
     >
-      {title.length && (<h2 className="textContainerTitle" style={{
+      {!!title.length && (<h2 className="textContainerTitle" style={{
         marginTop: 0,
         // font-size: inherit,
       }}>{title}</h2>)}
