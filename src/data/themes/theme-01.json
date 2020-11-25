@@ -84,7 +84,7 @@
       ]
     },
     {
-      "title": "Une histoire à trois variables! 1/2",
+      "title": "Une histoire à deux variables!",
       "subheading": "Jusqu’aux années 1960 l’évolution du <b style='color:var(--primary);text-decoration:underline'>solde global</b> s’explique essentiellement par le par le jeu entre <em>taux de mortalité</em> et <em>taux de natalité</em> appelé le <b style='color:black;text-decoration:underline'>solde naturel</b>.",
       "layout": "text",
       "from": 1840,
@@ -126,6 +126,7 @@
       "datasetAdditionalTrendsColors": ["var(--primary)"],
       "datasetHeadingAdditionalTrends": ["v", "v1", "v4"],
       "datasetHeadingAdditionalTrendsColors": ["var(--primary)", "black", "blue"],
+      "datasetHeadingAdditionalTrendsLegend": "legendPopulationBalanceDetails",
       "datasetValueFrom": 150000,
       "datasetValueTo": 800000,
       "datasetHeadingValueFrom": -8000,
