@@ -123,9 +123,8 @@ class Chapter extends Component {
                 >
                   {(props) => (
                     <animated.div
-                      className="bg"
+                      className="chapterBg"
                       style={{
-                        // willChange: 'transform',
                         clipPath: props.backgroundClipPath,
                         backgroundImage: `url(${theme.cover.url})`,
                         opacity: props.opacity,
