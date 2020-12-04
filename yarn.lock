@@ -10535,9 +10535,10 @@ react-scripts@3.4.0:
   optionalDependencies:
     fsevents "2.1.2"
 
-"react-scrollama@git://github.com/C2DH/react-scrollama.git#patch-threshold-NaN-dist":
-  version "2.2.12"
-  resolved "git://github.com/C2DH/react-scrollama.git#f0876e09ac633ece762216fc85bb2f424a124850"
+react-scrollama@^2.2.14:
+  version "2.2.14"
+  resolved "https://registry.yarnpkg.com/react-scrollama/-/react-scrollama-2.2.14.tgz#e80d95ddafedcfb604aef6507fd51d5080c8ecbe"
+  integrity sha512-dFK916USBSq9hoZ/svG+JcrwyKSLs1gaa0fsKCRQlfelCV7tAEFZriIz8p50xZ9aoV4WU0Urt8jwYOt1q3t1qQ==
 
 react-spring@^8.0.27:
   version "8.0.27"
