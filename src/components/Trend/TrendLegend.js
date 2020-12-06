@@ -20,26 +20,31 @@ class TrendLegend extends React.Component {
       return null
     }
     const mainValue = value[valueKey]
+    const filteredAdditionalTrends = additionalTrends.map((k,i) => ({
+      k,
+      color: additionalTrendsColors[i],
+    })).filter(d => d.k !== valueKey)
+
     return (
       <div className="moduleProgress TrendLegend">
-          <div>
+          <span>
             <span className="underline mr2">{mainValue}</span>
             <span>
-              {legend?.v} in {date}
+              {legend?.v}
             </span>
-          </div>
-          <div  className="mt2" style={{
-            fontSize: 12,
+          </span>
+          <span style={{
             color: 'rgba(0, 0, 0, 0.5)',
           }}>
-          {additionalTrends.map((k,i) => (
-            k === valueKey
-            ? null
-            : <span key={i}>{legend[k]} <b className="ba pa1" style={{
-              color: additionalTrendsColors[i]
-              }}>{value[k]}</b> </span>
+          {filteredAdditionalTrends.map(({ k, color }, i) => (
+            <span key={i} style={{ color }}>
+              &nbsp;&middot;&nbsp;
+              <span style={{ textDecoration: 'underline' }}>{value[k]}</span>
+              &nbsp;
+              <span>{legend[k]}</span>
+            </span>
           ))}
-          </div>
+          </span>
       </div>
     );
   }
