@@ -35,6 +35,12 @@ body,
   --accent: #ffc09d;
   --theme-01: #bfe8ed;
   --theme-02: #b4ebc8;
+  --font-family-serif: 'SneakyTimes', serif;
+  --font-family-sans: 'Porpora', Arial, sans-serif;
+  --spacer-1: 5px;
+  --spacer-2: 10px;
+  --spacer-3: 30px;
+  --spacer-4: 45px;
 }
 
 h1,
@@ -48,6 +54,8 @@ h6,
   font-family: 'SneakyTimes', serif;
   font-weight: 100;
 }
+
+
 
 h1 {
   font-size: 8vh;
