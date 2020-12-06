@@ -16,7 +16,7 @@ class MediaImage extends React.Component {
         currentImage: this.media.base64,
         loading: true
       }, () => {
-        setTimeout(() => this.fetchImage(this.media.resolutions[this.props.resolutions ?? 'medium-h'].url), 50)
+        this.timerId = setTimeout(() => this.fetchImage(this.media.resolutions[this.props.resolutions ?? 'medium-h'].url), 50)
       })
     } else {
       console.error('cannot initialize MediaImage, wrong identifier', this.props.id)
@@ -31,6 +31,7 @@ class MediaImage extends React.Component {
     if (this.loadingImage) {
       this.loadingImage.onload = null
     }
+    clearTimeout(this.timerId)
   }
 
   fetchImage(src) {
