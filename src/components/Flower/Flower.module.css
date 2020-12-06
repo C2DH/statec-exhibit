@@ -1,0 +1,15 @@
+.FlowerLegend{
+  color: var(--secondary);
+  font-family: var(--font-family-serif);
+  text-align: center;
+  padding: 0 var(--spacer-3) var(--spacer-3) ;
+}
+
+.FlowerLegendDetails{
+  color: rgba(0, 0, 0, 0.5);
+  font-family: var(--font-family-sans);
+  font-weight: 'normal';
+  font-size: 12px;
+  line-height: 14px;
+  margin-top: var(--spacer-1);
+}
