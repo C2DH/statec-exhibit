@@ -1,7 +1,7 @@
 {
   "id": "a-country-of-migrations",
   "chapterIndex": "1",
-  "title": "Les chiffres des migrations",
+  "title": "A Country of Migrations",
   "dataset": "population",
   "backgroundColor": "var(--theme-01)",
   "cover": {
@@ -12,7 +12,7 @@
   "modules": [
     {
       "title": "Une croissance démographique exceptionnelle sur le long terme.",
-      "subheading": "La population du Luxembourg a plus que triplé depuis 1839 (date de l'indpendance du pays). De quelque <b>170.000</b> habitants en 1839 , la population du Grand-Duché passe à plus de <b>600.000</b> aujourd'hui.",
+      "subheading": "La population du Luxembourg a plus que triplé depuis 1839 (date de l'indpendance du pays). De quelque 170.000 habitants en 1839, la population du Grand-Duché passe à plus de 600.000 aujourd'hui.",
       "datasetHeading": "population-balance",
       "dataset": "trend-lux-population-growth",
       "layout": "text",
