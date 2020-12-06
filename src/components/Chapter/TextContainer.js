@@ -39,7 +39,6 @@ const TextContainer = ({
   chapterIndex,
 }) => {
   //const props = useSpring({ opacity: 1, from: { opacity: 0 } });
-
   const opacityScale = scaleLinear()
     .domain([0, 0.2, 0.8, 0.95])
     .range([0, 1, 1, 0]);
@@ -58,13 +57,13 @@ const TextContainer = ({
     return null;
   }
 
-  const localParagraph = chapter.paragraphs.find(
+  const localParagraphIndex = chapter.paragraphs.findIndex(
     (p) => localYear >= p.from && localYear <= p.to,
-  );
+  )
+  const localParagraph = chapter.paragraphs[localParagraphIndex];
   const hasCover = !!localParagraph?.cover;
-
-  console.log('hasCover', hasCover);
-
+  const showModuleSubheading = module.subheading && localParagraphIndex < 1
+  console.info('localParagraphIndex', localParagraphIndex, showModuleSubheading, localYear)
   return (
     <div
       className="scrollSection"
@@ -122,7 +121,7 @@ const TextContainer = ({
               >
                 {module.title}
               </div>
-              {module.subheading && (
+              {showModuleSubheading && (
                 <div
                   className="textContainerSubTitle"
                   dangerouslySetInnerHTML={{
