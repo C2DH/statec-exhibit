@@ -5,6 +5,8 @@ import { Spring, animated } from 'react-spring/renderprops';
 import Container from './Container';
 import TextContainer from './TextContainer';
 import Trend from '../Trend';
+import ChapterFooter from './ChapterFooter';
+
 
 class Chapter extends Component {
   constructor(props) {
@@ -301,7 +303,7 @@ class Chapter extends Component {
                 </div>
                 <div className="hr"></div>
               </div>
-              <div style={{ overflow: 'hidden' }}>
+              <div>
                 <Scrollama
                   onStepEnter={this.onStepEnter}
                   onStepExit={this.onStepExit}
@@ -361,6 +363,7 @@ class Chapter extends Component {
               <div style={{ height: '120px' }}></div>
             </div>
           </div>
+          <ChapterFooter chapterIndex={chapterIndex} />
         </div>
       </div>
     );

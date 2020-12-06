@@ -7,10 +7,12 @@ import { initReactI18next } from 'react-i18next';
 import 'tachyons';
 import './index.css';
 import Header from './components/Header';
+import ScrollToTop from './components/ScrollToTop';
 import MainBackground from './components/MainBackground';
 import Home from './pages/Home';
 import About from './About';
 import Contents from './Contents';
+
 import translations from './translations'
 
 const ChapterContainer = lazy(() => import('./ChapterContainer'));
@@ -21,6 +23,7 @@ class App extends React.Component {
   render() {
     return (
       <BrowserRouter>
+        <ScrollToTop />
         <Header />
         <MainBackground />
         <Suspense fallback={''}>

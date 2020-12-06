@@ -2,11 +2,10 @@ import React, { useEffect, useState, useMemo } from 'react';
 import moment from 'moment';
 import { scaleTime, scaleLinear } from 'd3-scale';
 import { extent } from 'd3-array';
-import { LinePath, Line } from '@vx/shape';
-import { curveMonotoneX } from '@vx/curve';
-import { isMobileWithTablet } from '../constants';
-import { red } from '../constants';
-import { useStore } from '../store';
+import { Line } from '@vx/shape';
+import { isMobileWithTablet } from '../../constants';
+import { red } from '../../constants';
+import { useStore } from '../../store';
 import TrendHotspostsGraphics from './TrendHotspostsGraphics';
 import TrendAxisBottomGraphics from './TrendAxisBottomGraphics';
 import TrendAxisLeftGraphics from './TrendAxisLeftGraphics';
@@ -38,6 +37,7 @@ const Trend = ({
   hotspots = [],
   additionalTrends = [],
   additionalTrendsColors = [],
+  additionalTrendsLegend,
 } = {}) => {
   const [show, setShow] = useState(true);
   const [pathLength, setPathLength] = useState(1000);
@@ -188,6 +188,7 @@ const Trend = ({
             value={actualValue}
             date={actualYear}
             legend={legend}
+            additionalTrendsLegend={additionalTrendsLegend}
             additionalTrendsColors={additionalTrendsColors}
             additionalTrends={additionalTrends}
           />
@@ -412,6 +413,7 @@ const Trend = ({
             value={actualValue}
             date={actualYear}
             legend={legend}
+            additionalTrendsLegend={additionalTrendsLegend}
             additionalTrendsColors={additionalTrendsColors}
             additionalTrends={additionalTrends}
           />
