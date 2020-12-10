@@ -14,7 +14,9 @@
       "pagesHomeParagraph01": "In the 19th century, statistics became a central tool for framing social realities.",
       "pagesHomeParagraph02": "Through the categories they offer, they made things visible but hid others. Telling the history of how a territory was “put into numbers” over the last 200 years unveils the different stories that the Luxembourg state choose to tell.",
       "previousChapter": "Previous Chapter",
-      "legendPopulationBalanceDetails": "= {{v1}} + {{v4}}"
+      "legendPopulationBalanceDetails": "= {{v1}} + {{v4}}",
+      "downloadAsCSV": "download as CSV",
+      "number": "{{ n,2 }}"
     }
   }
 }
