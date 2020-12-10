@@ -8,10 +8,10 @@ class TrendLegend extends React.Component {
 
   render() {
     const {
+      title,
       progress,
       value,
       valueKey = 'v',
-      date,
       legend,
       additionalTrends = [],
       additionalTrendsColors = []
@@ -27,24 +27,29 @@ class TrendLegend extends React.Component {
 
     return (
       <div className="moduleProgress TrendLegend">
+        <span className="serif" style={{
+          color: 'var(--secondary)'
+        }}>
+        {title}&nbsp;
+        </span>
+        <span>
+          <span className="underline mr2">{mainValue}</span>
           <span>
-            <span className="underline mr2">{mainValue}</span>
-            <span>
-              {legend?.v}
-            </span>
+            {legend?.v}
           </span>
-          <span style={{
-            color: 'rgba(0, 0, 0, 0.5)',
-          }}>
-          {filteredAdditionalTrends.map(({ k, color }, i) => (
-            <span key={i} style={{ color }}>
-              &nbsp;&middot;&nbsp;
-              <span style={{ textDecoration: 'underline' }}>{value[k]}</span>
-              &nbsp;
-              <span>{legend[k]}</span>
-            </span>
-          ))}
+        </span>
+        <span style={{
+          color: 'rgba(0, 0, 0, 0.5)',
+        }}>
+        {filteredAdditionalTrends.map(({ k, color }, i) => (
+          <span key={i} style={{ color }}>
+            &nbsp;&middot;&nbsp;
+            <span style={{ textDecoration: 'underline' }}>{value[k]}</span>
+            &nbsp;
+            <span>{legend[k]}</span>
           </span>
+        ))}
+        </span>
       </div>
     );
   }
