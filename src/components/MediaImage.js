@@ -55,10 +55,7 @@ class MediaImage extends React.Component {
         margin: '0 auto',
       }}
     >
-      {!!title.length && (<h2 className="textContainerTitle" style={{
-        marginTop: 0,
-        // font-size: inherit,
-      }}>{title}</h2>)}
+      {!!title.length && (<h2 className="textContainerTitle">{title}</h2>)}
       <div style={{height:padding, backgroundColor: 'black'}}></div>
       <div style={{
         backgroundImage: `url(${currentImage})`,
