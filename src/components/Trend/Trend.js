@@ -14,6 +14,31 @@ import TrendVerticalDashedLineGraphics from './TrendVerticalDashedLineGraphics';
 import TrendAdditionalLineGraphics from './TrendAdditionalLineGraphics';
 import TrendParagraphsGraphics from './TrendParagraphsGraphics';
 import TrendLegend from './TrendLegend';
+import DownloadDataButton from '../DownloadDataButton';
+
+const TrendHeader = ({ title, direction, progress, date, value, values, legend, additionalTrendsLegend, additionalTrendsColors, additionalTrends }) => {
+  return (
+    <div className="flex mv2" style={{ alignItems: 'baseline' }}>
+      {direction
+        ? <div>‒</div>
+        : <div>‒</div>
+      }
+      <div style={{ flexGrow: 1 }} className="moduleTitle">
+        <TrendLegend
+          title={title}
+          progress={progress}
+          value={value}
+          date={date}
+          legend={legend}
+          additionalTrendsLegend={additionalTrendsLegend}
+          additionalTrendsColors={additionalTrendsColors}
+          additionalTrends={additionalTrends}
+        />
+      </div>
+      <DownloadDataButton values={values} label={title} legend={legend} style={{ flexShrink: 1 }} />
+    </div>
+  )
+}
 
 const Trend = ({
   id,
@@ -127,7 +152,7 @@ const Trend = ({
     return sum;
   }, {});
   const actualValue = valuesIndexByTime[String(actualYear)];
-
+  console.info('actualValue, actualValue', actualValue)
   // visualize rectangle related to current narrative paragraph
   const currentParagraphs = useMemo(
     () =>
@@ -176,23 +201,18 @@ const Trend = ({
       }}
     >
       {!negative && (
-        <div style={{ display: 'flex', alignItems: 'baseline' }}>
-          <div
-            className="moduleTitle"
-            style={{ display: 'flex', alignItems: 'center' }}
-          >
-            &darr;&nbsp;{title}
-          </div>
-          <TrendLegend
-            progress={progress}
-            value={actualValue}
-            date={actualYear}
-            legend={legend}
-            additionalTrendsLegend={additionalTrendsLegend}
-            additionalTrendsColors={additionalTrendsColors}
-            additionalTrends={additionalTrends}
-          />
-        </div>
+        <TrendHeader
+          direction={negative}
+          title={title}
+          progress={progress}
+          value={actualValue}
+          date={actualYear}
+          legend={legend}
+          values={values}
+          additionalTrendsLegend={additionalTrendsLegend}
+          additionalTrendsColors={additionalTrendsColors}
+          additionalTrends={additionalTrends}
+        />
       )}
       <svg
         className="viz"
@@ -399,25 +419,18 @@ const Trend = ({
         </div>
       </div>
       {negative && (
-        <div
-          style={{ display: 'flex', alignItems: 'baseline', marginTop: '0' }}
-        >
-          <div
-            className="moduleTitle"
-            style={{ display: 'flex', alignItems: 'center' }}
-          >
-            &uarr;&nbsp;{title}
-          </div>
-          <TrendLegend
-            progress={progress}
-            value={actualValue}
-            date={actualYear}
-            legend={legend}
-            additionalTrendsLegend={additionalTrendsLegend}
-            additionalTrendsColors={additionalTrendsColors}
-            additionalTrends={additionalTrends}
-          />
-        </div>
+        <TrendHeader
+          direction={negative}
+          title={title}
+          progress={progress}
+          value={actualValue}
+          date={actualYear}
+          legend={legend}
+          values={values}
+          additionalTrendsLegend={additionalTrendsLegend}
+          additionalTrendsColors={additionalTrendsColors}
+          additionalTrends={additionalTrends}
+        />
       )}
     </div>
   );
