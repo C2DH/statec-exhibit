@@ -4,6 +4,7 @@ import { isMobileWithTablet } from '../../constants';
 import { Spring, animated } from 'react-spring/renderprops';
 import Container from './Container';
 import TextContainer from './TextContainer';
+import GraphicContainer from './GraphicContainer';
 import Trend from '../Trend';
 import ChapterFooter from './ChapterFooter';
 
@@ -303,6 +304,12 @@ class Chapter extends Component {
                 </div>
                 <div className="hr"></div>
               </div>
+              {theme.modules.map((module, i) => {
+               if (!['compare', 'textOnly', 'text'].includes(module.layout)) {
+                 return null
+               }
+               return <GraphicContainer key={i} module={module} progress={i === data ? progress : 0} />
+              })}
               <div>
                 <Scrollama
                   onStepEnter={this.onStepEnter}
@@ -326,6 +333,7 @@ class Chapter extends Component {
                               module.layout === 'text' ? '60vh' : '18vh',
                           }}
                         >
+
                           {module.layout === 'flowers' && moduleDataset && (
                             <Container
                               module={module}
@@ -341,7 +349,7 @@ class Chapter extends Component {
                               chapterIndex={chapterIndex}
                             />
                           )}
-                          {module.layout === 'text' && (
+                          {module.layout === 'oldtext' && (
                             <TextContainer
                               index={i}
                               module={module}

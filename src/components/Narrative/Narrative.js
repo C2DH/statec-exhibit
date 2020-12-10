@@ -22,11 +22,11 @@ const Narrative = ({ chapter, progress, from, to }) => {
     (p) => localYear >= p.from && localYear <= p.to,
   );
 
-  const hasCover = !!localParagraph?.cover;
+  // const hasCover = !!localParagraph?.cover;
 
   return (
     <div className={styles.wrapper}>
-      <div className={styles.localYear}>{localYear}</div>
+      {/* <div className={styles.localYear}>{localYear}</div> */ }
       {localParagraph?.title && (
         <div className={styles.narrativeTitle}>{localParagraph.title}</div>
       )}
