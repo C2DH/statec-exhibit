@@ -20,3 +20,6 @@ export const ChapterRoutes = [
   ChapterRouteCountryOfMigration,
   ChapterRouteFamily
 ]
+
+export const StartYear = 1840
+export const EndYear = 2014
