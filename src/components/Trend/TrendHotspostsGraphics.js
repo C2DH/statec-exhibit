@@ -6,7 +6,6 @@ class TrendHotspotsGraphics extends React.Component{
   }
 
   render() {
-    console.info('rendering TrendStaticGraphics', this.props.id, this.props.hotspots)
     const {
       marginLeft,
       marginTop,

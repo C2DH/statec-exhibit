@@ -18,7 +18,7 @@ class TrendAdditionalLines extends React.Component{
 
     const x = (d) => scaleX(d.time)
     const ys = additionalTrends.map(valueKey => (d) => scaleY(d[valueKey]))
-    console.info('redering TrendAdditionalLineGraphics TrendAdditionalLines', additionalTrends)
+    // console.info('redering TrendAdditionalLineGraphics TrendAdditionalLines', additionalTrends)
     return (
       <>
         {additionalTrends.map((valueKey, i) => (
@@ -62,7 +62,7 @@ class TrendAdditionalLinePointers extends React.Component{
     }
     const x = (d) => scaleX(d.time)
     const ys = additionalTrends.map(valueKey => (d) => scaleY(d[valueKey]))
-    console.info('TrendAdditionalLinePointers', currentParagraph, cx)
+    // console.info('TrendAdditionalLinePointers', currentParagraph, cx)
     return (
       <>
       {additionalTrends.map((valueKey, i) => (

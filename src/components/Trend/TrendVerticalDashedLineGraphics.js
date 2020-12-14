@@ -19,8 +19,6 @@ class TrendVerticalDashedLineGraphics extends React.Component{
       timeKey,
     } = this.props
 
-    console.info('rendering TrendVerticalDashedLineGraphics', this.props.id)
-
     return (
       <g className="TrendVerticalDashedLineGraphics" transform={`translate(${marginLeft}, ${marginTop})`}>
       {values.map((d, i) => {

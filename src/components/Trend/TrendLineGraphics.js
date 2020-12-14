@@ -25,8 +25,6 @@ class TrendLineGraphics extends React.Component {
       width,
       fill,
     } = this.props;
-    console.info('rendering TrendLineGraphics', this.props.id, fill);
-
     const x = (d) => scaleX(d.time);
     const y = (d) => scaleY(d.value);
     return (
