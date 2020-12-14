@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react';
+import React, { Suspense, useEffect } from 'react';
 import Chapter from './components/Chapter/Chapter';
 import theme01 from './data/themes/theme-01.json';
 import theme02 from './data/themes/theme-02.json';
@@ -18,21 +18,21 @@ const ChapterContainer = ({
 }) => {
   const currentTheme =
     AvailableThemes[String(themeId)] ?? AvailableThemes[DefaultThemeId];
-  console.info('current theme:', themeId, currentTheme.title);
-  React.useEffect(() => {
+  useEffect(() => {
     useStore.setState({ backgroundColor: currentTheme.backgroundColor })
+    console.info('ChapterContainer @currentTheme', currentTheme.id)
   }, [currentTheme])
 
   return (
     <div className="w-100">
-    <Suspense>
-      <Chapter
-        theme={currentTheme}
-        heading={true}
-        color={currentTheme.backgroundColor}
-        headColor={currentTheme.backgroundColor}
-        chapterIndex={currentTheme.chapterIndex}
-      />
+      <Suspense>
+        <Chapter
+          theme={currentTheme}
+          heading={true}
+          color={currentTheme.backgroundColor}
+          headColor={currentTheme.backgroundColor}
+          chapterIndex={currentTheme.chapterIndex}
+        />
       </Suspense>
     </div>
   );
