@@ -1,6 +1,7 @@
 {
   "en-US": {
     "translation": {
+      "chapterNumber": "Chapter {{ n }}",
       "ChapterRouteIndex": "home",
       "ChapterRouteCountryOfMigration": "A Country of Migration",
       "ChapterRouteFamily": "Family Life",
