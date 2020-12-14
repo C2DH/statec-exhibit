@@ -4,6 +4,7 @@
   "title": "Demographic balance",
   "timeformat": "YYYY",
   "legend": {
+    "t": "year",
     "v": "people"
   },
   "description": "Sum of the natural balance and the migration balance registered for the given year, in number of people",
