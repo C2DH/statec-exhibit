@@ -4,6 +4,8 @@ import closeWhite from './assets/images/close.svg';
 import { useStore } from './store';
 import { isMobileWithTablet } from './constants';
 import './styles/Menu.css';
+import { Link } from 'react-router-dom';
+
 
 const Contents = ({ history }) => {
   const menuOpen = useStore((state) => state.menuOpen);
@@ -11,8 +13,8 @@ const Contents = ({ history }) => {
   const actualPath = history.location.pathname;
 
   const goTo = (path) => {
-    //history.push(path);
-    window.location.href = path;
+    history.push(path);
+    // window.location.href = path;
     closeMenu();
   };
 
