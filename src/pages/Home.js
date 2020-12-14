@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useStore } from '../store';
 import { Scrollama, Step } from 'react-scrollama';
 import styles from './Home.module.css';
-import { isMobileWithTablet } from '../constants';
+import { isMobileWithTablet, ChapterRoutes } from '../constants';
 import Covers from '../components/Cover/Cover';
 import { animated, useSpring } from 'react-spring';
 
@@ -110,42 +110,28 @@ const Home = () => {
             }`}
           >
             <div className="block mb4">
-              <h2
-                className={`${styles.chapterNumber} sans f2-ns`}
-                style={{
-                  fontSize: isMobileWithTablet ? '4.5vw' : '2.5vw',
-                }}
-              >
-                Chapter 1
-              </h2>
-              <h2
-                className={`${styles.chapterTitle}`}
-                style={{
-                  fontSize: isMobileWithTablet ? '9vw' : '4.5vw',
-                  marginTop: '10px',
-                  marginBottom: '80px',
-                }}
-              >
-                <a href="/a-country-of-migration">A Country of Migrations</a>
-              </h2>
-              <h2
-                className={`${styles.chapterNumber} sans f2-ns`}
-                style={{
-                  fontSize: isMobileWithTablet ? '4.5vw' : '2.5vw',
-                }}
-              >
-                Chapter 2
-              </h2>
-              <h2
-                className={`${styles.chapterTitle}`}
-                style={{
-                  fontSize: isMobileWithTablet ? '9vw' : '4.5vw',
-                  marginTop: '10px',
-                  marginBottom: '80px',
-                }}
-              >
-                <a href="/family">Family Life</a>
-              </h2>
+              {ChapterRoutes.map((route, i) => (
+                <div key={i}>
+                  <h2
+                    className={`${styles.chapterNumber} sans f2-ns`}
+                    style={{
+                      fontSize: isMobileWithTablet ? '4.5vw' : '2.5vw',
+                    }}
+                  >
+                    {t('chapterNumber', {n: i+1})}
+                  </h2>
+                  <h2
+                    className={`${styles.chapterTitle}`}
+                    style={{
+                      fontSize: isMobileWithTablet ? '9vw' : '4.5vw',
+                      marginTop: '10px',
+                      marginBottom: '80px',
+                    }}
+                  >
+                    <Link to={route.to}>{t(route.label)}</Link>
+                  </h2>
+                </div>
+              ))}
             </div>
             <div className="flex items-center justify-center ph4 mv4 mv3-ns">
               <img src="/statec-logo-blu.png" height={40} className="mr2" />
