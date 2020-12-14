@@ -14,7 +14,7 @@ const AvailableModules = {
   textOnly: TextOnlyModule
 }
 
-const GraphicContainer = ({ module, progress }) => {
+const ChapterGraphicContainer = ({ module, progress }) => {
   const opacityScale = scaleLinear()
     .domain([0, 0.2, 0.8, 0.95])
     .range([0, 1, 1, 0]);
@@ -25,8 +25,8 @@ const GraphicContainer = ({ module, progress }) => {
   const { from, to, title, subheading, paragraphs = [] } = module;
   // calculate extent and return scaleX to be used by the components
   const { startDate, endDate, scaleX } = useMemo(() => {
-    const startDate = moment(from || StartYear, 'YYYY')
-    const endDate = moment(to || EndYear, 'YYYY')
+    const startDate = moment(from || StartYear, 'YYYY').startOf('year')
+    const endDate = moment(to || EndYear, 'YYYY').endOf('year')
     const scaleX = scaleTime()
       .domain([startDate, endDate])
       .range([0.2, 0.8])
@@ -67,4 +67,4 @@ const GraphicContainer = ({ module, progress }) => {
   )
 }
 
-export default GraphicContainer
+export default ChapterGraphicContainer
