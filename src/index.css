@@ -46,6 +46,7 @@ body,
   --spacer-7: 35px;
   --spacer-8: 40px;
   --spacer-9: 45px;
+  --spacer-10: 50px;
 }
 
 h1,
@@ -140,7 +141,7 @@ h2 {
 
 .scrollSection {
   width: 90%;
-  opacity: 0;
+  left: 5%;
 }
 
 .section-small {
@@ -363,4 +364,9 @@ p.moduleParagraph {
   right: 18%;
   bottom: 18%;
   overflow: hidden;
+}
+
+.TrendHeader{
+  width: 90%;
+  margin: 0 auto;
 }
