@@ -255,6 +255,29 @@
       ]
     },
     {
+      "title": "Un pays de migrations (1: table)",
+      "subheading": "",
+      "datasetHeading": "migratory-balance",
+      "datasetHeadingValueFrom": -8000,
+      "datasetHeadingValueTo": 18000,
+      "datasetHeadingAdditionalTrends": ["v"],
+      "datasetHeadingAdditionalTrendsColors": ["var(--primary)"],
+      "dataset": "trend-arrivals-by-nationalities",
+      "layout": "flowers",
+      "from": 1960,
+      "to": 2014,
+      "extent": [0, 6000],
+      "groups": ["v5", "v8"],
+      "paragraphs": [
+        {
+          "from": 1960,
+          "to": 1970,
+          "year": "60s",
+          "text": "60s"
+        }
+      ]
+    },
+    {
       "title": "Un pays de migrations (Italy vs Portugal)",
       "subheading": "",
       "datasetHeading": "migratory-balance",
