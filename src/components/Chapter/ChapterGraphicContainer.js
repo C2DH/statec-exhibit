@@ -8,10 +8,12 @@ import NarrativeContainer from '../Narrative/NarrativeContainer'
 const CompareModule = lazy(() => import('../Module/Compare'))
 const TextModule = lazy(() => import('../Module/Text'))
 const TextOnlyModule = lazy(() => import('../Module/TextOnly'))
+const FlowersModule = lazy(() => import('../Module/Flowers'))
 const AvailableModules = {
   compare: CompareModule,
   text: TextModule,
-  textOnly: TextOnlyModule
+  textOnly: TextOnlyModule,
+  flowers: FlowersModule,
 }
 
 const ChapterGraphicContainer = ({ module, progress }) => {
