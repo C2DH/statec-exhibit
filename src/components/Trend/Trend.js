@@ -73,9 +73,12 @@ const Trend = ({
 
   useEffect(() => {
     setShow(false);
-    setTimeout(() => {
+    const timer = setTimeout(() => {
       setShow(true);
     }, 1500);
+    return () => {
+      clearTimeout(timer)
+    }
   }, [id, activeIndex]);
 
   const svgWidth = isMobileWithTablet
