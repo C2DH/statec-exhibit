@@ -26,6 +26,9 @@ const NarrativeContainer = React.memo(({ paragraphs = [], currentYear }) => {
     <div className="h-100" style={{overflow:'hidden'}}>
     {transitions.map(({ item, props, key }) => {
       const paragraph = item > -1 ? paragraphs[item]: {}
+      if (!paragraph) {
+        return null
+      }
       return (
         <animated.div key={key} className="h-100 absolute flex items-center" style={props}>
           <div className="ph4">
