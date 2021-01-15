@@ -134,8 +134,8 @@ const Home = () => {
               ))}
             </div>
             <div className="flex items-center justify-center ph4 mv4 mv3-ns">
-              <img src="/statec-logo-blu.png" height={40} className="mr2" />
-              <img src="/UNI_C2DH_blu.png" height={40} className="ml2" />
+              <img src="/statec-logo-blu.png" alt="STATEC" height={40} className="mr2" />
+              <img src="/UNI_C2DH_blu.png" alt="Luxembourg Centre for Contemporary and Digital History - University of Luxembourg" height={40} className="ml2" />
             </div>
           </div>
         </Step>
