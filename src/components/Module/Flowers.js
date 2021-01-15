@@ -26,10 +26,10 @@ const Flower = ({
   const circumference = 2 * Math.PI * radius;
 
   const nOfPetals = data.length;
-  const petalMaxWidth =
-    nOfPetals > nMinPetals
-      ? parseInt(circumference / (nOfPetals - 1))
-      : parseInt(circumference / nMinPetals)
+  // const petalMaxWidth =
+  //   nOfPetals > nMinPetals
+  //     ? parseInt(circumference / (nOfPetals - 1))
+  //     : parseInt(circumference / nMinPetals)
   const petalWidth =
     nOfPetals > nMinPetals
       ? parseInt(circumference / (nOfPetals - 1))
@@ -43,7 +43,7 @@ const Flower = ({
       .clamp(false)
       .range([2, radius/2]) //petalMaxWidth < 50 ? 50 : petalMaxWidth * 1.2]);
     return { minYear, maxYear, scaleYUnclamped }
-  }, [data, minValue, maxValue, petalMaxWidth ])
+  }, [data, minValue, maxValue, radius]) // , petalMaxWidth ])
   const maxAngle = angleD + Math.PI;
 
   return (
@@ -76,7 +76,7 @@ const Flower = ({
 
             <g transform={`translate(${width / 2},${height - (radius * 2)})`}>
               <text y={-radius * 1.6 - 5} textAnchor='start' style={{fontSize:'12px'}} x={0}>{minYear} &rarr;</text>
-              <line x1={0} y1={-radius} x2={0} y2={-radius*1.6} stroke="black" stroke-dasharray="2 1"></line>
+              <line x1={0} y1={-radius} x2={0} y2={-radius*1.6} stroke="black" strokeDasharray="2 1"></line>
               <g transform={`translate(${Math.sin(maxAngle) * radius * 1.6}, ${Math.cos(maxAngle) * radius* 1.6})`}>
                 <text textAnchor='end' y={-5} x={-5} style={{fontSize:'12px'}}>{maxYear}</text>
               </g>
@@ -85,7 +85,7 @@ const Flower = ({
                 y1={Math.cos(maxAngle) * radius}
                 x2={Math.sin(maxAngle) * radius * 1.5}
                 y2={Math.cos(maxAngle) * radius * 1.5}
-                stroke="black" stroke-dasharray="2 1"
+                stroke="black" strokeDasharray="2 1"
               />
               <circle cx={0} cy={0} r={radius} stroke={stroke} fill="transparent" />
               {data.map((d, i) => {
