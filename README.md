@@ -10,20 +10,20 @@ Each module has a dataset and a series of paragraphs.
 ## How to add a visualisation module:
 1. In `data/themes/theme-01.json` each module in modules has a `layout` property. To add a new `layout` property, e.g; `newLayout`: puts its string value and a corresponding react component in `ChapterGraphicCointainer`:
 
-    const NewLayoutModule = lazy(() => import('../Module/NewLayoutModule'))
-    // [...]
-    const AvailableModules = {
-      newLayout: NewLayoutModule,
-    }
+        const NewLayoutModule = lazy(() => import('../Module/NewLayoutModule'))
+        // [...]
+        const AvailableModules = {
+          newLayout: NewLayoutModule,
+        }
 
 2. The react component in /Module/NewLayoutModule will then get the following properties:
 
-    const NewLayoutModule = ({
-      startDate, endDate,
-      title, subheading, scaleX, module, progress, currentDate, currentYear, paragraphs
-    }) => {
-      // [...]
-    }
+       const NewLayoutModule = ({
+         startDate, endDate,
+         title, subheading, scaleX, module, progress, currentDate, currentYear, paragraphs
+       }) => {
+         // [...]
+       }
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
