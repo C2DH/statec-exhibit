@@ -48,16 +48,11 @@ class ChapterScrollama extends PureComponent {
   render() {
     const { theme } = this.props;
     const { progress, data } = this.state;
-
+    const currentModule = theme.modules[data ?? 0]
     return (
       <div className="w-100">
       { data > -1 && <ChapterScrollamaTrends theme={theme} progress={progress} data={data}/>}
-      { data > -1 && theme.modules.map((module, i) => {
-       if (!['compare', 'textOnly', 'text'].includes(module.layout)) {
-         return null
-       }
-       return <ChapterGraphicContainer key={i} module={module} progress={i === data ? progress : 0} />
-      })}
+      <ChapterGraphicContainer module={currentModule} progress={progress} />
       <Scrollama
         onStepEnter={this.onStepEnter}
         onStepExit={this.onStepExit}
