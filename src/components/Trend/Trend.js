@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useMemo } from 'react';
+import { useTranslation } from 'react-i18next'
 import moment from 'moment';
 import { scaleTime, scaleLinear } from 'd3-scale';
 import { extent } from 'd3-array';
@@ -18,6 +19,7 @@ import DownloadDataButton from '../DownloadDataButton';
 
 
 const TrendHeader = ({ title, direction, progress, date, value, values, legend, additionalTrendsLegend, additionalTrendsColors, additionalTrends }) => {
+  const { t } = useTranslation()
   return (
     <div className="TrendHeader flex mv2" style={{ alignItems: 'baseline' }}>
       {direction
@@ -31,6 +33,7 @@ const TrendHeader = ({ title, direction, progress, date, value, values, legend, 
           value={value}
           date={date}
           legend={legend}
+          t={t}
           additionalTrendsLegend={additionalTrendsLegend}
           additionalTrendsColors={additionalTrendsColors}
           additionalTrends={additionalTrends}
