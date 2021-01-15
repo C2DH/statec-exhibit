@@ -40,6 +40,7 @@ export const useBoundingClientRect = () => {
   };
   useEffect(() => {
     let timer;
+    setCurrentBoundingClientRect();
     const delaySetCurrentBoundingClientRect = () => {
       clearTimeout(timer)
       timer = setTimeout(setCurrentBoundingClientRect, 200)
