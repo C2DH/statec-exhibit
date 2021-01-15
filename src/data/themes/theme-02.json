@@ -20,8 +20,14 @@
       "datasetAdditionalTrendsColors": ["var(--primary)"],
       "datasetHeadingAdditionalTrends": ["v", "v1"],
       "datasetHeadingAdditionalTrendsColors": ["var(--primary)", "black"],
+      "datasetHeadingValueFrom": -8000,
+      "datasetHeadingValueTo": 18000,
       "from": 1840,
       "to": 1900,
+      "moduleHotspots": [
+        { "t": 1840 },
+        { "t": 1866 }
+      ],
       "paragraphs": [
         {
           "from": 1840,
@@ -52,6 +58,8 @@
       "datasetAdditionalTrendsColors": ["var(--primary)"],
       "datasetHeadingAdditionalTrends": ["v", "v2", "v3"],
       "datasetHeadingAdditionalTrendsColors": ["var(--primary)", "green", "blue"],
+      "datasetHeadingValueFrom": -8000,
+      "datasetHeadingValueTo": 18000,
       "from": 1840,
       "to": 1900,
       "paragraphs": [
