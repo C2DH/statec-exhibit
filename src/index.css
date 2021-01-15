@@ -370,3 +370,34 @@ p.moduleParagraph {
   width: 90%;
   margin: 0 auto;
 }
+
+/* nav */
+ul.nav.nav-tabs{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+ul.nav.nav-tabs li.nav-item button{
+  background: transparent;
+  border: 1px solid transparent;
+  border-bottom: 1px solid;
+  color: var(--secondary);
+  border-radius: 0;
+  border-collapse: collapse;
+}
+ul.nav.nav-tabs li.nav-item button:focus,
+ul.nav.nav-tabs li.nav-item button:active{
+  background: transparent;
+  outline: none;
+}
+ul.nav.nav-tabs li.nav-item button.active{
+  border: 1px solid;
+  border-bottom: 1px solid transparent;
+}
+
+@media (min-width: 767px) {
+  ul.nav.nav-tabs li.nav-item button{
+    border: 1px solid transparent !important;
+  }
+}
