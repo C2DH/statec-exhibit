@@ -41,22 +41,21 @@ const Flower = ({
       .exponent(2)
       .domain([Math.max(0, minValue), Math.max(Math.abs(minValue), maxValue)])
       .clamp(false)
-      .range([2, petalMaxWidth < 50 ? 50 : petalMaxWidth * 1.2]);
+      .range([2, radius/2]) //petalMaxWidth < 50 ? 50 : petalMaxWidth * 1.2]);
     return { minYear, maxYear, scaleYUnclamped }
   }, [data, minValue, maxValue, petalMaxWidth ])
-  // const scaleYUnclamped = scalePow()
-  //   .exponent(2)
-  //   .domain([minValue, maxValue])
-  //   .clamp(false)
-  //   .range([2, petalMaxWidth < 50 ? 50 : petalMaxWidth * 1.2]);
-  //
   const maxAngle = angleD + Math.PI;
 
   return (
     <div className="Flower h-100 w-100 flex flex-column" style={{
       flexGrow:1
     }}>
-      <div className="tc">{minYear} &rarr; {maxYear}</div>
+      <div className="tc sans" style={{
+        fontSize: '12px',
+        lineHeight: '14px',
+        marginTop: 'var(--spacer-1)',
+        color: 'var(--gray-500)'
+      }}>Length of the petal = data in the indicated years</div>
       <div style={{ flexGrow: 1 }} ref={ref}>
         <div style={{width, height, overflow: 'hidden'}}>
           <svg width={width} height={height} >
@@ -74,20 +73,21 @@ const Flower = ({
                 <stop offset="100%" stopColor={colorC} stopOpacity={1} />
               </linearGradient>
             </defs>
-            <g transform={`translate(${dimension / 2},0)`}>
-              <text y={20}>{minYear}</text>
-            </g>
-
-
 
             <g transform={`translate(${width / 2},${height - (radius * 2)})`}>
-              <g transform={`translate(${Math.sin(maxAngle) * radius}, ${
-                Math.cos(maxAngle) * radius
-              }) `}>
-                <text textAnchor='end'>{maxYear}</text>
-
+              <text y={-radius * 1.6 - 5} textAnchor='start' style={{fontSize:'12px'}} x={0}>{minYear} &rarr;</text>
+              <line x1={0} y1={-radius} x2={0} y2={-radius*1.6} stroke="black" stroke-dasharray="2 1"></line>
+              <g transform={`translate(${Math.sin(maxAngle) * radius * 1.6}, ${Math.cos(maxAngle) * radius* 1.6})`}>
+                <text textAnchor='end' y={-5} x={-5} style={{fontSize:'12px'}}>{maxYear}</text>
               </g>
-              <circle cx={0} cy={0} r={radius} stroke={stroke} fill={fill} />
+              <line
+                x1={Math.sin(maxAngle) * radius}
+                y1={Math.cos(maxAngle) * radius}
+                x2={Math.sin(maxAngle) * radius * 1.5}
+                y2={Math.cos(maxAngle) * radius * 1.5}
+                stroke="black" stroke-dasharray="2 1"
+              />
+              <circle cx={0} cy={0} r={radius} stroke={stroke} fill="transparent" />
               {data.map((d, i) => {
                 const theta = (data.length - i) * angleD + Math.PI;
                 const deg = theta * (180 / Math.PI);
@@ -131,21 +131,6 @@ const Flower = ({
                     >
                       {d.v}
                     </text>
-                    <text
-                      style={{
-                        display: selected ? 'block' : 'none',
-                        textAnchor: 'middle',
-                        transform: `rotate(${-deg})`,
-                        dominantBaseline: 'central',
-                        color: '#2b219f',
-                        fontSize: '12px'
-                      }}
-                        textAnchor='end'
-                      dx={Math.sin(theta) * radius * .5}
-                      dy={20 + (Math.cos(theta) * radius * .5)}
-                    >
-                      {d.t}
-                    </text>
                   </g>
                 )
               })}
@@ -167,7 +152,10 @@ const Flowers = ({
   const { groups=[], dataset='' } = module
 
   const { groupValues, minValue, maxValue, legend } = useMemo(() => {
-    const { values, legend } = require(`../../data/datasets/${dataset}.json`);
+    let { values, legend } = require(`../../data/datasets/${dataset}.json`);
+    values = values.filter((d) => {
+      return d.t >= module.from && d.t <= module.to
+    })
     const [minYear, maxYear] = extent(values, d => d.t)
     const [minValue, maxValue] = values.reduce(([minAcc, maxAcc], d) => {
       const [minLocal, maxLocal] = extent(groups.map(g => d[g]))
