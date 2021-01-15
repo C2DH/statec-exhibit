@@ -14,7 +14,8 @@ class TrendLegend extends React.Component {
       valueKey = 'v',
       legend,
       additionalTrends = [],
-      additionalTrendsColors = []
+      additionalTrendsColors = [],
+      t
     } = this.props
     if (!progress || !value) {
       return null
@@ -33,7 +34,7 @@ class TrendLegend extends React.Component {
         {title}&nbsp;
         </span>
         <span>
-          <span className="underline mr2">{mainValue}</span>
+          <span className="underline mr2">{t('number', {n:mainValue})}</span>
           <span>
             {legend?.v}
           </span>
@@ -44,7 +45,7 @@ class TrendLegend extends React.Component {
         {filteredAdditionalTrends.map(({ k, color }, i) => (
           <span key={i} style={{ color }}>
             &nbsp;&middot;&nbsp;
-            <span style={{ textDecoration: 'underline' }}>{value[k]}</span>
+            <span style={{ textDecoration: 'underline' }}>{t('number', {n: value[k]})}</span>
             &nbsp;
             <span>{legend[k]}</span>
           </span>
