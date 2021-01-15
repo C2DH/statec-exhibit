@@ -33,6 +33,7 @@ body,
   --primary: #d03a45;
   --secondary: #2b219f;
   --accent: #ffc09d;
+  --gray-500: rgba(0, 0, 0, 0.5);
   --theme-01: #bfe8ed;
   --theme-02: #b4ebc8;
   --font-family-serif: 'SneakyTimes', serif;
