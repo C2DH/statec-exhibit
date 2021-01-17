@@ -2,6 +2,7 @@ import React, { PureComponent } from 'react'
 import { Scrollama, Step } from 'react-scrollama'
 import ChapterGraphicContainer from './ChapterGraphicContainer'
 import ChapterScrollamaTrends from './ChapterScrollamaTrends'
+import ChapterProgress from './ChapterProgress'
 
 
 class ChapterScrollama extends PureComponent {
@@ -53,6 +54,7 @@ class ChapterScrollama extends PureComponent {
       <div className="w-100">
       { data > -1 && <ChapterScrollamaTrends theme={theme} progress={progress} data={data}/>}
       <ChapterGraphicContainer module={currentModule} progress={progress} />
+      <ChapterProgress steps={theme.modules} currentStep={data} progress={progress}/>
       <Scrollama
         onStepEnter={this.onStepEnter}
         onStepExit={this.onStepExit}
