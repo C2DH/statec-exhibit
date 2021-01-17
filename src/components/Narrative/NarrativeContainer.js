@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react'
 import { useTransition, animated } from 'react-spring'
 import styles from './Narrative.module.css'
-import {usePrevious} from '../../hooks'
+// import {usePrevious} from '../../hooks'
 
 
 const NarrativeContainer = React.memo(({ paragraphs = [], currentYear }) => {
   const [index, set] = useState(-1)
-  const prevIndex = usePrevious(index)
-  const downward = prevIndex < index
+  // const prevIndex = usePrevious(index)
+  // const downward = prevIndex < index
 
   useEffect(() => {
     const idx = paragraphs.findIndex(p => currentYear >= p.from && currentYear <= p.to)
@@ -46,4 +46,4 @@ const NarrativeContainer = React.memo(({ paragraphs = [], currentYear }) => {
   )
 })
 
-export default  NarrativeContainer
+export default NarrativeContainer
