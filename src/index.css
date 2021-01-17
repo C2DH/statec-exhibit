@@ -48,6 +48,8 @@ body,
   --spacer-8: 40px;
   --spacer-9: 45px;
   --spacer-10: 50px;
+  --font-size-1: 10px;
+  --font-size-2: 12px;
 }
 
 h1,
@@ -370,6 +372,31 @@ p.moduleParagraph {
 .TrendHeader{
   width: 90%;
   margin: 0 auto;
+}
+
+.ChapterProgress_step{
+  width: var(--spacer-2);
+  height: var(--spacer-2);
+  border-radius: var(--spacer-2);
+  margin: var(--spacer-3) var(--spacer-1);
+  border: 1px solid var(--secondary);
+  background: transparent;
+  opacity: .25
+}
+
+.ChapterProgress_step.done{
+  opacity: 1;
+  border-color: var(--primary);
+}
+
+.ChapterProgress_step.active{
+  opacity: 1
+}
+
+.ChapterProgress_step_label{
+  left: var(--spacer-3);
+  line-height: var(--spacer-2);
+  font-size: var(--font-size-1);
 }
 
 /* nav */
