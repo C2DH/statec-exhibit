@@ -2,7 +2,7 @@ import React from 'react';
 
 const DEBUG = false;
 
-const Bezier = ({ width, height, c1, c2, selected }) => {
+const Bezier = ({ width, height, c1, c2, selected, fill=`url(#bezierGradient)` }) => {
   const startPoint = [0, height];
   const controlPoint1 = [c2, height];
   const controlPoint2 = [c1, 0];
@@ -63,7 +63,7 @@ const Bezier = ({ width, height, c1, c2, selected }) => {
       C ${controlPoint3} ${controlPoint4} ${endPoint}
       L ${startPoint}
     `}
-        fill={`url(#bezierGradient)`}
+        fill={fill}
         stroke={selected ? '#d03a45' : 'none'}
         strokeWidth={2}
       />
