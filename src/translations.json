@@ -17,7 +17,11 @@
       "previousChapter": "Previous Chapter",
       "legendPopulationBalanceDetails": "= {{v1}} + {{v4}}",
       "downloadAsCSV": "download as CSV",
-      "number": "{{ n,2 }}"
+      "number": "{{ n,2 }}",
+      "AboutTitle": "About",
+      "AboutIntroduction": "<i>Les chiffres du Luxembourg</i> est une exposition virtuelle retraçant l’histoire de <br/><br/> Le site web s’adresse à un large spectre d’utilisateurs aux degrés d’expertise variables. Il sera développé et enrichi dans les années à venir",
+      "AboutConcept": "Les concept, les themes et les jeux des données ont été concus par Paul Zahlen et Benoît Majerus du C²DH.",
+      "AboutDevelopment": "L’exposition virtuelle a été designé par Federica Fragapane et implémentée par Paolo Corti, ainsi que par Daniele Guido du C²DH."
     }
   }
 }
