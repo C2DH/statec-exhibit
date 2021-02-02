@@ -1,4 +1,5 @@
 import React, { useMemo, useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import { extent } from 'd3-array'
 import { scalePow } from 'd3-scale'
 // import moment from 'moment'
@@ -19,6 +20,7 @@ const Flower = ({
   stroke="black",
   nMinPetals=8,
 }) => {
+  const { t } = useTranslation()
   const [colorA, colorB, colorC] = colors
   const [{ width, height }, ref] = useBoundingClientRect()
   const dimension = Math.min(width, height);
@@ -35,14 +37,19 @@ const Flower = ({
       ? parseInt(circumference / (nOfPetals - 1))
       : parseInt(circumference / nMinPetals)
   const angleD = (Math.PI * 2) / nOfPetals;
-  const { minYear, maxYear, scaleYUnclamped } = useMemo(() => {
+  const { minYear, maxYear, scaleYUnclamped, scaleYUnclampedNegative } = useMemo(() => {
     const [minYear, maxYear] = extent(data, d=> d.t)
     const scaleYUnclamped = scalePow()
-      .exponent(2)
-      .domain([Math.max(0, minValue), Math.max(Math.abs(minValue), maxValue)])
+      .exponent(1)
+      .domain([Math.max(0, minValue), Math.max(minValue * -1, maxValue)])
       .clamp(false)
       .range([2, radius/2]) //petalMaxWidth < 50 ? 50 : petalMaxWidth * 1.2]);
-    return { minYear, maxYear, scaleYUnclamped }
+    const scaleYUnclampedNegative = scalePow()
+      .exponent(1)
+      .domain([maxValue * -1, 0])
+      .clamp(false)
+      .range([-radius/2, -2])
+    return { minYear, maxYear, scaleYUnclamped, scaleYUnclampedNegative }
   }, [data, minValue, maxValue, radius]) // , petalMaxWidth ])
   const maxAngle = angleD + Math.PI;
 
@@ -92,7 +99,9 @@ const Flower = ({
                 const theta = (data.length - i) * angleD + Math.PI;
                 const deg = theta * (180 / Math.PI);
                 const selected = currentYear === d.t
-                const curveHeight = scaleYUnclamped(d.v);
+                const curveHeight = d.v > 0
+                  ? scaleYUnclamped(d.v)
+                  : scaleYUnclampedNegative(d.v)
 
                 return (
                   <g
@@ -108,6 +117,10 @@ const Flower = ({
                         }) rotate(${-deg + 180}, ${petalWidth / 2}, ${curveHeight})`}
                       >
                         <Bezier
+                          fill={ d.v > 0
+                            ? `url(#bezierGradient)`
+                            : 'black'
+                          }
                           height={curveHeight}
                           width={petalWidth}
                           c1={petalWidth * 0.2}
@@ -129,7 +142,7 @@ const Flower = ({
                       dx={Math.sin(theta) * radius * .5}
                       dy={Math.cos(theta) * radius * .5}
                     >
-                      {d.v}
+                      {t('number', {n: d.v})}
                     </text>
                   </g>
                 )
