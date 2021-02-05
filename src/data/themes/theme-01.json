@@ -290,7 +290,21 @@
     },
     {
       "title": "Une réalité mise en chiffres",
-      "subheading": "Si les migrations sont aujourd’hui considérés comme un élément central de l’histoire du Luxembourg, les données statistiques pour les deux derniers siècles sont fragmentaires. Ce n’est qu’en 1871 que la notion d’étranger apparaît dans les recensements. Depuis les années 1960, nous disposons de chiffres plus détaillées d’entrées et de sorties de différentes nationalités. C'est la diversité des origines des migrants à partir des années 1990 qui doit être relevée. Les migrants viennent des pays voisins (la part des Français dans la population augmente), mais désormais également nombreux de pays non-européens (Etats-Unis, Inde, Chine, par exemple). Les migrants de pays qui avaient déjà une histoire d'immigration au Luxembourg (Portugal, Italie) sont également assez nombreux au sein de la vague d'immigration récente. Le profil des qualifications et des formations des immigrés est également de plus en plus diversifié; ils occupent à la fois des emplois hautement qualifiés et des emplois peu qualifiés.",
+      "subheading": "Si les migrations sont aujourd’hui considérés comme un élément central de l’histoire du Luxembourg, les données statistiques pour les deux derniers siècles sont fragmentaires. Ce n’est qu’en 1871 que la notion d’étranger apparaît dans les recensements. Depuis les années 1960, nous disposons de chiffres plus détaillées d’entrées et de sorties de différentes nationalités. C'est la diversité des origines des migrants à partir des années 1990 qui doit être relevée. Les migrants viennent des pays voisins (la part des Français dans la population augmente), mais désormais également nombreux de pays non-européens (Etats-Unis, Inde, Chine, par exemple).",
+      "layout": "textOnly",
+      "from": 1960,
+      "to": 2014,
+      "datasetValueFrom": 150000,
+      "datasetValueTo": 800000,
+      "datasetHeading": "migratory-balance",
+      "datasetHeadingValueFrom": -8000,
+      "datasetHeadingValueTo": 18000,
+      "datasetHeadingAdditionalTrends": ["v"],
+      "datasetHeadingAdditionalTrendsColors": ["var(--primary)"]
+    },
+    {
+      "title": "Une réalité mise en chiffres",
+      "subheading": "Les migrants viennent des pays voisins (la part des Français dans la population augmente), mais désormais également nombreux de pays non-européens (Etats-Unis, Inde, Chine, par exemple). Les migrants de pays qui avaient déjà une histoire d'immigration au Luxembourg (Portugal, Italie) sont également assez nombreux au sein de la vague d'immigration récente. Le profil des qualifications et des formations des immigrés est également de plus en plus diversifié; ils occupent à la fois des emplois hautement qualifiés et des emplois peu qualifiés.",
       "layout": "textOnly",
       "from": 1960,
       "to": 2014,
