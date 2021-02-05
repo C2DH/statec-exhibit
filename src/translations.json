@@ -1,6 +1,7 @@
 {
   "en-US": {
     "translation": {
+      "chapterNumber": "Chapter {{ n }}",
       "ChapterRouteIndex": "home",
       "ChapterRouteCountryOfMigration": "A Country of Migration",
       "ChapterRouteFamily": "Family Life",
@@ -14,7 +15,13 @@
       "pagesHomeParagraph01": "In the 19th century, statistics became a central tool for framing social realities.",
       "pagesHomeParagraph02": "Through the categories they offer, they made things visible but hid others. Telling the history of how a territory was “put into numbers” over the last 200 years unveils the different stories that the Luxembourg state choose to tell.",
       "previousChapter": "Previous Chapter",
-      "legendPopulationBalanceDetails": "= {{v1}} + {{v4}}"
+      "legendPopulationBalanceDetails": "= {{v1}} + {{v4}}",
+      "downloadAsCSV": "download as CSV",
+      "number": "{{ n,2 }}",
+      "AboutTitle": "About",
+      "AboutIntroduction": "<i>Les chiffres du Luxembourg</i> est une exposition virtuelle retraçant l’histoire de <br/><br/> Le site web s’adresse à un large spectre d’utilisateurs aux degrés d’expertise variables. Il sera développé et enrichi dans les années à venir",
+      "AboutConcept": "Les concept, les themes et les jeux des données ont été concus par Paul Zahlen et Benoît Majerus du C²DH.",
+      "AboutDevelopment": "L’exposition virtuelle a été designé par Federica Fragapane et implémentée par Paolo Corti, ainsi que par Daniele Guido du C²DH."
     }
   }
 }

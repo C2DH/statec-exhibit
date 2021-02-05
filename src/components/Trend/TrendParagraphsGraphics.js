@@ -14,10 +14,6 @@ class TrendParagraphsGraphics extends React.Component {
   render() {
     const { marginLeft, marginTop, paragraphs, scaleX, scaleY } = this.props;
     const currentParagraphIdx = this.props.currentParagraph?.idx;
-    console.info(
-      'TrendParagraphsGraphics rendered.',
-      this.props.currentParagraph?.idx,
-    );
     const x = (d) => scaleX(d.time);
     const y = (d) => scaleY(d.value);
 

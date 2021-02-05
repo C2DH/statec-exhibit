@@ -3,6 +3,7 @@
   "title": "Global population balance and its components",
   "timeformat": "YYYY",
   "legend": {
+    "t": "year",
     "v": "solde global",
     "v1": "solde naturel",
     "v2": "solde migratoire"

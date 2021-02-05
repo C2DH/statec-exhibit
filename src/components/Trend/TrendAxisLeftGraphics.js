@@ -17,7 +17,6 @@ class TrendAxisLeftGraphics extends React.Component {
       fontSize,
       width,
     } = this.props
-    console.info('rendering TrendAxisLeftGraphics', this.props.id)
 
     return (<g transform={`translate(${marginLeft}, ${marginTop})`}>
         <AxisLeft

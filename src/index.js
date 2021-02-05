@@ -56,6 +56,9 @@ i18n
             return moment(value).fromNow()
           }
           return moment(value).format(format)
+        } else if (typeof value === 'number') {
+          // adapt number
+          return new Intl.NumberFormat('fr-FR', { maximumSignificantDigits: format }).format(value)
         }
         return value;
       }

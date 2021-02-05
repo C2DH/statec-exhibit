@@ -5,7 +5,7 @@ import { Group } from '@vx/group';
 
 class TrendAxisBottomGraphics extends React.Component{
   shouldComponentUpdate(nextProps) {
-    return this.props.id !== nextProps.id || this.props.windowDimensions !== nextProps.windowDimensions
+    return this.props.windowDimensions !== nextProps.windowDimensions
   }
 
   render() {
@@ -19,7 +19,6 @@ class TrendAxisBottomGraphics extends React.Component{
     //   axis={axis}
     //   textColor={red}
     // />
-    console.info('rendering TrendAxisBottomGraphics', this.props.id)
     const {
       marginLeft,
       marginTop,
@@ -27,9 +26,12 @@ class TrendAxisBottomGraphics extends React.Component{
       numTicks,
       axisOffsetTop,
       textColor,
+      lineHeight=15,
+      fontSize=12,
+      tickHeight=5
     } = this.props;
     return (
-      <g transform={`translate(${marginLeft}, ${marginTop + 10})`}>
+      <g transform={`translate(${marginLeft}, ${marginTop})`}>
         <AxisBottom
           top={axisOffsetTop}
           left={0}
@@ -44,15 +46,17 @@ class TrendAxisBottomGraphics extends React.Component{
               <g className="my-custom-bottom-axis">
                 {axis.ticks.map((tick, i) => {
                   const tickX = tick.to.x;
-                  const tickY = tick.to.y + tickLabelSize + axis.tickLength;
                   return (
                     <Group
                       key={`vx-tick-${tick.value}-${i}`}
                       className={'vx-axis-tick'}
                     >
+                      <line x1={tickX} y1={0} x2={tickX} y2={tickHeight} stroke="var(--primary)"/>
+                      <line x1={tickX} y1={lineHeight + tickHeight*2 } x2={tickX} y2={lineHeight + tickHeight*3} stroke="var(--primary)"/>
+
                       <text
-                        transform={`translate(${tickX}, ${tickY}) rotate(${tickRotate})`}
-                        fontSize={tickLabelSize}
+                        transform={`translate(${tickX}, ${lineHeight + 5}) rotate(${tickRotate})`}
+                        fontSize={fontSize}
                         textAnchor="middle"
                         fill={textColor}
                         style={{ fontFamily: 'Sneaky' }}

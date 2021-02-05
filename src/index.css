@@ -33,14 +33,23 @@ body,
   --primary: #d03a45;
   --secondary: #2b219f;
   --accent: #ffc09d;
+  --gray-500: rgba(0, 0, 0, 0.5);
   --theme-01: #bfe8ed;
   --theme-02: #b4ebc8;
   --font-family-serif: 'SneakyTimes', serif;
   --font-family-sans: 'Porpora', Arial, sans-serif;
   --spacer-1: 5px;
   --spacer-2: 10px;
-  --spacer-3: 30px;
-  --spacer-4: 45px;
+  --spacer-3: 15px;
+  --spacer-4: 20px;
+  --spacer-5: 25px;
+  --spacer-6: 30px;
+  --spacer-7: 35px;
+  --spacer-8: 40px;
+  --spacer-9: 45px;
+  --spacer-10: 50px;
+  --font-size-1: 10px;
+  --font-size-2: 12px;
 }
 
 h1,
@@ -135,7 +144,7 @@ h2 {
 
 .scrollSection {
   width: 90%;
-  opacity: 0;
+  left: 5%;
 }
 
 .section-small {
@@ -255,7 +264,8 @@ p.moduleParagraph {
   font-size: 2.8vh;
   line-height: 1.25;
   color: var(--secondary);
-  margin-bottom: 15px;
+  margin-bottom: var(--spacer-3);
+  margin-top: var(--spacer-3);
 }
 
 .textContainerSubTitle {
@@ -357,4 +367,65 @@ p.moduleParagraph {
   right: 18%;
   bottom: 18%;
   overflow: hidden;
+}
+
+.TrendHeader{
+  width: 90%;
+  margin: 0 auto;
+}
+
+.ChapterProgress_step{
+  width: var(--spacer-2);
+  height: var(--spacer-2);
+  border-radius: var(--spacer-2);
+  margin: var(--spacer-3) var(--spacer-1);
+  border: 1px solid var(--secondary);
+  background: transparent;
+  opacity: .25
+}
+
+.ChapterProgress_step.done{
+  opacity: 1;
+  border-color: var(--primary);
+}
+
+.ChapterProgress_step.active{
+  opacity: 1
+}
+
+.ChapterProgress_step_label{
+  left: var(--spacer-3);
+  line-height: var(--spacer-2);
+  font-size: var(--font-size-1);
+}
+
+/* nav */
+ul.nav.nav-tabs{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+ul.nav.nav-tabs li.nav-item button{
+  background: transparent;
+  border: 1px solid transparent;
+  border-bottom: 1px solid;
+  color: var(--secondary);
+  border-radius: 0;
+  border-collapse: collapse;
+}
+ul.nav.nav-tabs li.nav-item button:focus,
+ul.nav.nav-tabs li.nav-item button:active{
+  background: transparent;
+  outline: none;
+}
+ul.nav.nav-tabs li.nav-item button.active{
+  border: 1px solid;
+  border-bottom: 1px solid transparent;
+}
+
+@media (min-width: 767px) {
+  ul.nav.nav-tabs li.nav-item button{
+    border: 1px solid transparent !important;
+  }
 }

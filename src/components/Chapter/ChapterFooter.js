@@ -1,6 +1,6 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
-import { ChapterRoutes, isMobileWithTablet } from '../../constants'
+import { ChapterRoutesWithIndex, isMobileWithTablet } from '../../constants'
 import {Link} from 'react-router-dom'
 import styles from '../../pages/Home.module.css';
 
@@ -8,11 +8,11 @@ import styles from '../../pages/Home.module.css';
 const ChapterFooter = ({ chapterIndex }) => {
   const { t } = useTranslation()
   const idx = parseInt(chapterIndex, 10)
-  const isLast = idx === ChapterRoutes.length - 1
+  const isLast = idx === ChapterRoutesWithIndex.length - 1
   // const isFirst = idx === 1
-  // const route = ChapterRoutes[idx]
-  const nextRoute = isLast ? null : ChapterRoutes[idx + 1]
-  const previousRoute = ChapterRoutes[idx - 1]
+  // const route = ChapterRoutesWithIndex[idx]
+  const nextRoute = isLast ? null : ChapterRoutesWithIndex[idx + 1]
+  const previousRoute = ChapterRoutesWithIndex[idx - 1]
 
   return (
     <div className="flex items-center justify-center" style={{marginTop:'10vh', height: '100vh'}}>

@@ -3,6 +3,7 @@
   "title": "Demographic balance and its components",
   "timeformat": "YYYY",
   "legend": {
+    "t": "year",
     "v": "solde global",
     "v1": "solde natural",
     "v2": "newborns",

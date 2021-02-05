@@ -1,10 +1,10 @@
 import React, { useEffect, useState, useMemo } from 'react';
+import { useTranslation } from 'react-i18next'
 import moment from 'moment';
 import { scaleTime, scaleLinear } from 'd3-scale';
 import { extent } from 'd3-array';
-import { Line } from '@vx/shape';
 import { isMobileWithTablet } from '../../constants';
-import { red } from '../../constants';
+import { red, StartDate, EndDate } from '../../constants';
 import { useStore } from '../../store';
 import TrendHotspostsGraphics from './TrendHotspostsGraphics';
 import TrendAxisBottomGraphics from './TrendAxisBottomGraphics';
@@ -13,7 +13,36 @@ import TrendLineGraphics from './TrendLineGraphics';
 import TrendVerticalDashedLineGraphics from './TrendVerticalDashedLineGraphics';
 import TrendAdditionalLineGraphics from './TrendAdditionalLineGraphics';
 import TrendParagraphsGraphics from './TrendParagraphsGraphics';
+import TrendProgressBarGraphics from './TrendProgressBarGraphics';
 import TrendLegend from './TrendLegend';
+import DownloadDataButton from '../DownloadDataButton';
+
+
+const TrendHeader = ({ title, direction, progress, date, value, values, legend, additionalTrendsLegend, additionalTrendsColors, additionalTrends }) => {
+  const { t } = useTranslation()
+  return (
+    <div className="TrendHeader flex mv2" style={{ alignItems: 'baseline' }}>
+      {direction
+        ? <div>‒</div>
+        : <div>‒</div>
+      }
+      <div style={{ flexGrow: 1, minHeight: 30 }} className="moduleTitle">
+        <TrendLegend
+          title={title}
+          progress={progress}
+          value={value}
+          date={date}
+          legend={legend}
+          t={t}
+          additionalTrendsLegend={additionalTrendsLegend}
+          additionalTrendsColors={additionalTrendsColors}
+          additionalTrends={additionalTrends}
+        />
+      </div>
+      <DownloadDataButton values={values} label={title} legend={legend} style={{ flexShrink: 1 }} />
+    </div>
+  )
+}
 
 const Trend = ({
   id,
@@ -38,48 +67,31 @@ const Trend = ({
   additionalTrends = [],
   additionalTrendsColors = [],
   additionalTrendsLegend,
+  marginTop = 10
 } = {}) => {
   const [show, setShow] = useState(true);
-  const [pathLength, setPathLength] = useState(1000);
-  // useEffect(() => {
-  //   let peak = data[0].hasPeak || false;
-  //   let peakData = data.find((d) => d.peak);
-  //   const note = peakData ? peakData.note : null;
-  //   if (peak) {
-  //     //activateNote(note);
-  //   } else {
-  //     //deactivateNote();
-  //   }
-  // }, [data]);
 
   useEffect(() => {
     setShow(false);
-    setTimeout(() => {
+    const timer = setTimeout(() => {
       setShow(true);
     }, 1500);
+    return () => {
+      clearTimeout(timer)
+    }
   }, [id, activeIndex]);
 
   const svgWidth = isMobileWithTablet
     ? window.innerWidth * 0.9
     : window.innerWidth * 0.9;
-  const marginTop = 10;
   const marginLeft = window.innerWidth * 0.05;
   const windowDimensions = [window.innerWidth, window.innerHeight].join('-');
   const graphWidth = svgWidth - marginLeft;
   const svgHeight = height;
   const trendHeight = svgHeight - marginTop;
-  const startDate = moment('1840-01-01');
-  const endDate = moment('2014-01-01');
-
-  const x = (d) => {
-    return moment(d[timeKey]);
-  };
-  const y = (d) => {
-    return d[valueKey];
-  };
 
   const scaleX = scaleTime()
-    .domain([startDate, endDate])
+    .domain([StartDate, EndDate])
     .range([0, graphWidth]);
 
   const [min, max] =
@@ -87,16 +99,14 @@ const Trend = ({
       ? extent(data, (d) => d[valueKey])
       : [valueFrom, valueTo];
 
-  const scaleY = scaleLinear().domain([min, max]).range([0, trendHeight]);
   const scaleY2 = scaleLinear().domain([max, min]).range([0, trendHeight]);
-  // console.info('TrendAdditionalLineGraphics', additionalTrends)
   // const timelineScale = scaleLinear()
   //   .range([0, graphWidth])
   //   .domain([0.2, 0.8])
   //   .clamp(true);
 
-  const fromDate = moment(`${from}-01-01`);
-  const toDate = moment(`${to}-01-01`);
+  const fromDate = moment(from, 'YYYY').startOf('year');
+  const toDate = moment(to,  'YYYY').endOf('year');
   const progressScale = scaleLinear()
     .range([from ? scaleX(fromDate) : 0, to ? scaleX(toDate) : graphWidth])
     .domain([0.2, 0.8])
@@ -127,7 +137,6 @@ const Trend = ({
     return sum;
   }, {});
   const actualValue = valuesIndexByTime[String(actualYear)];
-
   // visualize rectangle related to current narrative paragraph
   const currentParagraphs = useMemo(
     () =>
@@ -158,14 +167,6 @@ const Trend = ({
     [hotspots, valuesIndexByTime],
   );
 
-  const currentHotspot = actualValue
-    ? currentHotspots.find(
-        (d) =>
-          actualValue[timeKey] >= d[timeKey] &&
-          actualValue[timeKey] <= d[timeKey],
-      )
-    : null;
-
   return (
     <div
       style={{
@@ -176,30 +177,25 @@ const Trend = ({
       }}
     >
       {!negative && (
-        <div style={{ display: 'flex', alignItems: 'baseline' }}>
-          <div
-            className="moduleTitle"
-            style={{ display: 'flex', alignItems: 'center' }}
-          >
-            &darr;&nbsp;{title}
-          </div>
-          <TrendLegend
-            progress={progress}
-            value={actualValue}
-            date={actualYear}
-            legend={legend}
-            additionalTrendsLegend={additionalTrendsLegend}
-            additionalTrendsColors={additionalTrendsColors}
-            additionalTrends={additionalTrends}
-          />
-        </div>
+        <TrendHeader
+          direction={negative}
+          title={title}
+          progress={progress}
+          value={actualValue}
+          date={actualYear}
+          legend={legend}
+          values={values}
+          additionalTrendsLegend={additionalTrendsLegend}
+          additionalTrendsColors={additionalTrendsColors}
+          additionalTrends={additionalTrends}
+        />
       )}
       <svg
         className="viz"
         x="0px"
         y="0px"
         width={svgWidth}
-        height={negative ? svgHeight + 5 : svgHeight + 30}
+        height={svgHeight}
         style={{
           border: '0px solid rgba(0,0,0,0.2)',
           margin: 'auto',
@@ -219,7 +215,6 @@ const Trend = ({
             <stop offset="100%" stopColor={'#A9ECD9'} stopOpacity={1} />
           </linearGradient>
         </defs>
-
         <TrendLineGraphics
           id={id}
           show={show}
@@ -233,53 +228,6 @@ const Trend = ({
           width={graphWidth}
           fill={`url(#${trendName}Gradient)`}
         />
-        {/*
-        <g transform={`translate(${marginLeft}, ${marginTop})`}>
-          <Animate
-            show={show}
-            start={() => ({
-              j: pathLength,
-              o: 0,
-            })}
-            enter={() => ({
-              j: [0],
-              o: [1],
-              timing: { duration: 1400, delay: 0, ease: easeQuadOut },
-            })}
-            update={() => ({
-              j: [0],
-              o: [1],
-              timing: { duration: 1400, ease: easeQuadOut },
-            })}
-            leave={() => ({
-              j: [pathLength],
-              o: [0],
-              timing: { duration: 0 },
-            })}
-          >
-            {(state) => {
-              const { j, o } = state;
-              return (
-                <LinePath
-                  data={data}
-                  innerRef={(node) => {
-                    if (node) {
-                      setPathLength(node.getTotalLength());
-                    }
-                  }}
-                  x={(d) => scaleX(x(d))}
-                  y={(d) => scaleY2(y(d))}
-                  curve={curveMonotoneX}
-                  strokeDasharray={pathLength}
-                  strokeDashoffset={j}
-                  opacity={o}
-                />
-              );
-            }}
-          </Animate>
-        </g>
-      */}
-
         {additionalTrends.length && (
           <TrendAdditionalLineGraphics
             id={id}
@@ -331,32 +279,14 @@ const Trend = ({
         />
         {/* PROGRESS BAR*/}
         {progress && (
-          <g transform={`translate(${marginLeft}, ${marginTop})`}>
-            <Line
-              from={{ x: progressScale(progress), y: negative ? 0 : 30 }}
-              to={{
-                x: progressScale(progress),
-                y: negative ? svgHeight - 30 : svgHeight,
-              }}
-              stroke={'#D1646C'}
-              strokeWidth={2}
-              style={{ pointerEvents: 'none' }}
-            />
-          </g>
-        )}
-        {/* AXES */}
-        {!negative && (
-          <TrendAxisBottomGraphics
-            id={id}
-            windowDimensions={windowDimensions}
-            marginLeft={marginLeft}
+          <TrendProgressBarGraphics
+            marginLeft={marginLeft} scale={progressScale}
             marginTop={marginTop}
-            axisOffsetTop={trendHeight - 10}
-            scale={scaleX}
-            numTicks={isMobileWithTablet ? 4 : 8}
-            textColor={red}
+            height={svgHeight}
+            progress={progress}
           />
         )}
+        {/* h AXES */}
         <TrendAxisLeftGraphics
           id={id}
           windowDimensions={windowDimensions}
@@ -369,11 +299,34 @@ const Trend = ({
           fontSize={isMobileWithTablet ? 6 : 11}
         />
       </svg>
-      <div
+      {!negative && (
+        <svg className="viz" x="0px" y="0px"
+          width={svgWidth}
+          height={30}
+          style={{
+            border: '0px solid rgba(0,0,0,0.2)',
+            margin: '2px auto',
+          }}
+        >
+          <TrendAxisBottomGraphics
+            id={id}
+            windowDimensions={windowDimensions}
+            marginLeft={marginLeft}
+            marginTop={0}
+            axisOffsetTop={0}
+            scale={scaleX}
+            numTicks={isMobileWithTablet ? 4 : 8}
+            textColor={red}
+          />
+        </svg>
+      )}
+
+      {!negative && (<div
         style={{
           position: 'absolute',
-          bottom: negative ? '37px' : 'auto',
-          top: negative ? 'auto' : '54px',
+          bottom: negative ? 37 : 'auto',
+          top: negative ? 'auto' : 37,
+          left: '5%'
         }}
       >
         <div
@@ -381,7 +334,7 @@ const Trend = ({
             transform: `translateX(${progressScale(progress) + marginLeft}px)`,
             width: '100px',
             marginLeft: '-50px',
-            textAlign: 'center',
+            textAlign: 'center'
           }}
         >
           {actualYear && (
@@ -397,27 +350,20 @@ const Trend = ({
             </span>
           )}
         </div>
-      </div>
+      </div>)}
       {negative && (
-        <div
-          style={{ display: 'flex', alignItems: 'baseline', marginTop: '0' }}
-        >
-          <div
-            className="moduleTitle"
-            style={{ display: 'flex', alignItems: 'center' }}
-          >
-            &uarr;&nbsp;{title}
-          </div>
-          <TrendLegend
-            progress={progress}
-            value={actualValue}
-            date={actualYear}
-            legend={legend}
-            additionalTrendsLegend={additionalTrendsLegend}
-            additionalTrendsColors={additionalTrendsColors}
-            additionalTrends={additionalTrends}
-          />
-        </div>
+        <TrendHeader
+          direction={negative}
+          title={title}
+          progress={progress}
+          value={actualValue}
+          date={actualYear}
+          legend={legend}
+          values={values}
+          additionalTrendsLegend={additionalTrendsLegend}
+          additionalTrendsColors={additionalTrendsColors}
+          additionalTrends={additionalTrends}
+        />
       )}
     </div>
   );
