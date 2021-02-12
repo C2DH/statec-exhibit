@@ -91,20 +91,22 @@ class ChapterScrollama extends PureComponent {
           ))}
         </Scrollama>
 
-        <div
-          style={{
-            position: 'fixed',
-            bottom: 2,
-            width: '100%',
-            fontSize: '12px',
-            margin: '0 auto',
-            padding: '15px',
-            textAlign: 'center',
-            opacity: 0.4,
-          }}
-        >
-          Please visit our desktop version for a complete experience
-        </div>
+        {isMobileWithTablet && (
+          <div
+            style={{
+              position: 'fixed',
+              bottom: 2,
+              width: '100%',
+              fontSize: '12px',
+              margin: '0 auto',
+              padding: '15px',
+              textAlign: 'center',
+              opacity: 0.4,
+            }}
+          >
+            Please visit our desktop version for a complete experience
+          </div>
+        )}
       </div>
     );
   }
