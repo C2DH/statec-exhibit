@@ -22,6 +22,7 @@ const Home = () => {
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
+    useStore.setState({ backgroundColor: STEPS[0].backgroundColor });
     setTimeout(() => {
       setOpen(true);
     }, 1500);
