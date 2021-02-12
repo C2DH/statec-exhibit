@@ -1,11 +1,10 @@
-import React from 'react'
+import React from 'react';
 import { AxisBottom } from '@vx/axis';
 import { Group } from '@vx/group';
 
-
-class TrendAxisBottomGraphics extends React.Component{
+class TrendAxisBottomGraphics extends React.Component {
   shouldComponentUpdate(nextProps) {
-    return this.props.windowDimensions !== nextProps.windowDimensions
+    return this.props.windowDimensions !== nextProps.windowDimensions;
   }
 
   render() {
@@ -26,9 +25,9 @@ class TrendAxisBottomGraphics extends React.Component{
       numTicks,
       axisOffsetTop,
       textColor,
-      lineHeight=15,
-      fontSize=12,
-      tickHeight=5
+      lineHeight = 15,
+      fontSize = 12,
+      tickHeight = 5,
     } = this.props;
     return (
       <g transform={`translate(${marginLeft}, ${marginTop})`}>
@@ -51,15 +50,28 @@ class TrendAxisBottomGraphics extends React.Component{
                       key={`vx-tick-${tick.value}-${i}`}
                       className={'vx-axis-tick'}
                     >
-                      <line x1={tickX} y1={0} x2={tickX} y2={tickHeight} stroke="var(--primary)"/>
-                      <line x1={tickX} y1={lineHeight + tickHeight*2 } x2={tickX} y2={lineHeight + tickHeight*3} stroke="var(--primary)"/>
+                      <line
+                        x1={tickX}
+                        y1={0}
+                        x2={tickX}
+                        y2={tickHeight}
+                        stroke="var(--secondary)"
+                      />
+                      <line
+                        x1={tickX}
+                        y1={lineHeight + tickHeight * 2}
+                        x2={tickX}
+                        y2={lineHeight + tickHeight * 3}
+                        stroke="var(--secondary)"
+                      />
 
                       <text
-                        transform={`translate(${tickX}, ${lineHeight + 5}) rotate(${tickRotate})`}
+                        transform={`translate(${tickX}, ${
+                          lineHeight + 5
+                        }) rotate(${tickRotate})`}
                         fontSize={fontSize}
                         textAnchor="middle"
                         fill={textColor}
-                        style={{ fontFamily: 'Sneaky' }}
                       >
                         {tick.formattedValue}
                       </text>
@@ -71,8 +83,8 @@ class TrendAxisBottomGraphics extends React.Component{
           }}
         </AxisBottom>
       </g>
-    )
+    );
   }
 }
 
-export default TrendAxisBottomGraphics
+export default TrendAxisBottomGraphics;

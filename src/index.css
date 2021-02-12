@@ -64,8 +64,6 @@ h6,
   font-weight: 100;
 }
 
-
-
 h1 {
   font-size: 8vh;
   line-height: 1;
@@ -281,7 +279,7 @@ p.moduleParagraph {
   font-family: Porpora, sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 16px;
   color: #d03a45;
   margin-left: 15px;
 }
@@ -326,13 +324,14 @@ p.moduleParagraph {
     font-size: 12px;
   }
   .textContainerTitle {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1;
     margin-bottom: 2px;
   }
   .textContainerSubTitle {
-    font-size: 12px;
+    font-size: 16px;
     line-height: 1;
+    margin-top: 15px;
   }
 }
 
@@ -369,44 +368,44 @@ p.moduleParagraph {
   overflow: hidden;
 }
 
-.TrendHeader{
+.TrendHeader {
   width: 90%;
   margin: 0 auto;
 }
 
-.ChapterProgress_step{
+.ChapterProgress_step {
   width: var(--spacer-2);
   height: var(--spacer-2);
   border-radius: var(--spacer-2);
   margin: var(--spacer-3) var(--spacer-1);
   border: 1px solid var(--secondary);
   background: transparent;
-  opacity: .25
+  opacity: 0.25;
 }
 
-.ChapterProgress_step.done{
+.ChapterProgress_step.done {
   opacity: 1;
   border-color: var(--primary);
 }
 
-.ChapterProgress_step.active{
-  opacity: 1
+.ChapterProgress_step.active {
+  opacity: 1;
 }
 
-.ChapterProgress_step_label{
+.ChapterProgress_step_label {
   left: var(--spacer-3);
   line-height: var(--spacer-2);
   font-size: var(--font-size-1);
 }
 
 /* nav */
-ul.nav.nav-tabs{
+ul.nav.nav-tabs {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
-ul.nav.nav-tabs li.nav-item button{
+ul.nav.nav-tabs li.nav-item button {
   background: transparent;
   border: 1px solid transparent;
   border-bottom: 1px solid;
@@ -415,17 +414,17 @@ ul.nav.nav-tabs li.nav-item button{
   border-collapse: collapse;
 }
 ul.nav.nav-tabs li.nav-item button:focus,
-ul.nav.nav-tabs li.nav-item button:active{
+ul.nav.nav-tabs li.nav-item button:active {
   background: transparent;
   outline: none;
 }
-ul.nav.nav-tabs li.nav-item button.active{
+ul.nav.nav-tabs li.nav-item button.active {
   border: 1px solid;
   border-bottom: 1px solid transparent;
 }
 
 @media (min-width: 767px) {
-  ul.nav.nav-tabs li.nav-item button{
+  ul.nav.nav-tabs li.nav-item button {
     border: 1px solid transparent !important;
   }
 }

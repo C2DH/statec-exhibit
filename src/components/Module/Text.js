@@ -1,31 +1,44 @@
-import React, { lazy } from 'react'
+import React, { lazy } from 'react';
 import { EndYear } from '../../constants';
+import { isMobileWithTablet } from '../../constants';
 
-const MediaImage = lazy(() => import('../MediaImage'))
-const Figure = lazy(() => import('../Figure'))
+const MediaImage = lazy(() => import('../MediaImage'));
+const Figure = lazy(() => import('../Figure'));
 
 const TextCover = React.memo(({ cover, title, subheading }) => {
   if (cover.id) {
-    return <MediaImage
-      id={cover.id} to={`/doc/${cover.id}`}
-      alt={cover.alt} caption={cover.caption} title={title}
-    />
+    return (
+      <MediaImage
+        id={cover.id}
+        to={`/doc/${cover.id}`}
+        alt={cover.alt}
+        caption={cover.caption}
+        title={title}
+      />
+    );
   }
-  return <Figure src={cover.url} alt={cover.alt} caption={cover.caption}/>
-})
+  return <Figure src={cover.url} alt={cover.alt} caption={cover.caption} />;
+});
 
 const Text = ({ title, subheading, paragraphs, currentYear }) => {
   // show subheading only before any paragraphs
-  const { currentParagraph, minFrom } = paragraphs.reduce((acc, p) => {
-    acc.minFrom = Math.min(parseInt(p.from, 10), acc.minFrom)
-    if (!acc.currentParagraph && currentYear >= p.from && currentYear <= p.to) {
-      acc.currentParagraph = p
-    }
-    return acc
-  }, { minFrom: EndYear, currentParagraph: null })
+  const { currentParagraph, minFrom } = paragraphs.reduce(
+    (acc, p) => {
+      acc.minFrom = Math.min(parseInt(p.from, 10), acc.minFrom);
+      if (
+        !acc.currentParagraph &&
+        currentYear >= p.from &&
+        currentYear <= p.to
+      ) {
+        acc.currentParagraph = p;
+      }
+      return acc;
+    },
+    { minFrom: EndYear, currentParagraph: null },
+  );
 
-  const hasCover = !!currentParagraph?.cover
-  const showModuleSubheading = !hasCover && subheading && currentYear < minFrom
+  const hasCover = !!currentParagraph?.cover;
+  const showModuleSubheading = !hasCover && subheading && currentYear < minFrom;
 
   return (
     <>
@@ -40,6 +53,6 @@ const Text = ({ title, subheading, paragraphs, currentYear }) => {
         />
       )}
     </>
-  )
-}
-export default Text
+  );
+};
+export default Text;

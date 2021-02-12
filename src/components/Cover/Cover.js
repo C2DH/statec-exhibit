@@ -33,7 +33,7 @@ const Cover = ({ steps, index, direction }) => {
     backgroundClipPath: open
       ? 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)'
       : 'polygon(50% 0%, 50% 0%, 50% 100%, 50% 100%)',
-    opacity: step.id === 0 ? 1 : 0,
+    opacity: step.id === 0 ? 0.8 : 0,
   });
 
   console.log(step);
