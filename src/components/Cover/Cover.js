@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import { useTransition, animated, useSpring } from 'react-spring';
+import { animated, useSpring } from 'react-spring';
 import styles from '../../pages/Home.module.css';
 import { isMobileWithTablet } from '../../constants';
 
 const Cover = ({ steps, index, direction }) => {
   const step = steps[index > -1 ? index : 0];
   const [open, setOpen] = useState(false);
-  const { backgroundColor, backgroundClipPath } = step;
+  // const { backgroundColor, backgroundClipPath } = step;
 
   // const transitions = useTransition(
   //   step,
@@ -67,7 +67,7 @@ const Cover = ({ steps, index, direction }) => {
               opacity: props.opacity,
             }}
           >
-            <img src={step.url} />
+            <img src={step.url} alt=""/>
           </animated.div>
         )}
       </div>
