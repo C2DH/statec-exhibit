@@ -53,3 +53,41 @@ export const useBoundingClientRect = () => {
   });
   return [bbox, ref];
 };
+
+
+export const useImage = (src, delay=1000) => {
+    const [isLoading, setIsLoading] = useState(true);
+    const [error, setError] = useState(null);
+    const [hasStartedInitialFetch, setHasStartedInitialFetch] = useState(false);
+
+    useEffect(() => {
+      setHasStartedInitialFetch(true);
+      setError(false);
+      setIsLoading(true);
+      // Here's where the magic happens.
+      const image = new Image();
+      let timer1 = setTimeout(() => {
+        image.src = src;
+      }, delay);
+
+      const handleError = (err) => {
+          setError(true);
+      };
+
+      const handleLoad = () => {
+        setIsLoading(false);
+        setError(null);
+      };
+
+      image.onerror = handleError;
+      image.onload = handleLoad;
+
+      return () => {
+        clearTimeout(timer1)
+        image.removeEventListener("error", handleError);
+        image.removeEventListener("load", handleLoad);
+      };
+    }, [src, delay]);
+
+    return { isLoading, error, hasStartedInitialFetch };
+};
