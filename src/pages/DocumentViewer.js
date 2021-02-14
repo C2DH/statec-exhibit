@@ -43,7 +43,7 @@ const DocumentViewer = ({
   return (
     <div style={{height: availableHeightInPx, marginTop}} className="w-100 fixed">
       <div className={styles.inner}>
-      <MediaImage id={documentId} height="100%" caption={doc.caption} resolutions="large-h"/>
+      <MediaImage id={documentId} height="100%" caption={doc.caption} resolution="large-h"/>
       </div>
 
     </div>

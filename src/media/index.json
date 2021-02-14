@@ -636,6 +636,695 @@
         }
       },
       "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAUCAYAAACEYr13AAAACXBIWXMAAAsTAAALEwEAmpwYAAADdklEQVQ4yz1UZyj9YRh9P8go2VuUrk2yElkpUcosQokUvthkj2wJcZXsMssOGbnFzQehlJHMkp2y58fz73l0/x+ebv3e9znPOec9zxXf399Q1OfnJ35/f7kU376+vvD29obn52c8PT1xvb6+8reXlxeIn58fvvjx8YHHx0csLy9jeHgYAwMDqKysxODgIDY2NnB8fIyTkxOcnZ3h+voad3d3uL29hXh/f2d0mjQ9PQ1nZ2dYW1tDR0eHSyKRwN3dHRkZGZDJZNjb28PR0REuLi64BE19eHjAzc0NQkJCoKWlBVNTU6iqqkJFRQWGhobQ19eHpqYmgoKCsLS0hN3dXRweHjIrQTTu7++xvr6O2NhYdHR0MO3m5makpKTA0tKSQQmIQBISErC5uclFbMTV1RWopqamuJHoKdBPT0/R0NDAAEZGRjA3N4eFhQV7JJfLsbW1BXF+fo7Ly0uMjIywaaurq9je3ma9ZOjc3Bzc3NwYRE9PD8bGxqivr8fKygqDCMUkokwS6urq0NraitnZWSwsLGBiYgIRERHMwMDAgEHy8/MxPj6OxcVFiIODA6bb3t4OR0dH1NTUwNbWFuHh4Ux/cnISoaGhUFZW/g+QnZ2N3t5eBhfk6P7+PksoKSlhNp2dnSynv78fQ0ND/D0xMRH+/v5wcXHhIVKpFKOjoxCkd2dnhyllZWWhsbERXV1dmJmZYbNoEl1sa2uDj48PkpOTUVtbi5aWFg6bWFtb4yck81xdXRETE8NP2dPTg76+PoyNjTEDJycnREZGorS0FBUVFWhqavoDILPIaQpIVFQUG9bd3c1TyReiS16kp6czQzKwqqqKAYipoMs0bX5+nulnZmayvuLiYuTk5PBFMosCRGYWFhairKyMgenlBGkkENIYEBAAe3t7luHn58cvQMAkMzc3l8/y8vJQXl6OoqIi9kLEx8fD29sb2traUFJS4rRR5sltaqIFI4nBwcH8hB4eHkhLS0NBQcEfgJqaGi+Nuro6p01DQ4MXiSLr4OCA6Oho9sXMzIz3graTchIYGMgyBS2Jrq4uM6BmWhjaPjs7O75kY2PDAaJfYuXr6wsvLy8uWjZByBRTokfNBEL/A9SgaFaw8fT0RFhYGKc0KSkJ1dXVEPT2dGhiYsIg1ECsrKysmCqdk6HkS1xcHFJTU3kyeUCZ+AfGjgfbz4i5kgAAAABJRU5ErkJggg=="
+    },
+    "statec_011.tif": {
+      "resolutions": {
+        "thumb-w": {
+          "url": "/media/images/statec_011.thumb-w.jpg",
+          "params": {
+            "size": "thumb-w",
+            "width": 250,
+            "height": null
+          }
+        },
+        "thumb-h": {
+          "url": "/media/images/statec_011.thumb-h.jpg",
+          "params": {
+            "size": "thumb-h",
+            "width": null,
+            "height": 250
+          }
+        },
+        "medium-w": {
+          "url": "/media/images/statec_011.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/statec_011.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/statec_011.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 1080,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/statec_011.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 960
+          }
+        }
+      },
+      "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAUCAIAAAD6C3GtAAAACXBIWXMAAC4jAAAuIwF4pT92AAAFW0lEQVQ4yyWVaTBVfxjHzxiDmUaYwYwXZJ2mLGWnrDGyL2msxaikSLLLFmUdpVCkEEVSRGXsa0iIEpV/9mXKDOm1d/9P7n1x55x7f+dZPt/v8xzh7t27jx8/Hhsbu3btWk5OzsePHx89ehQYGNjQ0DA4OHjjxg1nZ2crKytTU1Nzc3N1dXU/P78fP368f/+eA3fu3Ll58+a9e/devHgxOjo6Pz+/trbGv7Ozs//tfYQ3b948e/bsy5cviYmJ9+/fn5iYqKmpuXDhwq1bt+Lj4+3t7Q0MDI4cOWJpaenj43Ps2DGK4DBxQ0NDyeTv7x8ZGVlYWNjc3Pzp06eVlZXV1dXl5eXFxcW5uTnh7du3L1++/Pz5c3R0dGpqKs8Q0czMjGKtra3DwsLi4uLS0tJogoszZ84Q7vjx43p6erRiY2NDZ0FBQZmZmQ8fPiQOHfz8+XNpaWl9fZ00wvPnz6uqqr59+5aenu7g4MADRExOTqblvLw8fjx79iwhjIyMVFVVFRUVLSwsTp48GRUV5eHhQRFAc3NzIyvdtLS00Hp/f/+7vU9dXZ1QXl6elJRUW1ubm5ubkpISHBxMLV5eXqShdh0dHWoECAnAxcXly5dLS0updGZm5uvXr9+/f4cvrEdGRj58+AC0zs5OEqAKbIWYmBhAk6OsrAxV1dTUQEz7CQkJnp6etra24EISsFy5csXY2JieCDE+Pt7T04OYRKH76urqtrY2cEO4o6NjY2MD6FASRNSgoaSkRBP0OzQ0hD4LCwtodeLEiUOHDgFEWlpaSkqKCzxGsb9//0ZzSUlJLS2t/fv3i4uL45ydnR2iw4d/gf5P1fDw8OzsbJrV19eHHVWLOuW/Bw8eAArPyMnJ0ZOysjJn+HF6ehrnUYqYmBjR5eXlSVxUVLS9vT05OYm2hEZbuAkZGRn4AQWomugBAQHgw/X0zi1yQRwBkI7EyMCPENjc3EQkQRA0NDSIThNE//v379TUFP4W1Y4p/3HHIbQDHLo7d+7cq1evgMgoAdrV1RX6JiYm6Iy7XVxcYmNjRaamdhUVlaNHj4q4gZHa8SLoCgoKSkpK6FKgLtzCuHKOwonC8zTEZF28eJFkDIu3t3dERARuuXTpEilxW1NTE7coDDqaYwI4gIzMJsMBZw48efJEACUWpqjTp0+TEI+zCeiGTgmUlZVFjZWVlbCur6/H++TGP9evXz948CCjh5UpheaogwSoCGe8yCOYSjA0NKR9HgAR00xa8jO3UAIFjsRUgNra2kJnQuB0/uLwvn378C5ZqYaOi4uLMTS/8N3d3U2Xp06dEvA1OYGOqTmHdGQGEUMwMDDAra+vL9x+/frF4BC0q6uLFsmqqanJ0LK5GhsbKZmUWIPRhQQakI9JFnAI6lMg4fLz84Ho7u5O0Nu3b+NLsLBwmBo48gyTAXSAwFMUHWsODw8zjIinq6t74MABzoeEhLA5FBQUBEYAcNTLBLa2ttIUlV69ehVJ+Z1kLDVsQGhuUZgCaZ+HtbW1McLTp09pBdnBKyEhISsry5ZGRdJwK+AtJycnxh0zsSKYbBL09vaKRBd9gIYTuMDL+Iz0JAMpywOYFRUVeAEL8FaA2OHDh2kLzdlUwu7uLkdZk2wlxowGOY0TSAMrAiE1yRgT3hgMAXuCcedtwy3X/NXX10dZ7e3tnIQheJGUFcKgCH/+/MEn8OVJCOIkysEAsKJeCCLD+fPnsTaPcQzWQENqkRFwF8dYyIgBIkwFTEdHR+aA7S2wz3DV69evRTsPP+FOTI096NTOzs5m78PQ4Qd2pNrehwUAWbTlNcKbCz25QE/WjoyMDHB4kaHE/+4KmOzPOVc0AAAAAElFTkSuQmCC"
+    },
+    "statec_012.tif": {
+      "resolutions": {
+        "thumb-w": {
+          "url": "/media/images/statec_012.thumb-w.jpg",
+          "params": {
+            "size": "thumb-w",
+            "width": 250,
+            "height": null
+          }
+        },
+        "thumb-h": {
+          "url": "/media/images/statec_012.thumb-h.jpg",
+          "params": {
+            "size": "thumb-h",
+            "width": null,
+            "height": 250
+          }
+        },
+        "medium-w": {
+          "url": "/media/images/statec_012.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/statec_012.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/statec_012.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 1080,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/statec_012.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 960
+          }
+        }
+      },
+      "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAUCAIAAADZUCB4AAAACXBIWXMAAC4jAAAuIwF4pT92AAADDUlEQVQozxVR+U/ScRj+/DO0ynBlak7NmssbDErRICHOwAsFBOULSCK3yBmSR0UiigjzCEW8WprHVmaprTXNDo+y0rTj5962Z+/ePc977XnR4cHx8dGfX8d/fx//Pfj+88vu/u7O153Pe9ufdn58O3z3dmPh2cLsk1m0t7t/8OPo+/4BaO83ttZX3wDWXq+/fLGytflh9dXaxHhsMjaBoAOExfnFmcnpmanpqYlJYMcio7HoOJRC/sj7sD8QQK9XVkEeHhoKBYMDwWCwP+jv8XU/8o4MDW9tfpyenPa43V2dHWhpfnEsEunt9XsfPPB1dwN1r63N5XT4fb7tjzvLz5dbzCZLixlFx6KgOe02912X1dLisNuAdTrs3V5vZOSxw2ZTyBv+13na3GaToblJrVYpVAp5oxJTKTGjQdfZ3h7o61MpMJGwCmuQIbgFKKhuUquEleUCHofHZt4qo4lrhPfaPJAwaNQKAQ/ZWi1wqcVskopFSkyO1UsbZNIKPq+qXKDV3IEeAZfD57KRTCKuKufTSoplYhGPxbxyOYNWQoFhJr3eoNVSKUWkgvyr+XlIJKxmM+iEnGyH1arTaPTN2v6+AMBiMmk1TWWlJQn4MwwqFRFzc4i52fL6+tGRCPxncWHp5fJKKDiglMu5LCaFTC7My1PJ5aiIVAgID4Q2N7bm5xYmorG5p3ND4UFRjVBSU3ObzaLTqJLaWsQsu0mlFNdWV1ktFqfdbre2gp0Bf299XZ2Ax83MuHgOj09NSkJwbzGZfBKHS0k8TyIQNHfUfl/Pw6774Eh+dlZKYuJpHO4U7gTisVkXEs6RiEQWg54Qj4fBsWjsfkdnOY9byeeTiIT4uLiM1FRks7TyORwlhtmsVhWGmQx6gEGnheiwWW+V3YQ9CfHxyO1yGXU6qagWjJVKxLI6Ca2Uwuew1UoF/JpJp+dmZZ3F41FaclJ6SjJYCIuuEQvAC6lY7Ha6wBqjXt+owEqLrmdnZiIykWA2GmUSEYN2Awa3ezyD4fD4WDQcCgkrK+Bbl9LT8HGn/wHi2KD2HOy3SgAAAABJRU5ErkJggg=="
+    },
+    "statec_013.tif": {
+      "resolutions": {
+        "thumb-w": {
+          "url": "/media/images/statec_013.thumb-w.jpg",
+          "params": {
+            "size": "thumb-w",
+            "width": 250,
+            "height": null
+          }
+        },
+        "thumb-h": {
+          "url": "/media/images/statec_013.thumb-h.jpg",
+          "params": {
+            "size": "thumb-h",
+            "width": null,
+            "height": 250
+          }
+        },
+        "medium-w": {
+          "url": "/media/images/statec_013.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/statec_013.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/statec_013.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 1080,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/statec_013.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 960
+          }
+        }
+      },
+      "base64": "data:image/png;base64,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"
+    },
+    "statec_014.tif": {
+      "resolutions": {
+        "thumb-w": {
+          "url": "/media/images/statec_014.thumb-w.jpg",
+          "params": {
+            "size": "thumb-w",
+            "width": 250,
+            "height": null
+          }
+        },
+        "thumb-h": {
+          "url": "/media/images/statec_014.thumb-h.jpg",
+          "params": {
+            "size": "thumb-h",
+            "width": null,
+            "height": 250
+          }
+        },
+        "medium-w": {
+          "url": "/media/images/statec_014.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/statec_014.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/statec_014.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 1080,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/statec_014.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 960
+          }
+        }
+      },
+      "base64": "data:image/png;base64,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"
+    },
+    "statec_015.png": {
+      "resolutions": {
+        "thumb-w": {
+          "url": "/media/images/statec_015.thumb-w.jpg",
+          "params": {
+            "size": "thumb-w",
+            "width": 250,
+            "height": null
+          }
+        },
+        "thumb-h": {
+          "url": "/media/images/statec_015.thumb-h.jpg",
+          "params": {
+            "size": "thumb-h",
+            "width": null,
+            "height": 250
+          }
+        },
+        "medium-w": {
+          "url": "/media/images/statec_015.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/statec_015.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/statec_015.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 1080,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/statec_015.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 960
+          }
+        }
+      },
+      "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAUCAYAAACaq43EAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEY0lEQVRIx02VN0tHSxDFbyOKOeecc8455wwqioigYAIVLSy0EMRCEARFsbJTsPIL2Fj4AezELzOP33nM/71i2Xv37sw5c87s3qCystKqqqqsoaFBo7m52dra2qy1tTU019fX6xvPs7Oz1tfXZ42NjXZwcGBDQ0NWW1trZWVllpuba+3t7RqFhYXW399vIyMjGsPDw4rr7OxUriA/P18BBQUFVlxcLBJNTU0C6erq0ujo6BAJxszMjBL09PTY4+OjjY+PG+SJzcnJserqaquoqDDysg9ABgSJAbiuru4/4OzsbMvMzLSMjAwlKCoqUgIIEDA4OGijo6NKAPji4qLNz8+LJPuokBxZWVmay8vLRZqYgYEBxXshNTU1FgBAEAQYeXl5CkxPTxcJErFOJZBAPsCRE3UAhWhaWppiiaMA5EQhbKJyYrq7u/VeUlJiAZt9QACvSktLNSMfxPhGMgbAKODes7a2tmYnJyeWmpoqy0gMEWxYWlpS36ASljmxwKtCbgZgBDIApyI8xBeSIllLS0tof0xMjF1dXdnPz49iUYfGYx07fn9/bW5uTkSRH0IhYAZJXXYGzyRi/eHhwd7f3+UnslEBxADm/fz83La3t0UQtRhURoV0/sTEhMBZB5hCBZySkqIqYEowx4MGYKYL//7+7Ovry7a2tiQz+2gS9uLj5ORkqIEgBQBHiOaD2OrqqmJ7e3tVEJiBtz4MXSZASUADcW4/Pz/t4+PDjo6O5BsgNIqrRAzeE4OkzKwzAzY1NWULCwtSADWpWs1FUyArngJOQtYJxL+npyd7e3uzl5cXOz4+VhcnJCTIM54hj2IQRgWIUBWVQx6VIMs76qpiEsTFxQkc0/END2JjYxV0cXFh19fXdnNzY6+vr3pPTk7WfvYSAxjVAEwTAkxe1lFobGxMypGXalE3YBONAgtkYJGOjI6OVvXLy8u2sbFhKysr9vz8bLe3t9rHHhKjEjNSIzNkIRAfHy8C09PToXNMxeCgZrC+vi6WALFIJSiQmJioygDnMsAnGo2biIR4TBxVAO7nGnt4Jx5/qRaZkRvfyS+pYZeUlKQKWECK/wNzY8GWigGlF/CJdd4jIyNVCeT8JABAHtboftb8HiCnmotNeOV/JmTzBmDdzyUDH5E0KipKcnEbRUREiAyxXKGAoxLxnHtiUIJ1rmJyy2N/oDPZBCsaAxUAhh0skevw8NDOzs7kMd+QnyaEFIRZZyaGvFQJIOqw7neGKvbENMPu7q5YIR+VhIeHiwS+bG5u2t3dnV1eXqoy9vG7wyK/KulwjhjPAPiVS/Oyh37wn09AZXjKvLOzo4802unpqc4vAchKxfwM2AMwIHQwwFTvPgKCfd6YDswauRmc/cCPD5Xt7+//2+pBYPf39/b9/R3yE5+Qiy7l2f+3xJGMruXMYpX/VlETEKzwIwth3dX+A2fj3t6e2IeFhSkRHiK3NxvKUBnVUzV3M99IDiBkyIc1fmwA4jvfyO3n+B9+b6nYpIDyxgAAAABJRU5ErkJggg=="
+    },
+    "statec_016.png": {
+      "resolutions": {
+        "thumb-w": {
+          "url": "/media/images/statec_016.thumb-w.jpg",
+          "params": {
+            "size": "thumb-w",
+            "width": 250,
+            "height": null
+          }
+        },
+        "thumb-h": {
+          "url": "/media/images/statec_016.thumb-h.jpg",
+          "params": {
+            "size": "thumb-h",
+            "width": null,
+            "height": 250
+          }
+        },
+        "medium-w": {
+          "url": "/media/images/statec_016.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/statec_016.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/statec_016.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 1080,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/statec_016.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 960
+          }
+        }
+      },
+      "base64": "data:image/png;base64,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"
+    },
+    "statec_017.png": {
+      "resolutions": {
+        "thumb-w": {
+          "url": "/media/images/statec_017.thumb-w.jpg",
+          "params": {
+            "size": "thumb-w",
+            "width": 250,
+            "height": null
+          }
+        },
+        "thumb-h": {
+          "url": "/media/images/statec_017.thumb-h.jpg",
+          "params": {
+            "size": "thumb-h",
+            "width": null,
+            "height": 250
+          }
+        },
+        "medium-w": {
+          "url": "/media/images/statec_017.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/statec_017.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/statec_017.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 1080,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/statec_017.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 960
+          }
+        }
+      },
+      "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAUCAYAAACXtf2DAAAACXBIWXMAAAsTAAALEwEAmpwYAAADvUlEQVQ4y1WVWU9TURSFry/yBwwP+BsML4Y/ZHg3Gn6D4QcYXgzB8EAgGBNDFGKQuYwdoC1tmacW6EAn2gIdlvfbcDCS7Jx7bs/da+219tl42XxehWJR17mc0peXOru4ULFUVi5fsPelSkWV21s9tFqq1Rt25vL62uIik1Gt0VC7IzXbbbU6HYs2q79v+t94x6enOjw+1un5uXg+OTtT5upKV9msgV7n8srf3Khcrap+d+cDXD2fS+3vq1qrqS09JwfoP4DY7q7WNja0E41pMxjU/OKi5hYWFAyHFVhbswA8kdpTrlAwYPZUAhHeJVIpnafTBtZ5AgOEZ++mVDIZWHeTSc3OzWlxeVm/Z2c1v7Boz0h19/Cgh2bLElMByfmmWC4r61fJMxVyxgEQHuUTMCP4kPIJEuFRuVJV4/7eyod9NBbX0cmJ9g4OdHJ6pvOLtHlHICV/yNYBIOcnoExnHNKsrq/r4PBIB0dHSmcurXQAYAgZTF/f3FQoEjEinCM5ZEw6P+6bzUeJYIEPRCgc0VYoZPLgR3JvT8FQ2BIgIyAwRC6AkO62XrfgN5JCoubvMdkAXBcZgM+INRzZNnMB2YnFDAjpAHFBQpcUafEAoNaTuc4Hz+mNwSQDhPZjZR+Nx5VIPnZJqVwxGSGxf3iopN89gCELVUICk7kXnScfPMziMMlgHtnZMcasBL/BjNJhi1/mjZ/ULulN8bkB3H3gLOeQyiTiAwC2o1FjHIvvmtHcD0yPJxJWJbcW7V13sSdcA3DbAYIIjXHnv/dIDmOSk4gIb2+b2YCypxFgTPdUb2uWjARU5kDY4wPMaWueeeeRnISY6sykio2tLVvZ0znOXD5EZ6cxneSSudmFNG60GACmYTKXhn7m9mIy3bW8ErCez/gziFvLgPsxNaWx8XGTkQ7inZtXgCATyRsAmLl+BQAgBSvGuhZFbzd7kGhsfEKe90I9Pa/1/sMHkxZg14l0IIAAPwO420ssrazY8KIqnjnsbiht+nloSC+7uvSuv19fR0cVWF0z9gD9mZ83EJ4hW/e98dhgKFN0ORDQwtKSdRXzBeYEd4DAwOGREb3t6zOAb9+/W4X5wr95xhl8QC6awIM1mjOiYUDAHBACH9zg45J9GhzUq+5u/Zye1sTkpH7NzFhCqkQeiFFtoVh6vAcAwJoKWEnOSnviBSBcRoBoCMx909tr574MD+vjwIB1kDOZljWDGSV4kPI/QnO8sIg+zh4CADerqGIrGLLu4j+dmz8YT2InEZ5RBZJm/XN/AaHqxpTIsHMbAAAAAElFTkSuQmCC"
+    },
+    "statec_018.png": {
+      "resolutions": {
+        "thumb-w": {
+          "url": "/media/images/statec_018.thumb-w.jpg",
+          "params": {
+            "size": "thumb-w",
+            "width": 250,
+            "height": null
+          }
+        },
+        "thumb-h": {
+          "url": "/media/images/statec_018.thumb-h.jpg",
+          "params": {
+            "size": "thumb-h",
+            "width": null,
+            "height": 250
+          }
+        },
+        "medium-w": {
+          "url": "/media/images/statec_018.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/statec_018.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/statec_018.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 1080,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/statec_018.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 960
+          }
+        }
+      },
+      "base64": "data:image/png;base64,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"
+    },
+    "statec_019.jpg": {
+      "resolutions": {
+        "thumb-w": {
+          "url": "/media/images/statec_019.thumb-w.jpg",
+          "params": {
+            "size": "thumb-w",
+            "width": 250,
+            "height": null
+          }
+        },
+        "thumb-h": {
+          "url": "/media/images/statec_019.thumb-h.jpg",
+          "params": {
+            "size": "thumb-h",
+            "width": null,
+            "height": 250
+          }
+        },
+        "medium-w": {
+          "url": "/media/images/statec_019.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/statec_019.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/statec_019.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 1080,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/statec_019.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 960
+          }
+        }
+      },
+      "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAACXBIWXMAAAAAAAAAAAHqZRakAAADcUlEQVQ4yzWSxUuoWxTFz8yhAYIxUAe2YD0ssDvBwO5uvFggYuJAsbDFTgRFDET8E0QcWPda2NfWaz8MeO/n93H3YHNirb322ueI29vb9/f3r6+vz8/Pj4+Pf//G8/PzHynu7+/v7u6AXV1dnZ6enpycHB8fHx4enp2diaenp5eXl9fXVxYPDw+AgN7c3FxeXv6WAiiEo6Ojvb29n1JsbW2RORRvb28wZRpxfX0tM8/Pz0/+hiy1s7OzsbGxtra2JQXlBD3DR1buDZpcBTLXcOR8cHCwu7uL4Obm5i8pqChw+58ULB4fH2UyhS4uLnB1LMX+/v6eFNvb2/DJkPEvgNIP9ZaXl8k0ubKywgJl0IBoFTQnq6ura1LQ8/r6+rdyRUVFR0dHRkZGSkpKUVFRQ0NDY2NjVVVVXV1da2trU1NTZWUlC85LSkoKCwurq6tra2thcSXS09Pz8vIgJyUlZWdnc52fnx8VFRUaGlpeXt7c3FxcXAwhKysLck1NDZlC8Pv6+kRgYKC3t3d4eHhQUFBycjKc7u5uOOTJycnFxcWRkZGJiYne3t7R0dGZmZnZ2dmFhYX5+fmuri5Bsba2toGBAdA9PT39/f3T09NcLy0tFRQUcNvS0jI0NNTZ2ck5/OHh4fHxcWAxMTFibm5uampqcHAQxNjYGBdyCdTwYm9vn5qayjo2NpYt3SYmJjIUDKelpYn29nbmQWHEmQ0+aQTnyAYEBPj6+vr5+ZWVlbm5uVlYWGAKQU9PT8bk6Ogo0MQVTPqBzAgYdW5uLoTS0lLGYWZmFhERQRUnJ6fg4GBzc3Nra+t/pPhWRorXqq+vB8QdWU9PD4SXl5eqqmpCQgLDz8zMRMrKykpdXV1HRweAnZ2dQI2XIOMtMjLS1dXVx8eHEioqKkpKSoqKitra2goKCsrKypqammpqaoaGhqamprigecFnoL0fUoSFhRkYGFAVHEwTExMjIyPIZDgou7i46OrqYh4BLAgc8j1ycnL4BtHR0Rhjwg4ODvr6+rQHlEIaGhpaWlqWlpZxcXH+/v7u7u4sMCL4GLwB/4wNPwx9anEHApqxsTHmoeEWZebHRNGkBG8hsqSIj4/nlCOmih8PDw9bW1u6cJOCQ9phywjhA4PPXAU0dJgnGzIXzs7ONjY2Mpo1ChDkLVZlTSIkJOR/7EKG1eP2aScAAAAASUVORK5CYII="
+    },
+    "statec_020.jpg": {
+      "resolutions": {
+        "thumb-w": {
+          "url": "/media/images/statec_020.thumb-w.jpg",
+          "params": {
+            "size": "thumb-w",
+            "width": 250,
+            "height": null
+          }
+        },
+        "thumb-h": {
+          "url": "/media/images/statec_020.thumb-h.jpg",
+          "params": {
+            "size": "thumb-h",
+            "width": null,
+            "height": 250
+          }
+        },
+        "medium-w": {
+          "url": "/media/images/statec_020.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/statec_020.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/statec_020.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 1080,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/statec_020.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 960
+          }
+        }
+      },
+      "base64": "data:image/png;base64,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"
+    },
+    "statec_021.jpg": {
+      "resolutions": {
+        "thumb-w": {
+          "url": "/media/images/statec_021.thumb-w.jpg",
+          "params": {
+            "size": "thumb-w",
+            "width": 250,
+            "height": null
+          }
+        },
+        "thumb-h": {
+          "url": "/media/images/statec_021.thumb-h.jpg",
+          "params": {
+            "size": "thumb-h",
+            "width": null,
+            "height": 250
+          }
+        },
+        "medium-w": {
+          "url": "/media/images/statec_021.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/statec_021.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/statec_021.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 1080,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/statec_021.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 960
+          }
+        }
+      },
+      "base64": "data:image/png;base64,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"
+    },
+    "statec_021.png": {
+      "resolutions": {
+        "thumb-w": {
+          "url": "/media/images/statec_021.thumb-w.jpg",
+          "params": {
+            "size": "thumb-w",
+            "width": 250,
+            "height": null
+          }
+        },
+        "thumb-h": {
+          "url": "/media/images/statec_021.thumb-h.jpg",
+          "params": {
+            "size": "thumb-h",
+            "width": null,
+            "height": 250
+          }
+        },
+        "medium-w": {
+          "url": "/media/images/statec_021.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/statec_021.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/statec_021.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 1080,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/statec_021.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 960
+          }
+        }
+      },
+      "base64": "data:image/png;base64,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"
+    },
+    "statec_021_orig.jpg": {
+      "resolutions": {
+        "thumb-w": {
+          "url": "/media/images/statec_021_orig.thumb-w.jpg",
+          "params": {
+            "size": "thumb-w",
+            "width": 250,
+            "height": null
+          }
+        },
+        "thumb-h": {
+          "url": "/media/images/statec_021_orig.thumb-h.jpg",
+          "params": {
+            "size": "thumb-h",
+            "width": null,
+            "height": 250
+          }
+        },
+        "medium-w": {
+          "url": "/media/images/statec_021_orig.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/statec_021_orig.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/statec_021_orig.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 1080,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/statec_021_orig.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 960
+          }
+        }
+      },
+      "base64": "data:image/png;base64,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"
     }
   }
 }
