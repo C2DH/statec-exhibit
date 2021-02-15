@@ -208,12 +208,12 @@ const Flowers = ({
   scaleX,
 }) => {
   const [activeFlower, setActiveFlower] = useState(0);
-  const { groups = [], dataset = '' } = module;
+  const { groups = [], dataset = '', from, to } = module;
 
   const { groupValues, minValue, maxValue, legend } = useMemo(() => {
     let { values, legend } = require(`../../data/datasets/${dataset}.json`);
     values = values.filter((d) => {
-      return d.t >= module.from && d.t <= module.to;
+      return d.t >= from && d.t <= to;
     });
     const [minYear, maxYear] = extent(values, (d) => d.t);
     const [minValue, maxValue] = values.reduce(
@@ -239,7 +239,7 @@ const Flowers = ({
       groupValues,
       legend,
     };
-  }, [dataset, groups]);
+  }, [dataset, groups, from, to]);
 
   return (
     <div className="Flowers flex flex-column" style={{ height: '90%' }}>

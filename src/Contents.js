@@ -4,7 +4,6 @@ import closeWhite from './assets/images/close.svg';
 import { useStore } from './store';
 import { isMobileWithTablet } from './constants';
 import './styles/Menu.css';
-import { Link } from 'react-router-dom';
 
 
 const Contents = ({ history }) => {

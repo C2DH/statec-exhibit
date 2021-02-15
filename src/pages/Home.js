@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useStore } from '../store';
-import { Scrollama, Step } from 'react-scrollama';
 import styles from './Home.module.css';
 import { isMobileWithTablet, ChapterRoutes } from '../constants';
 import Covers from '../components/Cover/Cover';

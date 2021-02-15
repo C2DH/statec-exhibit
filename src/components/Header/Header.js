@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { useStore } from '../../store';
 import styles from './Header.module.css';
-import { Link } from 'react-router-dom';
 import { isMobileWithTablet } from '../../constants';
 
 class Header extends Component {

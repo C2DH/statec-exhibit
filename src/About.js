@@ -18,7 +18,7 @@ const About = () => {
         <h3 className="tl fw1 mv0  about-title">
         {t()}
         </h3>
-        <div className="tl mt3  about-subtitle"></div>
+        {/*<div className="tl mt3  about-subtitle"></div>
 
         <div className="tl mt3  about-subtitle">AAAAAAA</div>
         <div className="tl fw7  about-subtitle">
@@ -30,6 +30,7 @@ const About = () => {
             CCCCCC
           </a>
         </div>
+        */}
         <div className="tl mv4">
           <h1 className="tl fw1 mv0  about-title">{t('AboutTitle')}</h1>
           <p className="about-paragraph"

@@ -52,7 +52,7 @@ class TrendAdditionalLinePointers extends React.Component{
       scaleY,
       cx,
       radius=3,
-      currentParagraph,
+      // currentParagraph,
       displayValue=false
     } = this.props
     //
