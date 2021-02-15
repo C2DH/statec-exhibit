@@ -1,7 +1,7 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 import { ChapterRoutesWithIndex, isMobileWithTablet } from '../../constants'
-import {Link} from 'react-router-dom'
+// import {Link} from 'react-router-dom'
 import styles from '../../pages/Home.module.css';
 
 
