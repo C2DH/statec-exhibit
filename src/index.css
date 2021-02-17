@@ -381,11 +381,39 @@ p.moduleParagraph {
   border: 1px solid var(--secondary);
   background: transparent;
   opacity: 0.25;
+  cursor: pointer;
+}
+.ChapterProgress_step:hover{
+  opacity: 1;
+}
+.ChapterProgress_step::after{
+  content:'';
+  width: var(--spacer-2);
+  height: var(--spacer-2);
+  position: absolute;
+  left: -1px;
+  top: -1px;
+  z-index:0;
+  background-color: transparent;
+  will-change: background-color;
+  transition: background-color .5s;
+  border-radius: var(--spacer-2);
+  animation-timing-function: ease-in-out;
+  pointer-events: none;
+}
+
+.ChapterProgress_step:hover::after{
+  animation-name: pulse;
+  animation-duration: .5s;
+  background: var(--secondary);
 }
 
 .ChapterProgress_step.done {
   opacity: 1;
   border-color: var(--primary);
+}
+.ChapterProgress_step.done:hover::after{
+  background: var(--primary);
 }
 
 .ChapterProgress_step.active {
@@ -427,4 +455,23 @@ ul.nav.nav-tabs li.nav-item button.active {
   ul.nav.nav-tabs li.nav-item button {
     border: 1px solid transparent !important;
   }
+}
+
+@keyframes pulse {
+  from {
+    transform: scale3d(.1, .1, .1);
+  }
+
+  50% {
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.pulse {
+  animation-name: pulse;
+  animation-timing-function: ease-in-out;
 }
