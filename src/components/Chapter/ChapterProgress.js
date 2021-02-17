@@ -2,8 +2,14 @@ import React from 'react'
 import { useTranslation } from 'react-i18next'
 
 
-const ChapterProgress = ({ steps, currentStep, progress}) => {
+const ChapterProgress = ({ themeId, steps, currentStep, progress}) => {
   const { t } = useTranslation()
+
+  const handleClick = (index) => {
+    const hash = `${themeId}-m${index}`
+    window.location.hash = hash
+    console.info('ohloaooaoa', hash)
+  }
 
   return (
     <div className="ChapterProgress fixed inline-flex flex-column justify-center h-100" style={{
@@ -11,7 +17,7 @@ const ChapterProgress = ({ steps, currentStep, progress}) => {
       left: 0
     }}>
       {steps.map((d,i) => (
-        <div key={i} className={`relative
+        <div key={i} onClick={() => handleClick(i)} className={`relative
           ChapterProgress_step
           ${currentStep === i && 'active'}
           ${currentStep > i && 'done'}

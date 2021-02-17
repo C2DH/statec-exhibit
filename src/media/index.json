@@ -107,6 +107,8 @@
       "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAUCAYAAABxnDbHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEfUlEQVRIx1WVVU82QQyFlwsuCBDc3SEEh+Du7u4uwd1dgmsgQEK44m/2y9Mv8wYumtmdnWlPz2m7VlJSkmRkZEhubq4kJiZKQkKCFBYWSlxcnGRmZkpNTY1UVlZKdXW1Gu+1tbW6VlVVSUVFhZSWlkpxcbFaUVGRbS0oKJD8/Hzbmp2drfestLQ0SU1N1YMEjI+P1+fIyEjJysqS+vp6W7C6ujp9b2hoUOMZAIAieHl5uQJgLSsrk5KSkj8g8vLy9I5Flunp6XoQJBxgzcnJ0UtYc3Pzn2CNjY3S1NQkra2t0tbWptbe3q5nAPebBQOAFd/4skibj1AArVyIiYnRtaWlRfd5Ns47Ojqks7NTA5I5hiMMQGbvtwQwgREYcBaocQSV5iDZ9/b22gJAGU75zkWAkGl/f7864dlkb1bMMGNkYcWvBdegYcUhmuIcHckcHUyBcZFsx8bGZHt7W25vb+X9/V3Ozs5kbm5OhoaGpKenRw0wAMZ4JgHuDg8PixUbGytBQUE2SlxdXRXEzMyMLC0taQBQ9/X1yerqqszPz8vm5qZMTk4qqJubG3l+fpanpye5uLiQ8/NzOTk5kbW1Nb07MDCgjJh1YmJCLEMBuo6MjOgmwVdWVuT09FQODg50f3p6Wi+BlExYAbO+vi77+/sqy97enmxsbOhdjOy5h09AsrJnQaNxyDPZcAEng4ODsrCwoDqw+vr6ir+/v1YhbJDN4eGhXF9fy+joqD4DYGdnR4NvbW2pv8XFRZtxx6JACAiVy8vL0tXVpR/JAA3QhP2rqyvV1c/PT3VPSUnRjKGaloBqMgEcd3d3dzUoK/pjvMOGBUUUAEVxf3+vHwmEdqAFFN8BQyBvb28JCQnR4QEAHx8fcXNz02fTy9yBTrJHBjTH9+Pjo9zd3YlF/6DZ19eXHB0dKXIQkTkoGRw4ZmqFhYVpsODgYC24wMBAYaKRJSsFCQBWFxcXcXBw0Fp5eHjQYG9vb/Lx8SGWGQjogCZ8OD4+1iy7u7tVQ2dnZ2FGExhqAwICFAizmToAGH1OYADREV5eXmJvb699e3l5qfJQ4RoUXRCbDYqAbMlyfHxce5ds3N3dJTo6WgPjNDQ0VJKTk1VTxqWnp6dmxlCJiIgQR0dHPUem9CdZQjFsfn5+ioV+ZPX9/a1VSMUyGhkUDAWytLOzEw8PD6WNd3SFIQqM7AgKrYxP/k5QDxMwwjn8wSb9+/Pz83/2MuBZoQi6OEx78E5gHGAEIzhG0dBzUIzWsEFAKhzdYYV+Dw8PV5mQACZIzmJSUHFcjIqKUmRk5OTkpBngBApZoRqNCQr16ERPozO0mn8y55CAKscXsxoQnKNelF5GHFWM6FQbDghIZqw4ICPQAg4mcIjur6+vWgO0Hr9BsiMzZKL9yJ4Ra34ASGjNzs5qQfAnYUggPNyzz+SBEugiCIEBh2MMJwwC5u3U1JQGJxAFyR69SVdgPNM6mEUb4BBN+aNAJaITnObGEYbWUEdgqKW3X15etOpxxDN/HNOLVCnvaGj2Mc79AzAiXTxNsO3TAAAAAElFTkSuQmCC"
     },
     "statec_001.png": {
+      "caption": "Le \"Gauleiter\" Simon salue l'armée allemande au garde-à-vous sur la place de l'hôtel de ville lors de la fête du travail du 1er mai 1941",
+      "provenance": "Archives de la Ville de Dudelange - Fonds Jean-Pierre Conrardy",
       "resolutions": {
         "thumb-w": {
           "url": "/media/images/statec_001.thumb-w.jpg",
@@ -266,7 +268,8 @@
       "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAUCAYAAABxnDbHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFNUlEQVRIxz2VT1BPcRTF35ZMbZQyhSQmlURIUSopqRQqRNFfQkjSP/8qo1BmGlGRlKZS0lTDDBo1U2O0srGoTRZ2rewtrvmcGRZv3vu9d7/3nnPuuffnfPr0yT58+GDfvn2zwcFBGx4etsbGRsvLy7OWlharqqqy5uZmO3/+vN27d89aW1utpKTEbt68aU+ePLGZmRlramqy4uJi6+rq0vOzZ89sbGzMxsfHlZM8FRUVdu3aNcU4ExMTCpienrZ3797ZmzdvlPD06dMqWFZWZrdu3dKhq1evKumpU6csPj7erly5Yj9//rS7d+/ajh07rLq62h49emTl5eU2MDCgAn19fcp34cIFgb1z5445HR0dCuIDh86cOWO3b99WIu6wy8/P1/fCwkLFREdHm5eXlx06dEhxJ0+etH379glMQUGB+fn5WVpamhR79eqV1dTUWHJyssC/ffvWnPv379uWLVssNDTUjhw5YpcuXbLJyUn7/PmzPXz40Hp7e62/v1/yFhUV2dGjR23z5s12/fp1KdPe3i51UAu5Z2dnpU5UVJQAvH792qamppQHtZBeRWtray0lJcV27txpmZmZhuSdnZ2WlZUlZqDevn27bdu2zby9vW39+vWSdmRkxPAEbC9fvizFYAWjjRs3ijFyfv/+3X79+mVtbW2S2CHoxYsX6lFgYKDt2bPHYmJiJClyJSYmSjre8xu2hw8fltHCwsIEjO+olZCQIGAREREWFxdnZ8+eFWvOoBRMiXdIRm8wDQiR7/jx4wqmDxgEdA0NDUb/6TMFs7Ozbc2aNZIa5v7+/oqFHYpRiPN4AUn37t1rx44dk0EdCtXV1ckwJD948KDt37/fUlNTxS44OFiHGRvko++wIQ52ISEhUigoKEgAkHX37t1qU1JSku7kPnDggMhhRocRQGt6RCGQ0AekiYyMlMygRn7A0F8Kb926Vc8ACw8PVyzvYA3Q9PR0FcFQqAfT2NhYqaSRefDggYb7xIkTdu7cObtx44b6unz5cnNzc5OMLi4uYkM/AwICNDIkcXd3l7noL+xRAVYYC+XIR+uYCoiJaXd3txyKSSgMG5i4urqa4zjqL3LxDBDGAskoQuzq1avN19fXMjIy1AbeU5QCkKGnKMfM4gvinNHRUSHCCMgCagLYILCrr6/XOK1du9aePn2quaysrJSrQY20sONOQWTGJxRkfom9ePGiWoh3ZCTWFkzWrVunxLCYn5+3r1+/agQwChcoScL+ZGn8cz0FYcp5nAtwjEVPWYMUYpFgQgqyFxz6h0ko6OHhIanZw0NDQ5KvtLRUaw4G9Bx5AMo5DMI8co4+syRY7owMpkJW8uFi+o3x+O7wAddSdMWKFRpiWDFT9Hlpacl+/PjxX0L6jZtxYU5OjmZz06ZNtmHDBhWYm5vTnwIjxqwDjl6jGg5mfBx2I05j5rA7C58xgR3yLC4uygwU5BBmohBbJzc3V3Li7lWrVmnXotCXL18EFFC8w6DkYHyQ2nn+/LkkRBKcSGKMRVH2L4fZu8uWLZOEtAIPwBx5AcrFUqCXxLKTFxYWRIC9DglWIK7GWA4a4y6K4tyVK1eKAZLA9M+fP1rqAIIR5iF2165dMh1nMBqMkZ1c/LH//v1bwDEe75lT4rk779+/FyIY4jgfHx99hAVD3dPTYy9fvpQxAAQYnPtvobMk6CmyIx2MGKXHjx+rIM9cjCBntZE+fvyo+UNS7M0i58Ktnp6e///KMBobiB5REKMhFf1i6zDbjBJzTe/+FWZUAILMkMNIfwET4t7enE8klwAAAABJRU5ErkJggg=="
     },
     "statec_004.png": {
-      "caption": "Vue aérienne de Dudelange prise à bord de l'avion Prince Jean de Luxembourg, aviateur L. Hemmer, vue générale de l'usine avec les deux châteaux d'eau. <br/> Archives de la Ville de Dudelange - Fonds Rudy Kremer",
+      "caption": "Vue aérienne de Dudelange prise à bord de l'avion Prince Jean de Luxembourg, aviateur L. Hemmer, vue générale de l'usine avec les deux châteaux d'eau.",
+      "provenance": "Archives de la Ville de Dudelange - Fonds Rudy Kremer",
       "resolutions": {
         "thumb-w": {
           "url": "/media/images/statec_004.thumb-w.jpg",
@@ -638,6 +641,8 @@
       "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAUCAYAAACEYr13AAAACXBIWXMAAAsTAAALEwEAmpwYAAADdklEQVQ4yz1UZyj9YRh9P8go2VuUrk2yElkpUcosQokUvthkj2wJcZXsMssOGbnFzQehlJHMkp2y58fz73l0/x+ebv3e9znPOec9zxXf399Q1OfnJ35/f7kU376+vvD29obn52c8PT1xvb6+8reXlxeIn58fvvjx8YHHx0csLy9jeHgYAwMDqKysxODgIDY2NnB8fIyTkxOcnZ3h+voad3d3uL29hXh/f2d0mjQ9PQ1nZ2dYW1tDR0eHSyKRwN3dHRkZGZDJZNjb28PR0REuLi64BE19eHjAzc0NQkJCoKWlBVNTU6iqqkJFRQWGhobQ19eHpqYmgoKCsLS0hN3dXRweHjIrQTTu7++xvr6O2NhYdHR0MO3m5makpKTA0tKSQQmIQBISErC5uclFbMTV1RWopqamuJHoKdBPT0/R0NDAAEZGRjA3N4eFhQV7JJfLsbW1BXF+fo7Ly0uMjIywaaurq9je3ma9ZOjc3Bzc3NwYRE9PD8bGxqivr8fKygqDCMUkokwS6urq0NraitnZWSwsLGBiYgIRERHMwMDAgEHy8/MxPj6OxcVFiIODA6bb3t4OR0dH1NTUwNbWFuHh4Ux/cnISoaGhUFZW/g+QnZ2N3t5eBhfk6P7+PksoKSlhNp2dnSynv78fQ0ND/D0xMRH+/v5wcXHhIVKpFKOjoxCkd2dnhyllZWWhsbERXV1dmJmZYbNoEl1sa2uDj48PkpOTUVtbi5aWFg6bWFtb4yck81xdXRETE8NP2dPTg76+PoyNjTEDJycnREZGorS0FBUVFWhqavoDILPIaQpIVFQUG9bd3c1TyReiS16kp6czQzKwqqqKAYipoMs0bX5+nulnZmayvuLiYuTk5PBFMosCRGYWFhairKyMgenlBGkkENIYEBAAe3t7luHn58cvQMAkMzc3l8/y8vJQXl6OoqIi9kLEx8fD29sb2traUFJS4rRR5sltaqIFI4nBwcH8hB4eHkhLS0NBQcEfgJqaGi+Nuro6p01DQ4MXiSLr4OCA6Oho9sXMzIz3graTchIYGMgyBS2Jrq4uM6BmWhjaPjs7O75kY2PDAaJfYuXr6wsvLy8uWjZByBRTokfNBEL/A9SgaFaw8fT0RFhYGKc0KSkJ1dXVEPT2dGhiYsIg1ECsrKysmCqdk6HkS1xcHFJTU3kyeUCZ+AfGjgfbz4i5kgAAAABJRU5ErkJggg=="
     },
     "statec_011.tif": {
+      "caption": "Distribution d'oeufs et de sucre dans la ville de Luxembourg pendant la première Guerre Mondiale suite à l'introduction du rationnement par le gouvernement",
+      "provenance": "© Photothèque de la Ville de Luxembourg/Théo Wirol",
       "resolutions": {
         "thumb-w": {
           "url": "/media/images/statec_011.thumb-w.jpg",
@@ -744,6 +749,8 @@
       "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAUCAIAAADZUCB4AAAACXBIWXMAAC4jAAAuIwF4pT92AAADDUlEQVQozxVR+U/ScRj+/DO0ynBlak7NmssbDErRICHOwAsFBOULSCK3yBmSR0UiigjzCEW8WprHVmaprTXNDo+y0rTj5962Z+/ePc977XnR4cHx8dGfX8d/fx//Pfj+88vu/u7O153Pe9ufdn58O3z3dmPh2cLsk1m0t7t/8OPo+/4BaO83ttZX3wDWXq+/fLGytflh9dXaxHhsMjaBoAOExfnFmcnpmanpqYlJYMcio7HoOJRC/sj7sD8QQK9XVkEeHhoKBYMDwWCwP+jv8XU/8o4MDW9tfpyenPa43V2dHWhpfnEsEunt9XsfPPB1dwN1r63N5XT4fb7tjzvLz5dbzCZLixlFx6KgOe02912X1dLisNuAdTrs3V5vZOSxw2ZTyBv+13na3GaToblJrVYpVAp5oxJTKTGjQdfZ3h7o61MpMJGwCmuQIbgFKKhuUquEleUCHofHZt4qo4lrhPfaPJAwaNQKAQ/ZWi1wqcVskopFSkyO1UsbZNIKPq+qXKDV3IEeAZfD57KRTCKuKufTSoplYhGPxbxyOYNWQoFhJr3eoNVSKUWkgvyr+XlIJKxmM+iEnGyH1arTaPTN2v6+AMBiMmk1TWWlJQn4MwwqFRFzc4i52fL6+tGRCPxncWHp5fJKKDiglMu5LCaFTC7My1PJ5aiIVAgID4Q2N7bm5xYmorG5p3ND4UFRjVBSU3ObzaLTqJLaWsQsu0mlFNdWV1ktFqfdbre2gp0Bf299XZ2Ax83MuHgOj09NSkJwbzGZfBKHS0k8TyIQNHfUfl/Pw6774Eh+dlZKYuJpHO4U7gTisVkXEs6RiEQWg54Qj4fBsWjsfkdnOY9byeeTiIT4uLiM1FRks7TyORwlhtmsVhWGmQx6gEGnheiwWW+V3YQ9CfHxyO1yGXU6qagWjJVKxLI6Ca2Uwuew1UoF/JpJp+dmZZ3F41FaclJ6SjJYCIuuEQvAC6lY7Ha6wBqjXt+owEqLrmdnZiIykWA2GmUSEYN2Awa3ezyD4fD4WDQcCgkrK+Bbl9LT8HGn/wHi2KD2HOy3SgAAAABJRU5ErkJggg=="
     },
     "statec_013.tif": {
+      "caption": "Depuis les années 1980, les banques de renommée nationale et internationale se sont installées boulevard Royal. Photo de 1997.",
+      "provenance":	"© Photothèque de la Ville de Luxembourg/Jean-Pierre Fiedler",
       "resolutions": {
         "thumb-w": {
           "url": "/media/images/statec_013.thumb-w.jpg",
@@ -956,6 +963,8 @@
       "base64": "data:image/png;base64,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"
     },
     "statec_017.png": {
+      "caption": "Deux pages du livret d'étranger d'un italien arrivé à Dudelange le 17 décembre 1924. <em>Giovanni Di Febo</em>, ne sachant pas écrire, signait de trois croix",
+      "provenance":	"Archives de la Ville de Dudelange - Fonds Jean-Pierre Conrardy",
       "resolutions": {
         "thumb-w": {
           "url": "/media/images/statec_017.thumb-w.jpg",
@@ -1009,6 +1018,8 @@
       "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAUCAYAAACXtf2DAAAACXBIWXMAAAsTAAALEwEAmpwYAAADvUlEQVQ4y1WVWU9TURSFry/yBwwP+BsML4Y/ZHg3Gn6D4QcYXgzB8EAgGBNDFGKQuYwdoC1tmacW6EAn2gIdlvfbcDCS7Jx7bs/da+219tl42XxehWJR17mc0peXOru4ULFUVi5fsPelSkWV21s9tFqq1Rt25vL62uIik1Gt0VC7IzXbbbU6HYs2q79v+t94x6enOjw+1un5uXg+OTtT5upKV9msgV7n8srf3Khcrap+d+cDXD2fS+3vq1qrqS09JwfoP4DY7q7WNja0E41pMxjU/OKi5hYWFAyHFVhbswA8kdpTrlAwYPZUAhHeJVIpnafTBtZ5AgOEZ++mVDIZWHeTSc3OzWlxeVm/Z2c1v7Boz0h19/Cgh2bLElMByfmmWC4r61fJMxVyxgEQHuUTMCP4kPIJEuFRuVJV4/7eyod9NBbX0cmJ9g4OdHJ6pvOLtHlHICV/yNYBIOcnoExnHNKsrq/r4PBIB0dHSmcurXQAYAgZTF/f3FQoEjEinCM5ZEw6P+6bzUeJYIEPRCgc0VYoZPLgR3JvT8FQ2BIgIyAwRC6AkO62XrfgN5JCoubvMdkAXBcZgM+INRzZNnMB2YnFDAjpAHFBQpcUafEAoNaTuc4Hz+mNwSQDhPZjZR+Nx5VIPnZJqVwxGSGxf3iopN89gCELVUICk7kXnScfPMziMMlgHtnZMcasBL/BjNJhi1/mjZ/ULulN8bkB3H3gLOeQyiTiAwC2o1FjHIvvmtHcD0yPJxJWJbcW7V13sSdcA3DbAYIIjXHnv/dIDmOSk4gIb2+b2YCypxFgTPdUb2uWjARU5kDY4wPMaWueeeeRnISY6sykio2tLVvZ0znOXD5EZ6cxneSSudmFNG60GACmYTKXhn7m9mIy3bW8ErCez/gziFvLgPsxNaWx8XGTkQ7inZtXgCATyRsAmLl+BQAgBSvGuhZFbzd7kGhsfEKe90I9Pa/1/sMHkxZg14l0IIAAPwO420ssrazY8KIqnjnsbiht+nloSC+7uvSuv19fR0cVWF0z9gD9mZ83EJ4hW/e98dhgKFN0ORDQwtKSdRXzBeYEd4DAwOGREb3t6zOAb9+/W4X5wr95xhl8QC6awIM1mjOiYUDAHBACH9zg45J9GhzUq+5u/Zye1sTkpH7NzFhCqkQeiFFtoVh6vAcAwJoKWEnOSnviBSBcRoBoCMx909tr574MD+vjwIB1kDOZljWDGSV4kPI/QnO8sIg+zh4CADerqGIrGLLu4j+dmz8YT2InEZ5RBZJm/XN/AaHqxpTIsHMbAAAAAElFTkSuQmCC"
     },
     "statec_018.png": {
+      "caption": "",
+      "provenance": "",
       "resolutions": {
         "thumb-w": {
           "url": "/media/images/statec_018.thumb-w.jpg",
@@ -1062,6 +1073,8 @@
       "base64": "data:image/png;base64,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"
     },
     "statec_019.jpg": {
+      "caption": "Couverture du livre <a href='https://www.land.lu/page/book/5/FRE/index.html' target='_blank'><em>Cette colonie qui nous appartient un peu</em> - La communauté luxembourgeoise au Congo belge 1883-1960</a> de Régis Moes",
+      "provenance": "Éditions d’Lëtzebuerger Land/Fondation Robert Krieps, 2012",
       "resolutions": {
         "thumb-w": {
           "url": "/media/images/statec_019.thumb-w.jpg",
@@ -1115,6 +1128,8 @@
       "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAACXBIWXMAAAAAAAAAAAHqZRakAAADcUlEQVQ4yzWSxUuoWxTFz8yhAYIxUAe2YD0ssDvBwO5uvFggYuJAsbDFTgRFDET8E0QcWPda2NfWaz8MeO/n93H3YHNirb322ueI29vb9/f3r6+vz8/Pj4+Pf//G8/PzHynu7+/v7u6AXV1dnZ6enpycHB8fHx4enp2diaenp5eXl9fXVxYPDw+AgN7c3FxeXv6WAiiEo6Ojvb29n1JsbW2RORRvb28wZRpxfX0tM8/Pz0/+hiy1s7OzsbGxtra2JQXlBD3DR1buDZpcBTLXcOR8cHCwu7uL4Obm5i8pqChw+58ULB4fH2UyhS4uLnB1LMX+/v6eFNvb2/DJkPEvgNIP9ZaXl8k0ubKywgJl0IBoFTQnq6ura1LQ8/r6+rdyRUVFR0dHRkZGSkpKUVFRQ0NDY2NjVVVVXV1da2trU1NTZWUlC85LSkoKCwurq6tra2thcSXS09Pz8vIgJyUlZWdnc52fnx8VFRUaGlpeXt7c3FxcXAwhKysLck1NDZlC8Pv6+kRgYKC3t3d4eHhQUFBycjKc7u5uOOTJycnFxcWRkZGJiYne3t7R0dGZmZnZ2dmFhYX5+fmuri5Bsba2toGBAdA9PT39/f3T09NcLy0tFRQUcNvS0jI0NNTZ2ck5/OHh4fHxcWAxMTFibm5uampqcHAQxNjYGBdyCdTwYm9vn5qayjo2NpYt3SYmJjIUDKelpYn29nbmQWHEmQ0+aQTnyAYEBPj6+vr5+ZWVlbm5uVlYWGAKQU9PT8bk6Ogo0MQVTPqBzAgYdW5uLoTS0lLGYWZmFhERQRUnJ6fg4GBzc3Nra+t/pPhWRorXqq+vB8QdWU9PD4SXl5eqqmpCQgLDz8zMRMrKykpdXV1HRweAnZ2dQI2XIOMtMjLS1dXVx8eHEioqKkpKSoqKitra2goKCsrKypqammpqaoaGhqamprigecFnoL0fUoSFhRkYGFAVHEwTExMjIyPIZDgou7i46OrqYh4BLAgc8j1ycnL4BtHR0Rhjwg4ODvr6+rQHlEIaGhpaWlqWlpZxcXH+/v7u7u4sMCL4GLwB/4wNPwx9anEHApqxsTHmoeEWZebHRNGkBG8hsqSIj4/nlCOmih8PDw9bW1u6cJOCQ9phywjhA4PPXAU0dJgnGzIXzs7ONjY2Mpo1ChDkLVZlTSIkJOR/7EKG1eP2aScAAAAASUVORK5CYII="
     },
     "statec_020.jpg": {
+      "caption": "Rationnement de pommes de terres, Pierre Blanc 1917",
+      "provenance": "Public domain",
       "resolutions": {
         "thumb-w": {
           "url": "/media/images/statec_020.thumb-w.jpg",
@@ -1167,60 +1182,9 @@
       },
       "base64": "data:image/png;base64,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"
     },
-    "statec_021.jpg": {
-      "resolutions": {
-        "thumb-w": {
-          "url": "/media/images/statec_021.thumb-w.jpg",
-          "params": {
-            "size": "thumb-w",
-            "width": 250,
-            "height": null
-          }
-        },
-        "thumb-h": {
-          "url": "/media/images/statec_021.thumb-h.jpg",
-          "params": {
-            "size": "thumb-h",
-            "width": null,
-            "height": 250
-          }
-        },
-        "medium-w": {
-          "url": "/media/images/statec_021.medium-w.jpg",
-          "params": {
-            "size": "medium-w",
-            "width": 640,
-            "height": null
-          }
-        },
-        "medium-h": {
-          "url": "/media/images/statec_021.medium-h.jpg",
-          "params": {
-            "size": "medium-h",
-            "width": null,
-            "height": 480
-          }
-        },
-        "large-w": {
-          "url": "/media/images/statec_021.large-w.jpg",
-          "params": {
-            "size": "large-w",
-            "width": 1080,
-            "height": null
-          }
-        },
-        "large-h": {
-          "url": "/media/images/statec_021.large-h.jpg",
-          "params": {
-            "size": "large-h",
-            "width": null,
-            "height": 960
-          }
-        }
-      },
-      "base64": "data:image/png;base64,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"
-    },
     "statec_021.png": {
+      "caption": "Vue de la ville de Luxembourg lors du démantèlement de la forteresse (1870), Nicolas Liez (1809-1892)",
+      "provenance": "Collection du Musée national d’histoire et d’art – Luxembourg",
       "resolutions": {
         "thumb-w": {
           "url": "/media/images/statec_021.thumb-w.jpg",
@@ -1274,6 +1238,8 @@
       "base64": "data:image/png;base64,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"
     },
     "statec_021_orig.jpg": {
+      "caption": "Vue de la ville de Luxembourg lors du démantèlement de la forteresse (1870), Nicolas Liez (1809-1892)",
+      "provenance": "Collection du Musée national d’histoire et d’art – Luxembourg",
       "resolutions": {
         "thumb-w": {
           "url": "/media/images/statec_021_orig.thumb-w.jpg",
@@ -1325,6 +1291,170 @@
         }
       },
       "base64": "data:image/png;base64,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"
+    },
+    "courriergdl-1866-04-15-a-i0004.png": {
+      "caption": "\"Aux habitants de la ville de Luxembourg!\" article paru dans Courrier du Grand-Duché de Luxembourg · Sunday, April 15, 1866",
+      "provenance": "BnL",
+      "resolutions": {
+        "thumb-w": {
+          "url": "/media/images/courriergdl-1866-04-15-a-i0004.thumb-w.jpg",
+          "params": {
+            "size": "thumb-w",
+            "width": 250,
+            "height": null
+          }
+        },
+        "thumb-h": {
+          "url": "/media/images/courriergdl-1866-04-15-a-i0004.thumb-h.jpg",
+          "params": {
+            "size": "thumb-h",
+            "width": null,
+            "height": 250
+          }
+        },
+        "medium-w": {
+          "url": "/media/images/courriergdl-1866-04-15-a-i0004.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/courriergdl-1866-04-15-a-i0004.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/courriergdl-1866-04-15-a-i0004.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 1080,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/courriergdl-1866-04-15-a-i0004.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 960
+          }
+        }
+      },
+      "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAUCAIAAAA2kktGAAAACXBIWXMAAAsTAAALEwEAmpwYAAABNklEQVQoz02SC46DQAxDc/9DAAIKLCyw/P/q1foYl9FaapqBxLEz2DzPfd+P47iuK7HrumVZhmFomoacWBSFkbVty1NV1HX95/DzIEkSWxygmR22bROlME0TbSYCmBjaObwdqD7PU6ONPjL18ULTaWDir0Oe58bBywQcpVeRcTfTcRyrA3zTA45weBmGrsZBiRyVZRmGIYPiOL7dyXBVVVTIBB5hlVlYya13oII+yJgCjRKgCcafF8sZa5pOIqfEmwl13qP8k3BkTyyFicaPFxShgBf40paV7/uOUBM/jxAo1f+vGUNINFmAVlumQn5phu/lYP5OhgdUyB0Jlu8iSdYiSLRl/818V8A4/7kBci7qui5NkAbTbaMuy7I0TYl8itxGFEXEIAiIJgLtRtuDH1NEBNFG/AD33PCH9u81MAAAAABJRU5ErkJggg=="
+    },
+    "redline_TAGEBLATT_20070612.png": {
+      "caption": "Postcard",
+      "provenance": "François Besch, \"Mitder„RedStarLine“überAntwerpenindieUSA\", Tageblatt",
+      "resolutions": {
+        "thumb-w": {
+          "url": "/media/images/redline_TAGEBLATT_20070612.thumb-w.jpg",
+          "params": {
+            "size": "thumb-w",
+            "width": 250,
+            "height": null
+          }
+        },
+        "thumb-h": {
+          "url": "/media/images/redline_TAGEBLATT_20070612.thumb-h.jpg",
+          "params": {
+            "size": "thumb-h",
+            "width": null,
+            "height": 250
+          }
+        },
+        "medium-w": {
+          "url": "/media/images/redline_TAGEBLATT_20070612.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/redline_TAGEBLATT_20070612.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/redline_TAGEBLATT_20070612.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 1080,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/redline_TAGEBLATT_20070612.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 960
+          }
+        }
+      },
+      "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAABYlAAAWJQFJUiTwAAAFaElEQVQ4yx2S+VeUVRzG3/+gU546nRasU8dTFuDAzIAMDDAsw4Bj4hElZLExt9DYDqUoki0suZThUoBJFopJyGK4EG6FaCoQ4YKSiIAo28A4A7N/us4Pz7nfuzyf+9zv+0pOtxOLcQi7zYILcLqcOB1W7NMTuBw2XGLucMzgsE+L2oXTasY+Y2ZyfAzrjIlpyyQzZiNPJkd4NNSHZB3pwW68j804gG2iD6fdglugLaP3mDY+FLVdAJ9CxgRQXGA1YbNMMPMU9mSMabOoBdRhncQ8MYz0FGYa6MJqeugB2q0THvPUYLcADuJyW4UEyDntGe2WUWGeQOT2nHXaxnHZTbhsYzimBpFs5ocY+64yMzWEebSXkd7LmO+exdhzAbtJpJ58gH2sB7djCrdbJDUN4hQeh5B58CpW4384LY9wjd/DOtQtnmzsxTreg238jkf20Ru4pnpxm+7R/sdvdLbUMH7jDG7nI3HuFube8zxsq2ag9QiDf1XReWIv/7UdZ7rvb8y3/0R68vgG9omb2Ee6MPVfYaijgQftjSJlC9cbKug8/QsD1xrBPczk7WbGrtcy3HWGIbH2+God7Y1l3PzjZx5cOk5vSxXScPtv9DV/z0TncYY7GmmvL6X79AEPZKC9Saw18eReK5a+S9w+uY/+y8cYv/sXU/evcfVEJXu+zOPXfYWcPPQd3U0VSCPdTdw6+zP322q5ca6aW+cO01ZXxpGd+Zw5uJP+1hqmH1xhrOskJ3ZncaFyG017N1K//3Nq9xSw45M1ZBhSaago4k7LYaSO+u8o37yWZnFD29GdtFXv5J+63bQe3EJnzTf0X/iF0a7f6WjYS23JGn7als6hLzZQunEtBetXkmVIIWXpEvZ8liGUjXT392JO7c7ksgDdbNrLiV0ZtFUVMtlzhvvnf+TxlcPcatxFS9lmzv6QR+32bA4WpPNNdho5qQmkLdITFhLKiiULyTYkIl2q3Ep98SpaKws4W76FsqzFdB3OZLK7XvRW9OxcBY/bxIe5WMl4Rx2mf2rpbSziblMpV6q+omZHDsUZyzlakk5JZipSY7GBAxl69qXH8+3aeLYb9FRm6fkpZyHV+cnUfJbGqe2r+HN/Ju1HvuTfmhKuH8qj//Q+/j1WyJ26r7lY/glHCtdxoGA10rYkHcVpMZSsiGXHhwv4ekUMxalailO0fLU8mryECPKWRpKXpCVvuZb18Ro2JGjITYqmPEvL0U2xVG9ZRuWmRErWJyClx4VTlBrNVmHKWRxBrtAWYchLCCdjUTjpQh8t0rA0So0ueD6hSgV+3j5iz5tSgz/7DQp2JQVSuCyU/KUapJUxwayLDSFTH0q6Xs2a2GA+1AWTplWxLDKIFG0wenUAMSolKr95BPjMoyjZm4v5b1FhkJOrV5KjDyBRLWOByh8pLTqIdXEhHmhqVBArYoL4IFbFYo2SqPly1HJ/whR+YpQTFShje6of9dkyStNk5C70Z/N7cnTyubzu5cXrr80WCXUqkiNVJEWFkByj4n1tEHEhAYQp5YQKUJhChsJXRnyoH9UCdL5Axo5kFUWJ81kfp+DjBQFEK715Y7YX78x5A+n96GB0IUoWhQV6pFbI0QTIiQyUE/L0ifNkGGJ8ad4q43KhPyUpSjL0KrLeC0YrQKGyucjfmcNrr76Cz9tzkDKWhBOtUohUSg9EO19BZICfp18q2Txylyho2KSkebMfZauC+TQ+iNW6IKKUvjz/4ks88+xzvPrKy8yaNYsXXngRKVGnYXlsBMlxkaTERbAsJpyFEWriI9Xs3xDGsY3h5KdoqMrUUL4uitKV0eI30xGnDkTm64Ofrzcyn3fx8potevgm/wMEMkbrvPYc4wAAAABJRU5ErkJggg=="
+    },
+    "redline_poster_TAGEBLATT_20070612.png": {
+      "caption": "Publicité de la \"Red Star Line\" dans une agence à Grevenmacher",
+      "resolutions": {
+        "thumb-w": {
+          "url": "/media/images/redline_poster_TAGEBLATT_20070612.thumb-w.jpg",
+          "params": {
+            "size": "thumb-w",
+            "width": 250,
+            "height": null
+          }
+        },
+        "thumb-h": {
+          "url": "/media/images/redline_poster_TAGEBLATT_20070612.thumb-h.jpg",
+          "params": {
+            "size": "thumb-h",
+            "width": null,
+            "height": 250
+          }
+        },
+        "medium-w": {
+          "url": "/media/images/redline_poster_TAGEBLATT_20070612.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/redline_poster_TAGEBLATT_20070612.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/redline_poster_TAGEBLATT_20070612.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 1080,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/redline_poster_TAGEBLATT_20070612.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 960
+          }
+        }
+      },
+      "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAUCAYAAAC9BQwsAAAACXBIWXMAABYlAAAWJQFJUiTwAAAD3klEQVQ4yw2S+U/TBwDFv3/Pkv20ZHFxzsUIZsyZHR4s0ylsio5wiCAKKOMaNwMtoByVoy1Hux4UioUWSkuhlFJLDwqtFFDAAuUabkzm8ll/eD+9vOST957gklRhGh5A29XGoOIZvWXFdOdmoa4uQFqQiexBKvKsG4h/uYLo+iUkyfH0xH6O4DMqcQcD2C1j2J/3Y6gRobqVhS4jB3VKGqrUVAZy0pFn3kRZlMJAeTKqy+cQHHdzmU56wFTaQ4ZOxuPKL8d0/gbqmHgUH8bQdewLdFeu0n4iFunxGHp++BbJlzEIc1WVWGITsdwrZLykGo9ey5RWgUndg/kPCUZxNUMVebQkXOVpTBx1Hxyn7qOPETa8JiJLbkLBF7xYniew5Ce05GPcaUdtMjNq7CNglbFsacbXlY/pt+sor5xB2A5a+XsvxM7uCpt7YTa2X7OzvcxeJMDOlh+v20zAY2Q72EdksoGXXXex3osG91/bebe/yPujVXgfZmt9nj93l9la8xBZd7MX9Xej2g4a2Q9qCalymco7jfDX5hz//bPOdmSRiZlphkwm9CMG1Bol0s52Wp/W0dr4O7XF99BIavH2FuIoPYtwtBPg4CCMe2kBndlKz0A/UkUvz6MlSWSd5BcWcu6bS5z87BTHPvkUVc1tFh4lIKyGgvjm5hmecNI3NMbAoJ4Zuw23a5rXS/NMjesRN9QiqiimNPcOkspc1CVpCHLNCF1yHbJeLdpBI3KVDoWmn2bxM8bMRhoa66mvf4RS3kHT40qyM26Rl/4zglpnoVtpoE2iQdypQCxR0CaVo9T00fKsHWkUt7S8jKqKMmrKi8jJTObX20kIzhkXc/4FPG4PdpuNadsENqsFXxTVOWXGMqRCLxcz1FWPrrkC7ZMCZLnR4EE4ALzl36Nd3h1u8v5wjcOIn7dvvOyvRqcI6Hljl+MabMGqqMHcXUZf9mWEV0EPodVVLI5ZlAYr4bUgB2Efm2su1l9NsLs8il7WQMbNRHKuXaTozk+0pnyPsOR3MukL4J+bxWgaxzlj43DDy86Kg3DQTGRhGENPI/dTblCdlYQoL4W6xAsI4YCd8OYqsz4/Ttcss24Xjmk7oTk7/mkDWmUP3e1NSJtFdDTW0fa4nLIfzyMsOk1sbSyysujC753E98KC2zHMgkPHzKiUEXkN+s4iNE+yUNUmIStP5P6FOAS/eSD6nEX2d72shCZ46TfgcSjxTMqw6UU4tWV4VPlMtqXjaElgrPYi6WdOIFjqS7BJHzHRVou5tQJzUwmjojwGK1NQ5FyjI+0iT69/jSjhK4q/iyP77GnSTp3gfynsTWiij6ryAAAAAElFTkSuQmCC"
     }
   }
 }
