@@ -2,11 +2,29 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
 const ScrollToTop = () => {
-  const { pathname } = useLocation();
-
+  const { pathname, hash } = useLocation();
+  console.info('ScrollToTop pathname', pathname, 'hash', hash)
   useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
+    let timer;
+    if ( hash === '' ) {
+      window.scrollTo(0, 0);
+    } else {
+      timer = setTimeout(() => {
+        const id = hash.replace('#', '');
+        const element = document.getElementById(id);
+        console.info('ScrollToTop: reaching id =', id);
+        if (element) {
+          // element.scrollIntoView();
+          window.scrollTo(0, element.offsetTop + window.innerHeight*.01)
+        } else {
+          console.warn('ScrollToTop: element not found using id =', id);
+        }
+      }, 500)
+    }
+    return () => {
+      clearTimeout(timer)
+    }
+  }, [pathname, hash]);
 
   return null;
 }
