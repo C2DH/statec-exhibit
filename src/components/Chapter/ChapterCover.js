@@ -2,10 +2,20 @@ import React from 'react'
 import { Spring, animated } from 'react-spring/renderprops'
 import { useTranslation } from 'react-i18next'
 import { isMobileWithTablet } from '../../constants'
+import MediaIndex from '../../media/index.json'
+import { useImage } from '../../hooks';
 
 
-const ChapterCover = ({ cover, title='', chapterIndex=0 }) => {
+const ChapterCover = ({ cover={}, title='', chapterIndex=0, resolution='large-h' }) => {
   const { t } = useTranslation()
+  const media = MediaIndex.images[cover.id]
+  const mediaUrl = media
+    ? media.resolutions[resolution].url
+    : cover.url;
+  const { isLoading } = useImage(mediaUrl, 50);
+  if (isLoading) {
+    return <div className="chapterCover"></div>
+  }
   return (
     <div className="chapterCover">
       <div className="chapterFrameWrapper absolute w-100" style={{
@@ -27,7 +37,7 @@ const ChapterCover = ({ cover, title='', chapterIndex=0 }) => {
             <animated.div className="chapterBg"
               style={{
                 clipPath: props.backgroundClipPath,
-                backgroundImage: `url(${cover.url})`,
+                backgroundImage: `url(${mediaUrl})`,
                 opacity: props.opacity,
               }}
             />
@@ -43,7 +53,7 @@ const ChapterCover = ({ cover, title='', chapterIndex=0 }) => {
             backgroundClipPath:
               'polygon(50% 0%, 50% 0%, 50% 100%, 50% 100%)',
           }}
-          delay={1000}
+          delay={100}
         >
           {(props) => (
             <animated.div

@@ -5,6 +5,7 @@
   "dataset": "population",
   "backgroundColor": "var(--theme-01)",
   "cover": {
+    "id": "1.cap1.jpg",
     "url": "/1.cap1.jpg",
     "caption": "Bus at the border between Luxembourg and France in 1948",
     "source": "Foto: Gösta Nordin. Date: 1948. Photo Nr: 2218-96, Stockholm Transport Museum"

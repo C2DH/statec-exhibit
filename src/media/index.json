@@ -750,7 +750,7 @@
     },
     "statec_013.tif": {
       "caption": "Depuis les années 1980, les banques de renommée nationale et internationale se sont installées boulevard Royal. Photo de 1997.",
-      "provenance":	"© Photothèque de la Ville de Luxembourg/Jean-Pierre Fiedler",
+      "provenance": "© Photothèque de la Ville de Luxembourg/Jean-Pierre Fiedler",
       "resolutions": {
         "thumb-w": {
           "url": "/media/images/statec_013.thumb-w.jpg",
@@ -964,7 +964,7 @@
     },
     "statec_017.png": {
       "caption": "Deux pages du livret d'étranger d'un italien arrivé à Dudelange le 17 décembre 1924. <em>Giovanni Di Febo</em>, ne sachant pas écrire, signait de trois croix",
-      "provenance":	"Archives de la Ville de Dudelange - Fonds Jean-Pierre Conrardy",
+      "provenance": "Archives de la Ville de Dudelange - Fonds Jean-Pierre Conrardy",
       "resolutions": {
         "thumb-w": {
           "url": "/media/images/statec_017.thumb-w.jpg",
@@ -1455,6 +1455,61 @@
         }
       },
       "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAUCAYAAAC9BQwsAAAACXBIWXMAABYlAAAWJQFJUiTwAAAD3klEQVQ4yw2S+U/TBwDFv3/Pkv20ZHFxzsUIZsyZHR4s0ylsio5wiCAKKOMaNwMtoByVoy1Hux4UioUWSkuhlFJLDwqtFFDAAuUabkzm8ll/eD+9vOST957gklRhGh5A29XGoOIZvWXFdOdmoa4uQFqQiexBKvKsG4h/uYLo+iUkyfH0xH6O4DMqcQcD2C1j2J/3Y6gRobqVhS4jB3VKGqrUVAZy0pFn3kRZlMJAeTKqy+cQHHdzmU56wFTaQ4ZOxuPKL8d0/gbqmHgUH8bQdewLdFeu0n4iFunxGHp++BbJlzEIc1WVWGITsdwrZLykGo9ey5RWgUndg/kPCUZxNUMVebQkXOVpTBx1Hxyn7qOPETa8JiJLbkLBF7xYniew5Ce05GPcaUdtMjNq7CNglbFsacbXlY/pt+sor5xB2A5a+XsvxM7uCpt7YTa2X7OzvcxeJMDOlh+v20zAY2Q72EdksoGXXXex3osG91/bebe/yPujVXgfZmt9nj93l9la8xBZd7MX9Xej2g4a2Q9qCalymco7jfDX5hz//bPOdmSRiZlphkwm9CMG1Bol0s52Wp/W0dr4O7XF99BIavH2FuIoPYtwtBPg4CCMe2kBndlKz0A/UkUvz6MlSWSd5BcWcu6bS5z87BTHPvkUVc1tFh4lIKyGgvjm5hmecNI3NMbAoJ4Zuw23a5rXS/NMjesRN9QiqiimNPcOkspc1CVpCHLNCF1yHbJeLdpBI3KVDoWmn2bxM8bMRhoa66mvf4RS3kHT40qyM26Rl/4zglpnoVtpoE2iQdypQCxR0CaVo9T00fKsHWkUt7S8jKqKMmrKi8jJTObX20kIzhkXc/4FPG4PdpuNadsENqsFXxTVOWXGMqRCLxcz1FWPrrkC7ZMCZLnR4EE4ALzl36Nd3h1u8v5wjcOIn7dvvOyvRqcI6Hljl+MabMGqqMHcXUZf9mWEV0EPodVVLI5ZlAYr4bUgB2Efm2su1l9NsLs8il7WQMbNRHKuXaTozk+0pnyPsOR3MukL4J+bxWgaxzlj43DDy86Kg3DQTGRhGENPI/dTblCdlYQoL4W6xAsI4YCd8OYqsz4/Ttcss24Xjmk7oTk7/mkDWmUP3e1NSJtFdDTW0fa4nLIfzyMsOk1sbSyysujC753E98KC2zHMgkPHzKiUEXkN+s4iNE+yUNUmIStP5P6FOAS/eSD6nEX2d72shCZ46TfgcSjxTMqw6UU4tWV4VPlMtqXjaElgrPYi6WdOIFjqS7BJHzHRVou5tQJzUwmjojwGK1NQ5FyjI+0iT69/jSjhK4q/iyP77GnSTp3gfynsTWiij6ryAAAAAElFTkSuQmCC"
+    },
+    "1.cap1.jpg": {
+      "caption": "Bus at the border between Luxembourg and France in 1948",
+      "provenance": "Foto: Gösta Nordin. Date: 1948. Photo Nr: 2218-96, Stockholm Transport Museum",
+      "resolutions": {
+        "thumb-w": {
+          "url": "/media/images/1.cap1.thumb-w.jpg",
+          "params": {
+            "size": "thumb-w",
+            "width": 250,
+            "height": null
+          }
+        },
+        "thumb-h": {
+          "url": "/media/images/1.cap1.thumb-h.jpg",
+          "params": {
+            "size": "thumb-h",
+            "width": null,
+            "height": 250
+          }
+        },
+        "medium-w": {
+          "url": "/media/images/1.cap1.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/1.cap1.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/1.cap1.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 1080,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/1.cap1.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 960
+          }
+        }
+      },
+      "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAUCAIAAADz4NHXAAAACXBIWXMAABcSAAAXEgFnn9JSAAAEj0lEQVQ4y2WUd1NbVxDF30dN4kniFGxDqMYEbLoppiNAFIEk1BFqqJenrqdOkehmaEYY25l8gfyelP88s3Pnvvv27p49e/YKqW//xj5/i9Yt9vTP9xb/7gRP8fFr6OEJ8989+u9qgf/XGieCev84+Okp/PAlUvsauv+Mh++25rup+W4fPNefvNjNg3xyWws/PAXuHx2XN8bKmWa/ulk43CgcrmbL2HpufzUnb7aKR4K6VPVeP7iv7q2nV46LG1ZT9UJ/dLp9cLJ9cKzdrzZWTbnCRl2ubBaPlNnScqawnCkq0vnFVE6RzrHOJaT5RHYpUxCcl7e282vXxzvd4enOyUdz9QIIusMTomAkJ5a6VNksHG3kDzBltkwsbhKIiAvJ7Fw8MxtLz8YybJbSeaGRTVOucs18fElEAgFEVThQFQ8V6cKKVASUIpkf9YtzcWkpXVCk8txaqccl4kw0PRNNYUQELFVXqB8/pVRSSkU2JFiDmjoivCdC8Ylw4r0/2m5y9Ng8S6nCVqmymMqv5fYpE2gkIPpCIoczn4Kxek6xK1JpKV2UkccygMJ7LVdm/RBJEpE0RCENPNovoOjWenYlt6h6PhFKrGRK+qMzYEE9tQrT0bS5ejkWjHXtuFhlRKH4iC8CNarC4ZSYGgvEgK+qtxVaSTktpukpbkCbFlNvdt24vQ9ECQVeYcgbnollZqOZQXeo3x0ccIcorcviBN18nKKkdpOdkxGf+NbpJ+WwN8IGLMPe8FggSlyg9Dn8gMBGA6LQaXF1WpyckoRs7F9uW7p392CAy4ajsy6LixDcJAeHMyJ9oK3StExxYiIYJ189vTQXkwAn9Dl9b13+11ZCSJDVueNqNdpXJbnA3zYN5Hi5vdNisOE2sBekDlqEkWw8GBsPxKbCye5dd5PW/Lfd+84VaDHsCkTF5NqjaWPlHNdBTxiF0xnwUmyTxtxudvTvBUd9YofZ0evwNQQwFUmiLWr/U216tqr5VaUHwe9bBoEM3fViW/TWqUiK2YJ47f4xIv8QTsBXu9n+SrfzQmMmNJsem5tuLCSyyBvBDnvFP9SmPqf/L4Pt2aq2zWQXnm/oflKqf1jBNpv1VujgArpBClTHBkJajTZSvtBamnXWVoPtlw1di972bi8wJSZJz61mwy7wm7QWChf4MVPvOveHvBEED/FbJXnmGgKkoX0OHwwOuGUe6RJEU+nP67oflRrqpVjgtxntkIO2BNqCrEDUa4f7kLrMo1BtCHA9Lw81fyfDCVQJp7AMm5OhBG0BAYgQSYfZ2WFxkAaYI96IzCM/IP65So+SqGI8FH9TJ4vhZdoQ9kIyN12XOqONIRr0z0Q3Xh15xqXiSn2C5SnsdXiBiayI22FxdaDtcLLNZKNR3dY9OovWFKncdDSFD0GBxjrmj+LG/Xn5EZMWk7nGC4JIBdC+0lmhH7LgiGaRAPwvtGY+X1tlJfTV4+I9HmRAxUFPiPRwyh4SYIBO8I4tyw9VSaDrRAQOo4JE0DO8cELHkDddxoEE4EIxk/VHiFhDnlC/K9Bj9zAw5JPV6hdByjP4Hx+cdmLgIq0NAAAAAElFTkSuQmCC"
     }
   }
 }
