@@ -39,7 +39,6 @@ class TrendAxisBottomGraphics extends React.Component {
           label="Time"
         >
           {(axis) => {
-            const tickLabelSize = 14;
             const tickRotate = 0;
             return (
               <g className="my-custom-bottom-axis">

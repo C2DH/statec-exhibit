@@ -19,27 +19,25 @@ const ChapterContainer = lazy(() => import('./ChapterContainer'));
 const DocumentViewer = lazy(() => import('./pages/DocumentViewer'));
 
 
-class App extends React.Component {
-  render() {
-    return (
-      <BrowserRouter>
-        <ScrollToTop />
-        <Header />
-        <MainBackground />
-        <Suspense fallback={''}>
-          <About />
-          <Contents />
-        </Suspense>
-        <Suspense fallback={<div>Loading...</div>}>
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route path="/doc/:documentId" component={DocumentViewer} />
-            <Route path="/:themeId" component={ChapterContainer} />
-          </Switch>
-        </Suspense>
-      </BrowserRouter>
-    );
-  }
+const App = () => {
+  return (
+    <BrowserRouter>
+      <ScrollToTop />
+      <Header />
+      <MainBackground />
+      <Suspense fallback={''}>
+        <About />
+        <Contents />
+      </Suspense>
+      <Suspense fallback={<div>Loading...</div>}>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/doc/:documentId" component={DocumentViewer} />
+          <Route path="/:themeId" component={ChapterContainer} />
+        </Switch>
+      </Suspense>
+    </BrowserRouter>
+  );
 }
 
 

@@ -62,6 +62,7 @@ class ChapterScrollama extends PureComponent {
         <ChapterGraphicContainer module={currentModule} progress={progress} />
         {!isMobileWithTablet && (
           <ChapterProgress
+            themeId={theme.id}
             steps={theme.modules}
             currentStep={data}
             progress={progress}
@@ -78,7 +79,7 @@ class ChapterScrollama extends PureComponent {
         >
           {theme.modules.map((module, i) => (
             <Step data={i} key={i}>
-              <div
+              <div id={`${theme.id}-m${i}`}
                 className="w-100"
                 style={{
                   height: window.innerHeight * 2,

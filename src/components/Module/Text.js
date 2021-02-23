@@ -1,15 +1,15 @@
 import React, { lazy } from 'react';
 import { EndYear } from '../../constants';
-import { isMobileWithTablet } from '../../constants';
+// import { isMobileWithTablet } from '../../constants';
 
 const MediaImage = lazy(() => import('../MediaImage'));
 const Figure = lazy(() => import('../Figure'));
 
-const TextCover = React.memo(({ cover, title, subheading }) => {
+const TextCover = React.memo(({ cover, coverId, title, subheading }) => {
   if (cover.id) {
     return (
       <MediaImage
-        id={cover.id}
+        id={coverId}
         to={`/doc/${cover.id}`}
         alt={cover.alt}
         caption={cover.caption}
@@ -43,7 +43,7 @@ const Text = ({ title, subheading, paragraphs, currentYear }) => {
   return (
     <>
       {!hasCover && <h2 className="textContainerTitle">{title}</h2>}
-      {hasCover && <TextCover cover={currentParagraph.cover} title={title} />}
+      {hasCover && <TextCover cover={currentParagraph.cover} coverId={currentParagraph.cover?.id} title={title} />}
       {showModuleSubheading && (
         <div
           className="textContainerSubTitle"

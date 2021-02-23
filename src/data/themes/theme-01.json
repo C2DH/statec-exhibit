@@ -5,6 +5,7 @@
   "dataset": "population",
   "backgroundColor": "var(--theme-01)",
   "cover": {
+    "id": "1.cap1.jpg",
     "url": "/1.cap1.jpg",
     "caption": "Bus at the border between Luxembourg and France in 1948",
     "source": "Foto: Gösta Nordin. Date: 1948. Photo Nr: 2218-96, Stockholm Transport Museum"
@@ -17,7 +18,7 @@
       "dataset": "trend-lux-population-growth",
       "layout": "text",
       "from": 1840,
-      "to": 2014,
+      "to": 2005,
       "datasetValueFrom": 150000,
       "datasetValueTo": 800000,
       "datasetHeadingValueFrom": -8000,
@@ -25,60 +26,70 @@
       "datasetAdditionalTrends": ["v"],
       "datasetAdditionalTrendsColors": ["var(--primary)"],
       "moduleHotspots": [
-        {
-          "t": "1860",
-          "l": ""
-        },
-        {
-          "t": "1905",
-          "l": ""
-        },
-        {
-          "t": "1930",
-          "l": ""
-        },
-        {
-          "t": "1985",
-          "l": ""
-        },
-        {
-          "t": "2008",
-          "l": ""
-        }
+        { "t": 1860 },
+        { "t": 1905 },
+        { "t": 1930 },
+        { "t": 1985 },
+        { "t": 2008 }
       ],
       "paragraphs": [
         {
           "from": 1845,
           "to": 1890,
-          "text": "L'ensemble de la période allant de l'indépendance du Grand-Duché en 1839 jusqu'aux années 1890 est marquée par une croissance démographique relativement lente liée à une croissance économique hésitante et des conditions de vie qui restent précaires."
+          "text": "L'ensemble de la période allant de l'indépendance du Grand-Duché en 1839 jusqu'aux années 1890 est marquée par une croissance démographique relativement lente liée à une croissance économique hésitante et des conditions de vie qui restent précaires.",
+          "cover": { "id": "statec_021.png" }
         },
         {
           "from": 1891,
           "to": 1910,
           "text": "À partir de la fin des années 1890, les capitaux allemands (le Luxembourg fait partie du Zollverein à partir de 1842) investissent massivement dans la sidérurgie (Differdange, Belval etc.) contribuant ainsi à l'expansion économique qui va de pair avec une croissance importante de la population dont le nombre passe de 210.000 en 1890 à 260.000 en 1910. Un <b>pays d'émigration</b> commence à devenir un <b>pays d'immigration</b>, même si beaucoup de résidents du Luxembourg continuent à partir à l'étranger.",
-          "cover": {
-            "id": "statec_004.png",
-            "caption": "<i>Vue aérienne de Dudelange.</i> <br />Archives de la Ville de Dudelange - Fonds Rudy Kremer"
-          }
+          "cover": { "id": "statec_004.png" }
         },
         {
           "from": 1929,
           "to": 1940,
           "text": "En 1930, la crise économique mondiale, qui a débuté en 1929 par le krach de Wall Street, commence à avoir un impact au Luxembourg. Le chômage augmente, la production sidérurgique diminue, les comptes publics sont sous tension. La population diminue de 1930 à 1935  (quelque 300 personnes en moins), puis rebondit dans des proportions modestes dans la deuxième moitié des années 1930.",
-          "cover": {
-            "id": "statec_007.png",
-            "caption": "Traffic at the border between France and Luxembourg"
-          }
+          "cover": { "id": "statec_013.tif", "caption": "to be changed" }
         },
         {
           "from": 1980,
           "to": 2007,
-          "text": "À partir des années 1980, le Luxembourg entre dans un cycle de croissance effrénée basée sur le secteur bancaire et financier qui a vu se développer en parallèle un secteur des services aux entreprises très varié (du nettoyage aux sociétés de consultance, ...) très gourmand en main-d'oeuvre à la fois qualifiée et non-qualifiée. A cette demande de main-d'oeuvre, ce n'est que la main-d'oeuvre immigrée qui a pu y répondre."
+          "text": "À partir des années 1980, le Luxembourg entre dans un cycle de croissance effrénée basée sur le secteur bancaire et financier qui a vu se développer en parallèle un secteur des services aux entreprises très varié (du nettoyage aux sociétés de consultance, ...) très gourmand en main-d'oeuvre à la fois qualifiée et non-qualifiée.<br/><br/> A cette demande de main-d'oeuvre, ce n'est que la main-d'oeuvre immigrée qui a pu y répondre.",
+          "cover": {   "id": "statec_013.tif" }
         },
         {
           "from": 2008,
+          "to": 2014
+        }
+      ]
+    },
+    {
+      "title": "En 2008, la crise financière se déclenche et n'épargne pas le Luxembourg.",
+      "subheading": "table of",
+      "datasetHeading": "migratory-balance",
+      "dataset": "eurostat-deficit-2008",
+      "layout": "compare",
+      "groups": ["v", "v1", "v2"],
+      "from": 2006,
+      "to": 2014,
+      "datasetHeading": "population-balance",
+      "datasetValueFrom": 150000,
+      "datasetValueTo": 800000,
+      "datasetHeadingValueFrom": -8000,
+      "datasetHeadingValueTo": 18000,
+      "datasetAdditionalTrends": ["v"],
+      "datasetAdditionalTrendsColors": ["var(--primary)"],
+      "moduleHotspots": [
+        { "t": 1860 },
+        { "t": 1905 },
+        { "t": 1930 },
+        { "t": 1985 },
+        { "t": 2008 }
+      ],
+      "paragraphs": [
+        {
+          "from": 2006,
           "to": 2014,
-          "title": "En 2008, la crise financière se déclenche et n'épargne pas le Luxembourg. ",
           "text": "Les pouvoirs publics doivent notamment intervenir dans le sauvetage des banques systémiques. Néanmoins, même si la récession est profonde, le Luxembourg est assez résilient. La croissance démographique, toujours due à l'immigration, ne fut que marginalement affectée par ces évènements. La pression sur le marché du logement est non-négligeable et les infrastructures publiques (notamment dans le domaine de la mobilité) doivent suivre cette évolution."
         }
       ]
@@ -88,7 +99,7 @@
       "subheading": "Jusqu’aux années 1960 l’évolution du <b style='color:var(--primary);text-decoration:underline'>solde global</b> s’explique essentiellement par le par le jeu entre <em>taux de mortalité</em> et <em>taux de natalité</em> appelé le <b style='color:black;text-decoration:underline'>solde naturel</b>.",
       "layout": "text",
       "from": 1840,
-      "to": 1960,
+      "to": 1947,
       "datasetHeading": "population-balance-details",
       "dataset": "trend-lux-population-growth",
       "datasetAdditionalTrends": ["v"],
@@ -100,38 +111,36 @@
       "datasetHeadingValueFrom": -8000,
       "datasetHeadingValueTo": 18000,
       "moduleHotspots": [
-        {
-          "t": "1866"
-        },
-        {
-          "t": "1917"
-        },
-        {
-          "t": "1940",
-          "l": ""
-        }
+        { "t": 1866 },
+        { "t": 1913 },
+        { "t": 1917 },
+        { "t": 1940 }
       ],
       "paragraphs": [
         {
           "from": 1866,
           "to": 1870,
-          "text": "La mortalité augmente fortement (épidémie du choléra) et n'est pas compensée par la natalité. Comme en même temps les gens partent à l’étranger, le Luxembourg perd des habitants à cette époque). En 1866 la population recule de 3.500 habitants. En 1867, la perte d'habitants est similaire, mais c'est l'émigration seule qui en est responsable."
+          "text": "La mortalité augmente fortement (épidémie du choléra) et n'est pas compensée par la natalité. Comme en même temps les gens partent à l’étranger, le Luxembourg perd des habitants à cette époque). En 1866 la population recule de 3.500 habitants. En 1867, la perte d'habitants est similaire, mais c'est l'émigration seule qui en est responsable.",
+          "cover": { "id": "courriergdl-1866-04-15-a-i0004.png" }
         },
         {
           "from": 1913,
           "to": 1915,
-          "text": "Après 1866, les années 1917-1918 sont la deuxième période au cours de laquelle la variation naturelle de la population est négative. Cela résulte à la fois de l'augmentation de la mortalité et d'une diminution des naissances. Le solde naturel passe de +2.600 en 1913 à -1.200 en 1918."
+          "text": "Après 1866, les années 1917-1918 sont la deuxième période au cours de laquelle la variation naturelle de la population est négative. Cela résulte à la fois de l'augmentation de la mortalité et d'une diminution des naissances. Le solde naturel passe de +2.600 en 1913 à -1.200 en 1918.",
+          "cover": { "id": "statec_011.tif" }
         },
         {
           "to": 1918,
           "from": 1916,
-          "text": "Ce sont évidemment les conditions de vie précaires de la guerre (difficultés de ravitaillement, par exemple) qui expliquent largement le phénomène, mais la baisse de la natalité est plus structurelle que conjoncturelle. Le nombre d'enfants par femmes (la fécondité) est en baisse continue."
+          "text": "Ce sont évidemment les conditions de vie précaires de la guerre (difficultés de ravitaillement, par exemple) qui expliquent largement le phénomène, mais la baisse de la natalité est plus structurelle que conjoncturelle. Le nombre d'enfants par femmes (la fécondité) est en baisse continue.",
+          "cover": { "id": "statec_020.jpg" }
         },
         {
           "from": 1935,
           "to": 1947,
           "title": "La Deuxième Guerre mondiale a des répercussions importantes dans le domaine démographique.",
-          "text": "La mortalité augmente (victimes directes de la guerre, conditions de subsistance difficiles), la natalité diminue. Entre 1935 et 1946, la population résidente passe de 297.000 en 1935 à 291.000 en 1947."
+          "text": "La mortalité augmente (victimes directes de la guerre, conditions de subsistance difficiles), la natalité diminue. Entre 1935 et 1946, la population résidente passe de 297.000 en 1935 à 291.000 en 1947.",
+          "cover": { "id": "statec_001.png" }
         }
       ]
     },
@@ -161,17 +170,20 @@
         {
           "from": 1890,
           "to": 1940,
-          "text": "À partir du 20e siècle, un certain équilibre s’installe même si en moments de crise (crise économique, guerres), des pics d’émigration peuvent encore être observés. "
+          "text": "À partir du 20e siècle, un certain équilibre s’installe même si en moments de crise (crise économique, guerres), des pics d’émigration peuvent encore être observés. ",
+          "cover": { "id": "redline_poster_TAGEBLATT_20070612.png" }
         },
         {
           "from": 1960,
           "to": 1970,
-          "text": "À partir des années 1960, le Luxembourg devient largement un pays d’immigration avec un solde migratoire positif important. D’abord immigration allemande (sidérurgie/mines), puis italienne à partir de la fin du 19ème siècle (sidérurgie/mines) et jusque dans les années 1960."
+          "text": "À partir des années 1960, le Luxembourg devient largement un pays d’immigration avec un solde migratoire positif important. D’abord immigration allemande (sidérurgie/mines), puis italienne à partir de la fin du 19ème siècle (sidérurgie/mines) et jusque dans les années 1960.",
+          "cover": { "id": "statec_015.png" }
         },
         {
           "from": 1971,
           "to": 1980,
-          "text": "À partir de la fin des années 1960, beaucoup de Portugais dans le secteur de la construction."
+          "text": "À partir de la fin des années 1960, beaucoup de Portugais dans le secteur de la construction.",
+          "cover": { "id": "statec_015.png", "caption": "to be changed" }
         }
       ]
     },
@@ -200,17 +212,20 @@
         {
           "from": 1840,
           "to": 1880,
-          "text": "Entre 1840 et 1914 un nombre important de Luxembourgeois quittent leur pays vers les pays voisins (essentiellement la France et en moindre mesure la Belgique) mais également vers l’Outre-Mer. Les Etats-Unis exercent une forte attraction mais il y également des Luxembourgeois qui partent pour l’Amérique du Sud ou les colonies européennes notamment au Congo."
+          "text": "Entre 1840 et 1914 un nombre important de Luxembourgeois quittent leur pays vers les pays voisins (essentiellement la France et en moindre mesure la Belgique) mais également vers l’Outre-Mer. Les Etats-Unis exercent une forte attraction mais il y également des Luxembourgeois qui partent pour l’Amérique du Sud ou les colonies européennes notamment au Congo.",
+          "cover": { "id": "statec_019.jpg" }
         },
         {
           "from": 1880,
           "to": 1900,
-          "text": "Avant la Première Guerre mondiale, un nombre de plus en plus important d’Italiens arrivent au Luxembourg souvent comme ouvriers avec une grande mobilité (célibataires ou non-accompagnés par leurs familles). "
+          "text": "Avant la Première Guerre mondiale, un nombre de plus en plus important d’Italiens arrivent au Luxembourg souvent comme ouvriers avec une grande mobilité (célibataires ou non-accompagnés par leurs familles). ",
+          "cover": { "id": "statec_003.png" }
         },
         {
           "from": 1922,
           "to": 1930,
-          "text": "Au cours des années 1922-1929,la sidérurgie connaît une évolution favorable. Les entreprises luxembourgeoise créent de l'emploi et engagent de nouveau beaucoup de travailleurs venant de l'étranger. Leur nombre d'étrangers passe de 33. 000 en 1922 (13% de la population) à 56.000 en 1930 (près de 20% de la population). Les Italiens sont désormais majoritaires."
+          "text": "Au cours des années 1922-1929,la sidérurgie connaît une évolution favorable. Les entreprises luxembourgeoise créent de l'emploi et engagent de nouveau beaucoup de travailleurs venant de l'étranger. Leur nombre d'étrangers passe de 33. 000 en 1922 (13% de la population) à 56.000 en 1930 (près de 20% de la population). Les Italiens sont désormais majoritaires.",
+          "cover": { "id": "statec_017.png" }
         }
       ]
     },

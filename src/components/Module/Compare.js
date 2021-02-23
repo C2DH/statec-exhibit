@@ -93,6 +93,7 @@ const Compare = ({
   return (
     <>
       <h2 className="textContainerTitle">{module.title}</h2>
+      <p>{dataset.title} {dataset.url}</p>
       <div
         className="dt w-100"
         style={{ display: isMobileWithTablet ? 'none' : 'table-row' }}

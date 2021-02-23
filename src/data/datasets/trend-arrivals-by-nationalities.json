@@ -10,10 +10,10 @@
     "v2":	"GlobalExcess",
     "v3":	"ItalyArrivals",
     "v4": "ItalyDepartures",
-    "v5": "ItalyExcess",
+    "v5": "Surplus of arrivals over departures, Italian nationality",
     "v6":	"PortugalArrivals",
     "v7":	"PortugalDepartures",
-    "v8": "PortugalExcess"
+    "v8": "Surplus of arrivals over departures, Portuguese nationality"
   },
   "values": [
 { "t":1960, "v":10146, "v1":8121, "v2":2025, "v3":5538, "v4":4024, "v5":1514, "v6":0, "v7":0, "v8":0 },
