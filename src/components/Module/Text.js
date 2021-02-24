@@ -1,6 +1,6 @@
 import React, { lazy } from 'react';
 import { EndYear } from '../../constants';
-// import { isMobileWithTablet } from '../../constants';
+import { isMobileWithTablet } from '../../constants';
 
 const MediaImage = lazy(() => import('../MediaImage'));
 const Figure = lazy(() => import('../Figure'));
@@ -9,6 +9,7 @@ const TextCover = React.memo(({ cover, coverId, title, subheading, themeId, modu
   if (cover.id) {
     return (
       <MediaImage
+        style={{height: isMobileWithTablet ? '35vh' : '45vh'}}
         id={coverId}
         to={`/doc/${cover.id}?from=${themeId}#${themeId}-m${moduleIndex}`}
         alt={cover.alt}
@@ -41,7 +42,7 @@ const Text = ({ title, subheading, paragraphs, currentYear, themeId, moduleIndex
   const showModuleSubheading = !hasCover && subheading && currentYear < minFrom;
 
   return (
-    <>
+    <div className="Text">
       {!hasCover && <h2 className="textContainerTitle">{title}</h2>}
       {hasCover && <TextCover cover={currentParagraph.cover} moduleIndex={moduleIndex} themeId={themeId} coverId={currentParagraph.cover?.id} title={title} />}
       {showModuleSubheading && (
@@ -52,7 +53,7 @@ const Text = ({ title, subheading, paragraphs, currentYear, themeId, moduleIndex
           }}
         />
       )}
-    </>
+    </div>
   );
 };
 export default Text;

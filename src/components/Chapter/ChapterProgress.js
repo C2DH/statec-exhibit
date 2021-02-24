@@ -35,7 +35,7 @@ const ChapterProgress = ({ themeId, steps, currentStep, progress}) => {
     <div className="fixed ChapterProgress_titleWrapper" style={{
       left: 0,
       right: 0,
-      bottom: 0,
+      bottom: 'var(--spacer-2)',
       opacity: isHidden? 0: 1,
       height: 'var(--spacer-6)',
       transform: `translate(${-currentStep*50 + 25}%, 0)`,

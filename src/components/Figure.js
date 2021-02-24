@@ -1,8 +1,9 @@
 import React from 'react'
 
-const Figure = ({ src, caption, alt }) => {
+const Figure = ({ src, caption, alt, className }) => {
   return (
     <figure
+      className={className}
       style={{
         height: '100%',
         backgroundImage: `url(${src})`,
