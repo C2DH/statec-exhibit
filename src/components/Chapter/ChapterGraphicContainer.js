@@ -16,7 +16,7 @@ const AvailableModules = {
   flowers: FlowersModule,
 };
 
-const ChapterGraphicContainer = ({ module, progress }) => {
+const ChapterGraphicContainer = ({ module, progress, themeId, moduleIndex }) => {
   const opacityScale = scaleLinear()
     .domain([0, 0.2, 0.8, 0.95])
     .range([0, 1, 1, 0]);
@@ -49,8 +49,8 @@ const ChapterGraphicContainer = ({ module, progress }) => {
         opacity: opacityScale(progress),
         display: 'flex',
         flexDirection: isMobileWithTablet ? 'column' : 'row',
-        bottom: 0,
-        top: isMobileWithTablet ? '35vh' : '50vh',
+        bottom: 'var(--spacer-5)',
+        top: isMobileWithTablet ? '35vh' : '45vh',
       }}
     >
       <div
@@ -71,6 +71,8 @@ const ChapterGraphicContainer = ({ module, progress }) => {
               currentDate,
               currentYear,
               paragraphs,
+              themeId,
+              moduleIndex,
             }}
           />
         </Suspense>

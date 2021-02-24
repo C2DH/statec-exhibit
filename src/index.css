@@ -426,6 +426,32 @@ p.moduleParagraph {
   font-size: var(--font-size-1);
 }
 
+.ChapterProgress_titleWrapper{
+  will-change: transform;
+  transition: transform 0.6s cubic-bezier(0.85, 0, 0.15, 1);
+}
+.ChapterProgress_title {
+  opacity: .12;
+  color: var(--secondary);
+  cursor: pointer;
+  font-family: SneakyTimes, serif;
+  font-weight: 100;
+  font-size: 2vh;
+  line-height: 1.25;
+  /* will-change: opacity;
+  transition: opacity 0.6s cubic-bezier(0.85, 0, 0.15, 1); */
+}
+.ChapterProgress_title:hover{
+  text-decoration: underline;
+  opacity: 1;
+}
+.ChapterProgress_title.active {
+  opacity: 1;
+}
+
+.ChapterConclusions_step .textContainer {
+  margin: 25vh 10%;
+}
 /* nav */
 ul.nav.nav-tabs {
   margin: 0;
@@ -454,6 +480,10 @@ ul.nav.nav-tabs li.nav-item button.active {
 @media (min-width: 767px) {
   ul.nav.nav-tabs li.nav-item button {
     border: 1px solid transparent !important;
+  }
+  .ChapterConclusions_step .textContainer {
+    width: 50%;
+    margin: 25vh auto;
   }
 }
 

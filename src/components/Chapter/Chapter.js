@@ -3,6 +3,7 @@ import ChapterCover from './ChapterCover'
 import ChapterFooter from './ChapterFooter'
 import ChapterScrollama from './ChapterScrollama'
 import ChapterHeader from './ChapterHeader'
+import ChapterConclusions from './ChapterConclusions'
 
 
 const Chapter = ({ theme, color, chapterIndex, showCover = true, showTitle = true }) => {
@@ -15,6 +16,11 @@ const Chapter = ({ theme, color, chapterIndex, showCover = true, showTitle = tru
       />
       <ChapterHeader chapterIndex={chapterIndex} />
       <ChapterScrollama theme={theme} />
+      {
+        Array.isArray(theme.conclusions)
+        ? <ChapterConclusions themeId={theme.id} conclusions={theme.conclusions} />
+        : null
+      }
       <ChapterFooter chapterIndex={chapterIndex} />
     </div>
   )
