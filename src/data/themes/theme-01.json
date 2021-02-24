@@ -27,7 +27,8 @@
       "datasetAdditionalTrendsColors": ["var(--primary)"],
       "moduleHotspots": [
         { "t": 1860 },
-        { "t": 1905 },
+        { "t": 1891 },
+        { "t": 1910 },
         { "t": 1930 },
         { "t": 1985 },
         { "t": 2008 }
@@ -43,11 +44,18 @@
           "from": 1891,
           "to": 1910,
           "text": "À partir de la fin des années 1890, les capitaux allemands (le Luxembourg fait partie du Zollverein à partir de 1842) investissent massivement dans la sidérurgie (Differdange, Belval etc.) contribuant ainsi à l'expansion économique qui va de pair avec une croissance importante de la population dont le nombre passe de 210.000 en 1890 à 260.000 en 1910. Un <b>pays d'émigration</b> commence à devenir un <b>pays d'immigration</b>, même si beaucoup de résidents du Luxembourg continuent à partir à l'étranger.",
+          "cover": { "id": "statec_006.png" }
+        },
+        {
+          "from": 1910,
+          "to": 1928,
+          "text": "À partir de la fin des années 1890, les capitaux allemands (le Luxembourg fait partie du Zollverein à partir de 1842) investissent massivement dans la sidérurgie (Differdange, Belval etc.) contribuant ainsi à l'expansion économique qui va de pair avec une croissance importante de la population dont le nombre passe de 210.000 en 1890 à 260.000 en 1910. Un <b>pays d'émigration</b> commence à devenir un <b>pays d'immigration</b>, même si beaucoup de résidents du Luxembourg continuent à partir à l'étranger.",
           "cover": { "id": "statec_004.png" }
         },
         {
           "from": 1929,
-          "to": 1940,
+          "to": 1979,
+          "to_real": 1940,
           "text": "En 1930, la crise économique mondiale, qui a débuté en 1929 par le krach de Wall Street, commence à avoir un impact au Luxembourg. Le chômage augmente, la production sidérurgique diminue, les comptes publics sont sous tension. La population diminue de 1930 à 1935  (quelque 300 personnes en moins), puis rebondit dans des proportions modestes dans la deuxième moitié des années 1930.",
           "cover": { "id": "statec_013.tif", "caption": "to be changed" }
         },
@@ -64,7 +72,7 @@
       ]
     },
     {
-      "title": "En 2008, la crise financière se déclenche et n'épargne pas le Luxembourg.",
+      "title": "En 2008, la crise financière se déclenche ...",
       "subheading": "table of",
       "datasetHeading": "migratory-balance",
       "dataset": "eurostat-deficit-2008",
@@ -90,7 +98,7 @@
         {
           "from": 2006,
           "to": 2014,
-          "text": "Les pouvoirs publics doivent notamment intervenir dans le sauvetage des banques systémiques. Néanmoins, même si la récession est profonde, le Luxembourg est assez résilient. La croissance démographique, toujours due à l'immigration, ne fut que marginalement affectée par ces évènements. La pression sur le marché du logement est non-négligeable et les infrastructures publiques (notamment dans le domaine de la mobilité) doivent suivre cette évolution."
+          "text": "En 2008, la crise financière se déclenche et n'épargne pas le Luxembourg. <br/> <br/> Les pouvoirs publics doivent notamment intervenir dans le sauvetage des banques systémiques. Néanmoins, même si la récession est profonde, le Luxembourg est assez résilient. La croissance démographique, toujours due à l'immigration, ne fut que marginalement affectée par ces évènements. La pression sur le marché du logement est non-négligeable et les infrastructures publiques (notamment dans le domaine de la mobilité) doivent suivre cette évolution."
         }
       ]
     },
@@ -119,27 +127,26 @@
       "paragraphs": [
         {
           "from": 1866,
-          "to": 1870,
+          "to": 1900,
           "text": "La mortalité augmente fortement (épidémie du choléra) et n'est pas compensée par la natalité. Comme en même temps les gens partent à l’étranger, le Luxembourg perd des habitants à cette époque). En 1866 la population recule de 3.500 habitants. En 1867, la perte d'habitants est similaire, mais c'est l'émigration seule qui en est responsable.",
           "cover": { "id": "courriergdl-1866-04-15-a-i0004.png" }
         },
         {
-          "from": 1913,
+          "from": 1900,
           "to": 1915,
           "text": "Après 1866, les années 1917-1918 sont la deuxième période au cours de laquelle la variation naturelle de la population est négative. Cela résulte à la fois de l'augmentation de la mortalité et d'une diminution des naissances. Le solde naturel passe de +2.600 en 1913 à -1.200 en 1918.",
           "cover": { "id": "statec_011.tif" }
         },
         {
-          "to": 1918,
           "from": 1916,
+          "to": 1935,
           "text": "Ce sont évidemment les conditions de vie précaires de la guerre (difficultés de ravitaillement, par exemple) qui expliquent largement le phénomène, mais la baisse de la natalité est plus structurelle que conjoncturelle. Le nombre d'enfants par femmes (la fécondité) est en baisse continue.",
           "cover": { "id": "statec_020.jpg" }
         },
         {
           "from": 1935,
           "to": 1947,
-          "title": "La Deuxième Guerre mondiale a des répercussions importantes dans le domaine démographique.",
-          "text": "La mortalité augmente (victimes directes de la guerre, conditions de subsistance difficiles), la natalité diminue. Entre 1935 et 1946, la population résidente passe de 297.000 en 1935 à 291.000 en 1947.",
+          "text": "La Deuxième Guerre mondiale a des répercussions importantes dans le domaine démographique. <br></br> La mortalité augmente (victimes directes de la guerre, conditions de subsistance difficiles), la natalité diminue. Entre 1935 et 1946, la population résidente passe de <b>297.000</b> en 1935 à <b>291.000</b> en 1947.",
           "cover": { "id": "statec_001.png" }
         }
       ]
@@ -149,7 +156,7 @@
       "subheading": "Pays pauvre au 19e siècle, le Luxembourg connaît longtemps un solde migratoire négatif, comme la plupart des pays européens. ",
       "layout": "text",
       "from": 1840,
-      "to": 2014,
+      "to": 1992,
       "datasetHeading": "population-balance-details",
       "dataset": "trend-lux-population-growth",
       "datasetAdditionalTrends": ["v"],
@@ -169,21 +176,27 @@
       "paragraphs": [
         {
           "from": 1890,
-          "to": 1940,
+          "to": 1920,
           "text": "À partir du 20e siècle, un certain équilibre s’installe même si en moments de crise (crise économique, guerres), des pics d’émigration peuvent encore être observés. ",
           "cover": { "id": "redline_poster_TAGEBLATT_20070612.png" }
         },
         {
-          "from": 1960,
+          "from": 1920,
+          "to": 1950,
+          "text": "À partir du 20e siècle, un certain équilibre s’installe même si en moments de crise (crise économique, guerres), des pics d’émigration peuvent encore être observés. ",
+          "cover": { "id": "redline_TAGEBLATT_20070612.png" }
+        },
+        {
+          "from": 1950,
           "to": 1970,
           "text": "À partir des années 1960, le Luxembourg devient largement un pays d’immigration avec un solde migratoire positif important. D’abord immigration allemande (sidérurgie/mines), puis italienne à partir de la fin du 19ème siècle (sidérurgie/mines) et jusque dans les années 1960.",
           "cover": { "id": "statec_015.png" }
         },
         {
           "from": 1971,
-          "to": 1980,
-          "text": "À partir de la fin des années 1960, beaucoup de Portugais dans le secteur de la construction.",
-          "cover": { "id": "statec_015.png", "caption": "to be changed" }
+          "to": 1992,
+          "text": "À partir de la fin des années 1960, beaucoup de Portugais arrivent avec leur familles pour travailler dans le secteur de la construction.",
+          "cover": { "id": "statec_022.jpg" }
         }
       ]
     },
@@ -192,7 +205,7 @@
       "subheading": "",
       "layout": "text",
       "from": 1840,
-      "to": 2014,
+      "to": 1930,
       "datasetHeading": "population-balance-details",
       "dataset": "trend-lux-population-growth",
       "datasetAdditionalTrends": ["v"],
@@ -217,20 +230,20 @@
         },
         {
           "from": 1880,
-          "to": 1900,
+          "to": 1920,
           "text": "Avant la Première Guerre mondiale, un nombre de plus en plus important d’Italiens arrivent au Luxembourg souvent comme ouvriers avec une grande mobilité (célibataires ou non-accompagnés par leurs familles). ",
           "cover": { "id": "statec_003.png" }
         },
         {
-          "from": 1922,
+          "from": 1920,
           "to": 1930,
-          "text": "Au cours des années 1922-1929,la sidérurgie connaît une évolution favorable. Les entreprises luxembourgeoise créent de l'emploi et engagent de nouveau beaucoup de travailleurs venant de l'étranger. Leur nombre d'étrangers passe de 33. 000 en 1922 (13% de la population) à 56.000 en 1930 (près de 20% de la population). Les Italiens sont désormais majoritaires.",
+          "text": "Au cours des années 1922-1929, la sidérurgie connaît une évolution favorable. <br/> Les entreprises luxembourgeoise créent de l'emploi et engagent de nouveau beaucoup de travailleurs venant de l'étranger. Leur nombre d'étrangers passe de 33. 000 en 1922 (13% de la population) à 56.000 en 1930 (près de 20% de la population). Les Italiens sont désormais majoritaires.",
           "cover": { "id": "statec_017.png" }
         }
       ]
     },
     {
-      "title": "Un pays de migrations: compare by total numbers",
+      "title": "Plusieurs nationalités ",
       "subheading": "table of",
       "datasetHeading": "migratory-balance",
       "dataset": "population-composition-by-nationalities",
@@ -268,7 +281,7 @@
       ]
     },
     {
-      "title": "Un pays de migrations (1: table)",
+      "title": "Le cas italien",
       "subheading": "",
       "datasetValueFrom": 150000,
       "datasetValueTo": 800000,
@@ -292,44 +305,58 @@
         {
           "from": 1960,
           "to": 1970,
-          "year": "60s",
-          "text": "60s"
+          "text": "Entre 1960 et 1980, la dynamique de l'immigration italienne change. <br/><br/> Si aux débuts des années 1960, les Italiens constituent encore de loin le groupe le plus important d'immigrants, leur solde migratoire devient légérement négatif à partir du milieu de cette décennie."
         },
         {
           "from": 1971,
           "to": 1980,
           "year": "60s",
-          "text": "70s"
+          "text": "Le <i>Miracolo economico italiano</i> qui conduit à une hausse sensible des salaires dans la péninsule et une baisse conséquente du chômage rend l'émigration moins attrayante pour de nombreux Italiens."
         }
       ]
     },
     {
-      "title": "Une réalité mise en chiffres",
-      "subheading": "Si les migrations sont aujourd’hui considérés comme un élément central de l’histoire du Luxembourg, les données statistiques pour les deux derniers siècles sont fragmentaires. Ce n’est qu’en 1871 que la notion d’étranger apparaît dans les recensements. Depuis les années 1960, nous disposons de chiffres plus détaillées d’entrées et de sorties de différentes nationalités. C'est la diversité des origines des migrants à partir des années 1990 qui doit être relevée. Les migrants viennent des pays voisins (la part des Français dans la population augmente), mais désormais également nombreux de pays non-européens (Etats-Unis, Inde, Chine, par exemple).",
-      "layout": "textOnly",
-      "from": 1960,
-      "to": 2014,
+      "title": "... et le cas portugais",
+      "subheading": "",
       "datasetValueFrom": 150000,
       "datasetValueTo": 800000,
       "datasetHeading": "migratory-balance",
       "datasetHeadingValueFrom": -8000,
       "datasetHeadingValueTo": 18000,
       "datasetHeadingAdditionalTrends": ["v"],
-      "datasetHeadingAdditionalTrendsColors": ["var(--primary)"]
+      "datasetHeadingAdditionalTrendsColors": ["var(--primary)"],
+      "dataset": "trend-arrivals-by-nationalities",
+      "layout": "flowers",
+      "from": 1960,
+      "to": 1980,
+      "extent": [0, 6000],
+      "groups": ["v5", "v8"],
+      "moduleHotspots": [
+        { "t": 1960 },
+        { "t": 1971 },
+        { "t" : 1980 }
+      ],
+      "paragraphs": [
+        {
+          "from": 1960,
+          "to": 1974,
+          "text": "Même avant la signature d'un accord bilatéral entre le Luxembourg et le Portugal en mai 1970, l'immigration portugaise commence à remplir le vide laissé par les Italiens."
+        },
+        {
+          "from": 1975,
+          "to": 1980,
+          "year": "60s",
+          "text": "En pleine croissance économique, le Luxembourg continue à être demandeur de main d'oeuvre. Cette migration est dans un premier temps masculine et jeune (entre 20 et 35 ans). Le ralentissement de la conjoncture à partir de 1975 ralentit cette migration sans l'arrêter."
+        }
+      ]
+    }
+  ],
+  "conclusions": [
+    {
+      "text": "Si les migrations sont aujourd’hui considérés comme un élément central de l’histoire du Luxembourg, les données statistiques pour les deux derniers siècles sont fragmentaires. Ce n’est qu’en 1871 que la notion d’étranger apparaît dans les recensements. Depuis les années 1960, nous disposons de chiffres plus détaillées d’entrées et de sorties de différentes nationalités. C'est la diversité des origines des migrants à partir des années 1990 qui doit être relevée. Les migrants viennent des pays voisins (la part des Français dans la population augmente), mais désormais également nombreux de pays non-européens (Etats-Unis, Inde, Chine, par exemple)."
     },
     {
-      "title": "Une réalité mise en chiffres",
-      "subheading": "Les migrants viennent des pays voisins (la part des Français dans la population augmente), mais désormais également nombreux de pays non-européens (Etats-Unis, Inde, Chine, par exemple). Les migrants de pays qui avaient déjà une histoire d'immigration au Luxembourg (Portugal, Italie) sont également assez nombreux au sein de la vague d'immigration récente. Le profil des qualifications et des formations des immigrés est également de plus en plus diversifié; ils occupent à la fois des emplois hautement qualifiés et des emplois peu qualifiés.",
-      "layout": "textOnly",
-      "from": 1960,
-      "to": 2014,
-      "datasetValueFrom": 150000,
-      "datasetValueTo": 800000,
-      "datasetHeading": "migratory-balance",
-      "datasetHeadingValueFrom": -8000,
-      "datasetHeadingValueTo": 18000,
-      "datasetHeadingAdditionalTrends": ["v"],
-      "datasetHeadingAdditionalTrendsColors": ["var(--primary)"]
+      "text": "Les migrants viennent des pays voisins (la part des Français dans la population augmente), mais désormais également nombreux de pays non-européens (Etats-Unis, Inde, Chine, par exemple). Les migrants de pays qui avaient déjà une histoire d'immigration au Luxembourg (Portugal, Italie) sont également assez nombreux au sein de la vague d'immigration récente. Le profil des qualifications et des formations des immigrés est également de plus en plus diversifié; ils occupent à la fois des emplois hautement qualifiés et des emplois peu qualifiés."
     }
   ]
 }
