@@ -501,6 +501,13 @@ ul.nav.nav-tabs li.nav-item button.active {
   display: none;
 }
 
+.Flowers .Flowers_legend{
+  font-size: 14px;
+}
+.Flowers .Flowers_legend{
+  color: black !important;
+}
+
 @media screen and (max-width: 600px) {
   .section-small {
     padding-top: 80px;

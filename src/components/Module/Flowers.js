@@ -253,7 +253,7 @@ const Flowers = ({
           {groups.map((d, i) => (
             <li key={i} className="nav-item flex-auto">
               <button
-                className={`w-100 tc pa2 serif nav-link ${
+                className={`Flowers_legend w-100 tc pa2 nav-link ${
                   activeFlower === i && 'active'
                 }`}
                 key={i}
