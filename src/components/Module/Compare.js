@@ -57,6 +57,7 @@ const Compare = ({
   startDate,
   endDate,
   scaleX,
+  displayTitle = false
 }) => {
   const { groups = [] } = module;
   const dataset = useMemo(() => {
@@ -92,7 +93,10 @@ const Compare = ({
 
   return (
     <>
-      <h2 className="textContainerTitle">{module.title}</h2>
+      {displayTitle && module.title.length
+        ? <h2 className="textContainerTitle">{module.title} e</h2>
+        : null
+      }
       <p>{dataset.title} {dataset.url}</p>
       <div
         className="dt w-100"

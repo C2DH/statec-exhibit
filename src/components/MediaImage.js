@@ -10,7 +10,7 @@ const MediaImage = ({
   preview,
   height = '45vh', padding = 1,
   resolution = 'medium-h',
-  displayTitle = true,
+  displayTitle = false,
 }) => {
   const media = MediaIndex.images[id]
   const mediaUrl = media
@@ -26,7 +26,7 @@ const MediaImage = ({
   ].filter(({text}) => typeof text === 'string' && text.length)
     .map(({text, className=''}) => `<div class="${className}">${text}</div>`)
     .join('')
-  
+
   return (
     <figure
       style={{
