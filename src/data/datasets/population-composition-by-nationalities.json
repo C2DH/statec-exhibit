@@ -1,6 +1,6 @@
 {
   "id": "population-composition-by-nationalities",
-  "title": "Population by nationalities, 1970 1981 1991 2001 2011",
+  "title": "Nombre de personnes residents par nationalités, 1970-2011",
   "timeFormat": "YYYY",
   "legend": {
     "t": "year",
