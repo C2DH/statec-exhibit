@@ -97,7 +97,7 @@ const Compare = ({
         ? <h2 className="textContainerTitle">{module.title} e</h2>
         : null
       }
-      <p>{dataset.title} {dataset.url}</p>
+      <p className="Compare_legend">{dataset.title} {dataset.url}</p>
       <div
         className="dt w-100"
         style={{ display: isMobileWithTablet ? 'none' : 'table-row' }}

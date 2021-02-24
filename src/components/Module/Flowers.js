@@ -66,7 +66,7 @@ const Flower = ({
       }}
     >
       <div
-        className="tc sans"
+        className="Flower_legend tc sans"
         style={{
           fontSize: '12px',
           lineHeight: '14px',
