@@ -24,7 +24,7 @@
   line-height: 1.2;
 
   font-family: Sneaky;
-  color: #4d4a6d;
+  color: var(--secondary); /* #4d4a6d; */
 }
 
 .paragraphs {
