@@ -1,8 +1,8 @@
 import React, {useEffect, useState} from 'react'
 import {useParams} from 'react-router-dom'
-import styles from './DocumentViewer.module.css'
 import MediaImage from '../components/MediaImage'
 import MediaIndex from '../media/index.json'
+import { Link } from 'react-router-dom'
 
 function debounce(fn, ms) {
   let timer
@@ -15,9 +15,18 @@ function debounce(fn, ms) {
   };
 }
 
+const CloseButton = ({ to }) => {
+  return (
+    <Link className='CloseButton' to={to}>×</Link>
+  )
+}
+
 const DocumentViewer = ({
   marginTop = 55
 }) => {
+  // is there any from parameter
+  const urlSearchParams = new URLSearchParams(window.location.search);
+  const fromPage = urlSearchParams.get('from')
   const [dimensions, setDimensions] = useState({
     height: window.innerHeight,
     width: window.innerWidth
@@ -38,12 +47,16 @@ const DocumentViewer = ({
   const availableHeightInPx = dimensions.height - marginTop
   const {documentId} = useParams()
   const doc = MediaIndex.images[documentId]
-  console.info('DocumentViewer:', doc, MediaIndex)
+  console.info('DocumentViewer:', doc)
 
   return (
-    <div style={{height: availableHeightInPx, marginTop}} className="w-100 fixed">
-      <div className={styles.inner}>
-      <MediaImage id={documentId} height="100%" caption={doc.caption} resolution="large-h"/>
+    <div style={{height: availableHeightInPx, marginTop}} className="DocumentViewer w-100 fixed">
+      <div className='DocumentViewer_inner'>
+        { fromPage
+          ? <CloseButton to={`/${fromPage}${window.location.hash}`}/>
+          : null
+        }
+        <MediaImage id={documentId} style={{ height: '100%' }} resolution="large-h"/>
       </div>
 
     </div>

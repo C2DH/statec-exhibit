@@ -364,7 +364,7 @@ const Trend = ({
                 progressScale(progress) + marginLeft
               }px)`,
               width: '100px',
-              marginLeft: '-57px',
+              marginLeft: '-50px',
               textAlign: 'center',
             }}
           >

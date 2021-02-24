@@ -15,7 +15,7 @@ const TrendProgressBarGraphics = ({
         from={{ x: scale(progress), y: 0 }}
         to={{ x: scale(progress), y: height }}
         stroke="var(--primary)"
-        strokeWidth={isMobileWithTablet ? 1 : 2}
+        strokeWidth={isMobileWithTablet ? 1 : 1}
         style={{ pointerEvents: 'none' }}
       />
     </g>

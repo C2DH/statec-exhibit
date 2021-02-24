@@ -31,6 +31,7 @@ body,
 
 :root {
   --primary: #d03a45;
+  --white: #ffffff;
   --secondary: #2b219f;
   --accent: #ffc09d;
   --gray-500: rgba(0, 0, 0, 0.5);
@@ -48,6 +49,16 @@ body,
   --spacer-8: 40px;
   --spacer-9: 45px;
   --spacer-10: 50px;
+  --negative-spacer-1: -5px;
+  --negative-spacer-2: -10px;
+  --negative-spacer-3: -15px;
+  --negative-spacer-4: -20px;
+  --negative-spacer-5: -25px;
+  --negative-spacer-6: -30px;
+  --negative-spacer-7: -35px;
+  --negative-spacer-8: -40px;
+  --negative-spacer-9: -45px;
+  --negative-spacer-10: -50px;
   --font-size-1: 10px;
   --font-size-2: 12px;
 }
@@ -426,6 +437,32 @@ p.moduleParagraph {
   font-size: var(--font-size-1);
 }
 
+.ChapterProgress_titleWrapper{
+  will-change: transform;
+  transition: transform 0.6s cubic-bezier(0.85, 0, 0.15, 1);
+}
+.ChapterProgress_title {
+  opacity: .12;
+  color: var(--secondary);
+  cursor: pointer;
+  font-family: SneakyTimes, serif;
+  font-weight: 100;
+  font-size: 2vh;
+  line-height: 1.25;
+  /* will-change: opacity;
+  transition: opacity 0.6s cubic-bezier(0.85, 0, 0.15, 1); */
+}
+.ChapterProgress_title:hover{
+  text-decoration: underline;
+  opacity: 1;
+}
+.ChapterProgress_title.active {
+  opacity: 1;
+}
+
+.ChapterConclusions_step .textContainer {
+  margin: 25vh 10%;
+}
 /* nav */
 ul.nav.nav-tabs {
   margin: 0;
@@ -451,9 +488,75 @@ ul.nav.nav-tabs li.nav-item button.active {
   border-bottom: 1px solid transparent;
 }
 
+.DocumentViewer_inner {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px 5px;
+  position: relative;
+}
+
+.DocumentViewer_inner figcaption{
+  padding-top: 10px !important;
+  padding-bottom: 20px !important;
+}
+
+.CloseButton{
+  position: absolute;
+  right: var(--spacer-2);
+  top: var(--spacer-2);
+  text-align: center;
+  background-color: var(--white);
+  line-height: var(--spacer-5);
+  font-size: 20px;
+  width: var(--spacer-5);
+  height: var(--spacer-5);
+  cursor: pointer;
+  z-index: 100;
+  text-decoration: none;
+  border-radius: var(--spacer-5);
+}
+
+.CloseButton:hover, .CloseButton:active{
+  background-color: black;
+  color: var(--white);
+}
+
+.Text .MediaImage_caption{
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.Text .MediaImage_provenance{
+  display: none;
+}
+
 @media (min-width: 767px) {
   ul.nav.nav-tabs li.nav-item button {
     border: 1px solid transparent !important;
+  }
+  .ChapterConclusions_step .textContainer {
+    width: 50%;
+    margin: 25vh auto;
+  }
+  .DocumentViewer_inner{
+    margin: 0 50px 50px;
+  }
+  .DocumentViewer_inner .CloseButton{
+    right: var(--negative-spacer-7);
+  }
+  .DocumentViewer_inner figcaption{
+    padding-top: 20px !important;
+    padding-bottom: 50px !important;
+  }
+  .Text .MediaImage_caption{
+    width: auto;
+    overflow: auto;
+    white-space: normal;
+  }
+  .Text .MediaImage_provenance{
+    display: block;
   }
 }
 

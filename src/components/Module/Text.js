@@ -1,16 +1,17 @@
 import React, { lazy } from 'react';
 import { EndYear } from '../../constants';
-// import { isMobileWithTablet } from '../../constants';
+import { isMobileWithTablet } from '../../constants';
 
 const MediaImage = lazy(() => import('../MediaImage'));
 const Figure = lazy(() => import('../Figure'));
 
-const TextCover = React.memo(({ cover, coverId, title, subheading }) => {
+const TextCover = React.memo(({ cover, coverId, title, subheading, themeId, moduleIndex }) => {
   if (cover.id) {
     return (
       <MediaImage
+        style={{height: isMobileWithTablet ? '35vh' : '45vh'}}
         id={coverId}
-        to={`/doc/${cover.id}`}
+        to={`/doc/${cover.id}?from=${themeId}#${themeId}-m${moduleIndex}`}
         alt={cover.alt}
         caption={cover.caption}
         title={title}
@@ -20,7 +21,7 @@ const TextCover = React.memo(({ cover, coverId, title, subheading }) => {
   return <Figure src={cover.url} alt={cover.alt} caption={cover.caption} />;
 });
 
-const Text = ({ title, subheading, paragraphs, currentYear }) => {
+const Text = ({ title, subheading, paragraphs, currentYear, themeId, moduleIndex }) => {
   // show subheading only before any paragraphs
   const { currentParagraph, minFrom } = paragraphs.reduce(
     (acc, p) => {
@@ -41,9 +42,9 @@ const Text = ({ title, subheading, paragraphs, currentYear }) => {
   const showModuleSubheading = !hasCover && subheading && currentYear < minFrom;
 
   return (
-    <>
+    <div className="Text">
       {!hasCover && <h2 className="textContainerTitle">{title}</h2>}
-      {hasCover && <TextCover cover={currentParagraph.cover} coverId={currentParagraph.cover?.id} title={title} />}
+      {hasCover && <TextCover cover={currentParagraph.cover} moduleIndex={moduleIndex} themeId={themeId} coverId={currentParagraph.cover?.id} title={title} />}
       {showModuleSubheading && (
         <div
           className="textContainerSubTitle"
@@ -52,7 +53,7 @@ const Text = ({ title, subheading, paragraphs, currentYear }) => {
           }}
         />
       )}
-    </>
+    </div>
   );
 };
 export default Text;

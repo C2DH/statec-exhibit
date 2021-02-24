@@ -206,6 +206,7 @@ const Flowers = ({
   startDate,
   endDate,
   scaleX,
+  displayTitle = false
 }) => {
   const [activeFlower, setActiveFlower] = useState(0);
   const { groups = [], dataset = '', from, to } = module;
@@ -243,7 +244,10 @@ const Flowers = ({
 
   return (
     <div className="Flowers flex flex-column" style={{ height: '90%' }}>
-      <h2 className="textContainerTitle">{module.title}</h2>
+      {displayTitle && module.title.length
+        ? <h2 className="textContainerTitle">{module.title} e</h2>
+        : null
+      }
       <div className="flex flex-column" style={{ flexGrow: 1 }}>
         <ul className="nav nav-tabs w-100 flex flex-row-ns items-end">
           {groups.map((d, i) => (
@@ -262,7 +266,10 @@ const Flowers = ({
         </ul>
         <div className="flex flex-row-ns" style={{ flexGrow: 1 }}>
           {groups.map((g, i) => (
-            <div key={`flower-${i}`} className="h-100" style={{ width: '50%' }}>
+            <div key={`flower-${i}`} className="" style={{
+              alignItems: 'stretch',
+              width: '50%'
+            }}>
               <Flower
                 field={g}
                 active={activeFlower === i}

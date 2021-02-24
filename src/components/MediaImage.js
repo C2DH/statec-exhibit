@@ -8,9 +8,11 @@ import { useImage } from '../hooks';
 const MediaImage = ({
   id, to, alt, caption = '', title = '',
   preview,
-  height = '45vh', padding = 1,
+  style = {
+    height: '45vh'
+  }, padding = 1,
   resolution = 'medium-h',
-  displayTitle = true,
+  displayTitle = false,
 }) => {
   const media = MediaIndex.images[id]
   const mediaUrl = media
@@ -21,18 +23,19 @@ const MediaImage = ({
   const backgroundImage = `url(${isLoading ? mediaBase64 : mediaUrl})`
   const mediaCaption = [
     { text: caption, className: 'MediaImage-narrative'},
-    { text: media?.caption, className: 'MediaImage-caption mt2' },
-    { text: media?.provenance, className:'MediaImage-provenance mt2' },
+    { text: media?.caption, className: 'MediaImage_caption mt2' },
+    { text: media?.provenance, className:'MediaImage_provenance mt2' },
   ].filter(({text}) => typeof text === 'string' && text.length)
     .map(({text, className=''}) => `<div class="${className}">${text}</div>`)
     .join('')
-  
+
   return (
     <figure
+      className='MediaImage'
       style={{
         display: 'flex',
         flexDirection: 'column',
-        height: isMobileWithTablet ? '35vh' : height,
+        height: style.height,
         width: '100%',
         margin: '0 auto',
       }}

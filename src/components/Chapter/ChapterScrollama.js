@@ -59,7 +59,7 @@ class ChapterScrollama extends PureComponent {
             data={data}
           />
         )}
-        <ChapterGraphicContainer module={currentModule} progress={progress} />
+        <ChapterGraphicContainer moduleIndex={data} module={currentModule} progress={progress} themeId={theme.id}/>
         {!isMobileWithTablet && (
           <ChapterProgress
             themeId={theme.id}
