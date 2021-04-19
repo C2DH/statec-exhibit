@@ -54,7 +54,7 @@ const ChapterScrollamaTrends = ({ theme = {}, progress, data}) => {
               ? window.innerHeight * 0.3 - TrendHeaderHeight
               : window.innerHeight * 0.20 - TrendHeaderHeight
           }
-          valueKey="v"
+          valueKey={theme.modules[data].datasetTrend || "v"}
           timeKey="t"
           highlightKey="h"
           trendName={theme.id}
