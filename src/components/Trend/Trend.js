@@ -23,6 +23,7 @@ const TrendHeader = ({
   progress,
   date,
   value,
+  valueKey,
   values,
   legend,
   additionalTrendsLegend,
@@ -46,6 +47,7 @@ const TrendHeader = ({
           date={date}
           legend={legend}
           t={t}
+          valueKey={valueKey}
           additionalTrendsLegend={additionalTrendsLegend}
           additionalTrendsColors={additionalTrendsColors}
           additionalTrends={additionalTrends}
@@ -104,7 +106,7 @@ const Trend = ({
   const svgWidth = isMobileWithTablet
     ? window.innerWidth * 0.9
     : window.innerWidth * 0.9;
-  const marginLeft = window.innerWidth * 0.0;
+  const marginLeft = 0;//window.innerWidth * 0.0;
   const windowDimensions = [window.innerWidth, window.innerHeight].join('-');
   const graphWidth = svgWidth - marginLeft;
   const svgHeight = isMobileWithTablet ? height * 0.7 : height;
@@ -298,6 +300,7 @@ const Trend = ({
           stroke={red}
           scaleX={scaleX}
           scaleY={scaleY2}
+          valueKey={valueKey}
         />
         {/* PROGRESS BAR*/}
         {progress && (
@@ -310,11 +313,14 @@ const Trend = ({
           />
         )}
         {/* h AXES */}
+      </svg>
+
+      <svg width={window.innerWidth} height={height} style={{position: 'absolute', left: 0}}>
         {!isMobileWithTablet && (
           <TrendAxisLeftGraphics
             id={id}
             windowDimensions={windowDimensions}
-            marginLeft={marginLeft}
+            marginLeft={window.innerWidth*0.05}
             marginTop={marginTop}
             scale={scaleY2}
             numTicks={negative ? 4 : 2}
@@ -327,19 +333,18 @@ const Trend = ({
       {!negative && (
         <svg
           className="viz"
-          x="0px"
-          y="0px"
+
           width={svgWidth}
           height={30}
           style={{
             border: '0px solid rgba(0,0,0,0.2)',
-            margin: '2px auto',
+            margin: '2px 0',
           }}
         >
           <TrendAxisBottomGraphics
             id={id}
             windowDimensions={windowDimensions}
-            marginLeft={marginLeft}
+            marginLeft={window.innerWidth*.05}
             marginTop={0}
             axisOffsetTop={0}
             scale={scaleX}
@@ -394,6 +399,7 @@ const Trend = ({
           date={actualYear}
           legend={legend}
           values={values}
+          valueKey={valueKey}
           additionalTrendsLegend={additionalTrendsLegend}
           additionalTrendsColors={additionalTrendsColors}
           additionalTrends={additionalTrends}
