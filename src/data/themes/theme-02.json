@@ -11,10 +11,7 @@
   },
   "introductions": [
     {
-      "text": "Au 19e siècle, le taux de natalité se tasse. Si le solde naturel (c'est-à-dire l'excédent des naissances sur les décès) reste positif, c'est grâce à la baisse de la mortalité due au progrès médical et sanitaire et à l’amélioration des conditions de vie (logement, régime alimentaire …)."
-    },
-    {
-      "text": "Au 20e siècle le solde naturel est tendanciellement plus faible qu’au 19e siècle, ce qui est dû à la natalité qui continue à se tasser suite à une fécondité (le nombre d'enfants par femme) qui est en recul."
+      "text": "Au 19e siècle, le taux de natalité se tasse. Si le solde naturel (c'est-à-dire l'excédent des naissances sur les décès) reste positif, c'est grâce à la baisse de la mortalité due au progrès médical et sanitaire et à l’amélioration des conditions de vie (logement, régime alimentaire&nbsp;…).<br/>Au 20e siècle le solde naturel est tendanciellement plus faible qu’au 19e siècle, ce qui est dû à la natalité qui continue à se tasser suite à une fécondité (le nombre d'enfants par femme) qui est en recul."
     }
   ],
   "modules": [
@@ -28,10 +25,10 @@
       "datasetTrend": "v1",
       "datasetAdditionalTrends": ["v"],
       "datasetAdditionalTrendsColors": ["var(--primary)"],
-      "datasetHeadingAdditionalTrends": ["v", "v1", "v2"],
-      "datasetHeadingAdditionalTrendsColors": ["var(--primary)", "green", "black"],
-      "datasetHeadingValueFrom": -10,
-      "datasetHeadingValueTo": 50,
+      "datasetHeadingAdditionalTrends": [],
+      "datasetHeadingAdditionalTrendsColors": [],
+      "datasetHeadingValueFrom": -5,
+      "datasetHeadingValueTo": 45,
       "moduleHotspots": [
         { "t": 1845 },
         { "t": 1880 },
