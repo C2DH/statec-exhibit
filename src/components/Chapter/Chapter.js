@@ -15,6 +15,11 @@ const Chapter = ({ theme, color, chapterIndex, showCover = true, showTitle = tru
         chapterIndex={chapterIndex}
       />
       <ChapterHeader chapterIndex={chapterIndex} />
+      {
+        Array.isArray(theme.introductions)
+        ? <ChapterConclusions themeId={theme.id} conclusions={theme.introductions} />
+        : null
+      }
       <ChapterScrollama theme={theme} />
       {
         Array.isArray(theme.conclusions)
