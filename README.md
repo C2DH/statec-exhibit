@@ -6,6 +6,18 @@ Each theme is loaded from a JSON file in data/themes and consists of several ele
 
 Each module has a dataset and a series of paragraphs.
 
+## Deploy with docker
+The `Dockerfile` in this repo includes instruction to build the website. There is also a `docker-compose.xml` that takes care of building the app and serve via nginx:
+
+```
+  NGINX_PORT=80 docker-compose up
+```
+
+The `NGINX_PORT` env variable is required (you can use a .env file)
+
+## Deploy with netlify
+Firstly, create a build using the make command `make run-build-noindex`.
+To quickly deploy a version on netlify using `nelify deploy`, add a `.netlify/state.json` file containing the correct siteId according to [Netlify documentation](https://docs.netlify.com/cli/get-started/#link-and-unlink-sites).
 
 ## How to add a visualisation module:
 1. In `data/themes/theme-01.json` each module in modules has a `layout` property. To add a new `layout` property, e.g; `newLayout`: puts its string value and a corresponding react component in `ChapterGraphicCointainer`:
