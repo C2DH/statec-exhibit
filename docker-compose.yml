@@ -1,0 +1,36 @@
+version: '3.7'
+services:
+  app:
+    container_name: statec-exhibit-app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - app-files:/app-files:z
+    # Every time container is launched this would just copy static files
+    # from the files directory in the container to the mounted `app-files`
+    # directory which is shared with `nginx`. That is, this location is where
+    # `nginx` will be
+    # looking for these files. This command would lso remove the old files
+    # before copying the new ones.
+    command: >
+      /bin/sh -c "rm -rf /app-files/* &&
+                  ls -lat /statec-exhibit &&
+                  echo 'Files in /app-files :' &&
+                  ls -lat /app-files/ &&
+                  cp -r /statec-exhibit/* /app-files/ &&
+                  echo 'Files in /app-files :' &&
+                  ls -lat /app-files/"
+  nginx:
+    image: nginx:alpine
+    restart: always
+    ports:
+      - "${NGINX_PORT}:80"
+    depends_on:
+      - app
+    volumes:
+      - ./docker/nginx.conf:/etc/nginx/conf.d/default.conf
+      - ./docker/nginx.htpasswd:/etc/nginx/conf.d/nginx.htpasswd
+      - app-files:/opt/app-files:z
+volumes:
+  app-files:
