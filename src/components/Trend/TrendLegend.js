@@ -48,7 +48,7 @@ class TrendLegend extends React.Component {
         </span>
         <span>
           <span className="underline mr2">{t('number', { n: mainValue })}</span>
-          <span>{legend?.v} </span>
+          <span>{legend ? legend[valueKey] : null} </span>
         </span>
         <span
           style={{

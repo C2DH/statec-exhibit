@@ -1,14 +1,19 @@
 {
   "id": "population-natural-growth-details",
-  "title": "Taux d'accroissement naturel",
+  "title": "",
   "timeformat": "YYYY",
   "legend": {
     "v": "Taux d'accroissement naturel (‰)",
-    "v1": "taux de natalité (‰)",
-    "v2": "taux de mortalité (‰)"
+    "v1": "Taux de natalité (‰)",
+    "v2": "Taux de mortalité (‰)"
+  },
+  "valueFormat": {
+    "v": "value ‰",
+    "v1": "value ‰",
+    "v2": "value ‰"
   },
   "description": "Taux de natalité, Taux de mortalité, Taux d'accroissement naturel",
-  "source": "STATEC",
+  "source": "STATEC Natural and migratory movements of the population 1891 - 2020",
   "sourceUrl": "https://statistiques.public.lu/stat/TableViewer/tableView.aspx?ReportId=12868&IF_Language=eng&MainTheme=2&FldrName=2",
   "values": [{
       "t": "1840",

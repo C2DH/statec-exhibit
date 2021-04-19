@@ -21,6 +21,7 @@ class TrendHotspotsGraphics extends React.Component {
       fill,
       stroke,
       strokeWidth = 2,
+      valueKey='v'
     } = this.props;
     return (
       <g transform={`translate(${marginLeft}, ${marginTop})`}>
@@ -29,7 +30,7 @@ class TrendHotspotsGraphics extends React.Component {
             <circle
               key={i}
               cx={scaleX(d.time)}
-              cy={scaleY(d.v)}
+              cy={scaleY(d[valueKey])}
               stroke={stroke}
               fill={fill}
               strokeWidth={isMobileWithTablet ? 1 : strokeWidth}
