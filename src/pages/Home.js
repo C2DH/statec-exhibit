@@ -1,79 +1,72 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
-import { useStore } from '../store';
-import styles from './Home.module.css';
-import { isMobileWithTablet, ChapterRoutes } from '../constants';
-import Covers from '../components/Cover/Cover';
-import { animated, useSpring } from 'react-spring';
+import React, { useEffect } from 'react'
+import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
+import { useSpring, a } from 'react-spring'
+import { useStore } from '../store'
+import { useCurrentWindowDimensions, useImage } from '../hooks'
+import { getIsMobileWithTablet } from '../logic/viewport'
+import { ChapterRoutes } from '../constants'
+import { ArrowUpRight } from 'react-feather'
+import '../styles/pages/home.scss'
 
-const STEPS = [
-  {
-    id: 0,
-    backgroundColor: 'var(--accent)',
-    backgroundClipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)',
-    url: '/0.landing.jpg',
-  },
-];
 
 const Home = () => {
-  const { t } = useTranslation();
-  const [open, setOpen] = useState(false);
+  const { t } = useTranslation()
+  const { height, width } = useCurrentWindowDimensions()
+  const [ props, setProps ] = useSpring(() => ({ opacity: 0, height, config: { mass: 1, tension: 50, friction: 10 } }))
+  const { isLoading } = useImage('/0.landing.jpg', 50);
+  const isMobileWithTablet = getIsMobileWithTablet(width, height)
+  const changeBackgroundColor = useStore(state => state.changeBackgroundColor)
 
   useEffect(() => {
-    useStore.setState({ backgroundColor: STEPS[0].backgroundColor });
-    setTimeout(() => {
-      setOpen(true);
-    }, 1500);
-  }, []);
+    changeBackgroundColor('var(--primary)')
+  }, [])
 
-  const props = useSpring({
-    opacity: open ? 1 : 0,
-  });
+  useEffect(() => {
+    if (!isLoading) {
+      setProps({ opacity: 1 })
+    }
+    // eslint-disable-next-line
+  }, [ isLoading ])
 
+  useEffect(() => {
+    setProps({ height })
+    // eslint-disable-next-line
+  }, [ height ])
+  // {t('number', { n: 129822.4325 })}
   return (
-    <div className="home">
-      <Covers index={0} direction={'down'} steps={STEPS} />
-      <div style={{ height: '100vh', overflow: 'hidden' }}>
-        <animated.div
-          className="mw9 center pa4 ph5-l"
-          style={{
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            flexDirection: 'column',
-            height: '100vh',
-            opacity: props.opacity,
-          }}
-        >
-          <h1 className="f2 f1-m tc mv0">
-            <span
-              style={{
-                color: 'var(--secondary)',
-                fontSize: isMobileWithTablet ? '16vw' : '8vw',
-              }}
-            >
-              {t('pagesHomeTitle')}
-            </span>
-          </h1>
-          <h2
-            className="fw1 lh-title tc mt3"
-            style={{ fontSize: isMobileWithTablet ? '4vw' : '2vw' }}
-          >
-            <span>{t('pagesHomeSubheading')}</span>
-          </h2>
-          <div
-            className="fw1 lh-title tc mt5"
+    <div className="Home">
+      <a.div className="mw9 center pa4 ph5-l" style={{
+        opacity: props.opacity,
+        minHeight: props.height,
+      }}>
+        <h1 className="f2 f1-m tc mv0">
+          <span
             style={{
               color: 'var(--secondary)',
-              fontSize: isMobileWithTablet ? '1vw' : '1.5vw',
+              fontSize: isMobileWithTablet ? '16vw' : '8vw',
             }}
           >
-            Scroll down to explore ↓{' '}
-          </div>
-        </animated.div>
-      </div>
-      <div className={styles.stepWrapper}>
+            {height}, {width}
+            {t('pagesHomeTitle')}
+          </span>
+        </h1>
+        <h2 className="fw1 lh-title tc mt3" style={{
+          fontSize: isMobileWithTablet ? '4vw' : '2vw'
+        }}>
+          <span>{t('pagesHomeSubheading')}</span>
+        </h2>
+        <div
+          className="fw1 lh-title tc mt5"
+          style={{
+            color: 'var(--secondary)',
+            fontSize: isMobileWithTablet ? '1vw' : '1.5vw',
+          }}
+        >
+          Scroll down to explore ↓{' '}
+        </div>
+      </a.div>
+      <div className="Home_paragraphsWrapper">
         <div className="mw9 center pa4 pt5-ns ph5-l">
           <h2 className="f2-ns f3 fw1 lh-title tc">
             {t('pagesHomeParagraph01')}
@@ -83,12 +76,12 @@ const Home = () => {
           </h2>
         </div>
       </div>
-      <div className={`${styles.stepChapterWrapper} `}>
+      <div className="Home_stepChapterWrapper">
         <div className="block mb4">
           {ChapterRoutes.map((route, i) => (
             <div key={i}>
               <h2
-                className={`${styles.chapterNumber} sans f2-ns`}
+                className="Home_chapterTitle sans f2-ns"
                 style={{
                   fontSize: isMobileWithTablet ? '4.5vw' : '2.5vw',
                 }}
@@ -96,19 +89,15 @@ const Home = () => {
                 {t('chapterNumber', { n: i + 1 })}
               </h2>
               <h2
-                className={`${styles.chapterTitle}`}
+                className="Home_chapterTitle"
                 style={{
                   fontSize: isMobileWithTablet ? '9vw' : '4.5vw',
                   marginTop: '10px',
                   marginBottom: '80px',
                 }}
               >
-                <Link to={route.to}>{t(route.label)} </Link>
-                <span
-                  style={{ fontSize: isMobileWithTablet ? '2.5vw' : '2.5vw' }}
-                >
-                  ↗
-                </span>
+                <Link to={route.to}>{t(route.label)}&nbsp;</Link>
+                <ArrowUpRight />
               </h2>
             </div>
           ))}
@@ -129,7 +118,7 @@ const Home = () => {
         </div>
       </div>
     </div>
-  );
-};
 
-export default Home;
+  )
+}
+export default Home

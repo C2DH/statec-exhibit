@@ -1,0 +1,17 @@
+
+.Home_paragraphsWrapper {
+  // padding: 40vh 10px 20vh;
+  transition: padding .25s ease-in-out;
+}
+
+.Home_stepChapterWrapper {
+  padding: 25vh 10px 25vh;
+  margin-left: 5vh;
+  margin-right: 5vh;
+}
+.Home_stepChapterWrapper a {
+  text-decoration: none;
+}
+.Home_stepChapterWrapper a:hover {
+  text-decoration: underline;
+}

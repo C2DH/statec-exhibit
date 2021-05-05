@@ -1,0 +1,131 @@
+.ChapterCover {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.ChapterCover_frame {
+  position: absolute;
+  top: 18%;
+  left: 18%;
+  right: 18%;
+  bottom: 18%;
+  overflow: hidden;
+  background-size: cover;
+}
+
+.ChapterCover_wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+}
+
+.ChapterCover_title {
+  padding-top: 0;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1, h2{
+    color: var(--secondary);
+  }
+
+
+}
+
+.ChapterWideParagraphs_textContainer{
+  width: 50%;
+  margin: 25vh auto;
+}
+
+.ChapterStream{
+  width: 50%;
+  border-right: 1px solid;
+  counter-reset: chapterStream_module;
+}
+.ChapterStream_module{
+  counter-reset: chapterStream_paragraph;
+  h2 > span{
+    display: block;
+    border-bottom: 1px solid;
+  }
+  h2:before{
+    position: absolute;
+    z-index: -1;
+    margin-left: -20px;
+    color: var(--secondary);
+    content: counter(chapterStream_module);
+    counter-increment: chapterStream_module;
+  }
+}
+.ChapterStream_paragraph {
+  p{
+    text-indent: 24px;
+    // position: relative;
+  }
+  p:before{
+    position: absolute;
+    z-index: -1;
+    text-indent: 0px;
+    margin-left: -23px;
+    margin-top: 0px;
+    display: inline-block;
+    border: 1px solid;
+    border-radius: 10px;
+    text-align: center;
+    width: 15px;
+    height: 15px;
+    line-height: 14px;
+    font-size: 12px;
+    color: var(--secondary);
+    content: counter(chapterStream_paragraph);
+    counter-increment: chapterStream_paragraph;
+  }
+  > div {
+    transition: background-color .25s ease-in-out;
+  }
+  &.active > div {
+    background-color: var(--secondary);
+    color: var(--primary);
+    border-color: transparent;
+  }
+}
+// ChapterStream_module
+
+
+// -m
+@media screen and (min-width: 30em) and (max-width: 60em) {
+  .ChapterStream{
+    width: 40%;
+  }
+  .ChapterCover_wrapper {
+    h1 {
+      font-size: 8vw;
+    }
+    h2{
+      font-size: 2.5vw;
+    }
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .ChapterStream{
+    width: 30%;
+  }
+  .ChapterCover_wrapper {
+    h1 {
+      font-size: 8vw;
+    }
+    h2{
+      font-size: 2.5vw;
+    }
+  }
+}

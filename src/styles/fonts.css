@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'Porpora';
+  src: url('../assets/fonts/porpora/Porpora-Regular.woff2') format('woff2'),
+    url('../assets/fonts/porpora/Porpora-Regular.woff') format('woff'),
+    url('../assets/fonts/porpora/Porpora-Regular.ttf') format('truetype');
+  font-weight: regular;
+}
+
+@font-face {
+  font-family: 'SneakyTimes';
+  src: url('../assets/fonts/sneakyTimes/Sneaky-Times.woff2') format('woff2'),
+    url('../assets/fonts/sneakyTimes/Sneaky-Times.woff') format('woff');
+  font-weight: regular;
+}

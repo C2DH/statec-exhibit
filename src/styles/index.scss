@@ -1,0 +1,97 @@
+@import 'fonts';
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Porpora, Arial, sans-serif;
+  height: 100%;
+  // same as --primary
+  background-color: #ffc09d;
+  // same as --secondary
+  color: #2b219f;
+  //
+  transition: background-color .6s ease-in-out;
+}
+
+:root {
+  --primary: #ffc09d;
+  --secondary: #2b219f;
+  --white: #ffffff;
+  --accent: #d03a45;
+  --font-family-serif: 'SneakyTimes', serif;
+  --font-family-sans: 'Porpora', Arial, sans-serif;
+  --spacer-1: 5px;
+  --spacer-2: 10px;
+  --spacer-3: 15px;
+  --spacer-4: 20px;
+  --spacer-5: 25px;
+  --spacer-6: 30px;
+  --spacer-7: 35px;
+  --spacer-8: 40px;
+  --spacer-9: 45px;
+  --spacer-10: 50px;
+  --negative-spacer-1: -5px;
+  --negative-spacer-2: -10px;
+  --negative-spacer-3: -15px;
+  --negative-spacer-4: -20px;
+  --negative-spacer-5: -25px;
+  --negative-spacer-6: -30px;
+  --negative-spacer-7: -35px;
+  --negative-spacer-8: -40px;
+  --negative-spacer-9: -45px;
+  --negative-spacer-10: -50px;
+  --font-size-1: 10px;
+  --font-size-2: 12px;
+}
+// chapter colors
+:root {
+  --theme-01: #bfe8ed;
+  --theme-02: #b4ebc8;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.title {
+  color: var(--secondary);
+  font-family: 'SneakyTimes', serif;
+  font-weight: 100;
+}
+
+a {
+  color: var(--secondary);
+}
+.sans {
+  font-family: Porpora, Arial, sans-serif;
+}
+
+.bold{
+  font-family: Arial;
+  font-weight: bold;
+  // based on sans...
+  font-size: inherit;
+}
+.loading-spinner {
+  animation: rotate 1.5s linear infinite;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+.loader {
+  animation: rotate 2s linear infinite;
+}
