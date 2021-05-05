@@ -9,7 +9,7 @@
   top: 18%;
   left: 18%;
   right: 18%;
-  bottom: 18%;
+  bottom: 8%;
   overflow: hidden;
   background-size: cover;
 }
@@ -47,8 +47,8 @@
 }
 
 .ChapterStream{
-  width: 50%;
-  border-right: 1px solid;
+  width: 100%;
+  // border-right: 1px solid;
   counter-reset: chapterStream_module;
 }
 .ChapterStream_module{
@@ -68,8 +68,9 @@
 }
 .ChapterStream_paragraph {
   p{
-    text-indent: 24px;
+    text-indent: 0px;
     // position: relative;
+    opacity: .5;
   }
   p:before{
     position: absolute;
@@ -92,13 +93,35 @@
   > div {
     transition: background-color .25s ease-in-out;
   }
-  &.active > div {
+
+}
+.ChapterParagraphCover{
+  opacity: .5;
+}
+.ChapterStream_paragraphFocus {
+  opacity: .5;
+}
+
+.ChapterStream_paragraph.active {
+  p{
+    opacity: 1;
+  }
+  p:before{
     background-color: var(--secondary);
     color: var(--primary);
     border-color: transparent;
   }
+  .ChapterStream_paragraphFocus {
+    background-color: var(--secondary);
+    color: var(--primary);
+    border-color: transparent;
+    opacity: 1;
+  }
+
+  .ChapterParagraphCover{
+    opacity: 1;
+  }
 }
-// ChapterStream_module
 
 
 // -m

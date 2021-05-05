@@ -34,13 +34,13 @@ const Chapter = ({ match: { params: { chapterId }}}) => {
   const changeBackgroundColor = useStore(state => state.changeBackgroundColor)
   useEffect(() => {
     changeBackgroundColor(chapter.backgroundColor)
-  }, [chapter])
+  }, [chapter, changeBackgroundColor])
 
   console.info('Chapter #chapterHotspots n.', chapterHotspots.length)
   return (
     <div className="Chapter">
       <ChapterCover
-        height={height * .9}
+        height={height}
         cover={chapter.cover}
         title={chapter.title}
         chapterIndex={chapter.chapterIndex}

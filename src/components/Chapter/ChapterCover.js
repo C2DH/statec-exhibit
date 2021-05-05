@@ -59,7 +59,7 @@ const ChapterCover = ({ cover={}, height=0, title='', chapterIndex=0, resolution
       </Spring>
       <Spring reset to={{ opacity: 1 }} from={{ opacity: 0 }} delay={500}>
         {(props) => (
-          <div className="absolute" style={{ top: '82%', left: '18%', ...props}}>
+          <div className="absolute" style={{ top: '92%', left: '18%', ...props}}>
             <figcaption className="ma3-l ma2-m ma1 w-100-l w-75">
               <b className="bold">Fig.</b> <em>{cover.caption}</em>
               <br/>

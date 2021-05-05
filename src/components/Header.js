@@ -15,7 +15,7 @@ const Header = () => {
     <header className={`Header pl2 pr2 pl5-l pr5-l pl4-m pr4-m ${intersectionRatio < 1 ? 'active' : ''}`} style={{
       backgroundColor,
     }}>
-      <div className="Header_sideLinkWrapper w-100 bb flex items-center justify-space-between">
+      <div className="Header_sideLinkWrapper w-100 flex items-center justify-space-between">
       <div className="Header_sideLink db dn-ns">
         {t('tableOfContentsMobile')}
       </div>

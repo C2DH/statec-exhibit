@@ -1,0 +1,33 @@
+
+.MediaImagePicture{
+  position: relative;
+  flex-grow: 1;
+  overflow: hidden;
+  border: 1px solid var(--secondary);
+}
+
+.MediaImagePicture_picture{
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  transition: 0.36s opacity ease-in;
+  will-change: opacity;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+.MediaImagePicture_placeholder{
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--secondary);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0;
+  filter: blur(4px);
+}
