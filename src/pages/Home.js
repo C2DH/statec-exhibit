@@ -20,7 +20,7 @@ const Home = () => {
 
   useEffect(() => {
     changeBackgroundColor('var(--primary)')
-  }, [])
+  }, [changeBackgroundColor])
 
   useEffect(() => {
     if (!isLoading) {

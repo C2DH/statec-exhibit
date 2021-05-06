@@ -1,43 +1,46 @@
-import React, { PureComponent } from 'react';
+import React, { useState } from 'react';
 import { Scrollama, Step } from 'react-scrollama';
 
-class ChapterWideParagraphs extends PureComponent {
-  state = {
-    data: -1,
-    steps: [],
+const ChapterWideParagraphs= ({ paragraphs=[], prefix='', height=200 }) => {
+  const [step, setStep] = useState({
+    idx: -1,
+    direction: 'down'
+  })
+
+  const onStepEnter = ({ direction, data }) => {
+    setStep({
+      direction,
+      idx: data
+    })
   };
 
-  onStepEnter = ({ element, data }) => {
-    this.setState({ data });
-  };
-
-  render() {
-    const { paragraphs = [], themeId } = this.props
-    const { data } = this.state;
-    return <Scrollama
-      onStepEnter={this.onStepEnter}
-      offset={0}
-      threshold={1}
-    >
+  return (
+    <div className="ChapterWideParagraphs">
+      <Scrollama
+        onStepEnter={onStepEnter}
+        threshold={0.1}
+      >
       {paragraphs.map(({ text }, i) => (
         <Step data={i} key={i}>
-          <div id={`${themeId}-c${i}`}
-            className="ChapterWideParagraphs_textContainer tc h-100 flex flex-column"
+          <div id={`${prefix}-${i}`}
+            className="ChapterWideParagraphs_text tc"
             style={{
-              paddingRight: '15px',
+              paddingTop: height/4,
+              paddingBottom: height/4,
               willChange: 'opacity',
               transition: 'opacity .5s ease-in-out',
-              opacity: data === i? 1: 0.1
+              opacity: step.idx === i? 1: 0.1
             }}
-          > eh{i} {data}
+          >
             <div className="textContainerSubTitle" dangerouslySetInnerHTML={{
               __html: text,
             }}/>
           </div>
         </Step>
       ))}
-    </Scrollama>
-    }
+      </Scrollama>
+    </div>
+  )
 }
 
 export default ChapterWideParagraphs;

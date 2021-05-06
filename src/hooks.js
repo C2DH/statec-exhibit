@@ -34,7 +34,7 @@ export function useCurrentWindowDimensions({delay = 250} = {}) {
     return () => {
       window.removeEventListener('resize', resizeListener);
     }
-  }, [])
+  }, [delay])
   return windowDimensions;
 }
 

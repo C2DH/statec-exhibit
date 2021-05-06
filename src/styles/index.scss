@@ -19,6 +19,7 @@ body {
   color: #2b219f;
   //
   transition: background-color .6s ease-in-out;
+  line-height: 1.5;
 }
 
 :root {
@@ -65,7 +66,7 @@ h5,
 h6,
 .title {
   color: var(--secondary);
-  font-family: 'SneakyTimes', serif;
+  // font-family: 'SneakyTimes', serif;
   font-weight: 100;
 }
 

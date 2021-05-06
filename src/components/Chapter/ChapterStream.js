@@ -3,22 +3,37 @@ import { Scrollama, Step } from 'react-scrollama'
 import {ArrowRight, Eye} from 'react-feather'
 import ChapterParagraphCover from './ChapterParagraphCover'
 
-const ChapterStream = ({ modules = [], height, backgroundColor, }) => {
+const Echo = () => {
+  console.error('Missing function handler')
+}
+
+const ChapterStream = ({ modules = [], height, backgroundColor, onStepChange=Echo}) => {
   const [activeStep, setActiveStep]= useState({
     paragraphId: '-1,-1',
     moduleId: '-1',
     direction: 'down'
   })
   const onStepEnter = ({ data, direction }, i) => {
-    console.info('ChapterStream @onStepEnter', data, direction)
-    setActiveStep({
+    // console.info('ChapterStream @onStepEnter', data, direction)
+    const step = {
       paragraphId: data,
       moduleId: i,
       direction,
-    })
+    }
+    setActiveStep(step)
+    onStepChange(step)
   }
   const onStepExit = ({ data, direction }, i) => {
-    console.info('ChapterStream @onStepExit', { data, direction }, i)
+    // console.info('ChapterStream @onStepExit', { data, direction }, i)
+    if (data === '0,0' && direction === 'up') {
+      const step = {
+        paragraphId: '-1,-1',
+        moduleId: '-1',
+        direction: 'down'
+      }
+      setActiveStep(step)
+      onStepChange(step)
+    }
   }
   console.info('Rerendering ChapterStream')
 
@@ -26,13 +41,13 @@ const ChapterStream = ({ modules = [], height, backgroundColor, }) => {
     <div className="ChapterStream">
     {modules.map((mod, i) => (
       <div className="ChapterStream_module" key={i}>
-        <h2 className="pl5-l pl4-m pl3 mb0 mt0" style={{
+        <h2 className="pa5 pt4 pb0 mv0 " style={{
           position: 'sticky',
           zIndex:100,
           top: 50,
           background: backgroundColor,
         }}>
-          <span className="pb3">{mod.title}</span>
+          <span className="pb4 bb">{mod.title}</span>
         </h2>
         <Scrollama
           onStepEnter={(e) => onStepEnter(e, i)}
@@ -47,8 +62,8 @@ const ChapterStream = ({ modules = [], height, backgroundColor, }) => {
                 <div id={`m${i}`} className={`ChapterStream_paragraph ${activeStep.paragraphId === paragraphId ? 'active' : ''}`}>
                   <div className={
                     par.cover
-                      ? "ml5-l ml4-m ml3 mr1 mr2-m mr3-l mt1 mt2-m mt3-l ml5-l ml4-m ml3"
-                      : "ma5-l ma4-m ma3"
+                      ? "pa5 pb0"
+                      : "pa5"
                   }>
                     <p dangerouslySetInnerHTML={{
                       __html: par.text
@@ -60,10 +75,9 @@ const ChapterStream = ({ modules = [], height, backgroundColor, }) => {
                       <span className="ml1 mr1">{par.to}</span>
                     </div>
                   </div>
-
                   {par.cover
                     ? (
-                      <div className="ml5-l ml4-m ml3 mr1 mr2-m mr3-l mt1 mt2-m mt3-l pb4-l mb4-l">
+                      <div className="pa5">
                         <ChapterParagraphCover cover={par.cover} height={height*2/3} />
                       </div>
                     )

@@ -5,8 +5,8 @@ import ScrollToTop from './components/ScrollToTop'
 import Header from './components/Header'
 import Home from './pages/Home'
 import Chapter from './pages/Chapter'
-// import About from './pages/About'
-// import Contents from './pages/Contents'
+import TableOfContents from './components/TableOfContents'
+import Panel from './components/Panel'
 //
 
 const App = () => {
@@ -14,6 +14,12 @@ const App = () => {
     <BrowserRouter>
       <ScrollToTop />
       <MainBackground />
+      <Panel name='about' left>
+        About page.
+      </Panel>
+      <Panel name='table-of-contents'>
+        <TableOfContents />
+      </Panel>
       <Header />
       <Suspense fallback={<div>Loading...</div>}>
         <Switch>
