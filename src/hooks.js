@@ -110,3 +110,27 @@ export function useOnScreen({ threshold = [0, 1], rootMargin='0% 0% 0% 0%'} = {}
   }, [])
   return [entry, ref];
 }
+
+
+/**
+ * @method useMousePosition
+ * listen to window clientX and clientY
+ * Based on https://gist.github.com/whoisryosuke/99f23c9957d90e8cc3eb7689ffa5757c
+ * consulted on 2021-02-26
+ * usage in components:
+ * const { x, y } = useMousePosition();
+*/
+export function useMousePosition() {
+  const [mousePosition, setMousePosition] = useState({ x: null, y: null, isValid: false });
+  const updateMousePosition = ev => {
+    if (!ev) {
+      return
+    }
+    setMousePosition({ x: ev.clientX, y: ev.clientY, isValid: true });
+  };
+  useEffect(() => {
+    window.addEventListener("mousemove", updateMousePosition);
+    return () => window.removeEventListener("mousemove", updateMousePosition);
+  }, []);
+  return mousePosition;
+};

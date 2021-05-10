@@ -15,7 +15,7 @@ export const ChapterRoutes = [
   ChapterRouteFamily
 ]
 
-export const StartYear = 1840
+export const StartYear = 1839
 export const EndYear = (new Date()).getFullYear()
 export const StartDate = moment(StartYear, 'YYYY').startOf('year')
 export const EndDate = moment(EndYear, 'YYYY').endOf('year')

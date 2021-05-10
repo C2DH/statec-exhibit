@@ -26,7 +26,7 @@ const ChapterModulesGraphics = ({ modules=[], timeFormat='YYYY', step}) => {
       }
     })), [])
   }, [modules, timeFormat])
-  console.info('ChapterModulesGraphics values:', values)
+  
   return (
     <div className="ChapterModulesGraphics">
       <div className="ChapterModulesGraphics_startDate">

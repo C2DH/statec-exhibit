@@ -88,8 +88,8 @@
     z-index: -1;
     top: 0;
     text-indent: 0px;
-    margin-left: -23px;
-    margin-top: 0px;
+    margin-left: -40px;
+    margin-top: 4px;
     display: inline-block;
     border: 1px solid;
     border-radius: 10px;
@@ -121,9 +121,10 @@
     opacity: 1;
   }
   p:before{
-    background-color: var(--secondary);
-    color: var(--primary);
-    border-color: transparent;
+    // background-color: var(--secondary);
+    // color: var(--primary);
+    // border-color: transparent;
+    z-index: 1;
   }
   .ChapterStream_paragraphFocus {
     background-color: var(--secondary);
@@ -152,6 +153,7 @@
     margin-top: -12px;
     text-align: right;
     padding: 0 5px;
+
   }
   .ChapterModulesGraphics_endDate{
     right: 0;
@@ -201,20 +203,21 @@
   font-size: 12px;
   background-color: var(--secondary);
   color: var(--primary);
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 3px;
+  padding-right: 3px;
   z-index: 2;
+  border-radius: 2px;
   // border: 1px solid;
 }
 .ChapterModulesGraphics_value_startDate{
-  top: -17px;
+  top: -20px;
   left: 0px;
 
   // border-left: 1px solid;
 }
 .ChapterModulesGraphics_value_endDate{
   right: 0px;
-  top: 5px;
+  top: 8px;
   text-align: right;
   // border-right: 1px solid;
 }

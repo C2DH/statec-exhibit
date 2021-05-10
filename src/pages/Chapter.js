@@ -23,7 +23,7 @@ const Chapter = ({ match: { params: { chapterId }}}) => {
   const chapter = AvailableChapters[String(chapterId)] ?? AvailableChapters[DefaultThemeId];
   const [step, setStep] = useState(null)
   // calcumlate height on Resize after a 250mx throttle
-  const { height } = useCurrentWindowDimensions()
+  const { width, height } = useCurrentWindowDimensions()
   const isMobileWithTablet = getIsMobileWithTablet()
   // collect all hotspots in the theme (Chapter)
   // result in a list of objects containing year "t" and module index "idx",
@@ -46,7 +46,12 @@ const Chapter = ({ match: { params: { chapterId }}}) => {
     changeBackgroundColor(chapter.backgroundColor)
   }, [chapter, changeBackgroundColor])
 
-  console.info('Chapter #chapterHotspots n.', chapterHotspots.length)
+  const themeDataset = useMemo(() => {
+    console.info(`Chapter loading dataset ${chapter.dataset}.json`)
+    return require(`../data/datasets/${chapter.dataset}.json`)
+  }, [chapter])
+
+  console.info('Chapter #chapterHotspots n.', chapterHotspots.length, themeDataset)
   return (
     <div className="Chapter">
       <ChapterCover
@@ -70,6 +75,11 @@ const Chapter = ({ match: { params: { chapterId }}}) => {
           flexGrow: 1,
         }}>
           <ChapterVisualisations
+            id={themeDataset.id}
+            keys={Object.keys(themeDataset.legend).filter(k => k !== 't')}
+            legend={themeDataset.legend}
+            data={themeDataset.values || []}
+            width={width}
             height={height}
             modules={chapter.modules || []}
             step={step}

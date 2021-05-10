@@ -2,7 +2,7 @@
   "id": "a-country-of-migrations",
   "chapterIndex": "1",
   "title": "Un pays de migrations",
-  "dataset": "population",
+  "dataset": "global-balance-details",
   "backgroundColor": "var(--theme-01)",
   "cover": {
     "id": "1.cap1.jpg",
@@ -20,31 +20,13 @@
     {
       "title": "Une croissance démographique exceptionnelle sur le long terme.",
       "subheading": "La population du Luxembourg a plus que triplé depuis 1839 (date de l'indépendance du pays). De quelque 170.000 habitants en 1839, la population du Grand-Duché passe à plus de 600.000 aujourd'hui.",
-      "datasetHeading": "population-balance",
-      "dataset": "trend-lux-population-growth",
-      "layout": "text",
-      "from": 1840,
-      "to": 2005,
-      "datasetValueFrom": 150000,
-      "datasetValueTo": 800000,
-      "datasetHeadingValueFrom": -8000,
-      "datasetHeadingValueTo": 18000,
-      "datasetAdditionalTrends": ["v"],
-      "datasetAdditionalTrendsColors": ["var(--primary)"],
-      "moduleHotspots": [
-        { "t": 1860 },
-        { "t": 1891 },
-        { "t": 1910 },
-        { "t": 1930 },
-        { "t": 1985 },
-        { "t": 2008 }
-      ],
       "paragraphs": [
         {
           "from": 1840,
           "to": 1890,
           "text": "L'ensemble de la période allant de l'indépendance du Grand-Duché en 1839 jusqu'aux années 1890 est marquée par une croissance démographique relativement lente liée à une croissance économique hésitante et des conditions de vie qui restent précaires.",
-          "cover": { "id": "statec_021.png" }
+          "cover": { "id": "statec_021.png" },
+          "keys": ["v1"]
         },
         {
           "from": 1891,

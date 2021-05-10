@@ -1,5 +1,5 @@
 import React from 'react'
-import { Spring, animated } from 'react-spring/renderprops'
+import { Spring, animated } from 'react-spring'
 import { useImage } from '../../hooks'
 import { useTranslation } from 'react-i18next'
 import {getIsMobileWithTablet} from '../../logic/viewport'

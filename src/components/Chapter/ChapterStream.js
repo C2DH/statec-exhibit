@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import { Scrollama, Step } from 'react-scrollama'
-import {ArrowRight, Eye} from 'react-feather'
+import ChapterParagraph from './ChapterParagraph'
 import ChapterParagraphCover from './ChapterParagraphCover'
 
 const Echo = () => {
@@ -41,7 +41,7 @@ const ChapterStream = ({ modules = [], height, backgroundColor, onStepChange=Ech
     <div className="ChapterStream">
     {modules.map((mod, i) => (
       <div className="ChapterStream_module" key={i}>
-        <h2 className="pa5 pt4 pb0 mv0 " style={{
+        <h2 className="pa5 pr0-l pt4 pb0 mv0 " style={{
           position: 'sticky',
           zIndex:100,
           top: 50,
@@ -60,25 +60,11 @@ const ChapterStream = ({ modules = [], height, backgroundColor, onStepChange=Ech
             return (
               <Step data={paragraphId} key={paragraphId}>
                 <div id={`m${i}`} className={`ChapterStream_paragraph ${activeStep.paragraphId === paragraphId ? 'active' : ''}`}>
-                  <div className={
-                    par.cover
-                      ? "pa5 pb0"
-                      : "pa5"
-                  }>
-                    <p dangerouslySetInnerHTML={{
-                      __html: par.text
-                    }}/>
-                    <div className="ChapterStream_paragraphFocus ba pl2 pr2 pb1 pt1 br2 inline-flex items-center">
-                      <Eye size={14}/>
-                      <span className="ml1 mr1">{par.from}</span>
-                      <ArrowRight size={14}/>
-                      <span className="ml1 mr1">{par.to}</span>
-                    </div>
-                  </div>
+                  <ChapterParagraph paragraph={par} height={height}/>
                   {par.cover
                     ? (
-                      <div className="pa5">
-                        <ChapterParagraphCover cover={par.cover} height={height*2/3} />
+                      <div className="pa5 pr0">
+                        <ChapterParagraphCover cover={par.cover} height={height/2} />
                       </div>
                     )
                     : null
