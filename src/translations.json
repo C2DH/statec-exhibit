@@ -23,7 +23,8 @@
       "AboutIntroduction": "<i>Les chiffres du Luxembourg</i> est une exposition virtuelle retraçant l’histoire de <br/><br/> Le site web s’adresse à un large spectre d’utilisateurs aux degrés d’expertise variables. Il sera développé et enrichi dans les années à venir",
       "AboutConcept": "Les concept, les themes et les jeux des données ont été concus par Paul Zahlen et Benoît Majerus du C²DH.",
       "AboutDevelopment": "L’exposition virtuelle a été designé par Federica Fragapane et implémentée par Paolo Corti, ainsi que par Daniele Guido du C²DH.",
-      "tableOfContents":"tableOfContents"
+      "tableOfContents":"tableOfContents",
+      "datasetGlobalBalanceDetailsLegend": "datasetGlobalBalanceDetailsLegend"
     }
   },
   "fr-FR": {
@@ -53,7 +54,12 @@
       "FramingLuxembourg": "Framing Luxembourg",
       "tableOfContentsMobile": "Menu",
       "tableOfContents": "Table of Contents",
-      "figcaptionLabel": "Source\u00a0:"
+      "figcaptionLabel": "Source\u00a0:",
+      "datasetGlobalBalanceDetailsLegend": " in <b class='bold'>{{year}}</b>",
+      "datasetGlobalBalanceDetailsLegendValuev": "Solde global: <b class='bold'>{{v, 2}}</b>",
+      "datasetGlobalBalanceDetailsLegendValuev1": "Solde naturel: <b class='bold'>{{v, 2}}</b>",
+      "datasetGlobalBalanceDetailsLegendValuev2": "Solde migratoire: <b class='bold'>{{v, 2}}</b>"
+
     }
   }
 }
