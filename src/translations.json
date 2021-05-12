@@ -55,11 +55,13 @@
       "tableOfContentsMobile": "Menu",
       "tableOfContents": "Table of Contents",
       "figcaptionLabel": "Source\u00a0:",
-      "datasetGlobalBalanceDetailsLegend": " in <b class='bold'>{{year}}</b>",
-      "datasetGlobalBalanceDetailsLegendValuev": "Solde global: <b class='bold'>{{v, 2}}</b>",
-      "datasetGlobalBalanceDetailsLegendValuev1": "Solde naturel: <b class='bold'>{{v, 2}}</b>",
-      "datasetGlobalBalanceDetailsLegendValuev2": "Solde migratoire: <b class='bold'>{{v, 2}}</b>"
-
+      "datasetGlobalBalanceDetailsExtentTitlev": "Solde global (increment annuel)",
+      "datasetGlobalBalanceDetailsExtentTitlev1": "Solde naturel",
+      "datasetGlobalBalanceDetailsExtentTitlev2": "Solde migratoire",
+      "datasetGlobalBalanceDetailsExtent": "min: <b class='bold'>{{kMin, 2}}</b> personnes in {{tMin}}; max: <b class='bold'>{{kMax, 2}}</b> personnes in {{tMax}}",
+      "datasetGlobalBalanceDetailsLegendValuev": "Solde global",
+      "datasetGlobalBalanceDetailsLegendValuev1": "Solde naturel",
+      "datasetGlobalBalanceDetailsLegendValuev2": "Solde migratoire"
     }
   }
 }
