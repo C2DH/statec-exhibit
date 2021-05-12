@@ -10,7 +10,6 @@ const MediaImage = ({
   preview,
   height=100,
   width=100,
-  style = { height: '45vh' },
   padding = 1,
   resolution = 'medium-h',
   displayTitle = false,
@@ -37,15 +36,22 @@ const MediaImage = ({
       style={{
         display: 'flex',
         flexDirection: 'column',
-        height,
+        // height: height / media.aspectRatio,// scale based on aspectRatio,
         width: '100%',
         margin: '0 auto',
       }}
     >
       {displayTitle && !!title.length && <h2 className="textContainerTitle">{title}</h2>}
-      <div style={{ height: padding }}></div>
-      <MediaImagePicture isLoading={isLoading} padding={padding} mediaBase64={mediaBase64} backgroundImage={backgroundImage} />
-      <div style={{ height: padding }}></div>
+      <div className="MediaImage_aspectRatioBox relative" style={{
+        height: media.isPortrait ? height : 0,
+        paddingTop: media.isPortrait
+          ? 0
+          : `${1/media.aspectRatio * 100}%`
+      }}>
+        <div className="absolute w-100 h-100 top-0 left-0">
+          <MediaImagePicture isLoading={isLoading} isPortrait={media.isPortrait} aspectRatio={media.aspectRatio} padding={padding} mediaBase64={mediaBase64} backgroundImage={backgroundImage} />
+        </div>
+      </div>
       <figcaption
         dangerouslySetInnerHTML={{ __html: mediaCaption }}
         style={{

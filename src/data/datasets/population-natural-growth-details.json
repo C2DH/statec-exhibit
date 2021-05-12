@@ -1,5 +1,5 @@
 {
-  "id": "population-natural-growth-details",
+  "id": "PopulationNaturalGrowthDetails",
   "title": "",
   "timeformat": "YYYY",
   "legend": {
@@ -15,12 +15,7 @@
   "description": "Taux de natalité, Taux de mortalité, Taux d'accroissement naturel",
   "source": "STATEC Natural and migratory movements of the population 1891 - 2020",
   "sourceUrl": "https://statistiques.public.lu/stat/TableViewer/tableView.aspx?ReportId=12868&IF_Language=eng&MainTheme=2&FldrName=2",
-  "values": [{
-      "t": "1840",
-      "v": 0,
-      "v1": 0,
-      "v2": 0
-    },
+  "values": [
     {
       "t": "1841",
       "v": 16.8081298,

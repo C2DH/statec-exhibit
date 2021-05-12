@@ -2,12 +2,12 @@
   "id": "family",
   "chapterIndex": "2",
   "title": "Famille et Ménage",
-  "dataset": "population",
+  "dataset": "population-natural-growth-details",
   "backgroundColor": "var(--theme-02)",
   "cover": {
     "url": "/2.cap2.jpg",
-    "caption": "Bus at the border between Luxembourg and France in 1948",
-    "source": "Foto: Gösta Nordin. Date: 1948. Photo Nr: 2218-96, Stockholm Transport Museum"
+    "caption": "Groupe de personnes, fête de famille, baptême devant une ferme.",
+    "source": "Archives de la Ville de Dudelange - Fonds Jean-Pierre Conrardy"
   },
   "introductions": [
     {
@@ -17,45 +17,29 @@
   "modules": [
     {
       "title": "Naissance: un taux de natalité en baisse sur deux cents ans",
-      "subheading": "",
-      "from": 1840,
-      "to": 2014,
-      "layout": "text",
-      "datasetHeading": "population-natural-growth-details",
-      "datasetTrend": "v1",
-      "datasetAdditionalTrends": ["v"],
-      "datasetAdditionalTrendsColors": ["var(--primary)"],
-      "datasetHeadingAdditionalTrends": [],
-      "datasetHeadingAdditionalTrendsColors": [],
-      "datasetHeadingValueFrom": -5,
-      "datasetHeadingValueTo": 45,
-      "datasetValueFrom": 150000,
-      "datasetValueTo": 800000,
-      "moduleHotspots": [
-        { "t": 1845 },
-        { "t": 1880 },
-        { "t": 1929 },
-        { "t": 1965 }
-      ],
       "paragraphs": [
         {
           "from": 1840,
           "to": 1890,
-          "text": "Le milieu des années 1840 connaît une baisse de la natalité. Ce sont les conditions de vie difficiles (faibles récoltes) qui contribuent à expliquer ces baisses ponctuelles, qui se répètent d'ailleurs dans les années 1850. Plus les conditions sont difficiles, plus la natalité diminue. D'une manière générale, les variations de la natalité sont plus importantes avant les années 1880, c'est-à-dire avant la véritable industrialisation et  l'augmentation du niveau de vie qui l'accompagne.",
+          "keys": ["v1"],
+          "text": "Le milieu des années 1840 connaît une baisse de la natalité. Ce sont les conditions de vie difficiles (faibles récoltes) qui contribuent à expliquer ces baisses ponctuelles, qui se répètent d'ailleurs dans les années 1850. Plus les conditions sont difficiles, plus la natalité diminue. <br/><br/>D'une manière générale, les variations de la natalité sont plus importantes avant les années 1880, c'est-à-dire avant la véritable industrialisation et  l'augmentation du niveau de vie qui l'accompagne.",
           "cover": { "id": "statec_002.png" }
         },
         {
           "from": 1891,
           "to": 1954,
+          "keys": ["v1"],
           "text":"Dans le premier tiers du 20e siècle, la natalité connaît deux chutes importantes. Une première autour de la Première Guerre mondiale qui l'amène à environ 20 pour mille vers 1920. Après s'être maintenue légèrement au-dessus de 20 pour mille pendant la prospérité des années 1920, la natalité amorce vers 1930 une nouvelle chute accélérée par la crise économique."
         },
         {
           "from": 1955,
           "to": 1980,
+          "keys": ["v1", "v"],
           "text":"A partir du milieu des années 1960, le taux de natalité entame une nouvelle baisse sensible. Des phénomènes de société - ce la démocratisation des moyens de contraception et la diffusion du modèle familial avec moins de 3 enfants - contribuent à expliquer ce phénomène. Comme la mortalité ne baisse pas, le solde naturel devient <b>négatif</b> au cours des années 1972-1978, même si ce n'est que légèrement. C'est l'époque où certains, comme le directeur du STATEC, Georges Als, évoquent la thèse du \"suicide démographique\" du Luxembourg."
         }, {
           "from": 1981,
           "to": 2014,
+          "keys": ["v1"],
           "text":"Que le taux de natalité augmente de nouveau à partir de la fin des années 1980 est d'abord dû à un - léger -  changement du comportement  démographique, mais aussi au fait que la population immigrée est plutôt jeune et en état de procréer et que celle-ci a par ailleurs une fécondité plus élevée que la population autochtone."
         }
       ]

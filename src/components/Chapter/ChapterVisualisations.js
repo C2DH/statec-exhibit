@@ -1,7 +1,6 @@
 import React, { useRef, useEffect, useState, useMemo } from 'react'
 import Trend from '../Trend'
 import ChapterModulesGraphics from './ChapterModulesGraphics'
-import DownloadDataButton from '../DownloadDataButton'
 
 const ChapterVisualisations = ({
   themeDatasetId='themeDatasetId',
@@ -42,14 +41,14 @@ const ChapterVisualisations = ({
     }
   }, [height, width])
 
-  const toggleKeyVisibility = (key, isVisible) => {
-    setVisibleKeys(visibleKeys.map((d) => {
-      if(d.key === key) {
-        return { isVisible, key }
-      }
-      return d
-    }))
-  }
+  // const toggleKeyVisibility = (key, isVisible) => {
+  //   setVisibleKeys(visibleKeys.map((d) => {
+  //     if(d.key === key) {
+  //       return { isVisible, key }
+  //     }
+  //     return d
+  //   }))
+  // }
 
   useEffect(() => {
     setVisibleKeys(keys.map(key => ({
@@ -65,7 +64,7 @@ const ChapterVisualisations = ({
       flexDirection: 'column',
       top: 50,
       // backgroundColor: 'var(--secondary)',
-      height: height - 60,
+      height: height - 100,
     }}>
       <div style={{marginLeft: marginLeft / 2}}>
         <ChapterModulesGraphics modules={modules} step={step}/>
@@ -79,7 +78,6 @@ const ChapterVisualisations = ({
           height: size.height,
           width: size.width
         }}>
-
           <Trend
             themeDatasetId={themeDatasetId}
             from={paragraph?.from}
@@ -91,7 +89,7 @@ const ChapterVisualisations = ({
             keys={keys}
             legend={legend}
             visibleKeys={visibleKeys}
-            height={size.height}
+            height={paragraph?.dataset ? size.height / 2 : size.height}
             width={size.width}
             left={size.left}
             top={size.top}
@@ -99,7 +97,7 @@ const ChapterVisualisations = ({
         </div>
       </div>
       <div className="flex mh5">
-        {visibleKeys.map(({key, isVisible},i) => {
+        {/* visibleKeys.map(({key, isVisible},i) => {
           return (
             <div className="ma2 relative" key={i}>
               {key}
@@ -108,9 +106,8 @@ const ChapterVisualisations = ({
                 checked={isVisible} onChange={() => toggleKeyVisibility(key, !isVisible)}/>
             </div>
           )
-        })}
-        <DownloadDataButton label="test" values={data} legend={legend} />
-        this could host a caption
+        }) */}
+        &nbsp;
       </div>
     </div>
   )

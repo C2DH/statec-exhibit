@@ -68,7 +68,7 @@ const ChapterCover = ({ cover={}, height=0, title='', chapterIndex=0, resolution
         {(props) => (
           <div className="ChapterCover_figcaptionWrapper absolute" style={{ ...props}}>
             <figcaption className="ma3-l ma2-m ma1 w-100-l w-75">
-              <b className="bold">Fig.</b> <em>{cover.caption}</em>{availableHeight}
+              <b className="bold">Fig.</b> <em>{cover.caption}</em>
               <br/>
               <div className="db-l dn">
               {t('figcaptionLabel')}&nbsp;

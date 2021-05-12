@@ -14,8 +14,8 @@
   transition: 0.36s opacity ease-in;
   will-change: opacity;
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-size: contain;
+  background-position: left;
   z-index: 1;
 }
 
@@ -24,9 +24,9 @@
   top: 0;
   height: 100%;
   width: 100%;
-  background-color: var(--secondary);
-  background-size: cover;
-  background-position: center;
+  background-color: transparent;
+  background-size: contain;
+  background-position: left;
   background-repeat: no-repeat;
   z-index: 0;
   filter: blur(4px);

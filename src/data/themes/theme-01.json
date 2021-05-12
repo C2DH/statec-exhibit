@@ -118,6 +118,7 @@
           "from": 1855,
           "to": 1935,
           "keys": ["v2"],
+          "dataset": false,
           "text": "Pays pauvre au 19e siècle, le Luxembourg connaît longtemps un solde migratoire négatif (l'excès des arrivées sur les départs) comme la plupart des pays européens. <br/><br/> Au milieu du 19ème siècle l'économie luxembourgeoise est encore une économie de subsistance et les variations de la production agraire ont des répercussions directes et parfois douloureuses sur les conditions de vie des habitants.",
           "figures": [{ "id": "redline_poster_TAGEBLATT_20070612.png" }]
         },
@@ -158,7 +159,7 @@
           "to": 1890,
           "keys": ["v2"],
           "text": "Les années 1880 sont plutôt une période d'expansion économique due notamment à développement de la sidérurgie qui profite de l'invention du <a href='https://fr.wikipedia.org/wiki/Proc%C3%A9d%C3%A9_Thomas' target='_blank'>procédé Thomas-Gilchrist</a> permettant la transformation de la fonte phosphoreuse, produite à partir de la minette luxembourgeoise, en acier de bonne qualité. <br/><br/>L'émigration continue cependant à atteindre un niveau important, ce qui explique un solde migratoire négatif. C'est le signe que les mouvements migratoires ne résultent pas seulement le l'évolution économique au Grand-Duché, mais également de l'attrait d'autres pays.",
-          "figures": [{ "id": "statec_009.png" }]
+          "figures": [{ "id": "statec_010.png" },{ "id": "statec_009.png" }]
         },
         {
           "from": 1890,

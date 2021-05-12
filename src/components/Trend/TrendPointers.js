@@ -11,6 +11,7 @@ const TrendPointers = ({
   marginLeft=0, left=0, marginTop=0, top=0,
   height=100,
   width=100,
+  children,
   // paragraph from and to, if any
   from,
   to,
@@ -70,13 +71,21 @@ const TrendPointers = ({
   return (
     <div
       className="TrendPointersGraphics absolute"
-      onMouseEnter={() => setIsVisible(true)}
-      onMouseLeave={() => setIsVisible(false)}
       style={{
         height,
         width,
       }}
     >
+      <div className="absolute" style={{
+        top: marginTop,
+        height: height-marginTop,
+        left: marginLeft,
+        width: width-marginLeft,
+        zIndex:1000,
+      }}
+        onMouseEnter={() => setIsVisible(true)}
+        onMouseLeave={() => setIsVisible(false)}
+      />
       <div className="TrendLegend absolute" style={{
         position: 'absolute',
         width: 50,
@@ -125,22 +134,24 @@ const TrendPointers = ({
       }) : null}
 
       <div className="absolute" style={{
-        top: height -marginTop,
+        top: height,
         left: marginLeft,
       }}>
-        <div className="TrendPointers_focusKeys">
-          <div className="ba pl2 pr2 pb1 pt1 br2 mr2 inline-flex items-center">
-            <Eye size={14}/>
-            <span className="ml1 mr1">{from}</span>
-            <ArrowRight size={14}/>
-            <span className="ml1 mr1">{to}</span>
+        <div className="TrendPointers_focusKeys flex">
+          <div>
+            <div className="ba pl2 pr2 pb1 pt1 br2 mr2 inline-flex items-center">
+              <Eye size={14}/>
+              <span className="ml1 mr1">{from}</span>
+              <ArrowRight size={14}/>
+              <span className="ml1 mr1">{to}</span>
+            </div>
           </div>
           {focusKeys.map((key, i) => {
           //   focusValuesExtents[i].kMax in
           // }
             return (
-              <React.Fragment key={key}>
-                <h3 className="dib ">{t(`dataset${themeDatasetId}ExtentTitle${key}`, {from, to})}</h3>
+              <div key={key}>
+                <h3 className="dib ma0">{t(`dataset${themeDatasetId}ExtentTitle${key}`, {from, to})}</h3>
                 <p className="mv0 " key={key} dangerouslySetInnerHTML={{
                   __html: t(`dataset${themeDatasetId}Extent`, {
                     kMin: focusValuesExtents[i].kMin,
@@ -149,15 +160,16 @@ const TrendPointers = ({
                     tMax: focusValuesExtents[i].vMax?.t,
                   })
                 }} />
-              </React.Fragment>
+              </div>
           )
         })}
+
         </div>
+        {children}
       </div>
 
       <div className="TrendPointers_legend absolute pa3" style={{
         top: 0,
-        left: -75,
         display: value ? 'block' : 'none',
         opacity: isVisible && value ? 1: 0,
         transform: value

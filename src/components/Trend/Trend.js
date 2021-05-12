@@ -10,7 +10,7 @@ import TrendLineGraphics from './TrendLineGraphics'
 import TrendPointers from './TrendPointers'
 import TrendHotspots from './TrendHotspots'
 import '../../styles/components/trend.scss'
-
+import DownloadDataButton from '../DownloadDataButton'
 // import { useMousePosition } from '../../hooks'
 import {animated, useSpring, config} from 'react-spring'
 
@@ -34,7 +34,7 @@ const Trend = ({
   marginTop=50
 }) => {
   const [pointer, setPointer] = useSpring(() => ({ x:0, y:0, xValue:0, config: config.stiff  }))
-  const svgHeight = Math.max(200, height/2)
+  const svgHeight = height - 100
   const svgWidth = Math.max(0, width)
   const windowDimensions = [svgWidth, svgHeight].join(',')
   const scaleX = scaleTime()
@@ -121,7 +121,9 @@ const Trend = ({
         left={left}
         top={top}
         values={values}
-      />
+      >
+        <DownloadDataButton label="test" values={data} legend={legend} />
+      </TrendPointers>
       <svg
         className="Trend_svg"
         x="0px"
@@ -209,7 +211,7 @@ const Trend = ({
               height={svgHeight - marginTop*2}
               width={svgWidth - marginLeft - marginRight}
               isVisible={isVisible || isOnFocus}
-              strokeWidth={4}
+              strokeWidth={6}
               fill={'transparent'}
               strokeColor={isOnFocus ? 'var(--secondary)': `var(--datakey-${key}`}
             />
