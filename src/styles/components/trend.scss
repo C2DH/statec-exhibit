@@ -1,0 +1,36 @@
+.TrendHotspots_point{
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: -5px;
+  width: 10px;
+  height: 10px;
+  border: 2px solid var(--secondary);
+  border-radius: 10px;
+}
+
+.TrendHotspots_line{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 10px;
+  background-color: var(--secondary);
+}
+
+.TrendPointers_focusKeys{
+  // background-color: var(--secondary);
+  // color: var(--primary);
+}
+
+.TrendPointers_legend{
+  background-color: var(--secondary);
+  color: var(--primary);
+  transition: opacity 0.12s ease-in-out;
+  border-radius: 3px;
+  width: 200px;
+  b{
+    color: var(--white);
+    font-family: inherit;
+  }
+}
