@@ -13,7 +13,7 @@ const TrendLegend = ({ pointer, scaleX , left, top, marginLeft, marginTop}) => {
     <animated.div className="TrendLegend absolute" style={{
       position: 'absolute',
       width: 50,
-      top: 10,
+      top: 0,
       marginLeft: -25,
       textAlign: 'center',
       transform: pointer.x.interpolate((x) => `translate(${x - left}px, 0px)`),

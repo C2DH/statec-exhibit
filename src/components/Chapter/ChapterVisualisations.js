@@ -3,7 +3,11 @@ import Trend from '../Trend'
 import ChapterModulesGraphics from './ChapterModulesGraphics'
 import DownloadDataButton from '../DownloadDataButton'
 
-const ChapterVisualisations = ({ keys=['v'], legend, data=[], modules=[], height=100, width=100, step }) => {
+const ChapterVisualisations = ({
+  themeDatasetId='themeDatasetId',
+  keys=['v'], legend, data=[], modules=[], height=100, width=100, step,
+  marginLeft=100
+}) => {
   const ref = useRef();
   const [size, setSize] = useState({ left: 0, width: 0, height: 0 });
   const [visibleKeys, setVisibleKeys] = useState(keys.map(key => ({
@@ -63,7 +67,9 @@ const ChapterVisualisations = ({ keys=['v'], legend, data=[], modules=[], height
       // backgroundColor: 'var(--secondary)',
       height: height - 60,
     }}>
-      <ChapterModulesGraphics modules={modules} step={step}/>
+      <div style={{marginLeft: marginLeft / 2}}>
+        <ChapterModulesGraphics modules={modules} step={step}/>
+      </div>
       <div ref={ref} style={{
         flexGrow: 1,
         // border: '1px dashed var(--secondary)',
@@ -75,9 +81,11 @@ const ChapterVisualisations = ({ keys=['v'], legend, data=[], modules=[], height
         }}>
 
           <Trend
+            themeDatasetId={themeDatasetId}
             from={paragraph?.from}
             to={paragraph?.to}
             paragraphId={paragraph?.paragraphId}
+            hotspots={paragraph?.hotspots}
             data={data}
             focusKeys={paragraph? paragraph.keys || ['v'] : []}
             keys={keys}

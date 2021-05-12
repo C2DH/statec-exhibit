@@ -8,11 +8,14 @@ import TrendAxisLeftGraphics from './TrendAxisLeftGraphics'
 import TrendLineGraphics from './TrendLineGraphics'
 // import TrendLegend from './TrendLegend'
 import TrendPointers from './TrendPointers'
+import TrendHotspots from './TrendHotspots'
+import '../../styles/components/trend.scss'
 
 // import { useMousePosition } from '../../hooks'
 import {animated, useSpring, config} from 'react-spring'
 
 const Trend = ({
+  themeDatasetId='themeDatasetId',
   paragraphId='-1,-1',
   legend={},
   data=[],
@@ -21,11 +24,13 @@ const Trend = ({
   visibleKeys=[],
   timeKey='t',
   keys=['v'],
+  hotspots=[],
   left=0,
   top=0,
   height = 100,
   width=100,
-  marginLeft=50,
+  marginLeft=100,
+  marginRight=50,
   marginTop=50
 }) => {
   const [pointer, setPointer] = useSpring(() => ({ x:0, y:0, xValue:0, config: config.stiff  }))
@@ -35,7 +40,7 @@ const Trend = ({
   const scaleX = scaleTime()
       .domain([StartDate, EndDate])
       // - marginLeft*2 to accomodate for the left and right axis
-      .range([0, svgWidth - marginLeft * 2])
+      .range([0, svgWidth - marginLeft - marginRight])
   const [xMin, xMax] = useMemo(()  => {
     // use the keys to flatten down the values in order to computate max and min
     const flattenedData = data.reduce((acc, d) => acc.concat(keys.map(k => d[k])), [])
@@ -91,7 +96,19 @@ const Trend = ({
         pointerEvents: 'none',
         transform: pointer.x.interpolate((x) => `translate(${x - left}px, 0px)`)
       }} />
+      <TrendHotspots
+        hotspots={hotspots}
+        height={svgHeight}
+        values={values}
+        windowDimensions={windowDimensions}
+        marginLeft={marginLeft}
+        marginRight={marginRight}
+        focusKeys={focusKeys}
+      />
       <TrendPointers
+        themeDatasetId={themeDatasetId}
+        from={from}
+        to={to}
         height={svgHeight}
         width={svgWidth}
         windowDimensions={windowDimensions}
@@ -135,7 +152,7 @@ const Trend = ({
           windowDimensions={windowDimensions}
           marginLeft={marginLeft}
           marginTop={0}
-          axisOffsetTop={20}
+          axisOffsetTop={0}
           scale={scaleX}
           numTicks={numTicks}
           textColor={'var(--secondary)'}
@@ -146,8 +163,8 @@ const Trend = ({
           marginTop={marginTop}
           scale={scaleY}
           numTicks={4}
-          width={svgWidth - marginLeft * 2}
-          axisOffsetLeft={svgWidth - marginLeft}
+          width={svgWidth - marginLeft - marginRight}
+          axisOffsetLeft={svgWidth - marginRight}
         />
         {visibleKeys.map(({ key, isVisible }) => {
           const isOnFocus = focusKeys.includes(key)
@@ -190,7 +207,7 @@ const Trend = ({
               scaleX={scaleX}
               scaleY={scaleY}
               height={svgHeight - marginTop*2}
-              width={svgWidth}
+              width={svgWidth - marginLeft - marginRight}
               isVisible={isVisible || isOnFocus}
               strokeWidth={4}
               fill={'transparent'}

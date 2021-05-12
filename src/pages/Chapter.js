@@ -75,7 +75,7 @@ const Chapter = ({ match: { params: { chapterId }}}) => {
           flexGrow: 1,
         }}>
           <ChapterVisualisations
-            id={themeDataset.id}
+            themeDatasetId={themeDataset.id}
             keys={Object.keys(themeDataset.legend).filter(k => k !== 't')}
             legend={themeDataset.legend}
             data={themeDataset.values || []}
