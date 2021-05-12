@@ -61,12 +61,12 @@ const ChapterStream = ({ modules = [], height, backgroundColor, onStepChange=Ech
               <Step data={paragraphId} key={paragraphId}>
                 <div id={`m${i}`} className={`ChapterStream_paragraph ${activeStep.paragraphId === paragraphId ? 'active' : ''}`}>
                   <ChapterParagraph paragraph={par} height={height}/>
-                  {par.cover
-                    ? (
+                  {par.figures
+                    ? par.figures.map((figure) => (
                       <div className="pa5 pr0">
-                        <ChapterParagraphCover cover={par.cover} height={height/2} />
+                        <ChapterParagraphCover cover={figure} height={height/2} />
                       </div>
-                    )
+                    ))
                     : null
                   }
                 </div>
