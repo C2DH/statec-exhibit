@@ -2,6 +2,7 @@ import React, { useMemo } from 'react'
 import { StartDate, EndDate } from '../../constants'
 import { scaleTime } from 'd3-scale'
 import moment from 'moment'
+import { getParagraphIdFromIndices } from '../../logic/navigation'
 
 const scaleX = scaleTime()
   .domain([StartDate, EndDate])
@@ -22,11 +23,11 @@ const ChapterModulesGraphics = ({ modules=[], timeFormat='YYYY', step}) => {
         x: scaleX(from),
         w: scaleX(to) - scaleX(from),
         moduleId: i,
-        paragraphId: `${i},${j}`
+        paragraphId: getParagraphIdFromIndices(i,j)
       }
     })), [])
   }, [modules, timeFormat])
-  
+
   return (
     <div className="ChapterModulesGraphics">
       <div className="ChapterModulesGraphics_startDate">
@@ -38,7 +39,7 @@ const ChapterModulesGraphics = ({ modules=[], timeFormat='YYYY', step}) => {
       <div className="ChapterModulesGraphics_rail" style={{height: modules.length * 10 + 20}}>
 
       {values.map((value) => (
-        <div key={value.paragraphId}
+        <a href={`#p${value.paragraphId}`} key={value.paragraphId}
           className={`ChapterModulesGraphics_value ${value.paragraphId === step?.paragraphId ? 'active' : ''}`}
           style={{
             left: `${value.x}%`,
@@ -53,7 +54,7 @@ const ChapterModulesGraphics = ({ modules=[], timeFormat='YYYY', step}) => {
           <div className="ChapterModulesGraphics_value_endDate">
             {value.to}
           </div>
-        </div>
+        </a>
       ))}
       </div>
     </div>

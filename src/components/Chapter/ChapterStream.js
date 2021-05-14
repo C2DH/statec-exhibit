@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import { Scrollama, Step } from 'react-scrollama'
 import ChapterParagraph from './ChapterParagraph'
 import ChapterParagraphCover from './ChapterParagraphCover'
+import { getParagraphIdFromIndices } from '../../logic/navigation'
 
 const Echo = () => {
   console.error('Missing function handler')
@@ -22,6 +23,7 @@ const ChapterStream = ({ modules = [], height, backgroundColor, onStepChange=Ech
     }
     setActiveStep(step)
     onStepChange(step)
+    window.history.pushState({}, null, `#p${data}`)
   }
   const onStepExit = ({ data, direction }, i) => {
     // console.info('ChapterStream @onStepExit', { data, direction }, i)
@@ -56,10 +58,11 @@ const ChapterStream = ({ modules = [], height, backgroundColor, onStepChange=Ech
           threshold={.5}
         >
           {mod.paragraphs.map((par, j) => {
-            const paragraphId = `${i+1}.${j+1}`
+            const paragraphId = getParagraphIdFromIndices(i,j)
             return (
               <Step data={paragraphId} key={paragraphId}>
-                <div id={`p${paragraphId}`} className={`ChapterStream_paragraph ${activeStep.paragraphId === paragraphId ? 'active' : ''}`}>
+                <div className={`ChapterStream_paragraph ${activeStep.paragraphId === paragraphId ? 'active' : ''}`}>
+                  <div class="anchor" id={`p${paragraphId}`}></div>
                   <ChapterParagraph paragraph={par} height={height} withFigures={par.figures?.length}/>
                   {par.figures
                     ? par.figures.map((figure, i) => (
