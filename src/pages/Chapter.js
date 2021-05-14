@@ -4,6 +4,7 @@ import chapter02 from '../data/themes/theme-02.json'
 import { useStore } from '../store'
 import { useCurrentWindowDimensions } from '../hooks'
 import { getIsMobileWithTablet } from '../logic/viewport'
+import CurrentYearExplorer from '../components/CurrentYearExplorer'
 import ChapterCover from '../components/Chapter/ChapterCover'
 import ChapterWideParagraphs from '../components/Chapter/ChapterWideParagraphs'
 import ChapterStream from '../components/Chapter/ChapterStream'
@@ -54,12 +55,15 @@ const Chapter = ({ match: { params: { chapterId }}}) => {
   console.info('Chapter #chapterHotspots n.', chapterHotspots.length, themeDataset)
   return (
     <div className="Chapter">
+      <CurrentYearExplorer width={width} height={height}/>
+      <div className="relative w-100 h-100 with-vertical-line">
       <ChapterCover
         height={height}
         cover={chapter.cover}
         title={chapter.title}
         chapterIndex={chapter.chapterIndex}
       />
+      </div>
       <ChapterWideParagraphs
         height={height}
         paragraphs={chapter.introductions || []}

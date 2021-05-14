@@ -4,7 +4,7 @@ import { Group } from '@vx/group';
 
 class TrendAxisBottomGraphics extends React.Component {
   shouldComponentUpdate(nextProps) {
-    return this.props.windowDimensions !== nextProps.windowDimensions;
+    return this.props.id !== nextProps.id || this.props.windowDimensions !== nextProps.windowDimensions;
   }
 
   render() {

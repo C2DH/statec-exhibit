@@ -103,3 +103,13 @@ a {
 .loader {
   animation: rotate 2s linear infinite;
 }
+
+.with-vertical-line:after{
+  position: absolute;
+  content: '';
+  width: 1px;
+  left: 50%;
+  background: var(--secondary);
+  height: 15vh;
+  bottom: -10vh;
+}

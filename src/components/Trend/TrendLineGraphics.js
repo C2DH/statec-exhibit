@@ -54,6 +54,7 @@ class TrendLineGraphics extends React.Component {
           stroke={isVisible? strokeColor: 'var(--data-background)'}
           strokeOpacity={2}
           curve={curveMonotoneX}
+           strokeLinecap="round"
         />
         {/*
         <line

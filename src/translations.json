@@ -55,9 +55,9 @@
       "tableOfContentsMobile": "Menu",
       "tableOfContents": "Table of Contents",
       "figcaptionLabel": "Source\u00a0:",
-      "datasetGlobalBalanceDetailsExtentTitlev": "Solde global, increment annuel",
-      "datasetGlobalBalanceDetailsExtentTitlev1": "Solde naturel, increment annuel",
-      "datasetGlobalBalanceDetailsExtentTitlev2": "Solde migratoire, increment annuel",
+      "datasetGlobalBalanceDetailsExtentTitlev": "Solde global, variation annuelle",
+      "datasetGlobalBalanceDetailsExtentTitlev1": "Solde naturel, variation annuelle",
+      "datasetGlobalBalanceDetailsExtentTitlev2": "Solde migratoire, variation annuelle",
       "datasetGlobalBalanceDetailsExtent": "min: <b class='bold'>{{kMin, 2}}</b> personnes in {{tMin}}<br/> max: <b class='bold'>{{kMax, 2}}</b> personnes in {{tMax}}",
       "datasetGlobalBalanceDetailsLegendValuev": "Solde global",
       "datasetGlobalBalanceDetailsLegendValuev1": "Solde naturel",
@@ -66,7 +66,8 @@
       "datasetPopulationNaturalGrowthDetailsExtentTitlev1": "Taux de natalité, variation annuelle (‰)",
       "datasetPopulationNaturalGrowthDetailsExtent": "min: <b class='bold'>{{kMin, 2}}</b>‰ in {{tMin}}<br/> max: <b class='bold'>{{kMax, 2}}</b>‰ in {{tMax}}",
       "datasetPopulationNaturalGrowthDetailsLegendValuev": "Taux d'accr. naturel (‰)",
-      "datasetPopulationNaturalGrowthDetailsLegendValuev1": "Taux de natalité (‰)"
+      "datasetPopulationNaturalGrowthDetailsLegendValuev1": "Taux de natalité (‰)",
+      "datasetPopulationLegendValuev": "Pop. {{n, 2}}"
     }
   }
 }

@@ -1,7 +1,9 @@
 
 .Home_paragraphsWrapper {
-  // padding: 40vh 10px 20vh;
+  // font-family: var(--font-family-serif);
   transition: padding .25s ease-in-out;
+  width: 50%;
+  margin: 10vh auto;
 }
 
 .Home_stepChapterWrapper {

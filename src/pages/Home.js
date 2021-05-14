@@ -8,7 +8,7 @@ import { getIsMobileWithTablet } from '../logic/viewport'
 import { ChapterRoutes } from '../constants'
 import { ArrowUpRight } from 'react-feather'
 import '../styles/pages/home.scss'
-
+import ChapterCover from '../components/Chapter/ChapterCover'
 
 const Home = () => {
   const { t } = useTranslation()
@@ -36,18 +36,20 @@ const Home = () => {
   // {t('number', { n: 129822.4325 })}
   return (
     <div className="Home">
-      <a.div className="mw9 center pa4 ph5-l" style={{
+      <div className="absolute w-100 with-vertical-line" style={{zIndex: -1}}>
+      <ChapterCover height={height} cover={{ id: '0.landing.jpg'}} untitled/>
+      </div>
+      <a.div className="mw9 center flex flex-column justify-center items-center pa4 ph5-l" style={{
         opacity: props.opacity,
-        minHeight: props.height,
+        height: props.height,
       }}>
-        <h1 className="f2 f1-m tc mv0">
+        <h1 className="f2 f1-m tc mv0 serif">
           <span
             style={{
               color: 'var(--secondary)',
               fontSize: isMobileWithTablet ? '16vw' : '8vw',
             }}
           >
-            {height}, {width}
             {t('pagesHomeTitle')}
           </span>
         </h1>
@@ -76,7 +78,7 @@ const Home = () => {
           </h2>
         </div>
       </div>
-      <div className="Home_stepChapterWrapper">
+      <div className="Home_stepChapterWrapper tc">
         <div className="block mb4">
           {ChapterRoutes.map((route, i) => (
             <div key={i}>

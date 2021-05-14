@@ -1,4 +1,4 @@
-import React, { useMemo, useEffect } from 'react'
+import React, { useMemo } from 'react'
 import moment from 'moment'
 import { extent } from 'd3-array'
 import { scaleTime, scaleLinear } from 'd3-scale'
@@ -74,18 +74,9 @@ const Trend = ({
       y: ev.clientY,
     })
   }
-
-  // const AnimatedTrendLegend = animated(TrendLegend)
-
-  useEffect(() => {
-    window.addEventListener("mousemove", updateMousePosition);
-    return () => window.removeEventListener("mousemove", updateMousePosition);
-    // eslint-disable-next-line
-  }, []);
-  // one tick every 50 pixels
   const numTicks = Math.round(svgWidth / 80)
   return (
-    <div className="Trend" >
+    <div className="Trend" onMouseMove={updateMousePosition}>
       <animated.div style={{
         position: 'absolute',
         backgroundColor: 'var(--accent)',
@@ -94,7 +85,7 @@ const Trend = ({
         top: 0,
         left: 0,
         pointerEvents: 'none',
-        transform: pointer.x.interpolate((x) => `translate(${x - left}px, 0px)`)
+        transform: pointer.x.interpolate((x) => `translate(${Math.max(x - left, marginLeft)}px, 0px)`)
       }} />
       <TrendHotspots
         hotspots={hotspots}
@@ -113,6 +104,7 @@ const Trend = ({
         width={svgWidth}
         windowDimensions={windowDimensions}
         visibleKeys={visibleKeys}
+        keys={keys}
         focusKeys={focusKeys}
         marginLeft={marginLeft}
         scaleX={scaleX}
@@ -128,8 +120,8 @@ const Trend = ({
         className="Trend_svg"
         x="0px"
         y="0px"
-        width={svgWidth}
-        height={svgHeight}
+        width={Math.max(1,svgWidth)}
+        height={Math.max(1, svgHeight)}
         style={{
           // border: '1px solid rgba(0,0,0,0.2)',
           margin: 'auto',
@@ -151,6 +143,7 @@ const Trend = ({
         </defs>
 
         <TrendAxisBottomGraphics
+          id={themeDatasetId}
           windowDimensions={windowDimensions}
           marginLeft={marginLeft}
           marginTop={0}
@@ -160,6 +153,7 @@ const Trend = ({
           textColor={'var(--secondary)'}
         />
         <TrendAxisLeftGraphics
+          id={themeDatasetId}
           windowDimensions={windowDimensions}
           marginLeft={0}
           marginTop={marginTop}
@@ -211,7 +205,7 @@ const Trend = ({
               height={svgHeight - marginTop*2}
               width={svgWidth - marginLeft - marginRight}
               isVisible={isVisible || isOnFocus}
-              strokeWidth={6}
+              strokeWidth={3}
               fill={'transparent'}
               strokeColor={isOnFocus ? 'var(--secondary)': `var(--datakey-${key}`}
             />

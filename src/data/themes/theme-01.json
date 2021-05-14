@@ -53,22 +53,8 @@
         },
         {
           "from": 2008,
-          "to": 2014
-        }
-      ]
-    },
-    {
-      "title": "En 2008, la crise financière se déclenche ...",
-      "dataset": "eurostat-deficit-2008",
-      "layout": "compare",
-      "groups": ["v", "v1", "v2"],
-      "from": 2006,
-      "to": 2014,
-      "paragraphs": [
-        {
-          "from": 2006,
           "to": 2014,
-          "text": "... et n'épargne pas le Luxembourg. <br/> <br/> Les pouvoirs publics doivent notamment intervenir dans le sauvetage des banques systémiques. Néanmoins, même si la récession est profonde, le Luxembourg est assez résilient. La croissance démographique, toujours due à l'immigration, ne fut que marginalement affectée par ces évènements. La pression sur le marché du logement est non-négligeable et les infrastructures publiques (notamment dans le domaine de la mobilité) doivent suivre cette évolution."
+          "text": "En 2008, la crise financière se déclenche et n'épargne pas le Luxembourg. <br/> <br/> Les pouvoirs publics doivent notamment intervenir dans le sauvetage des banques systémiques. Néanmoins, même si la récession est profonde, le Luxembourg est assez résilient. La croissance démographique, toujours due à l'immigration, ne fut que marginalement affectée par ces évènements. La pression sur le marché du logement est non-négligeable et les infrastructures publiques (notamment dans le domaine de la mobilité) doivent suivre cette évolution."
         }
       ]
     },
@@ -79,7 +65,10 @@
           "from": 1866,
           "to": 1960,
           "keys": ["v1"],
-          "text": "Jusqu'aux années 1960 l'évolution du <em>solde global</em> s'explique essentiellement par le par le jeu entre <em>taux de mortalité</em> et <em>taux de natalité</em> appelé le <em>solde naturel</em>."
+          "text": "Jusqu'aux années 1960 l'évolution du <em>solde global</em> s'explique essentiellement par le par le jeu entre <em>taux de mortalité</em> et <em>taux de natalité</em> appelé le <em>solde naturel</em>.",
+          "dataset": "PopulationBalanceDetails",
+          "datasetLayout": "Flowers",
+          "datasetKeys": ["v3", "v4"]
         },
         {
           "from": 1866,

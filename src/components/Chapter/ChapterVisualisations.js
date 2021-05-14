@@ -1,5 +1,6 @@
 import React, { useRef, useEffect, useState, useMemo } from 'react'
 import Trend from '../Trend'
+import Dataset from '../Dataset'
 import ChapterModulesGraphics from './ChapterModulesGraphics'
 
 const ChapterVisualisations = ({
@@ -18,7 +19,7 @@ const ChapterVisualisations = ({
       return {
         ...par,
         moduleId: i,
-        paragraphId: `${i},${j}`
+        paragraphId: `${i+1}.${j+1}`
       }
     })), [])
   }, [modules])
@@ -94,6 +95,19 @@ const ChapterVisualisations = ({
             left={size.left}
             top={size.top}
           />
+          {paragraph?.dataset
+            ? (
+              <Dataset
+                id={paragraph.dataset}
+                height={size.height / 2} width={size.width}
+                keys={paragraph.datasetKeys}
+                layout={paragraph.datasetLayout}
+                from={1950}
+                to={1960}
+              />
+            )
+            : null
+          }
         </div>
       </div>
       <div className="flex mh5">

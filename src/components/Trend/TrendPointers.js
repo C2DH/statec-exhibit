@@ -1,11 +1,14 @@
 import React, { useState, useEffect, useMemo } from 'react'
 import { useTranslation } from 'react-i18next'
-
 import {ArrowRight, Eye} from 'react-feather'
+import { useStore } from '../../store'
+
 
 const TrendPointers = ({
   themeDatasetId='themeDatasetId',
-  values=[],focusKeys=['v'],
+  values=[],
+  keys=[],
+  focusKeys=[],
   visibleKeys=[{ key:'v', isVisible: true}],
   scaleX, scaleY,
   marginLeft=0, left=0, marginTop=0, top=0,
@@ -17,6 +20,7 @@ const TrendPointers = ({
   to,
 }) => {
   const { t } = useTranslation()
+  const {changeCurrentDatum, currentYearExplorerOpen } = useStore(state => state)
   const [pointer, setPointer] = useState()
   const [isVisible, setIsVisible] = useState(false)
   const updateMousePosition = (ev) => {
@@ -52,19 +56,41 @@ const TrendPointers = ({
     })
   }, [values, from, to, focusKeys])
 
+  const currentYear = pointer ? scaleX.invert(pointer.x - left).getFullYear() : from
+  const value = values.find(d => String(currentYear) === d.t)
+
   useEffect(() => {
     window.addEventListener("mousemove", updateMousePosition);
     return () => window.removeEventListener("mousemove", updateMousePosition);
     // eslint-disable-next-line
   }, []);
 
+  useEffect(() => {
+    if (currentYearExplorerOpen && currentYear && value) {
+      changeCurrentDatum({
+        datum: value,
+        year: currentYear,
+        dataset: themeDatasetId,
+        keys,
+        focusKeys
+      })
+    }
+  }, [changeCurrentDatum, focusKeys, keys, themeDatasetId, value, currentYearExplorerOpen, currentYear])
+
   if (!pointer && !from) {
     // nothing to visualize...
     return null
   }
-  const currentYear = pointer ? scaleX.invert(pointer.x - left).getFullYear() : from
-  const value = values.find(d => String(currentYear) === d.t)
 
+  const clickHandler = () => {
+    changeCurrentDatum({
+      datum: value,
+      year: currentYear,
+      dataset: themeDatasetId,
+      keys,
+      focusKeys
+    })
+  }
 
   // console.info(value)
   //
@@ -83,6 +109,7 @@ const TrendPointers = ({
         width: width-marginLeft,
         zIndex:1000,
       }}
+        onClick={clickHandler}
         onMouseEnter={() => setIsVisible(true)}
         onMouseLeave={() => setIsVisible(false)}
       />
