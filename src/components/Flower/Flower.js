@@ -1,8 +1,9 @@
 import React, {useMemo} from 'react'
-import Bezier from '../Flower/Bezier'
 import { useTranslation } from 'react-i18next'
 import { extent } from 'd3-array'
 import { scalePow } from 'd3-scale'
+import Bezier from './Bezier'
+import FlowerPointerGraphics from './FlowerPointerGraphics'
 
 const Flower = ({
   colors = ['#FFCCB6', '#f8b294', '#F77DA6'],
@@ -17,6 +18,7 @@ const Flower = ({
   fill = '#EDEDED',
   stroke = 'black',
   nMinPetals = 8,
+  children
 }) => {
   const { t } = useTranslation();
   const [colorA, colorB, colorC] = colors
@@ -38,12 +40,12 @@ const Flower = ({
   } = useMemo(() => {
     const [minYear, maxYear] = extent(data, (d) => d.t);
     const scaleYUnclamped = scalePow()
-      .exponent(1)
+      .exponent(.5)
       .domain([Math.max(0, minValue), Math.max(minValue * -1, maxValue)])
       .clamp(false)
-      .range([2, radius / 2]); //petalMaxWidth < 50 ? 50 : petalMaxWidth * 1.2]);
+      .range([2, radius]); //petalMaxWidth < 50 ? 50 : petalMaxWidth * 1.2]);
     const scaleYUnclampedNegative = scalePow()
-      .exponent(1)
+      .exponent(.5)
       .domain([maxValue * -1, 0])
       .clamp(false)
       .range([-radius / 2, -2]);
@@ -67,7 +69,7 @@ const Flower = ({
           color: 'var(--gray-500)',
         }}
       >
-        Length of the petal = data in the indicated years
+        {children}
       </div>
       <div style={{ flexGrow: 1 }}>
         <div style={{ width, height, overflow: 'hidden' }}>
@@ -138,7 +140,7 @@ const Flower = ({
                 const deg = theta * (180 / Math.PI);
                 const selected = currentYear === d.t;
                 const curveHeight =
-                  d.v > 0 ? scaleYUnclamped(d.v) : scaleYUnclampedNegative(d.v);
+                  d[field] > 0 ? scaleYUnclamped(d[field]) : scaleYUnclampedNegative(d[field]);
 
                 return (
                   <g
@@ -147,7 +149,7 @@ const Flower = ({
                     }) `}
                     key={`petal-${i}`}
                   >
-                    {d.v !== 0 && (
+                    {d[field] !== 0 && (
                       <g
                         transform={`translate(-${petalWidth / 2},${
                           curveHeight * -1
@@ -156,7 +158,7 @@ const Flower = ({
                         }, ${curveHeight})`}
                       >
                         <Bezier
-                          fill={d.v > 0 ? `url(#bezierGradient)` : '#e84367'}
+                          fill={d[field] > 0 ? `url(#bezierGradient)` : '#e84367'}
                           height={curveHeight}
                           width={petalWidth}
                           c1={petalWidth * 0.2}
@@ -165,24 +167,11 @@ const Flower = ({
                         />
                       </g>
                     )}
-                    <text
-                      style={{
-                        display: selected ? 'block' : 'none',
-                        textAnchor: 'middle',
-                        transform: `rotate(${-deg})`,
-                        dominantBaseline: 'central',
-                        color: '#2b219f',
-                        fontSize: '14px',
-                      }}
-                      textAnchor="end"
-                      dx={Math.sin(theta) * radius * 0.5}
-                      dy={Math.cos(theta) * radius * 0.5}
-                    >
-                      {t('number', { n: d.v })}
-                    </text>
+
                   </g>
                 );
               })}
+              <FlowerPointerGraphics data={data} radius={radius} field={field}/>
             </g>
           </svg>
         </div>

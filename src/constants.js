@@ -19,3 +19,9 @@ export const StartYear = 1839
 export const EndYear = (new Date()).getFullYear()
 export const StartDate = moment(StartYear, 'YYYY').startOf('year')
 export const EndDate = moment(EndYear, 'YYYY').endOf('year')
+
+export const StatusIdle = 'IDLE'
+export const StatusFetching = 'FETCHING'
+export const StatusSuccess = 'OK'
+export const StatusError = 'ERR'
+export const StatusNone = 'NONE'

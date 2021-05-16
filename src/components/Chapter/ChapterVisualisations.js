@@ -1,6 +1,5 @@
 import React, { useRef, useEffect, useState, useMemo } from 'react'
 import Trend from '../Trend'
-import Dataset from '../Dataset'
 import ChapterModulesGraphics from './ChapterModulesGraphics'
 
 const ChapterVisualisations = ({
@@ -10,10 +9,6 @@ const ChapterVisualisations = ({
 }) => {
   const ref = useRef();
   const [size, setSize] = useState({ left: 0, width: 0, height: 0 });
-  const [visibleKeys, setVisibleKeys] = useState(keys.map(key => ({
-    isVisible: true,
-    key,
-  })))
   const paragraphs = useMemo(() => {
     return modules.reduce((acc, mod, i) => acc.concat(mod.paragraphs.map((par, j) => {
       return {
@@ -27,7 +22,6 @@ const ChapterVisualisations = ({
   const paragraph = step
     ? paragraphs.find(d => step.paragraphId === d.paragraphId)
     : null
-
   // reload bounding box whenever height or width changes
   useEffect(() => {
     if (ref && ref.current) {
@@ -41,22 +35,6 @@ const ChapterVisualisations = ({
       console.info('ChapterVisualisations updated size:', boundingClientRect)
     }
   }, [height, width])
-
-  // const toggleKeyVisibility = (key, isVisible) => {
-  //   setVisibleKeys(visibleKeys.map((d) => {
-  //     if(d.key === key) {
-  //       return { isVisible, key }
-  //     }
-  //     return d
-  //   }))
-  // }
-
-  useEffect(() => {
-    setVisibleKeys(keys.map(key => ({
-      isVisible: false,
-      key,
-    })))
-  }, [keys])
 
   return (
     <div className="ChapterVisualisations mr5" style={{
@@ -86,28 +64,15 @@ const ChapterVisualisations = ({
             paragraphId={paragraph?.paragraphId}
             hotspots={paragraph?.hotspots}
             data={data}
-            focusKeys={paragraph? paragraph.keys || ['v'] : []}
-            keys={keys}
+            availableKeys={keys}
+            focusKeys={paragraph?.focusKeys ? paragraph.focusKeys : paragraph?.visibleKeys}
+            visibleKeys={paragraph?.visibleKeys ? paragraph.visibleKeys : keys}
             legend={legend}
-            visibleKeys={visibleKeys}
-            height={paragraph?.dataset ? size.height / 2 : size.height}
+            height={size.height}
             width={size.width}
             left={size.left}
             top={size.top}
           />
-          {paragraph?.dataset
-            ? (
-              <Dataset
-                id={paragraph.dataset}
-                height={size.height / 2} width={size.width}
-                keys={paragraph.datasetKeys}
-                layout={paragraph.datasetLayout}
-                from={1950}
-                to={1960}
-              />
-            )
-            : null
-          }
         </div>
       </div>
       <div className="flex mh5">

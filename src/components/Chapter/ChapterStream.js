@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import { Scrollama, Step } from 'react-scrollama'
 import ChapterParagraph from './ChapterParagraph'
 import ChapterParagraphCover from './ChapterParagraphCover'
+import Dataset from '../Dataset'
 import { getParagraphIdFromIndices } from '../../logic/navigation'
 
 const Echo = () => {
@@ -62,7 +63,7 @@ const ChapterStream = ({ modules = [], height, backgroundColor, onStepChange=Ech
             return (
               <Step data={paragraphId} key={paragraphId}>
                 <div className={`ChapterStream_paragraph ${activeStep.paragraphId === paragraphId ? 'active' : ''}`}>
-                  <div class="anchor" id={`p${paragraphId}`}></div>
+                  <div className="anchor" id={`p${paragraphId}`}></div>
                   <ChapterParagraph paragraph={par} height={height} withFigures={par.figures?.length}/>
                   {par.figures
                     ? par.figures.map((figure, i) => (
@@ -70,6 +71,20 @@ const ChapterStream = ({ modules = [], height, backgroundColor, onStepChange=Ech
                         <ChapterParagraphCover cover={figure} height={height/2} />
                       </div>
                     ))
+                    : null
+                  }
+                  {par.dataset
+                    ? (
+                      <Dataset
+                        id={par.dataset}
+                        height={height/3}
+                        width={200}
+                        keys={par.datasetKeys}
+                        layout={par.datasetLayout}
+                        from={par.from}
+                        to={par.to}
+                      />
+                    )
                     : null
                   }
                 </div>

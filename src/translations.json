@@ -47,6 +47,7 @@
       "legendPopulationBalanceDetails": "= {{v1}} + {{v4}}",
       "downloadAsCSV": "download as CSV",
       "number": "{{ n,2 }}",
+      "percentage": "{{ n,2 }} %",
       "AboutTitle": "About",
       "AboutIntroduction": "<i>Framing Luxembourg</i> est une exposition virtuelle retraçant l'histoire que les statistiques permettent de raconter sur le Luxembourg.",
       "AboutConcept": "Les thèmes et les jeux de données ont été conçus par Paul Zahlen et Benoît Majerus du C²DH. <br/><br/> Le site web s'adresse à un large spectre d’utilisateurs. Il sera développé et enrichi dans les années à venir.",
@@ -67,7 +68,12 @@
       "datasetPopulationNaturalGrowthDetailsExtent": "min: <b class='bold'>{{kMin, 2}}</b>‰ in {{tMin}}<br/> max: <b class='bold'>{{kMax, 2}}</b>‰ in {{tMax}}",
       "datasetPopulationNaturalGrowthDetailsLegendValuev": "Taux d'accr. naturel (‰)",
       "datasetPopulationNaturalGrowthDetailsLegendValuev1": "Taux de natalité (‰)",
-      "datasetPopulationLegendValuev": "Pop. {{n, 2}}"
+      "datasetPopulationLegendValuev": "Pop. {{n, 2}}",
+      "datasetPopulationBalanceDetailsLegendValuev": "Solde global",
+      "datasetPopulationBalanceDetailsLegendValuev1": "Solde naturel",
+      "datasetPopulationBalanceDetailsLegendValuev2": "Nombre de naissances",
+      "datasetPopulationBalanceDetailsLegendValuev3": "Nombre de décès",
+      "datasetPopulationBalanceDetailsLegendValuev4": "Solde migratoire, variation annuelle"
     }
   }
 }

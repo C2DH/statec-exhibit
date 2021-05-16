@@ -20,10 +20,13 @@ const Trend = ({
   legend={},
   data=[],
   from, to,
-  focusKeys=[],
-  visibleKeys=[],
+  // availableKeys: to computate the extent
+  availableKeys=['v'],
+  // visibleKeys: to draw the lines
+  visibleKeys=['v'],
+  // focusKeys: to draw the lines, bigger
+  focusKeys=['v'],
   timeKey='t',
-  keys=['v'],
   hotspots=[],
   left=0,
   top=0,
@@ -43,9 +46,9 @@ const Trend = ({
       .range([0, svgWidth - marginLeft - marginRight])
   const [xMin, xMax] = useMemo(()  => {
     // use the keys to flatten down the values in order to computate max and min
-    const flattenedData = data.reduce((acc, d) => acc.concat(keys.map(k => d[k])), [])
+    const flattenedData = data.reduce((acc, d) => acc.concat(availableKeys.map(k => d[k])), [])
     return extent(flattenedData)
-  }, [keys, data])
+  }, [availableKeys, data])
 
   const scaleY = scaleLinear()
     .domain([xMin, xMax])
@@ -54,7 +57,7 @@ const Trend = ({
   // values is an array of dicts [{x:, ys:{'v': ... }}]
   const values = useMemo(() => data.map(d => {
     const x = scaleX(moment(d.t, 'YYYY').startOf('year'));
-    const ys = keys.reduce((acc, k) => {
+    const ys = availableKeys.reduce((acc, k) => {
       acc[k] = scaleY(d[k])
       return acc
     }, {})
@@ -63,7 +66,7 @@ const Trend = ({
       x,
       ys
     }
-  }), [data, scaleX, scaleY, keys])
+  }), [data, scaleX, scaleY, availableKeys])
 
   const updateMousePosition = (ev) => {
     if (!ev) {
@@ -104,7 +107,6 @@ const Trend = ({
         width={svgWidth}
         windowDimensions={windowDimensions}
         visibleKeys={visibleKeys}
-        keys={keys}
         focusKeys={focusKeys}
         marginLeft={marginLeft}
         scaleX={scaleX}
@@ -162,10 +164,11 @@ const Trend = ({
           width={svgWidth - marginLeft - marginRight}
           axisOffsetLeft={svgWidth - marginRight}
         />
-        {visibleKeys.map(({ key, isVisible }) => {
-          const isOnFocus = focusKeys.includes(key)
+        {visibleKeys.map((key) => {
+          const isFocusKey = focusKeys.includes(key)
           return (
             <TrendLineGraphics
+              id={paragraphId}
               key={key}
               windowDimensions={windowDimensions}
               marginLeft={marginLeft}
@@ -178,17 +181,16 @@ const Trend = ({
               scaleY={scaleY}
               height={svgHeight - marginTop*2}
               width={svgWidth}
-              isVisible={isOnFocus}
+              isVisible
               strokeWidth={1}
               fill={'transparent'}
-              strokeColor={isOnFocus ? 'var(--secondary)': `var(--datakey-${key}`}
+              strokeColor={isFocusKey ? 'var(--secondary)' : 'var(--data-background)'}
             />
           )
         })}
 
         {from && to
-          ? visibleKeys.filter(d => focusKeys.includes(d.key)).map(({key, isVisible }) => {
-            const isOnFocus = focusKeys.includes(key)
+          ? focusKeys.map((key) => {
             return (
             <TrendLineGraphics
               id={paragraphId}
@@ -204,10 +206,10 @@ const Trend = ({
               scaleY={scaleY}
               height={svgHeight - marginTop*2}
               width={svgWidth - marginLeft - marginRight}
-              isVisible={isVisible || isOnFocus}
+              isVisible
               strokeWidth={3}
               fill={'transparent'}
-              strokeColor={isOnFocus ? 'var(--secondary)': `var(--datakey-${key}`}
+              strokeColor={'var(--secondary)'}
             />
           )}): null
         }

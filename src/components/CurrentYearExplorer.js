@@ -7,7 +7,7 @@ import { useDrag } from 'react-use-gesture'
 import population from '../data/datasets/population.json'
 import '../styles/components/currentYearExplorer.scss'
 const CurrentYearExplorer = ({ height=300, width=300 }) => {
-  const [{ pos }, set] = useSpring(() => ({ pos: [50, 50] }))
+  const [{ pos }, set] = useSpring(() => ({ pos: [width - 250, 150] }))
 
   // Set the drag hook and define component movement based on gesture data
   const bind = useDrag(
@@ -32,7 +32,14 @@ const CurrentYearExplorer = ({ height=300, width=300 }) => {
       transform: to([pos], ([x, y]) => `translate3d(${x}px,${y}px,0)`),
       width:200,
       opacity: currentYearExplorerOpen && currentDatum? 1 : 0,
+      pointerEvents: currentYearExplorerOpen ? 'auto' : 'none'
     }}>
+      {!currentYear && !currentDatum
+        ? (
+          <p>...</p>
+        )
+        : null
+      }
       <div className="CurrentYearExplorer_dragHandle" />
       <h1 className="ma0" style={{color: 'var(--primary)'}}>{currentYear}</h1>
       {people

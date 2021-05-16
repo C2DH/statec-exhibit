@@ -7,9 +7,8 @@ import { useStore } from '../../store'
 const TrendPointers = ({
   themeDatasetId='themeDatasetId',
   values=[],
-  keys=[],
   focusKeys=[],
-  visibleKeys=[{ key:'v', isVisible: true}],
+  visibleKeys=[],
   scaleX, scaleY,
   marginLeft=0, left=0, marginTop=0, top=0,
   height=100,
@@ -27,6 +26,7 @@ const TrendPointers = ({
     if (!ev) {
       return
     }
+
     setPointer({
       x: ev.clientX - left - marginLeft,
       y: ev.clientY - top - marginTop,
@@ -71,11 +71,11 @@ const TrendPointers = ({
         datum: value,
         year: currentYear,
         dataset: themeDatasetId,
-        keys,
+        keys: visibleKeys,
         focusKeys
       })
     }
-  }, [changeCurrentDatum, focusKeys, keys, themeDatasetId, value, currentYearExplorerOpen, currentYear])
+  }, [changeCurrentDatum, focusKeys, visibleKeys, themeDatasetId, value, currentYearExplorerOpen, currentYear])
 
   if (!pointer && !from) {
     // nothing to visualize...
@@ -87,7 +87,7 @@ const TrendPointers = ({
       datum: value,
       year: currentYear,
       dataset: themeDatasetId,
-      keys,
+      keys: visibleKeys,
       focusKeys
     })
   }
@@ -137,7 +137,7 @@ const TrendPointers = ({
         }}>{currentYear}</span>
       </div>
 
-      {value && isVisible ? visibleKeys.map(({key}) => {
+      {value && isVisible ? visibleKeys.map((key) => {
         const isOnFocus = focusKeys.includes(key)
         const radius = isOnFocus ? 12 : 6
 
@@ -194,7 +194,22 @@ const TrendPointers = ({
         </div>
         {children}
       </div>
+      {value
+        ? visibleKeys.map((key) => {
 
+          return (
+            <div className="TrendPointers_legend_key ml2 absolute flex items-end justify-between w100" key={key} style={{
+              transform: `translate(${value.x + marginLeft}px, ${value.ys[key] + marginTop}px)`,
+              top: 0,
+              marginTop: -10,
+            }}>
+              <div>{t(`dataset${themeDatasetId}LegendValue${key}`)}</div>
+              <div className="tr ml2">{t('number', { n: value[key] })}</div>
+            </div>
+          )
+        })
+        : null
+      }
       <div className="TrendPointers_legend absolute pa3" style={{
         top: 0,
         display: value ? 'block' : 'none',
@@ -203,6 +218,7 @@ const TrendPointers = ({
           ? `translate(${value.x + marginLeft}px, ${height - marginTop}px)`
           : `translate(${marginLeft}px, ${height- marginTop}px)`,
       }}>
+
       {value
         ? focusKeys.map((key) => (
             <div className="TrendPointers_legend_key flex items-end justify-between w100" key={key}>
