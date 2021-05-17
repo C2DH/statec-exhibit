@@ -11,7 +11,7 @@ const AvailableComponents = Object.freeze({
   'Compare': Compare,
 })
 
-const Dataset = ({ data, id='', layout='Flowers', keys=['v'], from=StartYear, to=EndYear, height=100, width=100 }) => {
+const Dataset = ({ data, id='', layout='Flowers', keys=['v'], from=StartYear, to=EndYear, height=100, width=100, hidePercentage=false }) => {
   const Component = AvailableComponents[layout] || <div>Component not defined</div>
   const { t}  = useTranslation()
   const { groupValues, minValue, maxValue, legend } = useMemo(() => {
@@ -51,7 +51,7 @@ const Dataset = ({ data, id='', layout='Flowers', keys=['v'], from=StartYear, to
     return { groupValues, minValue, maxValue }
   }, [data, keys, from, to]);
   return (
-    <div>
+    <div className="w-100" style={{overflow: 'scroll'}}>
       {layout === 'Compare'
         ? (
           <Component
@@ -59,6 +59,7 @@ const Dataset = ({ data, id='', layout='Flowers', keys=['v'], from=StartYear, to
             groupValues={groupValues}
             minValue={minValue}
             maxValue={maxValue}
+            hidePercentage={hidePercentage}
           />
         )
         : null
@@ -82,7 +83,7 @@ const Dataset = ({ data, id='', layout='Flowers', keys=['v'], from=StartYear, to
 }
 
 
-const DebugDataset = ({ id, layout='Flowers', keys=['v'], from=StartYear, to=EndYear, height=100, width=100 }) => {
+const DebugDataset = ({ id, layout='Flowers', keys=['v'], from=StartYear, to=EndYear, height=100, width=100, hidePercentage }) => {
   const { item, error, status } = useGetDataset({ url : `/datasets/${id}.json`, delay: 100})
   console.info('DebugDataset', item, error, status)
   if ([StatusFetching, StatusIdle].includes(status)) {
@@ -94,7 +95,7 @@ const DebugDataset = ({ id, layout='Flowers', keys=['v'], from=StartYear, to=End
       </div>
     )
   } else if (status === StatusSuccess) {
-    return <Dataset data={item} id={id} layout={layout} keys={keys} from={from} to={to} height={height} width={width}/>
+    return <Dataset data={item} id={id} layout={layout} keys={keys} from={from} to={to} height={height} width={width} hidePercentage={hidePercentage}/>
   }
   return (
     <div className="flex items-center justify-center w-100" style={{marginTop: 100, height}}>

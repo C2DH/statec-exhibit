@@ -229,86 +229,68 @@
               "t": 1972
             }
           ]
-        }
-      ]
-    },
-    {
-      "title": "Le cas italien",
-      "subheading": "",
-      "datasetValueFrom": 150000,
-      "datasetValueTo": 800000,
-      "datasetHeading": "migratory-balance",
-      "datasetHeadingValueFrom": -8000,
-      "datasetHeadingValueTo": 18000,
-      "datasetHeadingAdditionalTrends": ["v"],
-      "datasetHeadingAdditionalTrendsColors": ["var(--primary)"],
-      "dataset": "trend-arrivals-by-nationalities",
-      "layout": "flowers",
-      "from": 1960,
-      "to": 1980,
-      "extent": [0, 6000],
-      "groups": ["v5", "v8"],
-      "moduleHotspots": [
-        { "t": 1960 },
-        { "t": 1971 },
-        { "t" : 1980 }
-      ],
-      "paragraphs": [
-        {
-          "from": 1960,
-          "to": 1970,
-          "text": "Entre 1960 et 1980, la dynamique de l'immigration italienne change. <br/><br/> Si aux débuts des années 1960, les Italiens constituent encore de loin le groupe le plus important d'immigrants, leur solde migratoire devient légérement négatif à partir du milieu de cette décennie."
         },
         {
-          "from": 1971,
-          "to": 1980,
-          "year": "60s",
-          "text": "Le <i>Miracolo economico italiano</i> qui conduit à une hausse sensible des salaires dans la péninsule et une baisse conséquente du chômage rend l'émigration moins attrayante pour de nombreux Italiens."
-        }
-      ]
-    },
-    {
-      "title": "... et le cas portugais",
-      "subheading": "",
-      "datasetValueFrom": 150000,
-      "datasetValueTo": 800000,
-      "datasetHeading": "migratory-balance",
-      "datasetHeadingValueFrom": -8000,
-      "datasetHeadingValueTo": 18000,
-      "datasetHeadingAdditionalTrends": ["v"],
-      "datasetHeadingAdditionalTrendsColors": ["var(--primary)"],
-      "dataset": "trend-arrivals-by-nationalities",
-      "layout": "flowers",
-      "from": 1960,
-      "to": 1980,
-      "extent": [0, 6000],
-      "groups": ["v5", "v8"],
-      "moduleHotspots": [
-        { "t": 1960 },
-        { "t": 1971 },
-        { "t" : 1980 }
-      ],
-      "paragraphs": [
-        {
           "from": 1960,
-          "to": 1974,
-          "text": "Même avant la signature d'un accord bilatéral entre le Luxembourg et le Portugal en mai 1970, l'immigration portugaise commence à remplir le vide laissé par les Italiens."
+          "to": 1967,
+          "visibleKeys": ["v2"],
+          "text": "Entre 1960 et 1980, la dynamique de l'immigration italienne change. <br/><br/> Si aux débuts des années 1960, les Italiens constituent encore de loin le groupe le plus important d'immigrants, leur solde migratoire devient légérement négatif à partir du milieu de cette décennie. <br/><br/>Le <i>Miracolo economico italiano</i> qui conduit à une hausse sensible des salaires dans la péninsule et une baisse conséquente du chômage rend l'émigration moins attrayante pour de nombreux Italiens.",
+          "dataset": "TrendArrivalsByNationalities",
+          "datasetKeys": ["v2", "v5"],
+          "datasetLayout": "Compare",
+          "datasetHidePercentage": true
+        },
+        {
+          "from": 1965,
+          "to": 1975,
+          "visibleKeys": ["v2"],
+          "text": "Même avant la signature de l'accord bilatéral entre le Luxembourg et le Portugal en mai 1970, l'immigration portugaise commence à remplir le vide laissé par les Italiens.",
+          "dataset": "TrendArrivalsByNationalities",
+          "datasetKeys": ["v2", "v5", "v8"],
+          "datasetLayout": "Compare",
+          "datasetHidePercentage": true,
+          "hotspots": [
+            {
+              "text": "Accord entre le Grand-Duché de Luxembourg et la République portugaise relatif à l'emploi des travailleurs portugais au Luxembourg, signé le 20 mai 1970. Entré en vigueur le 14 avril 1972",
+              "t": 1972
+            }
+          ]
         },
         {
           "from": 1975,
-          "to": 1980,
-          "year": "60s",
-          "text": "En pleine croissance économique, le Luxembourg continue à être demandeur de main d'oeuvre. Cette migration est dans un premier temps masculine et jeune (entre 20 et 35 ans). Le ralentissement de la conjoncture à partir de 1975 ralentit cette migration sans l'arrêter."
+          "to": 1990,
+          "visibleKeys": ["v2"],
+          "text": "En pleine croissance économique, le Luxembourg continue à être demandeur de main d'oeuvre. Cette migration est dans un premier temps masculine et jeune (entre 20 et 35 ans). Le ralentissement de la conjoncture à partir de 1975 ralentit cette migration sans l'arrêter.",
+          "dataset": "TrendArrivalsByNationalities",
+          "datasetKeys": ["v2"],
+          "datasetLayout": "Compare",
+          "datasetHidePercentage": true
+        },
+        {
+          "from": 1990,
+          "to": 2000,
+          "text": "C'est la diversité des origines des migrants à partir des années 1990 qui doit être relevée. <br/><br />Les migrants viennent des pays voisins (la part des Français dans la population augmente), mais désormais également nombreux de pays non-européens (Etats-Unis, Inde, Chine, par exemple). Les migrants de pays qui avaient déjà une histoire d'immigration au Luxembourg (Portugal, Italie) sont également assez nombreux au sein de la vague d'immigration récente. Le profil des qualifications et des formations des immigrés est également de plus en plus diversifié; ils occupent à la fois des emplois hautement qualifiés et des emplois peu qualifiés."
+        },
+        {
+          "from": 2008,
+          "to": 2020,
+          "text": "La crise qui frappe l'économie mondiale à partir de 2008, et qui se répercute sur le Luxembourg, trouve son reflet dans un recul (très passager) de l'excédent migratoire au Grand-Duché . <br/><br/>Dans la période qui suit, le solde migratoire atteint cependant des niveaux jamais atteints jusque-là (dépassant les 10.000), signe à la fois de la résilience de l'économie luxembourgeoise et des difficultés économiques et sociales des pays d'où viennent les migrants.",
+          "hotspots": [
+            {
+              "t": 2008,
+              "text": "The financial crisis of 2007–2008, also known as the global financial crisis (GFC), was a severe worldwide economic crisis."
+            }
+          ]
         }
       ]
     }
   ],
   "conclusions": [
     {
-      "text": "Si les migrations sont aujourd'hui considérés comme un élément central de l'histoire du Luxembourg, les données statistiques pour les deux derniers siècles sont fragmentaires. Ce n'est qu'en 1871 que la notion d'étranger apparaît dans les recensements. Depuis les années 1960, nous disposons de chiffres plus détaillées d'entrées et de sorties de différentes nationalités. C'est la diversité des origines des migrants à partir des années 1990 qui doit être relevée. Les migrants viennent des pays voisins (la part des Français dans la population augmente), mais désormais également nombreux de pays non-européens (Etats-Unis, Inde, Chine, par exemple)."
+      "text": "En 1980, les étrangers représentent le quart de la population résidente; en 2020, cette part est de 50%. La composition de l'immigration est d'ailleurs de plus en plus diversifiée."
     },
     {
-      "text": "Les migrants viennent des pays voisins (la part des Français dans la population augmente), mais désormais également nombreux de pays non-européens (Etats-Unis, Inde, Chine, par exemple). Les migrants de pays qui avaient déjà une histoire d'immigration au Luxembourg (Portugal, Italie) sont également assez nombreux au sein de la vague d'immigration récente. Le profil des qualifications et des formations des immigrés est également de plus en plus diversifié; ils occupent à la fois des emplois hautement qualifiés et des emplois peu qualifiés."
+      "text": "Si les migrations sont aujourd'hui considérés comme un élément central de l'histoire du Luxembourg, les données statistiques pour les deux derniers siècles sont fragmentaires. Ce n'est qu'en 1871 que la notion d'étranger apparaît dans les recensements et ce n'est que depuis les années 1960 que nous disposons de chiffres plus détaillées d'entrées et de sorties de différentes nationalités."
     }
   ]
 }

@@ -80,6 +80,7 @@ const ChapterStream = ({ modules = [], height, backgroundColor, onStepChange=Ech
                         height={height/3}
                         width={200}
                         keys={par.datasetKeys}
+                        hidePercentage={par.datasetHidePercentage}
                         layout={par.datasetLayout}
                         from={par.from}
                         to={par.to}

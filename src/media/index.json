@@ -1222,8 +1222,8 @@
       "isPortrait": false
     },
     "0.landing.jpg": {
-      "caption": "Boh. In the book",
-      "provenance": "unknown",
+      "caption": "",
+      "provenance": "",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/0.landing.medium-w.jpg",
