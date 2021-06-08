@@ -17,7 +17,7 @@ i18n
       format: function(value, format, lng) {
         if (typeof value === 'number') {
           // adapt number
-          console.info(value, format, lng)
+          // console.info(value, format, lng)
           return new Intl.NumberFormat(lng, {
             maximumFractionDigits: format
           }).format(value)
