@@ -34,3 +34,14 @@ Tachyons base classes are mobile by default, and adds 3 additional breakpoints:
 -l ‘large’, media query is screen and (min-width: 60em)
 
 We use spacer 3 for small, 4 for medium and unsurprisingly 5 for large.
+
+## Contents
+
+### How to change the title of a chapter?
+Change the `title` property in the chapter file `./data/themes/<theme id>.json`; then verify
+the route label in the `./src/constants.js` file: there, every chapter route
+has both a link and a label. The label refers to the translatable property in the translations.json file
+
+```javascript
+const ChapterRouteFamily = { to:'/family', label: 'ChapterRouteFamily'}
+```
