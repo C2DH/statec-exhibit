@@ -7,19 +7,28 @@ import Home from './pages/Home'
 import Chapter from './pages/Chapter'
 import TableOfContents from './components/TableOfContents'
 import Panel from './components/Panel'
-//
+import { useStore } from './store'
 
+const AppPanels = () => {
+  const color = useStore(state => state.backgroundColor)
+
+  return (
+    <>
+      <Panel name='about' left color={color}>
+        About page.
+      </Panel>
+      <Panel name='table-of-contents' color={color}>
+        <TableOfContents color={color}/>
+      </Panel>
+    </>
+  )
+}
 const App = () => {
   return (
     <BrowserRouter>
       <ScrollToTop />
       <MainBackground />
-      <Panel name='about' left>
-        About page.
-      </Panel>
-      <Panel name='table-of-contents'>
-        <TableOfContents />
-      </Panel>
+      <AppPanels/>
       <Header />
       <Suspense fallback={<div>Loading...</div>}>
         <Switch>
