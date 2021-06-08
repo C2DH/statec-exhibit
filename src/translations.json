@@ -33,7 +33,7 @@
       "chapterNumber": "Chapitre {{ n }}",
       "ChapterRouteIndex": "home",
       "ChapterRouteCountryOfMigration": "Un pays de migrations",
-      "ChapterRouteFamily": "Famille et Ménage",
+      "ChapterRouteFamily": "Famille et ménage",
       "demographicBalance": "person",
       "demographicBalance_plural": "people",
       "demographicBalanceWithCount": "<b>{{count}}</b> person in {{year}}",
