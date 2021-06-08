@@ -1,0 +1,27 @@
+.CurrentYearExplorer{
+  z-index: 1001;
+  background-color: var(--secondary);
+  color: var(--primary);
+  border-radius: 4px;
+  touch-action: none;
+  cursor: move;
+}
+
+.CurrentYearExplorer:hover{
+  .CurrentYearExplorer_dragHandle{
+    transform: scale(1.2);
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAIklEQVQYV2P8////fwYGBgZGRkZGEA1mYxWEySLTcC0EBQHhgggG9HXS7gAAAABJRU5ErkJggg==') repeat;
+  }
+}
+.CurrentYearExplorer_dragHandle{
+  width: 24px;
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  height: 9px;
+  margin-left: -10px;
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAIklEQVQYV2P8f2DufwYGBgZGh2RGEA1mYxWEySLTcC0EBQHXcggGATKP4wAAAABJRU5ErkJggg==') repeat;
+  will-change: transform;
+  transition: transform 0.24s ease-in-out;
+  transform: scale(1);
+}

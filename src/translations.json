@@ -1,10 +1,11 @@
 {
   "en-US": {
     "translation": {
+      "chapterHotspotsGraphicsLegend": "A story in <b>{{totalHotspots}}</b> paragraphs et <b>{{chapterNumberOfModules}}</b> timeloops",
       "chapterNumber": "Chapter {{ n }}",
       "ChapterRouteIndex": "home",
       "ChapterRouteCountryOfMigration": "A Country of Migration",
-      "ChapterRouteFamily": "Family Life",
+      "ChapterRouteFamily": "Famille et Ménage",
       "demographicBalance": "person",
       "demographicBalance_plural": "people",
       "demographicBalanceWithCount": "<b>{{count}}</b> person in {{year}}",
@@ -21,7 +22,58 @@
       "AboutTitle": "About",
       "AboutIntroduction": "<i>Les chiffres du Luxembourg</i> est une exposition virtuelle retraçant l’histoire de <br/><br/> Le site web s’adresse à un large spectre d’utilisateurs aux degrés d’expertise variables. Il sera développé et enrichi dans les années à venir",
       "AboutConcept": "Les concept, les themes et les jeux des données ont été concus par Paul Zahlen et Benoît Majerus du C²DH.",
-      "AboutDevelopment": "L’exposition virtuelle a été designé par Federica Fragapane et implémentée par Paolo Corti, ainsi que par Daniele Guido du C²DH."
+      "AboutDevelopment": "L’exposition virtuelle a été designé par Federica Fragapane et implémentée par Paolo Corti, ainsi que par Daniele Guido du C²DH.",
+      "tableOfContents":"tableOfContents",
+      "datasetGlobalBalanceDetailsLegend": "datasetGlobalBalanceDetailsLegend"
+    }
+  },
+  "fr-FR": {
+    "translation": {
+      "chapterHotspotsGraphicsLegend": "Un recit en <b class='number-pill'>{{totalHotspots}}</b> paragraphes et <b>{{chapterNumberOfModules}}</b> lignes du temps",
+      "chapterNumber": "Chapitre {{ n }}",
+      "ChapterRouteIndex": "home",
+      "ChapterRouteCountryOfMigration": "Un pays de migrations",
+      "ChapterRouteFamily": "Famille et ménage",
+      "demographicBalance": "person",
+      "demographicBalance_plural": "people",
+      "demographicBalanceWithCount": "<b>{{count}}</b> person in {{year}}",
+      "demographicBalanceWithCount_plural": "<b>{{count}}</b> people in {{year}}",
+      "nextChapter": "Next Chapter",
+      "pagesHomeSubheading": "Une histoire du Luxembourg en statistiques / Une histoire des statistiques au Luxembourg",
+      "pagesHomeTitle": "Framing Luxembourg",
+      "pagesHomeParagraph01": "Au 19e siècle, les statistiques sont devenues un outil central pour encadrer les réalités sociales.",
+      "pagesHomeParagraph02": "Grâce aux catégories qu'elles proposent, elles rendent certaines choses visibles mais en cachent d'autres. Raconter l'histoire de la \"mise en chiffres\" d'un territoire au cours des 200 dernières années dévoile les différentes histoires que l'État luxembourgeois choisit de raconter.",
+      "previousChapter": "Previous Chapter",
+      "legendPopulationBalanceDetails": "= {{v1}} + {{v4}}",
+      "downloadAsCSV": "download as CSV",
+      "number": "{{ n,2 }}",
+      "percentage": "{{ n,2 }} %",
+      "AboutTitle": "About",
+      "AboutIntroduction": "<i>Framing Luxembourg</i> est une exposition virtuelle retraçant l'histoire que les statistiques permettent de raconter sur le Luxembourg.",
+      "AboutConcept": "Les thèmes et les jeux de données ont été conçus par Paul Zahlen et Benoît Majerus du C²DH. <br/><br/> Le site web s'adresse à un large spectre d’utilisateurs. Il sera développé et enrichi dans les années à venir.",
+      "AboutDevelopment": "L’exposition virtuelle a été designée par Federica Fragapane et implémentée par Paolo Corti, ainsi que par Daniele Guido du C²DH.",
+      "FramingLuxembourg": "Framing Luxembourg",
+      "tableOfContentsMobile": "Menu",
+      "tableOfContents": "Table of Contents",
+      "figcaptionLabel": "Source\u00a0:",
+      "datasetGlobalBalanceDetailsExtentTitlev": "Solde global, variation annuelle",
+      "datasetGlobalBalanceDetailsExtentTitlev1": "Solde naturel, variation annuelle",
+      "datasetGlobalBalanceDetailsExtentTitlev2": "Solde migratoire, variation annuelle",
+      "datasetGlobalBalanceDetailsExtent": "min: <b class='bold'>{{kMin, 2}}</b> personnes in {{tMin}}<br/> max: <b class='bold'>{{kMax, 2}}</b> personnes in {{tMax}}",
+      "datasetGlobalBalanceDetailsLegendValuev": "Solde global",
+      "datasetGlobalBalanceDetailsLegendValuev1": "Solde naturel",
+      "datasetGlobalBalanceDetailsLegendValuev2": "Solde migratoire",
+      "datasetPopulationNaturalGrowthDetailsExtentTitlev": "Taux d'accroissement naturel, variation annuelle (‰)",
+      "datasetPopulationNaturalGrowthDetailsExtentTitlev1": "Taux de natalité, variation annuelle (‰)",
+      "datasetPopulationNaturalGrowthDetailsExtent": "min: <b class='bold'>{{kMin, 2}}</b>‰ in {{tMin}}<br/> max: <b class='bold'>{{kMax, 2}}</b>‰ in {{tMax}}",
+      "datasetPopulationNaturalGrowthDetailsLegendValuev": "Taux d'accr. naturel (‰)",
+      "datasetPopulationNaturalGrowthDetailsLegendValuev1": "Taux de natalité (‰)",
+      "datasetPopulationLegendValuev": "Pop. {{n, 2}}",
+      "datasetPopulationBalanceDetailsLegendValuev": "Solde global",
+      "datasetPopulationBalanceDetailsLegendValuev1": "Solde naturel",
+      "datasetPopulationBalanceDetailsLegendValuev2": "Nombre de naissances",
+      "datasetPopulationBalanceDetailsLegendValuev3": "Nombre de décès",
+      "datasetPopulationBalanceDetailsLegendValuev4": "Solde migratoire, variation annuelle"
     }
   }
 }

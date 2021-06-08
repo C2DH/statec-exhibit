@@ -1,0 +1,36 @@
+//
+// achyons base classes are mobile by default, and adds 3 additional breakpoints. Classes in a breakpoint have an abbreviation appended to their name:
+//
+// -ns ‘not small’, media query is screen and (min-width: 30em)
+// -m ‘medium’, media query is screen and (min-width: 30em) and (max-width: 60em)
+// -l ‘large’, media query is screen and (min-width: 60em)
+
+.Header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: transparent;
+  z-index: 999;
+  transition: background-color .6s ease-in-out;
+
+  &.active .Header_sideLinkWrapper{
+    border-bottom: 1px solid var(--secondary);
+  }
+
+}
+.Header_sideLinkWrapper{
+  height: 50px;
+  justify-content: space-between;
+  display: flex;
+}
+
+.Header_sideLink{
+  width: 50px;
+}
+// -m
+@media screen and (min-width: 30em) {
+  .Header_sideLink{
+    width: 150px;
+  }
+}

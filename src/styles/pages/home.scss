@@ -1,0 +1,19 @@
+
+.Home_paragraphsWrapper {
+  // font-family: var(--font-family-serif);
+  transition: padding .25s ease-in-out;
+  width: 50%;
+  margin: 10vh auto;
+}
+
+.Home_stepChapterWrapper {
+  padding: 25vh 10px 25vh;
+  margin-left: 5vh;
+  margin-right: 5vh;
+}
+.Home_stepChapterWrapper a {
+  text-decoration: none;
+}
+.Home_stepChapterWrapper a:hover {
+  text-decoration: underline;
+}

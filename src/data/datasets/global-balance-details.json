@@ -1,7 +1,8 @@
 {
-  "id": "global-balance-detail",
+  "id": "GlobalBalanceDetails",
   "title": "Global population balance and its components",
   "timeformat": "YYYY",
+  "translationLabel": "",
   "legend": {
     "t": "year",
     "v": "solde global",

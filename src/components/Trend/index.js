@@ -1,1 +1,1 @@
-export { default } from './Trend';
+export { default } from './Trend'

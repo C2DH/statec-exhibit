@@ -14,7 +14,6 @@ class TrendAxisLeftGraphics extends React.Component {
       scale,
       numTicks,
       axisOffsetLeft,
-      fontSize,
       width,
     } = this.props
 
@@ -31,8 +30,7 @@ class TrendAxisLeftGraphics extends React.Component {
           tickLabelProps={(value, index) => ({
             fill: 'rgba(0,0,0,.5)',
             textAnchor: 'end',
-            fontSize,
-            fontFamily: 'Porpora',
+            fontSize: 12,
             dx: '-1vw',
             dy: '.5vh',
           })}

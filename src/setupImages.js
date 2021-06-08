@@ -8,8 +8,6 @@ const targetPath = 'public/media/images'
 const mediaUrl = '/media/images'
 const mediaIndexPath = 'src/media/index.json'
 const targetParams = [
-  ['thumb-w', 250, null],
-  ['thumb-h', null, 250],
   ['medium-w', 640, null],
   ['medium-h', null, 480],
   ['large-w', 1080, null],
@@ -46,7 +44,7 @@ fs.readdir(sourcePath, async(err, files) => {
       const [size, width, height] = param
       const targetFilename = `${filename.replace(/\.[a-zA-Z]+$/, '')}.${size}.jpg`
       const targetFilepath = path.join(targetPath, targetFilename)
-      console.log(sourceFilepath, size, targetFilepath);
+      console.log(sourceFilepath, `--> [${size}] ${targetFilepath}`)
       mediaIndex.images[filename].resolutions[size] = {
         url: path.join(mediaUrl, targetFilename),
         params: { size, width, height }
@@ -54,6 +52,10 @@ fs.readdir(sourcePath, async(err, files) => {
       await sharp(sourceFilepath)
         .resize({ width, height })
         .toFile(targetFilepath)
+        .then((info) => {
+          mediaIndex.images[filename].aspectRatio = info.width / info.height
+          mediaIndex.images[filename].isPortrait = info.width < info.height
+        })
     }
   }
 

@@ -1,13 +1,13 @@
 {
   "id": "family",
   "chapterIndex": "2",
-  "title": "Famille et Ménage",
-  "dataset": "population",
+  "title": "Famille et ménage",
+  "dataset": "population-natural-growth-details",
   "backgroundColor": "var(--theme-02)",
   "cover": {
     "url": "/2.cap2.jpg",
-    "caption": "Bus at the border between Luxembourg and France in 1948",
-    "source": "Foto: Gösta Nordin. Date: 1948. Photo Nr: 2218-96, Stockholm Transport Museum"
+    "caption": "Groupe de personnes, fête de famille, baptême devant une ferme.",
+    "source": "Archives de la Ville de Dudelange - Fonds Jean-Pierre Conrardy"
   },
   "introductions": [
     {
@@ -17,44 +17,73 @@
   "modules": [
     {
       "title": "Naissance: un taux de natalité en baisse sur deux cents ans",
-      "subheading": "",
-      "from": 1840,
-      "to": 2014,
-      "layout": "text",
-      "datasetHeading": "population-natural-growth-details",
-      "datasetTrend": "v1",
-      "datasetAdditionalTrends": ["v"],
-      "datasetAdditionalTrendsColors": ["var(--primary)"],
-      "datasetHeadingAdditionalTrends": [],
-      "datasetHeadingAdditionalTrendsColors": [],
-      "datasetHeadingValueFrom": -5,
-      "datasetHeadingValueTo": 45,
-      "moduleHotspots": [
-        { "t": 1845 },
-        { "t": 1880 },
-        { "t": 1929 },
-        { "t": 1965 }
-      ],
       "paragraphs": [
         {
           "from": 1840,
           "to": 1890,
-          "text": "Le milieu des années 1840 connaît une baisse de la natalité. Ce sont les conditions de vie difficiles (faibles récoltes) qui contribuent à expliquer ces baisses ponctuelles, qui se répètent d'ailleurs dans les années 1850. Plus les conditions sont difficiles, plus la natalité diminue. D'une manière générale, les variations de la natalité sont plus importantes avant les années 1880, c'est-à-dire avant la véritable industrialisation et  l'augmentation du niveau de vie qui l'accompagne.",
+          "keys": ["v1"],
+          "text": "Le milieu des années 1840 connaît une baisse de la natalité. Ce sont les conditions de vie difficiles (faibles récoltes) qui contribuent à expliquer ces baisses ponctuelles, qui se répètent d'ailleurs dans les années 1850. Plus les conditions sont difficiles, plus la natalité diminue. <br/><br/>D'une manière générale, les variations de la natalité sont plus importantes avant les années 1880, c'est-à-dire avant la véritable industrialisation et  l'augmentation du niveau de vie qui l'accompagne.",
           "cover": { "id": "statec_002.png" }
         },
         {
           "from": 1891,
           "to": 1954,
+          "keys": ["v1"],
           "text":"Dans le premier tiers du 20e siècle, la natalité connaît deux chutes importantes. Une première autour de la Première Guerre mondiale qui l'amène à environ 20 pour mille vers 1920. Après s'être maintenue légèrement au-dessus de 20 pour mille pendant la prospérité des années 1920, la natalité amorce vers 1930 une nouvelle chute accélérée par la crise économique."
         },
         {
           "from": 1955,
           "to": 1980,
+          "keys": ["v1", "v"],
           "text":"A partir du milieu des années 1960, le taux de natalité entame une nouvelle baisse sensible. Des phénomènes de société - ce la démocratisation des moyens de contraception et la diffusion du modèle familial avec moins de 3 enfants - contribuent à expliquer ce phénomène. Comme la mortalité ne baisse pas, le solde naturel devient <b>négatif</b> au cours des années 1972-1978, même si ce n'est que légèrement. C'est l'époque où certains, comme le directeur du STATEC, Georges Als, évoquent la thèse du \"suicide démographique\" du Luxembourg."
         }, {
           "from": 1981,
           "to": 2014,
+          "keys": ["v1"],
           "text":"Que le taux de natalité augmente de nouveau à partir de la fin des années 1980 est d'abord dû à un - léger -  changement du comportement  démographique, mais aussi au fait que la population immigrée est plutôt jeune et en état de procréer et que celle-ci a par ailleurs une fécondité plus élevée que la population autochtone."
+        }
+      ]
+    },
+    {
+      "title": "Mariages",
+      "from": 1840,
+      "to": 2014,
+      "layout": "text",
+      "datasetHeading": "b304-weddings-divorces",
+      "datasetTrend": "v",
+      "datasetAdditionalTrends": ["v"],
+      "datasetAdditionalTrendsColors": ["var(--primary)"],
+      "datasetHeadingAdditionalTrends": [],
+      "datasetHeadingAdditionalTrendsColors": [],
+      "datasetHeadingValueFrom": 0,
+      "datasetHeadingValueTo": 20,
+      "datasetValueFrom": 150000,
+      "datasetValueTo": 800000,
+      "paragraphs": [
+        {
+          "from": 1840,
+          "to": 1859,
+          "text": "Le nombre de mariages est important au milieu du 19ème siècle rapporté à la population (autour de 7 -8 par 100 000 habitants et par année). Sans perspectives \"positives\", les mariages tendent à se tasser et les variations du taux dans les années 1840 et 1850 sont liées aux conditions de vie difficiles et changeantes (selon les récoltes, notamment)."
+        },
+        {
+          "from": 1860,
+          "to": 1880,
+          "text": "Le taux de mariage est lié à la structure de la population. Plus la population est jeune (en âge de se marier), plus le taux de nuptialité est élevé. Le tassement du taux de nuptialité dans les années 1860-1880 est probablement lié au départ de nombreux jeunes à l'étranger (émigration)."
+        },
+        {
+          "from": 1881,
+          "to": 1959,
+          "text": "Le taux de nuptialité est également marqué par les deux guerres mondiales. Après des chutes impressionnantes de ce taux au début des guerres, la fin des deux guerres est marquée au contraire par un effet de \"récupération\"."
+        },
+        {
+          "from": 1960,
+          "to": 1974,
+          "text": "Avec les années 1960, vient une époque où l'âge au mariage recule et où les modes de cohabitation se diversifient avec des formes peu codifiées (\"unions libres\") et plus récemment où le mariage puis dans un deuxième temps dans une forme plus codifiée qu'est l'union civile (PACS)."
+        },
+        {
+          "from": 1975,
+          "to": 2014,
+          "text": "L'âge au premier mariage augmente fortement et le temps passé en vivant seul augmente. Au milieu des années 1970, l'âge au premier mariage est de moins de 26 ans pour les hommes et de 23 ans pour les femmes. Aujourd’hui cet âge moyen au premier mariage est de 34 ans pour les hommes et de près de 32 ans pour les femmes ."
         }
       ]
     },
@@ -62,21 +91,49 @@
       "title": "Divorces",
       "subheading": "",
       "from": 1840,
-      "to": 1900,
+      "to": 2014,
       "layout": "text",
-      "datasetHeading": "population-balance-details",
+      "datasetHeading": "b304-weddings-divorces",
+      "datasetTrend": "v3",
       "datasetAdditionalTrends": ["v"],
       "datasetAdditionalTrendsColors": ["var(--primary)"],
-      "datasetAdditionalTrendsColors": ["var(--primary)"],
-      "datasetHeadingAdditionalTrends": ["v", "v1"],
-      "datasetHeadingAdditionalTrendsColors": ["var(--primary)", "black"],
-      "datasetHeadingValueFrom": -8000,
-      "datasetHeadingValueTo": 18000,
+      "datasetHeadingAdditionalTrends": ["v3"],
+      "datasetHeadingAdditionalTrendsColors": ["var(--primary)"],
+      "datasetHeadingValueFrom": 0,
+      "datasetHeadingValueTo": 2000,
+      "datasetValueFrom": 150000,
+      "datasetValueTo": 800000,
       "moduleHotspots": [
         { "t": 1840 },
         { "t": 1866 }
       ],
-      "paragraphs": []
+      "paragraphs": [
+        {
+          "from": 1840,
+          "to": 1859,
+          "text": "divorce : catégorie juridique et aussi statistique dès le début du 19e siècle"
+        },
+        {
+          "from": 1860,
+          "to": 1900,
+          "text": "raconter un divorce au 19e siècle"
+        },
+        {
+          "from": 1918,
+          "to": 1939,
+          "text": "divorce croissant dans l’entre-deux-guerres mais difficultés pour les femmes. « retard » luxembourgeois : Lucile Bodson et Jordane Segura, « Le divorce au Luxembourg en droit et en chiffres », Les Cahiers du CEPS/Instead, 2010, no 1, p. 7."
+        },
+        {
+          "from": 1965,
+          "to": 1979,
+          "text": "la rupture législatif des années 1970"
+        },
+        {
+          "from": 1980,
+          "to": 2014,
+          "text":"aujourd’hui autant de divorces par autant de mariages"
+        }
+      ]
     },
     {
       "title": "Composition des menages",
@@ -92,6 +149,8 @@
       "datasetHeadingAdditionalTrendsColors": ["var(--primary)", "black"],
       "datasetHeadingValueFrom": -8000,
       "datasetHeadingValueTo": 18000,
+      "datasetValueFrom": 150000,
+      "datasetValueTo": 800000,
       "moduleHotspots": [
         { "t": 1840 },
         { "t": 1866 }

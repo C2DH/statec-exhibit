@@ -1,74 +1,32 @@
-import React from 'react';
-import { isMobileWithTablet } from '../../constants';
+import React from 'react'
+import {animated} from 'react-spring'
 
-class TrendLegend extends React.Component {
-  shouldComponentUpdate(nextProps) {
-    return nextProps.value?.t !== this.props.value?.t;
-  }
+const TrendLegend = ({ pointer, scaleX , left, top, marginLeft, marginTop}) => {
+  console.info('rendering TrendLegend', pointer)
 
-  render() {
-    const {
-      title,
-      progress,
-      value,
-      valueKey = 'v',
-      legend,
-      additionalTrends = [],
-      additionalTrendsColors = [],
-      t,
-      direction,
-    } = this.props;
-    if (!progress || !value) {
-      return null;
-    }
-    const mainValue = value[valueKey];
-    const filteredAdditionalTrends = additionalTrends
-      .map((k, i) => ({
-        k,
-        color: additionalTrendsColors[i],
-      }))
-      .filter((d) => d.k !== valueKey);
+  const getYear = (p) => p.x.to((n) => {
+    return scaleX.invert(n - left - marginLeft).getFullYear()
+  })
 
-    return (
-      <div
-        className="moduleProgress TrendLegend"
-        style={{
-          marginLeft: 0,
-          marginTop: isMobileWithTablet ? '20px' : 0,
-          height: isMobileWithTablet ? '48px' : 'auto',
-        }}
-      >
-        <span
-          className=""
-          style={{
-            color: 'var(--secondary)',
-          }}
-        >
-          {title}&nbsp;{direction ? '↑' : '↓'}&nbsp;
-        </span>
-        <span>
-          <span className="underline mr2">{t('number', { n: mainValue })}</span>
-          <span>{legend ? legend[valueKey] : null} </span>
-        </span>
-        <span
-          style={{
-            color: 'rgba(0, 0, 0, 0.5)',
-          }}
-        >
-          {filteredAdditionalTrends.map(({ k, color }, i) => (
-            <span key={i} style={{ color }}>
-              &nbsp;&middot;&nbsp;
-              <span style={{ textDecoration: 'underline' }}>
-                {t('number', { n: value[k] })}
-              </span>
-              &nbsp;
-              <span>{legend[k]}</span>
-            </span>
-          ))}
-        </span>
-      </div>
-    );
-  }
+
+  return (
+    <animated.div className="TrendLegend absolute" style={{
+      position: 'absolute',
+      width: 50,
+      top: 0,
+      marginLeft: -25,
+      textAlign: 'center',
+      transform: pointer.x.interpolate((x) => `translate(${x - left}px, 0px)`),
+    }}>
+      <animated.span className="pv1 ph2" style={{
+        color: 'var(--primary)',
+        borderRadius: 2,
+        backgroundColor:'var(--secondary)'
+      }}>
+        {getYear(pointer)}
+      </animated.span>
+    </animated.div>
+  )
 }
 
-export default TrendLegend;
+export default TrendLegend

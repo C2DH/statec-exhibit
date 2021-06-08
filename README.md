@@ -19,90 +19,29 @@ The `NGINX_PORT` env variable is required (you can use a .env file)
 Firstly, create a build using the make command `make run-build-noindex`.
 To quickly deploy a version on netlify using `nelify deploy`, add a `.netlify/state.json` file containing the correct siteId according to [Netlify documentation](https://docs.netlify.com/cli/get-started/#link-and-unlink-sites).
 
-## How to add a visualisation module:
-1. In `data/themes/theme-01.json` each module in modules has a `layout` property. To add a new `layout` property, e.g; `newLayout`: puts its string value and a corresponding react component in `ChapterGraphicCointainer`:
+## Style notes for developers
+All styles are defined in the `.scss` files under the `/styles` folder and under the
+folder according to their role. Ideally every page and every component will be styled respectively
+in `/styles/pages` and `/styles/components` folders.
+All pages and components displays a css class corresponding to their class name, capitalized
+e.g. "Header". If the components have nidified DOM elements that require style, they are named
+with the capitalized classname as prefix, e.g. `Header_sideLink`.
 
-        const NewLayoutModule = lazy(() => import('../Module/NewLayoutModule'))
-        // [...]
-        const AvailableModules = {
-          newLayout: NewLayoutModule,
-        }
+We use [tachions](https://tachyons.io/) as css toolkit using all breakpoints.
+Tachyons base classes are mobile by default, and adds 3 additional breakpoints:
+-ns ‘not small’, media query is screen and (min-width: 30em)
+-m ‘medium’, media query is screen and (min-width: 30em) and (max-width: 60em)
+-l ‘large’, media query is screen and (min-width: 60em)
 
-2. The react component in /Module/NewLayoutModule will then get the following properties:
+We use spacer 3 for small, 4 for medium and unsurprisingly 5 for large.
 
-       const NewLayoutModule = ({
-         startDate, endDate,
-         title, subheading, scaleX, module, progress, currentDate, currentYear, paragraphs
-       }) => {
-         // [...]
-       }
+## Contents
 
+### How to change the title of a chapter?
+Change the `title` property in the chapter file `./data/themes/<theme id>.json`; then verify
+the route label in the `./src/constants.js` file: there, every chapter route
+has both a link and a label. The label refers to the translatable property in the translations.json file
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `yarn start`
-
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+```javascript
+const ChapterRouteFamily = { to:'/family', label: 'ChapterRouteFamily'}
+```

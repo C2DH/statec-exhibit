@@ -1,11 +1,10 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
-import { ChapterRoutesWithIndex, isMobileWithTablet } from '../../constants'
-// import {Link} from 'react-router-dom'
-import styles from '../../pages/Home.module.css';
+import { ChapterRoutesWithIndex } from '../../constants'
+import {Link} from 'react-router-dom'
 
 
-const ChapterFooter = ({ chapterIndex }) => {
+const ChapterFooter = ({ chapterIndex=0, isMobileWithTablet=true }) => {
   const { t } = useTranslation()
   const idx = parseInt(chapterIndex, 10)
   const isLast = idx === ChapterRoutesWithIndex.length - 1
@@ -16,11 +15,11 @@ const ChapterFooter = ({ chapterIndex }) => {
 
   return (
     <div className="flex items-center justify-center" style={{marginTop:'10vh', height: '100vh'}}>
-      <div className={`${styles.stepChapterWrapper} tc`}>
+      <div className="stepChapterWrapper tc">
         { nextRoute && (
           <>
             <h2
-              className={`${styles.chapterNumber} sans f2-ns`}
+              className="chapterNumber sans f2-ns"
               style={{
                 fontSize: isMobileWithTablet ? '4.5vw' : '2.5vw',
               }}
@@ -28,19 +27,19 @@ const ChapterFooter = ({ chapterIndex }) => {
             {t('nextChapter')}
             </h2>
             <h2
-              className={`${styles.chapterTitle}`}
+              className="chapterTitle"
               style={{
                 fontSize: isMobileWithTablet ? '9vw' : '4.5vw',
                 marginTop: '10px',
                 marginBottom: '80px',
               }}
-            ><a href={nextRoute.to}>{t(nextRoute.label)}</a></h2>
+            ><Link to={nextRoute.to}>{t(nextRoute.label)}</Link></h2>
           </>
         )}
         {idx > 1 && (
           <>
             <h2
-              className={`${styles.chapterNumber} sans f2-ns`}
+              className="chapterNumber sans f2-ns"
               style={{
                 fontSize: isMobileWithTablet ? '4.5vw' : '2.5vw',
               }}
@@ -48,13 +47,13 @@ const ChapterFooter = ({ chapterIndex }) => {
             {t('previousChapter')}
             </h2>
             <h2
-              className={`${styles.chapterTitle}`}
+              className="chapterTitle"
               style={{
                 fontSize: isMobileWithTablet ? '9vw' : '4.5vw',
                 marginTop: '10px',
                 marginBottom: '80px',
               }}
-            ><a href={previousRoute.to}>{t(previousRoute.label)}</a></h2>
+            ><Link to={previousRoute.to}>{t(previousRoute.label)}</Link></h2>
           </>
         )}
         <div className="flex items-center justify-center ph4 mv4 mv3-ns">
