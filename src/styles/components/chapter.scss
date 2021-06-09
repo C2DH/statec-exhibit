@@ -54,11 +54,13 @@
   font-size: 1.5rem;
   line-height: 1.25;
 }
-
+.Chapter{
+  counter-reset: chapterStream_module;
+}
 .ChapterStream{
   width: 100%;
   // border-right: 1px solid;
-  counter-reset: chapterStream_module;
+  // counter-reset: chapterStream_module;
 }
 .ChapterStream_module{
   counter-reset: chapterStream_paragraph;
@@ -201,6 +203,7 @@
   position: absolute;
   display: none;
   font-size: 12px;
+  line-height: 15px;
   background-color: var(--secondary);
   color: var(--primary);
   padding-left: 3px;
@@ -210,14 +213,14 @@
   // border: 1px solid;
 }
 .ChapterModulesGraphics_value_startDate{
-  top: -20px;
+  top: -17px;
   left: 0px;
 
   // border-left: 1px solid;
 }
 .ChapterModulesGraphics_value_endDate{
   right: 0px;
-  top: 8px;
+  top: 7px;
   text-align: right;
   // border-right: 1px solid;
 }
