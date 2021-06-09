@@ -8,7 +8,7 @@ const scaleX = scaleTime()
   .domain([StartDate, EndDate])
   .range([0, 100]);
 
-const ChapterModulesGraphics = ({ modules=[], timeFormat='YYYY', step}) => {
+const ChapterModulesGraphics = ({ numStartAt=0, modules=[], timeFormat='YYYY', step}) => {
   const values = useMemo(() => {
     return modules.reduce((acc, mod, i) => acc.concat(mod.paragraphs.map((par, j) => {
       const from = par.from
@@ -23,10 +23,10 @@ const ChapterModulesGraphics = ({ modules=[], timeFormat='YYYY', step}) => {
         x: scaleX(from),
         w: scaleX(to) - scaleX(from),
         moduleId: i,
-        paragraphId: getParagraphIdFromIndices(i,j)
+        paragraphId: getParagraphIdFromIndices(i+numStartAt,j)
       }
     })), [])
-  }, [modules, timeFormat])
+  }, [modules, timeFormat, numStartAt])
 
   return (
     <div className="ChapterModulesGraphics">
@@ -36,7 +36,7 @@ const ChapterModulesGraphics = ({ modules=[], timeFormat='YYYY', step}) => {
       <div className="ChapterModulesGraphics_endDate">
         <span>{EndDate.year()}</span>
       </div>
-      <div className="ChapterModulesGraphics_rail" style={{height: modules.length * 10 + 20}}>
+      <div className="ChapterModulesGraphics_rail" style={{height: Math.max(50,modules.length * 10 + 20)}}>
 
       {values.map((value) => (
         <a href={`#p${value.paragraphId}`} key={value.paragraphId}
