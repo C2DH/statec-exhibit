@@ -56,7 +56,7 @@ const Home = () => {
         <h2 className="fw1 lh-title tc mt3" style={{
           fontSize: isMobileWithTablet ? '4vw' : '2vw'
         }}>
-          <span>{t('pagesHomeSubheading')}</span>
+          <span dangerouslySetInnerHTML={{__html: t('pagesHomeSubheading')}}/>
         </h2>
         <div
           className="fw1 lh-title tc mt5"
