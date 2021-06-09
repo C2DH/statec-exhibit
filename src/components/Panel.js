@@ -30,7 +30,7 @@ const Panel = ({ name='table-of-contents', children, left=false, color='white' }
       transform: `translateX(${isOpen ? 0 : (left ? 100 : -100)}%)`,
     }}>
       <button className={`Panel_closeButton absolute pa3 bg-transparent bw0 ${left ? 'right-0': 'left-0'}`} onClick={() => history.replace({ search: null })}>
-        {left ? <ArrowRightCircle size={25} color={color}/> : <ArrowLeftCircle size={25} color={color}/> }
+        {left ? <ArrowRightCircle strokeWidth={1} size={25} color={color}/> : <ArrowLeftCircle strokeWidth={1} size={25} color={color}/> }
       </button>
       <button className={`Panel_closeButton absolute pa3 bg-transparent bw0 ${left ? 'left-0': 'right-0'}`} onClick={() => history.replace({ search: null })}>
         <X size={25} color={color}/>
