@@ -481,7 +481,7 @@
       "isPortrait": true
     },
     "statec_011.tif": {
-      "caption": "Distribution d'oeufs et de sucre dans la ville de Luxembourg pendant la première Guerre Mondiale suite à l'introduction du rationnement par le gouvernement",
+      "caption": "Distribution d'oeufs et de sucre dans la ville de Luxembourg pendant la Première Guerre mondiale suite à l'introduction du rationnement par le gouvernement.",
       "provenance": "© Photothèque de la Ville de Luxembourg/Théo Wirol",
       "resolutions": {
         "medium-w": {
@@ -801,8 +801,8 @@
       "isPortrait": false
     },
     "statec_019.jpg": {
-      "caption": "Couverture du livre <a href='https://www.land.lu/page/book/5/FRE/index.html' target='_blank'><em>Cette colonie qui nous appartient un peu</em> - La communauté luxembourgeoise au Congo belge 1883-1960</a> de Régis Moes",
-      "provenance": "Éditions d’Lëtzebuerger Land/Fondation Robert Krieps, 2012",
+      "caption": "Couverture du livre <a href='https://www.land.lu/page/book/5/FRE/index.html' target='_blank'><em>Cette colonie qui nous appartient un peu</em> - La communauté luxembourgeoise au Congo belge 1883-1960</a> de Régis Moes. Éditions d’Lëtzebuerger Land/Fondation Robert Krieps, 2012",
+      "provenance": "CEGES, Fonds André Cauvin, n°135693",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/statec_019.medium-w.jpg",
@@ -979,7 +979,7 @@
       "base64": "data:image/png;base64,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"
     },
     "courriergdl-1866-04-15-a-i0004.png": {
-      "caption": "\"Aux habitants de la ville de Luxembourg!\" article paru dans Courrier du Grand-Duché de Luxembourg · Sunday, April 15, 1866",
+      "caption": "\"Aux habitants de la ville de Luxembourg!\" article paru dans Courrier du Grand-Duché de Luxembourg, dimanche 15 avril 1866.",
       "provenance": "BnL",
       "resolutions": {
         "medium-w": {

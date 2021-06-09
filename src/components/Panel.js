@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import { useStore } from '../store'
 import { useHistory, useLocation } from 'react-router-dom'
 import { useCurrentWindowDimensions } from '../hooks'
 import { ArrowLeftCircle, ArrowRightCircle, X } from 'react-feather'

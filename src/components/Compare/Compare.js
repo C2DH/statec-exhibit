@@ -10,7 +10,7 @@ const Compare = ({
     return null
   }
   const keyToCompareWith = groupValues[0].key
-  const columns = groupValues[0].values.length
+  // const columns = groupValues[0].values.length
   return (
     <div
       className="Compare dt pl4 w-100"

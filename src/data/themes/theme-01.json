@@ -13,7 +13,7 @@
   },
   "introductions": [
     {
-      "text": "La population du Luxembourg a plus que triplé depuis 1839 (date de l'indépendance du pays). De quelque 170.000 habitants en 1839, la population du Grand-Duché passe à plus de 600.000 aujourd'hui."
+      "text": "La population du Luxembourg a plus que triplé depuis 1839 (date de l'indépendance du pays). De quelque 170.000 habitants en 1839, la population du Grand-Duché est passée à plus de 600.000 aujourd'hui."
     }
   ],
   "modules": [
@@ -136,7 +136,7 @@
           "from": 1950,
           "to": 1970,
           "visibleKeys": ["v2"],
-          "text": "À partir des années 1960, le Luxembourg devient largement un pays d'immigration avec un solde migratoire positif important. D'abord immigration allemande (sidérurgie/mines), puis italienne à partir de la fin du 19ème siècle (sidérurgie/mines) et jusque dans les années 1960.",
+          "text": "À partir des années 1960, le Luxembourg devient largement un pays d'immigration avec un solde migratoire positif important. D'abord immigration allemande (sidérurgie/mines), puis italienne à partir de la fin du 19ème siècle et jusque dans les années 1960.",
           "figures": [{ "id": "statec_015.png" }]
         },
         {
@@ -162,20 +162,20 @@
           "from": 1880,
           "to": 1890,
           "visibleKeys": ["v2"],
-          "text": "Les années 1880 sont plutôt une période d'expansion économique due notamment à développement de la sidérurgie qui profite de l'invention du <a href='https://fr.wikipedia.org/wiki/Proc%C3%A9d%C3%A9_Thomas' target='_blank'>procédé Thomas-Gilchrist</a> permettant la transformation de la fonte phosphoreuse, produite à partir de la minette luxembourgeoise, en acier de bonne qualité. <br/><br/>L'émigration continue cependant à atteindre un niveau important, ce qui explique un solde migratoire négatif. C'est le signe que les mouvements migratoires ne résultent pas seulement le l'évolution économique au Grand-Duché, mais également de l'attrait d'autres pays.",
+          "text": "Les années 1880 sont plutôt une période d'expansion économique due notamment à développement de la sidérurgie qui profite de l'invention du <a href='https://fr.wikipedia.org/wiki/Proc%C3%A9d%C3%A9_Thomas' target='_blank'>procédé Thomas-Gilchrist</a> permettant la transformation de la fonte phosphoreuse, produite à partir de la minette luxembourgeoise, en acier de bonne qualité. <br/><br/>L'émigration continue cependant à atteindre un niveau important, ce qui explique un solde migratoire négatif. C'est le signe que les mouvements migratoires ne résultent pas seulement l'évolution économique au Grand-Duché, mais également de l'attrait d'autres pays.",
           "figures": [{ "id": "statec_010.png" },{ "id": "statec_009.png" }]
         },
         {
           "from": 1890,
           "to": 1900,
           "visibleKeys": ["v2"],
-          "text": "Pour la première fois depuis l'indépendance du pays, le solde migratoire, l'excès des arrivées sur les départs, devient résolument positif à la fin des années 1890, résultat logique du développement économique qui a pris de la vitesse dans le pays. <br/><br/>En ce qui concerne la composition de l'immigration, jusque dans les années 1890, elle est constituée majoritairement d'Allemands travaillant soit dans la sidérurgie soit dans les mines de fer. Puis les Italiens, souvent des ouvriers mobiles (célibataires ou non-accompagnés par leurs familles), prennent le relais. En 1910, il y a environ 60% plus d'hommes que de femmes étrangères au Luxembourg."
+          "text": "Pour la première fois depuis l'indépendance du pays, le solde migratoire, l'excès des arrivées sur les départs, devient résolument positif à la fin des années 1890, résultat logique du développement économique qui a pris de la vitesse dans le pays. <br/><br/>En ce qui concerne la composition de l'immigration, jusque dans les années 1890, elle est constituée majoritairement d'Allemands travaillant soit dans la sidérurgie soit dans les mines de fer."
         },
         {
           "from": 1880,
           "to": 1914,
           "visibleKeys": ["v2"],
-          "text": "Avant la Première Guerre mondiale, un nombre de plus en plus important d'Italiens arrivent au Luxembourg souvent comme ouvriers avec une grande mobilité (célibataires ou non-accompagnés par leurs familles). <br/><br/>La part de la population étrangère dans la population résidente est passée de 3% en 1871 à plus de 15% en 1910.",
+          "text": "Puis les Italiens, souvent des ouvriers mobiles (célibataires ou non-accompagnés par leurs familles), prennent le relais. La part de la population étrangère dans la population résidente est passée de 3% en 1871 à plus de 15% en 1910. En 1910, il y a environ 60% plus d'hommes que de femmes étrangères au Luxembourg.",
           "figures": [{ "id": "statec_003.png" }]
         },
         {
@@ -216,12 +216,12 @@
           "datasetKeys": ["v1", "v2", "v3", "v4", "v5", "v6"],
           "datasetLayout": "Compare"
         }, {
-          "from": 1970,
-          "to": 1991,
+          "from": 1980,
+          "to": 2015,
           "visibleKeys": ["v2"],
           "text": "C'est l'immigration du Portugal - pays avec lequel un traité de main-d'oeuvre est signée - qui prend le relais. Il s'agit essentiellement d'une immigration familiale. C'est cette immigration qui permet de répondre notamment à la demande de main-d'oeuvre dans le secteur de la construction.",
           "dataset": "PopulationCompositionByNationalities",
-          "datasetKeys": ["v1", "v2", "v3", "v4", "v5", "v6"],
+          "datasetKeys": ["v1", "v2"],
           "datasetLayout": "Compare",
           "hotspots": [
             {
