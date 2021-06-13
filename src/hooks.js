@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
+import { useLocation } from 'react-router-dom'
 
 const getWidth = () => window.innerWidth
   || document.documentElement.clientWidth
@@ -134,3 +135,8 @@ export function useMousePosition() {
   }, []);
   return mousePosition;
 };
+
+
+export const useURLSearchParams = () => {
+  return new URLSearchParams(useLocation().search);
+}
