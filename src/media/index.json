@@ -481,7 +481,7 @@
       "isPortrait": true
     },
     "statec_011.tif": {
-      "caption": "Distribution d'oeufs et de sucre dans la ville de Luxembourg pendant la première Guerre Mondiale suite à l'introduction du rationnement par le gouvernement",
+      "caption": "Distribution d'oeufs et de sucre dans la ville de Luxembourg pendant la Première Guerre mondiale suite à l'introduction du rationnement par le gouvernement.",
       "provenance": "© Photothèque de la Ville de Luxembourg/Théo Wirol",
       "resolutions": {
         "medium-w": {
@@ -801,8 +801,8 @@
       "isPortrait": false
     },
     "statec_019.jpg": {
-      "caption": "Couverture du livre <a href='https://www.land.lu/page/book/5/FRE/index.html' target='_blank'><em>Cette colonie qui nous appartient un peu</em> - La communauté luxembourgeoise au Congo belge 1883-1960</a> de Régis Moes",
-      "provenance": "Éditions d’Lëtzebuerger Land/Fondation Robert Krieps, 2012",
+      "caption": "Couverture du livre <a href='https://www.land.lu/page/book/5/FRE/index.html' target='_blank'><em>Cette colonie qui nous appartient un peu</em> - La communauté luxembourgeoise au Congo belge 1883-1960</a> de Régis Moes. Éditions d’Lëtzebuerger Land/Fondation Robert Krieps, 2012",
+      "provenance": "CEGES, Fonds André Cauvin, n°135693",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/statec_019.medium-w.jpg",
@@ -979,7 +979,7 @@
       "base64": "data:image/png;base64,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"
     },
     "courriergdl-1866-04-15-a-i0004.png": {
-      "caption": "\"Aux habitants de la ville de Luxembourg!\" article paru dans Courrier du Grand-Duché de Luxembourg · Sunday, April 15, 1866",
+      "caption": "\"Aux habitants de la ville de Luxembourg!\" article paru dans Courrier du Grand-Duché de Luxembourg, dimanche 15 avril 1866.",
       "provenance": "BnL",
       "resolutions": {
         "medium-w": {
@@ -1222,8 +1222,8 @@
       "isPortrait": false
     },
     "0.landing.jpg": {
-      "caption": "",
-      "provenance": "",
+      "caption": "Recensement de la population 1960 : Navetteurs* entrant dans la Ville de Luxembourg par commune de résidence.",
+      "provenance": "Date: 1967, Service central de la statistique et des études économiques.",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/0.landing.medium-w.jpg",
@@ -1258,7 +1258,7 @@
           }
         }
       },
-      "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAUCAIAAABj86gYAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFDUlEQVQ4yzWVCVMaWRSF+XEzlVRW4xgzBoIbQQQFBGSRvWnAFaMoIOrMXwsN9PYaf8N8t3GquqwW3rvn3HPOvQScbs69LC0e9MW4vXjsePd1b9CUf0ct70H3RvIiz4NuHUe8+4aVi0z+/jBPhd2zvDfSFo/txQMHOCnH5C4vlPIrLMZ6QF2X3dPcy7/nTifrtDOc4Kh3V/duq/J+V+foy2NnefnluWsVo/PDsJnanKy9dXsl1a9xwBtqrzx8cnYjSVnrJGZVEwF133D0I/c8T3X+QkpOS9G2e1mwm0nqmrldq7QveP2q00g6p8ezeNAux71+3Qh+QoOXp6438C+OdfWrzOPdNbzbmrooBtRIc39VUMlppaXZsb4YauqyCBdYQEr1ypONj7PED+nppqJ6J+q2ZrdSyGXXD830tvC9qS6VsZspY3NV3VSg6HZzFKSDJhjqrgEvMx9BLs5Ry64dTDe/UMW9KMyi3+aHP0Sif06tfHS6u2ZBH7Cr4mKkWaU9EdmX0T0vOHoGYXFolgjZrbQPMNScs7xzmnOvSktweheMZtI62UOECTpgz10DbDOz/Xv1DR96v6q06+EBlo7FBsxDdzAkLEPfjNpBwL1rYIOinJYCwK4kHC2FvgKDoHhV3JPYpLcWz92Xp46Z2fm99tZppSQ/jx339HieDPvetlS/bpX33bNjicl9gwqYIQBuv45EhBK3jfCKebQtaXtsK4msxgVUMrO7mKQuC7PYxnTnLwjB2u1kJ6FPk2/vRCvwsAG3/VAtc4X/PsBtze3XFABneZIDPnwlJDdVOhCH94O0ZVVidj2BH+ZxhHYRxyrFbC3NOzFzL4tS+t5Pud8BziPX/wCEFX1a6eV32GuEVqz8T+oa3z8awc/TyFfatyv71vGuXYvP0+HpzhrcRdVqYrLxwWmmRPpB0yWmt1WrsAcqXr4CYANcgFHilQSDcrwgKwM4T/6YJYKz+He7HMNk+bYaN3OR2UEI4pi8zK6QG2rUhaiMbeuIngIYIE+vbGEyQmHGsAWyJIp5Ae9Bn+5+nYZXmGFHS86PtujJ1rncwt55dscbNCAOMwIp4Xlso56ElbgPNQAwoM6ASFI7OcVkicMd3sXtkYSPBLMS3LMcqXX09DSyPll/Z+aj+EQ3MuEAcNFPKt0wejb0/e0CQBUAq54EQw2Qq8pgK9lCDXV9gh+Sh+fusn2rHGNQ7Mbh5OtbMJg4dVWCsntdZk7diyJF2D9229eHItIBFUct+UjPqHF7nghalbjQYWoq+8zX4qkDI5KD1qQLrdV1xQh/YRpm0XVugWe3M5xEA7MQxUuTdHUyVFfLDqgOrHNRILYmyTnPy+iRB2Lar7HA2Tkyhr0TY+M93gA8/bk+PwhJf2NdzO9kveeuC+Wx7vRKktrr8lLtgK2niYRkbuO9sbVqVg/m6U2+EAA8x/CH1nKHY+nvlT/oZrb/3Qh/BttC67M8ZOdH2wC7A2hpZF92sE8fogG7EqdHI/TJIMs0cV5YgpM/q5KANXl16HekMRP0Ryvcx0PyI5OhpYiyEfrMJ8pf9e71iVU7kO3wKlGP+Upx1CpFjeDHeXJT1p+/AREUKaaxDat2SC4lSIwre41VfFtlDuQn5LLotLMMIHWVP8MUhSjb5VUi96bsEgwt5XSz060v9mnevW9yXwRZ/dMs/FRPHRYv6xo8rCbdYCOUQ+mrEs/SMAk6U01YeifIhZ0S8UHzP+LHvJdH74/qAAAAAElFTkSuQmCC",
+      "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAUCAIAAABj86gYAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEkklEQVQ4y02Vh1LjWBBF/ac7OztkiiEYG0dhHCXZHowJxiRnmPkzlN57+oI9/cRWbZWLkuUOt++93eT046V+bqVr36z9dNM3S9csPbPyzcoz9qW8tz8l/fN06Sb+eXDxI+6d6mkzXfnp+0ByJd6GLT35uumn636WldOvbXqkf36piaMfHFvdM4uemXWk2bybbqhio5du+jFMhsW4e0KDIP/dvLQkcm3RZB9iNn11WzWv7eTXRTIq5fTCVfd1Pb3SNHi6MmvvC/vG189NCV15oCZaes+7vNHTRtT6mVyXqR6Wt/Vjw7wPBM3KAw2l+aQ0nnepkNMrX7+19UtL3dXSL5Y8fiCB4SCB6OBiK2ofkyBjkT/rEkyAGldi91RAvHVsdbDXwtouYTzrySUFmcDTa08vegBJ+gXoAjsR6qYSVnfNwqVZ1DiMO8cy/u9hMiiGzr4alWhjnkUGSJMhQLby4AA+zLwHJVH7J8+2wcpT04Z6bDCHBgsSiQZdNa7CTFDe5iPy8HLTj93859m3sLQtDZh43gNsaqvzlXjhGc2s2qDMmbmLDFqmrgtRozLjq+uSlaEvWg2LQfFH1DtLPwZ4JvHyn/m/CaYKAeiB5l+yzXskglWeGXfdhzrbQHqIGZgorOzE7pn0J5+XTD1tACr28uKF52bcPIqcfRFj7cMyIoeFfzB6RhEI/m8qCJcGZtbTKE4CtZB37ePC5FpY1q+doLQVtY5krFEJVdEj8QvqvkZ7CJH3d3VsliWKl7IGy56wPb3K6bnQLWaFH/SxXg6re2F5JxkUyIfuoLIdXR7Qkh6smxqXQRDW9wOLXY0qYXFLfPUueyp1Z11yGRrSchr4yEUDNMBLdjR4Z0dkP5nswYk7J1hCXDG6SLwzAX5Tjv3zuH0McCHTejfbocTPU0o9OMBlLXJSHVch5l2NaTIxsh3R1t2QGzoHWJauwERkSJNkmGSlgSnXxQWZ5i/PiEH6vSN2X3rSgLrqrqqmV2pyKUoQ9N7nGbXNCk49sblYu5FcX+iHenR5CDmQAGl0zXZYElfieP3Sxt/Cth3ovwZYngmW4leAS4+FK4Mv7AH4GFoBPVyo2cFxNTj/HhR+RM4BzpalJeWxoZ6aFEkwuuUna2wbkMkrVmnTh2jYl92GTcrx8n3AMcAnjCVHlIPx1omquxw7RtH3dcFr09mAeFCUHog0cYwlTRrwW3JT1k9NPZFrAVeyejJNR8ot3CSb77XFUQIyZy5sHMp1kt32OXzwaX4PhZ+NjxvRX3GkswbMIgnOQVDcCmt7LLfAtHLJcmQrat0ddU8+T/5imqh5xD4aS6zcmImDWvqlqS0n6ukqua2ZTA8aiFDjSlDeAZ3iPnOtaI5izy3YtHhLAhDG7moxm3FbU+MasGL8Sq71Hv0S9tyuGIYEZQYOJnJ0llUkdFAMSttR99QsPGVPLD6BZfAm4gpHW+/K/aH9rCM8PDjiZhi+LmewxDmc8ScB+jWB/DOYtQUXh6W6x0019vZBSHD2Le4XzMeQhWLXYrYPqTdiR4lnXJafA2zXkxURrLS0L8Xx9ij8C0kCFhY5MJdZAAAAAElFTkSuQmCC",
       "aspectRatio": 1.6239583333333334,
       "isPortrait": false
     }

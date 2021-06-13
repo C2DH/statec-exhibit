@@ -9,7 +9,7 @@ const Echo = () => {
   console.error('Missing function handler')
 }
 
-const ChapterStream = ({ modules = [], height, backgroundColor, onStepChange=Echo}) => {
+const ChapterStream = ({ numStartAt, modules = [], height, backgroundColor, onStepChange=Echo}) => {
   const [activeStep, setActiveStep]= useState({
     paragraphId: '0,0',
     moduleId: '-1',
@@ -28,9 +28,9 @@ const ChapterStream = ({ modules = [], height, backgroundColor, onStepChange=Ech
   }
   const onStepExit = ({ data, direction }, i) => {
     // console.info('ChapterStream @onStepExit', { data, direction }, i)
-    if (data === '1,1' && direction === 'up') {
+    if (data === '1,1,1' && direction === 'up') {
       const step = {
-        paragraphId: '0,0',
+        paragraphId: '0,0,0',
         moduleId: '-1',
         direction: 'down'
       }
@@ -59,7 +59,7 @@ const ChapterStream = ({ modules = [], height, backgroundColor, onStepChange=Ech
           threshold={.5}
         >
           {mod.paragraphs.map((par, j) => {
-            const paragraphId = getParagraphIdFromIndices(i,j)
+            const paragraphId = getParagraphIdFromIndices(i+numStartAt,j)
             return (
               <Step data={paragraphId} key={paragraphId}>
                 <div className={`ChapterStream_paragraph ${activeStep.paragraphId === paragraphId ? 'active' : ''}`}>

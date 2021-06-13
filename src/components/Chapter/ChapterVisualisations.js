@@ -5,6 +5,7 @@ import ChapterModulesGraphics from './ChapterModulesGraphics'
 const ChapterVisualisations = ({
   themeDatasetId='themeDatasetId',
   keys=['v'], legend, data=[], modules=[], height=100, width=100, step,
+  numStartAt=0,
   marginLeft=100
 }) => {
   const ref = useRef();
@@ -14,10 +15,10 @@ const ChapterVisualisations = ({
       return {
         ...par,
         moduleId: i,
-        paragraphId: `${i+1}.${j+1}`
+        paragraphId: `${i+1+numStartAt}.${j+1}`
       }
     })), [])
-  }, [modules])
+  }, [modules, numStartAt])
 
   const paragraph = step
     ? paragraphs.find(d => step.paragraphId === d.paragraphId)
@@ -46,7 +47,7 @@ const ChapterVisualisations = ({
       height: height - 100,
     }}>
       <div style={{marginLeft: marginLeft / 2}}>
-        <ChapterModulesGraphics modules={modules} step={step}/>
+        <ChapterModulesGraphics modules={modules} numStartAt={numStartAt} step={step}/>
       </div>
       <div ref={ref} style={{
         flexGrow: 1,

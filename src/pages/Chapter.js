@@ -18,11 +18,50 @@ const AvailableChapters = Object.freeze({
 })
 const DefaultThemeId = String(chapter01.id)
 
+const Section = ({ numStartAt, section, height, width, backgroundColor}) => {
+  const [step, setStep] = useState(null)
+
+  const sectionDataset = useMemo(() => {
+    console.info(`Section loading dataset ${section.dataset}.json`)
+    return require(`../data/datasets/${section.dataset}.json`)
+  }, [section.dataset])
+
+  const stepChangeHandler = (step) => {
+    console.info('@stepChangeHandler', step)
+    setStep(step)
+  }
+
+  return (
+    <div className="Section Chapter_streamWrapper flex">
+      <ChapterStream
+        numStartAt={section.numStartAt}
+        backgroundColor={backgroundColor}
+        height={height}
+        modules={section.modules}
+        onStepChange={stepChangeHandler}
+      />
+      <div style={{
+        flexGrow: 1,
+      }}>
+        <ChapterVisualisations
+          numStartAt={section.numStartAt}
+          themeDatasetId={sectionDataset.id}
+          keys={Object.keys(sectionDataset.legend).filter(k => k !== 't')}
+          legend={sectionDataset.legend}
+          data={sectionDataset.values || []}
+          width={width}
+          height={height}
+          modules={section.modules || []}
+          step={step}
+        />
+      </div>
+    </div>
+  )
+}
 
 const Chapter = ({ match: { params: { chapterId }}}) => {
   // get the available chapter if vailable; otherwise Chapter 1 ;)
   const chapter = AvailableChapters[String(chapterId)] ?? AvailableChapters[DefaultThemeId];
-  const [step, setStep] = useState(null)
   // calcumlate height on Resize after a 250mx throttle
   const { width, height } = useCurrentWindowDimensions()
   const isMobileWithTablet = getIsMobileWithTablet()
@@ -37,12 +76,18 @@ const Chapter = ({ match: { params: { chapterId }}}) => {
       }))), [])
     return hotspots
   }, [chapter])
+
+  let counter = 0
+  const chapterSections = Array.isArray(chapter.sections)
+    ? chapter.sections.map(d => {
+      d.numStartAt = +counter
+      counter += d.modules.length
+      return d
+    })
+    : [{ dataset: chapter.dataset, modules: chapter.modules, numStartAt:0 }]
+
   const changeBackgroundColor = useStore(state => state.changeBackgroundColor)
 
-  const stepChangeHandler = (step) => {
-    console.info('@stepChangeHandler', step)
-    setStep(step)
-  }
   useEffect(() => {
     changeBackgroundColor(chapter.backgroundColor)
   }, [chapter, changeBackgroundColor])
@@ -68,28 +113,15 @@ const Chapter = ({ match: { params: { chapterId }}}) => {
         height={height}
         paragraphs={chapter.introductions || []}
       />
-      <div className="Chapter_streamWrapper flex">
-        <ChapterStream
-          backgroundColor={chapter.backgroundColor}
+      {chapterSections.map((section, i) => (
+        <Section
+          key={i}
+          section={section}
           height={height}
-          modules={chapter.modules}
-          onStepChange={stepChangeHandler}
+          width={width}
+          backgroundColor={chapter.backgroundColor}
         />
-        <div style={{
-          flexGrow: 1,
-        }}>
-          <ChapterVisualisations
-            themeDatasetId={themeDataset.id}
-            keys={Object.keys(themeDataset.legend).filter(k => k !== 't')}
-            legend={themeDataset.legend}
-            data={themeDataset.values || []}
-            width={width}
-            height={height}
-            modules={chapter.modules || []}
-            step={step}
-          />
-        </div>
-      </div>
+      ))}
       <ChapterWideParagraphs
         height={height}
         paragraphs={chapter.conclusions || []}

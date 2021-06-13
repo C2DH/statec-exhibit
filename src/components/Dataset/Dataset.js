@@ -14,7 +14,7 @@ const AvailableComponents = Object.freeze({
 const Dataset = ({ data, id='', layout='Flowers', keys=['v'], from=StartYear, to=EndYear, height=100, width=100, hidePercentage=false }) => {
   const Component = AvailableComponents[layout] || <div>Component not defined</div>
   const { t}  = useTranslation()
-  const { groupValues, minValue, maxValue, legend } = useMemo(() => {
+  const { groupValues, minValue, maxValue } = useMemo(() => {
     const { values, legend } = data
     // filter values based on "from" and "to"
     const groupValues = keys.map((k) => {

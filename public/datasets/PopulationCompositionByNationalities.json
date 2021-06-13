@@ -5,12 +5,12 @@
   "legend": {
     "t": "year",
     "v": "total inhabitants",
-    "v1": "total without LU nationality",
+    "v1": "Total sans les Luxembourgeois",
     "v2": "Portugal",
     "v3": "France",
-    "v4": "Italy",
+    "v4": "Italie",
     "v5": "Belgium",
-    "v6": "Germany",
+    "v6": "Allemagne",
     "v7": "UK",
     "v8": "other without LU nationality"
   },

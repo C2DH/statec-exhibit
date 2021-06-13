@@ -1,18 +1,13 @@
 import React, { useEffect, useState } from 'react'
-import { useStore } from '../store'
-import { useHistory, useLocation } from 'react-router-dom'
-import { useCurrentWindowDimensions } from '../hooks'
+import { useHistory } from 'react-router-dom'
+import { useCurrentWindowDimensions, useURLSearchParams } from '../hooks'
 import { ArrowLeftCircle, ArrowRightCircle, X } from 'react-feather'
-
-const useQuery = () => {
-  return new URLSearchParams(useLocation().search);
-}
 
 const Panel = ({ name='table-of-contents', children, left=false, color='white' }) => {
   const { width, height } = useCurrentWindowDimensions()
   const [isOpen, setIsOpen ] = useState(false)
   const history = useHistory()
-  const qs = useQuery()
+  const qs = useURLSearchParams()
 
   useEffect(() => {
     console.info('location changed:', qs.get('panel'));
@@ -21,7 +16,7 @@ const Panel = ({ name='table-of-contents', children, left=false, color='white' }
   }, [qs, name])
 
   return (
-    <div style={{
+    <div className="Panel" dataname={name} style={{
       width, height,
       backgroundColor: 'var(--dark)',
       position: 'fixed',
@@ -29,10 +24,10 @@ const Panel = ({ name='table-of-contents', children, left=false, color='white' }
       transition: 'transform 0.6s cubic-bezier(0.83, 0, 0.17, 1)',
       transform: `translateX(${isOpen ? 0 : (left ? 100 : -100)}%)`,
     }}>
-      <button className={`Panel_closeButton absolute pa3 bg-transparent bw0 ${left ? 'right-0': 'left-0'}`} onClick={() => history.replace({ search: null })}>
-        {left ? <ArrowRightCircle size={25} color={color}/> : <ArrowLeftCircle size={25} color={color}/> }
+      <button className={`Panel_closeButton absolute pa3 bg-transparent bw0 ${left ? 'right-0': 'left-0'}`} onClick={() => history.replace({ search: null, hash: window.location.hash })}>
+        {left ? <ArrowRightCircle strokeWidth={1} size={25} color={color}/> : <ArrowLeftCircle strokeWidth={1} size={25} color={color}/> }
       </button>
-      <button className={`Panel_closeButton absolute pa3 bg-transparent bw0 ${left ? 'left-0': 'right-0'}`} onClick={() => history.replace({ search: null })}>
+      <button className={`Panel_closeButton absolute pa3 bg-transparent bw0 ${left ? 'left-0': 'right-0'}`} onClick={() => history.replace({ search: null, hash: window.location.hash })}>
         <X size={25} color={color}/>
       </button>
       {children}

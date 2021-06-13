@@ -18,15 +18,15 @@ const ChapterWideParagraphs= ({ paragraphs=[], prefix='', height=200 }) => {
     <div className="ChapterWideParagraphs">
       <Scrollama
         onStepEnter={onStepEnter}
-        threshold={0.1}
+        threshold={0}
       >
       {paragraphs.map(({ text }, i) => (
         <Step data={i} key={i}>
           <div id={`${prefix}-${i}`}
             className="ChapterWideParagraphs_text tc"
             style={{
-              paddingTop: height/4,
-              paddingBottom: height/4,
+              paddingTop: height/6,
+              paddingBottom: height/6,
               willChange: 'opacity',
               transition: 'opacity .5s ease-in-out',
               opacity: step.idx === i? 1: 0.1

@@ -1,5 +1,5 @@
 import React, {useMemo} from 'react'
-import { useTranslation } from 'react-i18next'
+// import { useTranslation } from 'react-i18next'
 import { extent } from 'd3-array'
 import { scalePow } from 'd3-scale'
 import Bezier from './Bezier'
@@ -20,7 +20,7 @@ const Flower = ({
   nMinPetals = 8,
   children
 }) => {
-  const { t } = useTranslation();
+  // const { t } = useTranslation();
   const [colorA, colorB, colorC] = colors
   const dimension = Math.min(width, height)
   const radius = dimension / 4
