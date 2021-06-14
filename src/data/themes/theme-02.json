@@ -24,25 +24,41 @@
             {
               "from": 1840,
               "to": 1890,
-              "keys": ["v1"],
+              "availableKeys": ["v1"],
+              "visibleKeys": ["v1"],
+              "focusKeys": ["v1"],
               "text": "Le milieu des années 1840 connaît une baisse de la natalité. Ce sont les conditions de vie difficiles (faibles récoltes) qui contribuent à expliquer ces baisses ponctuelles, qui se répètent d'ailleurs dans les années 1850. Plus les conditions sont difficiles, plus la natalité diminue. <br/><br/>D'une manière générale, les variations de la natalité sont plus importantes avant les années 1880, c'est-à-dire avant la véritable industrialisation et  l'augmentation du niveau de vie qui l'accompagne.",
-              "cover": { "id": "statec_002.png" }
+              "figures": [{ "id": "statec_002.png" }]
             },
             {
               "from": 1891,
               "to": 1954,
-              "keys": ["v1"],
+              "availableKeys": ["v1"],
+              "focusKeys": ["v1"],
               "text":"Dans le premier tiers du 20e siècle, la natalité connaît deux chutes importantes. Une première autour de la Première Guerre mondiale qui l'amène à environ 20 pour mille vers 1920. Après s'être maintenue légèrement au-dessus de 20 pour mille pendant la prospérité des années 1920, la natalité amorce vers 1930 une nouvelle chute accélérée par la crise économique."
             },
             {
               "from": 1955,
               "to": 1980,
-              "keys": ["v1", "v"],
-              "text":"A partir du milieu des années 1960, le taux de natalité entame une nouvelle baisse sensible. Des phénomènes de société - ce la démocratisation des moyens de contraception et la diffusion du modèle familial avec moins de 3 enfants - contribuent à expliquer ce phénomène. Comme la mortalité ne baisse pas, le solde naturel devient <b>négatif</b> au cours des années 1972-1978, même si ce n'est que légèrement. C'est l'époque où certains, comme le directeur du STATEC, Georges Als, évoquent la thèse du \"suicide démographique\" du Luxembourg."
-            }, {
+              "availableKeys": ["v1"],
+              "visibleKeys": ["v1"],
+              "focusKeys": ["v1"],
+              "text":"A partir du milieu des années 1960, le taux de natalité entame une nouvelle baisse sensible. Des phénomènes de société - ce la démocratisation des moyens de contraception et la diffusion du modèle familial avec moins de 3 enfants - contribuent à expliquer ce phénomène."
+            },
+            {
+              "from": 1970,
+              "to": 1980,
+              "availableKeys": ["v1", "v"],
+              "visibleKeys": ["v1", "v"],
+              "focusKeys": ["v1","v"],
+              "text": "Comme la mortalité ne baisse pas, le solde naturel devient <b>négatif</b> au cours des années 1972-1978, même si ce n'est que légèrement. C'est l'époque où certains, comme le directeur du STATEC, Georges Als, évoquent la thèse du \"suicide démographique\" du Luxembourg."
+            },
+            {
               "from": 1981,
               "to": 2014,
-              "keys": ["v1"],
+              "availableKeys": ["v1", "v"],
+              "visibleKeys": ["v1", "v"],
+              "focusKeys": ["v1","v"],
               "text":"Que le taux de natalité augmente de nouveau à partir de la fin des années 1980 est d'abord dû à un - léger -  changement du comportement  démographique, mais aussi au fait que la population immigrée est plutôt jeune et en état de procréer et que celle-ci a par ailleurs une fécondité plus élevée que la population autochtone."
             }
           ]
@@ -50,45 +66,170 @@
       ]
     },
     {
-      "dataset": "b304-weddings-divorces",
+      "dataset": "WeddingsDivorces",
       "modules": [
         {
           "title": "Mariages",
           "paragraphs": [
             {
+              "availableKeys": ["v1"],
               "visibleKeys": ["v1"],
               "focusKeys": ["v1"],
               "from": 1840,
               "to": 1859,
-              "text": "Le nombre de mariages est important au milieu du 19ème siècle rapporté à la population (autour de 7 -8 par 100 000 habitants et par année). Sans perspectives \"positives\", les mariages tendent à se tasser et les variations du taux dans les années 1840 et 1850 sont liées aux conditions de vie difficiles et changeantes (selon les récoltes, notamment)."
+              "text": "Le nombre de mariages est important au milieu du 19ème siècle rapporté à la population (autour de 7 -8 par 100 000 habitants et par année). Sans perspectives \"positives\", les mariages tendent à se tasser et les variations du taux dans les années 1840 et 1850 sont liées aux conditions de vie difficiles et changeantes (selon les récoltes, notamment).",
+              "figures": [{"id": "HISAAJ000008N01.jpg"}, {"id": "HISAAJ000588N01.jpg"}]
             },
             {
-              "visibleKeys": ["v1"],
-              "focusKeys": ["v1"],
+              "availableKeys": ["v"],
+              "visibleKeys": ["v"],
+              "focusKeys": ["v"],
               "from": 1860,
               "to": 1880,
-              "text": "Le taux de mariage est lié à la structure de la population. Plus la population est jeune (en âge de se marier), plus le taux de nuptialité est élevé. Le tassement du taux de nuptialité dans les années 1860-1880 est probablement lié au départ de nombreux jeunes à l'étranger (émigration)."
+              "text": "Le <b class='bold'>taux de nuptialité</b> est lié à la structure de la population. Plus la population est jeune (en âge de se marier), plus le taux de nuptialité est élevé. Le tassement du taux de nuptialité dans les années 1860-1880 est probablement lié au départ de nombreux jeunes à l'étranger (émigration)."
             },
             {
-              "visibleKeys": ["v1"],
-              "focusKeys": ["v1"],
+              "availableKeys": ["v"],
+              "visibleKeys": ["v"],
+              "focusKeys": ["v"],
               "from": 1881,
               "to": 1959,
               "text": "Le taux de nuptialité est également marqué par les deux guerres mondiales. Après des chutes impressionnantes de ce taux au début des guerres, la fin des deux guerres est marquée au contraire par un effet de \"récupération\"."
             },
             {
-              "visibleKeys": ["v1", "v3"],
-              "focusKeys": ["v3"],
+              "availableKeys": ["v"],
+              "visibleKeys": ["v"],
+              "focusKeys": ["v"],
               "from": 1960,
               "to": 1974,
-              "text": "Avec les années 1960, vient une époque où l'âge au mariage recule et où les modes de cohabitation se diversifient avec des formes peu codifiées (\"unions libres\") et plus récemment où le mariage puis dans un deuxième temps dans une forme plus codifiée qu'est l'union civile (PACS)."
+              "text": "Avec les années 1960, vient une époque où l'âge au mariage recule et où les modes de cohabitation se diversifient avec des formes peu codifiées (\"unions libres\") et plus récemment où le mariage puis dans un deuxième temps dans une forme plus codifiée qu'est l'union civile (PACS).",
+              "figures": [{ "id": "wedding-bettel-wort-2015.jpg"}]
             },
             {
-              "visibleKeys": ["v1", "v3"],
-              "focusKeys": ["v3"],
+              "availableKeys": ["v"],
+              "visibleKeys": ["v"],
+              "focusKeys": ["v"],
               "from": 1975,
               "to": 2014,
               "text": "L'âge au premier mariage augmente fortement et le temps passé en vivant seul augmente. Au milieu des années 1970, l'âge au premier mariage est de moins de 26 ans pour les hommes et de 23 ans pour les femmes. Aujourd’hui cet âge moyen au premier mariage est de 34 ans pour les hommes et de près de 32 ans pour les femmes ."
+            }
+          ]
+        },
+        {
+          "title": "Divorces",
+          "paragraphs": [
+            {
+              "availableKeys": ["v3"],
+              "visibleKeys": ["v3"],
+              "focusKeys": ["v3"],
+              "from": 1900,
+              "to": 1910,
+              "text": "Le divorce : catégorie juridique et aussi statistique dès le début du 19e siècle"
+            },
+            {
+              "availableKeys": ["v3"],
+              "visibleKeys": ["v3"],
+              "focusKeys": ["v3"],
+              "from": 1840,
+              "to": 1900,
+              "text": "raconter un divorce au 19e siècle"
+            },
+            {
+              "availableKeys": ["v3"],
+              "visibleKeys": ["v3"],
+              "focusKeys": ["v3"],
+              "from": 1920,
+              "to": 1940,
+              "text": "divorce croissant dans l’entre-deux-guerres mais difficultés pour les femmes"
+            },
+            {
+              "availableKeys": ["v3"],
+              "visibleKeys": ["v3"],
+              "focusKeys": ["v3"],
+              "from": 2000,
+              "to": 2001,
+              "text": "« retard » luxembourgeois : Lucile Bodson et Jordane Segura, « Le divorce au Luxembourg en droit et en chiffres », Les Cahiers du CEPS/Instead, 2010, no 1, p. 7."
+            },
+            {
+              "availableKeys": ["v3"],
+              "visibleKeys": ["v3"],
+              "focusKeys": ["v3"],
+              "from": 1970,
+              "to": 2000,
+              "text": "la rupture législatif des années 1970"
+            },
+            {
+              "availableKeys": ["v3", "v1"],
+              "visibleKeys": ["v3", "v1"],
+              "focusKeys": ["v3", "v1"],
+              "from": 2000,
+              "to": 2020,
+              "text": "aujourd’hui autant de divorces par autant de mariages"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "dataset": "WeddingsDivorces",
+      "modules": [
+        {
+          "title": "Composition de ménages",
+          "paragraphs": [
+            {
+              "from": 1840,
+              "to": 1864,
+              "text": "La famille est une notion plus complexe qu'il ne paraît à première vue. Si elle peut être définie par les liens de parenté, elle évolue historiquement. De façon simplifiée et schématique, on pourrait dire que l'on passe, avec l'industrialisation et la \"modernisation\" sociale et sociétale de la \"famille nombreuse\" - généralement avec une progéniture nombreuse et vivant fréquemment dans des ménages où cohabitent plusieurs générations, et au 19ème siècle souvent avec des \"aidants\" extérieurs à la famille - à la famille nucléaire (avec peu d'enfants et vivant dans des ménages sans les grands-parents). <br/><br/>Aujourd'hui la \"famille\" a des formes très diversifiées allant de la famille monoparentale à la famille dite <em>recomposée</em>."
+            },
+            {
+              "from": 1900,
+              "to": 1910,
+              "text": "La baisse de la fécondité - mais également le fait que la famille nucléaire (parents avec enfants) s'impose - , explique que la taille moyenne des ménages diminue fortement. Elle passe de 5,42 personnes par ménage en 1864 à 3,13 en 1970."
+            },
+            {
+              "from": 1970,
+              "to": 1980,
+              "text": "Dans les années 1970 on assiste à une augmentation passagère de la taille des ménages qui passe à près de 4 personnes en moyenne et qui résulte notamment de l'immigration (population. jeune, venant souvent en couple ou en famille, respectivement en âge de procréer)."
+            },
+            {
+              "from": 1980,
+              "to": 1990,
+              "text": "A partir des années 1980, la tendance à la baisse de la taille des ménages reprend et, en 2001, on atteint 2,41 personnes par ménage. Les formes de cohabitation se diversifient et un phénomène nouveau se développe celle des personnes vivant seules. En 2011, 1/3 des ménages est constitué par des personnes seules, alors qu'en 1871, cette proportion de ménnges d'une seule personne ne fut que de 3,7% et qu'en 1970, le pourcentage se situa autour de 15%. Les familles nombreuses deviennent rares. Ainsi en 1900, la part des ménages de 6 personnes est encore de 12% de l'ensemble des ménages, alors qu'en 1981, le pourcentage correspondant n'est même pas de 3%."
+            },
+            {
+              "from": 1980,
+              "to": 1990,
+              "text": "Du point de vue des structures de vie commune (familles, ménages), le vieillissement est synonyme de l'extension de ce que l'on appelle, du point de vue statistique, les ménages collectifs (foyers pour personnes âgées, maisons de soins, etc.)",
+              "figures": [{ "id": "Fondation_Pescatore_in_Luxembourg_City.jpeg" }]
+            }
+          ]
+        }
+      ]
+    }, {
+      "dataset":  "WeddingsDivorces",
+      "modules": [
+        {
+          "title": "Espérance de vie et vieillissement",
+          "paragraphs": [
+            {
+              "from": 1880,
+              "to": 1940,
+              "text":  "L'augmentation de l'espérance de vie à la naissance et la diminution du taux de mortalité jusqu'à la deuxième guerre mondiale siècle sont largement imputables à la baisse de la mortalité infantile (décès de moins d'un an) et néotalale (décès de moins de 1 mois) liée aux progrès de la médecine en général et de l'obstétrique en particulier. A titre d'exemple, le taux de mortalité infantile est divisé par deux entre 1880 et 1940 en passant de quelque 15% à 7% au cours de cette période."
+            },
+            {
+              "from": 1945,
+              "to": 1990,
+              "text": "Après la deuxième guerre mondiale, la tendance à la baisse de la mortalité infantile continue, mais à partir des années 1980 un nouveau phénomène se confirme, à savoir une augmentation de l'espérance de vie des personnes âgées. A titre d'exemple, l'espérance de vie des hommes de 60 ans fut de 16 années en 1980, celle des femmes de 21 ans. Aujourd’hui, les hommes de 60 ans peuvent espérer vivre encore 23 ans et les femmes du même âge 26 ans."
+            },
+            {
+              "from": 1928,
+              "to": 1960,
+              "text": "En 1928, le démographe Alfred Sauvy invente le terme de « vieillissement de la population », concept avec une connotation péjorative. En effet, jusque là l’accroissement de la longévité était essentiellement considéré comme un phénomène positif. Au Grand-Duché, ce discours n’apparaît qu’à la fin des années 1960 notamment sous la plume de Jérôme Anders, chef du Service d'études et de documentation économiques, le prédécesseur du STATEC."
+            },
+            {
+              "from": 2000,
+              "to": 2020,
+              "text": "Au Luxembourg, les migrations (le plus souvent des personnes en âge de travailler … et à procréer) font que la part des personnes âgées n’atteint pas les mêmes proportions que dans d’autres pays. Il ya bien un \"vieillissement\" considérable si on prend en considération les nombres absolus (le nombre des 60 ans et plus passe de 17.372 en 1871 à 125.262 en 2020), mais le pourcentage des 60 ans et plus fut de 9% en 1871, il est de 20% aujourd’hui), ce qui fait d’ailleurs que le système luxembourgeois de sécurité sociale garde une certaine marge de manoeuvre."
             }
           ]
         }
@@ -102,7 +243,7 @@
       "from": 1840,
       "to": 2014,
       "layout": "text",
-      "datasetHeading": "b304-weddings-divorces",
+      "datasetHeading": "WeddingsDivorces",
       "datasetTrend": "v3",
       "datasetAdditionalTrends": ["v"],
       "datasetAdditionalTrendsColors": ["var(--primary)"],

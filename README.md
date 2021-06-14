@@ -37,6 +37,54 @@ We use spacer 3 for small, 4 for medium and unsurprisingly 5 for large.
 
 ## Contents
 
+### How to add a dataset to a section?
+The content is organised in `chapter`, `section`, `paragraph`. The `section` is
+responsible of delivering the dataset for the main visualisation and each paragraph
+*can* change the variables visualised.
+
+As an example, let's have a look at one of the current themes:
+```json
+{
+  "id": "id of the chapter",
+  "sections": [
+    {
+      "dataset": "population-natural-growth-details",
+      "modules": [
+        {
+          "title": "Naissance: un taux de natalité en baisse sur deux cents ans",
+          "paragraphs": [
+            {
+              "from": 1840,
+              "to": 1890,
+              "availableKeys": ["v1"],
+              "visibleKeys": ["v1"],
+              "focusKeys": ["v1"],
+              "text": "..."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+
+For the moment being, datasets are usually stored in the `./src/data/datasets/` folder,
+and loaded as modules with `require`. In each section object, the **compulsory** `dataset` property defines the filename
+to load.
+
+By default, the trend extent (min, max) is computed using all `v*` values
+available in the dataset.values items.  Each paragraph can override the values
+taken into account with the property `availableKeys`. In this case, only the values of the `v1` property
+are considered.
+The values in `visibleKeys` are used to draw the thin lines, using the full range 1940 to today.
+The values in `focusKey` draw a ticker line usinfg the from to property. If no focusKey is present, the `v` is then highighted
+
+
+  ```
+
+enable to slide to supports a different dataset.
+Each visualisation is handled by the component ChapterVisualisation
+
 ### How to change the title of a chapter?
 Change the `title` property in the chapter file `./data/themes/<theme id>.json`; then verify
 the route label in the `./src/constants.js` file: there, every chapter route

@@ -155,7 +155,7 @@ const Trend = ({
           textColor={'var(--secondary)'}
         />
         <TrendAxisLeftGraphics
-          id={themeDatasetId}
+          id={[themeDatasetId].concat(availableKeys).join('-')}
           windowDimensions={windowDimensions}
           marginLeft={0}
           marginTop={marginTop}
