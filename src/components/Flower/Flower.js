@@ -1,9 +1,10 @@
-import React, {useMemo} from 'react'
+import React, {useMemo, useState} from 'react'
 // import { useTranslation } from 'react-i18next'
 import { extent } from 'd3-array'
 import { scalePow } from 'd3-scale'
 import Bezier from './Bezier'
 import FlowerPointerGraphics from './FlowerPointerGraphics'
+import FlowerHoverGraphics from './FlowerHoverGraphics'
 
 const Flower = ({
   colors = ['#FFCCB6', '#f8b294', '#F77DA6'],
@@ -53,6 +54,10 @@ const Flower = ({
   }, [data, minValue, maxValue, radius]); // , petalMaxWidth ])
   const maxAngle = angleD + Math.PI;
 
+  const [datum, setDatum] = useState()
+  const onDatumChangeHandler = (ev) => {
+    setDatum(ev.datum)
+  }
   return (
     <div
       className="Flower h-100 w-100 flex flex-column"
@@ -123,8 +128,8 @@ const Flower = ({
               <line
                 x1={Math.sin(maxAngle) * radius}
                 y1={Math.cos(maxAngle) * radius}
-                x2={Math.sin(maxAngle) * radius * 1.5}
-                y2={Math.cos(maxAngle) * radius * 1.5}
+                x2={Math.sin(maxAngle) * radius * 1.6}
+                y2={Math.cos(maxAngle) * radius * 1.6}
                 stroke="black"
                 strokeDasharray="2 1"
               />
@@ -138,7 +143,7 @@ const Flower = ({
               {data.map((d, i) => {
                 const theta = (data.length - i) * angleD + Math.PI;
                 const deg = theta * (180 / Math.PI);
-                const selected = currentYear === d.t;
+                const selected = datum && datum.t === d.t;
                 const curveHeight =
                   d[field] > 0 ? scaleYUnclamped(d[field]) : scaleYUnclampedNegative(d[field]);
 
@@ -171,7 +176,8 @@ const Flower = ({
                   </g>
                 );
               })}
-              <FlowerPointerGraphics data={data} radius={radius} field={field}/>
+              <FlowerHoverGraphics data={data} radius={radius} field={field} minYear={minYear} maxYear={maxYear} onChange={onDatumChangeHandler}/>
+              <FlowerPointerGraphics data={data} radius={radius} field={field} />
             </g>
           </svg>
         </div>

@@ -73,7 +73,12 @@
       "datasetPopulationBalanceDetailsLegendValuev1": "Solde naturel",
       "datasetPopulationBalanceDetailsLegendValuev2": "Nombre de naissances",
       "datasetPopulationBalanceDetailsLegendValuev3": "Nombre de décès",
-      "datasetPopulationBalanceDetailsLegendValuev4": "Solde migratoire, variation annuelle"
+      "datasetPopulationBalanceDetailsLegendValuev4": "Solde migratoire, variation annuelle",
+      "datasetWeddingsDivorcesExtentTitlev1": "Nombre de mariages par année",
+      "datasetWeddingsDivorcesExtentTitlev": "Taux de nuptialité (‰)",
+      "datasetWeddingsDivorcesExtent": "min: <b class='bold'>{{kMin, 2}}</b> mariages in {{tMin}}<br/> max: <b class='bold'>{{kMax, 2}}</b> mariages in {{tMax}}",
+      "datasetWeddingsDivorcesLegendValuev1": "Nombre de mariages par année",
+      "datasetWeddingsDivorcesLegendValuev": "Taux de nuptialité (‰)"
     }
   }
 }
