@@ -18,7 +18,7 @@ const AvailableChapters = Object.freeze({
 })
 const DefaultThemeId = String(chapter01.id)
 
-const Section = ({ numStartAt, section, height, width, backgroundColor}) => {
+const Section = ({ section, height, width, backgroundColor}) => {
   const [step, setStep] = useState(null)
 
   const sectionDataset = useMemo(() => {
@@ -44,6 +44,7 @@ const Section = ({ numStartAt, section, height, width, backgroundColor}) => {
         flexGrow: 1,
       }}>
         <ChapterVisualisations
+          displayPoints={!!section.displayPoints}
           numStartAt={section.numStartAt}
           themeDatasetId={sectionDataset.id}
           keys={Object.keys(sectionDataset.legend).filter(k => k !== 't')}
