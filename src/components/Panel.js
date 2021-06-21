@@ -20,7 +20,7 @@ const Panel = ({ name='table-of-contents', children, left=false, color='white' }
       width, height,
       backgroundColor: 'var(--dark)',
       position: 'fixed',
-      zIndex:1000,
+      zIndex:1002,
       transition: 'transform 0.6s cubic-bezier(0.83, 0, 0.17, 1)',
       transform: `translateX(${isOpen ? 0 : (left ? 100 : -100)}%)`,
     }}>
