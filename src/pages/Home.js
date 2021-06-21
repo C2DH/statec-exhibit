@@ -69,7 +69,7 @@ const Home = () => {
         </div>
       </a.div>
       <div className="Home_paragraphsWrapper">
-        <div className="mw9 center pa4 pt5-ns ph5-l">
+        <div className="center pa4 pt5-ns ph5-l">
           <h2 className="f2-ns f3 fw1 lh-title tc">
             {t('pagesHomeParagraph01')}
             <br />
