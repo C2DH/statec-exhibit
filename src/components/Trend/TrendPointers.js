@@ -2,6 +2,7 @@ import React, { useState, useEffect, useMemo } from 'react'
 import { useTranslation } from 'react-i18next'
 import {ArrowRight, Eye} from 'react-feather'
 import { useStore } from '../../store'
+import { getClosestDatumIdxFromX } from '../../logic/dataset'
 
 
 const TrendPointers = ({
@@ -26,7 +27,6 @@ const TrendPointers = ({
     if (!ev) {
       return
     }
-
     setPointer({
       x: ev.clientX - left - marginLeft,
       y: ev.clientY - top - marginTop,
@@ -56,20 +56,31 @@ const TrendPointers = ({
     })
   }, [values, from, to, focusKeys])
 
-  const currentYear = pointer ? scaleX.invert(pointer.x - left).getFullYear() : from
-  const value = values.find(d => String(currentYear) === d.t)
+  const xValues = useMemo(() => values.map(v => v.x), [values])
 
-  useEffect(() => {
-    window.addEventListener("mousemove", updateMousePosition);
-    return () => window.removeEventListener("mousemove", updateMousePosition);
-    // eslint-disable-next-line
-  }, []);
+  const currentYear = pointer ? scaleX.invert(pointer.x).getFullYear() : from
+
+  let value = values.find(d => String(currentYear) === d.t)
+  if (pointer && !value) {
+    // look for the closer one
+    const closestIdx = getClosestDatumIdxFromX({
+      x: pointer.x,
+      xValues,
+    })
+    value = values[closestIdx]
+  }
+
+  // useEffect(() => {
+  //   window.addEventListener("mousemove", updateMousePosition);
+  //   return () => window.removeEventListener("mousemove", updateMousePosition);
+  //   // eslint-disable-next-line
+  // }, []);
 
   useEffect(() => {
     if (currentYearExplorerOpen && currentYear && value) {
       changeCurrentDatum({
         datum: value,
-        year: currentYear,
+        year: value.t,
         dataset: themeDatasetId,
         keys: visibleKeys,
         focusKeys
@@ -85,7 +96,7 @@ const TrendPointers = ({
   const clickHandler = () => {
     changeCurrentDatum({
       datum: value,
-      year: currentYear,
+      year: value.t,
       dataset: themeDatasetId,
       keys: visibleKeys,
       focusKeys
@@ -110,6 +121,7 @@ const TrendPointers = ({
         zIndex:1000,
       }}
         onClick={clickHandler}
+        onMouseMove={updateMousePosition}
         onMouseEnter={() => setIsVisible(true)}
         onMouseLeave={() => setIsVisible(false)}
       />
@@ -178,9 +190,9 @@ const TrendPointers = ({
           // }
             return (
               <div key={key}>
-                <h3 className="dib ma0">{t(`dataset${themeDatasetId}ExtentTitle${key}`, {from, to})}</h3>
+                <h3 className="dib ma0">{t(`dataset${themeDatasetId}LegendValue${key}`, {from, to})}</h3>
                 <p className="mv0 " key={key} dangerouslySetInnerHTML={{
-                  __html: t(`dataset${themeDatasetId}Extent`, {
+                  __html: t(`dataset${themeDatasetId}Extent${key}`, {
                     kMin: focusValuesExtents[i].kMin,
                     kMax: focusValuesExtents[i].kMax,
                     tMin: focusValuesExtents[i].vMin?.t,
@@ -194,7 +206,12 @@ const TrendPointers = ({
         </div>
         {children}
       </div>
-      {value
+      <div className="TrendPointers_legend_keywrapper absolute top-0 left-0" style={{
+        overflow: 'hidden',
+        right: -10,
+        bottom: 0,
+      }}>
+      {value && visibleKeys.length > 1
         ? visibleKeys.map((key) => {
 
           return (
@@ -210,6 +227,7 @@ const TrendPointers = ({
         })
         : null
       }
+      </div>
       <div className="TrendPointers_legend absolute pa3" style={{
         top: 0,
         display: value ? 'block' : 'none',
