@@ -47,7 +47,7 @@ const CurrentYearExplorer = ({ height=300, width=300 }) => {
         : null
       }
       <div />
-      {currentKeys.map((key) => {
+      {currentDatum && currentKeys.map((key) => {
         const isOnFocus = currentFocusKeys.includes(key)
         return (
         <div className="flex items-end justify-between w100" key={key}>
