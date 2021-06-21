@@ -1,5 +1,5 @@
 import React from 'react';
-import { curveMonotoneX } from '@vx/curve';
+import { curveMonotoneX, curveLinear } from '@vx/curve';
 import { AreaClosed, LinePath } from '@vx/shape';
 
 class TrendLineGraphics extends React.Component {
@@ -25,6 +25,7 @@ class TrendLineGraphics extends React.Component {
       isVisible=true,
       strokeWidth=1,
       strokeColor='black',
+      displayPoints=false,
     } = this.props;
     const x = (d) => d[xProp]
     const y = (d) => d[yProp]
@@ -33,7 +34,7 @@ class TrendLineGraphics extends React.Component {
         className="TrendLineGraphics"
         transform={`translate(${marginLeft}, ${marginTop})`}
       >
-        <AreaClosed
+        {/*<AreaClosed
           data={values}
           x={x}
           y={y}
@@ -44,7 +45,7 @@ class TrendLineGraphics extends React.Component {
           curve={curveMonotoneX}
           // strokeDasharray={5000}
           // strokeDashoffset={j}
-        />
+        />    */}
         <LinePath
           className="values"
           data={values}
@@ -53,9 +54,16 @@ class TrendLineGraphics extends React.Component {
           strokeWidth={strokeWidth}
           stroke={isVisible? strokeColor: 'var(--data-background)'}
           strokeOpacity={2}
-          curve={curveMonotoneX}
-           strokeLinecap="round"
+          curve={displayPoints ? curveLinear : curveMonotoneX}
+          strokeLinecap="round"
         />
+        {
+          displayPoints
+          ? values.map((v, i) => (
+            <circle key={i} cx={v.x} cy={v.y} r={Math.max(3,strokeWidth * 1.5)} fill={strokeColor}/>
+          ))
+          : null
+        }
         {/*
         <line
           x1={scaleX(fromDate)}

@@ -1,6 +1,38 @@
 import { useRef, useState, useEffect } from 'react'
 import { StatusIdle, StatusFetching, StatusSuccess, StatusNone, StatusError } from '../constants'
 import axios from 'axios'
+import { bisectLeft } from 'd3-array'
+
+export const getClosestDatumIdxFromX = ({x, xValues }) => {
+  const insertIdx = parseInt(bisectLeft(xValues, x), 10)
+  const closestDatumIdx = insertIdx === 0
+      ? 0
+      : (
+        Math.abs(x - xValues[insertIdx]) >  Math.abs(x - xValues[insertIdx - 1])
+        ? insertIdx - 1
+        : insertIdx
+      )
+  return closestDatumIdx
+}
+
+export const getClosestDatumIdxFromXY = ({x, y, xValues, yValues, radiusIdx = 5}) => {
+  const insertIdx = parseInt(bisectLeft(xValues, x), 10)
+  const closestDatumIdx = insertIdx === 0
+      ? 0
+      : (
+        Math.abs(x - xValues[insertIdx]) >  Math.abs(x - xValues[insertIdx - 1])
+        ? insertIdx - 1
+        : insertIdx
+      )
+  // around the radius of x items
+  let closestInsertIdx = Math.max(0, closestDatumIdx - radiusIdx)
+  for (let i = Math.max(0, closestDatumIdx - radiusIdx); i < Math.min(closestDatumIdx + radiusIdx, xValues.length); i++) {
+    closestInsertIdx = Math.abs(y - yValues[i]) >  Math.abs(y - yValues[closestInsertIdx])
+      ? closestInsertIdx
+      : i
+  }
+  return closestInsertIdx
+}
 
 
 export const useGetDataset = ({ url, allowCached=true, delay=0}) => {

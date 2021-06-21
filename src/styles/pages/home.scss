@@ -2,8 +2,7 @@
 .Home_paragraphsWrapper {
   // font-family: var(--font-family-serif);
   transition: padding .25s ease-in-out;
-  width: 50%;
-  margin: 10vh auto;
+  margin: 5vh auto;
 }
 
 .Home_stepChapterWrapper {
@@ -16,4 +15,12 @@
 }
 .Home_stepChapterWrapper a:hover {
   text-decoration: underline;
+}
+
+// -m
+@media screen and (min-width: 30em) {
+  .Home_paragraphsWrapper{
+    margin: 10vh auto;
+    width: 70%;
+  }
 }

@@ -1,9 +1,17 @@
 import React, { useRef, useEffect, useState, useMemo } from 'react'
-import Trend from '../Trend'
 import ChapterModulesGraphics from './ChapterModulesGraphics'
+import Trend from '../Trend'
+import Points from '../Points'
+
+const AvailablesComponents = {
+  Points: Points,
+  Trend: Trend
+}
 
 const ChapterVisualisations = ({
   themeDatasetId='themeDatasetId',
+  component='Trend',
+  displayPoints=false,
   keys=['v'], legend, data=[], modules=[], height=100, width=100, step,
   numStartAt=0,
   marginLeft=100
@@ -33,9 +41,11 @@ const ChapterVisualisations = ({
         left: boundingClientRect.left,
         top: boundingClientRect.top,
       })
-      console.info('ChapterVisualisations updated size:', boundingClientRect)
     }
   }, [height, width])
+  const Component = AvailablesComponents[component]
+    ? AvailablesComponents[component]
+    : Trend
 
   return (
     <div className="ChapterVisualisations mr5" style={{
@@ -58,7 +68,8 @@ const ChapterVisualisations = ({
           height: size.height,
           width: size.width
         }}>
-          <Trend
+          <Component
+            displayPoints={displayPoints}
             themeDatasetId={themeDatasetId}
             from={paragraph?.from}
             to={paragraph?.to}
