@@ -41,10 +41,8 @@ const ChapterVisualisations = ({
         left: boundingClientRect.left,
         top: boundingClientRect.top,
       })
-      console.info('ChapterVisualisations updated size:', boundingClientRect)
     }
   }, [height, width])
-
   const Component = AvailablesComponents[component]
     ? AvailablesComponents[component]
     : Trend
