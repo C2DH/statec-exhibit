@@ -13,9 +13,9 @@ export const useStore = create((set) => ({
     document.body.style.backgroundColor = backgroundColor
     return set(state => ({ backgroundColor }))
   },
-  changeCurrentDatum: ({ datum, year, dataset, keys, focusKeys }) => {
+  changeCurrentDatum: ({ datum, year, dataset, keys, focusKeys, currentYearExplorerOpen=null }) => {
     return set(state => ({
-      currentYearExplorerOpen: true,
+      currentYearExplorerOpen: currentYearExplorerOpen !== null ? currentYearExplorerOpen : state.currentYearExplorerOpen,
       currentYear: year,
       currentDatum: datum,
       currentDataset: dataset,

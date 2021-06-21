@@ -77,7 +77,7 @@ const TrendPointers = ({
   // }, []);
 
   useEffect(() => {
-    if (currentYearExplorerOpen && currentYear && value) {
+    if (currentYear && value) {
       changeCurrentDatum({
         datum: value,
         year: value.t,
@@ -95,6 +95,7 @@ const TrendPointers = ({
 
   const clickHandler = () => {
     changeCurrentDatum({
+      currentYearExplorerOpen: true,
       datum: value,
       year: value.t,
       dataset: themeDatasetId,
