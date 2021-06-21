@@ -16,6 +16,10 @@ i18n
       escapeValue: false, // react already safes from xss
       format: function(value, format, lng) {
         if (typeof value === 'number') {
+          if (format === 'increment') {
+            const v = new Intl.NumberFormat(lng).format(value)
+            return value < 0 ? v : `+${v}`
+          }
           // adapt number
           // console.info(value, format, lng)
           return new Intl.NumberFormat(lng, {
