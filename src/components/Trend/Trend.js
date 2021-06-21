@@ -34,7 +34,8 @@ const Trend = ({
   width=100,
   marginLeft=100,
   marginRight=50,
-  marginTop=50
+  marginTop=50,
+  displayPoints=false,
 }) => {
   const [pointer, setPointer] = useSpring(() => ({ x:0, y:0, xValue:0, config: config.stiff  }))
   const svgHeight = height - 100
@@ -58,7 +59,7 @@ const Trend = ({
   const values = useMemo(() => data.map(d => {
     const x = scaleX(moment(d.t, 'YYYY').startOf('year'));
     const ys = availableKeys.reduce((acc, k) => {
-      acc[k] = scaleY(d[k])
+      acc[k] = d[k] !== null ? scaleY(d[k]) : null
       return acc
     }, {})
     return {
@@ -173,7 +174,7 @@ const Trend = ({
               windowDimensions={windowDimensions}
               marginLeft={marginLeft}
               marginTop={marginTop}
-              values={values.map(v => ({
+              values={values.filter(v => v.ys[key] !== null).map(v => ({
                 x: v.x,
                 y: v.ys[key]
               }))}
@@ -184,6 +185,7 @@ const Trend = ({
               isVisible
               strokeWidth={1}
               fill={'transparent'}
+              displayPoints={displayPoints}
               strokeColor={isFocusKey ? 'var(--secondary)' : 'var(--data-background)'}
             />
           )
@@ -198,7 +200,7 @@ const Trend = ({
               windowDimensions={windowDimensions}
               marginLeft={marginLeft}
               marginTop={marginTop}
-              values={values.filter(d => d.t >= from && d.t <= to).map(v => ({
+              values={values.filter(d => d.t >= from && d.t <= to && d.ys[key] !== null).map(v => ({
                 x: v.x,
                 y: v.ys[key]
               }))}
@@ -208,6 +210,7 @@ const Trend = ({
               width={svgWidth - marginLeft - marginRight}
               isVisible
               strokeWidth={3}
+              displayPoints={displayPoints}
               fill={'transparent'}
               strokeColor={'var(--secondary)'}
             />
