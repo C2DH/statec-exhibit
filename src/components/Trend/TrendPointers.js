@@ -70,12 +70,6 @@ const TrendPointers = ({
     value = values[closestIdx]
   }
 
-  // useEffect(() => {
-  //   window.addEventListener("mousemove", updateMousePosition);
-  //   return () => window.removeEventListener("mousemove", updateMousePosition);
-  //   // eslint-disable-next-line
-  // }, []);
-
   useEffect(() => {
     if (currentYear && value) {
       changeCurrentDatum({
@@ -104,6 +98,17 @@ const TrendPointers = ({
     })
   }
 
+  const mouseLeaveHandler = () => {
+      changeCurrentDatum({
+        datum: null,
+        year: null,
+        dataset: null,
+        keys: [],
+        focusKeys: [],
+      })
+     setIsVisible(false)
+  }
+
   // console.info(value)
   //
   return (
@@ -124,7 +129,7 @@ const TrendPointers = ({
         onClick={clickHandler}
         onMouseMove={updateMousePosition}
         onMouseEnter={() => setIsVisible(true)}
-        onMouseLeave={() => setIsVisible(false)}
+        onMouseLeave={mouseLeaveHandler}
       />
       <div className="TrendLegend absolute" style={{
         position: 'absolute',
