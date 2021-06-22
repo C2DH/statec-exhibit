@@ -6,7 +6,7 @@ const FlowerPointerGraphics = ({ data=[], field='v', radius=10}) => {
   const { t } = useTranslation()
   const currentYear = useStore(state => state.currentYear)
   const idx = data.findIndex(d => String(currentYear) === d.t)
-  console.info('rendering FlowerPointerGraphics', currentYear, data, idx)
+  // console.info('rendering FlowerPointerGraphics', currentYear, data, idx)
 
   if (idx === -1) {
     return null;

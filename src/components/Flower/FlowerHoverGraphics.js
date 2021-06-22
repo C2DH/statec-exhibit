@@ -3,7 +3,7 @@ import { scaleLinear } from 'd3-scale'
 import { to, animated, useSpring, config } from 'react-spring'
 
 
-const FlowerHoverGraphics = ({ data, radius, field, minYear, maxYear, onChange }) => {
+const FlowerHoverGraphics = ({ data, radius, field, minYear, maxYear, onChange, displayLabel=false }) => {
   const [pos, setPos] = useState({ x:0, y:0, theta:0, datum: -1})
   const [pointer, api] = useSpring(() => ({ x: 20, y: 20, theta: 0, config: config.stiff}))
 
@@ -31,7 +31,7 @@ const FlowerHoverGraphics = ({ data, radius, field, minYear, maxYear, onChange }
     }
   }
   return (
-    <g onMouseMove={mouseMoveHandler}>
+    <g onMouseMove={mouseMoveHandler} onMouseLeave={() => onChange({datum: null})}>
       <circle r={radius*2} fill='transparent' />
       <g style={{pointerEvents: 'none'}} >
         {/*/<animated.line
@@ -41,36 +41,40 @@ const FlowerHoverGraphics = ({ data, radius, field, minYear, maxYear, onChange }
           stroke='black'
           transform={pointer.theta.interpolate((theta) => `rotate(${theta - 90})`)}
         />*/}
-        <animated.text
-          style={{
-            display: 'block',
-            textAnchor: 'middle',
-            dominantBaseline: 'central',
-            color: '#2b219f',
-            fontSize: '14px',
-          }}
-          textAnchor="end"
-          dx={pointer.x}
-          y={pointer.y}
-          dy={-40}
-        >
-          {pos.datum[field]}
-        </animated.text>
-        <animated.text
-          style={{
-            display: 'block',
-            textAnchor: 'middle',
-            dominantBaseline: 'central',
-            color: '#2b219f',
-            fontSize: '14px',
-          }}
-          textAnchor="end"
-          dx={pointer.x}
-          y={pointer.y}
-          dy={-20}
-        >
-          {pos.datum.t}
-        </animated.text>
+        {displayLabel ? (
+          <>
+            <animated.text
+              style={{
+                display: 'block',
+                textAnchor: 'middle',
+                dominantBaseline: 'central',
+                color: '#2b219f',
+                fontSize: '14px',
+              }}
+              textAnchor="end"
+              dx={pointer.x}
+              y={pointer.y}
+              dy={-40}
+            >
+              {pos.datum[field]}
+            </animated.text>
+            <animated.text
+              style={{
+                display: 'block',
+                textAnchor: 'middle',
+                dominantBaseline: 'central',
+                color: '#2b219f',
+                fontSize: '14px',
+              }}
+              textAnchor="end"
+              dx={pointer.x}
+              y={pointer.y}
+              dy={-20}
+            >
+              {pos.datum.t}
+            </animated.text>
+          </>
+        ): null}
       </g>
 
     </g>
