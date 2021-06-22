@@ -1,10 +1,13 @@
-import React, {useMemo, useState} from 'react'
+import React, {useMemo, useState, useEffect} from 'react'
 // import { useTranslation } from 'react-i18next'
 import { extent } from 'd3-array'
 import { scalePow } from 'd3-scale'
 import Bezier from './Bezier'
 import FlowerPointerGraphics from './FlowerPointerGraphics'
 import FlowerHoverGraphics from './FlowerHoverGraphics'
+import FlowerSelectedDatum from './FlowerSelectedDatum'
+import '../../styles/components/flower.scss'
+import { useStore } from '../../store'
 
 const Flower = ({
   colors = ['#FFCCB6', '#f8b294', '#F77DA6'],
@@ -14,13 +17,13 @@ const Flower = ({
   minValue,
   maxValue,
   field = 'v',
-  currentYear,
   active = false,
   fill = '#EDEDED',
   stroke = 'black',
   nMinPetals = 8,
   children
 }) => {
+  const currentYear = useStore(state => state.currentYear)
   // const { t } = useTranslation();
   const [colorA, colorB, colorC] = colors
   const dimension = Math.min(width, height)
@@ -58,24 +61,47 @@ const Flower = ({
   const onDatumChangeHandler = (ev) => {
     setDatum(ev.datum)
   }
+
+
+  useEffect(() => {
+    if (currentYear === null) {
+      setDatum(null)
+    } else {
+      const idx = data.findIndex(d => String(currentYear) === d.t)
+      if (idx > -1) {
+        setDatum(data[idx])
+      }
+    }
+  }, [currentYear, data])
+
   return (
+    <>
     <div
-      className="Flower h-100 w-100 flex flex-column"
+      className="Flower_legend tc sans relative"
+      style={{
+        fontSize: '12px',
+        lineHeight: '14px',
+        marginTop: 'var(--spacer-1)',
+        color: 'var(--gray-500)',
+        width,
+      }}
+    >
+
+      {children}
+    </div>
+    <div
+      className="Flower h-100 w-100 flex flex-column relative"
       style={{
         flexGrow: 1,
       }}
     >
-      <div
-        className="Flower_legend tc sans"
-        style={{
-          fontSize: '12px',
-          lineHeight: '14px',
-          marginTop: 'var(--spacer-1)',
-          color: 'var(--gray-500)',
-        }}
-      >
-        {children}
-      </div>
+      <FlowerSelectedDatum className="absolute top-0 left-0 bottom-0"
+        datum={datum}
+        onChange={onDatumChangeHandler}
+        data={data} field={field} style={{ width }}
+      />
+
+
       <div style={{ flexGrow: 1 }}>
         <div style={{ width, height, overflow: 'hidden' }}>
           <svg width={width} height={height}>
@@ -177,12 +203,13 @@ const Flower = ({
                 );
               })}
               <FlowerHoverGraphics data={data} radius={radius} field={field} minYear={minYear} maxYear={maxYear} onChange={onDatumChangeHandler}/>
-              <FlowerPointerGraphics data={data} radius={radius} field={field} />
+              {/*<FlowerPointerGraphics data={data} radius={radius} field={field} />*/}
             </g>
           </svg>
         </div>
       </div>
     </div>
+    </>
   );
 };
 export default Flower
