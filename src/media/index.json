@@ -1708,6 +1708,47 @@
       "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAUCAYAAAC9BQwsAAAACXBIWXMAABYlAAAWJQFJUiTwAAADr0lEQVQ4y0WT60/TZxTH++9si7xY9gLKJUtINp0olyiiLgw1WcIWHbgBUwNxDp1rYVQQhKEwYVq5lEuh3BFbENpKuVPa0paW3i0wzOabZclnB7ZsL07O7zlPPuc855zvTzH/3WdYdI1Y+5px3silPft9np1V4rqYhL0gifWCZLYuJeOWs/NiMs5LqfxemIbCeKeQ4ReDGC0TzFYUoDqaQP0pJePnEuk5k0hHrpJX+UrMnybSm6dEfy6F3z4X0KQuwmB+zrDViOl6Po+zPmDgfBpaAepzkhjIS6Y9N0XOSdTlpKARC11IRWG/msl6dTHrVUUsXUjDcOwdTJlHGMt4j8Hj7xI4fYSBDLETEjuZwMiJBHbyE1FEy7IJPK4k2HqLsFbFru4eO7raQx/v0hDs1PC6+x4xsaiujtDTat58eRTFduMNHHt+Xq6ZMS7PsuhdxR5y4oi6Cf4RIfI2QvhtlPifO+z9tYtnP0Ds2nkBa0vxRR243TY83kVc4p2bNtzyHZZ4JOYiFHEwZ5nEbJ3Es71KvOwsCp+A4TfbxHbchOObRHc8RHc9xHa94r2EYptMmoYZHO1hYETH0KSeeGkeiq26MkL7fgKhdbySbSuwRiTuFsCFL+xgV5LaVmbp7tcyNNbL4tqsgGcErL+GX6qsSMDummfdOS8VhqiuU/NtRRlaXRsz8swZ8wTjUwPYlqf/BwN7Xl7ZpiTztFzM0NX/lPZnLRjGetAPdxGIbBCVNuJ7HnzBNaLfnJYeG8sZnh6i6VEtZoGfdLYK1IrFZsS6YGTNYZW+3WxtrxCM2vH4FokdgBuaEqqaaqhtUFPfrKGmvhqV5kd54q/0GboYEznu7PvwywxCMSce/7KAp1As3L3MD/fVqKor0TRUCXSXqloV2u42egc7aNM+YsJoYFsGdTB1j+9fcEldjLqxBtVPt+k1dBxCd6oqGZ7QMzLRj06m2WfoZG5+Slbkwb21ROxrAZ0PynnY0UJxyWXKKkooKiumulbN0HivWB+jsjfrgokXMyPSqxfvQcUD0NFym/kNMxnZx/miuJDUj9Jpan3A6POBw6WPS48Hq3B6lw7F4d5aJHo1B8VK8y1sDgtZuSf5qvQKyvQPDyttiPQsMlXj7JisaeZQFGGx/8ClxpvoJ/v5JOsY5d9fJ+3jdBoe3sfhXmBh9aWAo5jmxkSS/8jQc9Bjcbb8j0030Y100T+oxe60ijr0/PLkZ2ZF0KsbFlGRAZPA/uA64dcunC4rwSuZ/A27o06YZ5AuPAAAAABJRU5ErkJggg==",
       "aspectRatio": 0.7229166666666667,
       "isPortrait": true
+    },
+    "code_civil_titreVI_chap1_paragraph229.png": {
+      "caption": "",
+      "provenance": "<a href='http://data.legilux.public.lu/eli/etat/leg/loi/1804/03/21/n1/jo' target='_blank'>Code Civil</a> des français du 21 mars 1804 (30 Ventôse de l'An XII)",
+      "resolutions": {
+        "medium-w": {
+          "url": "/media/images/code_civil_titreVI_chap1_paragraph229.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/code_civil_titreVI_chap1_paragraph229.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/code_civil_titreVI_chap1_paragraph229.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 1080,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/code_civil_titreVI_chap1_paragraph229.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 960
+          }
+        }
+      },
+      "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAUCAIAAAAcIrrpAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACK0lEQVQ4y42VZ2/CMBiE8///EhsECAh7FDFDWWXvnYQ+sqXITUPg/RAZj/Pd+Wy03W43mUzW6/VsNrvdbk+l7vc7o/v9frPZHI9H+dOyrOfr0nRdbzab0+m02+2eTifZa9s238Ph0Ol0GC0Wi7Va7Xw+t1otOp0JHnCxWCwQCDBvPp8/Hg8VDlLj8RheP6IQATo6/OC+RaHIFqWOQQcs6EC83+8DvVwur9ern1jP3svlAlmIQMowDPajPRgMVquVpMlO3nBYq/JyZKLrSxS8QOQc6Gk0GtVqFSvZzFOyNzv2GA6HgLIMLDSORqPFYkGnPDRXBt7AsS2ZQDKebrdb1AFK28mNaZofwQFkiZIcTVG4Vi6XiZG0hX60Q5D9aLyEY7her7MynU5Ho1Fsop1IJAgdBOVPSjrITKZx3KqJmnoCGMTsdrtdKpVA4RAlR7KCcVLgm1vxX6x6IPLcCTkbEA5LKdBR6kLXXJeUZCAhn8/rolKpFKrj8Th6M5lMoVBwvsyJRCIc0UuxJCscDmezWRYEg0Ggc7kcy2BHG796vR5WSAfxDsp+3pEpGLEhXMiq9I4hkkFcnh+U5jIOR5xLgi88ClxS2MGLIdoYQgBkSvi6AugOCoowC8uSyWQoFEI4Tw5tOnl4sIwvPnDu6KCTK/hSbKVSwV18gQvPHJIJMA084nxo4ANDQMDXEOV6r/7A8WAQUW6Sz4umOkMYecHe3Fn7s2Im/wfOAy7rF/BvuvXm9nL7AAAAAElFTkSuQmCC",
+      "aspectRatio": 1.3260416666666666,
+      "isPortrait": false
     }
   }
 }
