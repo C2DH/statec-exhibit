@@ -4,12 +4,15 @@ import { useStore } from '../store'
 import { useTranslation } from 'react-i18next'
 import { useOnScreen } from '../hooks'
 import '../styles/components/header.scss'
+import { ChapterRoutes } from '../constants'
+
 
 const Header = () => {
   const { t } = useTranslation()
   const [{ intersectionRatio }, ref] = useOnScreen()
   const backgroundColor = useStore(state => state.backgroundColor)
   const history = useHistory()
+  const currentChapter = ChapterRoutes.find(d => d.to === history.location.pathname)
 
   return (
     <>
@@ -26,6 +29,10 @@ const Header = () => {
       </div>
       <div>
         <Link to={'/'}>{t('FramingLuxembourg')}</Link>
+        {currentChapter
+          ? <span>&nbsp;/&nbsp;{t(currentChapter.label)}</span>
+          : null
+        }
       </div>
       <div className="Header_sideLink tr" onClick={() => history.push({
         search: '?panel=about',
