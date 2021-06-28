@@ -23,8 +23,7 @@ const MediaImage = ({
   const { isLoading } = useImage(mediaUrl, 50);
   const backgroundImage = `url(${isLoading ? mediaBase64 : mediaUrl})`
   const mediaCaption = [
-    { text: caption, className: 'MediaImage_narrative'},
-    { text: media?.caption, className: 'MediaImage_caption mt2' },
+    { text: caption || media?.caption, className: 'MediaImage_caption mt2' },
     { text: media?.provenance, className:'MediaImage_provenance mt2' },
   ].filter(({text}) => typeof text === 'string' && text.length)
     .map(({text, className=''}) => `<div class="${className}">${text}</div>`)
