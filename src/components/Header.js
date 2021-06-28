@@ -1,10 +1,10 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link, useHistory } from 'react-router-dom'
 import { useStore } from '../store'
 import { useTranslation } from 'react-i18next'
 import { useOnScreen } from '../hooks'
 import '../styles/components/header.scss'
-import { ChapterRoutes } from '../constants'
+import { ChapterRoutes, ChapterRoutesWithIndex } from '../constants'
 
 
 const Header = () => {
@@ -12,7 +12,26 @@ const Header = () => {
   const [{ intersectionRatio }, ref] = useOnScreen()
   const backgroundColor = useStore(state => state.backgroundColor)
   const history = useHistory()
-  const currentChapter = ChapterRoutes.find(d => d.to === history.location.pathname)
+  const pathname = history.location.pathname
+  const currentChapter = ChapterRoutes.find(d => d.to === pathname)
+  // CHANGE favicon and title BASED ON CURRENT CHAPTER
+  useEffect(() => {
+    try {
+      const headLink = document.getElementsByTagName('link')[0]
+      if (headLink && headLink.getAttribute('rel') === 'icon') {
+        const route = ChapterRoutesWithIndex.find(d => d.to === pathname)
+        if (route.title) {
+          document.title = `${route.title} - Framing Luxembourg`
+        }
+        if (route.favicon) {
+          headLink.href = route.favicon
+        }
+      }
+    } catch(e) {
+      console.warn('Cannot change HEAD elements...', e)
+    }
+  }, [pathname])
+
 
   return (
     <>
