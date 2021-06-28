@@ -1751,6 +1751,47 @@
       "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAUCAIAAAAcIrrpAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACK0lEQVQ4y42VZ2/CMBiE8///EhsECAh7FDFDWWXvnYQ+sqXITUPg/RAZj/Pd+Wy03W43mUzW6/VsNrvdbk+l7vc7o/v9frPZHI9H+dOyrOfr0nRdbzab0+m02+2eTifZa9s238Ph0Ol0GC0Wi7Va7Xw+t1otOp0JHnCxWCwQCDBvPp8/Hg8VDlLj8RheP6IQATo6/OC+RaHIFqWOQQcs6EC83+8DvVwur9ern1jP3svlAlmIQMowDPajPRgMVquVpMlO3nBYq/JyZKLrSxS8QOQc6Gk0GtVqFSvZzFOyNzv2GA6HgLIMLDSORqPFYkGnPDRXBt7AsS2ZQDKebrdb1AFK28mNaZofwQFkiZIcTVG4Vi6XiZG0hX60Q5D9aLyEY7her7MynU5Ho1Fsop1IJAgdBOVPSjrITKZx3KqJmnoCGMTsdrtdKpVA4RAlR7KCcVLgm1vxX6x6IPLcCTkbEA5LKdBR6kLXXJeUZCAhn8/rolKpFKrj8Th6M5lMoVBwvsyJRCIc0UuxJCscDmezWRYEg0Ggc7kcy2BHG796vR5WSAfxDsp+3pEpGLEhXMiq9I4hkkFcnh+U5jIOR5xLgi88ClxS2MGLIdoYQgBkSvi6AugOCoowC8uSyWQoFEI4Tw5tOnl4sIwvPnDu6KCTK/hSbKVSwV18gQvPHJIJMA084nxo4ANDQMDXEOV6r/7A8WAQUW6Sz4umOkMYecHe3Fn7s2Im/wfOAy7rF/BvuvXm9nL7AAAAAElFTkSuQmCC",
       "aspectRatio": 1.3260416666666666,
       "isPortrait": false
+    },
+    "ark_70795_gq9f7z_pages_11.jpg": {
+      "caption": "Gérard Calot (à gauche)",
+      "provenance": "Lëtzebuerger Land du 30 mars 1979, p.11",
+      "resolutions": {
+        "medium-w": {
+          "url": "/media/images/ark_70795_gq9f7z_pages_11.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/ark_70795_gq9f7z_pages_11.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/ark_70795_gq9f7z_pages_11.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 1080,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/ark_70795_gq9f7z_pages_11.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 960
+          }
+        }
+      },
+      "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAUCAIAAAAY12rUAAAACXBIWXMAAAsTAAALEwEAmpwYAAADO0lEQVQ4y03T5U5lQRAE4POqwOLu7q5Bgru72+KWAEEXCOF19rvn5Cb0j8lodVV1T1BVVbW7u3twcLC5ubm6ujo1NTU6Omqcn583Li0t2Tw7O/v8/PwXxsfHx/v7u+XX19d7GG9vb6+vr0FjY+PfMA7CmJubGxwcnJyc3N7eXlxcBLSxsXF5eelZhGX8/v5+enp6fn42gRIlCOrr6yW8uLg4OTnp7e2tqakpLS0tLCycmJjY29uDsra25vQzHpJL1tDQ0NHRsbW19S8egS0Q19fXSKWnp1ve39/v7+8PDAzshUFyxIioiJTNkZGR1tbWvLy8m5ubSGNMGka3t7dXV1dMmZ2dlYeo6elpEwI56IiKCOXh4eHu7q6npwcQNdI4igG1tLTI//Ly8vj4KBVEIyAeg9gKQyZ0oHhwEwbJY2NjiYmJ7e3tgGLSmpubXZVnZmZmeXkZkZWVFS5A8d4o5/n5eQTE2qOjI4xOT0/dqaurc4ppjFFnZyfsoaGhpqYmWPwiluUSWGJHXWS225Izm/3r6+sKxweZfn5+YuXHrSceCg9UyaEXFxdXVlbCOjw85FHkNCIqy2MJNFpWVlZ5efnOzg6/Y9JwAdfd3d3f38+yrq4urtvEq62tjS51REdaWjIzM/Pz8xUXRElJSXV1dVlZmSLGqmbXGou+vj5Yel2PKIqreEWmYLSwsKC/PKuoqLCfk5ODmjnctLS0gCKkCgoKIiDtU1tbi4vRDc2pQDzGS37Q9MJCLT8eqamp6AceO0tOTrYYCAM0gd5kZGRI6OthhLgjm1IiEvEyZ1NSUpKCBFRwR2uBo2t4eNgSRygkW0rAKdAQi4qK8MKCfGSzs7NTw+B3YEsVtZ8OMoFFI/1wiZKA9+5IjoX8UMxB8AXEnzBUIMDWMRacl1OBFXt8fPz4+JgWvNCGmJKSwmnv/UfPjBT9+RWBM/nT46EPNLRfqt5KSYjeUzLtkxlG9CxCSY4HagE6qBKiTNi5qiKakEa4jpDVAX4fLb8pRO8xBWoMohKwMyo/R7DwGxMSEiI7cnNzdY18EXdiIab/CqAxIMpxkdb/YI1RHaF7aYTivTkIc2NWGNlhmMDFC9x/BdpIvvYSVMAAAAAASUVORK5CYII=",
+      "aspectRatio": 1.196875,
+      "isPortrait": false
     }
   }
 }

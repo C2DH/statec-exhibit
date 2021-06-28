@@ -114,6 +114,19 @@
           "visibleKeys": ["v1"],
           "text": "La Deuxième Guerre mondiale a des répercussions importantes dans le domaine démographique. <br></br> La mortalité augmente (victimes directes de la guerre, conditions de subsistance difficiles), la natalité diminue. Entre 1935 et 1947, la population résidente passe de <b>297.000</b> à <b>291.000</b>.",
           "figures": [{ "id": "statec_001.png" }]
+        },
+        {
+          "from": 1965,
+          "to": 1990,
+          "visibleKeys": ["v1"],
+          "text": "A partir du milieu des années 1960, le solde naturel diminue fortement. Ce n'est pas dû à des « accidents » de l'histoire (comme les crises économiques ou sanitaires ou les deux guerres mondiales), mais à une baisse structurelle importante de la fécondité (c'est-à-dire du nombre d'enfants par femme). En 1976, le solde naturel est de - 600 (c'est-à-dire 600 décès de plus que de naissances), alors qu'en 1965 le solde fut encore très positif (+ 1 250). Dans ce contexte, un rapport sur la démographie luxembourgeoise est demandé par le gouvernement au démographe français réputé Gérard Calot, qui projette une baisse de la population du Luxembourg et surtout la diminution de la population de nationalité luxembourgeoise (Gérard Calot, La démographie du Luxembourg : passé, présent et avenir : rapport au président du gouvernement, 1978).",
+          "figures": [{ "id": "ark_70795_gq9f7z_pages_11.jpg" }]
+        },
+        {
+          "from": 1965,
+          "to": 1990,
+          "visibleKeys": ["v1"],
+          "text": "S'en suivent des joutes polémiques sur un hypothétique « suicide démographique ». Les projections se sont finalement avérées comme erronées. Dès 1990, le solde naturel remonte à + 1 163. Mais à la fin des années 1970, l'augmentation du taux de fécondité et l'arrivée massive d'une population jeune et en état de procréer est difficilement à prévoir."
         }
       ]
     },
