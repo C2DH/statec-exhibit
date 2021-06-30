@@ -21,10 +21,10 @@ const TrendHotspots = ({
       height,
     }}>
       {hotspots.map((d, i) => {
-        let value = values.find(v => v.t === String(d.t))
+        let value = values.find(v => String(v.t) === String(d.t))
         if (!value) {
           value = {
-            x: scaleX(moment(d.t, 'YYYY').startOf('year'))
+            x: scaleX(moment(String(d.t), 'YYYY').startOf('year'))
           }
         }
         return (

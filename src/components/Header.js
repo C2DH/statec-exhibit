@@ -22,6 +22,8 @@ const Header = () => {
         const route = ChapterRoutesWithIndex.find(d => d.to === pathname)
         if (route.title) {
           document.title = `${route.title} - Framing Luxembourg`
+        } else {
+          document.title = `Framing Luxembourg`
         }
         if (route.favicon) {
           headLink.href = route.favicon
