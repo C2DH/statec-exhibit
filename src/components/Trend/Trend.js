@@ -104,6 +104,7 @@ const Trend = ({
         focusKeys={focusKeys}
       />
       <TrendPointers
+        hotspots={hotspots}
         themeDatasetId={themeDatasetId}
         from={from}
         to={to}
