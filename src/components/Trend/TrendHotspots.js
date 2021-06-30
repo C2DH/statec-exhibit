@@ -37,7 +37,7 @@ const TrendHotspots = ({
           isActive = String(currentYear) === String(d.t)
         }
         return (
-          <TrendHotspot x={value.x}
+          <TrendHotspot key={i} x={value.x}
             text={d.title || d.text}
             year={d.t}
             active={isActive}

@@ -1,11 +1,12 @@
 import React, {useMemo} from 'react'
 import { useStore } from '../store'
-import {X} from 'react-feather'
+import {X, Bookmark} from 'react-feather'
 import {useTranslation} from 'react-i18next'
 import { useSpring, animated, to } from 'react-spring'
 import { useDrag } from 'react-use-gesture'
 import population from '../data/datasets/population.json'
 import '../styles/components/currentYearExplorer.scss'
+
 const CurrentYearExplorer = ({ height=300, width=300 }) => {
   const [{ pos }, set] = useSpring(() => ({ pos: [width - 250, 150] }))
 
@@ -20,9 +21,11 @@ const CurrentYearExplorer = ({ height=300, width=300 }) => {
   const { t } = useTranslation()
   const {
     currentDatum, currentYear,
+    currentHotspot,
     currentDataset,
     currentFocusKeys, currentKeys,
-    currentYearExplorerOpen, changeCurrentYearExplorerOpen} = useStore(state => state)
+    currentYearExplorerOpen, changeCurrentYearExplorerOpen
+  } = useStore(state => state)
   const people = useMemo(() => {
     return population.values.find(d => String(d.t) === String(currentYear))
   }, [currentYear])
@@ -60,6 +63,15 @@ const CurrentYearExplorer = ({ height=300, width=300 }) => {
         </div>
         )
       })}
+      {currentHotspot
+        ? (<>
+          <p className="bt pt2 ma0 mt2 " style={{fontSize:13, lineHeight:'16px'}}>
+            <label className="db ttu tracked mb1" ><Bookmark size={12}/>&nbsp;{t('hotspotLabel')}</label>
+            <span className="db" style={{color: 'var(--white)'}}>{currentHotspot.title || currentHotspot.text}</span>
+          </p>
+          {currentHotspot.title ? <blockquote className="db bl ml0 pl2 pr0 mr0" style={{color: 'var(--white)'}}>{currentHotspot.text}</blockquote> : null}
+          </>
+        ) : null}
       <button className="absolute right-0 pa3 top-0 Panel_closeButton bg-transparent bw0" onClick={() => changeCurrentYearExplorerOpen(false)}>
         <X size={20} color='var(--primary)'/>
       </button>
