@@ -51,7 +51,16 @@
               "availableKeys": ["v1", "v"],
               "visibleKeys": ["v1", "v"],
               "focusKeys": ["v1","v"],
-              "text": "Comme la mortalité ne baisse pas, le solde naturel devient <b>négatif</b> au cours des années 1972-1978, même si ce n'est que légèrement. C'est l'époque où certains, comme le directeur du STATEC, Georges Als, évoquent la thèse du \"suicide démographique\" du Luxembourg.",
+              "text": "Comme la mortalité ne baisse pas, le solde naturel devient <b>négatif</b> au cours des années 1972-1978, même si ce n'est que légèrement. <br/>Dans ce contexte, un rapport sur la démographie luxembourgeoise est demandé par le gouvernement au démographe français réputé Gérard Calot, qui projette une baisse de la population du Luxembourg et surtout la diminution de la population de nationalité luxembourgeoise (Gérard Calot, <a href='https://catalogue.bnf.fr/ark:/12148/cb353304698' target='_blank'>La démographie du Luxembourg, passé, présent et avenir : rapport au président du gouvernement, 1978</a>).",
+              "figures": [{ "id": "ark_70795_gq9f7z_pages_11.jpg" }]
+            },
+            {
+              "from": 1970,
+              "to": 1980,
+              "availableKeys": ["v1", "v"],
+              "visibleKeys": ["v1", "v"],
+              "focusKeys": ["v1","v"],
+              "text": "C'est l'époque où certains, comme le directeur du STATEC, Georges Als, évoquent la thèse du \"suicide démographique\" du Luxembourg.",
               "figures": [{"id": "forum-137-1992-le-mythe-du-suicide-demographique.png"}]
             },
             {

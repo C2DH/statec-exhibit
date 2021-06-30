@@ -33,7 +33,7 @@
           "hotspots": [
             {
               "t": 1866,
-              "text": "épidemie de Cholera"
+              "text": "Une épidemie de Cholera frappe le pays"
             }
           ]
         },
@@ -51,7 +51,14 @@
           "text": "En 1930, la crise économique mondiale, qui a débuté en 1929 par le krach de Wall Street, commence à avoir un impact au Luxembourg. Le chômage augmente, la production sidérurgique diminue, les comptes publics sont sous tension. La population diminue de 1930 à 1935  (quelque 300 personnes en moins), puis rebondit dans des proportions modestes dans la deuxième moitié des années 1930 avant de replonger suite à l'éclatement de la deuxième guerre mondiale.",
           "figures": [{ "id": "manif-1936-01-26.tif" }],
           "visibleKeys": ["v"],
-          "focusKeys": ["v"]
+          "focusKeys": ["v"],
+          "hotspots": [
+            {
+              "t": 1929,
+              "title": "Début de la Grande Dépression, la plus grande crise économique du XXe siècle.",
+              "text": "Le krach se déroula à la Bourse de New York entre le jeudi 24 octobre et le mardi 29 octobre 1929."
+            }
+          ]
         },
         {
           "from": 1980,
@@ -244,6 +251,7 @@
           "dataset": "PopulationCompositionByNationalities",
           "datasetKeys": ["v1", "v2", "v3", "v4", "v5", "v6"],
           "datasetLayout": "Compare",
+          "datasetLegend": "Nombre d'entrées selon nationalité en Luxembourg, 1970-1991",
           "hotspots": [
             {
               "text": "Accord entre le Grand-Duché de Luxembourg et la République portugaise relatif à l'emploi des travailleurs portugais au Luxembourg, signé le 20 mai 1970. Entré en vigueur le 14 avril 1972",
@@ -259,7 +267,8 @@
           "text": "C'est la diversité des origines des migrants à partir des années 1990 qui doit être relevée. <br/><br/> Les migrants viennent des pays voisins (la part des Français dans la population augmente), mais désormais également nombreux de pays non-européens (États-Unis, Inde, Chine, par exemple). Les migrants de pays qui avaient déjà une histoire d'immigration au Luxembourg (Portugal, Italie) sont également assez nombreux au sein de la vague d'immigration récente. Répondant à la demande d'une économie désormais largement tertiarisée, le profil des qualifications et des formations des immigrés est également de plus en plus diversifié ; ils occupent à la fois des emplois hautement qualifiés et des emplois peu qualifiés.",
           "dataset": "PopulationCompositionByNationalities",
           "datasetKeys": ["v1", "v2", "v3", "v4", "v5", "v6"],
-          "datasetLayout": "Compare"
+          "datasetLayout": "Compare",
+          "datasetLegend": "Nombre d'entrées selon nationalité en Luxembourg, 1991-2011"
         },
         {
           "from": 2008,
