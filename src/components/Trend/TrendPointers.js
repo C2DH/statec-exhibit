@@ -10,6 +10,7 @@ const TrendPointers = ({
   values=[],
   focusKeys=[],
   visibleKeys=[],
+  colorKeys={},
   scaleX, scaleY,
   marginLeft=0, left=0, marginTop=0, top=0,
   height=100,
@@ -91,7 +92,7 @@ const TrendPointers = ({
     changeCurrentDatum({
       currentYearExplorerOpen: true,
       datum: value,
-      year: value.t,
+      year: value?.t,
       dataset: themeDatasetId,
       keys: visibleKeys,
       focusKeys
@@ -99,13 +100,13 @@ const TrendPointers = ({
   }
 
   const mouseLeaveHandler = () => {
-      changeCurrentDatum({
-        datum: null,
-        year: null,
-        dataset: null,
-        keys: [],
-        focusKeys: [],
-      })
+      // changeCurrentDatum({
+      //   datum: null,
+      //   year: null,
+      //   dataset: null,
+      //   keys: [],
+      //   focusKeys: [],
+      // })
      setIsVisible(false)
   }
 
@@ -158,6 +159,11 @@ const TrendPointers = ({
       {value && isVisible ? visibleKeys.map((key) => {
         const isOnFocus = focusKeys.includes(key)
         const radius = isOnFocus ? 12 : 6
+        const backgroundColor = isOnFocus
+          ? colorKeys[key]
+            ? colorKeys[key]
+            : 'var(--secondary)'
+          : `var(--data-background)`
 
         return (
           <div className="TrendPointers_valuePoint" key={key} style={{
@@ -172,7 +178,7 @@ const TrendPointers = ({
             // border: isOnFocus
             //   ? '2px solid var(--secondary)'
             //   : '1px solid var(--secondary)',
-            backgroundColor: isOnFocus ? `var(--secondary)`: `var(--data-background)`,
+            backgroundColor,
             transform: `translate(${value.x + marginLeft}px, ${value.ys[key] + marginTop}px)`
           }}/>
         )
@@ -217,7 +223,7 @@ const TrendPointers = ({
         right: -10,
         bottom: 0,
       }}>
-      {value && visibleKeys.length > 1
+      {/* value && visibleKeys.length > 1
         ? visibleKeys.map((key) => {
 
           return (
@@ -232,7 +238,7 @@ const TrendPointers = ({
           )
         })
         : null
-      }
+      */}
       </div>
       <div className="TrendPointers_legend absolute pa3" style={{
         top: 0,
@@ -244,14 +250,21 @@ const TrendPointers = ({
       }}>
 
       {value
-        ? focusKeys.map((key) => (
+        ? focusKeys.map((key) => {
+          return (
             <div className="TrendPointers_legend_key flex items-end justify-between w100" key={key}>
-              <div>{t(`dataset${themeDatasetId}LegendValue${key}`)}</div>
+              <div>
+                {colorKeys[key]
+                  ? (<span className="TrendPointers_legend_key_circle" style={{backgroundColor: colorKeys[key]}}></span>)
+                  : null
+                }
+                {t(`dataset${themeDatasetId}LegendValue${key}`)}
+              </div>
               <div className="tr ml2" style={{
                 color: 'var(--white)'
               }}>{t('number', { n: value[key] })}</div>
             </div>
-          ))
+          )})
         : null
       }
       </div>

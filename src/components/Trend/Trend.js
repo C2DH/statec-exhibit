@@ -26,6 +26,9 @@ const Trend = ({
   visibleKeys=['v'],
   // focusKeys: to draw the lines, bigger
   focusKeys=['v'],
+  // colorKeys: if present, color lines in visibleKeys accordingly
+  // as a dict {"v": "black"}
+  colorKeys={},
   timeKey='t',
   hotspots=[],
   left=0,
@@ -109,6 +112,7 @@ const Trend = ({
         windowDimensions={windowDimensions}
         visibleKeys={visibleKeys}
         focusKeys={focusKeys}
+        colorKeys={colorKeys}
         marginLeft={marginLeft}
         scaleX={scaleX}
         scaleY={scaleX}
@@ -167,6 +171,11 @@ const Trend = ({
         />
         {visibleKeys.map((key) => {
           const isFocusKey = focusKeys.includes(key)
+          const strokeColor = isFocusKey
+            ? colorKeys[key]
+              ? colorKeys[key]
+              : 'var(--secondary)'
+            : 'var(--data-background)'
           return (
             <TrendLineGraphics
               id={paragraphId}
@@ -186,13 +195,16 @@ const Trend = ({
               strokeWidth={1}
               fill={'transparent'}
               displayPoints={displayPoints}
-              strokeColor={isFocusKey ? 'var(--secondary)' : 'var(--data-background)'}
+              strokeColor={strokeColor}
             />
           )
         })}
 
         {from && to
           ? focusKeys.map((key) => {
+            const strokeColor = colorKeys[key]
+                ? colorKeys[key]
+                : 'var(--secondary)'
             return (
             <TrendLineGraphics
               id={paragraphId}
@@ -212,7 +224,7 @@ const Trend = ({
               strokeWidth={3}
               displayPoints={displayPoints}
               fill={'transparent'}
-              strokeColor={'var(--secondary)'}
+              strokeColor={strokeColor}
             />
           )}): null
         }
