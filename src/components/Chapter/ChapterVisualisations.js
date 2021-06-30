@@ -78,6 +78,7 @@ const ChapterVisualisations = ({
             data={data}
             availableKeys={paragraph?.availableKeys ? paragraph.availableKeys: keys}
             focusKeys={paragraph?.focusKeys ? paragraph.focusKeys : paragraph?.visibleKeys }
+            colorKeys={paragraph?.colorKeys}
             visibleKeys={paragraph?.visibleKeys ? paragraph.visibleKeys : paragraph?.availableKeys || keys}
             legend={legend}
             height={size.height}
