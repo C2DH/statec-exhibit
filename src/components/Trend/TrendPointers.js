@@ -7,6 +7,7 @@ import { getClosestDatumIdxFromX } from '../../logic/dataset'
 
 const TrendPointers = ({
   themeDatasetId='themeDatasetId',
+  hotspots=[],
   values=[],
   focusKeys=[],
   visibleKeys=[],
@@ -70,18 +71,21 @@ const TrendPointers = ({
     })
     value = values[closestIdx]
   }
+  // get hotspot at value
+  const hotspot = value ? hotspots.find(d => String(value.t) === String(d.t)) : null
 
   useEffect(() => {
     if (currentYear && value) {
       changeCurrentDatum({
         datum: value,
+        hotspot: hotspot,
         year: value.t,
         dataset: themeDatasetId,
         keys: visibleKeys,
         focusKeys
       })
     }
-  }, [changeCurrentDatum, focusKeys, visibleKeys, themeDatasetId, value, currentYearExplorerOpen, currentYear])
+  }, [changeCurrentDatum, focusKeys, visibleKeys, themeDatasetId, value, currentYearExplorerOpen, currentYear, hotspot])
 
   if (!pointer && !from) {
     // nothing to visualize...
@@ -92,6 +96,7 @@ const TrendPointers = ({
     changeCurrentDatum({
       currentYearExplorerOpen: true,
       datum: value,
+      hotspot: hotspot,
       year: value?.t,
       dataset: themeDatasetId,
       keys: visibleKeys,
@@ -113,15 +118,14 @@ const TrendPointers = ({
   // console.info(value)
   //
   return (
-    <div
-      className="TrendPointersGraphics absolute"
+    <div className="TrendPointers absolute"
       style={{
         height,
         width,
       }}
     >
       <div className="absolute" style={{
-        top: marginTop,
+        top: 0 ,//marginTop,
         height: height-marginTop,
         left: marginLeft,
         width: width-marginLeft,
@@ -218,28 +222,6 @@ const TrendPointers = ({
         </div>
         {children}
       </div>
-      <div className="TrendPointers_legend_keywrapper absolute top-0 left-0" style={{
-        overflow: 'hidden',
-        right: -10,
-        bottom: 0,
-      }}>
-      {/* value && visibleKeys.length > 1
-        ? visibleKeys.map((key) => {
-
-          return (
-            <div className="TrendPointers_legend_key ml2 absolute flex items-end justify-between w100" key={key} style={{
-              transform: `translate(${value.x + marginLeft}px, ${value.ys[key] + marginTop}px)`,
-              top: 0,
-              marginTop: -10,
-            }}>
-              <div>{t(`dataset${themeDatasetId}LegendValue${key}`)}</div>
-              <div className="tr ml2">{t('number', { n: value[key] })}</div>
-            </div>
-          )
-        })
-        : null
-      */}
-      </div>
       <div className="TrendPointers_legend absolute pa3" style={{
         top: 0,
         display: value ? 'block' : 'none',
@@ -252,17 +234,19 @@ const TrendPointers = ({
       {value
         ? focusKeys.map((key) => {
           return (
-            <div className="TrendPointers_legend_key flex items-end justify-between w100" key={key}>
-              <div>
-                {colorKeys[key]
-                  ? (<span className="TrendPointers_legend_key_circle" style={{backgroundColor: colorKeys[key]}}></span>)
-                  : null
-                }
-                {t(`dataset${themeDatasetId}LegendValue${key}`)}
+            <div className="TrendPointers_legend_key w100" key={key}>
+              <div className="flex items-end justify-between w100">
+                <div>
+                  {colorKeys[key]
+                    ? (<span className="TrendPointers_legend_key_circle" style={{backgroundColor: colorKeys[key]}}></span>)
+                    : null
+                  }
+                  {t(`dataset${themeDatasetId}LegendValue${key}`)}
+                </div>
+                <div className="tr ml2" style={{
+                  color: 'var(--white)'
+                }}>{t('number', { n: value[key] })}</div>
               </div>
-              <div className="tr ml2" style={{
-                color: 'var(--white)'
-              }}>{t('number', { n: value[key] })}</div>
             </div>
           )})
         : null
