@@ -84,7 +84,11 @@ const ChapterStream = ({ numStartAt, modules = [], height, backgroundColor, onSt
                         layout={par.datasetLayout}
                         from={par.from}
                         to={par.to}
-                      />
+                      >
+                        <label className="db pl5 pv3 i">
+                          {par.datasetLegend}
+                        </label>
+                      </Dataset>
                     )
                     : null
                   }
