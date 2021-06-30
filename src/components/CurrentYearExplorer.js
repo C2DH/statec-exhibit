@@ -24,7 +24,7 @@ const CurrentYearExplorer = ({ height=300, width=300 }) => {
     currentFocusKeys, currentKeys,
     currentYearExplorerOpen, changeCurrentYearExplorerOpen} = useStore(state => state)
   const people = useMemo(() => {
-    return population.values.find(d => d.t === String(currentYear))
+    return population.values.find(d => String(d.t) === String(currentYear))
   }, [currentYear])
 
   return (
