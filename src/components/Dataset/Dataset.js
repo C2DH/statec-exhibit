@@ -83,9 +83,14 @@ const Dataset = ({ data, id='', layout='Flowers', keys=['v'], from=StartYear, to
 }
 
 
-const DebugDataset = ({ id, layout='Flowers', keys=['v'], from=StartYear, to=EndYear, height=100, width=100, hidePercentage }) => {
+const DebugDataset = ({
+  id, layout='Flowers', keys=['v'],
+  from=StartYear, to=EndYear,
+  height=100, width=100,
+  hidePercentage, children
+}) => {
   const { item, error, status } = useGetDataset({ url : `/datasets/${id}.json`, delay: 100})
-  console.info('DebugDataset', item, error, status)
+  // console.info('DebugDataset', item, error, status)
   if ([StatusFetching, StatusIdle].includes(status)) {
     return (
       <div className="flex items-center justify-center w-100" style={{marginTop: 100, height}}>
@@ -95,7 +100,12 @@ const DebugDataset = ({ id, layout='Flowers', keys=['v'], from=StartYear, to=End
       </div>
     )
   } else if (status === StatusSuccess) {
-    return <Dataset data={item} id={id} layout={layout} keys={keys} from={from} to={to} height={height} width={width} hidePercentage={hidePercentage}/>
+    return (
+      <>
+      <Dataset data={item} id={id} layout={layout} keys={keys} from={from} to={to} height={height} width={width} hidePercentage={hidePercentage}/>
+      {children}
+      </>
+    )
   }
   return (
     <div className="flex items-center justify-center w-100" style={{marginTop: 100, height}}>

@@ -85,7 +85,8 @@
       "datasetFamilyCompositionExtentv1": "min: <b class='bold'>{{kMin, 2}}</b> ménages in {{tMin}}<br/> max: <b class='bold'>{{kMax, 2}}</b> ménages in {{tMax}}",
       "datasetFamilyCompositionExtentv4": "min: <b class='bold'>{{kMin, 2}}</b> personnes par ménage in {{tMin}}<br/> max: <b class='bold'>{{kMax, 2}}</b> personnes par ménage in {{tMax}}",
       "datasetFamilyCompositionLegendValuev1": "Nombre de ménages",
-      "datasetFamilyCompositionLegendValuev4": "Nombre de personnes par ménage"
+      "datasetFamilyCompositionLegendValuev4": "Nombre de personnes par ménage",
+      "hotspotLabel": "Bookmark"
     }
   }
 }

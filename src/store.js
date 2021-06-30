@@ -3,6 +3,7 @@ import create from 'zustand';
 export const useStore = create((set) => ({
   currentYear: null,
   currentDatum: null,
+  currentHotspot: null,
   currentDataset: null,
   currentYearExplorerOpen: false,
   currentKeys: [],
@@ -13,10 +14,11 @@ export const useStore = create((set) => ({
     document.body.style.backgroundColor = backgroundColor
     return set(state => ({ backgroundColor }))
   },
-  changeCurrentDatum: ({ datum, year, dataset, keys, focusKeys, currentYearExplorerOpen=null }) => {
+  changeCurrentDatum: ({ datum, hotspot, year, dataset, keys, focusKeys, currentYearExplorerOpen=null }) => {
     return set(state => ({
       currentYearExplorerOpen: currentYearExplorerOpen !== null ? currentYearExplorerOpen : state.currentYearExplorerOpen,
       currentYear: year,
+      currentHotspot: hotspot,
       currentDatum: datum,
       currentDataset: dataset,
       currentKeys: keys,
