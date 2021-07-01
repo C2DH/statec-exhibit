@@ -12,7 +12,7 @@ const MediaImage = ({
   width=100,
   padding = 1,
   resolution = 'medium-h',
-  displayTitle = false,
+  displayTitle = false, onClick,
 }) => {
   const isMobileWithTablet = getIsMobileWithTablet(width, height)
   const media = MediaIndex.images[id]
@@ -25,9 +25,16 @@ const MediaImage = ({
   const mediaCaption = [
     { text: caption || media?.caption, className: 'MediaImage_caption mt2' },
     { text: media?.provenance, className:'MediaImage_provenance mt2' },
+    { text: media?.license, className:'MediaImage_license mt2'}
   ].filter(({text}) => typeof text === 'string' && text.length)
     .map(({text, className=''}) => `<div class="${className}">${text}</div>`)
     .join('')
+
+  const clickHandler = () => {
+    if (typeof onClick === 'function') {
+      onClick()
+    }
+  }
 
   return (
     <figure
@@ -47,7 +54,7 @@ const MediaImage = ({
           ? 0
           : `${1/media.aspectRatio * 100}%`
       }}>
-        <div className="absolute w-100 h-100 top-0 left-0">
+        <div className="absolute w-100 h-100 top-0 left-0" onClick={clickHandler}>
           <MediaImagePicture isLoading={isLoading} isPortrait={media.isPortrait} aspectRatio={media.aspectRatio} padding={padding} mediaBase64={mediaBase64} backgroundImage={backgroundImage} />
         </div>
       </div>
