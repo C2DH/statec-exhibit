@@ -189,9 +189,9 @@
           "title": "Composition de ménages",
           "paragraphs": [
             {
-              "availableKeys": ["v1"],
-              "visibleKeys": ["v1"],
-              "focusKeys": ["v1"],
+              "availableKeys": ["v4"],
+              "visibleKeys": ["v4"],
+              "focusKeys": ["v4"],
               "from": 1840,
               "to": 1864,
               "text": "La famille est une notion plus complexe qu'il ne paraît à première vue. Si elle peut être définie par les liens de parenté, elle évolue historiquement. De façon simplifiée et schématique, on pourrait dire que l'on passe, avec l'industrialisation et la \"modernisation\" sociale et sociétale de la \"famille nombreuse\" - généralement avec une progéniture nombreuse et vivant fréquemment dans des ménages où cohabitent plusieurs générations, et au 19ème siècle souvent avec des \"aidants\" extérieurs à la famille - à la famille nucléaire (avec peu d'enfants et vivant dans des ménages sans les grands-parents). <br/><br/>Aujourd'hui la \"famille\" a des formes très diversifiées allant de la famille monoparentale à la famille dite <em>recomposée</em>."
