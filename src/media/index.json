@@ -401,7 +401,7 @@
       "isPortrait": false
     },
     "statec_009.png": {
-      "caption": "C'est dans ce convertisseur Thomas que fût soufflée le 27 janvier 1958 la première charge d'après le procédé LD-AC, développé dans cette usine et placé dans la cour du laminoir à froid de ADU.",
+      "caption": "\"C'est dans ce convertisseur Thomas que fût soufflée le 27 janvier 1958 la première charge d'après le procédé LD-AC, développé dans cette usine et placé dans la cour du laminoir à froid de ADU.\"",
       "provenance": "Archives de la Ville de Dudelange - Fonds Jean-Pierre Conrardy",
       "resolutions": {
         "medium-w": {
@@ -643,6 +643,8 @@
       "isPortrait": false
     },
     "statec_015.png": {
+      "caption": "Travailleurs d'usine",
+      "provenance": "Archives de la Ville de Dudelange - Fonds Jean-Pierre Conrardy",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/statec_015.medium-w.jpg",
@@ -803,7 +805,8 @@
       "isPortrait": false
     },
     "statec_019.jpg": {
-      "caption": "Couverture du livre <a href='https://www.land.lu/page/book/5/FRE/index.html' target='_blank'><em>Cette colonie qui nous appartient un peu</em> - La communauté luxembourgeoise au Congo belge 1883-1960</a> de Régis Moes. Éditions d’Lëtzebuerger Land/Fondation Robert Krieps, 2012",
+      "caption": "",
+      "caption_prev": "Couverture du livre <a href='https://www.land.lu/page/book/5/FRE/index.html' target='_blank'><em>Cette colonie qui nous appartient un peu</em> - La communauté luxembourgeoise au Congo belge 1883-1960</a> de Régis Moes. Éditions d’Lëtzebuerger Land/Fondation Robert Krieps, 2012",
       "provenance": "CEGES, Fonds André Cauvin, n°135693",
       "resolutions": {
         "medium-w": {
@@ -1791,6 +1794,131 @@
       },
       "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAUCAIAAAAY12rUAAAACXBIWXMAAAsTAAALEwEAmpwYAAADO0lEQVQ4y03T5U5lQRAE4POqwOLu7q5Bgru72+KWAEEXCOF19rvn5Cb0j8lodVV1T1BVVbW7u3twcLC5ubm6ujo1NTU6Omqcn583Li0t2Tw7O/v8/PwXxsfHx/v7u+XX19d7GG9vb6+vr0FjY+PfMA7CmJubGxwcnJyc3N7eXlxcBLSxsXF5eelZhGX8/v5+enp6fn42gRIlCOrr6yW8uLg4OTnp7e2tqakpLS0tLCycmJjY29uDsra25vQzHpJL1tDQ0NHRsbW19S8egS0Q19fXSKWnp1ve39/v7+8PDAzshUFyxIioiJTNkZGR1tbWvLy8m5ubSGNMGka3t7dXV1dMmZ2dlYeo6elpEwI56IiKCOXh4eHu7q6npwcQNdI4igG1tLTI//Ly8vj4KBVEIyAeg9gKQyZ0oHhwEwbJY2NjiYmJ7e3tgGLSmpubXZVnZmZmeXkZkZWVFS5A8d4o5/n5eQTE2qOjI4xOT0/dqaurc4ppjFFnZyfsoaGhpqYmWPwiluUSWGJHXWS225Izm/3r6+sKxweZfn5+YuXHrSceCg9UyaEXFxdXVlbCOjw85FHkNCIqy2MJNFpWVlZ5efnOzg6/Y9JwAdfd3d3f38+yrq4urtvEq62tjS51REdaWjIzM/Pz8xUXRElJSXV1dVlZmSLGqmbXGou+vj5Yel2PKIqreEWmYLSwsKC/PKuoqLCfk5ODmjnctLS0gCKkCgoKIiDtU1tbi4vRDc2pQDzGS37Q9MJCLT8eqamp6AceO0tOTrYYCAM0gd5kZGRI6OthhLgjm1IiEvEyZ1NSUpKCBFRwR2uBo2t4eNgSRygkW0rAKdAQi4qK8MKCfGSzs7NTw+B3YEsVtZ8OMoFFI/1wiZKA9+5IjoX8UMxB8AXEnzBUIMDWMRacl1OBFXt8fPz4+JgWvNCGmJKSwmnv/UfPjBT9+RWBM/nT46EPNLRfqt5KSYjeUzLtkxlG9CxCSY4HagE6qBKiTNi5qiKakEa4jpDVAX4fLb8pRO8xBWoMohKwMyo/R7DwGxMSEiI7cnNzdY18EXdiIab/CqAxIMpxkdb/YI1RHaF7aYTivTkIc2NWGNlhmMDFC9x/BdpIvvYSVMAAAAAASUVORK5CYII=",
       "aspectRatio": 1.196875,
+      "isPortrait": false
+    },
+    "wall_street_5372590938_e898f8d9be_o.jpg": {
+      "caption": "Cleaner sweeping the floor after the Wall Street crash, 1929",
+      "provenance": "Nationaal Archief of the Netherlands / Spaarnestad Photo, SFA001018144",
+      "license": "No known copyright restrictions",
+      "url": "https://www.flickr.com/photos/nationaalarchief/5372590938/in/photolist-9bKW7f-7AJtqx-ovoobc-oweBS3-8RJPqR-7g9En5-oeJSn2-5gZ561-oc9Ys8-ounS8o-oubfNE-ovWGQa-oddKom-oxPkwT-wGneR5-ouHE6f-ouKi4p-otqpfL-odfNp5-xgmPsT-ovVVge-oxTtUX-owv75X-ovPLNi-oubhgE-odD3uz-oeJtJ7-6KC37N-odtaj7-owGZJK-oeH4ak-oeJmVB-oeJ5jm-odZMF4-ouJGMh-wY8FVF-oc8SPg-osFtFs-oeGWbv-of1vth-odnjKc-xsQfWA-rn7mBu-ouyGyt-owax5H-x2zot8-otpv2q-oePXxc-tjcJfA-oszAMd",
+      "resolutions": {
+        "medium-w": {
+          "url": "/media/images/wall_street_5372590938_e898f8d9be_o.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/wall_street_5372590938_e898f8d9be_o.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/wall_street_5372590938_e898f8d9be_o.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 1080,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/wall_street_5372590938_e898f8d9be_o.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 960
+          }
+        }
+      },
+      "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAUCAIAAAALACogAAAACXBIWXMAAAsTAAALEwEAmpwYAAADH0lEQVQozyWTWSjEURTG75M38oCyhCF79sbYd7LvY22msRUhe9YwlqzZZURIkX3JTrKEkiKRJyWevSqPfsZ9mM7ce75zvnO+7y9yc3Pr6+vb2tqmpqa6urpKS0sLCwvDwsICAgK8vb0dHR2jo6NnZmYWFhaWl5d3dnYEqWq1uqGhYWBggHh8fHxoaCglJSU2NhaMvb29nZ1dS0tLUVFRSUkJaUKj0QwPD1ODgG5lZWV5eXkxMTGZmZnEqampBH19febm5h4eHhKJRMTFxQUGBtI3MTFRLpdHRES4urpCJjIysry83MnJiUJvb2/h4eHu7u5eXl4iISEBxqDJk0qlxM7OzlZWVhYWFqGhoTY2NlVVVY+Pj/Q0MzOrq6v7A4SEhEi1x8/PD6SlpSUEAFhbW4NUqVTd3d2Q4YZJBExoZGtryzOplDExMdHX1zcyMmJumFAbjI6Ojp6enoGBgaA8kyUlJfn7+8OBJhLtAUAVXV3doKAgpVJpamrKPMQiKipqa2uLVbKKiYmJ3d3dubk5VlxTU9PZ2ZmRkVFbW3t+fs7q2tvbuRGIdXR09PLysrS0dHJycnt7Ozs7Cx7M+vo6tQYHB6enp0dHRxcXF1FJHB8fb2xs8FxRUYHMlN/c3Nze3mYzZ2dnDw8P/3lNTU35+fmVlZXi8vLy/v6eGjk5OQ4ODvBmjPT09OzsbHSERm9vL1oZGhoiP3KJnp4eqGMn+LFiT09PMDKZDFnIUCgUPj4+bm5uycnJaWlpLi4ugjy19jA0McSam5sR6J/Y9fU1lDTaw2x0+6PE29ra2tXV1f/QJOEuMCD7+/t5en5+7ujoYJ+tra1idXX17u6OvJubG9yLH+nDL4Xm5+e5KS4uLigowFc4F00FdOPj41EE4eiIw9FxZGTk6+vr4+Njf38fOxobG7MDWrFo4evrCxTPYMbg4GDWgu/5XKqrqzEii2LXaHx4ePj+/v7npaysLDKQr7GxEQtgG+amFX9XVlZQCUGJ2eTr6ytpApm/v79/fn4+Pz8PDg7gxoovLi7GxsbIZpLJycnT09O9vT3kenp6+gWxpqM1MS+XmwAAAABJRU5ErkJggg==",
+      "aspectRatio": 0.8052083333333333,
+      "isPortrait": true
+    },
+    "681959_File5445.jpg": {
+      "caption": "Square et Monument Emile Mayrisch. De temps à autre, cette place sert de lieu de rencontres et de manifestations, p. ex. des fêtes populaires de l'amicale portugaise-luxembourgeoise. 1985",
+      "provenance": "Archives de la Ville de Dudelange - Fonds Jean-Pierre Conrardy",
+      "resolutions": {
+        "medium-w": {
+          "url": "/media/images/681959_File5445.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/681959_File5445.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/681959_File5445.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 1080,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/681959_File5445.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 960
+          }
+        }
+      },
+      "base64": "data:image/png;base64,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",
+      "aspectRatio": 1.5,
+      "isPortrait": false
+    },
+    "esch-strike-march-1921.jpeg": {
+      "caption": "La grève de mars 1921 à Esch-sur-Alzette: Jos Kieffer, président du BMIAV, harangue les ouvriers et les ouvrières rassemblés devant l’école du Brill.",
+      "provenance": "Archives de la Ville d’Esch, Fonds photographique",
+      "resolutions": {
+        "medium-w": {
+          "url": "/media/images/esch-strike-march-1921.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/esch-strike-march-1921.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/esch-strike-march-1921.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 1080,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/esch-strike-march-1921.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 960
+          }
+        }
+      },
+      "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAUCAIAAAD+/qGQAAAACXBIWXMAACpyAAAqcgHvkQT+AAAFXklEQVQ4yyWV2U+TWRjGv2tDZuKFGGMEBiVBB3FAKPtalq5IC21ppaW0xQIFKhYKlLIoUxaJww6yBXBnM4RRgxqIxMRwAQlcIQkJiReYmHjhX8D86Jx8+XJ6vnPe93me93lPhY6Ojjdv/v3+/fv29vbu7m5/fz8rbW1t7e3tfX3/TE9Pb21tra2traysvHv37vPnz+vr6wMDA/X19XV1dX19fR8/fpybm2tqapqamnr58uXy8rLb7a6pqRFKSkr29vZ+/Pjx4sWL58+fd3V1eTwer9fb4B8zMzOvX79e9o8n/jE+Pk7Kzs7O4eHh0tLSKf9wOBwAIl93dzfJyCRcu3aNnJubm62trSMjIyqVKiUlOTs7++5dp9vdUFZW9uDBg56ensbGRoDAw2q1Wa0WvrJeWVmxsbFBskePHr1//35+fn5oaOjVq1cHBweCQqGAeHV1tdlsBuzt2wa5XK7X6yoqysvL7Xq9HiwAdzqdVVVVdvsdpVKu02kLCtQOR2VdnWtnZ4dABoMBsMR9+PChzWY71SEkJMRkMhUXF0dERFy5cuX8+fPR0VFJSYm3buXpdBqv1wM0lAGv01lTVKRjLynN5hLW+bm/v7+6upqXl1dbWzs4OPj48WNgRUX9JaDU6OgoqkETKYxGI8qEhv5x6dKl2NgYm83ictX6fH93d3e1tno1msKSEhNBLZbS8vI7aWmpHz58gDs1BD6EFhcXS0vNarVKQLuvX79++/YNM9jtdigrlUqr1SqTycLDw69eDU9OTpbJpEDjUShkWm2hQiHXajUOR0VenvLp0yc9Pd1ud73ZbEJStFOp8iEquFwuJP/16xdmWFpaou75+fnAh7teX5SYmIAmIpEoJuZmWlpaSkpKQkK8XC5DJR7y4QpyAJ95VlZWQkJCXJyorMwmYFss8uzZM2DqdDrcAtiwsLCMjHTOYw+qbzTeTk1NAXh2dhal02q1BGVO9d6+fQt8YrHBaCwWi8WIAyeBak5MTGCgzMzM6OjoixcvBgcH37gRWVhYkJubS2hQQy09PS0nJzsrS0wZoM9PQMlkktnZGSykVCrkcimykozNQBFwH30xOzsrlUovX74MKPIT9P8ocXFx5IiPF+Xm5qBPeno6aTA4J5ubPcSdmBhnD3HZAFKAU/mmpgbh/v37NNXx8TFWxWShoaGoCSn24QdCJycnoV1+/q2MjAzWsRRgIVdd7SAQceGOqcXiTNalUolGU2AwFAk+n482Ozk5YXL27NmAgIDAwECO4RhCULfUVGQVI3eMf1AZ5jwA501PA7ClxZuUlAQPFtVqNeoLFoulpaWFuIeHhySAbFBQEG6j/egUSoQfaDC/N06bBZXwMiSQAoyDgwPYdmCgH5Ys4rCRkWFsJzQ3N9OCP3/+xBiE/vLli0SSC32KC2tiGQz669cjTCajSBQLR2LxiaKRjxItLi6Al9KxAYNTOpfrHnNhcnISZWlwGoH7gdYiM/VBX1qLOsCgoEBF18fGxsbHx+Gze/dq6enIyOuZmRm4vrGxgSJzmdhs1qioKIKe+hdEGIvWwvOsEhEFaQHswW5OcmnBNCcnB3SkZB0zcVIikfAVIwGLfP72VYMduqf+PXfu3JkzZy5cuMA3HuSjUEywGpccvtZoNACsqnLQVxyGB5noV+yBuxcWFnjziYset3GKSpzihf7vp+M3GpSt2N7jaUJBRKN0NCF/DRzD9niIG4ceY4WUXFIYhnrQq1yMlJGsyEgBnM5qgXAREX/S/jdvRnPXjY2N8eae9vk6wYhqw8MjbW2tQK6srCQEb2zT29vL/xNX+9HR0adPn5jQBwhVUWEnKNf3f3+kun6Wd+JcAAAAAElFTkSuQmCC",
+      "aspectRatio": 1.4447916666666667,
       "isPortrait": false
     }
   }

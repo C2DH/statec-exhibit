@@ -67,7 +67,7 @@ const Flower = ({
     if (currentYear === null) {
       setDatum(null)
     } else {
-      const idx = data.findIndex(d => String(currentYear) === d.t)
+      const idx = data.findIndex(d => String(currentYear) === String(d.t))
       if (idx > -1) {
         setDatum(data[idx])
       }
