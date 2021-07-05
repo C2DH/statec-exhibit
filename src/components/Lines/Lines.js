@@ -93,14 +93,14 @@ const Lines = ({
       }} />
 
       <svg height={height} width={width}>
-        {scaledGroupValues.map(({ values },i ) => (
+        {scaledGroupValues.map(({ values, key },i ) => (
           <TrendLineGraphics
             id={datasetId}
             key={i}
             windowDimensions={windowDimensions}
             marginLeft={marginLeft}
             marginTop={marginTop}
-            values={values}
+            values={values.filter(d=> d[key] !== null)}
             scaleX={scaleX}
             scaleY={scaleY}
             height={height - marginTop - marginBottom}
