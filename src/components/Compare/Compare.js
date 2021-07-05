@@ -4,7 +4,7 @@ import '../../styles/components/compare.scss'
 
 
 const Compare = ({
-  groupValues=[], minValue, maxValue, datasetId, hidePercentage
+  groupValues=[], minValue, maxValue, datasetId, hidePercentage, width
 }) => {
   const { t } = useTranslation()
   if (!groupValues.length) {
@@ -13,10 +13,10 @@ const Compare = ({
   const keyToCompareWith = groupValues[0].key
   // const columns = groupValues[0].values.length
   return (
-    <>
+    <div style={{width, overflow: 'auto'}}>
     <div
       className="Compare relative dt pl4 w-100"
-      style={{overflow: 'scroll'}}
+
     >
       <div className="dt-row " >
         <div className="dtc ph2 bb Compare_firstcell">&nbsp;</div>
@@ -74,7 +74,7 @@ const Compare = ({
         </div>
       ))}
     </div>
-    </>
+    </div>
   )
 }
 
