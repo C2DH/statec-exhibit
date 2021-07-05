@@ -95,6 +95,13 @@ a {
   animation: rotate 1.5s linear infinite;
 }
 
+.colorpoint{
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  border: 1px solid var(--secondary);
+}
+
 @keyframes rotate {
   to {
     transform: rotate(-360deg);

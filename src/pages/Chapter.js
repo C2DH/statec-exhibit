@@ -37,6 +37,7 @@ const Section = ({ section, height, width, backgroundColor}) => {
         numStartAt={section.numStartAt}
         backgroundColor={backgroundColor}
         height={height}
+        width={width}
         modules={section.modules}
         onStepChange={stepChangeHandler}
       />
