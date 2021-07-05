@@ -18,7 +18,7 @@ const Lines = ({
   displayPoints=true,
   marginTop=50,
   marginBottom=20,
-  marginLeft=20,
+  marginLeft=50,
   marginRight=20,
   from=StartYear, to=EndYear,
 }) => {
@@ -125,7 +125,7 @@ const Lines = ({
         <TrendAxisLeftGraphics
           id={datasetId}
           windowDimensions={windowDimensions}
-          marginLeft={marginLeft}
+          marginLeft={0}
           marginTop={marginTop}
           scale={scaleY}
           numTicks={4}
