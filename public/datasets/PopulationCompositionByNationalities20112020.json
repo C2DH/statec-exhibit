@@ -1,0 +1,27 @@
+{
+  "id": "PopulationCompositionByNationalities20112020",
+  "title": "Nombre de personnes residents par nationalités, 2011-2021",
+  "timeFormat": "YYYY",
+  "legend": {
+    "t": "year",
+    "v": "Total Ètrangers",
+    "v1": "Portugal",
+    "v2": "France",
+    "v3": "Italie",
+    "v4": "Belgique",
+    "v5": "Allemagne",
+    "v6": "Autres pays"
+  },
+  "values": [
+    {
+      "t": 2011, "v": 220522,
+      "v1": 82363, "v2": 31456, "v3": 18059,
+      "v4": 16926, "v5": 12049, "v6": 59669
+    },
+    {
+      "t": 2021, "v": 299426,
+      "v1": 94335, "v2": 48502, "v3": 23532,
+      "v4": 19613, "v5": 12785, "v6": 100659
+    },
+  ]
+}
