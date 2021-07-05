@@ -12,7 +12,8 @@ export const useStore = create((set) => ({
   backgroundColor: 'var(--primary)',
   changeBackgroundColor: (backgroundColor) => {
     document.body.style.backgroundColor = backgroundColor
-    return set(state => ({ backgroundColor }))
+
+    return set(state => ({ backgroundColor, currentYearExplorerOpen:false }))
   },
   changeCurrentDatum: ({ datum, hotspot, year, dataset, keys, focusKeys, currentYearExplorerOpen=null }) => {
     return set(state => ({

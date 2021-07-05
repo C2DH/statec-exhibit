@@ -1,19 +1,20 @@
-import React, {useMemo} from 'react'
+import React, {useMemo, useEffect} from 'react'
 import { useStore } from '../store'
 import {X, Bookmark} from 'react-feather'
 import {useTranslation} from 'react-i18next'
 import { useSpring, animated, to } from 'react-spring'
 import { useDrag } from 'react-use-gesture'
+import { useCurrentWindowDimensions } from '../hooks'
 import population from '../data/datasets/population.json'
 import '../styles/components/currentYearExplorer.scss'
 
 const CurrentYearExplorer = ({ height=300, width=300 }) => {
   const [{ pos }, set] = useSpring(() => ({ pos: [width - 250, 150] }))
-
+  const { width:windowWidth, height: windowHeight } = useCurrentWindowDimensions()
   // Set the drag hook and define component movement based on gesture data
   const bind = useDrag(
     ({ xy, down, movement: pos }) => {
-      set({ pos, immediate: down })
+      set.start({ pos, immediate: down })
     },
     { initial: () => pos.get() }
   )
@@ -29,6 +30,11 @@ const CurrentYearExplorer = ({ height=300, width=300 }) => {
   const people = useMemo(() => {
     return population.values.find(d => String(d.t) === String(currentYear))
   }, [currentYear])
+
+  useEffect(() => {
+    set.start({ pos: [windowWidth - 250, 150 ]})
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [windowWidth, windowHeight])
 
   return (
     <animated.div {...bind()} className="CurrentYearExplorer shadow-5 fixed pa3" style={{
