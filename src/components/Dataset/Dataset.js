@@ -3,15 +3,24 @@ import {useTranslation} from 'react-i18next'
 import {StartYear, EndYear, StatusFetching, StatusIdle, StatusSuccess } from '../../constants'
 import Flower from '../Flower'
 import Compare from '../Compare'
+import Lines from '../Lines'
 import { useGetDataset } from '../../logic/dataset'
 import { Loader} from 'react-feather'
 
 const AvailableComponents = Object.freeze({
   'Flowers': Flower,
   'Compare': Compare,
+  'Lines': Lines
 })
 
-const Dataset = ({ data, id='', layout='Flowers', keys=['v'], from=StartYear, to=EndYear, height=100, width=100, hidePercentage=false }) => {
+const Dataset = ({
+  data, id='', layout='Flowers',
+  keys=['v'],
+  colorKeys={},
+  from=StartYear, to=EndYear, height=100, width=100,
+  hidePercentage=false
+}) => {
+  console.info('Dataset colorKeys', colorKeys)
   const Component = AvailableComponents[layout] || <div>Component not defined</div>
   const { t}  = useTranslation()
   const { groupValues, minValue, maxValue } = useMemo(() => {
@@ -37,28 +46,38 @@ const Dataset = ({ data, id='', layout='Flowers', keys=['v'], from=StartYear, to
           kValues.push(d)
         }
       }
-      return { key: k, kMin, kMax, dMin, dMax, values: kValues, legend:legend[k] }
+      return {
+        key: k, kMin, kMax, dMin, dMax,
+        values: kValues,
+        legend:legend[k],
+        color: colorKeys[k] || 'var(--secondary)'
+      }
     })
     const [minValue, maxValue] = groupValues.reduce((acc, d) => {
       if (d.kMin < acc[0]) {
         acc[0] = d.kMin
       }
-      if (d.kMax > acc[0]) {
+      if (d.kMax > acc[1]) {
         acc[1] = d.kMax
       }
       return acc
     }, [Infinity, -Infinity])
     return { groupValues, minValue, maxValue }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [data, keys, from, to]);
   return (
-    <div className="w-100" style={{overflow: 'scroll'}}>
-      {layout === 'Compare'
+    <div style={{overflow: 'hidden', width:width}}>
+      {['Compare', 'Lines'].includes(layout)
         ? (
           <Component
             datasetId={id}
             groupValues={groupValues}
             minValue={minValue}
             maxValue={maxValue}
+            height={height}
+            width={width}
+            from={from}
+            to={to}
             hidePercentage={hidePercentage}
           />
         )
@@ -85,6 +104,7 @@ const Dataset = ({ data, id='', layout='Flowers', keys=['v'], from=StartYear, to
 
 const DebugDataset = ({
   id, layout='Flowers', keys=['v'],
+  colorKeys={},
   from=StartYear, to=EndYear,
   height=100, width=100,
   hidePercentage, children
@@ -102,7 +122,7 @@ const DebugDataset = ({
   } else if (status === StatusSuccess) {
     return (
       <>
-      <Dataset data={item} id={id} layout={layout} keys={keys} from={from} to={to} height={height} width={width} hidePercentage={hidePercentage}/>
+      <Dataset data={item} id={id} layout={layout} colorKeys={colorKeys} keys={keys} from={from} to={to} height={height} width={width} hidePercentage={hidePercentage}/>
       {children}
       </>
     )

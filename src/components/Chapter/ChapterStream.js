@@ -4,12 +4,14 @@ import ChapterParagraph from './ChapterParagraph'
 import ChapterParagraphCover from './ChapterParagraphCover'
 import Dataset from '../Dataset'
 import { getParagraphIdFromIndices } from '../../logic/navigation'
+import { useBoundingClientRect } from '../../hooks'
 
 const Echo = () => {
   console.error('Missing function handler')
 }
 
 const ChapterStream = ({ numStartAt, modules = [], height, backgroundColor, onStepChange=Echo}) => {
+  const [{ width }, ref] = useBoundingClientRect()
   const [activeStep, setActiveStep]= useState({
     paragraphId: '0,0',
     moduleId: '-1',
@@ -38,10 +40,9 @@ const ChapterStream = ({ numStartAt, modules = [], height, backgroundColor, onSt
       onStepChange(step)
     }
   }
-  console.info('Rerendering ChapterStream')
 
   return (
-    <div className="ChapterStream">
+    <div className="ChapterStream" ref={ref}>
     {modules.map((mod, i) => (
       <div className="ChapterStream_module" key={i}>
         <h2 className="pa5 pr0-l pt4 pb0 mv0 " style={{
@@ -78,8 +79,9 @@ const ChapterStream = ({ numStartAt, modules = [], height, backgroundColor, onSt
                       <Dataset
                         id={par.dataset}
                         height={height/3}
-                        width={200}
+                        width={width}
                         keys={par.datasetKeys}
+                        colorKeys={par.datasetColorKeys}
                         hidePercentage={par.datasetHidePercentage}
                         layout={par.datasetLayout}
                         from={par.from}
