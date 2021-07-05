@@ -89,6 +89,13 @@
       "datasetFamilyCompositionLegendValuev1": "Nombre de ménages",
       "datasetFamilyCompositionLegendValuev4": "Nombre de personnes par ménage",
       "datasetFertilityRatesByAgeLegendValuev": "Indicateur de fecondité: nombre d'enfants par femme",
+      "datasetStructureAge": "Structure par âge de la population (activité)",
+      "datasetStructureAgeLegendValuev": "0-14 ans - enfance (%)",
+      "datasetStructureAgeLegendValuev1": "15-64 - âge d'activité (%)",
+      "datasetStructureAgeLegendValuev2": "65 ans et plus - âge de la retraite (%)",
+      "datasetStructureAgeExtentv": "min: <b class='bold'>{{kMin, 2}}%</b> en {{tMin}}<br/> max: <b class='bold'>{{kMax, 2}}%</b> en {{tMax}}",
+      "datasetStructureAgeExtentv1": "min: <b class='bold'>{{kMin, 2}}%</b> en {{tMin}}<br/> max: <b class='bold'>{{kMax, 2}}%</b> en {{tMax}}",
+      "datasetStructureAgeExtentv2": "min: <b class='bold'>{{kMin, 2}}%</b> en {{tMin}}<br/> max: <b class='bold'>{{kMax, 2}}%</b> en {{tMax}}",
       "hotspotLabel": "Bookmark"
     }
   }
