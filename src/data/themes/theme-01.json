@@ -16,7 +16,7 @@
       "text": "La population du Luxembourg a plus que triplé depuis 1839 (date de l'indépendance du pays). De quelque 170.000 habitants en 1839, la population du Grand-Duché est passée à plus de 630.000 aujourd'hui."
     },
     {
-      "text": "Dans ce qui suit on jette d'abord un regard sur les variables qui déterminent l'évolution de la population du pays : le <em>solde global</em> de la population qui est déterminé par le <em>solde naturel</em> (excès ou déficit des naissances sur les décès) et le <em>solde migratoire</em> (excès ou déficit du nombre de personnes immigrées par rapport aux personnes émigrées)."
+      "text": "Dans ce qui suit on jette d'abord un regard sur les variables qui déterminent l'évolution de la population du pays : le <a href='https://statistiques.public.lu/fr/methodologie/definitions/S/soldetotal/index.html' target='_blank'><em>solde global</em></a> de la population qui est déterminé par le <a href='https://statistiques.public.lu/fr/methodologie/definitions/S/soldenaturel/index.html' target='_blank'><em>solde naturel</em></a> (excès ou déficit des naissances sur les décès) et le <a href='https://statistiques.public.lu/fr/methodologie/definitions/S/soldemigratoire/index.html' target='_blank'><em>solde migratoire</em></a> (excès ou déficit du nombre de personnes immigrées par rapport aux personnes émigrées)."
     },
     {
       "text": "Si les migrations sont aujourd'hui considérées comme un élément central de l'histoire du Luxembourg, les données statistiques pour les deux derniers siècles sont fragmentaires. Ce n'est qu'en 1871 que la notion d'étranger apparaît dans les recensements et ce n'est que depuis les années 1960 que nous disposons de chiffres plus détaillées d'entrées et de sorties de différentes nationalités."
@@ -34,6 +34,10 @@
           "visibleKeys": ["v"],
           "focusKeys": ["v"],
           "hotspots": [
+            {
+              "t": 1854,
+              "text": "Difficulté de récolte"
+            },
             {
               "t": 1866,
               "text": "Une épidemie de Cholera frappe le pays"
@@ -92,6 +96,8 @@
           "from": 1945,
           "to": 1990,
           "text": "La croissance démographique au Grand-Duché connaît des différences régionales prononcées. Jusque vers les années 1970-1980, ce sont deux régions ou territoires qui concentrent le gros de l'augmentation de la population. Il s'agit des centres économiques du pays, c'est-à-dire le canton d'Esch-sur-Alzette et le canton de Luxembourg avec, en son centre, la Ville de Luxembourg.",
+          "visibleKeys": ["v"],
+          "focusKeys": ["v"],
           "dataset": "PopulationCantons",
           "datasetLayout": "Compare",
           "datasetKeys": ["v","v1","v2","v3","v4","v5"]
@@ -100,6 +106,8 @@
           "from": 1990,
           "to": 2021,
           "text": "Dans la Ville de Luxembourg et le canton de Luxembourg, la population augmente de façon continue avec une accélération à partir des années 1990. Dans le canton d'Esch-sur-Alzette, on note un dynamisme démographique important à partir de l'essor de la sidérurgie autour des années 1880 jusqu'à la crise économique mondiale à la fin des années 1920, puis une stagnation relative jusque dans les années 1980. <br/><br/>A partir des années 1990, on assiste (comme dans toutes les régions du pays) à une accélération de l'augmentation de la population dans la région d'Esch-sur-Alzette. Dans la plupart des cantons du Nord et de l'Est du pays, pendant plus d'une centaine d'années (de 1850 aux années 1970) , l'évolution démographique est peu dynamique et parfois même négative. L'accélération de la croissance démographique à partir des années 1990 se répercute dans tous les cantons du pays.",
+          "visibleKeys": ["v"],
+          "focusKeys": ["v"],
           "dataset": "PopulationCantons",
           "datasetLayout": "Compare",
           "datasetKeys": ["v","v1","v2","v3","v4","v5"]

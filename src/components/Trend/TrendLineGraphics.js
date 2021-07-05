@@ -74,7 +74,7 @@ class TrendLineGraphics extends React.Component {
         <line
           className="toZero"
           x1={0}
-          x2={width}
+          x2={width - marginLeft * 2}
           y1={scaleY(0)}
           y2={scaleY(0)}
           stroke={'rgba(0,0,0,0.5'}

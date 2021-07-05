@@ -1,4 +1,5 @@
 import React, { useRef, useEffect, useState, useMemo } from 'react'
+import { useTranslation } from 'react-i18next'
 import ChapterModulesGraphics from './ChapterModulesGraphics'
 import Trend from '../Trend'
 import Points from '../Points'
@@ -17,6 +18,7 @@ const ChapterVisualisations = ({
   marginLeft=100
 }) => {
   const ref = useRef();
+  const { t } = useTranslation()
   const [size, setSize] = useState({ left: 0, width: 0, height: 0 });
   const paragraphs = useMemo(() => {
     return modules.reduce((acc, mod, i) => acc.concat(mod.paragraphs.map((par, j) => {
@@ -68,6 +70,20 @@ const ChapterVisualisations = ({
           height: size.height,
           width: size.width
         }}>
+          <div className="absolute right-0 top-0" style={{
+            height: size.height,
+            width: 50,
+          }}>
+            <div  className="absolute" style={{
+              top: '50%',
+              left: '100%',
+              transform: 'translateX(-50%) translateY(-50%) rotate(90deg)'
+            }}>
+              <div  className="absolute tc" style={{ width: size.height, marginLeft: -size.height/2}}>
+            { t(`dataset${themeDatasetId}`) }
+            </div>
+            </div>
+          </div>
           <Component
             displayPoints={displayPoints}
             themeDatasetId={themeDatasetId}

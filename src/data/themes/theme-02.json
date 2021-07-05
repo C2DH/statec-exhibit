@@ -24,23 +24,34 @@
             {
               "from": 1840,
               "to": 1890,
-              "availableKeys": ["v1"],
+              "availableKeys": ["v1", "v"],
               "visibleKeys": ["v1"],
               "focusKeys": ["v1"],
-              "text": "Le milieu des années 1840 connaît une baisse de la natalité. Ce sont les conditions de vie difficiles (faibles récoltes) qui contribuent à expliquer ces baisses ponctuelles, qui se répètent d'ailleurs dans les années 1850. Plus les conditions sont difficiles, plus la natalité diminue. <br/><br/>D'une manière générale, les variations de la natalité sont plus importantes avant les années 1880, c'est-à-dire avant la véritable industrialisation et  l'augmentation du niveau de vie qui l'accompagne.",
+              "hotspots": [
+                {
+                  "t": 1854,
+                  "text": "Difficulté de récolte"
+                },
+                {
+                  "t": 1866,
+                  "text": "Une épidemie de Cholera frappe le pays"
+                }
+              ],
+              "text": "Le milieu des années 1840 connaît une baisse de la <a href='https://statistiques.public.lu/fr/methodologie/definitions/T/tauxnatalite/index.html' target='_blank'>natalité</a>. Ce sont les conditions de vie difficiles (faibles récoltes) qui contribuent à expliquer ces baisses ponctuelles, qui se répètent d'ailleurs dans les années 1850. Plus les conditions sont difficiles, plus la natalité diminue. <br/><br/>D'une manière générale, les variations de la natalité sont plus importantes avant les années 1880, c'est-à-dire avant la véritable industrialisation et l'augmentation du niveau de vie qui l'accompagne.",
               "figures": [{ "id": "statec_002.png" }]
             },
             {
               "from": 1891,
               "to": 1954,
-              "availableKeys": ["v1"],
+              "availableKeys": ["v1", "v"],
+              "visibleKeys": ["v1"],
               "focusKeys": ["v1"],
               "text":"Dans le premier tiers du 20e siècle, la natalité connaît deux chutes importantes. Une première autour de la Première Guerre mondiale qui l'amène à environ 20 pour mille vers 1920. Après s'être maintenue légèrement au-dessus de 20 pour mille pendant la prospérité des années 1920, la natalité amorce vers 1930 une nouvelle chute accélérée par la crise économique."
             },
             {
               "from": 1955,
               "to": 1980,
-              "availableKeys": ["v1"],
+              "availableKeys": ["v1", "v"],
               "visibleKeys": ["v1"],
               "focusKeys": ["v1"],
               "text":"A partir du milieu des années 1960, le taux de natalité entame une nouvelle baisse sensible. Des phénomènes de société - ce la démocratisation des moyens de contraception et la diffusion du modèle familial avec moins de 3 enfants - contribuent à expliquer ce phénomène."
@@ -51,6 +62,7 @@
               "availableKeys": ["v1", "v"],
               "visibleKeys": ["v1", "v"],
               "focusKeys": ["v1","v"],
+              "colorKeys": { "v1": "var(--secondary)", "v": "green" },
               "text": "Comme la mortalité ne baisse pas, le solde naturel devient <b>négatif</b> au cours des années 1972-1978, même si ce n'est que légèrement. <br/>Dans ce contexte, un rapport sur la démographie luxembourgeoise est demandé par le gouvernement au démographe français réputé Gérard Calot, qui projette une baisse de la population du Luxembourg et surtout la diminution de la population de nationalité luxembourgeoise (Gérard Calot, <a href='https://catalogue.bnf.fr/ark:/12148/cb353304698' target='_blank'>La démographie du Luxembourg, passé, présent et avenir : rapport au président du gouvernement, 1978</a>).",
               "figures": [{ "id": "ark_70795_gq9f7z_pages_11.jpg" }]
             },
@@ -60,6 +72,7 @@
               "availableKeys": ["v1", "v"],
               "visibleKeys": ["v1", "v"],
               "focusKeys": ["v1","v"],
+              "colorKeys": { "v1": "var(--secondary)", "v": "green" },
               "text": "C'est l'époque où certains, comme le directeur du STATEC, Georges Als, évoquent la thèse du \"suicide démographique\" du Luxembourg.",
               "figures": [{"id": "forum-137-1992-le-mythe-du-suicide-demographique.png"}]
             },
@@ -69,6 +82,7 @@
               "availableKeys": ["v1", "v"],
               "visibleKeys": ["v1", "v"],
               "focusKeys": ["v1","v"],
+              "colorKeys": { "v1": "var(--secondary)", "v": "green" },
               "text":"Que le taux de natalité augmente de nouveau à partir de la fin des années 1980 est d'abord dû à un - léger -  changement du comportement  démographique, mais aussi au fait que la population immigrée est plutôt jeune et en état de procréer et que celle-ci a par ailleurs une fécondité plus élevée que la population autochtone."
             }
           ]
@@ -112,7 +126,7 @@
               "focusKeys": ["v"],
               "from": 1960,
               "to": 1974,
-              "text": "Avec les années 1960, vient une époque où l'âge au mariage recule et où les modes de cohabitation se diversifient avec des formes peu codifiées (\"unions libres\") et plus récemment où le mariage puis dans un deuxième temps dans une forme plus codifiée qu'est l'union civile (PACS).",
+              "text": "Avec les années 1960, vient une époque où l'âge au mariage recule et où les modes de cohabitation se diversifient avec des formes peu codifiées (\"unions libres\") et plus récemment avec l'union civile (PACS). En juin 2014, le mariage pour couples du même sexe est légalement institué. De 2015  à 2019 on compte 353 mariages de couples du même sexe.",
               "figures": [{ "id": "wedding-bettel-wort-2015.jpg"}]
             },
             {
@@ -260,76 +274,5 @@
       ]
     }
   ],
-  "modules": [
-    {
-      "title": "Divorces",
-      "subheading": "",
-      "from": 1840,
-      "to": 2014,
-      "layout": "text",
-      "datasetHeading": "WeddingsDivorces",
-      "datasetTrend": "v3",
-      "datasetAdditionalTrends": ["v"],
-      "datasetAdditionalTrendsColors": ["var(--primary)"],
-      "datasetHeadingAdditionalTrends": ["v3"],
-      "datasetHeadingAdditionalTrendsColors": ["var(--primary)"],
-      "datasetHeadingValueFrom": 0,
-      "datasetHeadingValueTo": 2000,
-      "datasetValueFrom": 150000,
-      "datasetValueTo": 800000,
-      "moduleHotspots": [
-        { "t": 1840 },
-        { "t": 1866 }
-      ],
-      "paragraphs": [
-        {
-          "from": 1840,
-          "to": 1859,
-          "text": "divorce : catégorie juridique et aussi statistique dès le début du 19e siècle"
-        },
-        {
-          "from": 1860,
-          "to": 1900,
-          "text": "raconter un divorce au 19e siècle"
-        },
-        {
-          "from": 1918,
-          "to": 1939,
-          "text": "divorce croissant dans l'entre-deux-guerres mais difficultés pour les femmes. « retard » luxembourgeois : Lucile Bodson et Jordane Segura, « Le divorce au Luxembourg en droit et en chiffres », Les Cahiers du CEPS/Instead, 2010, no 1, p. 7."
-        },
-        {
-          "from": 1965,
-          "to": 1979,
-          "text": "la rupture législatif des années 1970"
-        },
-        {
-          "from": 1980,
-          "to": 2014,
-          "text":"aujourd'hui autant de divorces par autant de mariages"
-        }
-      ]
-    },
-    {
-      "title": "Composition des menages",
-      "subheading": "Un taux de natalité en baisse sur deux cents ans",
-      "from": 1840,
-      "to": 1900,
-      "layout": "text",
-      "datasetHeading": "population-balance-details",
-      "datasetAdditionalTrends": ["v"],
-      "datasetAdditionalTrendsColors": ["var(--primary)"],
-      "datasetAdditionalTrendsColors": ["var(--primary)"],
-      "datasetHeadingAdditionalTrends": ["v", "v1"],
-      "datasetHeadingAdditionalTrendsColors": ["var(--primary)", "black"],
-      "datasetHeadingValueFrom": -8000,
-      "datasetHeadingValueTo": 18000,
-      "datasetValueFrom": 150000,
-      "datasetValueTo": 800000,
-      "moduleHotspots": [
-        { "t": 1840 },
-        { "t": 1866 }
-      ],
-      "paragraphs": []
-    }
-  ]
+  "modules": []
 }
