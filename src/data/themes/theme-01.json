@@ -147,8 +147,10 @@
           "colorKeys": { "v1": "red" },
           "text": "A partir du milieu des années 1960, le solde naturel diminue fortement. Ce n'est pas dû à des « accidents » de l'histoire (comme les crises économiques ou sanitaires ou les deux guerres mondiales), mais à une baisse structurelle importante de la fécondité (c'est-à-dire du nombre d'enfants par femme).<br/></br/>Le nombre de naissances passe de <b class='bold'>5 297</b> en 1965 à <b class='bold'>3 915</b> en 1976. <br/>En 1976, le solde naturel est de - 600 (c'est-à-dire qu'il y a 600 décès de plus que de naissances), alors qu'en 1965 le solde fut encore très positif (+ 1 250).",
           "dataset": "FertilityRatesByAge",
-          "datasetLayout": "Flowers",
-          "datasetKeys": ["v"]
+          "datasetLayout": "Lines",
+          "datasetLegend": "Indicateur de fecondité du Luxembourg, Belgique et Portugal (1970-1990)",
+          "datasetKeys": ["v", "v1", "v2"],
+          "datasetColorKeys": { "v": "blue", "v1": "green", "v2": "red" }
         },
         {
           "from": 1965,
@@ -277,7 +279,7 @@
           "colorKeys": { "v2": "green" },
           "text": "En tendance la composante italienne de l'immigration commence à se contracter dès les années 1960 ; ce qui est également dû à l'évolution relativement favorable de l'économie italienne (salaires en hausse, chômage en baisse). C'est l'immigration du Portugal - pays avec lequel un traité de main-d'œuvre est signé - qui prend le relais. Cette immigration est essentiellement familiale et elle permet de répondre – du moins à ses débuts – à la demande de main-d'œuvre dans la construction De 1971 à 1991, la part des Portugais dans la population de nationalité étrangère passe de 9 % à 34%, alors que la part des Italiens évolue en sens inverse, de 38% à 17%.",
           "dataset": "PopulationCompositionByNationalities",
-          "datasetKeys": ["v1", "v2", "v3", "v4", "v5", "v6"],
+          "datasetKeys": ["v1", "v2", "v3", "v4", "v5", "v6", "v8"],
           "datasetLayout": "Compare",
           "datasetLegend": "Composition de la population étrangère au Luxembourg, 1970-1991",
           "hotspots": [
@@ -294,7 +296,7 @@
           "colorKeys": { "v2": "green" },
           "text": "C'est la diversité des origines des migrants à partir des années 1990 qui doit être relevée. Les migrants viennent des pays voisins (la part des Français dans la population augmente), mais désormais également nombreux de pays non-européens (États-Unis, Inde, Chine, par exemple). <br/><br/>  Les migrants de pays qui avaient déjà une histoire d'immigration au Luxembourg (Portugal, Italie) sont également assez nombreux au sein de la vague d'immigration récente. Répondant à la demande d'une économie désormais largement tertiarisée, le profil des qualifications et des formations des immigrés est également de plus en plus diversifié ; ils occupent à la fois des emplois hautement qualifiés et des emplois peu qualifiés.",
           "dataset": "PopulationCompositionByNationalities",
-          "datasetKeys": ["v1", "v2", "v3", "v4", "v5", "v6"],
+          "datasetKeys": ["v1", "v2", "v3", "v4", "v5", "v6", "v8"],
           "datasetLayout": "Compare",
           "datasetLegend": "Composition de la population étrangère au Luxembourg, 1991-2011"
         },

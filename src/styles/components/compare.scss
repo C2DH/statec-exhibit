@@ -1,0 +1,17 @@
+.Compare_firstcell{
+  max-width: 70px;
+}
+.Compare_cellpercentage{
+  color: var(--data-background);
+  border-color: var(--secondary);
+}
+
+.Compare_row:hover{
+  span{
+    color: var(--white);
+  }
+  background: var(--secondary);
+  .Compare_cellpercentage{
+    color: var(--white);
+  }
+}

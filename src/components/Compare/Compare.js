@@ -1,5 +1,6 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
+import '../../styles/components/compare.scss'
 
 
 const Compare = ({
@@ -12,12 +13,13 @@ const Compare = ({
   const keyToCompareWith = groupValues[0].key
   // const columns = groupValues[0].values.length
   return (
+    <>
     <div
-      className="Compare dt pl4 w-100"
+      className="Compare relative dt pl4 w-100"
       style={{overflow: 'scroll'}}
     >
       <div className="dt-row " >
-        <div className="dtc ph2 bb" style={{ width: 100 }}>&nbsp;</div>
+        <div className="dtc ph2 bb Compare_firstcell">&nbsp;</div>
         {groupValues[0].values.map((v, i) => (
           <div
             className="dtc ph2 tr bb"
@@ -28,39 +30,38 @@ const Compare = ({
         ))}
       </div>
       {groupValues.map((g, i) => (
-        <React.Fragment key={i}>
+        <div className="Compare_row dt-row-group" key={i}>
           <div className="dt-row" style={{fontSize: '12px'}}>
-            <div className="dtc ph2" style={{ width: 100 }}>
-              {g.legend}
+            <div className="dtc ph2 Compare_firstcell">
+              <span>{g.legend}</span>
             </div>
             {g.values.map((v, j) => (
               <div
                 className={`dtc ph2 tr ${hidePercentage ? 'bb' : ''}`}
                 key={`${g.key}-${j}`}
               >
-                {t('number', { n: v[g.key] })}
+                <span>{t('number', { n: v[g.key] })}</span>
               </div>
             ))}
           </div>
           {hidePercentage
             ? null
             : (
-              <div className="dt-row" style={{fontSize: '12px'}}>
-                <div className="dtc ph2 bb" style={{ width: 100 }}>
+              <div className="dt-row " style={{fontSize: '12px'}}>
+                <div className="dtc ph2 bb Compare_firstcell">
 
                 </div>
                 {g.values.map((v, j) => {
                   const percentage = v[g.key]/v[keyToCompareWith] * 100
                   return (<div
-                    className="dtc ph2 tl bb"
+                    className="dtc ph2 tl bb Compare_cellpercentage"
                     key={`${g.key}-${j}`}
                     style={{
                       background: `linear-gradient(to right, transparent 1%, var(--data-background) 0%, var(--data-background) ${percentage}%, transparent ${percentage}%)`,
                       backgroundSize: '100% 25%',
                       backgroundRepeat: 'no-repeat',
                       backgroundPosition: 'bottom',
-                      color: 'var(--data-background)',
-                      borderColor: 'var(--secondary)',
+
                       marginLeft: 2,
                     }}
                   >
@@ -70,9 +71,10 @@ const Compare = ({
               </div>
             )
           }
-        </React.Fragment>
+        </div>
       ))}
     </div>
+    </>
   )
 }
 

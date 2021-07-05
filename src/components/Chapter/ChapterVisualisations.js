@@ -48,7 +48,7 @@ const ChapterVisualisations = ({
     : Trend
 
   return (
-    <div className="ChapterVisualisations mr5" style={{
+    <div className="ChapterVisualisations pr5" style={{
       position: 'sticky',
       display: 'flex',
       flexDirection: 'column',
