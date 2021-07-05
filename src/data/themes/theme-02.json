@@ -116,8 +116,8 @@
               "availableKeys": ["v"],
               "visibleKeys": ["v"],
               "focusKeys": ["v"],
-              "from": 1881,
-              "to": 1959,
+              "from": 1910,
+              "to": 1950,
               "text": "Le taux de nuptialité est également marqué par les deux guerres mondiales. Après des chutes impressionnantes de ce taux au début des guerres, la fin des deux guerres est marquée au contraire par un effet de \"récupération\"."
             },
             {
@@ -146,6 +146,7 @@
               "availableKeys": ["v3"],
               "visibleKeys": ["v3"],
               "focusKeys": ["v3"],
+              "colorKeys": {"v3": "var(--accent)"},
               "from": 1792,
               "to": 1804,
               "text": "La possibilité du divorce fut introduite par la loi du 20 septembre 1792 en même temps que l'état civil laïc qui voit dans le mariage un contrat civil comme d'autres. Comme l'actuel Luxembourg faisait partie du département des Forêts, c'est cette législation qui fut applicable dans nos contrées. Jusque-là c'est le mariage religieux – indissoluble par principe – qui fut la norme. La loi de 1792 fut très <i> libérale </i> dans la mesure où un divorce par consentement mutuel. <br/><br/> Avec le code civil de 1804 – et sous l'influence des milieux catholiques et conservateurs et de Bonaparte lui-même - on fait un pas en arrière en réduisant très fortement la possibilité du consentement mutuel en vue d'un éventuel divorce. Les conditions sont restrictives au point qu'il tombe pratiquement en désuétude."
@@ -154,6 +155,7 @@
               "availableKeys": ["v3"],
               "visibleKeys": ["v3"],
               "focusKeys": ["v3"],
+              "colorKeys": {"v3": "var(--accent)"},
               "from": 1804,
               "to": 1978,
               "text": "Si le nombre de divorces par an se compte sur les doigts d'une main au cours du 19ème siècle, la catégorie statistique reste une constante et n'est jamais mise en cause et cela jusqu'à aujourd'hui. <br/><br/> C'est le reflet de l'importance intrinsèque que garde le mariage et l'institution familiale considérée comme <i> cellule de base </i> de la vie en société. Les relevés statistiques de l'état civil contiennent ponctuellement des indications sur le nombre de divorces jusqu' à la fin des années 1830, mais c'est à partir de la création de l'actuel Grand-Duché en 1839 que les statistiques deviennent plus consistantes et, et surtout, que des séries statistiques chronologiques cohérentes sont construites. C'est le reflet de l'Etat-nation qui se pense désormais dans la continuité. <br/><br/> En même temps que les statistiques de l'état civil (mariages, divorces, naissances, décès), d'autres domaines de l'action publique, comme les finances publiques (impôts et contributions), l'enseignement primaire ou la santé publique (vaccinations contre la variole, p.ex.) font désormais l'objet d'une sollicitude statistique pérenne."
@@ -162,6 +164,7 @@
               "availableKeys": ["v3"],
               "visibleKeys": ["v3"],
               "focusKeys": ["v3"],
+              "colorKeys": {"v3": "var(--accent)"},
               "from": 1804,
               "to": 1978,
               "figures": [{"id": "code_civil_titreVI_chap1_paragraph229.png"}],
@@ -171,6 +174,7 @@
               "availableKeys": ["v3"],
               "visibleKeys": ["v3"],
               "focusKeys": ["v3"],
+              "colorKeys": {"v3": "var(--accent)"},
               "from": 1970,
               "to": 1978,
               "text": "Les réformes de la législation concernant la famille se concentrent sur les années 1970. D'abord, la loi du 6 février 1975 desserre l'étau concernant les conditions du divorce par consentement mutuel. Les conditions d'âge et de durée de mariage, notamment, sont largement éliminées. </br> </br> La loi du 5 décembre 1978 fait que l'adultère n'est plus considérée comme cause péremptoire du divorce et elle donne à chacun des époux la possibilité de demander le divorce en cas de séparation de fait continue et effective depuis au moins trois ans. La position légale dominante du mari dans le couple avait déjà été réduite en partie par la loi du 12 décembre 1972 concernant les droits et devoirs des époux, en abolissant, par exemple, le passage du code civil de 1804 (art. 213) selon lequel la femme doit « obéissance » à son mari."
@@ -179,6 +183,7 @@
               "availableKeys": ["v3"],
               "visibleKeys": ["v3"],
               "focusKeys": ["v3"],
+              "colorKeys": {"v3": "var(--accent)"},
               "from": 2010,
               "to": 2020,
               "text": "La tendance à la hausse du nombre de divorces continue sa courbe ascendante à partir de 2010 (une augmentation de 50% entre 2010 et 2020). Mais désormais, c'est largement sur la base de la loi 27 juin 2018 (dont le projet remonte néanmoins à 2003) que les divorces sont prononcés. </br> </br> A partir de cette loi, le droit luxembourgeois ne connaît au fond plus que deux types de divorce: le divorce par consentement mutuel et le divorce pour rupture irrémédiable des relations conjugales, même si le divorce pour faute (plutôt le divorce « pour cause déterminée ») est prévu dans quelques cas de figure rares."
@@ -187,6 +192,7 @@
               "availableKeys": ["v3", "v1"],
               "visibleKeys": ["v3", "v1"],
               "focusKeys": ["v3", "v1"],
+              "colorKeys": {"v3": "var(--accent)"},
               "from": 1950,
               "to": 2020,
               "text": "En 2020, le nombre de divorces atteint 80% du nombre de mariages, alors que le pourcentage correspondant est de 6% en 1950. <br/> <br/> Par ailleurs, le divorce a tendance à intervenir plus tard après le mariage. En 1950, quelque 17% des divorces interviennent après 20 années de mariage ; en 2020, le pourcentage correspondant atteint 23%."
@@ -238,7 +244,8 @@
         }
       ]
     }, {
-      "dataset":  "WeddingsDivorces",
+      "dataset":  "StructureAge",
+      "displayPoints": true,
       "modules": [
         {
           "title": "Espérance de vie et vieillissement",
@@ -247,27 +254,61 @@
               "from": 1840,
               "to": 1841,
               "text": "Du point de vue des structures de vie commune (familles, ménages), le vieillissement est synonyme de l'extension de ce que l'on appelle, du point de vue statistique, les ménages collectifs (foyers pour personnes âgées, maisons de soins, etc.)",
-              "figures": [{ "id": "Fondation_Pescatore_in_Luxembourg_City.jpeg" }]
+              "availableKeys": ["v", "v1", "v2"],
+              "visibleKeys": ["v", "v1", "v2"],
+              "focusKeys": ["v", "v1", "v2"],
+              "colorKeys": { "v": "var(--secondary)", "v1": "var(--accent)", "v2": "green" },
+              "figures": [{ "id": "Fondation_Pescatore_in_Luxembourg_City.jpeg" }],
+              "dataset": "EsperanceDeVie",
+              "datasetLayout": "Lines",
+              "datasetKeys": ["v", "v1"],
+              "datasetColorKeys": { "v": "var(--secondary)", "v1": "red"},
+              "datasetExtent": [1900, 2021],
+              "datasetLegend": "Espérance de vie à la naissance est le nombre moyen d'années qu'un groupe d'individus peut s'attendre à vivre à l'âge 0"
             },
             {
               "from": 1880,
               "to": 1940,
-              "text":  "L'augmentation de l'espérance de vie à la naissance et la diminution du taux de mortalité jusqu'à la deuxième guerre mondiale siècle sont largement imputables à la baisse de la mortalité infantile (décès de moins d'un an) et néotalale (décès de moins de 1 mois) liée aux progrès de la médecine en général et de l'obstétrique en particulier. A titre d'exemple, le taux de mortalité infantile est divisé par deux entre 1880 et 1940 en passant de quelque 15% à 7% au cours de cette période."
+              "text":  "L'augmentation de l'espérance de vie à la naissance et la diminution du taux de mortalité jusqu'à la deuxième guerre mondiale siècle sont largement imputables à la baisse de la mortalité infantile (décès de moins d'un an) et néotalale (décès de moins de 1 mois) liée aux progrès de la médecine en général et de l'obstétrique en particulier. <br /><br />A titre d'exemple, le taux de mortalité infantile est divisé par deux entre 1880 et 1940 en passant de quelque 15% à 7% au cours de cette période.",
+              "availableKeys": ["v", "v1", "v2"],
+              "visibleKeys": ["v"],
+              "focusKeys": ["v"],
+              "dataset": "MortaliteInfantile",
+              "datasetLayout": "Lines",
+              "datasetKeys": ["v", "v1"],
+              "datasetColorKeys": { "v": "var(--secondary)", "v1": "red"},
+              "datasetLegend": "Taux de mortalité infantile et néonatale 1880-1940"
             },
             {
               "from": 1945,
               "to": 1990,
-              "text": "Après la deuxième guerre mondiale, la tendance à la baisse de la mortalité infantile continue, mais à partir des années 1980 un nouveau phénomène se confirme, à savoir une augmentation de l'espérance de vie des personnes âgées. A titre d'exemple, l'espérance de vie des hommes de 60 ans fut de 16 années en 1980, celle des femmes de 21 ans. Aujourd'hui, les hommes de 60 ans peuvent espérer vivre encore 23 ans et les femmes du même âge 26 ans."
+              "text": "Après la deuxième guerre mondiale, la tendance à la baisse de la mortalité infantile continue, mais à partir des années 1980 un nouveau phénomène se confirme, à savoir une augmentation de l'espérance de vie des personnes âgées. A titre d'exemple, l'espérance de vie des hommes de 60 ans fut de 16 années en 1980, celle des femmes de 21 ans. Aujourd'hui, les hommes de 60 ans peuvent espérer vivre encore 23 ans et les femmes du même âge 26 ans.",
+              "availableKeys": ["v", "v1", "v2"],
+              "visibleKeys": ["v"],
+              "focusKeys": ["v"],
+              "dataset": "MortaliteInfantile",
+              "datasetLayout": "Lines",
+              "datasetKeys": ["v", "v1"],
+              "datasetColorKeys": { "v": "var(--secondary)", "v1": "red"},
+              "datasetLegend": "Taux de mortalité infantile et néonatale 1945-1990"
             },
             {
               "from": 1928,
               "to": 1960,
-              "text": "En 1928, le démographe Alfred Sauvy invente le terme de « vieillissement de la population », concept avec une connotation péjorative. En effet, jusque là l'accroissement de la longévité était essentiellement considéré comme un phénomène positif. Au Grand-Duché, ce discours n'apparaît qu'à la fin des années 1960 notamment sous la plume de Jérôme Anders, chef du Service d'études et de documentation économiques, le prédécesseur du STATEC."
+              "text": "En 1928, le démographe Alfred Sauvy invente le terme de « vieillissement de la population », concept avec une connotation péjorative. En effet, jusque là l'accroissement de la longévité était essentiellement considéré comme un phénomène positif. Au Grand-Duché, ce discours n'apparaît qu'à la fin des années 1960 notamment sous la plume de Jérôme Anders, chef du Service d'études et de documentation économiques, le prédécesseur du STATEC.",
+              "availableKeys": ["v", "v1", "v2"],
+              "visibleKeys": ["v2"],
+              "focusKeys": ["v2"],
+              "colorKeys": { "v2": "green" }
             },
             {
               "from": 2000,
               "to": 2020,
-              "text": "Au Luxembourg, les migrations (le plus souvent des personnes en âge de travailler … et à procréer) font que la part des personnes âgées n'atteint pas les mêmes proportions que dans d'autres pays. Il ya bien un \"vieillissement\" considérable si on prend en considération les nombres absolus (le nombre des 60 ans et plus passe de 17.372 en 1871 à 125.262 en 2020), mais le pourcentage des 60 ans et plus fut de 9% en 1871, il est de 20% aujourd'hui), ce qui fait d'ailleurs que le système luxembourgeois de sécurité sociale garde une certaine marge de manoeuvre."
+              "text": "Au Luxembourg, les migrations (le plus souvent des personnes en âge de travailler … et à procréer) font que la part des personnes âgées n'atteint pas les mêmes proportions que dans d'autres pays. Il ya bien un \"vieillissement\" considérable si on prend en considération les nombres absolus (le nombre des 60 ans et plus passe de 17.372 en 1871 à 125.262 en 2020), mais le pourcentage des 60 ans et plus fut de 9% en 1871, il est de 20% aujourd'hui), ce qui fait d'ailleurs que le système luxembourgeois de sécurité sociale garde une certaine marge de manoeuvre.",
+              "availableKeys": ["v", "v1", "v2"],
+              "visibleKeys": ["v1", "v2"],
+              "focusKeys": [ "v1", "v2"],
+              "colorKeys": { "v2": "green", "v1": "var(--accent)" }
             }
           ]
         }

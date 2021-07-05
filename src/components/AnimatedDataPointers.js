@@ -58,7 +58,7 @@ const AnimatedPointers = ({
             fontSize : 12,
             color: 'var(--white)',
             borderRadius: 4
-          }}>{d.values[closestIdx][d.key]}</span>
+          }}>{d.values[closestIdx][d.key] === null ? '(NA)' : d.values[closestIdx][d.key]}</span>
           </div>
         </div>
       )
