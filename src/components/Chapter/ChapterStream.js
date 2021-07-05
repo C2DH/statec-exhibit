@@ -84,12 +84,10 @@ const ChapterStream = ({ numStartAt, modules = [], height, backgroundColor, onSt
                         colorKeys={par.datasetColorKeys}
                         hidePercentage={par.datasetHidePercentage}
                         layout={par.datasetLayout}
-                        from={par.from}
-                        to={par.to}
+                        from={Array.isArray(par.datasetExtent) ? par.datasetExtent[0] : par.from}
+                        to={Array.isArray(par.datasetExtent) ? par.datasetExtent[1]: par.to}
                       >
-                        <label className="db pl5 pv3 i">
-                          {par.datasetLegend}
-                        </label>
+                        <label className="db pl5 pv3 i" dangerouslySetInnerHTML={{__html: par.datasetLegend }} />
                       </Dataset>
                     )
                     : null
