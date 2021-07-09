@@ -74,11 +74,20 @@
           "from": 1866,
           "to": 1960,
           "visibleKeys": ["v1", "v"],
+<<<<<<< Updated upstream
           "focusKeys": ["v"],
           "text": "Jusqu'aux années 1960 l'évolution du <em>solde global</em> s'explique essentiellement par le par le jeu entre <em>taux de mortalité</em> et <em>taux de natalité</em> appelé le <em>solde naturel</em>.",
           "dataset": "PopulationBalanceDetails",
           "datasetLayout": "Flowers",
           "datasetKeys": ["v2", "v3"]
+=======
+          "focusKeys": ["v1", "v"],
+          "colorKeys": { "v": "var(--secondary)", "v1": "red", "v2": "green" },
+          "text": "Des années 1850 aux années 1960, les variations du <a href='https://statistiques.public.lu/fr/methodologie/definitions/S/soldetotal/index.html' target='_blank'>solde global</a> sont largement dues à l'impact des variations du <a href='https://statistiques.public.lu/fr/methodologie/definitions/S/soldenaturel/index.html' target='_blank'> solde naturel</a>, c'est-à-dire du jeu entre la mortalité et la natalité.",
+          "dataset": "PopulationDensity",
+          "datasetLayout": "Lines",
+          "datasetKeys": ["v","v1","v2","v3","v4","v5", "v6", "v7", "v8", "v9", "v10"]
+>>>>>>> Stashed changes
         },
         {
           "from": 1860,
