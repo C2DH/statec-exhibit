@@ -98,9 +98,11 @@
           "text": "La croissance démographique au Grand-Duché connaît des différences régionales prononcées. Jusque vers les années 1970-1980, ce sont deux régions ou territoires qui concentrent le gros de l'augmentation de la population. Il s'agit des centres économiques du pays, c'est-à-dire le canton d'Esch-sur-Alzette et le canton de Luxembourg avec, en son centre, la Ville de Luxembourg.",
           "visibleKeys": ["v"],
           "focusKeys": ["v"],
-          "dataset": "PopulationCantons",
-          "datasetLayout": "Compare",
-          "datasetKeys": ["v","v1","v2","v3","v4","v5"]
+          "dataset": "PopulationDensity",
+          "datasetLayout": "Lines",
+          "datasetKeys": ["v","v1","v2","v3","v4","v5"],
+          "datasetExtent": [1851, 1990],
+          "datasetColorKeys": { "v": "red"}
         },
         {
           "from": 1990,
@@ -108,9 +110,11 @@
           "text": "Dans la Ville de Luxembourg et le canton de Luxembourg, la population augmente de façon continue avec une accélération à partir des années 1990. Dans le canton d'Esch-sur-Alzette, on note un dynamisme démographique important à partir de l'essor de la sidérurgie autour des années 1880 jusqu'à la crise économique mondiale à la fin des années 1920, puis une stagnation relative jusque dans les années 1980. <br/><br/>A partir des années 1990, on assiste (comme dans toutes les régions du pays) à une accélération de l'augmentation de la population dans la région d'Esch-sur-Alzette. Dans la plupart des cantons du Nord et de l'Est du pays, pendant plus d'une centaine d'années (de 1850 aux années 1970) , l'évolution démographique est peu dynamique et parfois même négative. L'accélération de la croissance démographique à partir des années 1990 se répercute dans tous les cantons du pays.",
           "visibleKeys": ["v"],
           "focusKeys": ["v"],
-          "dataset": "PopulationCantons",
-          "datasetLayout": "Compare",
-          "datasetKeys": ["v","v1","v2","v3","v4","v5"]
+          "dataset": "PopulationDensity",
+          "datasetLayout": "Lines",
+          "datasetKeys": ["v","v1","v2","v3","v4","v5"],
+          "datasetExtent": [1990, 2021],
+          "datasetColorKeys": { "v": "red"}
         }
       ]
     },
