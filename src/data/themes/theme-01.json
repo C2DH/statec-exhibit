@@ -100,7 +100,7 @@
           "focusKeys": ["v"],
           "dataset": "PopulationDensity",
           "datasetLayout": "Lines",
-          "datasetKeys": ["v","v1","v2","v3","v4","v5"],
+          "datasetKeys": ["v","v1","v2","v3","v4"],
           "datasetExtent": [1851, 1990],
           "datasetColorKeys": { "v": "red"}
         },
@@ -112,7 +112,7 @@
           "focusKeys": ["v"],
           "dataset": "PopulationDensity",
           "datasetLayout": "Lines",
-          "datasetKeys": ["v","v1","v2","v3","v4","v5"],
+          "datasetKeys": ["v","v1","v2","v3","v4"],
           "datasetExtent": [1990, 2021],
           "datasetColorKeys": { "v": "red"}
         }
@@ -328,7 +328,7 @@
           "colorKeys": { "v2": "green" },
           "text": "C'est la diversité des origines des migrants à partir des années 1990 qui doit être relevée. Les migrants viennent des pays voisins (la part des Français dans la population augmente), mais désormais également nombreux de pays non-européens (États-Unis, Inde, Chine, par exemple). <br/><br/>  Les migrants de pays qui avaient déjà une histoire d'immigration au Luxembourg (Portugal, Italie) sont également assez nombreux au sein de la vague d'immigration récente. Répondant à la demande d'une économie désormais largement tertiarisée, le profil des qualifications et des formations des immigrés est également de plus en plus diversifié ; ils occupent à la fois des emplois hautement qualifiés et des emplois peu qualifiés.",
           "dataset": "PopulationCompositionByNationalities",
-          "datasetKeys": ["v1", "v2", "v3", "v4", "v5", "v6", "v8"],
+          "datasetKeys": ["v", "v2", "v3", "v4", "v5", "v6", "v8"],
           "datasetLayout": "Compare",
           "datasetLegend": "Composition de la population étrangère au Luxembourg, 1991-2011"
         },
