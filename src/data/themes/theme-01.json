@@ -78,7 +78,7 @@
         {
           "from": 2008,
           "to": 2020,
-          "text": "En 2008, la crise financière se déclenche et n'épargne pas le Luxembourg. Les pouvoirs publics doivent notamment intervenir dans le sauvetage des banques systémiques. Néanmoins, même si la récession est profonde, le Luxembourg est assez résilient. <br/> <br/> La croissance démographique, toujours due à l'immigration, ne fut que marginalement affectée par ces évènements. La pression sur le marché du logement est non-négligeable et les infrastructures publiques (notamment dans le domaine de la mobilité) doivent suivre cette évolution. <br/></br> Le solde total a souffert de l'effet <a href='https://fr.wikipedia.org/wiki/Pand%C3%A9mie_de_Covid-19' target='_blank'>Coronavirus</a> en 2020, mais il reste largement positif.",
+          "text": "En 2008, la crise financière se déclenche et n'épargne pas le Luxembourg. Les pouvoirs publics doivent notamment intervenir dans le sauvetage des banques systémiques. Néanmoins, même si la récession est profonde, le Luxembourg est assez résilient. <br/> <br/> La croissance démographique, toujours due à l'immigration, ne fut que marginalement affectée par ces évènements. La pression sur le marché du logement est non-négligeable et les infrastructures publiques (notamment dans le domaine de la mobilité) doivent suivre cette évolution. <br/></br> Le solde global a souffert de l'effet <a href='https://fr.wikipedia.org/wiki/Pand%C3%A9mie_de_Covid-19' target='_blank'>Coronavirus</a> en 2020, mais il reste largement positif.",
           "visibleKeys": ["v"],
           "focusKeys": ["v"],
           "hotspots": [
@@ -102,7 +102,7 @@
           "datasetLayout": "Lines",
           "datasetKeys": ["v","v1","v2","v3","v4"],
           "datasetExtent": [1851, 1990],
-          "datasetColorKeys": { "v": "red"}
+          "datasetColorKeys": { "v": "#f171a1", "v1": "#fccd05", "v2": "#ff944a", "v3" : "#a64ac9", "v4" : "blue" }
         },
         {
           "from": 1990,
@@ -114,7 +114,7 @@
           "datasetLayout": "Lines",
           "datasetKeys": ["v","v1","v2","v3","v4"],
           "datasetExtent": [1990, 2021],
-          "datasetColorKeys": { "v": "red"}
+          "datasetColorKeys": { "v": "#f171a1", "v1": "#fccd05", "v2": "#ff944a", "v3" : "#a64ac9", "v4" : "blue"}
         }
       ]
     },
@@ -178,7 +178,7 @@
           "datasetLayout": "Lines",
           "datasetLegend": "Indicateur de fecondité du Luxembourg, Belgique et Portugal (1970-1990) <br/><a href='https://statistiques.public.lu/fr/methodologie/definitions/I/indicatconjonfecondite/index.html' target='_blank'>(en savoir plus sur cet indicateur)</a>",
           "datasetKeys": ["v", "v1", "v2"],
-          "datasetColorKeys": { "v": "blue", "v1": "green", "v2": "red" }
+          "datasetColorKeys": { "v": "#f171a1", "v1": "#a64ac9", "v2": "blue" }
         },
         {
           "from": 1965,
@@ -199,7 +199,7 @@
           "focusKeys": ["v","v1","v2"],
           "colorKeys": { "v": "var(--secondary)", "v1": "red", "v2": "green" },
           "dataset": false,
-          "text": "Pays pauvre au 19e siècle (jusque dans les années 1890), le Luxembourg connaît structurellement des soldes migratoires négatifs, <em>c'est-à-dire des excès des départs sur les arrivées</em> comme la plupart des pays européens. <br/><br/> Au milieu du 19ème siècle, l'économie luxembourgeoise est encore une économie de subsistance et les variations de production agraire ont des répercussions directes et parfois douloureuses sur les conditions de vie des habitants qui partent nombreux à certaines périodes.",
+          "text": "Pays pauvre au 19ème siècle (jusque dans les années 1890), le Luxembourg connaît structurellement des soldes migratoires négatifs, <em>c'est-à-dire des excès des départs sur les arrivées</em> comme la plupart des pays européens. <br/><br/> Au milieu du 19ème siècle, l'économie luxembourgeoise est encore une économie de subsistance et les variations de production agraire ont des répercussions directes et parfois douloureuses sur les conditions de vie des habitants qui partent nombreux à certaines périodes.",
           "figures": [{ "id": "redline_poster_TAGEBLATT_20070612.png" }]
         },
         {
@@ -212,7 +212,7 @@
           "hotspots": [
             {
               "t": 1929,
-              "title": "Début de la Grande Dépression, la plus grande crise économique du XXe siècle.",
+              "title": "Début de la Grande Dépression, la plus grande crise économique du 20ème siècle.",
               "text": "Le krach se déroula à la Bourse de New York entre le jeudi 24 octobre et le mardi 29 octobre 1929."
             }
           ]
