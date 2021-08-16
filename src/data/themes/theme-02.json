@@ -11,7 +11,8 @@
   },
   "introductions": [
     {
-      "text": "Au 19ème siècle, le taux de natalité se tasse. Si le solde naturel (c'est-à-dire l'excédent des naissances sur les décès) reste positif, c'est grâce à la baisse de la mortalité due au progrès médical et sanitaire et à l'amélioration des conditions de vie (logement, régime alimentaire&nbsp;…).<br/>Au 20ème siècle le solde naturel est tendanciellement plus faible qu'au 19ème siècle, ce qui est dû à la natalité qui continue à se tasser suite à une fécondité (le nombre d'enfants par femme) qui est en recul."
+      "text": "Au 19ème siècle, le taux de natalité (les naissances rapportées à la population) se tasse. Si le solde naturel (c'est-à-dire l'excédent des naissances sur les décès) reste positif, c'est grâce à la baisse de la mortalité due au progrès médical et sanitaire et à l’amélioration des conditions de vie (logement, régime alimentaire …). <br/><br/> Au 20ème siècle le solde naturel est globalement plus faible qu’au 19ème siècle, ce qui est dû à la une natalité peu dynamique, conséquence d’une fécondité (le nombre d'enfants par femme) en berne. Et il y a quelques périodes où même la baisse de la mortalité n’arrive pas à équilibrer cette tendance de la baisse de la natalité et où le solde naturel (excès des naissances sur les décès devient négatif). <br/><br/> Cette évolution peut être définie par le terme de « transition démographique ». Il s’agit d’un processus historique au cours duquel une population passe d'une situation démographique où  les taux de mortalité et de natalité sont élevés à un régime où le taux de mortalité, et ensuite le taux de natalité, sont faibles."
+
     }
   ],
   "sections": [
@@ -19,11 +20,11 @@
       "dataset": "population-natural-growth-details",
       "modules": [
         {
-          "title": "Naissance: un taux de natalité en baisse sur deux cents ans",
+          "title": "La natalité en recul sur le long terme",
           "paragraphs": [
             {
               "from": 1840,
-              "to": 1890,
+              "to": 1880,
               "availableKeys": ["v1", "v"],
               "visibleKeys": ["v1"],
               "focusKeys": ["v1"],
@@ -37,8 +38,8 @@
                   "text": "Une épidemie de Cholera frappe le pays"
                 }
               ],
-              "text": "Le milieu des années 1840 connaît une baisse de la <a href='https://statistiques.public.lu/fr/methodologie/definitions/T/tauxnatalite/index.html' target='_blank'>natalité</a>. Ce sont les conditions de vie difficiles (faibles récoltes) qui contribuent à expliquer ces baisses ponctuelles, qui se répètent d'ailleurs dans les années 1850. Plus les conditions sont difficiles, plus la natalité diminue. <br/><br/>D'une manière générale, les variations de la natalité sont plus importantes avant les années 1880, c'est-à-dire avant la véritable industrialisation et l'augmentation du niveau de vie qui l'accompagne.",
-              "figures": [{ "id": "statec_002.png" }]
+              "text": "Le milieu des années 1840 connaît une baisse de la natalité. Ce sont les conditions de vie difficiles (faibles récoltes) qui contribuent à expliquer ces baisses ponctuelles, qui se répètent d'ailleurs dans les années 1850. Plus les conditions de vie  sont difficiles, plus la natalité recule, et dans ces mêmes périodes la mortalité augmente parallèlement. Ce qui, en 1866 par exemple (épidémie de choléra), signifie une perte d’habitants. <br/> <br/> D'une manière générale, les variations de la natalité sont plus importantes avant les années 1880, c'est-à-dire avant la véritable industrialisation du Luxembourg et l'augmentation durable du niveau de vie qui l'accompagne.",
+              "figures": [{ "id": "statec_002.png" }, { "id": "bulletin_familles_nombreuses_2.jpg" }, { "id": "article_numbreuses_au_Lux.png" }]
             },
             {
               "from": 1891,

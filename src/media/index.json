@@ -2084,6 +2084,88 @@
       "base64": "data:image/png;base64,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",
       "aspectRatio": 1.5010416666666666,
       "isPortrait": false
+    },
+    "article_numbreuses_au_Lux.png": {
+      "caption": "Oeuvre pour les familles nombreuses au Luxembourg",
+      "provenance": "L'indépendance luxembourgeoise, edition de 17h, 11 Mars 1926",
+      "resolutions": {
+        "medium-w": {
+          "url": "/media/images/article_numbreuses_au_Lux.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/article_numbreuses_au_Lux.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/article_numbreuses_au_Lux.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 1080,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/article_numbreuses_au_Lux.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 960
+          }
+        }
+      },
+      "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAUCAIAAAA2kktGAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABY0lEQVQoz02SWW7DMAxEff8bFAXcxIs2arMdGzlen0QjLT8IUhxyRpSG4zje7/d5nsuyeO8lyhTHp4yzPEb3tabpus4BEAjn3DRNIQRwf955a6yIDK9uHKVuBJFpIrThY4yllAZiUqvFiK+16ux93ylp3EDXdVGmVYm0O6e8bRs9pDedIvBtnverWXzwxhofHMFNpwNUliSZ88+aZpuWh3xz2eHs5ruBQyy4rW4+W5cspCWXm06ChABA2qpE0OTyOocnXeDanrBpfRi/KkKVUbPGxSxG5uHYj+N1jOFrjfRFrgNd19eoSy11KwP7YAW1bGyOcs5Z6TACMAAGXRqSOLLWqnx9Fu3BN02fPakBjd04VJU3SBOtEStpikmvfINCz6i1e0ER237W8jR5bnS3pv7AiNWlE3Meoi+VltxADDPGaO0jnBRPW3tgnYRG9OovUER7oih6xxuUuxHzjq9/RsoWfwEwxeYLLo0TfQAAAABJRU5ErkJggg==",
+      "aspectRatio": 0.6125,
+      "isPortrait": true
+    },
+    "bulletin_familles_nombreuses_2.jpg": {
+      "caption": "Bulletin du recensement de la population de 1843 (commune d’Alscheid). Exemple d’une famille nombreuse",
+      "provenance": "Archives nationales (recensements de la population)",
+      "resolutions": {
+        "medium-w": {
+          "url": "/media/images/bulletin_familles_nombreuses_2.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/bulletin_familles_nombreuses_2.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/bulletin_familles_nombreuses_2.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 1080,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/bulletin_familles_nombreuses_2.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 960
+          }
+        }
+      },
+      "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAUCAIAAADkwkEeAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACC0lEQVQ4y2XT61IaQRAF4Hl5H8AflFWWIIKCXCWKEQQJChKVmxceKB/byVYq6R9dszN9+py+bGo2m3d3d91u9+XlZb1e39/fj8djNzc3N8PhcDqdPj4+brdbT09PT6PR6Pr6Ol1cXLTb7Xq9/iOz4+PjYrHIHx0d8WdnZ5eXl7PZzFOn02m1WrKnWq0G0M3MrYhqterG+erqqlKplEolnN8yQ9Lv95NQYgh4fX1dLBZvb29S+nx+fqaW1EajQdvPP3Z7e5vQ9Xq9wWDwPTNXvBvFPDw8YBAAOczMk3M6Pz+nRCgY74p6zGQAgE0mEw1YrVabzQa/sHR6ekq0IGlgeAp9zudzSoTmgPf3d5eoEoDmqE+0lHiimOVyqQxedGB8kmAM+76pUicokVhWD5DYYiyB2WYm3b4eGIzUo3LwrHW5ntwHxohpSdEKSNMIHphlZv/wfHx84AFL9NkIPqr3jC2PCw+pATDWByzZN1DFaBoe6Q0XRlxg/uaB2fOcnJxQBaC/Bg+jaVYhduJ/zL6ew8PDg4MDPaAN2JqZoxSjzKQQCkDb5+cnYV6T/S0UChjlplDTo9AYF3JIHjnNv3ugY19fX5Fpt9t503T7hhmb3sQq5kXSnGJtY8xgxCD0RyFpZ6YxsThMjKT7Hc0nGEgpY98c4GNEYc57TLlcjiHm6xgDiU2TO/rGYgzq+QWKLvcQ9+1b8AAAAABJRU5ErkJggg==",
+      "aspectRatio": 0.8364583333333333,
+      "isPortrait": true
     }
   }
 }
