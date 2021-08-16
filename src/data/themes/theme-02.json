@@ -46,7 +46,8 @@
               "availableKeys": ["v1", "v"],
               "visibleKeys": ["v1"],
               "focusKeys": ["v1"],
-              "text":"Dans le premier tiers du 20ème siècle, la natalité connaît deux chutes importantes. Une première autour de la Première Guerre mondiale qui l'amène à environ 20 pour mille vers 1920. Après s'être maintenue légèrement au-dessus de 20 pour mille pendant la prospérité des années 1920, la natalité amorce vers 1930 une nouvelle chute accélérée par la crise économique."
+              "text":"Dans le premier tiers du 20ème siècle, la natalité connaît deux chutes importantes. Une première autour de la Première Guerre mondiale qui l'amène à environ 20 pour mille vers 1920. Après s'être maintenue légèrement au-dessus de 20 pour mille pendant la prospérité des années 1920, la natalité amorce vers 1930 une nouvelle chute accélérée par la crise économique.",
+              "figures": [{ "id": "HISAEZ000342V01_traite.jpg" }]
             },
             {
               "from": 1955,
@@ -127,7 +128,7 @@
               "from": 1960,
               "to": 1974,
               "text": "Avec les années 1960, vient une époque où l'âge au mariage recule et où les modes de cohabitation se diversifient avec des formes peu codifiées (\"unions libres\") et plus récemment avec l'union civile (PACS). En juin 2014, le mariage pour couples du même sexe est légalement institué. De 2015  à 2019 on compte 353 mariages de couples du même sexe.",
-              "figures": [{ "id": "wedding-bettel-wort-2015.jpg"}]
+              "figures": [{ "id": "Luxembourg_Pride.jpg"}]
             },
             {
               "availableKeys": ["v"],
