@@ -1920,6 +1920,170 @@
       "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAUCAIAAAD+/qGQAAAACXBIWXMAACpyAAAqcgHvkQT+AAAFXklEQVQ4yyWV2U+TWRjGv2tDZuKFGGMEBiVBB3FAKPtalq5IC21ppaW0xQIFKhYKlLIoUxaJww6yBXBnM4RRgxqIxMRwAQlcIQkJiReYmHjhX8D86Jx8+XJ6vnPe93me93lPhY6Ojjdv/v3+/fv29vbu7m5/fz8rbW1t7e3tfX3/TE9Pb21tra2traysvHv37vPnz+vr6wMDA/X19XV1dX19fR8/fpybm2tqapqamnr58uXy8rLb7a6pqRFKSkr29vZ+/Pjx4sWL58+fd3V1eTwer9fb4B8zMzOvX79e9o8n/jE+Pk7Kzs7O4eHh0tLSKf9wOBwAIl93dzfJyCRcu3aNnJubm62trSMjIyqVKiUlOTs7++5dp9vdUFZW9uDBg56ensbGRoDAw2q1Wa0WvrJeWVmxsbFBskePHr1//35+fn5oaOjVq1cHBweCQqGAeHV1tdlsBuzt2wa5XK7X6yoqysvL7Xq9HiwAdzqdVVVVdvsdpVKu02kLCtQOR2VdnWtnZ4dABoMBsMR9+PChzWY71SEkJMRkMhUXF0dERFy5cuX8+fPR0VFJSYm3buXpdBqv1wM0lAGv01lTVKRjLynN5hLW+bm/v7+6upqXl1dbWzs4OPj48WNgRUX9JaDU6OgoqkETKYxGI8qEhv5x6dKl2NgYm83ictX6fH93d3e1tno1msKSEhNBLZbS8vI7aWmpHz58gDs1BD6EFhcXS0vNarVKQLuvX79++/YNM9jtdigrlUqr1SqTycLDw69eDU9OTpbJpEDjUShkWm2hQiHXajUOR0VenvLp0yc9Pd1ud73ZbEJStFOp8iEquFwuJP/16xdmWFpaou75+fnAh7teX5SYmIAmIpEoJuZmWlpaSkpKQkK8XC5DJR7y4QpyAJ95VlZWQkJCXJyorMwmYFss8uzZM2DqdDrcAtiwsLCMjHTOYw+qbzTeTk1NAXh2dhal02q1BGVO9d6+fQt8YrHBaCwWi8WIAyeBak5MTGCgzMzM6OjoixcvBgcH37gRWVhYkJubS2hQQy09PS0nJzsrS0wZoM9PQMlkktnZGSykVCrkcimykozNQBFwH30xOzsrlUovX74MKPIT9P8ocXFx5IiPF+Xm5qBPeno6aTA4J5ubPcSdmBhnD3HZAFKAU/mmpgbh/v37NNXx8TFWxWShoaGoCSn24QdCJycnoV1+/q2MjAzWsRRgIVdd7SAQceGOqcXiTNalUolGU2AwFAk+n482Ozk5YXL27NmAgIDAwECO4RhCULfUVGQVI3eMf1AZ5jwA501PA7ClxZuUlAQPFtVqNeoLFoulpaWFuIeHhySAbFBQEG6j/egUSoQfaDC/N06bBZXwMiSQAoyDgwPYdmCgH5Ys4rCRkWFsJzQ3N9OCP3/+xBiE/vLli0SSC32KC2tiGQz669cjTCajSBQLR2LxiaKRjxItLi6Al9KxAYNTOpfrHnNhcnISZWlwGoH7gdYiM/VBX1qLOsCgoEBF18fGxsbHx+Gze/dq6enIyOuZmRm4vrGxgSJzmdhs1qioKIKe+hdEGIvWwvOsEhEFaQHswW5OcmnBNCcnB3SkZB0zcVIikfAVIwGLfP72VYMduqf+PXfu3JkzZy5cuMA3HuSjUEywGpccvtZoNACsqnLQVxyGB5noV+yBuxcWFnjziYset3GKSpzihf7vp+M3GpSt2N7jaUJBRKN0NCF/DRzD9niIG4ceY4WUXFIYhnrQq1yMlJGsyEgBnM5qgXAREX/S/jdvRnPXjY2N8eae9vk6wYhqw8MjbW2tQK6srCQEb2zT29vL/xNX+9HR0adPn5jQBwhVUWEnKNf3f3+kun6Wd+JcAAAAAElFTkSuQmCC",
       "aspectRatio": 1.4447916666666667,
       "isPortrait": false
+    },
+    "HISAEZ000342V01_traite.jpg": {
+      "caption": "Placeholder Caption",
+      "provenance": "Placeholder Copyright",
+      "resolutions": {
+        "medium-w": {
+          "url": "/media/images/HISAEZ000342V01_traite.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/HISAEZ000342V01_traite.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/HISAEZ000342V01_traite.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 1080,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/HISAEZ000342V01_traite.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 960
+          }
+        }
+      },
+      "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAUCAIAAADdpfBFAAAACXBIWXMAAC4jAAAuIwF4pT92AAAC00lEQVQozyWTzy/6cRzH3wdXl2/zKy3ZcGh+xRoh1ApTfoWQ30wRslBsVmaWNQ7G/DrowqGcXGxmw+aQZnNpc3Gy/AOOLprvQ703n336vF+v5/P5ej5fRDgc/vj4iMfjLy8v9/f3V1dXBwcH6+vrk5OT7e3tDQ0NKpWqtrZ2c3PT4XCI19fX39/fZDL5/f2dSCRisRgNu7u7Lperv7+/paWlrq6uqanp8PDQ5/OJ5+dnqr++vmB4fHwMhULb29szMzN9fX0dHR1U63Q6jUYzOjra1dUlnp6efn5+Pj8/397ebm5ujo6Otra2IB0YGOjs7Gxra2ttbQWbF7VaLU5OTqLR6PX19eXl5enp6erq6tTUFBp6enrAtlgsTqezvr6+ubmZp2Aav9+/sbGBUI/Hs7S0NDQ0ZDQaue7u7kbS8fExP5m1pqZGQAfYyMjIxMTE4OCg3W6fnp4eHh4eSx3kglJSUiKVSmkQTAMA1+Pj42ilATa+OFKHZq4UCkVxcfGf7tnZ2ZWVFZvNhr7FxcU09vz8PFRg00azVqstLS2trq4WECGaakiAgfr8/BytjY2NeNfb22swGKqqqrDlTzdFaSS6MzIy3G43GeE64V1cXJBlVlZWRUUFDvIU2Amj2WzOy8tDGQG9v7+zAnt7e8jgS2VlJd4xaGFhoSBYk8kEI21kyyLc3d09PDwsLCygam5urqysDCWZmZn5+fmCFLxebyAQCAaDZERdJBJBOivFGEjHu6KiotzcXKVSKRDKxqytrS0vL+/v79/e3u7s7Oj1euwDGDGIJFr4ZTKZYETWiAg9qUOb1WplaAj5iJ50wABLJBLBBdvsTB2sJVdQeRIWK4AVeCeXy3NycgoKCgQUgDEQVuIo47KlFDEc/wTUYRzz4QE/BX+ExDXrxuxpVN7ZCrYKB6krLy8/OztDgviXOtnZ2RBBx/isBO9pK0BlSYgCc8D9D7WuVl49eZadAAAAAElFTkSuQmCC",
+      "aspectRatio": 0.7583333333333333,
+      "isPortrait": true
+    },
+    "Du_Luxembourg_en_Argentine.jpeg": {
+      "caption": "Placeholder Caption",
+      "provenance": "Placeholder Copyright",
+      "resolutions": {
+        "medium-w": {
+          "url": "/media/images/Du_Luxembourg_en_Argentine.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/Du_Luxembourg_en_Argentine.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/Du_Luxembourg_en_Argentine.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 1080,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/Du_Luxembourg_en_Argentine.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 960
+          }
+        }
+      },
+      "base64": "data:image/png;base64,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",
+      "aspectRatio": 1.4770833333333333,
+      "isPortrait": false
+    },
+    "Converter_basic_lining_Rheinstahl.png": {
+      "caption": "Le convertisseur Thomas",
+      "provenance": "Placeholder Copyright",
+      "resolutions": {
+        "medium-w": {
+          "url": "/media/images/Converter_basic_lining_Rheinstahl.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/Converter_basic_lining_Rheinstahl.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/Converter_basic_lining_Rheinstahl.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 1080,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/Converter_basic_lining_Rheinstahl.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 960
+          }
+        }
+      },
+      "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAUCAIAAADQu4ACAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABZElEQVQozz2RXc/BQBCF5///BFfuhUgaVQQRJb5FRIpwgbS+oqSol6LvUxvmYrM755yZM7PyfD7X6/V0Ok2n0/l8frlcvr8hrusuFgvbtkejka7rxWJxs9mEYRhh9Xr9fr8/Hg/er9fLsqxEIjEcDnlKrVa7Xq9BEKiTFDqK73Y7MQxjv9+TQgrm+z732WzWbDalVCop7O8TlOV+Pp/pJblcDp+kjsej6kqg7na7EfbTwcCeurfbbclms6vVCqvUYR4Ut9vtdDpVq1XJZDKk4ALj5adrtVqRznEcgMvlwqkwGg8GA0mlUnghBVetg5NF9vt90TSNMUkxu+d5+KIZLTudjrBitUAK4hMFPLBIF4/HwUjxDr8BbJqm4LXX66l+yio8ijcaDZnP58lkkgffdDgc2A6k8XgczbfdbmOxGACVGd/7RKVSiXZNdSwVCgVgPh3GZDIpl8vwRDWHy3bUAAyjfuMf4vrpGROgRjIAAAAASUVORK5CYII=",
+      "aspectRatio": 0.48333333333333334,
+      "isPortrait": true
+    },
+    "Luxembourg_Pride.jpg": {
+      "caption": "Luxembourg Pride Week",
+      "provenance": "Lucien Wolff, Luxemburger Wort, 2020",
+      "resolutions": {
+        "medium-w": {
+          "url": "/media/images/Luxembourg_Pride.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/Luxembourg_Pride.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/Luxembourg_Pride.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 1080,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/Luxembourg_Pride.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 960
+          }
+        }
+      },
+      "base64": "data:image/png;base64,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",
+      "aspectRatio": 1.5010416666666666,
+      "isPortrait": false
     }
   }
 }

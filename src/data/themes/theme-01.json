@@ -237,7 +237,7 @@
           "visibleKeys": ["v2"],
           "colorKeys": { "v2": "green" },
           "text": "Entre 1840 et 1914 un nombre important de Luxembourgeois quittent leur pays vers les pays voisins (essentiellement la France et en moindre mesure la Belgique) mais également vers l'Outre-Mer. Les Etats-Unis exercent une forte attraction mais il y également des Luxembourgeois qui partent pour l'Amérique du Sud ou les colonies européennes notamment au Congo. Les pics des départs (soldes migratoires très négatifs) se situent au milieu des années 1850 (caractérisées par des récoltes insuffisantes) et dans les années 1866-1867 (conséquence de la crise sanitaire que constitue l'épidémie du choléra).",
-          "figures": [{ "id": "statec_019.jpg" }],
+          "figures": [{ "id": "statec_019.jpg" }, { "id": "Du_Luxembourg_en_Argentine.jpeg" }],
           "note": "add article in german + translation + article sur la migration en argentine"
         },
         {
@@ -246,7 +246,7 @@
           "visibleKeys": ["v2"],
           "colorKeys": { "v2": "green" },
           "text": "Les années 1880 sont plutôt une période d'expansion économique due notamment à développement de la sidérurgie qui profite de l'invention du <a href='https://fr.wikipedia.org/wiki/Proc%C3%A9d%C3%A9_Thomas' target='_blank'>procédé Thomas-Gilchrist</a> permettant la transformation de la fonte phosphoreuse, produite à partir de la minette luxembourgeoise, en acier de bonne qualité. <br/><br/>L'émigration continue cependant à atteindre un niveau important, ce qui explique un solde migratoire négatif. C'est le signe que les mouvements migratoires ne résultent pas seulement l'évolution économique au Grand-Duché, mais également de l'attrait d'autres pays.",
-          "figures": [{ "id": "statec_010.png" },{ "id": "statec_009.png", "caption": "Le convertisseur Thomas" }],
+          "figures": [{ "id": "statec_010.png" },{ "id": "Converter_basic_lining_Rheinstahl.png" }],
           "notes": "convertisseur Thomas da cambiare"
         },
         {
