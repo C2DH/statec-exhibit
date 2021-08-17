@@ -24,7 +24,7 @@
           "paragraphs": [
             {
               "from": 1840,
-              "to": 1880,
+              "to": 1875,
               "availableKeys": ["v1", "v"],
               "visibleKeys": ["v1"],
               "focusKeys": ["v1"],
@@ -42,50 +42,50 @@
               "figures": [{ "id": "statec_002.png" }, { "id": "bulletin_familles_nombreuses_2.jpg" }, { "id": "article_numbreuses_au_Lux.png" }]
             },
             {
-              "from": 1891,
-              "to": 1954,
+              "from": 1875,
+              "to": 1910,
               "availableKeys": ["v1", "v"],
               "visibleKeys": ["v1"],
               "focusKeys": ["v1"],
-              "text":"Dans le premier tiers du 20ème siècle, la natalité connaît deux chutes importantes. Une première autour de la Première Guerre mondiale qui l'amène à environ 20 pour mille vers 1920. Après s'être maintenue légèrement au-dessus de 20 pour mille pendant la prospérité des années 1920, la natalité amorce vers 1930 une nouvelle chute accélérée par la crise économique.",
+              "text":"A partir des années 1880, la natalité commence à se tasser et la légère remontée des 1890 n’y change rien. Une chute importante est due à la première guerre mondiale (période de pénurie), mais l’évolution à la baisse de la natalité (qui commence vers le tournant des 19ème et 20ème siècle) est plus structurelle que conjoncturelle. Les bonnes conditions économiques des années 1920 semblent favoriser un rebond qui n’est cependant que passager. Puis la crise économique des années 1930 va de pair avec une nouvelle baisse de la natalité Finalement, la deuxième guerre mondiale n’est pas favorable à une reprise des naissances.",
               "figures": [{ "id": "HISAEZ000342V01_traite.jpg" }]
             },
             {
-              "from": 1955,
-              "to": 1980,
+              "from": 1910,
+              "to": 1950,
               "availableKeys": ["v1", "v"],
               "visibleKeys": ["v1"],
               "focusKeys": ["v1"],
-              "text":"A partir du milieu des années 1960, le taux de natalité entame une nouvelle baisse sensible. Des phénomènes de société - ce la démocratisation des moyens de contraception et la diffusion du modèle familial avec moins de 3 enfants - contribuent à expliquer ce phénomène."
+              "text":"Les années 1950 amènent une hausse de la natalité (souvent qualifiée de « baby-boom ») qui accompagne l’amélioration des conditions de vie. Cependant dès le milieu des années 1960, les naissances entament de nouveau une baisse sensible. Des phénomènes de société – comme  la démocratisation des moyens de contraception et la diffusion du modèle familial avec moins de 3 enfants - contribuent à expliquer ce phénomène."
             },
             {
-              "from": 1970,
-              "to": 1980,
+              "from": 1950,
+              "to": 2020,
               "availableKeys": ["v1", "v"],
               "visibleKeys": ["v1", "v"],
               "focusKeys": ["v1","v"],
               "colorKeys": { "v1": "var(--secondary)", "v": "green" },
-              "text": "Comme la mortalité ne baisse pas, le solde naturel devient <b>négatif</b> au cours des années 1972-1978, même si ce n'est que légèrement. <br/>Dans ce contexte, un rapport sur la démographie luxembourgeoise est demandé par le gouvernement au démographe français réputé Gérard Calot, qui projette une baisse de la population du Luxembourg et surtout la diminution de la population de nationalité luxembourgeoise (Gérard Calot, <a href='https://catalogue.bnf.fr/ark:/12148/cb353304698' target='_blank'>La démographie du Luxembourg, passé, présent et avenir : rapport au président du gouvernement, 1978</a>).",
+              "text": "Au cours des années 1972-1978, le solde naturel (différence entre naissances et décès) devient négatif, même si ce n’est que légèrement. Si les 3 autres épisodes historiques où le solde naturel tombe en-dessous de zéro sont liés à une hausse de la mortalité (choléra en 1866 et les deux guerres mondiales), dans les années 1970, c’est une baisse de natalité qui en est le facteur explicatif le plus important. Le nombre de naissances passe de 5297 en 1965 à seulement 3800 en 1973. <br/> <br/> Dans ce contexte, un rapport sur la démographie luxembourgeoise est demandé par le gouvernement au démographe français réputé Gérard Calot, qui projette une baisse de la population du Luxembourg et surtout la diminution de la population de nationalité luxembourgeoise (Gérard Calot, <a href='https://catalogue.bnf.fr/ark:/12148/cb353304698' target='_blank'>La démographie du Luxembourg, passé, présent et avenir : rapport au président du gouvernement, 1978</a>).",
               "figures": [{ "id": "ark_70795_gq9f7z_pages_11.jpg" }]
             },
             {
-              "from": 1970,
-              "to": 1980,
+              "from": 1950,
+              "to": 2020,
               "availableKeys": ["v1", "v"],
               "visibleKeys": ["v1", "v"],
               "focusKeys": ["v1","v"],
               "colorKeys": { "v1": "var(--secondary)", "v": "green" },
-              "text": "C'est l'époque où certains, comme le directeur du STATEC, Georges Als, évoquent la thèse du \"suicide démographique\" du Luxembourg.",
+              "text": "C'est l'époque où certains, comme le directeur du STATEC de l’époque, Georges Als, évoquent la thèse du \"suicide démographique\" du Luxembourg. En fait, si le scénario de Calot, popularisé par Als, ne se réalise pas, c’est parce qu’au moment où le rapport est rédigé, la tendance de la natalité se réoriente déjà à la hausse et que l’immigration amène une population jeune en état de procréer.",
               "figures": [{"id": "forum-137-1992-le-mythe-du-suicide-demographique.png"}]
             },
             {
-              "from": 1981,
-              "to": 2014,
+              "from": 1970,
+              "to": 2020,
               "availableKeys": ["v1", "v"],
               "visibleKeys": ["v1", "v"],
               "focusKeys": ["v1","v"],
               "colorKeys": { "v1": "var(--secondary)", "v": "green" },
-              "text":"Que le taux de natalité augmente de nouveau à partir de la fin des années 1980 est d'abord dû à un - léger -  changement du comportement  démographique, mais aussi au fait que la population immigrée est plutôt jeune et en état de procréer et que celle-ci a par ailleurs une fécondité plus élevée que la population autochtone."
+              "text":"Le taux de natalité se stabilise au milieu des années 1970, puis augmente dans les années 1980. C’est le résultat d’un changement du comportement démographique (légère hausse de la fécondité), mais aussi au fait que la population immigrée est plutôt jeune et en état de procréer. Elle a par ailleurs une fécondité plus élevée que la population autochtone, du moins dans les années 1980. <br/> <br/> A partir du tournant des 20ème et 21me siècle, le taux de natalité (les naissances rapportés à la population) baisse à nouveau. Cela ne devrait cependant pas cacher que le nombre absolu de naissances est en croissance pratiquement continue depuis les années 1970 :  3 800 naissances en 1973 et 6 459 naissances en 2020. Ce phénomène n’est pas dû à une hausse structurelle durable de la fécondité, mais à la croissance générale de la population et notamment de la population jeune en âge de procréer."
             }
           ]
         }
@@ -102,17 +102,17 @@
               "visibleKeys": ["v1"],
               "focusKeys": ["v1"],
               "from": 1840,
-              "to": 1859,
-              "text": "Le nombre de mariages est important au milieu du 19ème siècle rapporté à la population (autour de 7 -8 par 100 000 habitants et par année). Sans perspectives \"positives\", les mariages tendent à se tasser et les variations du taux dans les années 1840 et 1850 sont liées aux conditions de vie difficiles et changeantes (selon les récoltes, notamment).",
+              "to": 1875,
+              "text": "Le nombre de mariages rapporté à la population – te taux de nuptialité - est élevé au milieu du 19ème siècle (autour de 7 -8 par 1 000 habitants en moyenne par année). Aujourd’hui ce taux est descendu à quelque 3 pour mille. Le taux de nuptialité n'est pas seulement dépendant de la propension intrinsèque de se marier, mais également des conditions de vie. Sans perspectives \"positives\", les mariages tendent à se tasser. Les variations du taux dans les années 1840 et 1850 sont liées aux conditions de vie difficiles et changeantes (selon les récoltes et la situation sanitaire, pèar exemple). Après les moments de crise, la nuptialité rebondit généralement.",
               "figures": [{"id": "HISAAJ000008N01.jpg"}, {"id": "HISAAJ000588N01.jpg"}]
             },
             {
               "availableKeys": ["v"],
               "visibleKeys": ["v"],
               "focusKeys": ["v"],
-              "from": 1860,
-              "to": 1880,
-              "text": "Le <b class='bold'>taux de nuptialité</b> est lié à la structure de la population. Plus la population est jeune (en âge de se marier), plus le taux de nuptialité est élevé. Le tassement du taux de nuptialité dans les années 1860-1880 est probablement lié au départ de nombreux jeunes à l'étranger (émigration)."
+              "from": 1875,
+              "to": 1910,
+              "text": "Le <b class='bold'>taux de nuptialité</b> est également lié à la structure de la population. Plus la population est jeune, plus le taux de nuptialité est élevé. Le tassement du taux de nuptialité dans les années 1870-1880 est probablement lié au départ de nombreux jeunes à l'étranger (émigration). A partir du milieu des années 1880 les mariages redeviennent plus nombreux dans un contexte d’immigration et d’amélioration des conditions économiques."
             },
             {
               "availableKeys": ["v"],
@@ -126,18 +126,26 @@
               "availableKeys": ["v"],
               "visibleKeys": ["v"],
               "focusKeys": ["v"],
-              "from": 1960,
-              "to": 1974,
-              "text": "Avec les années 1960, vient une époque où l'âge au mariage recule et où les modes de cohabitation se diversifient avec des formes peu codifiées (\"unions libres\") et plus récemment avec l'union civile (PACS). En juin 2014, le mariage pour couples du même sexe est légalement institué. De 2015  à 2019 on compte 353 mariages de couples du même sexe.",
+              "from": 1950,
+              "to": 2020,
+              "text": "Dans un premier temps, la baisse de la nuptialité à partir de 1946 constitue un retour à la normal après le « boom » passager des mariages que provoque la fin de la guerre. La tendance générale commençant à partir des années 1950 est cependant caractérisée par un recul pratiquement continu de la nuptialité. Le début des années 1990 – une remontée passagère - constitue une exception liée à une réforme de la fiscalité des ménages. La baisse du taux de nuptialité est d’abord imputable à une modification de la structure par âge d‘une population qui vieillit. La part des personnes de la classe d’âge où la probabilité de se marier est élevée se tasse mécaniquement. En fait, le nombre absolu de mariages ne diminue pas dans les mêmes proportions  que le taux de nuptialité : on compte 2236 mariages en 1960 et 2 084 en 2019.",
               "figures": [{ "id": "Luxembourg_Pride.jpg"}]
             },
             {
               "availableKeys": ["v"],
               "visibleKeys": ["v"],
               "focusKeys": ["v"],
-              "from": 1975,
-              "to": 2014,
-              "text": "L'âge au premier mariage augmente fortement et le temps passé en vivant seul augmente. Au milieu des années 1970, l'âge au premier mariage est de moins de 26 ans pour les hommes et de 23 ans pour les femmes. Aujourd’hui cet âge moyen au premier mariage est de 34 ans pour les hommes et de près de 32 ans pour les femmes ."
+              "from": 1950,
+              "to": 2020,
+              "text": "Avec les années 1960, vient une époque où l'âge au premier mariage recule et où les modes de cohabitation se diversifient avec des formes peu codifiées (\"unions libres\") et plus récemment, en 2004 (loi du 9 juillet), l'union civile (PACS, pacte civil de solidarité). En juin 2014, le mariage pour couples du même sexe est légalement institué. De 2015 à 2019 on compte 353 mariages de couples du même sexe."
+            },
+            {
+              "availableKeys": ["v"],
+              "visibleKeys": ["v"],
+              "focusKeys": ["v"],
+              "from": 1970,
+              "to": 2020,
+              "text": "L'âge au premier mariage augmente fortement. Au milieu des années 1970, l'âge au premier mariage est de moins de 26 ans pour les hommes et de 23 ans pour les femmes. Aujourd’hui il est de 34 ans pour les hommes et de près de 32 ans pour les femmes. Le temps où les personnes vivent seules (en tant que « célibataires ») s’allonge. Il en résulte que la part des célibataires dans la population est en croissance : en 1981, cette part fut de 18%, aujourd’hui elle approche les 30%. Les statistiques ont cependant de la peine à saisir les nouvelles formes de vie commune qui vont des \"communautés\" aux couples plus ou moins « stables » qui ne vont souvent pas jusqu'à la constitution d'un ménage formel."
             }
           ]
         },
