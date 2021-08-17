@@ -104,7 +104,7 @@
               "focusKeys": ["v1"],
               "from": 1840,
               "to": 1875,
-              "text": "Le nombre de mariages rapporté à la population – te taux de nuptialité - est élevé au milieu du 19ème siècle (autour de 7 -8 par 1 000 habitants en moyenne par année). Aujourd’hui ce taux est descendu à quelque 3 pour mille. Le taux de nuptialité n'est pas seulement dépendant de la propension intrinsèque de se marier, mais également des conditions de vie. Sans perspectives \"positives\", les mariages tendent à se tasser. Les variations du taux dans les années 1840 et 1850 sont liées aux conditions de vie difficiles et changeantes (selon les récoltes et la situation sanitaire, pèar exemple). Après les moments de crise, la nuptialité rebondit généralement.",
+              "text": "Le nombre de mariages rapporté à la population – te taux de nuptialité - est élevé au milieu du 19ème siècle (autour de 7-8 par 1000 habitants en moyenne par année). Aujourd’hui ce taux est descendu à quelque 3 pour mille. Le taux de nuptialité n'est pas seulement dépendant de la propension intrinsèque de se marier, mais également des conditions de vie. Sans perspectives \"positives\", les mariages tendent à se tasser. Les variations du taux dans les années 1840 et 1850 sont liées aux conditions de vie difficiles et changeantes (selon les récoltes et la situation sanitaire, par exemple). Après les moments de crise, la nuptialité rebondit généralement.",
               "figures": [{"id": "HISAAJ000008N01.jpg"}, {"id": "HISAAJ000588N01.jpg"}]
             },
             {
@@ -113,7 +113,8 @@
               "focusKeys": ["v"],
               "from": 1875,
               "to": 1910,
-              "text": "Le <b class='bold'>taux de nuptialité</b> est également lié à la structure de la population. Plus la population est jeune, plus le taux de nuptialité est élevé. Le tassement du taux de nuptialité dans les années 1870-1880 est probablement lié au départ de nombreux jeunes à l'étranger (émigration). A partir du milieu des années 1880 les mariages redeviennent plus nombreux dans un contexte d’immigration et d’amélioration des conditions économiques."
+              "text": "Le <b class='bold'>taux de nuptialité</b> est également lié à la structure de la population. Plus la population est jeune, plus le taux de nuptialité est élevé. Le tassement du taux de nuptialité dans les années 1870-1880 est probablement lié au départ de nombreux jeunes à l'étranger (émigration). A partir du milieu des années 1880 les mariages redeviennent plus nombreux dans un contexte d’immigration et d’amélioration des conditions économiques.",
+              "figures": [{"id": "l’état_civil_de_la_Ville_de_Luxembourg.png"}]
             },
             {
               "availableKeys": ["v"],
@@ -129,8 +130,7 @@
               "focusKeys": ["v"],
               "from": 1950,
               "to": 2020,
-              "text": "Dans un premier temps, la baisse de la nuptialité à partir de 1946 constitue un retour à la normal après le « boom » passager des mariages que provoque la fin de la guerre. La tendance générale commençant à partir des années 1950 est cependant caractérisée par un recul pratiquement continu de la nuptialité. Le début des années 1990 – une remontée passagère - constitue une exception liée à une réforme de la fiscalité des ménages. La baisse du taux de nuptialité est d’abord imputable à une modification de la structure par âge d‘une population qui vieillit. La part des personnes de la classe d’âge où la probabilité de se marier est élevée se tasse mécaniquement. En fait, le nombre absolu de mariages ne diminue pas dans les mêmes proportions  que le taux de nuptialité : on compte 2236 mariages en 1960 et 2 084 en 2019.",
-              "figures": [{ "id": "Luxembourg_Pride.jpg"}]
+              "text": "Dans un premier temps, la baisse de la nuptialité à partir de 1946 constitue un retour à la normal après le « boom » passager des mariages que provoque la fin de la guerre. La tendance générale commençant à partir des années 1950 est cependant caractérisée par un recul pratiquement continu de la nuptialité. Le début des années 1990 – une remontée passagère - constitue une exception liée à une réforme de la fiscalité des ménages. La baisse du taux de nuptialité est d’abord imputable à une modification de la structure par âge d‘une population qui vieillit. La part des personnes de la classe d’âge où la probabilité de se marier est élevée se tasse mécaniquement. En fait, le nombre absolu de mariages ne diminue pas dans les mêmes proportions  que le taux de nuptialité : on compte 2236 mariages en 1960 et 2 084 en 2019."
             },
             {
               "availableKeys": ["v"],
@@ -138,7 +138,8 @@
               "focusKeys": ["v"],
               "from": 1950,
               "to": 2020,
-              "text": "Avec les années 1960, vient une époque où l'âge au premier mariage recule et où les modes de cohabitation se diversifient avec des formes peu codifiées (\"unions libres\") et plus récemment, en 2004 (loi du 9 juillet), l'union civile (PACS, pacte civil de solidarité). En juin 2014, le mariage pour couples du même sexe est légalement institué. De 2015 à 2019 on compte 353 mariages de couples du même sexe."
+              "text": "Avec les années 1960, vient une époque où l'âge au premier mariage recule et où les modes de cohabitation se diversifient avec des formes peu codifiées (\"unions libres\") et plus récemment, en 2004 (loi du 9 juillet), l'union civile (PACS, pacte civil de solidarité). En juin 2014, le mariage pour couples du même sexe est légalement institué. De 2015 à 2019 on compte 353 mariages de couples du même sexe.",
+              "figures": [{ "id": "Luxembourg_Pride.jpg"}]
             },
             {
               "availableKeys": ["v"],
@@ -160,7 +161,8 @@
               "colorKeys": {"v3": "var(--accent)"},
               "from": 1792,
               "to": 1804,
-              "text": "La possibilité du divorce fut introduite par la loi du 20 septembre 1792 en même temps que l'état civil laïc qui voit dans le mariage un contrat civil comme d'autres. Comme l'actuel Luxembourg faisait partie du département des Forêts, c'est cette législation qui fut applicable dans nos contrées. Jusque-là c'est le mariage religieux – indissoluble par principe – qui fut la norme. La loi de 1792 fut très libérale dans la mesure où un divorce par consentement mutuel y est prévu."
+              "text": "La possibilité du divorce fut introduite par la loi du 20 septembre 1792 en même temps que l'état civil laïc qui voit dans le mariage un contrat civil comme d'autres. Comme l'actuel Luxembourg faisait partie du département des Forêts, c'est cette législation qui fut applicable dans nos contrées. Jusque-là c'est le mariage religieux – indissoluble par principe – qui fut la norme. La loi de 1792 fut très libérale dans la mesure où un divorce par consentement mutuel y est prévu.",
+              "figures": [{ "id": "divorce_law.jpg"}]
             },
             {
               "availableKeys": ["v3"],
@@ -179,7 +181,8 @@
               "colorKeys": {"v3": "var(--accent)"},
               "from": 1804,
               "to": 1974,
-              "text": "Les dispositions concernant le divorce contenues dans le code civil de 1804 illustrent également l'ancrage socio-culturel des inégalités entre hommes et femmes. A titre d'exemple, l'adultère est considéré comme un des critères justifiant le divorce (pour faute). Mais le Code civil – promulgué par Napoléon - introduit une différenciation selon le sexe. La femme s'en rend coupable du moment qu'elle a une relation extraconjugale. Par contre, le mari n'est coupable d'adultère que s'il entretient sa maîtresse au domicile familial."
+              "text": "Les dispositions concernant le divorce contenues dans le code civil de 1804 illustrent également l'ancrage socio-culturel des inégalités entre hommes et femmes. A titre d'exemple, l'adultère est considéré comme un des critères justifiant le divorce (pour faute). Mais le Code civil – promulgué par Napoléon - introduit une différenciation selon le sexe. La femme s'en rend coupable du moment qu'elle a une relation extraconjugale. Par contre, le mari n'est coupable d'adultère que s'il entretient sa maîtresse au domicile familial.",
+              "figures": [{"id": "Image_Napoleon.jpg"}]
             },
             {
               "availableKeys": ["v3"],
@@ -188,7 +191,8 @@
               "colorKeys": {"v3": "var(--accent)"},
               "from": 1804,
               "to": 1974,
-              "text": "Si le nombre de divorces par an se compte sur les doigts d'une main au cours du 19ème siècle, la catégorie statistique reste une constante et n'est jamais mise en cause et cela jusqu'à aujourd'hui.  C'est le reflet de l'importance intrinsèque qu’a (et que gardera) le mariage et l'institution familiale considérée comme cellule de base de la vie en société. Jusqu' à la fin des années 1830, les relevés statistiques de l'état civil contiennent ponctuellement des indications sur le nombre de divorces, mais c'est à partir de la création de l'actuel Grand-Duché en 1839 que les statistiques deviennent un peu plus consistantes et, surtout, que des séries statistiques chronologiques plus cohérentes sont construites, même si pour les divorces les relevés annuels semblent lacunaires. L’intérêt que portent les pouvoirs publics aux statistiques est néanmoins le reflet de l'Etat-nation qui commence à se penser désormais dans la continuité. Les statistiques sur le divorce restent néanmoins assez rudimentaires (on n’a en fait que les nombres bruts) jusqu’après la deuxième guerre mondiale, même si on doit noter une initiative - n’ayant pas abouti -  de 1904-1905 émanant de la Commission permanente de statistique (créée en 1900) demandant des détails plus fins."
+              "text": "Si le nombre de divorces par an se compte sur les doigts d'une main au cours du 19ème siècle, la catégorie statistique reste une constante et n'est jamais mise en cause et cela jusqu'à aujourd'hui.  C'est le reflet de l'importance intrinsèque qu’a (et que gardera) le mariage et l'institution familiale considérée comme cellule de base de la vie en société. Jusqu' à la fin des années 1830, les relevés statistiques de l'état civil contiennent ponctuellement des indications sur le nombre de divorces, mais c'est à partir de la création de l'actuel Grand-Duché en 1839 que les statistiques deviennent un peu plus consistantes et, surtout, que des séries statistiques chronologiques plus cohérentes sont construites, même si pour les divorces les relevés annuels semblent lacunaires. L’intérêt que portent les pouvoirs publics aux statistiques est néanmoins le reflet de l'Etat-nation qui commence à se penser désormais dans la continuité. Les statistiques sur le divorce restent néanmoins assez rudimentaires (on n’a en fait que les nombres bruts) jusqu’après la deuxième guerre mondiale, même si on doit noter une initiative - n’ayant pas abouti -  de 1904-1905 émanant de la Commission permanente de statistique (créée en 1900) demandant des détails plus fins.",
+              "figures": [{"id": "statistique_le_divorce.jpg"}]
             },
             {
               "availableKeys": ["v3"],
@@ -197,7 +201,8 @@
               "colorKeys": {"v3": "var(--accent)"},
               "from": 1974,
               "to": 1978,
-              "text": "Les années 1970 sont marquées par une mise en question des institutions sociétales - dont la famille traditionnelle - marquées notamment par les inégalités entre hommes et femmes (puissance paternelle, autorité maritale) et par des principes moraux dont les origines remontent au 19ème siècle et même plus loin. Les réformes de base de la législation concernant la famille – et notamment le divorce - se concentrent sur les années 1970. Les modifications légales du divorce s’inscrivent dans un ensemble de changements intervenant en matière d’égalité des hommes et des femmes. La période 1974-1979 est également marquée par un gouvernement socialiste-libéral. Le parti de la  droite (parti chrétien social) ne participe pas, pour la première fois depuis la première guerre mondiale, au pouvoir. Mais les changements légaux et sociétaux ont commencé bien avant. Ainsi, la loi du 12 décembre 1972 modifie profondément – dans un sens plus égalitaire - le chapitre VI du code civil concernant les droits et des devoirs respectifs des conjoints, en abolissant, par exemple, le passage du code civil de 1804 (art. 213) selon lequel la femme doit « obéissance » à son mari."
+              "text": "Les années 1970 sont marquées par une mise en question des institutions sociétales - dont la famille traditionnelle - marquées notamment par les inégalités entre hommes et femmes (puissance paternelle, autorité maritale) et par des principes moraux dont les origines remontent au 19ème siècle et même plus loin. Les réformes de base de la législation concernant la famille – et notamment le divorce - se concentrent sur les années 1970. Les modifications légales du divorce s’inscrivent dans un ensemble de changements intervenant en matière d’égalité des hommes et des femmes. La période 1974-1979 est également marquée par un gouvernement socialiste-libéral. Le parti de la  droite (parti chrétien social) ne participe pas, pour la première fois depuis la première guerre mondiale, au pouvoir. Mais les changements légaux et sociétaux ont commencé bien avant. Ainsi, la loi du 12 décembre 1972 modifie profondément – dans un sens plus égalitaire - le chapitre VI du code civil concernant les droits et des devoirs respectifs des conjoints, en abolissant, par exemple, le passage du code civil de 1804 (art. 213) selon lequel la femme doit « obéissance » à son mari.",
+              "figures": [{"id": "manifestation_étudiants.jpg"}]
             },
             {
               "availableKeys": ["v3"],
@@ -206,7 +211,8 @@
               "colorKeys": {"v3": "var(--accent)"},
               "from": 1974,
               "to": 1980,
-              "text": "L’article 298 du Code civil de 1804 interdisait à l’époux coupable d’adultère (une des causes de divorce) de se marier avec son « complice » aussi longtemps que le conjoint « offensé » est en vie. Une loi du 11 novembre 1974 abolit cette disposition. Ensuite, la loi du 6 février 1975 desserre l'étau concernant les conditions du divorce par consentement mutuel. Les conditions d'âge et de durée de mariage, notamment, sont largement éliminées. La loi du 5 décembre 1978 fait que l'adultère n'est plus considérée comme cause péremptoire du divorce et elle donne à chacun des époux la possibilité de demander le divorce en cas de séparation de fait continue et effective depuis au moins trois ans."
+              "text": "L’article 298 du Code civil de 1804 interdisait à l’époux coupable d’adultère (une des causes de divorce) de se marier avec son « complice » aussi longtemps que le conjoint « offensé » est en vie. Une loi du 11 novembre 1974 abolit cette disposition. Ensuite, la loi du 6 février 1975 desserre l'étau concernant les conditions du divorce par consentement mutuel. Les conditions d'âge et de durée de mariage, notamment, sont largement éliminées. La loi du 5 décembre 1978 fait que l'adultère n'est plus considérée comme cause péremptoire du divorce et elle donne à chacun des époux la possibilité de demander le divorce en cas de séparation de fait continue et effective depuis au moins trois ans.",
+              "figures": [{"id": "Reform_Scheidungsrechts.png"}]
             },
             {
               "availableKeys": ["v3", "v1"],

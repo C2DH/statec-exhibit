@@ -2207,6 +2207,252 @@
       "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAUCAIAAAALACogAAAACXBIWXMAAA7DAAAOwwHHb6hkAAACU0lEQVQoz0WTx67iUBBE/a/DAgmEYAULFoBIEgLEI+ecHznnPOQoPmgONtL0wrJv36qurm4L1+t1tVr9FWO/3/McjUa/v7+DweDxeFwul3q9XqvVGo3GYrF4v98CRwCkq4fDQbpdLpcrlcp8Pue82+1Wq9VcLkfqAzifz8vlci9Gv9+HLJVKORwOm81msVg8Hg8AipRKJbKv10uQJME9HA4zmUwoFNJqtZFIhHSv1wuHw8AKhQL0XwCSqLDb7eCmrlqtTiaTzWbT5/MFg8HtdhuPx91uNy9Q05VwOp0AIBca+GQy2XQ6TafTKpXKYDBQljrIowIqvgDaJUEFiOVyeSKRGI/HNF0sFieTST6ft1qt9M2djyQagIMExtGuQqFQKpWcgOGw0+n4/X4wWPd1CfWQkVuv12DMZvMfMUwmk9Fo1Ov1sECP0d85AMAy1DMpAF6vF0+5rdFo8IfWo9FoTQyavt1uwmw2A8qpy+WSpkPH+MMEAoFALBZriIFLNzEE3OUbAuxD6E4MWH5+fhAjrQw2Ho9HRoxDAlAkYSv9oWqz2WArSqhATTDP5xMD7HY7LeGbAAEVYB2JAYDucYkK6MEMvOdcp9NhANQfQKvVog7EyCPHC5+QAUMJvXLP6XSyOPT2cYl58UQVL4BRjA188kIzpJBANYxBocCSttttKMkBoAiS+JQA0iIzB7i5zVL9B6AEAPPniQE9MaSBAmAmrDCNff4HWOmVHDd4QQN7dhKDLE3DyL6wZtlsVsA1xNA6T+wjfb/feXL+EIN1IMVM2Q6a+Qec9pXbAITjlgAAAABJRU5ErkJggg==",
       "aspectRatio": 0.81875,
       "isPortrait": true
+    },
+    "l’état_civil_de_la_Ville_de_Luxembourg.png": {
+      "caption": "Placeholder Caption",
+      "provenance": "L'indépendance luxembourgeoise du 12. septembre 1891, no. 255 & 256",
+      "resolutions": {
+        "medium-w": {
+          "url": "/media/images/l’état_civil_de_la_Ville_de_Luxembourg.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/l’état_civil_de_la_Ville_de_Luxembourg.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/l’état_civil_de_la_Ville_de_Luxembourg.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 1080,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/l’état_civil_de_la_Ville_de_Luxembourg.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 960
+          }
+        }
+      },
+      "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAUCAIAAADdpfBFAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAB8UlEQVQozzXS6W7iQBAEYD/8SggEEhHaEGFzQyDhjrmvBBDvtZ892f5hZrqrq6t6iC6Xy/F4/P7+DoftdrtYLMbj8Xw+//r62u12h8NBXvV8Pke32+39/f3j40N5Mpl85uE6HA5BV6vVdDqVP+cR3e/3ZrNZLpfr9XqpVCoUCrVarVqtFotFc9rt9svLS6VSMfB6vUY0nE4nNEHGZrMx2kFmv9/jc/CFybihIYyjJE1To8d5IJMJklRx/erW4PLz8xM6QTkZjUah9Hw+aTAwQzM7GAwQdLvd19fXVqvlitLVV1un0+ESBWGR0couykYPhoO4ETeTZqfd7ff7JtiBHotCHxnd6/V0K9D3OfmsJ3/j7tsinV/zCAp9qYj8aGJcW5quV+myPq5Wen9ak7fT8WQ54WmEtUTUYKXELKKTOFkulhKNRoNiY62cEqp+dQOFAiWcKUD4shGeliVryNB2zCUr0LJxHIM6J0lipuawUMYyJRR7iG0e/kbr9VoBVPKWxz2Px+ORobnkg0WDlnnMZrPAR6RmFJKaMyUuBBCHkgEynNmgjdbgR/5Xd3hqnrTBISYJ1E74CRTOPGSvwyWV3MCFtUA4uIb/E3oDdXKYuZSlUpsCiUapeUVDPIqDr3PGzQduuCA6rI8S2ggb/Q+joP8BbOlfBchoV+gAAAAASUVORK5CYII=",
+      "aspectRatio": 0.7552083333333334,
+      "isPortrait": true
+    },
+    "divorce_law.jpg": {
+      "caption": "Divorce Law of September 20, 1792",
+      "provenance": "Avocats BoucherStuckleTournier",
+      "resolutions": {
+        "medium-w": {
+          "url": "/media/images/divorce_law.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/divorce_law.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/divorce_law.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 1080,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/divorce_law.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 960
+          }
+        }
+      },
+      "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAUCAIAAADdpfBFAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC2UlEQVQozxWSWW/iSBSF/f8fRprRKD0JTRNC2DHB+1Zeai+vYIw3CP1bplq6uqqHT6eOzrlK2+Dmggxzr5mq5RuWp3nA0qyj7Z4086Dqu6O23alLKpLmdla+79frJf/n9d//ZpPX2eRl8nI0Tz9mb4vdarqcv86n08/3v1/+8mOv7Tvl+Whvt+uP6eTtffpr8bFRd9Pl52y9mizms9XnbLX8+fFr8v4WxKDtB+V577vuNl8vZ4v50TC+TP1jvfzYrD9328V2vfs6Lff7n/N3RGnX98o4NGPflOesvnWIi7Ju0rIACJG88CGm+ZmVtSiqph/btlXG8fZ4DMP4+H7+Loq8G8Z2GAkj17YnnF9uXd3eq2vbdG3Xt8rzu7/fB56XWXWp6uZc36jIwiSBhBAhsEgRy/wozqvzMPTK93B73qX07/7+lGbKy1XkJeYpTQteXOQu6k7aa7qx76R233TNOcE4KyvGucgqSWDKaJr7YQJiHMMkQliqDDLBR3e+VsywddM2fQBsx/aCQLcsy7E17aQbmqppO3XLUtFLemyyOke2cXBt3bVN/WtrGappno7qVj2sD+pmvdusdhuIiaxFqdMwJ/5R3Rinra4dv74Op+Ofh2Xo+8NeNzXH9RzP45w311q5pDCnoS2FHR2EkesFIHAt13H8wLQ903FdkBiOK9K0vpyVkgUZDQFwA9/mjBEMKaWyFogZwjyGNEyIC0JJV2WuZBRkLIYYQgQTTGOEwgQ6IIoQjRALYhJA5seQ/6EL5ZziS86LosyyHBMWQQxiCKJExidHCiOaYZZiSoWgSkZAKXCaZqmkqfDDWHqS2/aAzDJMMCQ8lq5kAwQrKfIzHIahbziOByIPhI7vO0Fk+WEQJyEiABJflkdTSonCEj8jSc5xIa3Ikb9wxhllTFAuEJFdRlEijzLGBCoIaAJ6paBVllYpzznJOBE04RRymlAcIhiixIeRDWH0PxR2o0i9NEcqAAAAAElFTkSuQmCC",
+      "aspectRatio": 0.75,
+      "isPortrait": true
+    },
+    "Image_Napoleon.jpg": {
+      "caption": "Image de Napoléon",
+      "provenance": "\"Napoleon I., gekrönt von der Allegorie der Zeit, schreibt den Code Civil (1833)\", Jean Baptiste Mauzaisse",
+      "resolutions": {
+        "medium-w": {
+          "url": "/media/images/Image_Napoleon.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/Image_Napoleon.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/Image_Napoleon.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 1080,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/Image_Napoleon.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 960
+          }
+        }
+      },
+      "base64": "data:image/png;base64,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",
+      "aspectRatio": 1.221875,
+      "isPortrait": false
+    },
+    "statistique_le_divorce.jpg": {
+      "caption": "Statistiques concernant le divorce. Demande du Ministre d’Etat aux officiers de l’état civil, 1904",
+      "provenance": "Archives nationales, Dossier J-057",
+      "resolutions": {
+        "medium-w": {
+          "url": "/media/images/statistique_le_divorce.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/statistique_le_divorce.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/statistique_le_divorce.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 1080,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/statistique_le_divorce.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 960
+          }
+        }
+      },
+      "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAUCAIAAADZUCB4AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACa0lEQVQozyWSyW8TMRSH/U9z58CliAuLhFgOSN1StYWutCURUCSWQ9M022z2jHeP7dnSJhAoleClld7Nn37Le0ZR95sIztm4K5MLmQwUGap0pHBfRH2NByruGdz//H4LXerkplFTS2eeTb24npibK/N3on9X4k8l5p5el2zw9QTZLJh5kYvMLIZNnJpVelbqKy8vLZuYdObo2ekRktFFJbBjcWNorWmpskuvC5kqPHY0LFhY8eB7ewfxsFdJbGlcSALPwFWGWRZrEthbrpbR6eEmYmGvFInJIi+IEwu0zrnjuFBZqdJaYs+Czl4LZeNuIRKJg1s0hWfHiUrDnMYQxpBRTgad3RaiQQ8cdRYbGltOrCB3vpZjhUciArfw4/4GSsfnoK+zyEniZQoDkiYLQR4kRNgzce/DuzXgup4n4FIqWhpWw1ie02iBpkGejizpt3dWUTpacCqFfGCdOIEr6AGb4tgLnGfjWoadvTVEhmeQhidDSQKI73jiNQUxEQ9ZeEGDLnBHm28QjfslJxyPNY0rK8EauJwlLB7qNCxEPHVpe3cVaR41hkOPQrPCiMrwpjBQ+a6T4/GVJR3gRDJqDANTw7Bhi6U03pSGQlaorPFw5kjnYBV8RyDjZOYkLXJV5qJ2CqrUVjRWVJr8zMmnH9toNBxQxuASwFVOV5YD1zgJ16tzVgJn0057HUHTxgkHnGLeCHDUFEPxxX01tSycWnIMfeHM81pPLL/0alqaaang5009+1Xrea3mFf83M18O19Hx25XO/sbh1srJbutkp3Wwtby5/HLl1ZMXjx8+e/Tg9dOl7eXnS/fv/QftjJ1WhU/0ZgAAAABJRU5ErkJggg==",
+      "aspectRatio": 0.64375,
+      "isPortrait": true
+    },
+    "manifestation_étudiants.jpg": {
+      "caption": "Photo manifestation étudiants finn ders années 1960 début des années 1970",
+      "provenance": "Tageblatt Lëtzebuerg, Claude Wolf, 26 . Septembre 2017",
+      "resolutions": {
+        "medium-w": {
+          "url": "/media/images/manifestation_étudiants.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/manifestation_étudiants.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/manifestation_étudiants.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 1080,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/manifestation_étudiants.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 960
+          }
+        }
+      },
+      "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAUCAIAAAAVyRqTAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAGv0lEQVQ4yyVVCVNTWRZ+ZfWMSIhZIQvZiEKzKYStCDSI0WZHILJ3Y9OgskVITCJhjSJgEhI6LLKGIIEAYQhJEGi2CEinFYFBaNoBeqptu6rdpmbmL8xx+tatV+fdevec7/vOd+9DEhMTm5tbrFbryop9f/+ng4NXR0dHBwcHHz9+gPHHH2/fvPl968XO7u7ey5f7y8tPtrf//uf6xMSkVttZV9dQXFxSXi5QqzVTU1NVVbKKisqCgm8LCgqQtLT0rKzsrs6HK8tPnj9/4XA8e/7shdX6+Pj4lw8f/mWetjkcm2bzzPCwcXDQoFZrrdbZnZ29re1doUhyWySVSmSlJQKZrKa5WaHT6SEoLS3Pzs6GJ8LjXfbz8wsLC5uetmxsONbWnq6tbmw+3zk8/OX9+497ewfbO3sGw7isuqG8rFJQXjkwMLS5uT0+PiUWy8pKK6qr64WVEpFQolJpurq6KytvA+Tc3FyR6DbC52fw+VcFglsm098WFpZstpmJ8clnP279/PPh69dvjo/+uffyYGlx9c8UtwSiSdM01DMaTSLhHXgtLRWIb1e1adrHxkwDA3qN+jsQ6tGQ4RPqmzeLU1PT6usbZmZmx8YmlpZWLJaZudmF/f2DX399DdgtlscajXbaPJP/dcH168V6veGHjR8nTWahUAI8VErN+Njk+voPOzu7e3s/QdV//+e/Ntts1Z0apKxM8M03BTk5OXb76uDg0Pr6xuaLrZGRscPD499++x2AP348W1cn397e7ersEVaKHw2NPH3qWF6ya9TtkHppcQU6bzZboE8AC+S2Wmd0usHa2npEIrkjFovVarVeP6RQKOfm5l+9+scT+9rR0fHbt+9g2+joeNP9lpYWBQgFlmhrawf6U1OWvl6dRCxbWbb39+uCgoKuXr3K56fTaO4wIX7wQIFUy2pqqmtGR43XrxeNjo6BBfX6R8Bua2vbarOZzVbQbsRgNE9Z1Oo2gaCitVVjMBi12g65/J78bqNcfrfw26IvPo1Imaw6NS2NyWLk5+dLpVIkNzcvLi4+NTU1KyvLbrc/7O4uLCyCDQqF4v79JqFQJBZLqqqqq2TVd+/e6+8f0GrbFUqlVHoHLKtQqABdb28ffLa4uPipTGHhxYsXMjMzwX9IBJcLFePjE+rq6oFTUBCnqKgoNfXKjRs31tbWs7Nz0vn8kpKShIQEo3HcYrFBqwcHB6emzEACqjY1Nc/Pfz8xYXr37v3w8LCHBzMkNMTHxzs6Ohohk0gxMTEQXUm5AjX8/f3hfHK5XDAmtDQzM6OiogLcCRw7Ox8OD490d/e2t3csLS7DCbh27Vp+/jWDYRT0BMjx8XGuJCKVTj13zv9eYyOCcjrFZrN5PF5oaGhYWCiFSomKioqNjdVqtS0tDyApMIUDBaghdU9Pf3l5eVNTE3TFaJyoqam9yONlZmT29PTFxcVh8RiKO5XOZDA9WInJSQjaGeXi4uLr65uelg556Qz6mTNngoODjUajUtkK8A2GkYiIiJCQkLY2LfQwPj6+sfG+blD/QKGCy4fP54eHhwuFwgBOAJaAdaOQWWwWlUZFYdCI80knPB6Pw+EAeEJiIo3uzmKxIO7r68/L+8rLywsaGxsX6+npCRgbGuTJyclR0dGCW7d6enp7e/vBuNEXouDVnU7F4LFEsis4hOBGRGHRCPoTaBSBQCCRSIGBgSwPFp3B4HACg4M5SpXy0iUeLAIJT8+zKSkpSclJLA8G0ArnhiclJXV0dARyAnx8fSK/iKBQyWR3MpVGweAxUReifM75IEQ8gehKBNyk/w+ImUxGeHjY9/Pz0PGMzAzA6+XlCZ6JjIzAYNAUCsnPz7dMUH6zuFgilRYWFkBSX19v9hkWxZ2MJeJQGBQ3kstiM5ETJ06g0WgSmQTAobNBwRwCEZ+eniaXy/PyclUqFazQ6e5g8+TkpNOnUeAtr8894USAPmBQ3qWLJ53/ClTwrrjTBAwK64J1xYFPfPx9wCFOf/nss1NOJ52dT2k0msbGRkDX3NxksVjm5uY6uzrDwkJAHzBfTk62mxvh7Fk2lUpOSUmGm/PLLy+dxrgwWHQodgrlBG2EiSNgiW4EDicAYdJoeCwW9AYL1tTWtHd09MOloNOZTCabzaZUKmNiLtTX13l7fw6xTCa7fPmyt7cXg0EDceCJJ+AiIrgBAedQaGc8EQfT1Y3IZNHZbBbCZjFJAIZAOH/+fGtrK/yE4Ge2sLDgcDhWV1chaVraldra2uLim7A+MDAABUQiETBzgxRMOsuD6el1FhSg0akUKgmsDZ3kBAWChv8Daiz4wicroUIAAAAASUVORK5CYII=",
+      "aspectRatio": 1.5135416666666666,
+      "isPortrait": false
+    },
+    "Reform_Scheidungsrechts.png": {
+      "caption": "Die Reform des Scheidungsrechts",
+      "provenance": "Lëtzebuerger Land du 7 février 1975, p.5",
+      "resolutions": {
+        "medium-w": {
+          "url": "/media/images/Reform_Scheidungsrechts.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/Reform_Scheidungsrechts.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/Reform_Scheidungsrechts.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 1080,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/Reform_Scheidungsrechts.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 960
+          }
+        }
+      },
+      "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAUCAIAAAAP9fodAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABtklEQVQ4yz2Uba6CQAxFZ/9rUgTkQ0BU9KkxmuhS3qGH0B9NO7237bQD6Xa73e/3z+dzOp2u1+s0TbjjOF4uF9y+74dhAIN+PB6/3+8bkkADfb1egP5Cns+nuTBMxCEG7vv9BolORVHked62LYnRh8Oh6zpscGSkCJWPx2MfQggA52m/34tGl2WJwQm5QHNS13VVVZxUIXUI5LTdbvHJCqFpGmlZllFBuwkho7atJXwD4DRoBgSJMMhNZVJjQKAA+KUaIBITsGAbcj6foZnIJk0BjQJpt9txJMFLU4cAA8SAL1MaMGjAZhq+HXI6hAByJA7MwaxCKNkxMfNBpiAuU8bw5g7QqSBLNWPObU0BDU2UvGUIFwPAyTxJHIuYVRoxt48BwK1yEfeEnidJwKu7SrfPm8S2F/NacFk3DhXIBNq3I9OR2KRXykNgzjQ47roLgea6oNEMSYFSwalaeZ6kfa8cW3eSNrYOcC07380lovHVPmVpRQhMR4C45+T0YNLnGAIBzSfHOW96s9kAxcCloEayDd+h2/NZ8iYJw8lCMLzYMkmLTCFAKcXo/UH4ma4PFe23z4f/D9VPSj62qA/0AAAAAElFTkSuQmCC",
+      "aspectRatio": 0.9052083333333333,
+      "isPortrait": true
     }
   }
 }
