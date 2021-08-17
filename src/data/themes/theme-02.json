@@ -56,7 +56,8 @@
               "availableKeys": ["v1", "v"],
               "visibleKeys": ["v1"],
               "focusKeys": ["v1"],
-              "text":"Les années 1950 amènent une hausse de la natalité (souvent qualifiée de « baby-boom ») qui accompagne l’amélioration des conditions de vie. Cependant dès le milieu des années 1960, les naissances entament de nouveau une baisse sensible. Des phénomènes de société – comme  la démocratisation des moyens de contraception et la diffusion du modèle familial avec moins de 3 enfants - contribuent à expliquer ce phénomène."
+              "text":"Les années 1950 amènent une hausse de la natalité (souvent qualifiée de « baby-boom ») qui accompagne l’amélioration des conditions de vie. Cependant dès le milieu des années 1960, les naissances entament de nouveau une baisse sensible. Des phénomènes de société – comme  la démocratisation des moyens de contraception et la diffusion du modèle familial avec moins de 3 enfants - contribuent à expliquer ce phénomène.",
+              "figures": [{ "id": "Planning_familial.png" }]
             },
             {
               "from": 1950,
@@ -65,7 +66,7 @@
               "visibleKeys": ["v1", "v"],
               "focusKeys": ["v1","v"],
               "colorKeys": { "v1": "var(--secondary)", "v": "green" },
-              "text": "Au cours des années 1972-1978, le solde naturel (différence entre naissances et décès) devient négatif, même si ce n’est que légèrement. Si les 3 autres épisodes historiques où le solde naturel tombe en-dessous de zéro sont liés à une hausse de la mortalité (choléra en 1866 et les deux guerres mondiales), dans les années 1970, c’est une baisse de natalité qui en est le facteur explicatif le plus important. Le nombre de naissances passe de 5297 en 1965 à seulement 3800 en 1973. <br/> <br/> Dans ce contexte, un rapport sur la démographie luxembourgeoise est demandé par le gouvernement au démographe français réputé Gérard Calot, qui projette une baisse de la population du Luxembourg et surtout la diminution de la population de nationalité luxembourgeoise (Gérard Calot, <a href='https://catalogue.bnf.fr/ark:/12148/cb353304698' target='_blank'>La démographie du Luxembourg, passé, présent et avenir : rapport au président du gouvernement, 1978</a>).",
+              "text": "Au cours des années 1972-1978, le solde naturel (différence entre naissances et décès) devient négatif, même si ce n’est que légèrement. Si les 3 autres épisodes historiques où le solde naturel tombe en-dessous de zéro sont liés à une hausse de la mortalité (choléra en 1866 et les deux guerres mondiales), dans les années 1970, c’est une baisse de natalité qui en est le facteur explicatif le plus important. Le nombre de naissances passe de 5297 en 1965 à seulement 3800 en 1973. <br/> <br/> Dans ce contexte, un rapport sur la démographie luxembourgeoise est demandé par le gouvernement au démographe français réputé Gérard Calot, qui projette une baisse de la population du Luxembourg et surtout la diminution de la population de nationalité luxembourgeoise (Gérard Calot, <a href='https://a-z.lu/primo-explore/fulldisplay?docid=ALEPH_LUX01000096129&context=L&vid=BIBNET&lang=fr_FR&search_scope=All_content&adaptor=Local%20Search%20Engine&tab=all_content&query=any,contains,Calot%201978&mode=Basic' target='_blank'>La démographie du Luxembourg, passé, présent et avenir : rapport au président du gouvernement, 1978</a>).",
               "figures": [{ "id": "ark_70795_gq9f7z_pages_11.jpg" }]
             },
             {
@@ -159,7 +160,17 @@
               "colorKeys": {"v3": "var(--accent)"},
               "from": 1792,
               "to": 1804,
-              "text": "La possibilité du divorce fut introduite par la loi du 20 septembre 1792 en même temps que l'état civil laïc qui voit dans le mariage un contrat civil comme d'autres. Comme l'actuel Luxembourg faisait partie du département des Forêts, c'est cette législation qui fut applicable dans nos contrées. Jusque-là c'est le mariage religieux – indissoluble par principe – qui fut la norme. La loi de 1792 fut très <i> libérale </i> dans la mesure où un divorce par consentement mutuel. <br/><br/> Avec le code civil de 1804 – et sous l'influence des milieux catholiques et conservateurs et de Bonaparte lui-même - on fait un pas en arrière en réduisant très fortement la possibilité du consentement mutuel en vue d'un éventuel divorce. Les conditions sont restrictives au point qu'il tombe pratiquement en désuétude."
+              "text": "La possibilité du divorce fut introduite par la loi du 20 septembre 1792 en même temps que l'état civil laïc qui voit dans le mariage un contrat civil comme d'autres. Comme l'actuel Luxembourg faisait partie du département des Forêts, c'est cette législation qui fut applicable dans nos contrées. Jusque-là c'est le mariage religieux – indissoluble par principe – qui fut la norme. La loi de 1792 fut très libérale dans la mesure où un divorce par consentement mutuel y est prévu."
+            },
+            {
+              "availableKeys": ["v3"],
+              "visibleKeys": ["v3"],
+              "focusKeys": ["v3"],
+              "colorKeys": {"v3": "var(--accent)"},
+              "from": 1792,
+              "to": 1804,
+              "text": "Avec le code civil de 1804 – et sous l'influence des milieux catholiques et conservateurs et de Bonaparte lui-même - ont fait un pas en arrière en réduisant très fortement la possibilité du consentement mutuel en vue d'un éventuel divorce. Les conditions sont restrictives au point qu'il tombe pratiquement en désuétude.",
+              "figures": [{"id": "code_civil_titreVI_chap1_paragraph229.png"}]
             },
             {
               "availableKeys": ["v3"],
@@ -167,8 +178,8 @@
               "focusKeys": ["v3"],
               "colorKeys": {"v3": "var(--accent)"},
               "from": 1804,
-              "to": 1978,
-              "text": "Si le nombre de divorces par an se compte sur les doigts d'une main au cours du 19ème siècle, la catégorie statistique reste une constante et n'est jamais mise en cause et cela jusqu'à aujourd'hui. <br/><br/> C'est le reflet de l'importance intrinsèque que garde le mariage et l'institution familiale considérée comme <i> cellule de base </i> de la vie en société. Les relevés statistiques de l'état civil contiennent ponctuellement des indications sur le nombre de divorces jusqu' à la fin des années 1830, mais c'est à partir de la création de l'actuel Grand-Duché en 1839 que les statistiques deviennent plus consistantes et, et surtout, que des séries statistiques chronologiques cohérentes sont construites. C'est le reflet de l'Etat-nation qui se pense désormais dans la continuité. <br/><br/> En même temps que les statistiques de l'état civil (mariages, divorces, naissances, décès), d'autres domaines de l'action publique, comme les finances publiques (impôts et contributions), l'enseignement primaire ou la santé publique (vaccinations contre la variole, p.ex.) font désormais l'objet d'une sollicitude statistique pérenne."
+              "to": 1974,
+              "text": "Les dispositions concernant le divorce contenues dans le code civil de 1804 illustrent également l'ancrage socio-culturel des inégalités entre hommes et femmes. A titre d'exemple, l'adultère est considéré comme un des critères justifiant le divorce (pour faute). Mais le Code civil – promulgué par Napoléon - introduit une différenciation selon le sexe. La femme s'en rend coupable du moment qu'elle a une relation extraconjugale. Par contre, le mari n'est coupable d'adultère que s'il entretient sa maîtresse au domicile familial."
             },
             {
               "availableKeys": ["v3"],
@@ -176,27 +187,44 @@
               "focusKeys": ["v3"],
               "colorKeys": {"v3": "var(--accent)"},
               "from": 1804,
-              "to": 1978,
-              "figures": [{"id": "code_civil_titreVI_chap1_paragraph229.png"}],
-              "text": "Les dispositions concernant le divorce contenues dans le code civil de 1804 illustrent également l'ancrage socio-culturel des inégalités entre hommes et femmes. A titre d'exemple, l'adultère est considéré comme un des critères justifiant le divorce (pour faute) Concernant l'adultère, le Code civil introduit une différenciation selon le sexe. La femme s'en rend coupable du moment qi' elle a une relation extraconjugale. Par contre, le mari n'est coupable d'adultère que s'il entretient sa maîtresse au domicile familial."
+              "to": 1974,
+              "text": "Si le nombre de divorces par an se compte sur les doigts d'une main au cours du 19ème siècle, la catégorie statistique reste une constante et n'est jamais mise en cause et cela jusqu'à aujourd'hui.  C'est le reflet de l'importance intrinsèque qu’a (et que gardera) le mariage et l'institution familiale considérée comme cellule de base de la vie en société. Jusqu' à la fin des années 1830, les relevés statistiques de l'état civil contiennent ponctuellement des indications sur le nombre de divorces, mais c'est à partir de la création de l'actuel Grand-Duché en 1839 que les statistiques deviennent un peu plus consistantes et, surtout, que des séries statistiques chronologiques plus cohérentes sont construites, même si pour les divorces les relevés annuels semblent lacunaires. L’intérêt que portent les pouvoirs publics aux statistiques est néanmoins le reflet de l'Etat-nation qui commence à se penser désormais dans la continuité. Les statistiques sur le divorce restent néanmoins assez rudimentaires (on n’a en fait que les nombres bruts) jusqu’après la deuxième guerre mondiale, même si on doit noter une initiative - n’ayant pas abouti -  de 1904-1905 émanant de la Commission permanente de statistique (créée en 1900) demandant des détails plus fins."
             },
             {
               "availableKeys": ["v3"],
               "visibleKeys": ["v3"],
               "focusKeys": ["v3"],
               "colorKeys": {"v3": "var(--accent)"},
-              "from": 1970,
+              "from": 1974,
               "to": 1978,
-              "text": "Les réformes de la législation concernant la famille se concentrent sur les années 1970. D'abord, la loi du 6 février 1975 desserre l'étau concernant les conditions du divorce par consentement mutuel. Les conditions d'âge et de durée de mariage, notamment, sont largement éliminées. </br> </br> La loi du 5 décembre 1978 fait que l'adultère n'est plus considérée comme cause péremptoire du divorce et elle donne à chacun des époux la possibilité de demander le divorce en cas de séparation de fait continue et effective depuis au moins trois ans. La position légale dominante du mari dans le couple avait déjà été réduite en partie par la loi du 12 décembre 1972 concernant les droits et devoirs des époux, en abolissant, par exemple, le passage du code civil de 1804 (art. 213) selon lequel la femme doit « obéissance » à son mari."
+              "text": "Les années 1970 sont marquées par une mise en question des institutions sociétales - dont la famille traditionnelle - marquées notamment par les inégalités entre hommes et femmes (puissance paternelle, autorité maritale) et par des principes moraux dont les origines remontent au 19ème siècle et même plus loin. Les réformes de base de la législation concernant la famille – et notamment le divorce - se concentrent sur les années 1970. Les modifications légales du divorce s’inscrivent dans un ensemble de changements intervenant en matière d’égalité des hommes et des femmes. La période 1974-1979 est également marquée par un gouvernement socialiste-libéral. Le parti de la  droite (parti chrétien social) ne participe pas, pour la première fois depuis la première guerre mondiale, au pouvoir. Mais les changements légaux et sociétaux ont commencé bien avant. Ainsi, la loi du 12 décembre 1972 modifie profondément – dans un sens plus égalitaire - le chapitre VI du code civil concernant les droits et des devoirs respectifs des conjoints, en abolissant, par exemple, le passage du code civil de 1804 (art. 213) selon lequel la femme doit « obéissance » à son mari."
             },
             {
               "availableKeys": ["v3"],
               "visibleKeys": ["v3"],
               "focusKeys": ["v3"],
               "colorKeys": {"v3": "var(--accent)"},
-              "from": 2010,
+              "from": 1974,
+              "to": 1980,
+              "text": "L’article 298 du Code civil de 1804 interdisait à l’époux coupable d’adultère (une des causes de divorce) de se marier avec son « complice » aussi longtemps que le conjoint « offensé » est en vie. Une loi du 11 novembre 1974 abolit cette disposition. Ensuite, la loi du 6 février 1975 desserre l'étau concernant les conditions du divorce par consentement mutuel. Les conditions d'âge et de durée de mariage, notamment, sont largement éliminées. La loi du 5 décembre 1978 fait que l'adultère n'est plus considérée comme cause péremptoire du divorce et elle donne à chacun des époux la possibilité de demander le divorce en cas de séparation de fait continue et effective depuis au moins trois ans."
+            },
+            {
+              "availableKeys": ["v3", "v1"],
+              "visibleKeys": ["v3", "v1"],
+              "focusKeys": ["v3", "v1"],
+              "colorKeys": {"v3": "var(--accent)"},
+              "from": 1975,
+              "to": 2018,
+              "text": "Même si le nombre de divorces avait tendance à augmenter tendanciellement depuis le début du 20ème siècle, les conditions très restrictives et les procédures lourdes des divorces pour faute expliquent que leur nombre reste faible. C’est la loi du 5 décembre 1975 qui établit les bases du divorce par consentement mutuel qui est à l’origine de l’augmentation très importante du nombre. De 229 divorces en 1975 on passe à 1453 en 2014."
+            },
+            {
+              "availableKeys": ["v3", "v1"],
+              "visibleKeys": ["v3", "v1"],
+              "focusKeys": ["v3", "v1"],
+              "colorKeys": {"v3": "var(--accent)"},
+              "from": 2018,
               "to": 2020,
-              "text": "La tendance à la hausse du nombre de divorces continue sa courbe ascendante à partir de 2010 (une augmentation de 50% entre 2010 et 2020). Mais désormais, c'est largement sur la base de la loi 27 juin 2018 (dont le projet remonte néanmoins à 2003) que les divorces sont prononcés. </br> </br> A partir de cette loi, le droit luxembourgeois ne connaît au fond plus que deux types de divorce: le divorce par consentement mutuel et le divorce pour rupture irrémédiable des relations conjugales, même si le divorce pour faute (plutôt le divorce « pour cause déterminée ») est prévu dans quelques cas de figure rares."
+              "text": "A partir de 2018, c’est essentiellement sur la base de la loi 27 juin 2018 (dont le projet remonte néanmoins à 2003) que les divorces sont prononcés. A partir de cette loi, le droit luxembourgeois ne connaît au fond plus que deux types de divorce: le divorce par consentement mutuel et le divorce pour rupture irrémédiable des relations conjugales, même si le divorce pour faute ( « pour cause déterminée ») est prévu dans quelques cas de figure rares."
             },
             {
               "availableKeys": ["v3", "v1"],
@@ -205,7 +233,7 @@
               "colorKeys": {"v3": "var(--accent)"},
               "from": 1950,
               "to": 2020,
-              "text": "En 2020, le nombre de divorces atteint 80% du nombre de mariages, alors que le pourcentage correspondant est de 6% en 1950. <br/> <br/> Par ailleurs, le divorce a tendance à intervenir plus tard après le mariage. En 1950, quelque 17% des divorces interviennent après 20 années de mariage ; en 2020, le pourcentage correspondant atteint 23%."
+              "text": "En 2020, le nombre de divorces atteint 80% du nombre de mariages, alors que le pourcentage correspondant est de 6% en 1950. Par ailleurs, le divorce a tendance à intervenir plus tard après le mariage. En 1950, quelque 17% des divorces interviennent après 20 années de mariage; en 2020, le pourcentage correspondant atteint 23%."
             }
           ]
         }
