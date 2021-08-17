@@ -2166,6 +2166,47 @@
       "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAUCAIAAADkwkEeAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACC0lEQVQ4y2XT61IaQRAF4Hl5H8AflFWWIIKCXCWKEQQJChKVmxceKB/byVYq6R9dszN9+py+bGo2m3d3d91u9+XlZb1e39/fj8djNzc3N8PhcDqdPj4+brdbT09PT6PR6Pr6Ol1cXLTb7Xq9/iOz4+PjYrHIHx0d8WdnZ5eXl7PZzFOn02m1WrKnWq0G0M3MrYhqterG+erqqlKplEolnN8yQ9Lv95NQYgh4fX1dLBZvb29S+nx+fqaW1EajQdvPP3Z7e5vQ9Xq9wWDwPTNXvBvFPDw8YBAAOczMk3M6Pz+nRCgY74p6zGQAgE0mEw1YrVabzQa/sHR6ekq0IGlgeAp9zudzSoTmgPf3d5eoEoDmqE+0lHiimOVyqQxedGB8kmAM+76pUicokVhWD5DYYiyB2WYm3b4eGIzUo3LwrHW5ntwHxohpSdEKSNMIHphlZv/wfHx84AFL9NkIPqr3jC2PCw+pATDWByzZN1DFaBoe6Q0XRlxg/uaB2fOcnJxQBaC/Bg+jaVYhduJ/zL6ew8PDg4MDPaAN2JqZoxSjzKQQCkDb5+cnYV6T/S0UChjlplDTo9AYF3JIHjnNv3ugY19fX5Fpt9t503T7hhmb3sQq5kXSnGJtY8xgxCD0RyFpZ6YxsThMjKT7Hc0nGEgpY98c4GNEYc57TLlcjiHm6xgDiU2TO/rGYgzq+QWKLvcQ9+1b8AAAAABJRU5ErkJggg==",
       "aspectRatio": 0.8364583333333333,
       "isPortrait": true
+    },
+    "Planning_familial.png": {
+      "caption": "Placeholder Caption",
+      "provenance": "Lëtzebuerger Land du 6. avril 1990, p.8",
+      "resolutions": {
+        "medium-w": {
+          "url": "/media/images/Planning_familial.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/Planning_familial.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/Planning_familial.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 1080,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/Planning_familial.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 960
+          }
+        }
+      },
+      "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAUCAIAAAALACogAAAACXBIWXMAAA7DAAAOwwHHb6hkAAACU0lEQVQoz0WTx67iUBBE/a/DAgmEYAULFoBIEgLEI+ecHznnPOQoPmgONtL0wrJv36qurm4L1+t1tVr9FWO/3/McjUa/v7+DweDxeFwul3q9XqvVGo3GYrF4v98CRwCkq4fDQbpdLpcrlcp8Pue82+1Wq9VcLkfqAzifz8vlci9Gv9+HLJVKORwOm81msVg8Hg8AipRKJbKv10uQJME9HA4zmUwoFNJqtZFIhHSv1wuHw8AKhQL0XwCSqLDb7eCmrlqtTiaTzWbT5/MFg8HtdhuPx91uNy9Q05VwOp0AIBca+GQy2XQ6TafTKpXKYDBQljrIowIqvgDaJUEFiOVyeSKRGI/HNF0sFieTST6ft1qt9M2djyQagIMExtGuQqFQKpWcgOGw0+n4/X4wWPd1CfWQkVuv12DMZvMfMUwmk9Fo1Ov1sECP0d85AMAy1DMpAF6vF0+5rdFo8IfWo9FoTQyavt1uwmw2A8qpy+WSpkPH+MMEAoFALBZriIFLNzEE3OUbAuxD6E4MWH5+fhAjrQw2Ho9HRoxDAlAkYSv9oWqz2WArSqhATTDP5xMD7HY7LeGbAAEVYB2JAYDucYkK6MEMvOdcp9NhANQfQKvVog7EyCPHC5+QAUMJvXLP6XSyOPT2cYl58UQVL4BRjA188kIzpJBANYxBocCSttttKMkBoAiS+JQA0iIzB7i5zVL9B6AEAPPniQE9MaSBAmAmrDCNff4HWOmVHDd4QQN7dhKDLE3DyL6wZtlsVsA1xNA6T+wjfb/feXL+EIN1IMVM2Q6a+Qec9pXbAITjlgAAAABJRU5ErkJggg==",
+      "aspectRatio": 0.81875,
+      "isPortrait": true
     }
   }
 }
