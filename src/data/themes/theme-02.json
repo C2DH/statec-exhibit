@@ -39,7 +39,7 @@
                 }
               ],
               "text": "Le milieu des années 1840 connaît une baisse de la natalité. Ce sont les conditions de vie difficiles (faibles récoltes) qui contribuent à expliquer ces baisses ponctuelles, qui se répètent d'ailleurs dans les années 1850. Plus les conditions de vie  sont difficiles, plus la natalité recule, et dans ces mêmes périodes la mortalité augmente parallèlement. Ce qui, en 1866 par exemple (épidémie de choléra), signifie une perte d'habitants. <br/> <br/> D'une manière générale, les variations de la natalité sont plus importantes avant les années 1880, c'est-à-dire avant la véritable industrialisation du Luxembourg et l'augmentation durable du niveau de vie qui l'accompagne.",
-              "figures": [{ "id": "statec_002.png" }, { "id": "bulletin_familles_nombreuses_2.jpg" }, { "id": "article_numbreuses_au_Lux.png" }]
+              "figures": [{ "id": "statec_002.png" }, { "id": "article_numbreuses_au_Lux.png" }]
             },
             {
               "from": 1875,
@@ -263,15 +263,30 @@
               "focusKeys": ["v4"],
               "from": 1840,
               "to": 1864,
-              "text": "La famille est une notion plus complexe qu'il ne paraît à première vue. Si elle peut être définie par les liens de parenté, elle évolue historiquement. De façon simplifiée et schématique, on pourrait dire que l'on passe, avec l'industrialisation et la \"modernisation\" sociale et sociétale de la \"famille nombreuse\" - généralement avec une progéniture nombreuse et vivant fréquemment dans des ménages où cohabitent plusieurs générations, et au 19ème siècle souvent avec des \"aidants\" extérieurs à la famille - à la famille nucléaire (avec peu d'enfants et vivant dans des ménages sans les grands-parents). <br/><br/>Aujourd'hui la \"famille\" a des formes très diversifiées allant de la famille monoparentale à la famille dite <em>recomposée</em>."
+              "text": "La « famille » et le « ménage » sont des notions plus complexes qu'il n'y paraît à première vue. D'une façon générale, la « famille » peut être définie par les liens de parenté. Dans un « ménage » (défini aujourd'hui en général l'occupation d'un même logement, du moins dans le domaine statistique) plusieurs « familles » (aujourd'hui on dirait plutôt des noyaux familiaux) peuvent cohabiter. En fait, les concepts sont utilisés souvent comme des synonymes alors qu'il y a des différences implicites. Et ils évoluent historiquement. <br /><br />De façon simplifiée, on passe d'abord des « feux » (notion utilisée pour des raisons fiscales sous l'Ancien Régime) dont la composition et le nombre de membres ne sont pas clairement déterminés aux « ménages ». Ceux-ci sont traités dans la langue courante comme synonyme des familles. Avec l'industrialisation et la \"modernisation\" sociale et sociétale, on passe de la \"famille nombreuse\" - généralement avec une progéniture prolifique et vivant fréquemment dans des ménages où cohabitent plusieurs générations (et, au 19ème siècle, souvent avec des \"aidants\" extérieurs à la famille) à la famille nucléaire avec peu d'enfants et vivant dans des ménages sans les grands-parents."
             },
             {
               "availableKeys": ["v4"],
               "visibleKeys": ["v4"],
               "focusKeys": ["v4"],
-              "from": 1864,
-              "to": 1970,
-              "text": "La baisse de la fécondité - mais également le fait que la famille nucléaire (parents avec enfants) s'impose - , explique que la taille moyenne des ménages diminue fortement. Elle passe de 5,42 personnes par ménage en 1864 à 3,13 en 1970."
+              "from": 1840,
+              "to": 2020,
+              "text": "Jusqu'après la deuxième guerre mondiale , la famille constitue à la fois une cellule de survie, une cellule de reproduction et, dans certains cas, notamment en milieu rural et artisanal, une cellule de production (d'après les termes utilisés par Gérard Trausch, dans Démographie, famille, société et confiance au Luxembourg, in Actes de la Section des sciences morales et politiques de l'Institut grand-ducal, 2003, p. 153). <br/><br/>Aujourd'hui la \"famille\" a des formes très diversifiées allant de la famille monoparentale à la famille dite recomposée. D'une manière sur le long terme, les ménages ont tendance à devenir plus petits. Le nombre de personnes par ménage passe de  5,42 en 1864 (première année où ces données sont disponibles) à 2,41 en 2011 (dernière année disponible sur base du recensement)",
+              "figures": [{ "id": "bulletin_familles_nombreuses_2.jpg" }]
+            },
+            {
+              "from": 1840,
+              "to": 2020,
+              "text": "Une des raisons principales du rétrécissement de la taille des ménages est la baisse de la fécondité. Celle-ci peut notamment être mesurée par l'indicateur conjoncturel de fécondité qui est le nombre d'enfants qu'aurait une femme tout au long de sa vie, si les taux de fécondité observés l'année considérée à chaque âge demeuraient inchangés. L'indicateur de fécondité évolue de 4,64 en 1900 à 1.34 en 2020. La fécondité se situe aujourd'hui largement en-dessous du niveau permettant le renouvellement des générations. Ce qui explique (ensemble avec l'augmentation de l'espérance de vie) le vieillissement de la population.",
+              "availableKeys": ["v4"],
+              "visibleKeys": ["v4"],
+              "focusKeys": ["v4"],
+              "dataset": "FertilityRatesByAge1900-2020",
+              "datasetLayout": "Lines",
+              "datasetKeys": ["v", "v1"],
+              "datasetColorKeys": { "v": "var(--dataset-t2-v)", "v1": "var(--dataset-t2-v1)"},
+              "datasetExtent": [1900, 2021],
+              "datasetLegend": "Indicateur conjoncturel de fécondité et seuil de remplacement des générations"
             },
             {
               "availableKeys": ["v4"],
@@ -279,15 +294,44 @@
               "focusKeys": ["v4"],
               "from": 1970,
               "to": 1981,
-              "text": "Dans les années 1970 on assiste à une augmentation passagère de la taille des ménages qui passe à près de 4 personnes en moyenne et qui résulte notamment de l'immigration (population. jeune, venant souvent en couple ou en famille, respectivement en âge de procréer)."
+              "text": "Dans les années 1970, la taille moyenne des ménages augmente passagèrement. Cette évolution résulte d'une l'immigration plutôt familiale venant notamment du Portugal et d'autres pays où la fécondité est plus élevée qu'au Luxembourg. La tendance globale à la baisse de la fécondité continue néanmoins au Grand-Duché. Même pour  les étrangers, dont la fécondité reste cependant plus élevée que celle des Luxembourgeois, l'indicateur n'atteint plus le seuil de renouvellement des générations.",
+              "dataset": "FertilityRatesCompare",
+              "datasetLayout": "Compare",
+              "datasetExtent": [1960, 2000],
+              "datasetKeys": ["v", "v1", "v2"],
+              "datasetColorKeys": { "v": "var(--dataset-t2-v)", "v1": "var(--dataset-t2-v1)"},
+              "datasetLegend": "Indicateur conjoncturel de fécondité 1967 - 2000",
+              "datasetHidePercentage": true
             },
             {
               "availableKeys": ["v4"],
               "visibleKeys": ["v4"],
               "focusKeys": ["v4"],
               "from": 1980,
-              "to": 1990,
-              "text": "A partir des années 1980, la tendance à la baisse de la taille des ménages reprend et, en 2001, on atteint 2,41 personnes par ménage. Les formes de cohabitation se diversifient et un phénomène nouveau se développe celle des personnes vivant seules. En 2011, 1/3 des ménages est constitué par des personnes seules, alors qu'en 1871, cette proportion de ménnges d'une seule personne ne fut que de 3,7% et qu'en 1970, le pourcentage se situa autour de 15%. Les familles nombreuses deviennent rares. Ainsi en 1900, la part des ménages de 6 personnes est encore de 12% de l'ensemble des ménages, alors qu'en 1981, le pourcentage correspondant n'est même pas de 3%."
+              "to": 2020,
+              "text": "A côté de la diffusion des moyens de contraception, une des mutations structurelles les plus importantes dans les ménages, resp. dans les familles, est celle de l'activité professionnelle des femmes. En 1960, sur 108 000 femmes âgées de 15 à 64 ans, il y en avait environ 33.000 qui avaient une activité professionnelle, en d'autres mots le taux d'activité des femmes fut de moins de 30% en 1960 contre 85% pour les hommes. Il se situe aujourd'hui à près de 69% pour les femmes. Par contre le taux d'activité des hommes s'est tassé à quelque 70%. Le recul de ce taux d'activité est dû au fait que les études s'allongent et que la sortie de la vie active est plus précoce.",
+              "dataset": "ActivityRate",
+              "datasetLayout": "Lines",
+              "datasetExtent": [1990, 2020],
+              "datasetKeys": ["v1", "v2"],
+              "datasetColorKeys": { "v2": "var(--dataset-t2-v)", "v1": "var(--dataset-t2-v1)"},
+              "datasetLegend": "Taux d'activité des hommes et des femmes au Luxembourg, 1993-2019"
+            },
+            {
+              "availableKeys": ["v4"],
+              "visibleKeys": ["v4"],
+              "focusKeys": ["v4"],
+              "from": 1980,
+              "to": 2020,
+              "text": "Pour soutenir la natalité et les familles, les aides familiales directes en espèces (allocations familiales) et indirectes, resp. en nature (structures d’accueil pour enfants, par exemple) sont conséquentes au Luxembourg dans la comparaison avec la plupart des autres pays européens. En 2010, les prestations de sécurité sociale en espèces dans le domaine de la fonction « enfants/familles » constituent 4% du PIB au Luxembourg, contre 2,2% en moyenne dans l’Union européenne. Depuis la part s’est un peu réduite au Grand-Duché (3.3% du PIB en 2018), mais une des raisons en est que les prestations en nature se sont accrues."
+            },
+            {
+              "availableKeys": ["v4"],
+              "visibleKeys": ["v4"],
+              "focusKeys": ["v4"],
+              "from": 1980,
+              "to": 2020,
+              "text": "A partir des années 1980, la tendance à la baisse de la taille des ménages reprend. Les formes de cohabitation se diversifient et un phénomène nouveau se développe celle des personnes vivant seules. En 2011, 1/3 des ménages est constitué par des personnes seules, alors qu'en 1871, cette proportion de ménages d'une seule personne ne fut que de 3,7% et qu'en 1970, le pourcentage se situe autour de 15%. Les familles nombreuses deviennent rares. Ainsi, en 1900, la part des ménages de 6 personnes est encore de 12% de l'ensemble des ménages, alors qu'en 1981, le pourcentage correspondant n'est même pas de 3%. Evidemment, cette réduction de la taille moyenne des ménages est aussi une conséquence du vieillissement de la population (le veuvage se répand ...)." 
             }
           ]
         }
@@ -417,7 +461,7 @@
             {
               "from": 2005,
               "to": 2020,
-              "text": "L’espérance de vie en elle-même et le nombre d’années gagnées ne sont qu’un aspect du vieillissement individuel. La qualité de vie aux âges élevés joue un rôle au moins aussi important. Cette qualité de vie peut être mesurée indirectement par l’indicateur de l'espérance de vie en bonne santé, c'est-à-dire le nombre d'années qu'une personne peut compter vivre sans souffrir d'incapacité dans les gestes de la vie quotidienne ; il combine des informations sur la mortalité et la morbidité. En d’autres mots, l'indicateur « Années de Vie en Bonne Santé (AVBS) »  (ou EVSI, Espérance de Vie Sans Incapacité) mesure le nombre d'années qu'une personne à la naissance peut s'attendre à vivre en bonne santé.",
+              "text": "L'espérance de vie en elle-même et le nombre d'années gagnées ne sont qu'un aspect du vieillissement individuel. La qualité de vie aux âges élevés joue un rôle au moins aussi important. Cette qualité de vie peut être mesurée indirectement par l'indicateur de l'espérance de vie en bonne santé, c'est-à-dire le nombre d'années qu'une personne peut compter vivre sans souffrir d'incapacité dans les gestes de la vie quotidienne ; il combine des informations sur la mortalité et la morbidité. En d'autres mots, l'indicateur « Années de Vie en Bonne Santé (AVBS) »  (ou EVSI, Espérance de Vie Sans Incapacité) mesure le nombre d'années qu'une personne à la naissance peut s'attendre à vivre en bonne santé.",
               "availableKeys": ["v", "v1", "v2"],
               "visibleKeys": ["v2"],
               "focusKeys": ["v2"],
@@ -426,7 +470,7 @@
             {
               "from": 2005,
               "to": 2020,
-              "text": "L’espérance de vie des hommes à 65 ans (un homme peut espérer vivre en moyenne 19,2 ans à 65 ans) est plus faible que celle des femmes à 65 ans (22,4 ans). L’espérance de vie en bonne santé est beaucoup plus faible pour les hommes comme pour les femmes (10.6 ans pour les femmes et 10,1 ans pour les hommes à l’âge de 65 ans). L’écart entre hommes et femmes en ce qui concerne l’espérance de vie en bonne santé est moindre que pour l’espérance de vie en général. En outre l’espérance de vie en bonne santé ne semble pas orientée structurellement à la hausse, du moins si on se réfère aux 15 dernières années. ",
+              "text": "L'espérance de vie des hommes à 65 ans (un homme peut espérer vivre en moyenne 19,2 ans à 65 ans) est plus faible que celle des femmes à 65 ans (22,4 ans). L'espérance de vie en bonne santé est beaucoup plus faible pour les hommes comme pour les femmes (10.6 ans pour les femmes et 10,1 ans pour les hommes à l'âge de 65 ans). L'écart entre hommes et femmes en ce qui concerne l'espérance de vie en bonne santé est moindre que pour l'espérance de vie en général. En outre l'espérance de vie en bonne santé ne semble pas orientée structurellement à la hausse, du moins si on se réfère aux 15 dernières années. ",
               "availableKeys": ["v", "v1", "v2"],
               "visibleKeys": ["v2"],
               "focusKeys": ["v2"],
