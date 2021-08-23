@@ -11,7 +11,7 @@
   },
   "introductions": [
     {
-      "text": "Au 19ème siècle, le taux de natalité (les naissances rapportées à la population) se tasse. Si le solde naturel (c'est-à-dire l'excédent des naissances sur les décès) reste positif, c'est grâce à la baisse de la mortalité due au progrès médical et sanitaire et à l’amélioration des conditions de vie (logement, régime alimentaire …). <br/><br/> Au 20ème siècle le solde naturel est globalement plus faible qu’au 19ème siècle, ce qui est dû à la une natalité peu dynamique, conséquence d’une fécondité (le nombre d'enfants par femme) en berne. Et il y a quelques périodes où même la baisse de la mortalité n’arrive pas à équilibrer cette tendance de la baisse de la natalité et où le solde naturel (excès des naissances sur les décès devient négatif). <br/><br/> Cette évolution peut être définie par le terme de « transition démographique ». Il s’agit d’un processus historique au cours duquel une population passe d'une situation démographique où  les taux de mortalité et de natalité sont élevés à un régime où le taux de mortalité, et ensuite le taux de natalité, sont faibles."
+      "text": "Au 19ème siècle, le taux de natalité (les naissances rapportées à la population) se tasse. Si le solde naturel (c'est-à-dire l'excédent des naissances sur les décès) reste positif, c'est grâce à la baisse de la mortalité due au progrès médical et sanitaire et à l'amélioration des conditions de vie (logement, régime alimentaire …). <br/><br/> Au 20ème siècle le solde naturel est globalement plus faible qu'au 19ème siècle, ce qui est dû à la une natalité peu dynamique, conséquence d'une fécondité (le nombre d'enfants par femme) en berne. Et il y a quelques périodes où même la baisse de la mortalité n'arrive pas à équilibrer cette tendance de la baisse de la natalité et où le solde naturel (excès des naissances sur les décès devient négatif). <br/><br/> Cette évolution peut être définie par le terme de « transition démographique ». Il s'agit d'un processus historique au cours duquel une population passe d'une situation démographique où  les taux de mortalité et de natalité sont élevés à un régime où le taux de mortalité, et ensuite le taux de natalité, sont faibles."
 
     }
   ],
@@ -38,7 +38,7 @@
                   "text": "Une épidemie de Cholera frappe le pays"
                 }
               ],
-              "text": "Le milieu des années 1840 connaît une baisse de la natalité. Ce sont les conditions de vie difficiles (faibles récoltes) qui contribuent à expliquer ces baisses ponctuelles, qui se répètent d'ailleurs dans les années 1850. Plus les conditions de vie  sont difficiles, plus la natalité recule, et dans ces mêmes périodes la mortalité augmente parallèlement. Ce qui, en 1866 par exemple (épidémie de choléra), signifie une perte d’habitants. <br/> <br/> D'une manière générale, les variations de la natalité sont plus importantes avant les années 1880, c'est-à-dire avant la véritable industrialisation du Luxembourg et l'augmentation durable du niveau de vie qui l'accompagne.",
+              "text": "Le milieu des années 1840 connaît une baisse de la natalité. Ce sont les conditions de vie difficiles (faibles récoltes) qui contribuent à expliquer ces baisses ponctuelles, qui se répètent d'ailleurs dans les années 1850. Plus les conditions de vie  sont difficiles, plus la natalité recule, et dans ces mêmes périodes la mortalité augmente parallèlement. Ce qui, en 1866 par exemple (épidémie de choléra), signifie une perte d'habitants. <br/> <br/> D'une manière générale, les variations de la natalité sont plus importantes avant les années 1880, c'est-à-dire avant la véritable industrialisation du Luxembourg et l'augmentation durable du niveau de vie qui l'accompagne.",
               "figures": [{ "id": "statec_002.png" }, { "id": "bulletin_familles_nombreuses_2.jpg" }, { "id": "article_numbreuses_au_Lux.png" }]
             },
             {
@@ -47,7 +47,7 @@
               "availableKeys": ["v1", "v"],
               "visibleKeys": ["v1"],
               "focusKeys": ["v1"],
-              "text":"A partir des années 1880, la natalité commence à se tasser et la légère remontée des 1890 n’y change rien. Une chute importante est due à la première guerre mondiale (période de pénurie), mais l’évolution à la baisse de la natalité (qui commence vers le tournant des 19ème et 20ème siècle) est plus structurelle que conjoncturelle. Les bonnes conditions économiques des années 1920 semblent favoriser un rebond qui n’est cependant que passager. Puis la crise économique des années 1930 va de pair avec une nouvelle baisse de la natalité Finalement, la deuxième guerre mondiale n’est pas favorable à une reprise des naissances.",
+              "text":"A partir des années 1880, la natalité commence à se tasser et la légère remontée des 1890 n'y change rien. Une chute importante est due à la première guerre mondiale (période de pénurie), mais l'évolution à la baisse de la natalité (qui commence vers le tournant des 19ème et 20ème siècle) est plus structurelle que conjoncturelle. Les bonnes conditions économiques des années 1920 semblent favoriser un rebond qui n'est cependant que passager. Puis la crise économique des années 1930 va de pair avec une nouvelle baisse de la natalité Finalement, la deuxième guerre mondiale n'est pas favorable à une reprise des naissances.",
               "figures": [{ "id": "HISAEZ000342V01_traite.jpg" }]
             },
             {
@@ -56,7 +56,7 @@
               "availableKeys": ["v1", "v"],
               "visibleKeys": ["v1"],
               "focusKeys": ["v1"],
-              "text":"Les années 1950 amènent une hausse de la natalité (souvent qualifiée de « baby-boom ») qui accompagne l’amélioration des conditions de vie. Cependant dès le milieu des années 1960, les naissances entament de nouveau une baisse sensible. Des phénomènes de société – comme  la démocratisation des moyens de contraception et la diffusion du modèle familial avec moins de 3 enfants - contribuent à expliquer ce phénomène.",
+              "text":"Les années 1950 amènent une hausse de la natalité (souvent qualifiée de « baby-boom ») qui accompagne l'amélioration des conditions de vie. Cependant dès le milieu des années 1960, les naissances entament de nouveau une baisse sensible. Des phénomènes de société – comme  la démocratisation des moyens de contraception et la diffusion du modèle familial avec moins de 3 enfants - contribuent à expliquer ce phénomène.",
               "figures": [{ "id": "Planning_familial.png" }]
             },
             {
@@ -65,8 +65,8 @@
               "availableKeys": ["v1", "v"],
               "visibleKeys": ["v1", "v"],
               "focusKeys": ["v1","v"],
-              "colorKeys": { "v1": "var(--secondary)", "v": "green" },
-              "text": "Au cours des années 1972-1978, le solde naturel (différence entre naissances et décès) devient négatif, même si ce n’est que légèrement. Si les 3 autres épisodes historiques où le solde naturel tombe en-dessous de zéro sont liés à une hausse de la mortalité (choléra en 1866 et les deux guerres mondiales), dans les années 1970, c’est une baisse de natalité qui en est le facteur explicatif le plus important. Le nombre de naissances passe de 5297 en 1965 à seulement 3800 en 1973. <br/> <br/> Dans ce contexte, un rapport sur la démographie luxembourgeoise est demandé par le gouvernement au démographe français réputé Gérard Calot, qui projette une baisse de la population du Luxembourg et surtout la diminution de la population de nationalité luxembourgeoise (Gérard Calot, <a href='https://a-z.lu/primo-explore/fulldisplay?docid=ALEPH_LUX01000096129&context=L&vid=BIBNET&lang=fr_FR&search_scope=All_content&adaptor=Local%20Search%20Engine&tab=all_content&query=any,contains,Calot%201978&mode=Basic' target='_blank'>La démographie du Luxembourg, passé, présent et avenir : rapport au président du gouvernement, 1978</a>).",
+              "colorKeys": { "v1": "var(--secondary)", "v": "var(--datakey-v)" },
+              "text": "Au cours des années 1972-1978, le solde naturel (différence entre naissances et décès) devient négatif, même si ce n'est que légèrement. Si les 3 autres épisodes historiques où le solde naturel tombe en-dessous de zéro sont liés à une hausse de la mortalité (choléra en 1866 et les deux guerres mondiales), dans les années 1970, c'est une baisse de natalité qui en est le facteur explicatif le plus important. Le nombre de naissances passe de 5297 en 1965 à seulement 3800 en 1973. <br/> <br/> Dans ce contexte, un rapport sur la démographie luxembourgeoise est demandé par le gouvernement au démographe français réputé Gérard Calot, qui projette une baisse de la population du Luxembourg et surtout la diminution de la population de nationalité luxembourgeoise (Gérard Calot, <a href='https://a-z.lu/primo-explore/fulldisplay?docid=ALEPH_LUX01000096129&context=L&vid=BIBNET&lang=fr_FR&search_scope=All_content&adaptor=Local%20Search%20Engine&tab=all_content&query=any,contains,Calot%201978&mode=Basic' target='_blank'>La démographie du Luxembourg, passé, présent et avenir : rapport au président du gouvernement, 1978</a>).",
               "figures": [{ "id": "ark_70795_gq9f7z_pages_11.jpg" }]
             },
             {
@@ -75,8 +75,8 @@
               "availableKeys": ["v1", "v"],
               "visibleKeys": ["v1", "v"],
               "focusKeys": ["v1","v"],
-              "colorKeys": { "v1": "var(--secondary)", "v": "green" },
-              "text": "C'est l'époque où certains, comme le directeur du STATEC de l’époque, Georges Als, évoquent la thèse du \"suicide démographique\" du Luxembourg. En fait, si le scénario de Calot, popularisé par Als, ne se réalise pas, c’est parce qu’au moment où le rapport est rédigé, la tendance de la natalité se réoriente déjà à la hausse et que l’immigration amène une population jeune en état de procréer.",
+              "colorKeys": { "v1": "var(--secondary)", "v": "var(--datakey-v)" },
+              "text": "C'est l'époque où certains, comme le directeur du STATEC de l'époque, Georges Als, évoquent la thèse du \"suicide démographique\" du Luxembourg. En fait, si le scénario de Calot, popularisé par Als, ne se réalise pas, c'est parce qu'au moment où le rapport est rédigé, la tendance de la natalité se réoriente déjà à la hausse et que l'immigration amène une population jeune en état de procréer.",
               "figures": [{"id": "forum-137-1992-le-mythe-du-suicide-demographique.png"}]
             },
             {
@@ -85,8 +85,8 @@
               "availableKeys": ["v1", "v"],
               "visibleKeys": ["v1", "v"],
               "focusKeys": ["v1","v"],
-              "colorKeys": { "v1": "var(--secondary)", "v": "green" },
-              "text":"Le taux de natalité se stabilise au milieu des années 1970, puis augmente dans les années 1980. C’est le résultat d’un changement du comportement démographique (légère hausse de la fécondité), mais aussi au fait que la population immigrée est plutôt jeune et en état de procréer. Elle a par ailleurs une fécondité plus élevée que la population autochtone, du moins dans les années 1980. <br/> <br/> A partir du tournant des 20ème et 21me siècle, le taux de natalité (les naissances rapportés à la population) baisse à nouveau. Cela ne devrait cependant pas cacher que le nombre absolu de naissances est en croissance pratiquement continue depuis les années 1970 :  3 800 naissances en 1973 et 6 459 naissances en 2020. Ce phénomène n’est pas dû à une hausse structurelle durable de la fécondité, mais à la croissance générale de la population et notamment de la population jeune en âge de procréer."
+              "colorKeys": { "v1": "var(--secondary)", "v": "var(--datakey-v)" },
+              "text":"Le taux de natalité se stabilise au milieu des années 1970, puis augmente dans les années 1980. C'est le résultat d'un changement du comportement démographique (légère hausse de la fécondité), mais aussi au fait que la population immigrée est plutôt jeune et en état de procréer. Elle a par ailleurs une fécondité plus élevée que la population autochtone, du moins dans les années 1980. <br/> <br/> A partir du tournant des 20ème et 21me siècle, le taux de natalité (les naissances rapportés à la population) baisse à nouveau. Cela ne devrait cependant pas cacher que le nombre absolu de naissances est en croissance pratiquement continue depuis les années 1970 :  3 800 naissances en 1973 et 6 459 naissances en 2020. Ce phénomène n'est pas dû à une hausse structurelle durable de la fécondité, mais à la croissance générale de la population et notamment de la population jeune en âge de procréer."
             }
           ]
         }
@@ -104,7 +104,7 @@
               "focusKeys": ["v1"],
               "from": 1840,
               "to": 1875,
-              "text": "Le nombre de mariages rapporté à la population – te taux de nuptialité - est élevé au milieu du 19ème siècle (autour de 7-8 par 1000 habitants en moyenne par année). Aujourd’hui ce taux est descendu à quelque 3 pour mille. Le taux de nuptialité n'est pas seulement dépendant de la propension intrinsèque de se marier, mais également des conditions de vie. Sans perspectives \"positives\", les mariages tendent à se tasser. Les variations du taux dans les années 1840 et 1850 sont liées aux conditions de vie difficiles et changeantes (selon les récoltes et la situation sanitaire, par exemple). Après les moments de crise, la nuptialité rebondit généralement.",
+              "text": "Le nombre de mariages rapporté à la population – te taux de nuptialité - est élevé au milieu du 19ème siècle (autour de 7-8 par 1000 habitants en moyenne par année). Aujourd'hui ce taux est descendu à quelque 3 pour mille. Le taux de nuptialité n'est pas seulement dépendant de la propension intrinsèque de se marier, mais également des conditions de vie. Sans perspectives \"positives\", les mariages tendent à se tasser. Les variations du taux dans les années 1840 et 1850 sont liées aux conditions de vie difficiles et changeantes (selon les récoltes et la situation sanitaire, par exemple). Après les moments de crise, la nuptialité rebondit généralement.",
               "figures": [{"id": "HISAAJ000008N01.jpg"}, {"id": "HISAAJ000588N01.jpg"}]
             },
             {
@@ -113,8 +113,8 @@
               "focusKeys": ["v"],
               "from": 1875,
               "to": 1910,
-              "text": "Le <b class='bold'>taux de nuptialité</b> est également lié à la structure de la population. Plus la population est jeune, plus le taux de nuptialité est élevé. Le tassement du taux de nuptialité dans les années 1870-1880 est probablement lié au départ de nombreux jeunes à l'étranger (émigration). A partir du milieu des années 1880 les mariages redeviennent plus nombreux dans un contexte d’immigration et d’amélioration des conditions économiques.",
-              "figures": [{"id": "l’état_civil_de_la_Ville_de_Luxembourg.png"}]
+              "text": "Le <b class='bold'>taux de nuptialité</b> est également lié à la structure de la population. Plus la population est jeune, plus le taux de nuptialité est élevé. Le tassement du taux de nuptialité dans les années 1870-1880 est probablement lié au départ de nombreux jeunes à l'étranger (émigration). A partir du milieu des années 1880 les mariages redeviennent plus nombreux dans un contexte d'immigration et d'amélioration des conditions économiques.",
+              "figures": [{"id": "etat_civil_de_la_Ville_de_Luxembourg.png"}]
             },
             {
               "availableKeys": ["v"],
@@ -130,7 +130,7 @@
               "focusKeys": ["v"],
               "from": 1950,
               "to": 2020,
-              "text": "Dans un premier temps, la baisse de la nuptialité à partir de 1946 constitue un retour à la normal après le « boom » passager des mariages que provoque la fin de la guerre. La tendance générale commençant à partir des années 1950 est cependant caractérisée par un recul pratiquement continu de la nuptialité. Le début des années 1990 – une remontée passagère - constitue une exception liée à une réforme de la fiscalité des ménages. La baisse du taux de nuptialité est d’abord imputable à une modification de la structure par âge d‘une population qui vieillit. La part des personnes de la classe d’âge où la probabilité de se marier est élevée se tasse mécaniquement. En fait, le nombre absolu de mariages ne diminue pas dans les mêmes proportions  que le taux de nuptialité : on compte 2236 mariages en 1960 et 2 084 en 2019."
+              "text": "Dans un premier temps, la baisse de la nuptialité à partir de 1946 constitue un retour à la normal après le « boom » passager des mariages que provoque la fin de la guerre. La tendance générale commençant à partir des années 1950 est cependant caractérisée par un recul pratiquement continu de la nuptialité. Le début des années 1990 – une remontée passagère - constitue une exception liée à une réforme de la fiscalité des ménages. La baisse du taux de nuptialité est d'abord imputable à une modification de la structure par âge d‘une population qui vieillit. La part des personnes de la classe d'âge où la probabilité de se marier est élevée se tasse mécaniquement. En fait, le nombre absolu de mariages ne diminue pas dans les mêmes proportions  que le taux de nuptialité : on compte 2236 mariages en 1960 et 2 084 en 2019."
             },
             {
               "availableKeys": ["v"],
@@ -147,7 +147,7 @@
               "focusKeys": ["v"],
               "from": 1970,
               "to": 2020,
-              "text": "L'âge au premier mariage augmente fortement. Au milieu des années 1970, l'âge au premier mariage est de moins de 26 ans pour les hommes et de 23 ans pour les femmes. Aujourd’hui il est de 34 ans pour les hommes et de près de 32 ans pour les femmes. Le temps où les personnes vivent seules (en tant que « célibataires ») s’allonge. Il en résulte que la part des célibataires dans la population est en croissance : en 1981, cette part fut de 18%, aujourd’hui elle approche les 30%. Les statistiques ont cependant de la peine à saisir les nouvelles formes de vie commune qui vont des \"communautés\" aux couples plus ou moins « stables » qui ne vont souvent pas jusqu'à la constitution d'un ménage formel."
+              "text": "L'âge au premier mariage augmente fortement. Au milieu des années 1970, l'âge au premier mariage est de moins de 26 ans pour les hommes et de 23 ans pour les femmes. Aujourd'hui il est de 34 ans pour les hommes et de près de 32 ans pour les femmes. Le temps où les personnes vivent seules (en tant que « célibataires ») s'allonge. Il en résulte que la part des célibataires dans la population est en croissance : en 1981, cette part fut de 18%, aujourd'hui elle approche les 30%. Les statistiques ont cependant de la peine à saisir les nouvelles formes de vie commune qui vont des \"communautés\" aux couples plus ou moins « stables » qui ne vont souvent pas jusqu'à la constitution d'un ménage formel."
             }
           ]
         },
@@ -159,8 +159,8 @@
               "visibleKeys": ["v3"],
               "focusKeys": ["v3"],
               "colorKeys": {"v3": "var(--accent)"},
-              "from": 1792,
-              "to": 1804,
+              "from": 1870,
+              "to": 2020,
               "text": "La possibilité du divorce fut introduite par la loi du 20 septembre 1792 en même temps que l'état civil laïc qui voit dans le mariage un contrat civil comme d'autres. Comme l'actuel Luxembourg faisait partie du département des Forêts, c'est cette législation qui fut applicable dans nos contrées. Jusque-là c'est le mariage religieux – indissoluble par principe – qui fut la norme. La loi de 1792 fut très libérale dans la mesure où un divorce par consentement mutuel y est prévu.",
               "figures": [{ "id": "divorce_law.jpg"}]
             },
@@ -169,8 +169,8 @@
               "visibleKeys": ["v3"],
               "focusKeys": ["v3"],
               "colorKeys": {"v3": "var(--accent)"},
-              "from": 1792,
-              "to": 1804,
+              "from": 1870,
+              "to": 2020,
               "text": "Avec le code civil de 1804 – et sous l'influence des milieux catholiques et conservateurs et de Bonaparte lui-même - ont fait un pas en arrière en réduisant très fortement la possibilité du consentement mutuel en vue d'un éventuel divorce. Les conditions sont restrictives au point qu'il tombe pratiquement en désuétude.",
               "figures": [{"id": "code_civil_titreVI_chap1_paragraph229.png"}]
             },
@@ -179,7 +179,7 @@
               "visibleKeys": ["v3"],
               "focusKeys": ["v3"],
               "colorKeys": {"v3": "var(--accent)"},
-              "from": 1804,
+              "from": 1870,
               "to": 1974,
               "text": "Les dispositions concernant le divorce contenues dans le code civil de 1804 illustrent également l'ancrage socio-culturel des inégalités entre hommes et femmes. A titre d'exemple, l'adultère est considéré comme un des critères justifiant le divorce (pour faute). Mais le Code civil – promulgué par Napoléon - introduit une différenciation selon le sexe. La femme s'en rend coupable du moment qu'elle a une relation extraconjugale. Par contre, le mari n'est coupable d'adultère que s'il entretient sa maîtresse au domicile familial.",
               "figures": [{"id": "Image_Napoleon.jpg"}]
@@ -189,9 +189,9 @@
               "visibleKeys": ["v3"],
               "focusKeys": ["v3"],
               "colorKeys": {"v3": "var(--accent)"},
-              "from": 1804,
+              "from": 1870,
               "to": 1974,
-              "text": "Si le nombre de divorces par an se compte sur les doigts d'une main au cours du 19ème siècle, la catégorie statistique reste une constante et n'est jamais mise en cause et cela jusqu'à aujourd'hui.  C'est le reflet de l'importance intrinsèque qu’a (et que gardera) le mariage et l'institution familiale considérée comme cellule de base de la vie en société. Jusqu' à la fin des années 1830, les relevés statistiques de l'état civil contiennent ponctuellement des indications sur le nombre de divorces, mais c'est à partir de la création de l'actuel Grand-Duché en 1839 que les statistiques deviennent un peu plus consistantes et, surtout, que des séries statistiques chronologiques plus cohérentes sont construites, même si pour les divorces les relevés annuels semblent lacunaires. L’intérêt que portent les pouvoirs publics aux statistiques est néanmoins le reflet de l'Etat-nation qui commence à se penser désormais dans la continuité. Les statistiques sur le divorce restent néanmoins assez rudimentaires (on n’a en fait que les nombres bruts) jusqu’après la deuxième guerre mondiale, même si on doit noter une initiative - n’ayant pas abouti -  de 1904-1905 émanant de la Commission permanente de statistique (créée en 1900) demandant des détails plus fins.",
+              "text": "Si le nombre de divorces par an se compte sur les doigts d'une main au cours du 19ème siècle, la catégorie statistique reste une constante et n'est jamais mise en cause et cela jusqu'à aujourd'hui.  C'est le reflet de l'importance intrinsèque qu'a (et que gardera) le mariage et l'institution familiale considérée comme cellule de base de la vie en société. Jusqu' à la fin des années 1830, les relevés statistiques de l'état civil contiennent ponctuellement des indications sur le nombre de divorces, mais c'est à partir de la création de l'actuel Grand-Duché en 1839 que les statistiques deviennent un peu plus consistantes et, surtout, que des séries statistiques chronologiques plus cohérentes sont construites, même si pour les divorces les relevés annuels semblent lacunaires. L'intérêt que portent les pouvoirs publics aux statistiques est néanmoins le reflet de l'Etat-nation qui commence à se penser désormais dans la continuité. Les statistiques sur le divorce restent néanmoins assez rudimentaires (on n'a en fait que les nombres bruts) jusqu'après la deuxième guerre mondiale, même si on doit noter une initiative - n'ayant pas abouti -  de 1904-1905 émanant de la Commission permanente de statistique (créée en 1900) demandant des détails plus fins.",
               "figures": [{"id": "statistique_le_divorce.jpg"}]
             },
             {
@@ -201,7 +201,7 @@
               "colorKeys": {"v3": "var(--accent)"},
               "from": 1974,
               "to": 1978,
-              "text": "Les années 1970 sont marquées par une mise en question des institutions sociétales - dont la famille traditionnelle - marquées notamment par les inégalités entre hommes et femmes (puissance paternelle, autorité maritale) et par des principes moraux dont les origines remontent au 19ème siècle et même plus loin. Les réformes de base de la législation concernant la famille – et notamment le divorce - se concentrent sur les années 1970. Les modifications légales du divorce s’inscrivent dans un ensemble de changements intervenant en matière d’égalité des hommes et des femmes. La période 1974-1979 est également marquée par un gouvernement socialiste-libéral. Le parti de la  droite (parti chrétien social) ne participe pas, pour la première fois depuis la première guerre mondiale, au pouvoir. Mais les changements légaux et sociétaux ont commencé bien avant. Ainsi, la loi du 12 décembre 1972 modifie profondément – dans un sens plus égalitaire - le chapitre VI du code civil concernant les droits et des devoirs respectifs des conjoints, en abolissant, par exemple, le passage du code civil de 1804 (art. 213) selon lequel la femme doit « obéissance » à son mari.",
+              "text": "Les années 1970 sont marquées par une mise en question des institutions sociétales - dont la famille traditionnelle - marquées notamment par les inégalités entre hommes et femmes (puissance paternelle, autorité maritale) et par des principes moraux dont les origines remontent au 19ème siècle et même plus loin. Les réformes de base de la législation concernant la famille – et notamment le divorce - se concentrent sur les années 1970. Les modifications légales du divorce s'inscrivent dans un ensemble de changements intervenant en matière d'égalité des hommes et des femmes. La période 1974-1979 est également marquée par un gouvernement socialiste-libéral. Le parti de la  droite (parti chrétien social) ne participe pas, pour la première fois depuis la première guerre mondiale, au pouvoir. Mais les changements légaux et sociétaux ont commencé bien avant. Ainsi, la loi du 12 décembre 1972 modifie profondément – dans un sens plus égalitaire - le chapitre VI du code civil concernant les droits et des devoirs respectifs des conjoints, en abolissant, par exemple, le passage du code civil de 1804 (art. 213) selon lequel la femme doit « obéissance » à son mari.",
               "figures": [{"id": "manifestation_étudiants.jpg"}]
             },
             {
@@ -211,8 +211,13 @@
               "colorKeys": {"v3": "var(--accent)"},
               "from": 1974,
               "to": 1980,
-              "text": "L’article 298 du Code civil de 1804 interdisait à l’époux coupable d’adultère (une des causes de divorce) de se marier avec son « complice » aussi longtemps que le conjoint « offensé » est en vie. Une loi du 11 novembre 1974 abolit cette disposition. Ensuite, la loi du 6 février 1975 desserre l'étau concernant les conditions du divorce par consentement mutuel. Les conditions d'âge et de durée de mariage, notamment, sont largement éliminées. La loi du 5 décembre 1978 fait que l'adultère n'est plus considérée comme cause péremptoire du divorce et elle donne à chacun des époux la possibilité de demander le divorce en cas de séparation de fait continue et effective depuis au moins trois ans.",
-              "figures": [{"id": "Reform_Scheidungsrechts.png"}]
+              "text": "L'article 298 du Code civil de 1804 interdisait à l'époux coupable d'adultère (une des causes de divorce) de se marier avec son « complice » aussi longtemps que le conjoint « offensé » est en vie. Une loi du 11 novembre 1974 abolit cette disposition. Ensuite, la loi du 6 février 1975 desserre l'étau concernant les conditions du divorce par consentement mutuel. Les conditions d'âge et de durée de mariage, notamment, sont largement éliminées. La loi du 5 décembre 1978 fait que l'adultère n'est plus considérée comme cause péremptoire du divorce et elle donne à chacun des époux la possibilité de demander le divorce en cas de séparation de fait continue et effective depuis au moins trois ans.",
+              "figures": [{"id": "Reform_Scheidungsrechts.png"}],
+              "hotspots": [
+                { "t": 1974, "text": "Abrogation art 298 du Code civil" },
+                { "t": 1975, "text": "Les conditions d'âge et de durée de mariage, notamment, sont largement éliminées" },
+                { "t": 1978, "text": "Les conditions d'âge et de durée de mariage, notamment, sont largement éliminées" }
+              ]
             },
             {
               "availableKeys": ["v3", "v1"],
@@ -221,7 +226,7 @@
               "colorKeys": {"v3": "var(--accent)"},
               "from": 1975,
               "to": 2018,
-              "text": "Même si le nombre de divorces avait tendance à augmenter tendanciellement depuis le début du 20ème siècle, les conditions très restrictives et les procédures lourdes des divorces pour faute expliquent que leur nombre reste faible. C’est la loi du 5 décembre 1975 qui établit les bases du divorce par consentement mutuel qui est à l’origine de l’augmentation très importante du nombre. De 229 divorces en 1975 on passe à 1453 en 2014."
+              "text": "Même si le nombre de divorces avait tendance à augmenter tendanciellement depuis le début du 20ème siècle, les conditions très restrictives et les procédures lourdes des divorces pour faute expliquent que leur nombre reste faible. C'est la loi du 5 décembre 1975 qui établit les bases du divorce par consentement mutuel qui est à l'origine de l'augmentation très importante du nombre. De 229 divorces en 1975 on passe à 1453 en 2014."
             },
             {
               "availableKeys": ["v3", "v1"],
@@ -230,7 +235,7 @@
               "colorKeys": {"v3": "var(--accent)"},
               "from": 2018,
               "to": 2020,
-              "text": "A partir de 2018, c’est essentiellement sur la base de la loi 27 juin 2018 (dont le projet remonte néanmoins à 2003) que les divorces sont prononcés. A partir de cette loi, le droit luxembourgeois ne connaît au fond plus que deux types de divorce: le divorce par consentement mutuel et le divorce pour rupture irrémédiable des relations conjugales, même si le divorce pour faute ( « pour cause déterminée ») est prévu dans quelques cas de figure rares."
+              "text": "A partir de 2018, c'est essentiellement sur la base de la loi 27 juin 2018 (dont le projet remonte néanmoins à 2003) que les divorces sont prononcés. A partir de cette loi, le droit luxembourgeois ne connaît au fond plus que deux types de divorce: le divorce par consentement mutuel et le divorce pour rupture irrémédiable des relations conjugales, même si le divorce pour faute ( « pour cause déterminée ») est prévu dans quelques cas de figure rares."
             },
             {
               "availableKeys": ["v3", "v1"],
@@ -295,64 +300,137 @@
           "title": "Espérance de vie et vieillissement",
           "paragraphs": [
             {
-              "from": 1840,
-              "to": 1841,
-              "text": "Du point de vue des structures de vie commune (familles, ménages), le vieillissement est synonyme de l'extension de ce que l'on appelle, du point de vue statistique, les ménages collectifs (foyers pour personnes âgées, maisons de soins, etc.)",
-              "availableKeys": ["v", "v1", "v2"],
-              "visibleKeys": ["v", "v1", "v2"],
-              "focusKeys": ["v", "v1", "v2"],
-              "colorKeys": { "v": "var(--secondary)", "v1": "var(--accent)", "v2": "green" },
-              "figures": [{ "id": "Fondation_Pescatore_in_Luxembourg_City.jpeg" }],
+              "from": 1871,
+              "to": 2020,
+              "text": "Le terme « vieillissement » désigne d'abord, au niveau individuel, la transformation naturelle - due à l'âge - de  l'organisme en modifiant les fonctions morphologiques, physiologiques et psychologiques individuelles. Au niveau de la collectivité, le terme  (qui semble avoir été utilisé pour la première fois par Alfred Sauvy – pour la France -  à la fin des années 1920) désigne l'augmentation de la proportion des personnes âgées pendant une période considérée. <br/><br/>Le phénomène collectif du vieillissement a des répercussions économiques et sociales importantes (la question du financement des retraites, p.ex.) a généralement une connotation négative, contrairement au vieillissement individuel considéré comme positif et qui est rattaché à l'allongement de la vie (c'est-à-dire l'augmentation structurelle de l'espérance de vie). L'espérance de vie des femmes passe de quelque 50 ans en 1900 à près de 85 ans en 2020. Celle des hommes de 46 à 80 ans dans la même période.",
               "dataset": "EsperanceDeVie",
               "datasetLayout": "Lines",
               "datasetKeys": ["v", "v1"],
-              "datasetColorKeys": { "v": "var(--secondary)", "v1": "red"},
+              "datasetColorKeys": { "v": "var(--dataset-t2-v)", "v1": "var(--dataset-t2-v1)"},
               "datasetExtent": [1900, 2021],
               "datasetLegend": "Espérance de vie à la naissance est le nombre moyen d'années qu'un groupe d'individus peut s'attendre à vivre à l'âge 0"
             },
             {
-              "from": 1880,
-              "to": 1940,
-              "text":  "L'augmentation de l'espérance de vie à la naissance et la diminution du taux de mortalité jusqu'à la deuxième guerre mondiale siècle sont largement imputables à la baisse de la mortalité infantile (décès de moins d'un an) et néotalale (décès de moins de 1 mois) liée aux progrès de la médecine en général et de l'obstétrique en particulier. <br /><br />A titre d'exemple, le taux de mortalité infantile est divisé par deux entre 1880 et 1940 en passant de quelque 15% à 7% au cours de cette période.",
+              "from": 1871,
+              "to": 2020,
+              "text": "On peut suivre le vieillissement au Luxembourg, en jetant un regard sur l'évolution de  proportion des personnes âgées de plus de 65 ans dans la population totale. La part des personnes âgées (65 ans et plus) a pratiquement triplée de 1871 (première année disponible pour ce type de données) en passant de quelque <b>5% en 1871 à environ 15% en 2020</b>. A l'inverse, la part de la classe d'âge la plus jeune (0-14 ans) a fortement diminué en passant d'environ 35% en 1871 à 16% en 2020. ",
               "availableKeys": ["v", "v1", "v2"],
-              "visibleKeys": ["v"],
-              "focusKeys": ["v"],
-              "dataset": "MortaliteInfantile",
-              "datasetLayout": "Lines",
-              "datasetKeys": ["v", "v1"],
-              "datasetColorKeys": { "v": "var(--secondary)", "v1": "red"},
-              "datasetLegend": "Taux de mortalité infantile et néonatale 1880-1940"
+              "visibleKeys": ["v2", "v"],
+              "focusKeys": ["v2", "v"],
+              "colorKeys": {"v2": "var(--t2-colorkeys-primary)", "v": "var(--t2-colorkeys-secondary)"},
+              "figures":[{"id": "ark_70795_mgrvsx_pages_8.jpg"}]
             },
             {
-              "from": 1945,
-              "to": 1990,
-              "text": "Après la deuxième guerre mondiale, la tendance à la baisse de la mortalité infantile continue, mais à partir des années 1980 un nouveau phénomène se confirme, à savoir une augmentation de l'espérance de vie des personnes âgées. A titre d'exemple, l'espérance de vie des hommes de 60 ans fut de 16 années en 1980, celle des femmes de 21 ans. Aujourd'hui, les hommes de 60 ans peuvent espérer vivre encore 23 ans et les femmes du même âge 26 ans.",
+              "from": 1871,
+              "to": 2020,
+              "text": "Les facteurs explicatifs du vieillissement d'une société (d'un pays) sont le « vieillissement par la base » (un rétrécissement de la base de la pyramide des âges) résultant d'une baisse de la natalité (elle-même notamment une conséquence de la baisse de la fécondité) et  d'un « vieillissement  par le sommet » résultant de la baisse de la mortalité à des âges avancés (et donc d'une augmentation de l'espérance de vie à ces même âges). Exprimée en chiffres absolus, la croissance de la classe d'âge des plus de 65 ans (on passe de 11.000 personnes âgées de 65 ans et plus en 1871 à près de 91 000 en 2020) est même plus saisissant qu'en termes relatifs." ,
               "availableKeys": ["v", "v1", "v2"],
-              "visibleKeys": ["v"],
-              "focusKeys": ["v"],
-              "dataset": "MortaliteInfantile",
-              "datasetLayout": "Lines",
-              "datasetKeys": ["v", "v1"],
-              "datasetColorKeys": { "v": "var(--secondary)", "v1": "red"},
-              "datasetLegend": "Taux de mortalité infantile et néonatale 1945-1990"
+              "visibleKeys": ["v2", "v"],
+              "focusKeys": ["v2", "v"],
+              "colorKeys": {"v2": "var(--t2-colorkeys-primary)", "v": "var(--t2-colorkeys-secondary)"}
             },
             {
-              "from": 1928,
-              "to": 1960,
-              "text": "En 1928, le démographe Alfred Sauvy invente le terme de « vieillissement de la population », concept avec une connotation péjorative. En effet, jusque là l'accroissement de la longévité était essentiellement considéré comme un phénomène positif. Au Grand-Duché, ce discours n'apparaît qu'à la fin des années 1960 notamment sous la plume de Jérôme Anders, chef du Service d'études et de documentation économiques, le prédécesseur du STATEC.",
+              "from": 1871,
+              "to": 2020,
+              "text": "Au Luxembourg, plus que dans d'autres pays, en ce qui concerne la question du « vieillissement », à côté de la natalité et de la mortalité, le phénomène migratoire joue un rôle important. La structure par âge de la population au Grand-Duché est marquée par une immigration plutôt jeune et en âge de travailler, augmentant les effectifs et les proportions dans les catégories des personnes d'âge moyen (c'est-à-dire l'âge où les personnes sont généralement économiquement actives). Ce qui conduit mécaniquement à un tassement des proportions dans les classes d'âge des personnes âgées (généralement inactives). " ,
+              "availableKeys": ["v", "v1", "v2"],
+              "visibleKeys": ["v1"],
+              "focusKeys": ["v1"],
+              "colorKeys": {"v2": "var(--t2-colorkeys-primary)", "v": "var(--t2-colorkeys-secondary)", "v1": "var(--t2-colorkeys-secondary)"}
+            },
+            {
+              "from": 1930,
+              "to": 2020,
+              "text": "Depuis les années 1930, la part de la classe d'âge des 15-64 est restée stable autour de 70% de la population. En termes absolus, l'augmentation des personnes se situant dans la classe d'âge actif est fulgurante ( de 118 000 personnes en 1871 à 435 000 en 2020). On remarque d'ailleurs que les augmentations les plus importantes chez les potentiellement actifs se situent dans les années de forte croissance économique (en gros de 1890 à 1930 et à partir des années 1970) qui sont également des périodes de forte immigration." ,
+              "availableKeys": ["v", "v1", "v2"],
+              "visibleKeys": ["v1"],
+              "focusKeys": ["v1"],
+              "colorKeys": {"v1": "var(--t2-colorkeys-secondary)"},
+              "dataset": "StructureAgeAbsolute",
+              "datasetLayout": "Lines",
+              "datasetKeys": ["v", "v1", "v2"],
+              "datasetColorKeys": { "v": "var(--dataset-t2-v)", "v1": "var(--dataset-t2-v1)"},
+              "datasetExtent": [1930, 2021],
+              "datasetLegend": "Nombre de personnes par classe d'âge"
+            },
+            {
+              "from": 1871,
+              "to": 1947,
+              "text": "C'est la fécondité – et  donc la natalité - qui permet en principe de limiter le « vieillissement », c'est-à-dire de maintenir ou de faire diminuer la proportion des personnes âgées dans la population totale (parfois qualifié de « rajeunissement «  de la population). Or, la fécondité est en recul pratiquement continu depuis la fin des 19ème siècle. En 1947, con compte environ 58 000 jeunes de 0 à 14 ans (une part de 20% dans la population totale) contre plus de 68 000 en 1871 (35% de la population totale).",
+              "availableKeys": ["v", "v1", "v2"],
+              "visibleKeys": ["v", "v1", "v2"],
+              "focusKeys": ["v"],
+              "colorKeys": { "v": "var(--secondary)", "v1": "var(--accent)", "v2": "var(--datakey-v)" }
+            },
+            {
+              "from": 1947,
+              "to": 2020,
+              "text": "A partir de la deuxième guerre mondiale, la part des jeunes dans la population continue à diminuer, mais la cadence du recul est moindre qu'avant la guerre  (20% en 1947 à 16% en 2020). Que la proportion des enfants dans la population du Luxembourg baisse ne signifie d'ailleurs pas qu'en termes absolus le nombre d'enfants et de jeunes recule (dans une société où le nombre absolu de personnes en âge de procréer augmente). C'est bien le contraire, après la deuxième guerre mondiale : on passe de  58 000 personnes âgées de 0-14 ans en 1947 et 100 000 en 2020. Cette évolution a des répercussions en termes d'infrastructures d'accueil pour enfants et d'infrastructures scolaires. ",
+              "availableKeys": ["v", "v1", "v2"],
+              "visibleKeys": ["v", "v1", "v2"],
+              "focusKeys": ["v"],
+              "colorKeys": { "v": "var(--secondary)", "v1": "var(--accent)", "v2": "var(--datakey-v)" }
+            },
+            {
+              "from": 1871,
+              "to": 1947,
+              "text": "A côté de la de la fécondité (natalité), et de l'évolution du groupe d'âge des personnes actives, le « vieillissement », c'est-à-dire l'évolution de la part des personnes âgées dans la population totale, résulte de diminution de la mortalité aux âges élevés. Jusqu'à la deuxième guerre mondiale, l'augmentation de l'espérance de vie à la naissance et la diminution générale du taux de mortalité) sont largement imputables à la baisse de la mortalité infantile (décès de moins d'un an) et néo-natale (décès de moins de 1 mois) liée aux progrès de la médecine en général et de l'obstétrique en particulier. A titre d'exemple, le nombre des décès des moins de 1 an passe d'environ 1 200 en moyenne annuelle au cours de la période 1901-1905 à quelque 330 par an au cours de la période 1936-1940. Le taux de mortalité infantile est divisé par deux entre 1880 et 1940  en passant de quelque 15% à 7% au cours de cette période. ",
               "availableKeys": ["v", "v1", "v2"],
               "visibleKeys": ["v2"],
               "focusKeys": ["v2"],
-              "colorKeys": { "v2": "green" }
+              "colorKeys": { "v": "var(--secondary)", "v1": "var(--accent)", "v2": "var(--datakey-v)" },
+              "dataset": "MortaliteInfantileAbsolute",
+              "datasetLayout": "Lines",
+              "datasetKeys": ["v"],
+              "datasetColorKeys": { "v":  "var(--secondary)"},
+              "datasetExtent": [1870, 2021],
+              "datasetLegend": "Mortalité infantile, 1871-2020"
             },
             {
-              "from": 2000,
+              "from": 1947,
               "to": 2020,
-              "text": "Au Luxembourg, les migrations (le plus souvent des personnes en âge de travailler … et à procréer) font que la part des personnes âgées n'atteint pas les mêmes proportions que dans d'autres pays. Il ya bien un \"vieillissement\" considérable si on prend en considération les nombres absolus (le nombre des 60 ans et plus passe de 17.372 en 1871 à 125.262 en 2020), mais le pourcentage des 60 ans et plus fut de 9% en 1871, il est de 20% aujourd'hui), ce qui fait d'ailleurs que le système luxembourgeois de sécurité sociale garde une certaine marge de manoeuvre.",
+              "text": "Après la deuxième guerre mondiale, la tendance à la baisse de la mortalité infantile continue (un taux de mortalité largement en-dessous de  10 pour mille aujourd'hui), mais un nouveau phénomène s'installe, à savoir une augmentation de l'espérance de vie des personnes âgées. C'est ce que l'on appelle le vieillissement par le haut de la pyramide des âges. A titre d'exemple,  l'espérance de vie des hommes de 60 ans fut de 14 ans juste après la deuxième guerre mondiale, celle des femmes de 17 ans. Aujourd'hui, les hommes de 60 ans peuvent espérer vivre encore 23 ans et les femmes du même âge 26 ans. En chiffres absolus, au Grand-Duché, le nombre de personnes âgées de 65 ans et plus passe de moins de 28 000 en 1947 à plus de 90 000 en 2020, soit un doublement en termes absolus",
               "availableKeys": ["v", "v1", "v2"],
-              "visibleKeys": ["v1", "v2"],
-              "focusKeys": [ "v1", "v2"],
-              "colorKeys": { "v2": "green", "v1": "var(--accent)" }
+              "visibleKeys": ["v2"],
+              "focusKeys": ["v2"],
+              "colorKeys": { "v": "var(--secondary)", "v1": "var(--accent)", "v2": "var(--datakey-v)" }
+            },
+            {
+              "from": 1947,
+              "to": 2020,
+              "text": "Une première approche « scientifique » du thème du vieillissement de la société luxembourgeoise peut être attribuée à Carlo Hemmer et elle date de 1948 (L'économie du Grand-Duché de Luxembourg t. 1, Les conditions naturelles et sociales, la production primaire : les industries extractives, la viticulture, l'agriculture, la sylviculture, 1948). C'est probablement une conséquence de la « dénatalité » des années de guerre.  Dans les années 1960, Jérôme Anders, alors chef du Service d'études et de documentation économiques, dont est issu le STATEC, s'est intéressé à la question. (Jérôme Anders, Le Troisième Âge et ses problèmes, d'Lëtzebuerger Land du 4.10.1968 ; Jérôme Anders, Pour une politique de la vieillesse, d'Letzebuerger Land, 28.3.1969). Anders appréhende le problème surtout d'un point de vue des intérêts des personnes âgées dont le nombre augmente de façon continue. La question de la structure par âge de la population ne semble moins primordiale à cette époque. A noter aussi la création de l'AMIPERAS (Amicale des personnes retraitées, âgées ou solitaires), association ayant pour but de défendre les intérêts des personnes âgées (une sorte de syndicat de cette catégorie de personnes) en 1963.",
+              "availableKeys": ["v", "v1", "v2"],
+              "visibleKeys": ["v2"],
+              "focusKeys": ["v2"],
+              "colorKeys": { "v": "var(--secondary)", "v1": "var(--accent)", "v2": "var(--datakey-v)" }
+            },
+            {
+              "from": 1980,
+              "to": 2020,
+              "text": "Du point de vue des structures de vie commune (familles, ménages), le vieillissement est synonyme de l'extension de ce que l'on appelle, du point de vue statistique, les ménages collectifs (foyers pour personnes âgées, maisons de soins, etc.). Par ailleurs, au Luxembourg, une nouvelle branche de la sécurité sociale est crée par la loi du 19 juin 1998, à savoir l'assurance-dépendance.",
+              "availableKeys": ["v", "v1", "v2"],
+              "visibleKeys": ["v2"],
+              "focusKeys": ["v2"],
+              "colorKeys": { "v2": "var(--datakey-v)" },
+              "figures": [{ "id": "Fondation_Pescatore_in_Luxembourg_City.jpeg" }]
+            },
+            {
+              "from": 2005,
+              "to": 2020,
+              "text": "L’espérance de vie en elle-même et le nombre d’années gagnées ne sont qu’un aspect du vieillissement individuel. La qualité de vie aux âges élevés joue un rôle au moins aussi important. Cette qualité de vie peut être mesurée indirectement par l’indicateur de l'espérance de vie en bonne santé, c'est-à-dire le nombre d'années qu'une personne peut compter vivre sans souffrir d'incapacité dans les gestes de la vie quotidienne ; il combine des informations sur la mortalité et la morbidité. En d’autres mots, l'indicateur « Années de Vie en Bonne Santé (AVBS) »  (ou EVSI, Espérance de Vie Sans Incapacité) mesure le nombre d'années qu'une personne à la naissance peut s'attendre à vivre en bonne santé.",
+              "availableKeys": ["v", "v1", "v2"],
+              "visibleKeys": ["v2"],
+              "focusKeys": ["v2"],
+              "colorKeys": { "v2": "var(--datakey-v)" }
+            },
+            {
+              "from": 2005,
+              "to": 2020,
+              "text": "L’espérance de vie des hommes à 65 ans (un homme peut espérer vivre en moyenne 19,2 ans à 65 ans) est plus faible que celle des femmes à 65 ans (22,4 ans). L’espérance de vie en bonne santé est beaucoup plus faible pour les hommes comme pour les femmes (10.6 ans pour les femmes et 10,1 ans pour les hommes à l’âge de 65 ans). L’écart entre hommes et femmes en ce qui concerne l’espérance de vie en bonne santé est moindre que pour l’espérance de vie en général. En outre l’espérance de vie en bonne santé ne semble pas orientée structurellement à la hausse, du moins si on se réfère aux 15 dernières années. ",
+              "availableKeys": ["v", "v1", "v2"],
+              "visibleKeys": ["v2"],
+              "focusKeys": ["v2"],
+              "colorKeys": { "v2": "var(--datakey-v)" }
             }
           ]
         }
