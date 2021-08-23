@@ -46,10 +46,10 @@ const MediaImage = ({
         width: '100%',
         margin: '0 auto',
       }}
-    >
-      {displayTitle && !!title.length && <h2 className="textContainerTitle">{title}</h2>}
+    > {displayTitle && !!title.length && <h2 className="textContainerTitle">{title}</h2>}
       <div className="MediaImage_aspectRatioBox relative" style={{
         height: media.isPortrait ? height : 0,
+        width: media.isPortrait ? height * media.aspectRatio : "auto",
         paddingTop: media.isPortrait
           ? 0
           : `${1/media.aspectRatio * 100}%`
