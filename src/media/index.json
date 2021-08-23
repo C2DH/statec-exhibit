@@ -1637,6 +1637,7 @@
       "isPortrait": false
     },
     "Fondation_Pescatore_in_Luxembourg_City.jpeg": {
+      "caption": "Fondation Pescatore, Luxembourg ville",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/Fondation_Pescatore_in_Luxembourg_City.medium-w.jpg",
@@ -2208,12 +2209,12 @@
       "aspectRatio": 0.81875,
       "isPortrait": true
     },
-    "l’état_civil_de_la_Ville_de_Luxembourg.png": {
+    "etat_civil_de_la_Ville_de_Luxembourg.png": {
       "caption": "Placeholder Caption",
       "provenance": "L'indépendance luxembourgeoise du 12. septembre 1891, no. 255 & 256",
       "resolutions": {
         "medium-w": {
-          "url": "/media/images/l’état_civil_de_la_Ville_de_Luxembourg.medium-w.jpg",
+          "url": "/media/images/etat_civil_de_la_Ville_de_Luxembourg.medium-w.jpg",
           "params": {
             "size": "medium-w",
             "width": 640,
@@ -2221,7 +2222,7 @@
           }
         },
         "medium-h": {
-          "url": "/media/images/l’état_civil_de_la_Ville_de_Luxembourg.medium-h.jpg",
+          "url": "/media/images/etat_civil_de_la_Ville_de_Luxembourg.medium-h.jpg",
           "params": {
             "size": "medium-h",
             "width": null,
@@ -2229,7 +2230,7 @@
           }
         },
         "large-w": {
-          "url": "/media/images/l’état_civil_de_la_Ville_de_Luxembourg.large-w.jpg",
+          "url": "/media/images/etat_civil_de_la_Ville_de_Luxembourg.large-w.jpg",
           "params": {
             "size": "large-w",
             "width": 1080,
@@ -2237,7 +2238,7 @@
           }
         },
         "large-h": {
-          "url": "/media/images/l’état_civil_de_la_Ville_de_Luxembourg.large-h.jpg",
+          "url": "/media/images/etat_civil_de_la_Ville_de_Luxembourg.large-h.jpg",
           "params": {
             "size": "large-h",
             "width": null,
@@ -2452,6 +2453,47 @@
       },
       "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAUCAIAAAAP9fodAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABtklEQVQ4yz2Uba6CQAxFZ/9rUgTkQ0BU9KkxmuhS3qGH0B9NO7237bQD6Xa73e/3z+dzOp2u1+s0TbjjOF4uF9y+74dhAIN+PB6/3+8bkkADfb1egP5Cns+nuTBMxCEG7vv9BolORVHked62LYnRh8Oh6zpscGSkCJWPx2MfQggA52m/34tGl2WJwQm5QHNS13VVVZxUIXUI5LTdbvHJCqFpGmlZllFBuwkho7atJXwD4DRoBgSJMMhNZVJjQKAA+KUaIBITsGAbcj6foZnIJk0BjQJpt9txJMFLU4cAA8SAL1MaMGjAZhq+HXI6hAByJA7MwaxCKNkxMfNBpiAuU8bw5g7QqSBLNWPObU0BDU2UvGUIFwPAyTxJHIuYVRoxt48BwK1yEfeEnidJwKu7SrfPm8S2F/NacFk3DhXIBNq3I9OR2KRXykNgzjQ47roLgea6oNEMSYFSwalaeZ6kfa8cW3eSNrYOcC07380lovHVPmVpRQhMR4C45+T0YNLnGAIBzSfHOW96s9kAxcCloEayDd+h2/NZ8iYJw8lCMLzYMkmLTCFAKcXo/UH4ma4PFe23z4f/D9VPSj62qA/0AAAAAElFTkSuQmCC",
       "aspectRatio": 0.9052083333333333,
+      "isPortrait": true
+    },
+    "ark_70795_mgrvsx_pages_8.jpg": {
+      "caption": "René Clesse, <a href='https://viewer.eluxemburgensia.lu/ark:70795/mgrvsx/pages/8/articles/DTL288?search=Amiperas' target='_blank'>L'Amiperas</a>, article paru dans le Lëtzebuerger land le 8 octobre 1982. L'Amiperas (Amicale des personnes retraitées, âgées ou solitaires) est créée en 1963 au Luxembourg.",
+      "provenance": "source <a href='https://viewer.eluxemburgensia.lu/ark:70795/mgrvsx/pages/8/articles/DTL288?search=Amiperas' target='_blank'>eluxemburgensia</a>",
+      "resolutions": {
+        "medium-w": {
+          "url": "/media/images/ark_70795_mgrvsx_pages_8.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/ark_70795_mgrvsx_pages_8.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/ark_70795_mgrvsx_pages_8.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 1080,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/ark_70795_mgrvsx_pages_8.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 960
+          }
+        }
+      },
+      "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAUCAIAAAAyZ5t7AAAACXBIWXMAAAsTAAALEwEAmpwYAAAB7ElEQVQoz0WTy44BURCG+zVtPIN4AMJCxy2ETkjYEJeIhYSF24Joxn3QbmNcBk8yX5/qydTipLrOX3/9VXVa+/6z+/3+o+x6vfJ5u93wX6/X8/nEWSwW2vl8Xq/X2+32U9nxeDRNs9/vT6fTXq9XKpUqlQrObDazoUTn8/mHMsuy2u12Pp/P5XLZbDYcDns8nmg02mw2NWhAAJ0pO51OhUIhmUwahlEul+v1Oj45JNvQ8XgMsakMMfBRF1Cr1ULYZDIB02g0tMPhIKURvlqtuKNWsVjE73Q6w+HwcrkIQMOzlNH44/GgWXpnAk9lBL+UkekIoAr9gePcKuOOnPf7DQ6izWaj0Qc4GoKJKZK53++5AMoVERSijWY0LqSt3W7HXDm5gwYyHDIJIhSMMyyg0DCy5XIJBxGI8cEhhlsbSqoIIMoJDhAnU1sqg4I4c7ShIkAWhsOMWBi7ZWrdbpcI0NFo9K9V6pIdDAbZZygUcrvdgUAAEMSOVumGukKg63o8HpdlslvkIZeazrZAIAsovq6MJwKuWq0OBgMK/guQxYKGI5FIgEilUj6fD7Q8IwfKNXwyJtIymUytVovFYi6Xy+/3SzUbyrTlEcoEIIhEIoYyr9ebTqcF6rTF3tkq62GT+DwgHD75hXhA8klnv+jJfi8BaHBYAAAAAElFTkSuQmCC",
+      "aspectRatio": 0.684375,
       "isPortrait": true
     }
   }
