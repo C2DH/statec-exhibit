@@ -96,6 +96,7 @@
       "datasetStructureAgeExtentv": "min: <b class='bold'>{{kMin, 2}}%</b> en {{tMin}}<br/> max: <b class='bold'>{{kMax, 2}}%</b> en {{tMax}}",
       "datasetStructureAgeExtentv1": "min: <b class='bold'>{{kMin, 2}}%</b> en {{tMin}}<br/> max: <b class='bold'>{{kMax, 2}}%</b> en {{tMax}}",
       "datasetStructureAgeExtentv2": "min: <b class='bold'>{{kMin, 2}}%</b> en {{tMin}}<br/> max: <b class='bold'>{{kMax, 2}}%</b> en {{tMax}}",
+      "datasetWeddingsDivorces": "",
       "hotspotLabel": "Bookmark"
     }
   }
