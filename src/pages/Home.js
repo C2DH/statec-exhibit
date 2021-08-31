@@ -6,7 +6,7 @@ import { useStore } from '../store'
 import { useCurrentWindowDimensions, useImage } from '../hooks'
 import { getIsMobileWithTablet } from '../logic/viewport'
 import { ChapterRoutes } from '../constants'
-import { ArrowUpRight } from 'react-feather'
+import { ArrowUpRight, ArrowDown } from 'react-feather'
 import '../styles/pages/home.scss'
 import ChapterCover from '../components/Chapter/ChapterCover'
 
@@ -37,35 +37,22 @@ const Home = () => {
   return (
     <div className="Home">
       <div className="absolute w-100 with-vertical-line" style={{zIndex: -1}}>
-      <ChapterCover height={height} cover={{ id: '0.landing.jpg'}} untitled/>
+      <ChapterCover height={isMobileWithTablet ? 600: height} cover={{ id: '0.landing.jpg'}} untitled/>
       </div>
       <a.div className="mw9 center flex flex-column justify-center items-center pa4 ph5-l" style={{
         opacity: props.opacity,
         height: props.height,
       }}>
-        <h1 className="f2 f1-m tc mv0 serif">
-          <span
-            style={{
-              color: 'var(--secondary)',
-              fontSize: isMobileWithTablet ? '16vw' : '8vw',
-            }}
-          >
-            {t('pagesHomeTitle')}
-          </span>
+        <h1 className="f2 f1-m tc mv0 serif Home_title">
+          <span dangerouslySetInnerHTML={{__html: t('pagesHomeTitle')}} />
         </h1>
-        <h2 className="fw1 lh-title tc mt3" style={{
-          fontSize: isMobileWithTablet ? '4vw' : '2vw'
-        }}>
+        <h2 className="fw1 lh-title tc mt3 Home_subheading">
           <span dangerouslySetInnerHTML={{__html: t('pagesHomeSubheading')}}/>
         </h2>
         <div
-          className="fw1 lh-title tc mt5"
-          style={{
-            color: 'var(--secondary)',
-            fontSize: isMobileWithTablet ? '1vw' : '1.5vw',
-          }}
+          className="fw1 lh-title tc mt5 Home_scrolldown"
         >
-          Scroll down to explore ↓{' '}
+          Scroll down to explore <ArrowDown />{' '}
         </div>
       </a.div>
       <div className="Home_paragraphsWrapper">

@@ -27,6 +27,7 @@
       "title": "Une croissance démographique exceptionnelle sur le long terme.",
       "paragraphs": [
         {
+          "className": "bigger",
           "from": 1840,
           "to": 1890,
           "text": "L'ensemble de la période allant de l'indépendance du Grand-Duché en 1839 jusqu'aux années 1890 est marquée par une croissance démographique relativement lente liée à une croissance économique hésitante et des conditions de vie qui restent précaires.",

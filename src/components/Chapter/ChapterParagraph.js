@@ -2,7 +2,7 @@ import React from 'react'
 import {ArrowRight, Eye} from 'react-feather'
 
 const ChapterParagraph = ({ paragraph, height=0, withFigures=false }) => (
-  <div className={`ChapterParagraph pa5 pr0-l ${withFigures ? 'pb3': ''}`}>
+  <div className={`ChapterParagraph pt4 pa5 pr0-l ${withFigures ? 'pb3': ''} ${paragraph.className || ''}`}>
     <p dangerouslySetInnerHTML={{
       __html: paragraph.text
     }}/>

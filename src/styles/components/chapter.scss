@@ -109,6 +109,10 @@
   }
 
 }
+
+.ChapterParagraph.bigger p{
+  font-size: 1.15rem;
+}
 .ChapterParagraphCover{
   transition: opacity .25s ease-in-out;
   opacity: .5;

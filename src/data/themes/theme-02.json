@@ -11,8 +11,13 @@
   },
   "introductions": [
     {
-      "text": "Au 19ème siècle, le taux de natalité (les naissances rapportées à la population) se tasse. Si le solde naturel (c'est-à-dire l'excédent des naissances sur les décès) reste positif, c'est grâce à la baisse de la mortalité due au progrès médical et sanitaire et à l'amélioration des conditions de vie (logement, régime alimentaire …). <br/><br/> Au 20ème siècle le solde naturel est globalement plus faible qu'au 19ème siècle, ce qui est dû à la une natalité peu dynamique, conséquence d'une fécondité (le nombre d'enfants par femme) en berne. Et il y a quelques périodes où même la baisse de la mortalité n'arrive pas à équilibrer cette tendance de la baisse de la natalité et où le solde naturel (excès des naissances sur les décès devient négatif). <br/><br/> Cette évolution peut être définie par le terme de « transition démographique ». Il s'agit d'un processus historique au cours duquel une population passe d'une situation démographique où  les taux de mortalité et de natalité sont élevés à un régime où le taux de mortalité, et ensuite le taux de natalité, sont faibles."
-
+      "text": "Au 19ème siècle, le taux de natalité (les naissances rapportées à la population) se tasse. Si le solde naturel (c'est-à-dire l'excédent des naissances sur les décès) reste positif, c'est grâce à la baisse de la mortalité due au progrès médical et sanitaire et à l'amélioration des conditions de vie (logement, régime alimentaire …). "
+    },
+    {
+      "text":"Au 20ème siècle le solde naturel est globalement plus faible qu'au 19ème siècle, ce qui est dû à la une natalité peu dynamique, conséquence d'une fécondité (le nombre d'enfants par femme) en berne. Et il y a quelques périodes où même la baisse de la mortalité n'arrive pas à équilibrer cette tendance de la baisse de la natalité et où le solde naturel (excès des naissances sur les décès devient négatif)."
+    },
+    {
+      "text": "<br/><br/> Cette évolution peut être définie par le terme de « transition démographique ». Il s'agit d'un processus historique au cours duquel une population passe d'une situation démographique où  les taux de mortalité et de natalité sont élevés à un régime où le taux de mortalité, et ensuite le taux de natalité, sont faibles."
     }
   ],
   "sections": [
@@ -323,7 +328,7 @@
               "focusKeys": ["v4"],
               "from": 1980,
               "to": 2020,
-              "text": "Pour soutenir la natalité et les familles, les aides familiales directes en espèces (allocations familiales) et indirectes, resp. en nature (structures d’accueil pour enfants, par exemple) sont conséquentes au Luxembourg dans la comparaison avec la plupart des autres pays européens. En 2010, les prestations de sécurité sociale en espèces dans le domaine de la fonction « enfants/familles » constituent 4% du PIB au Luxembourg, contre 2,2% en moyenne dans l’Union européenne. Depuis la part s’est un peu réduite au Grand-Duché (3.3% du PIB en 2018), mais une des raisons en est que les prestations en nature se sont accrues."
+              "text": "Pour soutenir la natalité et les familles, les aides familiales directes en espèces (allocations familiales) et indirectes, resp. en nature (structures d'accueil pour enfants, par exemple) sont conséquentes au Luxembourg dans la comparaison avec la plupart des autres pays européens. En 2010, les prestations de sécurité sociale en espèces dans le domaine de la fonction « enfants/familles » constituent 4% du PIB au Luxembourg, contre 2,2% en moyenne dans l'Union européenne. Depuis la part s'est un peu réduite au Grand-Duché (3.3% du PIB en 2018), mais une des raisons en est que les prestations en nature se sont accrues."
             },
             {
               "availableKeys": ["v4"],
@@ -331,7 +336,7 @@
               "focusKeys": ["v4"],
               "from": 1980,
               "to": 2020,
-              "text": "A partir des années 1980, la tendance à la baisse de la taille des ménages reprend. Les formes de cohabitation se diversifient et un phénomène nouveau se développe celle des personnes vivant seules. En 2011, 1/3 des ménages est constitué par des personnes seules, alors qu'en 1871, cette proportion de ménages d'une seule personne ne fut que de 3,7% et qu'en 1970, le pourcentage se situe autour de 15%. Les familles nombreuses deviennent rares. Ainsi, en 1900, la part des ménages de 6 personnes est encore de 12% de l'ensemble des ménages, alors qu'en 1981, le pourcentage correspondant n'est même pas de 3%. Evidemment, cette réduction de la taille moyenne des ménages est aussi une conséquence du vieillissement de la population (le veuvage se répand ...)." 
+              "text": "A partir des années 1980, la tendance à la baisse de la taille des ménages reprend. Les formes de cohabitation se diversifient et un phénomène nouveau se développe celle des personnes vivant seules. En 2011, 1/3 des ménages est constitué par des personnes seules, alors qu'en 1871, cette proportion de ménages d'une seule personne ne fut que de 3,7% et qu'en 1970, le pourcentage se situe autour de 15%. Les familles nombreuses deviennent rares. Ainsi, en 1900, la part des ménages de 6 personnes est encore de 12% de l'ensemble des ménages, alors qu'en 1981, le pourcentage correspondant n'est même pas de 3%. Evidemment, cette réduction de la taille moyenne des ménages est aussi une conséquence du vieillissement de la population (le veuvage se répand ...)."
             }
           ]
         }
@@ -342,11 +347,12 @@
       "modules": [
         {
           "title": "Espérance de vie et vieillissement",
+          "subheading": "Le terme « vieillissement » désigne d'abord, au niveau individuel, la transformation naturelle - due à l'âge - de  l'organisme en modifiant les fonctions morphologiques, physiologiques et psychologiques individuelles. Au niveau de la collectivité, le terme  (qui semble avoir été utilisé pour la première fois par Alfred Sauvy – pour la France -  à la fin des années 1920) désigne l'augmentation de la proportion des personnes âgées pendant une période considérée.",
           "paragraphs": [
             {
               "from": 1871,
               "to": 2020,
-              "text": "Le terme « vieillissement » désigne d'abord, au niveau individuel, la transformation naturelle - due à l'âge - de  l'organisme en modifiant les fonctions morphologiques, physiologiques et psychologiques individuelles. Au niveau de la collectivité, le terme  (qui semble avoir été utilisé pour la première fois par Alfred Sauvy – pour la France -  à la fin des années 1920) désigne l'augmentation de la proportion des personnes âgées pendant une période considérée. <br/><br/>Le phénomène collectif du vieillissement a des répercussions économiques et sociales importantes (la question du financement des retraites, p.ex.) a généralement une connotation négative, contrairement au vieillissement individuel considéré comme positif et qui est rattaché à l'allongement de la vie (c'est-à-dire l'augmentation structurelle de l'espérance de vie). L'espérance de vie des femmes passe de quelque 50 ans en 1900 à près de 85 ans en 2020. Celle des hommes de 46 à 80 ans dans la même période.",
+              "text": "Le phénomène collectif du vieillissement a des répercussions économiques et sociales importantes (la question du financement des retraites, p.ex.) a généralement une connotation négative, contrairement au vieillissement individuel considéré comme positif et qui est rattaché à l'allongement de la vie (c'est-à-dire l'augmentation structurelle de l'espérance de vie). L'espérance de vie des femmes passe de quelque 50 ans en 1900 à près de 85 ans en 2020. Celle des hommes de 46 à 80 ans dans la même période.",
               "dataset": "EsperanceDeVie",
               "datasetLayout": "Lines",
               "datasetKeys": ["v", "v1"],

@@ -6,9 +6,9 @@
 }
 
 .Home_stepChapterWrapper {
-  padding: 25vh 10px 25vh;
-  margin-left: 5vh;
-  margin-right: 5vh;
+  padding: 0px 10px 50px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 .Home_stepChapterWrapper a {
   text-decoration: none;
@@ -17,10 +17,46 @@
   text-decoration: underline;
 }
 
+.Home_title{
+  font-size: 3.4rem;
+  line-height: 1.25em;
+}
+.Home_subheading{
+  font-size: 1.5rem;
+}
+.Home_scrolldown{
+  font-size: 1rem;
+}
+.Home_paragraphsWrapper h2{
+  font-size: 1.25rem;
+  text-align: left;
+}
 // -m
 @media screen and (min-width: 30em) {
   .Home_paragraphsWrapper{
     margin: 10vh auto;
     width: 70%;
+  }
+  .Home_title{
+    font-size:  8vw;
+    line-height: 1em;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  .Home_subheading{
+    font-size: 2vw;
+    line-height: 1.5rem;
+  }
+  .Home_scrolldown{
+    font-size: 1.5vw;
+  }
+  .Home_paragraphsWrapper h2{
+    font-size: 2vw;
+    text-align: center;
+  }
+  .Home_stepChapterWrapper {
+   padding: 25vh 10px;
+    margin-left: 5vh;
+    margin-right: 5vh;
   }
 }

@@ -59,6 +59,9 @@ const ChapterStream = ({ numStartAt, modules = [], height, backgroundColor, onSt
           offset={0.5}
           threshold={.5}
         >
+          <Step data={i}>
+          {mod.subheading ? <h3 className="pl5 mt4 pr0-l mb0 bl">{mod.subheading}</h3> : <div />}
+          </Step>
           {mod.paragraphs.map((par, j) => {
             const paragraphId = getParagraphIdFromIndices(i+numStartAt,j)
             return (
