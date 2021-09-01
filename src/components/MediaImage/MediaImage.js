@@ -36,6 +36,20 @@ const MediaImage = ({
     }
   }
 
+  let aspectRatioBoxStyle = {
+    height: 0,
+    width: 'auto',
+    paddingTop: `${1/media.aspectRatio * 100}%`
+  }
+
+  if (media.isPortrait) {
+    const availableHeight = Math.min(height, width / media.aspectRatio)
+    aspectRatioBoxStyle = {
+      width: availableHeight * media.aspectRatio,
+      height: availableHeight
+    }
+  }
+
   return (
     <figure
       className='MediaImage'
@@ -47,13 +61,7 @@ const MediaImage = ({
         margin: '0 auto',
       }}
     > {displayTitle && !!title.length && <h2 className="textContainerTitle">{title}</h2>}
-      <div className="MediaImage_aspectRatioBox relative" style={{
-        height: media.isPortrait ? height : 0,
-        width: media.isPortrait ? height * media.aspectRatio : "auto",
-        paddingTop: media.isPortrait
-          ? 0
-          : `${1/media.aspectRatio * 100}%`
-      }}>
+      <div className="MediaImage_aspectRatioBox relative" style={aspectRatioBoxStyle}>
         <div className="absolute w-100 h-100 top-0 left-0" onClick={clickHandler}>
           <MediaImagePicture isLoading={isLoading} isPortrait={media.isPortrait} aspectRatio={media.aspectRatio} padding={padding} mediaBase64={mediaBase64} backgroundImage={backgroundImage} />
         </div>

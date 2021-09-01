@@ -2292,8 +2292,8 @@
       "isPortrait": true
     },
     "Image_Napoleon.jpg": {
-      "caption": "Image de Napoléon",
-      "provenance": "\"Napoleon I., gekrönt von der Allegorie der Zeit, schreibt den Code Civil (1833)\", Jean Baptiste Mauzaisse",
+      "caption": "Jean Baptiste Mauzaisse, \"Napoléon Ier couronné par le Temps, écrit le Code Civil\", 1883 ",
+      "provenance": "© RMN – musée du château de Malmaison / D. Arnaudet",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/Image_Napoleon.medium-w.jpg",
@@ -2374,7 +2374,7 @@
       "isPortrait": true
     },
     "manifestation_étudiants.jpg": {
-      "caption": "Photo manifestation étudiants finn ders années 1960 début des années 1970",
+      "caption": "Photo manifestation étudiants (fin des années 1960 / début des années 1970)",
       "provenance": "Tageblatt Lëtzebuerg, Claude Wolf, 26 . Septembre 2017",
       "resolutions": {
         "medium-w": {
@@ -2495,6 +2495,168 @@
       "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAUCAIAAAAyZ5t7AAAACXBIWXMAAAsTAAALEwEAmpwYAAAB7ElEQVQoz0WTy44BURCG+zVtPIN4AMJCxy2ETkjYEJeIhYSF24Joxn3QbmNcBk8yX5/qydTipLrOX3/9VXVa+/6z+/3+o+x6vfJ5u93wX6/X8/nEWSwW2vl8Xq/X2+32U9nxeDRNs9/vT6fTXq9XKpUqlQrObDazoUTn8/mHMsuy2u12Pp/P5XLZbDYcDns8nmg02mw2NWhAAJ0pO51OhUIhmUwahlEul+v1Oj45JNvQ8XgMsakMMfBRF1Cr1ULYZDIB02g0tMPhIKURvlqtuKNWsVjE73Q6w+HwcrkIQMOzlNH44/GgWXpnAk9lBL+UkekIoAr9gePcKuOOnPf7DQ6izWaj0Qc4GoKJKZK53++5AMoVERSijWY0LqSt3W7HXDm5gwYyHDIJIhSMMyyg0DCy5XIJBxGI8cEhhlsbSqoIIMoJDhAnU1sqg4I4c7ShIkAWhsOMWBi7ZWrdbpcI0NFo9K9V6pIdDAbZZygUcrvdgUAAEMSOVumGukKg63o8HpdlslvkIZeazrZAIAsovq6MJwKuWq0OBgMK/guQxYKGI5FIgEilUj6fD7Q8IwfKNXwyJtIymUytVovFYi6Xy+/3SzUbyrTlEcoEIIhEIoYyr9ebTqcF6rTF3tkq62GT+DwgHD75hXhA8klnv+jJfi8BaHBYAAAAAElFTkSuQmCC",
       "aspectRatio": 0.684375,
       "isPortrait": true
+    },
+    "1899-img332athenee.jpg": {
+      "caption": "L'Athénée, Luxembourg à la fin du 19ème siècle.",
+      "provenance": "",
+      "resolutions": {
+        "medium-w": {
+          "url": "/media/images/1899-img332athenee.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/1899-img332athenee.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/1899-img332athenee.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 1080,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/1899-img332athenee.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 960
+          }
+        }
+      },
+      "base64": "data:image/png;base64,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",
+      "aspectRatio": 1.5385416666666667,
+      "isPortrait": false
+    },
+    "Rusty-Brown.jpg": {
+      "resolutions": {
+        "medium-w": {
+          "url": "/media/images/Rusty-Brown.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/Rusty-Brown.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/Rusty-Brown.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 1080,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/Rusty-Brown.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 960
+          }
+        }
+      },
+      "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAERElEQVQ4y5VUWVCaVxT+n/vSyWMfOtPtIc1MuoydSdNk2jHG2DYuGTVqtRqtkogkLnGhaiQSjQtxQSUoYkQNIiC4IEJAhRRECKB1Q0FFq+ybIEsUZekfbezkpTP95t45557vfPfh3LkfEAAR/Ad+nz/g8/n9/uPtA3OQPD2CdAAMb+sggLfC0xv+C4F3E8Cy69g7DPr8vtfBILeqZb0UJZWL8tuIo9DqrfYe9bayd4hZ1jwgy3qkJ+WszPVh6jGLkAf7OrPN6QSUSuWq0bGtN+i9QUJbezJwBvsAHp6W+fXHF3M/Op+ceL2ysuLzH1PiPggpPncmJ+mzry6Gxr/3IS4PrjUZAemWSWu2bFns9v1DtcebmJoBSYyerDubcj/7Qiws8pv3d1iJ8PKyL3/JT0jLr0r7pPVxzA95zbmwXC6DAQi3LVbjrklvWtjR4Zcc05JXDNpIXtJ3EVdDYtPu1pSXQmLP8l7QLv18s64OTW2vTYr49PyliBpk7SiZAghLUgnliPHmlikmprMSPfJTFk8idh8EdTqT024Dp6JQGzjytV62oJvJl6/rNrUWh8W0Z7e/GdjThExhbapQNCYVMoapLe3Xfu3OztU7D06manF68C9EDbTJLt5CG1OE40gHhPOeg0Of72hxRQXg434jwbJE7E4xZ6QLARsrCsFEhw3iyVaX2+VyUwVzTWQ2lSfH0Tl0kYI0JYVjnvMW1Xw+H4XrBYbxPUPj+J5OBDEeXnA5lFhwBXcnrPhWMvcP8ZxC+Wx8msQW4ihjCOTDrsExVGsrtATeL1h40oimv5QBdMHEDKmM1ZnVhMI9vgaBpt7ogESR793lsCcNNsczGguJqKqsQDbXowuyYbD0zJwsGHaIKxBLUBg8AIUUR4aei7v8RUNhNqqG0hYWQ0RWy5dXGawJgUgyLlkuf4Qqvg9HVFQVVVT/jqx/WNPY10/zeX0ymQAglt6IuXrhSXqRchS7xCWKsu+wyBSr2zsxyR/hTK6a7X3cmSoMobGX1s8VEzli1rLWYdjVqDY8+xpginBdXJe0a9gMBvf9R7oDx9pse6lCtbGu0bP6aNN4otG0K9m08Fd0AqV+VuPUq/80S8j6aYpZQgJo8beoDWiH8ZXbZfe6LQd+6xqqsiM9l4euICVncOIyVvB9R8Gge/9QPr9osLms7HJVx03j7EtV47fAcGEtE1VpcGgN2lX73t6+d4PV9LTv+9SetOSZkmhawj1mLfrk0bWaHZvN+hezeqUtUjtFULWGA8PY6qGU2/TODqtqxqaWi/FYcmFUdxQUG54yCI3CJWV0XkmYVihBsdmoc3k8TuXEGhWh4RPVjFpAI2MqWLwZwoB6cnSDz5d0UZfpz+dYjPmuoTkKeWlqZAFDnZVJQfHh0dGRzw/+5dfmdduGxLunB4L/F/8aTxAAbSZwYjpgEgBtyH9aOV7HVCDwrvxNJxj+Bva4a2lPeenwAAAAAElFTkSuQmCC",
+      "aspectRatio": 1,
+      "isPortrait": false
+    },
+    "rentenmauer-eluxemburgensia.png": {
+      "caption": "\"Mit dem Kopf durch die Rentenmauer\"",
+      "provenance": "Lëtzebuerger Land du 7 juin 2002, p.1,8-9",
+      "resolutions": {
+        "medium-w": {
+          "url": "/media/images/rentenmauer-eluxemburgensia.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/rentenmauer-eluxemburgensia.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/rentenmauer-eluxemburgensia.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 1080,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/rentenmauer-eluxemburgensia.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 960
+          }
+        }
+      },
+      "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAUCAYAAAC9BQwsAAAACXBIWXMAABcSAAAXEgFnn9JSAAACLklEQVQ4y02T3U5qUQyE9+v6Bl5zBQbwxkiC/IkQDCQkRFDAAAIKCKKoICAIig8yJ1+TxfGi6Vprd9qZtttbLpfabDbabrf6+voy4+6M+3q9Nvv8/NRisRAYbzwe6+PjQ7+/v5pOp/YBwG6308/Pz96+v7/3frVayRuNRhoOh3p5edH7+7tIRILJZLI33gaDgVmj0dDT05O8+/t7PTw8qN1um93e3ponoNlsqlarqdPpKJfLKZPJKJVKqdfryYMm/NEIBfijC8qvr6+mazab2Ttvzrzn52f1+31BGSqPj49GBf/3jJz5fG7J8QZEw1+NGO9Qgm6r1TIg2nmDiUc1NFKRrtXrdQWDQZ2fnyubzSqdTisajapUKuny8lKhUMg0e64xJEBrt9vVycmJfD6fksmkjo6OdHh4qHg8rouLC2sQGANCBQCi7+7uFA6HFQgEFIlEdHBwIL/fr9PTU6sMkEkYVUrTALp5c3NjVGOxmAUeHx+rWCxaxUQiYWwYlW0O+mgGI4EBoGq1qkKhYHOkwvX1tc7OzoxBPp+XRyUqMgpaTWfJSOd4wzMSugobFsGawwMBfCQIIHNyZxaERFRkqxjP29vbfyAevdBiVmSlYYABlMtlXV1dqVKp2Mw9FwxlpxXdAPnG0N3ekgizBaAaFQAS6BI4z54ChjLGGRYGJAsgElDdnTEHIgFzRj/3vUayEwjIrSFGIzDoQZctQ45HWbJhBLgzldyZKnj3x5DkH65fnagLWLrPAAAAAElFTkSuQmCC",
+      "aspectRatio": 0.721875,
+      "isPortrait": true
+    },
+    "PIB-depenses.png": {
+      "caption": "",
+      "provenance": "",
+      "resolutions": {
+        "medium-w": {
+          "url": "/media/images/PIB-depenses.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/PIB-depenses.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/PIB-depenses.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 1080,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/PIB-depenses.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 960
+          }
+        }
+      },
+      "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAUCAYAAABxnDbHAAAACXBIWXMAABcSAAAXEgFnn9JSAAADoklEQVRIx7WWiU8TQRTG+28b462oHAUkAoIXR0EQRIQY7yNGY6IRNEJL6QFUe2z36La7tN0en++97ZoVS73iJC8z+2bm/eZ7M51poFarodls/mSNRgNcVFVFKpWCoijI5XJSZzIZqbkvnU4jm81Km2v2c2kX043bRMCyLAG0g3K9v7+PUqkktW3bP9TlclnabNxmH5t/vt/q9YYLrVQqbQf41f5paRfHHyvAKzsM6p/wt8bqKJDAPkR1vFzPI8Bp+dfAfgCbt2CiCaxGvncRHSdvbOLqatJN72Eqf2W8P541W2q89DKoUq3j+ZqCocUYBm5v4/z0FqYf7f2Y3o5K6vXvKuBT4Qdt7RXx5H0O4ytJXLmXwMjdBLqmIzh1Myzg89SefLiLQLVapQkN38pbqWqli31+AI9zag2YloNoqoQXpGT1TUaCdU1FcCG0hSNjn9EzG0VwblsUniP/JYJ2eVBWKnvRUntQAX+rZhWl3Qg+RVWEHqcwupxA31wUF2e20E127NqGBObvwYUYTlzfRHDeBTL47OQBKB8krzDcLteQ1cpIZiysbxcw93QPg3d2EA71oHdiDRdmttF3KyoBeqkeuuMG6yZlrJJBx69t0qI6QB2nKntx/20GEw92ZOXDS3HJ/5mJMK16A323E4jM9mNw5iO14xggFQzoISgr81T+NrRRr2LhxRc5zrwPvOmXCcoBePUMDy4kCRrEQGgdvfNx9HvQ2b+ENusOHYS0TOqnQazOg7Lv3FT4P0AbNay8TssEDnZmMizpFaUUqOs7lNJL0D4flPeUgzGUxzKYQXKQPOi8e3q9n8yUm14Hy6++SgcH4TQPtQK5+0ppn09gM9SL4NQaum/F5CB56ngBpyk7PJZ/Mnyqj45vSBa4zft+mraMF3CWBE08aCl99C6HwcU4Ru8laWAM1+/vkoI4ncwEpTyGkZU9xJZGMba4geHlXRnH/ZeXEhhf3SFwTMay78rKDp3wKIbv8gWRxMhyktTGZNzAQhxzz764PxldL0DVCsirBhRVp1qXtme6UYSh5V2/Zkit5HWaY/h8BjTddPvIuK1S3JyiybdumFJbdtmFWlYJZbokTLOAomnSIjTx5elB5u9sNkOTqV0swia/bVuw6I1V6FHXNU1MUXLI5xUUDEP6KpUyvcNFlIqmzHGqFWLYdBfUaE87vJl8WTiOA4MC+S90r3gXC/ccfDM7lUCnV4QL/yuo02Xf7nH2+w57wNvZN2KdGr90ZJBOAAAAAElFTkSuQmCC",
+      "aspectRatio": 1.475,
+      "isPortrait": false
     }
   }
 }
