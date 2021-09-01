@@ -1,8 +1,15 @@
 import React from 'react'
 import {ArrowRight, Eye} from 'react-feather'
 
-const ChapterParagraph = ({ paragraph, height=0, withFigures=false }) => (
-  <div className={`ChapterParagraph pt4 pa5 pr0-l ${withFigures ? 'pb3': ''} ${paragraph.className || ''}`}>
+const ChapterParagraph = ({ paragraph, height=0, withFigures=false, subheading }) => (
+  <div className={`ChapterParagraph ${paragraph.className || ''}`}>
+  {subheading
+    ? <h3 className="pl5 mt4 pr0-l mb0 bl" dangerouslySetInnerHTML={{
+        __html: subheading
+      }} />
+    : null
+  }
+  <div className={`pt4 pa5 pr0-l ${withFigures ? 'pb3': ''}`}>
     <p dangerouslySetInnerHTML={{
       __html: paragraph.text
     }}/>
@@ -12,6 +19,7 @@ const ChapterParagraph = ({ paragraph, height=0, withFigures=false }) => (
       <ArrowRight size={14}/>
       <span className="ml1 mr1">{paragraph.to}</span>
     </div>
+  </div>
   </div>
 )
 
