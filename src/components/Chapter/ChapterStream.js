@@ -59,20 +59,21 @@ const ChapterStream = ({ numStartAt, modules = [], height, backgroundColor, onSt
           offset={0.5}
           threshold={.5}
         >
-          <Step data={i}>
-          {mod.subheading ? <h3 className="pl5 mt4 pr0-l mb0 bl">{mod.subheading}</h3> : <div />}
-          </Step>
           {mod.paragraphs.map((par, j) => {
             const paragraphId = getParagraphIdFromIndices(i+numStartAt,j)
             return (
               <Step data={paragraphId} key={paragraphId}>
                 <div className={`ChapterStream_paragraph ${activeStep.paragraphId === paragraphId ? 'active' : ''}`}>
                   <div className="anchor" id={`p${paragraphId}`}></div>
-                  <ChapterParagraph paragraph={par} height={height} withFigures={par.figures?.length}/>
+                  <ChapterParagraph
+                    paragraph={par} height={height}
+                    withFigures={par.figures?.length}
+                    subheading={j===0 && mod.subheading ? mod.subheading : null}
+                  />
                   {par.figures
                     ? par.figures.map((figure, i) => (
                       <div className="pb5 pl5 pr0" key={i}>
-                        <ChapterParagraphCover cover={figure} height={height/2} />
+                        <ChapterParagraphCover cover={figure} width={width - 64} height={height/2} />
                       </div>
                     ))
                     : null
