@@ -350,9 +350,13 @@
           "subheading": "Le terme « vieillissement » désigne d'abord, au niveau individuel, la transformation naturelle - due à l'âge - de  l'organisme en modifiant les fonctions morphologiques, physiologiques et psychologiques individuelles. Au niveau de la collectivité, le terme  (qui semble avoir été utilisé pour la première fois par Alfred Sauvy – pour la France -  à la fin des années 1920) désigne l'augmentation de la proportion des personnes âgées pendant une période considérée.",
           "paragraphs": [
             {
-              "from": 1871,
+              "from": 1900,
               "to": 2020,
               "text": "Le phénomène collectif du vieillissement a des répercussions économiques et sociales importantes (la question du financement des retraites, p.ex.) a généralement une connotation négative, contrairement au vieillissement individuel considéré comme positif et qui est rattaché à l'allongement de la vie (c'est-à-dire l'augmentation structurelle de l'espérance de vie). L'espérance de vie des femmes passe de quelque 50 ans en 1900 à près de 85 ans en 2020. Celle des hommes de 46 à 80 ans dans la même période.",
+              "availableKeys": ["v", "v1", "v2"],
+              "visibleKeys": ["v2", "v", "v1"],
+              "focusKeys": ["v2", "v", "v1"],
+              "colorKeys": {"v2": "var(--t2-colorkeys-primary)", "v": "var(--t2-colorkeys-secondary)", "v1":"var(--t2-colorkeys-tertiary)"},
               "dataset": "EsperanceDeVie",
               "datasetLayout": "Lines",
               "datasetKeys": ["v", "v1"],
@@ -365,9 +369,9 @@
               "to": 2020,
               "text": "On peut suivre le vieillissement au Luxembourg, en jetant un regard sur l'évolution de  proportion des personnes âgées de plus de 65 ans dans la population totale. La part des personnes âgées (65 ans et plus) a pratiquement triplée de 1871 (première année disponible pour ce type de données) en passant de quelque <b>5% en 1871 à environ 15% en 2020</b>. A l'inverse, la part de la classe d'âge la plus jeune (0-14 ans) a fortement diminué en passant d'environ 35% en 1871 à 16% en 2020. ",
               "availableKeys": ["v", "v1", "v2"],
-              "visibleKeys": ["v2", "v"],
+              "visibleKeys": ["v", "v1", "v2"],
               "focusKeys": ["v2", "v"],
-              "colorKeys": {"v2": "var(--t2-colorkeys-primary)", "v": "var(--t2-colorkeys-secondary)"},
+              "colorKeys": {"v2": "var(--t2-colorkeys-primary)", "v": "var(--t2-colorkeys-secondary)", "v1":"var(--t2-colorkeys-tertiary)"},
               "figures":[{"id": "ark_70795_mgrvsx_pages_8.jpg"}]
             },
             {
@@ -375,27 +379,27 @@
               "to": 2020,
               "text": "Les facteurs explicatifs du vieillissement d'une société (d'un pays) sont le « vieillissement par la base » (un rétrécissement de la base de la pyramide des âges) résultant d'une baisse de la natalité (elle-même notamment une conséquence de la baisse de la fécondité) et  d'un « vieillissement  par le sommet » résultant de la baisse de la mortalité à des âges avancés (et donc d'une augmentation de l'espérance de vie à ces même âges). Exprimée en chiffres absolus, la croissance de la classe d'âge des plus de 65 ans (on passe de 11.000 personnes âgées de 65 ans et plus en 1871 à près de 91 000 en 2020) est même plus saisissant qu'en termes relatifs." ,
               "availableKeys": ["v", "v1", "v2"],
-              "visibleKeys": ["v2", "v"],
+              "visibleKeys": ["v", "v1", "v2"],
               "focusKeys": ["v2", "v"],
-              "colorKeys": {"v2": "var(--t2-colorkeys-primary)", "v": "var(--t2-colorkeys-secondary)"}
+              "colorKeys": {"v2": "var(--t2-colorkeys-primary)", "v": "var(--t2-colorkeys-secondary)", "v1":"var(--t2-colorkeys-tertiary)"}
             },
             {
               "from": 1871,
               "to": 2020,
               "text": "Au Luxembourg, plus que dans d'autres pays, en ce qui concerne la question du « vieillissement », à côté de la natalité et de la mortalité, le phénomène migratoire joue un rôle important. La structure par âge de la population au Grand-Duché est marquée par une immigration plutôt jeune et en âge de travailler, augmentant les effectifs et les proportions dans les catégories des personnes d'âge moyen (c'est-à-dire l'âge où les personnes sont généralement économiquement actives). Ce qui conduit mécaniquement à un tassement des proportions dans les classes d'âge des personnes âgées (généralement inactives). " ,
               "availableKeys": ["v", "v1", "v2"],
-              "visibleKeys": ["v1"],
+              "visibleKeys": ["v", "v1", "v2"],
               "focusKeys": ["v1"],
-              "colorKeys": {"v2": "var(--t2-colorkeys-primary)", "v": "var(--t2-colorkeys-secondary)", "v1": "var(--t2-colorkeys-secondary)"}
+              "colorKeys": {"v2": "var(--t2-colorkeys-primary)", "v": "var(--t2-colorkeys-secondary)", "v1":"var(--t2-colorkeys-tertiary)"}
             },
             {
               "from": 1930,
               "to": 2020,
               "text": "Depuis les années 1930, la part de la classe d'âge des 15-64 est restée stable autour de 70% de la population. En termes absolus, l'augmentation des personnes se situant dans la classe d'âge actif est fulgurante ( de 118 000 personnes en 1871 à 435 000 en 2020). On remarque d'ailleurs que les augmentations les plus importantes chez les potentiellement actifs se situent dans les années de forte croissance économique (en gros de 1890 à 1930 et à partir des années 1970) qui sont également des périodes de forte immigration." ,
               "availableKeys": ["v", "v1", "v2"],
-              "visibleKeys": ["v1"],
+              "visibleKeys": ["v", "v1", "v2"],
               "focusKeys": ["v1"],
-              "colorKeys": {"v1": "var(--t2-colorkeys-secondary)"},
+              "colorKeys": {"v2": "var(--t2-colorkeys-primary)", "v": "var(--t2-colorkeys-secondary)", "v1":"var(--t2-colorkeys-tertiary)"},
               "dataset": "StructureAgeAbsolute",
               "datasetLayout": "Lines",
               "datasetKeys": ["v", "v1", "v2"],
@@ -410,7 +414,7 @@
               "availableKeys": ["v", "v1", "v2"],
               "visibleKeys": ["v", "v1", "v2"],
               "focusKeys": ["v"],
-              "colorKeys": { "v": "var(--secondary)", "v1": "var(--accent)", "v2": "var(--datakey-v)" }
+              "colorKeys": {"v2": "var(--t2-colorkeys-primary)", "v": "var(--t2-colorkeys-secondary)", "v1":"var(--t2-colorkeys-tertiary)"}
             },
             {
               "from": 1947,
@@ -419,14 +423,15 @@
               "availableKeys": ["v", "v1", "v2"],
               "visibleKeys": ["v", "v1", "v2"],
               "focusKeys": ["v"],
-              "colorKeys": { "v": "var(--secondary)", "v1": "var(--accent)", "v2": "var(--datakey-v)" }
+              "colorKeys": {"v2": "var(--t2-colorkeys-primary)", "v": "var(--t2-colorkeys-secondary)", "v1":"var(--t2-colorkeys-tertiary)"},
+              "figures": [{ "id": "1899-img332athenee.jpg"}]
             },
             {
               "from": 1871,
               "to": 1947,
               "text": "A côté de la de la fécondité (natalité), et de l'évolution du groupe d'âge des personnes actives, le « vieillissement », c'est-à-dire l'évolution de la part des personnes âgées dans la population totale, résulte de diminution de la mortalité aux âges élevés. Jusqu'à la deuxième guerre mondiale, l'augmentation de l'espérance de vie à la naissance et la diminution générale du taux de mortalité) sont largement imputables à la baisse de la mortalité infantile (décès de moins d'un an) et néo-natale (décès de moins de 1 mois) liée aux progrès de la médecine en général et de l'obstétrique en particulier. A titre d'exemple, le nombre des décès des moins de 1 an passe d'environ 1 200 en moyenne annuelle au cours de la période 1901-1905 à quelque 330 par an au cours de la période 1936-1940. Le taux de mortalité infantile est divisé par deux entre 1880 et 1940  en passant de quelque 15% à 7% au cours de cette période. ",
               "availableKeys": ["v", "v1", "v2"],
-              "visibleKeys": ["v2"],
+              "visibleKeys": ["v", "v1", "v2"],
               "focusKeys": ["v2"],
               "colorKeys": { "v": "var(--secondary)", "v1": "var(--accent)", "v2": "var(--datakey-v)" },
               "dataset": "MortaliteInfantileAbsolute",
@@ -434,14 +439,14 @@
               "datasetKeys": ["v"],
               "datasetColorKeys": { "v":  "var(--secondary)"},
               "datasetExtent": [1870, 2021],
-              "datasetLegend": "Mortalité infantile, 1871-2020"
+              "datasetLegend": "Mortalité infantile, 1871-2020. Source : STATEC"
             },
             {
               "from": 1947,
               "to": 2020,
               "text": "Après la deuxième guerre mondiale, la tendance à la baisse de la mortalité infantile continue (un taux de mortalité largement en-dessous de  10 pour mille aujourd'hui), mais un nouveau phénomène s'installe, à savoir une augmentation de l'espérance de vie des personnes âgées. C'est ce que l'on appelle le vieillissement par le haut de la pyramide des âges. A titre d'exemple,  l'espérance de vie des hommes de 60 ans fut de 14 ans juste après la deuxième guerre mondiale, celle des femmes de 17 ans. Aujourd'hui, les hommes de 60 ans peuvent espérer vivre encore 23 ans et les femmes du même âge 26 ans. En chiffres absolus, au Grand-Duché, le nombre de personnes âgées de 65 ans et plus passe de moins de 28 000 en 1947 à plus de 90 000 en 2020, soit un doublement en termes absolus",
               "availableKeys": ["v", "v1", "v2"],
-              "visibleKeys": ["v2"],
+              "visibleKeys": ["v", "v1", "v2"],
               "focusKeys": ["v2"],
               "colorKeys": { "v": "var(--secondary)", "v1": "var(--accent)", "v2": "var(--datakey-v)" }
             },
@@ -450,7 +455,7 @@
               "to": 2020,
               "text": "Une première approche « scientifique » du thème du vieillissement de la société luxembourgeoise peut être attribuée à Carlo Hemmer et elle date de 1948 (L'économie du Grand-Duché de Luxembourg t. 1, Les conditions naturelles et sociales, la production primaire : les industries extractives, la viticulture, l'agriculture, la sylviculture, 1948). C'est probablement une conséquence de la « dénatalité » des années de guerre.  Dans les années 1960, Jérôme Anders, alors chef du Service d'études et de documentation économiques, dont est issu le STATEC, s'est intéressé à la question. (Jérôme Anders, Le Troisième Âge et ses problèmes, d'Lëtzebuerger Land du 4.10.1968 ; Jérôme Anders, Pour une politique de la vieillesse, d'Letzebuerger Land, 28.3.1969). Anders appréhende le problème surtout d'un point de vue des intérêts des personnes âgées dont le nombre augmente de façon continue. La question de la structure par âge de la population ne semble moins primordiale à cette époque. A noter aussi la création de l'AMIPERAS (Amicale des personnes retraitées, âgées ou solitaires), association ayant pour but de défendre les intérêts des personnes âgées (une sorte de syndicat de cette catégorie de personnes) en 1963.",
               "availableKeys": ["v", "v1", "v2"],
-              "visibleKeys": ["v2"],
+              "visibleKeys": ["v", "v1", "v2"],
               "focusKeys": ["v2"],
               "colorKeys": { "v": "var(--secondary)", "v1": "var(--accent)", "v2": "var(--datakey-v)" }
             },
@@ -459,28 +464,30 @@
               "to": 2020,
               "text": "Du point de vue des structures de vie commune (familles, ménages), le vieillissement est synonyme de l'extension de ce que l'on appelle, du point de vue statistique, les ménages collectifs (foyers pour personnes âgées, maisons de soins, etc.). Par ailleurs, au Luxembourg, une nouvelle branche de la sécurité sociale est crée par la loi du 19 juin 1998, à savoir l'assurance-dépendance.",
               "availableKeys": ["v", "v1", "v2"],
-              "visibleKeys": ["v2"],
+              "visibleKeys": ["v", "v1", "v2"],
               "focusKeys": ["v2"],
-              "colorKeys": { "v2": "var(--datakey-v)" },
+              "colorKeys": {"v2": "var(--t2-colorkeys-primary)", "v": "var(--t2-colorkeys-secondary)", "v1":"var(--t2-colorkeys-tertiary)"},
               "figures": [{ "id": "Fondation_Pescatore_in_Luxembourg_City.jpeg" }]
             },
             {
               "from": 2005,
               "to": 2020,
-              "text": "L'espérance de vie en elle-même et le nombre d'années gagnées ne sont qu'un aspect du vieillissement individuel. La qualité de vie aux âges élevés joue un rôle au moins aussi important. Cette qualité de vie peut être mesurée indirectement par l'indicateur de l'espérance de vie en bonne santé, c'est-à-dire le nombre d'années qu'une personne peut compter vivre sans souffrir d'incapacité dans les gestes de la vie quotidienne ; il combine des informations sur la mortalité et la morbidité. En d'autres mots, l'indicateur « Années de Vie en Bonne Santé (AVBS) »  (ou EVSI, Espérance de Vie Sans Incapacité) mesure le nombre d'années qu'une personne à la naissance peut s'attendre à vivre en bonne santé.",
+              "text": "Depuis les années 1980, la question du financement des retraites revient régulièrement à l'ordre du jour, notamment dans les périodes de ralentissement économique (… pour disparaître de nouveau de l'agenda des discussions publiques en période de reprise économique et de nouvelle croissance de l'emploi). On a même pu parler de « Rentenmauer » au sujet des difficultés prévisibles de financement des retraites en cas de ralentissement structurel de l'économie (discours sur l'état de la nation en mai 1997 du premier ministre Jean-Claude Juncker).",
               "availableKeys": ["v", "v1", "v2"],
-              "visibleKeys": ["v2"],
+              "visibleKeys": ["v", "v1", "v2"],
               "focusKeys": ["v2"],
-              "colorKeys": { "v2": "var(--datakey-v)" }
+              "colorKeys": {"v2": "var(--t2-colorkeys-primary)", "v": "var(--t2-colorkeys-secondary)", "v1":"var(--t2-colorkeys-tertiary)"},
+              "figures": [{ "id": "rentenmauer-eluxemburgensia.png" }]
             },
             {
               "from": 2005,
               "to": 2020,
-              "text": "L'espérance de vie des hommes à 65 ans (un homme peut espérer vivre en moyenne 19,2 ans à 65 ans) est plus faible que celle des femmes à 65 ans (22,4 ans). L'espérance de vie en bonne santé est beaucoup plus faible pour les hommes comme pour les femmes (10.6 ans pour les femmes et 10,1 ans pour les hommes à l'âge de 65 ans). L'écart entre hommes et femmes en ce qui concerne l'espérance de vie en bonne santé est moindre que pour l'espérance de vie en général. En outre l'espérance de vie en bonne santé ne semble pas orientée structurellement à la hausse, du moins si on se réfère aux 15 dernières années. ",
               "availableKeys": ["v", "v1", "v2"],
-              "visibleKeys": ["v2"],
+              "visibleKeys": ["v", "v1", "v2"],
               "focusKeys": ["v2"],
-              "colorKeys": { "v2": "var(--datakey-v)" }
+              "colorKeys": {"v2": "var(--t2-colorkeys-primary)", "v": "var(--t2-colorkeys-secondary)", "v1":"var(--t2-colorkeys-tertiary)"},
+              "text": "Ce mur a pu être évité grâce à la croissance exceptionnelle – et pratiquement sans interruption - de la population en emploi (et, dans ce domaine, aux résidents il faut d'ailleurs ajouter les frontaliers) qui a conduit à une croissance tout aussi importante des contributions aux régimes de sécurité sociale et donc à leur santé financière. Malgré l'augmentation du nombre des retraités et un niveau moyen élevé des retraites et pensions, les dépenses de la fonction « pensions » des régimes de sécurité sociale restent à un niveau relativement faible comparé au potentiel économique actuel du pays. Le pourcentage de ces dépenses est d'un peu plus de 9% du PIB au Luxembourg, alors que, dans l'Union européenne, la moyenne dépasse les 12% du PIB.",
+              "figures": [{ "id": "PIB-depenses.png"}]
             }
           ]
         }
