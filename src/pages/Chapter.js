@@ -89,10 +89,12 @@ const Chapter = ({ match: { params: { chapterId }}}) => {
     : [{ dataset: chapter.dataset, modules: chapter.modules, numStartAt:0 }]
 
   const changeBackgroundColor = useStore(state => state.changeBackgroundColor)
+  const changeCurrentChapterStructure = useStore(state => state.changeCurrentChapterStructure)
 
   useEffect(() => {
     changeBackgroundColor(chapter.backgroundColor)
-  }, [chapter, changeBackgroundColor])
+    changeCurrentChapterStructure(chapterId, chapterSections)
+  }, [changeBackgroundColor, changeCurrentChapterStructure, chapter.backgroundColor, chapterId, chapterSections])
 
   const themeDataset = useMemo(() => {
     console.info(`Chapter loading dataset ${chapter.dataset}.json`)
@@ -100,6 +102,7 @@ const Chapter = ({ match: { params: { chapterId }}}) => {
   }, [chapter])
 
   console.info('Chapter #chapterHotspots n.', chapterHotspots.length, themeDataset)
+  console.info('Chapter #chapterSections',chapterSections)
   return (
     <div className="Chapter">
       <CurrentYearExplorer width={width} height={height}/>
