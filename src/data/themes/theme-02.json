@@ -104,9 +104,9 @@
           "title": "Mariages",
           "paragraphs": [
             {
-              "availableKeys": ["v1"],
-              "visibleKeys": ["v1"],
-              "focusKeys": ["v1"],
+              "availableKeys": ["v"],
+              "visibleKeys": ["v"],
+              "focusKeys": ["v"],
               "from": 1840,
               "to": 1875,
               "text": "Le nombre de mariages rapporté à la population – te taux de nuptialité - est élevé au milieu du 19ème siècle (autour de 7-8 par 1000 habitants en moyenne par année). Aujourd'hui ce taux est descendu à quelque 3 pour mille. Le taux de nuptialité n'est pas seulement dépendant de la propension intrinsèque de se marier, mais également des conditions de vie. Sans perspectives \"positives\", les mariages tendent à se tasser. Les variations du taux dans les années 1840 et 1850 sont liées aux conditions de vie difficiles et changeantes (selon les récoltes et la situation sanitaire, par exemple). Après les moments de crise, la nuptialité rebondit généralement.",
@@ -144,7 +144,7 @@
               "from": 1950,
               "to": 2020,
               "text": "Avec les années 1960, vient une époque où l'âge au premier mariage recule et où les modes de cohabitation se diversifient avec des formes peu codifiées (\"unions libres\") et plus récemment, en 2004 (loi du 9 juillet), l'union civile (PACS, pacte civil de solidarité). En juin 2014, le mariage pour couples du même sexe est légalement institué. De 2015 à 2019 on compte 353 mariages de couples du même sexe.",
-              "figures": [{ "id": "Luxembourg_Pride.jpg"}]
+              "figures": [{ "id": "Luxembourg_Pride.jpg"}, { "id": "wedding-bettel-wort-2015.jpg"}]
             },
             {
               "availableKeys": ["v"],

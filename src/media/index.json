@@ -806,7 +806,7 @@
     },
     "statec_019.jpg": {
       "caption": "",
-      "caption_prev": "Couverture du livre <a href='https://www.land.lu/page/book/5/FRE/index.html' target='_blank'><em>Cette colonie qui nous appartient un peu</em> - La communauté luxembourgeoise au Congo belge 1883-1960</a> de Régis Moes. Éditions d’Lëtzebuerger Land/Fondation Robert Krieps, 2012",
+      "caption_prev": "Couverture du livre <a href='https://www.land.lu/page/book/5/FRE/index.html' target='_blank'><em>Cette colonie qui nous appartient un peu</em> - La communauté luxembourgeoise au Congo belge 1883-1960</a> de Régis Moes. Éditions d'Lëtzebuerger Land/Fondation Robert Krieps, 2012",
       "provenance": "CEGES, Fonds André Cauvin, n°135693",
       "resolutions": {
         "medium-w": {
@@ -889,7 +889,7 @@
     },
     "statec_021.png": {
       "caption": "Vue de la ville de Luxembourg lors du démantèlement de la forteresse (1870), Nicolas Liez (1809-1892)",
-      "provenance": "Collection du Musée national d’histoire et d’art – Luxembourg",
+      "provenance": "Collection du Musée national d'histoire et d'art – Luxembourg",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/statec_021.medium-w.jpg",
@@ -930,7 +930,7 @@
     },
     "statec_021_orig.jpg": {
       "caption": "Vue de la ville de Luxembourg lors du démantèlement de la forteresse (1870), Nicolas Liez (1809-1892)",
-      "provenance": "Collection du Musée national d’histoire et d’art – Luxembourg",
+      "provenance": "Collection du Musée national d'histoire et d'art – Luxembourg",
       "resolutions": {
         "thumb-w": {
           "url": "/media/images/statec_021_orig.thumb-w.jpg",
@@ -1597,7 +1597,7 @@
     },
     "wedding-bettel-wort-2015.jpg": {
       "caption": "Mariage de Xavier Bettel, 2015",
-      "provenance": "Copyright: Guy Jallay/Luxemburger Wort/2015",
+      "provenance": "Copyright: Guy Jallay, Luxemburger Wort, 2015",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/wedding-bettel-wort-2015.medium-w.jpg",
@@ -1882,8 +1882,8 @@
       "isPortrait": false
     },
     "esch-strike-march-1921.jpeg": {
-      "caption": "La grève de mars 1921 à Esch-sur-Alzette: Jos Kieffer, président du BMIAV, harangue les ouvriers et les ouvrières rassemblés devant l’école du Brill.",
-      "provenance": "Archives de la Ville d’Esch, Fonds photographique",
+      "caption": "La grève de mars 1921 à Esch-sur-Alzette: Jos Kieffer, président du BMIAV, harangue les ouvriers et les ouvrières rassemblés devant l'école du Brill.",
+      "provenance": "Archives de la Ville d'Esch, Fonds photographique",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/esch-strike-march-1921.medium-w.jpg",
@@ -1964,8 +1964,8 @@
       "isPortrait": true
     },
     "Du_Luxembourg_en_Argentine.jpeg": {
-      "caption": "Placeholder Caption",
-      "provenance": "Placeholder Copyright",
+      "caption": "En 1889 la famille Kroelinger-Schmitz se joint à un projet de colonisation rurale en Argentine et s'établit à San Antonio de Iraola dans la Province de Buenos Aires. Le prêtre Nicolas Schwebag qui a accompagné les émigrants évoque régulièrement le devenir de la colonie dans des courriers au journal « Luxemburger Wort »",
+      "provenance": "Source: <a href='https://www.europeana.eu/en/item/2084002/contributions_3b0261e0_dc57_0136_e548_6eee0af4187d' target='_blank'>Europeana</a>",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/Du_Luxembourg_en_Argentine.medium-w.jpg",
@@ -2128,7 +2128,7 @@
       "isPortrait": true
     },
     "bulletin_familles_nombreuses_2.jpg": {
-      "caption": "Bulletin du recensement de la population de 1843 (commune d’Alscheid). Exemple d’une famille nombreuse",
+      "caption": "Bulletin du recensement de la population de 1843 (commune d'Alscheid). Exemple d'une famille nombreuse",
       "provenance": "Archives nationales, Recensements de la population",
       "resolutions": {
         "medium-w": {
@@ -2251,8 +2251,7 @@
       "isPortrait": true
     },
     "divorce_law.jpg": {
-      "caption": "Divorce Law of September 20, 1792",
-      "provenance": "Avocats BoucherStuckleTournier",
+      "caption": "Loi du 20 septembre 1792 sur le divorce en France",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/divorce_law.medium-w.jpg",
@@ -2333,7 +2332,7 @@
       "isPortrait": false
     },
     "statistique_le_divorce.jpg": {
-      "caption": "Statistiques concernant le divorce. Demande du Ministre d’Etat aux officiers de l’état civil, 1904",
+      "caption": "Statistiques concernant le divorce. Demande du Ministre d'Etat aux officiers de l'état civil, 1904",
       "provenance": "Archives nationales, Dossier J-057",
       "resolutions": {
         "medium-w": {
