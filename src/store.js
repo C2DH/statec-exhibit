@@ -1,10 +1,12 @@
 import create from 'zustand';
 
+
 export const useStore = create((set) => ({
   currentYear: null,
   currentDatum: null,
   currentHotspot: null,
   currentDataset: null,
+  currentChapterStructure: null,
   currentYearExplorerOpen: false,
   currentKeys: [],
   currentFocusKeys:[],
@@ -26,6 +28,12 @@ export const useStore = create((set) => ({
       currentFocusKeys: focusKeys
     }))
   },
+  changeCurrentChapterStructure: (chapterId, sections) => set({
+    currentChapterStructure: {
+      chapterId,
+      sections,
+    }
+  }),
   changeCurrentYearExplorerOpen: (isOpen) => {
     return set(state => ({
       currentYearExplorerOpen: isOpen
