@@ -9,6 +9,7 @@ import { ChapterRoutes } from '../constants'
 import { ArrowUpRight, ArrowDown } from 'react-feather'
 import '../styles/pages/home.scss'
 import ChapterCover from '../components/Chapter/ChapterCover'
+import ChapterQrCode from '../components/Chapter/ChapterQrCode'
 
 const Home = () => {
   const { t } = useTranslation()
@@ -106,6 +107,15 @@ const Home = () => {
           />
         </div>
       </div>
+      <ChapterQrCode isMobileWithTablet={isMobileWithTablet} chapterIndex={0}
+        style={{
+          position: 'fixed',
+          bottom: 20,
+          right: 20,
+          width: 75,
+          height: 75,
+        }}
+      />
     </div>
 
   )
