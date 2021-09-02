@@ -483,7 +483,7 @@
       "isPortrait": true
     },
     "statec_011.tif": {
-      "caption": "Distribution d'oeufs et de sucre dans la ville de Luxembourg pendant la Première Guerre mondiale suite à l'introduction du rationnement par le gouvernement.",
+      "caption": "Distribution d'œufs et de sucre dans la ville de Luxembourg pendant la Première Guerre mondiale suite à l'introduction du rationnement par le gouvernement.",
       "provenance": "© Photothèque de la Ville de Luxembourg/Théo Wirol",
       "resolutions": {
         "medium-w": {
@@ -1186,7 +1186,7 @@
       "isPortrait": true
     },
     "manif-1936-01-26.tif": {
-      "caption": "Double page dans la revue illustré AZ sur la manifestation de masse  du 12 javier 1936 de 40000 ouvriers pour imposer des augmentations de salaire et des conventions collectives dans l'industrie sidérurgique.",
+      "caption": "Double page dans la revue illustré AZ sur la manifestation de masse du 12 janvier 1936 de 40 000 ouvriers, pour imposer des augmentations de salaire et des conventions collectives dans l'industrie sidérurgique.",
       "provenance": "A-Z, Luxemburger illustrierte Wochenschrift, 26 janvier 1936",
       "resolutions": {
         "medium-w": {
@@ -1637,7 +1637,8 @@
       "isPortrait": false
     },
     "Fondation_Pescatore_in_Luxembourg_City.jpeg": {
-      "caption": "Fondation Pescatore, Luxembourg ville",
+      "caption": "Krzysztof Golik, \"Fondation Pescatore\", Luxembourg ville 2018",
+      "provenance": "Source: <a href='https://commons.wikimedia.org/wiki/File:Fondation_Pescatore_in_Luxembourg_City_02.jpg' target='_blank'>wikimedia commons</a>",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/Fondation_Pescatore_in_Luxembourg_City.medium-w.jpg",
@@ -2210,8 +2211,8 @@
       "isPortrait": true
     },
     "etat_civil_de_la_Ville_de_Luxembourg.png": {
-      "caption": "Placeholder Caption",
-      "provenance": "L'indépendance luxembourgeoise du 12. septembre 1891, no. 255 & 256",
+      "caption": "\"Renseignements variés\" dans <em>L'indépendance luxembourgeoise</em> du 12. septembre 1891, no. 255 & 256.",
+      "provenance": "Source: <a href='https://viewer.eluxemburgensia.lu/ark:70795/vjv0q7/pages/3/articles/DTL48?search=mariage'>Eluxemburgensia</a>",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/etat_civil_de_la_Ville_de_Luxembourg.medium-w.jpg",

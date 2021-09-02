@@ -56,7 +56,7 @@
       "tableOfContentsMobile": "Menu",
       "tableOfContents": "Table of Contents",
       "figcaptionLabel": "Source\u00a0:",
-      "datasetGlobalBalanceDetails": "Solde global, solde naturel, solde migratoire",
+      "datasetGlobalBalanceDetails": "Nombre de personnes par année",
       "datasetGlobalBalanceDetailsExtentv": "min: <b class='bold'>{{kMin, increment}}</b> personnes en {{tMin}}<br/> max: <b class='bold'>{{kMax, increment}}</b> personnes en {{tMax}}",
       "datasetGlobalBalanceDetailsExtentv1": "min: <b class='bold'>{{kMin, increment}}</b> personnes en {{tMin}}<br/> max: <b class='bold'>{{kMax, increment}}</b> personnes en {{tMax}}",
       "datasetGlobalBalanceDetailsExtentv2": "min: <b class='bold'>{{kMin, increment}}</b> personnes en {{tMin}}<br/> max: <b class='bold'>{{kMax, increment}}</b> personnes en {{tMax}}",

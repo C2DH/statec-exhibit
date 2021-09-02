@@ -14,7 +14,7 @@
       "text": "Au 19ème siècle, le taux de natalité (les naissances rapportées à la population) se tasse. Si le solde naturel (c'est-à-dire l'excédent des naissances sur les décès) reste positif, c'est grâce à la baisse de la mortalité due au progrès médical et sanitaire et à l'amélioration des conditions de vie (logement, régime alimentaire …). "
     },
     {
-      "text":"Au 20ème siècle le solde naturel est globalement plus faible qu'au 19ème siècle, ce qui est dû à la une natalité peu dynamique, conséquence d'une fécondité (le nombre d'enfants par femme) en berne. Et il y a quelques périodes où même la baisse de la mortalité n'arrive pas à équilibrer cette tendance de la baisse de la natalité et où le solde naturel (excès des naissances sur les décès devient négatif)."
+      "text":"Au 20ème siècle le solde naturel est globalement plus faible qu'au 19ème siècle, ce qui est dû à la une natalité peu dynamique, conséquence d'une fécondité (le nombre d'enfants par femme) en berne. Et il y a quelques périodes où même la baisse de la mortalité n'arrive pas à équilibrer cette tendance de la baisse de la natalité et où le solde naturel (l'excès des naissances sur les décès devient négatif)."
     },
     {
       "text": "<br/><br/> Cette évolution peut être définie par le terme de « transition démographique ». Il s'agit d'un processus historique au cours duquel une population passe d'une situation démographique où  les taux de mortalité et de natalité sont élevés à un régime où le taux de mortalité, et ensuite le taux de natalité, sont faibles."
@@ -52,7 +52,7 @@
               "availableKeys": ["v1", "v"],
               "visibleKeys": ["v1"],
               "focusKeys": ["v1"],
-              "text":"A partir des années 1880, la natalité commence à se tasser et la légère remontée des 1890 n'y change rien. Une chute importante est due à la première guerre mondiale (période de pénurie), mais l'évolution à la baisse de la natalité (qui commence vers le tournant des 19ème et 20ème siècle) est plus structurelle que conjoncturelle. Les bonnes conditions économiques des années 1920 semblent favoriser un rebond qui n'est cependant que passager. Puis la crise économique des années 1930 va de pair avec une nouvelle baisse de la natalité Finalement, la deuxième guerre mondiale n'est pas favorable à une reprise des naissances.",
+              "text":"A partir des années 1880, la natalité commence à se tasser et la légère remontée des 1890 n'y change rien. Une chute importante est due à la première guerre mondiale (période de pénurie), mais l'évolution à la baisse de la natalité (qui commence vers le tournant des 19ème et 20ème siècle) est plus structurelle que conjoncturelle. Les bonnes conditions économiques des années 1920 semblent favoriser un rebond qui n'est cependant que passager. Puis la crise économique des années 1930 va de pair avec une nouvelle baisse de la natalité. Finalement, la deuxième guerre mondiale n'est pas favorable à une reprise des naissances.",
               "figures": [{ "id": "HISAEZ000342V01_traite.jpg" }]
             },
             {
@@ -91,7 +91,7 @@
               "visibleKeys": ["v1", "v"],
               "focusKeys": ["v1","v"],
               "colorKeys": { "v1": "var(--secondary)", "v": "var(--datakey-v)" },
-              "text":"Le taux de natalité se stabilise au milieu des années 1970, puis augmente dans les années 1980. C'est le résultat d'un changement du comportement démographique (légère hausse de la fécondité), mais aussi au fait que la population immigrée est plutôt jeune et en état de procréer. Elle a par ailleurs une fécondité plus élevée que la population autochtone, du moins dans les années 1980. <br/> <br/> A partir du tournant des 20ème et 21me siècle, le taux de natalité (les naissances rapportés à la population) baisse à nouveau. Cela ne devrait cependant pas cacher que le nombre absolu de naissances est en croissance pratiquement continue depuis les années 1970 :  3 800 naissances en 1973 et 6 459 naissances en 2020. Ce phénomène n'est pas dû à une hausse structurelle durable de la fécondité, mais à la croissance générale de la population et notamment de la population jeune en âge de procréer."
+              "text":"Le taux de natalité se stabilise au milieu des années 1970, puis augmente dans les années 1980. C'est le résultat d'un changement du comportement démographique (légère hausse de la fécondité), mais aussi au fait que la population immigrée est plutôt jeune et en état de procréer. Elle a par ailleurs une fécondité plus élevée que la population autochtone, du moins dans les années 1980. <br/> <br/> A partir du tournant des 20ème et 21ème siècle, le taux de natalité (les naissances rapportés à la population) baisse à nouveau. Cela ne devrait cependant pas cacher que le nombre absolu de naissances est en croissance pratiquement continue depuis les années 1970 :  3 800 naissances en 1973 et 6 459 naissances en 2020. Ce phénomène n'est pas dû à une hausse structurelle durable de la fécondité, mais à la croissance générale de la population et notamment de la population jeune en âge de procréer."
             }
           ]
         }
@@ -240,7 +240,7 @@
               "colorKeys": {"v3": "var(--accent)"},
               "from": 2018,
               "to": 2020,
-              "text": "A partir de 2018, c'est essentiellement sur la base de la loi 27 juin 2018 (dont le projet remonte néanmoins à 2003) que les divorces sont prononcés. A partir de cette loi, le droit luxembourgeois ne connaît au fond plus que deux types de divorce: le divorce par consentement mutuel et le divorce pour rupture irrémédiable des relations conjugales, même si le divorce pour faute ( « pour cause déterminée ») est prévu dans quelques cas de figure rares."
+              "text": "A partir de 2018, c'est essentiellement sur la base de la loi 27 juin 2018 (dont le projet remonte néanmoins à 2003) que les divorces sont prononcés. A partir de cette loi, le droit luxembourgeois ne connaît au fond plus que deux types de divorce: le divorce par consentement mutuel et le divorce pour rupture irrémédiable des relations conjugales, même si le divorce pour faute ( « pour cause déterminée ») est prévu dans quelques rares cas de figure."
             },
             {
               "availableKeys": ["v3", "v1"],
@@ -505,7 +505,7 @@
               "visibleKeys": ["v", "v1", "v2"],
               "focusKeys": ["v2"],
               "colorKeys": {"v2": "var(--t2-colorkeys-primary)", "v": "var(--t2-colorkeys-secondary)", "v1":"var(--t2-colorkeys-tertiary)"},
-              "text": "L’espérance de vie des hommes à 65 ans (un homme peut espérer vivre en moyenne 19,2 ans à 65 ans) est plus faible que celle des femmes à 65 ans (22,4 ans). L’espérance de vie en bonne santé est beaucoup plus faible pour les hommes comme pour les femmes (10.6 ans pour les femmes et 10,1 ans pour les hommes à l’âge de 65 ans). L’écart entre hommes et femmes en ce qui concerne l’espérance de vie en bonne santé est moindre que pour l’espérance de vie en général. En outre l’espérance de vie en bonne santé ne semble pas orientée structurellement à la hausse, du moins si on se réfère aux 15 dernières années."
+              "text": "L'espérance de vie des hommes à 65 ans (un homme peut espérer vivre en moyenne 19,2 ans à 65 ans) est plus faible que celle des femmes à 65 ans (22,4 ans). L'espérance de vie en bonne santé est beaucoup plus faible pour les hommes comme pour les femmes (10.6 ans pour les femmes et 10,1 ans pour les hommes à l'âge de 65 ans). L'écart entre hommes et femmes en ce qui concerne l'espérance de vie en bonne santé est moindre que pour l'espérance de vie en général. En outre l'espérance de vie en bonne santé ne semble pas orientée structurellement à la hausse, du moins si on se réfère aux 15 dernières années."
             }
           ]
         }
