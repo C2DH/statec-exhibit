@@ -23,6 +23,7 @@
     "i18next": "^19.8.4",
     "moment": "^2.26.0",
     "react": "^16.13.0",
+    "react-bootstrap": "^1.6.1",
     "react-device-detect": "^1.12.1",
     "react-dom": "^16.13.0",
     "react-feather": "^2.0.9",

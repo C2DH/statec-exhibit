@@ -25,6 +25,7 @@ body {
 :root {
   --primary: #ffc09d;
   --secondary: #2b219f;
+  --tertiary: #103c20;
   --white: #ffffff;
   --accent: #d03a45;
   --dark: #2b219f;
@@ -52,6 +53,16 @@ body {
   --negative-spacer-10: -50px;
   --font-size-1: 10px;
   --font-size-2: 12px;
+  --t2-colorkeys-primary: #d03a45;
+  --t2-colorkeys-secondary: #2b219f;
+  --t2-colorkeys-tertiary: #357DED;
+  --t1-colorkeys-primary: #d03a45;
+  --t1-colorkeys-secondary: #2b219f;
+  --t1-colorkeys-tertiary: #357DED;
+  // graph in narrative
+  --dataset-t2-v: #1A1D1A;
+  --dataset-t2-v1: #E03616;
+  --dataset-t2-v2: #20A39E; // complemenrary
   // --accent
   --datakey-v: #d03a45;
   //

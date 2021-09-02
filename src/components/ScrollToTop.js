@@ -8,8 +8,9 @@ const ScrollToTop = () => {
     let timer;
     if ( hash === '' ) {
       window.scrollTo(0, 0);
-    } else if(hash.indexOf('#p') === 0) {
-      return;
+    // } else if(hash.indexOf('#p') === 0) {
+    //   return;
+    // } else {
     } else {
       timer = setTimeout(() => {
         window.dispatchEvent(new Event('resize'))

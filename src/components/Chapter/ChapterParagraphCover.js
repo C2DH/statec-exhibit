@@ -2,12 +2,13 @@ import React from 'react'
 import MediaImage from '../MediaImage'
 import {useHistory } from 'react-router-dom'
 
-const ChapterParagraphCover = ({cover, height=0}) => {
+const ChapterParagraphCover = ({cover, height=0, width=0}) => {
   const history = useHistory()
   return (
     <div className="ChapterParagraphCover">
       <MediaImage
         height={height}
+        width={width}
         id={cover.id}
         alt={cover.alt}
         caption={cover.caption}

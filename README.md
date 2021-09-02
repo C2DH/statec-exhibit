@@ -52,6 +52,7 @@ As an example, let's have a look at one of the current themes:
       "modules": [
         {
           "title": "Naissance: un taux de natalité en baisse sur deux cents ans",
+          "subheading": "Optional subheading to introduce the section with a bigger font",
           "paragraphs": [
             {
               "from": 1840,
