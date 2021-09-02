@@ -10,6 +10,7 @@ import ChapterWideParagraphs from '../components/Chapter/ChapterWideParagraphs'
 import ChapterStream from '../components/Chapter/ChapterStream'
 import ChapterFooter from '../components/Chapter/ChapterFooter'
 import ChapterVisualisations from '../components/Chapter/ChapterVisualisations'
+import ChapterQrCode from '../components/Chapter/ChapterQrCode'
 import '../styles/components/chapter.scss'
 
 const AvailableChapters = Object.freeze({
@@ -132,6 +133,15 @@ const Chapter = ({ match: { params: { chapterId }}}) => {
         paragraphs={chapter.conclusions || []}
       />
       <ChapterFooter isMobileWithTablet={isMobileWithTablet} chapterIndex={chapter.chapterIndex}/>
+      <ChapterQrCode isMobileWithTablet={isMobileWithTablet} chapterIndex={chapter.chapterIndex}
+        style={{
+          position: 'fixed',
+          bottom: 20,
+          right: 20,
+          width: 75,
+          height: 75,
+        }}
+      />
     </div>
   )
 }
