@@ -121,6 +121,7 @@ const Lines = ({
           scale={scaleX}
           numTicks={3}
           textColor={'var(--secondary)'}
+          tickFormat={(v) => v}
         />
         <TrendAxisLeftGraphics
           id={datasetId}

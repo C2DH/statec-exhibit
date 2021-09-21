@@ -28,6 +28,7 @@ class TrendAxisBottomGraphics extends React.Component {
       lineHeight = 15,
       fontSize = 12,
       tickHeight = 5,
+      tickFormat
     } = this.props;
     return (
       <g transform={`translate(${marginLeft}, ${marginTop})`}>
@@ -37,6 +38,7 @@ class TrendAxisBottomGraphics extends React.Component {
           scale={scale}
           numTicks={numTicks}
           label="Time"
+          tickFormat={tickFormat}
         >
           {(axis) => {
             const tickRotate = 0;
