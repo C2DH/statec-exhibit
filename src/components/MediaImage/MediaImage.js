@@ -23,9 +23,9 @@ const MediaImage = ({
   const { isLoading } = useImage(mediaUrl, 50);
   const backgroundImage = `url(${isLoading ? mediaBase64 : mediaUrl})`
   const mediaCaption = [
-    { text: caption || media?.caption, className: 'MediaImage_caption mt2' },
-    { text: media?.provenance, className:'MediaImage_provenance mt2' },
-    { text: media?.license, className:'MediaImage_license mt2'}
+    { text: caption || media?.caption, className: 'MediaImage_caption mt2 f6 pl2' },
+    { text: media?.provenance, className:'MediaImage_provenance mt2 pl2 f7' },
+    { text: media?.license, className:'MediaImage_license mt2 pl2 f7'}
   ].filter(({text}) => typeof text === 'string' && text.length)
     .map(({text, className=''}) => `<div class="${className}">${text}</div>`)
     .join('')
