@@ -11,7 +11,7 @@ const TableOfContents = ({ color='white' }) => {
   const currentChapterStructure = useStore(store => store.currentChapterStructure)
   return (
     <div className="TableOfContents h-100 pa2 pa5-l pa4-m">
-      <Link to="/" className="db mb4" style={{color}} replace>{t('Home')}</Link>
+      <Link to="/" className="db mb4" style={{color}} replace>{t('ChapterRouteIndex')}</Link>
       {ChapterRoutes.map((route, i) => (
         <React.Fragment key={i}>
         <Link className="no-underline" style={{color}} to={route.to}  replace>
