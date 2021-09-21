@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import MediaIndex from '../media/index.json'
 import { useURLSearchParams } from '../hooks'
 import MediaFigure from './MediaFigure'
+import '../styles/components/mediaViewer.scss'
+
 
 const MediaViewer = ({ color, width, height }) => {
   const qs = useURLSearchParams()
@@ -27,7 +29,7 @@ const MediaViewer = ({ color, width, height }) => {
           : null
         }
         {media.provenance
-          ?  <p dangerouslySetInnerHTML={{__html:media.provenance }}></p>
+          ?  <p style={{color}} dangerouslySetInnerHTML={{__html:media.provenance }}></p>
           : null
         }
       </figcaption>
