@@ -4,12 +4,12 @@ import {ArrowRight, Eye} from 'react-feather'
 const ChapterParagraph = ({ paragraph, height=0, withFigures=false, subheading }) => (
   <div className={`ChapterParagraph ${paragraph.className || ''}`}>
   {subheading
-    ? <h3 className="pl5 mt4 pr0-l mb0 bl" dangerouslySetInnerHTML={{
+    ? <h3 className="pl3 pr3 pl5-l mt4 pr0-l mb0 bl i" dangerouslySetInnerHTML={{
         __html: subheading
       }} />
     : null
   }
-  <div className={`pt4 pa5 pr0-l ${withFigures ? 'pb3': ''}`}>
+  <div className={`pa3 pt4-l pa5-l pr0-l ${withFigures ? 'pb3-l': ''}`}>
     <p dangerouslySetInnerHTML={{
       __html: paragraph.text
     }}/>

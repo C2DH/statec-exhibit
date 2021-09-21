@@ -37,7 +37,7 @@ const Header = () => {
 
   return (
     <>
-    <header className={`Header pl2 pr2 pl5-l pr5-l pl4-m pr4-m ${intersectionRatio < 1 ? 'active' : ''}`} style={{
+    <header className={`Header ph5-l ph3 ${intersectionRatio < 1 ? 'active' : ''}`} style={{
       backgroundColor,
     }}>
       <div className="Header_sideLinkWrapper w-100 flex items-center justify-space-between">
@@ -48,7 +48,7 @@ const Header = () => {
         <span className="db dn-ns">{t('tableOfContentsMobile')}</span>
         <span className="dn db-ns">{t('tableOfContents')}</span>
       </div>
-      <div>
+      <div className="Header_centerLink">
         <Link to={'/'}>{t('FramingLuxembourg')}</Link>
         {currentChapter
           ? <span>&nbsp;/&nbsp;{t(currentChapter.label)}</span>

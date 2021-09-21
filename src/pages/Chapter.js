@@ -42,7 +42,7 @@ const Section = ({ section, height, width, backgroundColor}) => {
         modules={section.modules}
         onStepChange={stepChangeHandler}
       />
-      <div style={{
+      <div className="Chapter_visualisationWrapper" style={{
         flexGrow: 1,
       }}>
         <ChapterVisualisations
