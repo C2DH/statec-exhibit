@@ -10,9 +10,11 @@ const About = ({ color='white' }) => {
 
       <h3 style={{color}}>Timeline</h3>
 
-      <p dangerouslySetInnerHTML={{ __html: t('AboutIntroduction')}} />
+      <section className="f4 f3-ns lh-copy">
+      <p  dangerouslySetInnerHTML={{ __html: t('AboutIntroduction')}} />
       <p dangerouslySetInnerHTML={{ __html: t('AboutConcept')}} />
       <p dangerouslySetInnerHTML={{ __html: t('AboutDevelopment')}} />
+      </section>
     </div>
   )
 }
