@@ -6,6 +6,7 @@ import Header from './components/Header'
 import Home from './pages/Home'
 import Chapter from './pages/Chapter'
 import TableOfContents from './components/TableOfContents'
+import About from './components/About'
 import MediaViewer from './components/MediaViewer'
 import Panel from './components/Panel'
 import { useStore } from './store'
@@ -16,7 +17,7 @@ const AppPanels = () => {
   return (
     <>
       <Panel name='about' left color={color}>
-        About page.
+        <About color={color}/>
       </Panel>
       <Panel name='table-of-contents' color={color}>
         <TableOfContents color={color}/>
