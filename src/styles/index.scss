@@ -1,5 +1,6 @@
 @import 'fonts';
 
+$fontFamilySans: 'HKGrotesk', Arial, sans-serif;
 * {
   box-sizing: border-box;
 }
@@ -11,7 +12,7 @@ body,
 }
 body {
   margin: 0;
-  font-family: Porpora, Arial, sans-serif;
+  font-family: $fontFamilySans;
   height: 100%;
   // same as --primary
   background-color: #ffc09d;
@@ -30,7 +31,7 @@ body {
   --accent: #d03a45;
   --dark: #2b219f;
   --font-family-serif: 'SneakyTimes', serif;
-  --font-family-sans: 'Porpora', Arial, sans-serif;
+  --font-family-sans: $fontFamilySans;
   --spacer-1: 5px;
   --spacer-2: 10px;
   --spacer-3: 15px;
@@ -93,11 +94,11 @@ a {
   color: var(--secondary);
 }
 .sans {
-  font-family: Porpora, Arial, sans-serif;
+  font-family: $fontFamilySans;
 }
 
 .bold{
-  font-family: Arial;
+  // font-family: Arial;
   font-weight: bold;
   // based on sans...
   font-size: inherit;

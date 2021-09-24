@@ -5,8 +5,7 @@ const ChapterQrCode = ({ isMobileWithTablet, chapterIndex, ...rest }) => {
     return null
   }
   return (
-    <div {...rest}>
-
+    <div className="ChapterQrCode" {...rest}>
       <img src={`/qrcode-${chapterIndex}.png`} alt='qr code'/>
     </div>
   )

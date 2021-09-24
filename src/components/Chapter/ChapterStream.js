@@ -45,13 +45,13 @@ const ChapterStream = ({ numStartAt, modules = [], height, backgroundColor, onSt
     <div className="ChapterStream" ref={ref}>
     {modules.map((mod, i) => (
       <div className="ChapterStream_module" key={i}>
-        <h2 className="pa5 pr0-l pt4 pb0 mv0 " style={{
+        <h2 className="pt1 pt3-m pa3 pa5-l pr0-l pt4-l pb0 pb0-l mv0" style={{
           position: 'sticky',
           zIndex:100,
           top: 50,
           background: backgroundColor,
         }}>
-          <span className="pb4 bb">{mod.title}</span>
+          <span className="pb4-l pb3-m pb2 bb">{mod.title}</span>
         </h2>
         <Scrollama
           onStepEnter={(e) => onStepEnter(e, i)}
@@ -91,7 +91,7 @@ const ChapterStream = ({ numStartAt, modules = [], height, backgroundColor, onSt
                         from={Array.isArray(par.datasetExtent) ? par.datasetExtent[0] : par.from}
                         to={Array.isArray(par.datasetExtent) ? par.datasetExtent[1]: par.to}
                       >
-                        <label className="db pl5 pv3 i" dangerouslySetInnerHTML={{__html: par.datasetLegend }} />
+                        <label className="db pl5 pv3 f6 i" dangerouslySetInnerHTML={{__html: par.datasetLegend }} />
                       </Dataset>
                     )
                     : null

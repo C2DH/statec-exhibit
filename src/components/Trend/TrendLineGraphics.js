@@ -1,6 +1,6 @@
 import React from 'react';
 import { curveMonotoneX, curveLinear } from '@vx/curve';
-import { AreaClosed, LinePath } from '@vx/shape';
+import { LinePath } from '@vx/shape';
 
 class TrendLineGraphics extends React.Component {
   shouldComponentUpdate(nextProps) {
@@ -16,9 +16,9 @@ class TrendLineGraphics extends React.Component {
       marginLeft,
       marginTop,
       values,
-      height,
+      // height,
       width,
-      fill,
+      // fill,
       scaleY,
       xProp='x',
       yProp='y',

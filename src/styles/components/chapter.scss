@@ -68,12 +68,8 @@
     display: block;
     // border-bottom: 1px solid;
   }
-  h2:before{
-    position: absolute;
-    z-index: -1;
-    top: 50%;
-    margin-top: -18px;
-    margin-left: -38px;
+  h2 > span:before{
+    margin-right: 10px;
     color: var(--secondary);
     content: counter(chapterStream_module);
     counter-increment: chapterStream_module;
@@ -86,19 +82,15 @@
     opacity: .5;
   }
   p:before{
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    text-indent: 0px;
-    margin-left: -40px;
-    margin-top: 4px;
-    display: inline-block;
+    margin-right: 7px;
     border: 1px solid;
-    border-radius: 10px;
+    border-radius: 18px;
+    min-width: 8px;
+    height: 18px;
+    padding: 0 5px;
+    line-height: 15px;
+    display: inline-block;
     text-align: center;
-    width: 15px;
-    height: 15px;
-    line-height: 14px;
     font-size: 12px;
     color: var(--secondary);
     content: counter(chapterStream_paragraph);
@@ -228,8 +220,19 @@
   text-align: right;
   // border-right: 1px solid;
 }
+
+.ChapterQrCode, .Chapter_visualisationWrapper{
+  display: none;
+}
+
 // -m
 @media screen and (min-width: 30em) and (max-width: 60em) {
+  .Chapter_visualisationWrapper{
+    display: block;
+  }
+  .ChapterQrCode{
+    display: block;
+  }
   .ChapterStream{
     width: 40%;
   }
@@ -243,11 +246,42 @@
   }
   .ChapterWideParagraphs_text{
     font-size: 2rem;
-    width: 5rem;
+    width: 35rem;
   }
 }
 
 @media screen and (min-width: 60em) {
+  h2 > span:before{
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    margin-top: -18px;
+    margin-left: -38px;
+  }
+  .ChapterStream_paragraph p:before{
+    margin-right: 0;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    text-indent: 0px;
+    margin-left: -40px;
+    margin-top: 4px;
+    display: inline-block;
+    border: 1px solid;
+    border-radius: 20px;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    line-height: 19px;
+    font-size: 12px;
+    padding: 0;
+  }
+  .Chapter_visualisationWrapper{
+    display: block;
+  }
+  .ChapterQrCode{
+    display: block;
+  }
   .ChapterStream{
     width: 30%;
   }

@@ -205,9 +205,14 @@ const TrendPointers = ({
           //   focusValuesExtents[i].kMax in
           // }
             return (
-              <div key={key}>
-                <h3 className="dib ma0">{t(`dataset${themeDatasetId}LegendValue${key}`, {from, to})}</h3>
-                <p className="mv0 " key={key} dangerouslySetInnerHTML={{
+              <div key={key} className="ml3">
+                <h3 className="dib ma0 bb mb2" style={{
+                  color: colorKeys[key],
+                  borderColor: colorKeys[key],
+                  borderWidth: 2
+                }}>{t(`dataset${themeDatasetId}LegendValue${key}`, {from, to})}</h3>
+
+                <p className="mv0" key={key} dangerouslySetInnerHTML={{
                   __html: t(`dataset${themeDatasetId}Extent${key}`, {
                     kMin: focusValuesExtents[i].kMin,
                     kMax: focusValuesExtents[i].kMax,

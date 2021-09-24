@@ -61,7 +61,7 @@ const Points = ({
 
   // values is an array of dicts [{x:, ys:{'v': ... }}]
   const values = useValues({ data, scaleX, scaleY, availableKeys })
-  const numTicks = Math.round(svgWidth / 80)
+  // const numTicks = Math.round(svgWidth / 80)
 
   return (
     <div className="Points">

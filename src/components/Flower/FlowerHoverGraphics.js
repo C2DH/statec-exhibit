@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { scaleLinear } from 'd3-scale'
-import { to, animated, useSpring, config } from 'react-spring'
+import { animated, useSpring, config } from 'react-spring'
 
 
 const FlowerHoverGraphics = ({ data, radius, field, minYear, maxYear, onChange, displayLabel=false }) => {
@@ -8,7 +8,7 @@ const FlowerHoverGraphics = ({ data, radius, field, minYear, maxYear, onChange, 
   const [pointer, api] = useSpring(() => ({ x: 20, y: 20, theta: 0, config: config.stiff}))
 
   // in degrees, each datum
-  const dTheta = 360 / (data.length || 1)
+  // const dTheta = 360 / (data.length || 1)
 
   const scaleTheta = scaleLinear().domain([0, 360]).range([0, data.length])
 
