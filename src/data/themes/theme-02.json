@@ -29,7 +29,7 @@
           "paragraphs": [
             {
               "from": 1840,
-              "to": 1875,
+              "to": 1880,
               "availableKeys": ["v1", "v"],
               "visibleKeys": ["v1"],
               "focusKeys": ["v1"],
@@ -47,8 +47,8 @@
               "figures": [{ "id": "statec_002.png" }, { "id": "article_numbreuses_au_Lux.png" }]
             },
             {
-              "from": 1875,
-              "to": 1910,
+              "from": 1880,
+              "to": 1950,
               "availableKeys": ["v1", "v"],
               "visibleKeys": ["v1"],
               "focusKeys": ["v1"],
@@ -56,8 +56,8 @@
               "figures": [{ "id": "HISAEZ000342V01_traite.jpg" }]
             },
             {
-              "from": 1910,
-              "to": 1950,
+              "from": 1950,
+              "to": 2020,
               "availableKeys": ["v1", "v"],
               "visibleKeys": ["v1"],
               "focusKeys": ["v1"],
@@ -65,8 +65,8 @@
               "figures": [{ "id": "Planning_familial.png" }]
             },
             {
-              "from": 1950,
-              "to": 2020,
+              "from": 1960,
+              "to": 1980,
               "availableKeys": ["v1", "v"],
               "visibleKeys": ["v1", "v"],
               "focusKeys": ["v1","v"],
@@ -75,17 +75,17 @@
               "figures": [{ "id": "ark_70795_gq9f7z_pages_11.jpg" }]
             },
             {
-              "from": 1950,
-              "to": 2020,
+              "from": 1960,
+              "to": 1980,
               "availableKeys": ["v1", "v"],
               "visibleKeys": ["v1", "v"],
               "focusKeys": ["v1","v"],
               "colorKeys": { "v1": "var(--secondary)", "v": "var(--datakey-v)" },
-              "text": "C'est l'époque où certains, comme le directeur du STATEC de l'époque, Georges Als, évoquent la thèse du \"suicide démographique\" du Luxembourg. En fait, si le scénario de Calot, popularisé par Als, ne se réalise pas, c'est parce qu'au moment où le rapport est rédigé, la tendance de la natalité se réoriente déjà à la hausse et que l'immigration amène une population jeune en état de procréer.",
+              "text": "On évoque à ce moment-là la thèse du « suicide démographique » du Luxembourg. En fait, si le scénario de Calot, popularisé par le directeur du STATEC de l'époque, Georges Als, ne se réalise pas, c'est parce qu'au moment où le rapport est rédigé, la tendance de la natalité se réoriente déjà à la hausse et que l'immigration amène une population jeune en état de procréer.",
               "figures": [{"id": "forum-137-1992-le-mythe-du-suicide-demographique.png"}]
             },
             {
-              "from": 1970,
+              "from": 1980,
               "to": 2020,
               "availableKeys": ["v1", "v"],
               "visibleKeys": ["v1", "v"],
@@ -267,8 +267,8 @@
               "visibleKeys": ["v4"],
               "focusKeys": ["v4"],
               "from": 1840,
-              "to": 1864,
-              "text": "La « famille » et le « ménage » sont des notions plus complexes qu'il n'y paraît à première vue. D'une façon générale, la « famille » peut être définie par les liens de parenté. Dans un « ménage » (défini aujourd'hui en général l'occupation d'un même logement, du moins dans le domaine statistique) plusieurs « familles » (aujourd'hui on dirait plutôt des noyaux familiaux) peuvent cohabiter. En fait, les concepts sont utilisés souvent comme des synonymes alors qu'il y a des différences implicites. Et ils évoluent historiquement. <br /><br />De façon simplifiée, on passe d'abord des « feux » (notion utilisée pour des raisons fiscales sous l'Ancien Régime) dont la composition et le nombre de membres ne sont pas clairement déterminés aux « ménages ». Ceux-ci sont traités dans la langue courante comme synonyme des familles. Avec l'industrialisation et la \"modernisation\" sociale et sociétale, on passe de la \"famille nombreuse\" - généralement avec une progéniture prolifique et vivant fréquemment dans des ménages où cohabitent plusieurs générations (et, au 19ème siècle, souvent avec des \"aidants\" extérieurs à la famille) à la famille nucléaire avec peu d'enfants et vivant dans des ménages sans les grands-parents."
+              "to": 2020,
+              "text": "La « famille » et le « ménage » sont des notions plus complexes qu'il n'y paraît à première vue. D'une façon générale, la « famille » peut être définie par les liens de parenté. Dans un « ménage » (défini aujourd'hui en général l'occupation d'un même logement, du moins dans le domaine statistique) plusieurs « familles » (aujourd'hui on dirait plutôt des noyaux familiaux) peuvent cohabiter. En fait, les concepts sont utilisés souvent comme des synonymes alors qu'il y a des différences implicites. Et ils évoluent historiquement. De façon simplifiée, on passe d'abord des « feux » (notion utilisée pour des raisons fiscales sous l'Ancien Régime) dont la composition et le nombre de membres ne sont pas clairement déterminés aux « ménages ». Ceux-ci sont traités dans la langue courante comme synonyme des familles. Avec l'industrialisation et la \"modernisation\" sociale et sociétale, on passe de la \"famille nombreuse\" - généralement avec une progéniture prolifique et vivant fréquemment dans des ménages où cohabitent plusieurs générations (et, au 19ème siècle, souvent avec des \"aidants\" extérieurs à la famille) à la famille nucléaire avec peu d'enfants et vivant dans des ménages sans les grands-parents."
             },
             {
               "availableKeys": ["v4"],
@@ -282,7 +282,7 @@
             {
               "from": 1840,
               "to": 2020,
-              "text": "Une des raisons principales du rétrécissement de la taille des ménages est la baisse de la fécondité. Celle-ci peut notamment être mesurée par l'indicateur conjoncturel de fécondité qui est le nombre d'enfants qu'aurait une femme tout au long de sa vie, si les taux de fécondité observés l'année considérée à chaque âge demeuraient inchangés. L'indicateur de fécondité évolue de 4,64 en 1900 à 1.34 en 2020. La fécondité se situe aujourd'hui largement en-dessous du niveau permettant le renouvellement des générations. Ce qui explique (ensemble avec l'augmentation de l'espérance de vie) le vieillissement de la population.",
+              "text": "Une des raisons principales du rétrécissement de la taille des ménages est la baisse de la fécondité. Celle-ci peut notamment être mesurée par l'<a href='https://fr.wikipedia.org/wiki/Taux_de_fécondité' target='_blank'>indicateur conjoncturel de fécondité</a> qui est le nombre d'enfants qu'aurait une femme tout au long de sa vie, si les taux de fécondité observés l'année considérée à chaque âge demeuraient inchangés. L'indicateur de fécondité évolue de 4,64 en 1900 à 1,34 en 2020. La fécondité se situe aujourd'hui largement en-dessous du niveau permettant le renouvellement des générations. Ce qui explique (ensemble avec l'augmentation de l'espérance de vie) le vieillissement de la population.",
               "availableKeys": ["v4"],
               "visibleKeys": ["v4"],
               "focusKeys": ["v4"],
@@ -312,9 +312,9 @@
               "availableKeys": ["v4"],
               "visibleKeys": ["v4"],
               "focusKeys": ["v4"],
-              "from": 1980,
+              "from": 1945,
               "to": 2020,
-              "text": "A côté de la diffusion des moyens de contraception, une des mutations structurelles les plus importantes dans les ménages, resp. dans les familles, est celle de l'activité professionnelle des femmes. En 1960, sur 108 000 femmes âgées de 15 à 64 ans, il y en avait environ 33.000 qui avaient une activité professionnelle, en d'autres mots le taux d'activité des femmes fut de moins de 30% en 1960 contre 85% pour les hommes. Il se situe aujourd'hui à près de 69% pour les femmes. Par contre le taux d'activité des hommes s'est tassé à quelque 70%. Le recul de ce taux d'activité est dû au fait que les études s'allongent et que la sortie de la vie active est plus précoce.",
+              "text": "A côté de la diffusion des moyens de contraception, une des mutations structurelles les plus importantes dans les ménages, resp. dans les familles, est celle de l'activité professionnelle des femmes. En 1960, sur 108&nbsp;000 femmes âgées de 15 à 64 ans, il y en avait environ 33&nbsp;000 qui avaient une activité professionnelle, en d'autres mots le taux d'activité des femmes fut de moins de 30% en 1960 contre 85% pour les hommes. Il se situe aujourd'hui à près de 69% pour les femmes. Par contre le taux d'activité des hommes s'est tassé à quelque 70%. Le recul de ce taux d'activité est dû au fait que les études s'allongent et que la sortie de la vie active est plus précoce.",
               "dataset": "ActivityRate",
               "datasetLayout": "Lines",
               "datasetExtent": [1990, 2020],
@@ -328,7 +328,7 @@
               "focusKeys": ["v4"],
               "from": 1980,
               "to": 2020,
-              "text": "Pour soutenir la natalité et les familles, les aides familiales directes en espèces (allocations familiales) et indirectes, resp. en nature (structures d'accueil pour enfants, par exemple) sont conséquentes au Luxembourg dans la comparaison avec la plupart des autres pays européens. En 2010, les prestations de sécurité sociale en espèces dans le domaine de la fonction « enfants/familles » constituent 4% du PIB au Luxembourg, contre 2,2% en moyenne dans l'Union européenne. Depuis la part s'est un peu réduite au Grand-Duché (3.3% du PIB en 2018), mais une des raisons en est que les prestations en nature se sont accrues."
+              "text": "A partir des années 1980, la tendance à la baisse de la taille des ménages reprend. Les formes de cohabitation se diversifient et un phénomène nouveau se développe celle des personnes vivant seules. En 2011, 1/3 des ménages est constitué par des personnes seules, alors qu'en 1871, cette proportion de ménages d'une seule personne ne fut que de 3,7% et qu'en 1970, le pourcentage se situe autour de 15%. Les familles nombreuses deviennent rares. Ainsi, en 1900, la part des ménages de 6 personnes est encore de 12% de l'ensemble des ménages, alors qu'en 1981, le pourcentage correspondant n'est même pas de 3%. Evidemment, cette réduction de la taille moyenne des ménages est aussi une conséquence du vieillissement de la population (le veuvage se répand ...)."
             },
             {
               "availableKeys": ["v4"],
@@ -336,7 +336,7 @@
               "focusKeys": ["v4"],
               "from": 1980,
               "to": 2020,
-              "text": "A partir des années 1980, la tendance à la baisse de la taille des ménages reprend. Les formes de cohabitation se diversifient et un phénomène nouveau se développe celle des personnes vivant seules. En 2011, 1/3 des ménages est constitué par des personnes seules, alors qu'en 1871, cette proportion de ménages d'une seule personne ne fut que de 3,7% et qu'en 1970, le pourcentage se situe autour de 15%. Les familles nombreuses deviennent rares. Ainsi, en 1900, la part des ménages de 6 personnes est encore de 12% de l'ensemble des ménages, alors qu'en 1981, le pourcentage correspondant n'est même pas de 3%. Evidemment, cette réduction de la taille moyenne des ménages est aussi une conséquence du vieillissement de la population (le veuvage se répand ...)."
+              "text": "Pour soutenir la natalité et les familles, les aides familiales directes en espèces (allocations familiales) et indirectes, resp. en nature (structures d'accueil pour enfants, par exemple) sont conséquentes au Luxembourg dans la comparaison avec la plupart des autres pays européens. En 2010, les prestations de sécurité sociale en espèces dans le domaine de la fonction « enfants/familles » constituent 4% du PIB au Luxembourg, contre 2,2% en moyenne dans l'Union européenne. Depuis la part s'est un peu réduite au Grand-Duché (3,3% du PIB en 2018), mais une des raisons en est que les prestations en nature se sont accrues."
             }
           ]
         }
@@ -355,7 +355,7 @@
               "text": "Le phénomène collectif du vieillissement a des répercussions économiques et sociales importantes (la question du financement des retraites, p.ex.) a généralement une connotation négative, contrairement au vieillissement individuel considéré comme positif et qui est rattaché à l'allongement de la vie (c'est-à-dire l'augmentation structurelle de l'espérance de vie). L'espérance de vie des femmes passe de quelque 50 ans en 1900 à près de 85 ans en 2020. Celle des hommes de 46 à 80 ans dans la même période.",
               "availableKeys": ["v", "v1", "v2"],
               "visibleKeys": ["v2", "v", "v1"],
-              "focusKeys": ["v2", "v", "v1"],
+              "focusKeys": ["v1", "v", "v2"],
               "colorKeys": {"v2": "var(--t2-colorkeys-primary)", "v": "var(--t2-colorkeys-secondary)", "v1":"var(--t2-colorkeys-tertiary)"},
               "dataset": "EsperanceDeVie",
               "datasetLayout": "Lines",
@@ -410,7 +410,7 @@
             {
               "from": 1871,
               "to": 1947,
-              "text": "C'est la fécondité – et  donc la natalité - qui permet en principe de limiter le « vieillissement », c'est-à-dire de maintenir ou de faire diminuer la proportion des personnes âgées dans la population totale (parfois qualifié de « rajeunissement «  de la population). Or, la fécondité est en recul pratiquement continu depuis la fin des 19ème siècle. En 1947, con compte environ 58 000 jeunes de 0 à 14 ans (une part de 20% dans la population totale) contre plus de 68 000 en 1871 (35% de la population totale).",
+              "text": "C'est la fécondité – et  donc la natalité - qui permet en principe de limiter le «&nbsp;vieillissement&nbsp;», c'est-à-dire de maintenir ou de faire diminuer la proportion des personnes âgées dans la population totale (parfois qualifié de «&nbsp;rajeunissement&nbsp;»  de la population). Or, la fécondité est en recul pratiquement continu depuis la fin du 19ème siècle. En 1947, l'on compte environ 58&nbsp;000 jeunes de 0 à 14 ans (une part de 20% dans la population totale) contre plus de 68&nbsp;000 en 1871 (35% de la population totale).",
               "availableKeys": ["v", "v1", "v2"],
               "visibleKeys": ["v", "v1", "v2"],
               "focusKeys": ["v"],
@@ -424,7 +424,7 @@
               "visibleKeys": ["v", "v1", "v2"],
               "focusKeys": ["v"],
               "colorKeys": {"v2": "var(--t2-colorkeys-primary)", "v": "var(--t2-colorkeys-secondary)", "v1":"var(--t2-colorkeys-tertiary)"},
-              "figures": [{ "id": "1899-img332athenee.jpg"}]
+              "figures": [{ "id": "1899-img332athenee.jpg"}, {"id": "Athénée_de_Luxembourg_01.jpg"}]
             },
             {
               "from": 1871,
@@ -444,7 +444,7 @@
             {
               "from": 1947,
               "to": 2020,
-              "text": "Après la deuxième guerre mondiale, la tendance à la baisse de la mortalité infantile continue (un taux de mortalité largement en-dessous de  10 pour mille aujourd'hui), mais un nouveau phénomène s'installe, à savoir une augmentation de l'espérance de vie des personnes âgées. C'est ce que l'on appelle le vieillissement par le haut de la pyramide des âges. A titre d'exemple,  l'espérance de vie des hommes de 60 ans fut de 14 ans juste après la deuxième guerre mondiale, celle des femmes de 17 ans. Aujourd'hui, les hommes de 60 ans peuvent espérer vivre encore 23 ans et les femmes du même âge 26 ans. En chiffres absolus, au Grand-Duché, le nombre de personnes âgées de 65 ans et plus passe de moins de 28 000 en 1947 à plus de 90 000 en 2020, soit un doublement en termes absolus",
+              "text": "Après la deuxième guerre mondiale, la tendance à la baisse de la mortalité infantile continue (un taux de mortalité largement en-dessous de  10 pour mille aujourd'hui), mais un nouveau phénomène s'installe, à savoir une augmentation de l'espérance de vie des personnes âgées. C'est ce que l'on appelle le vieillissement par le haut de la pyramide des âges. A titre d'exemple, l'espérance de vie des hommes de 60 ans fut de 14 ans juste après la deuxième guerre mondiale, celle des femmes de 17 ans. Aujourd'hui, les hommes de 60 ans peuvent espérer vivre encore 23 ans et les femmes du même âge 26 ans. En chiffres absolus, au Grand-Duché, le nombre de personnes âgées de 65 ans et plus passe de moins de 28 000 en 1947 à plus de 90 000 en 2020, soit un triplement en termes absolus",
               "availableKeys": ["v", "v1", "v2"],
               "visibleKeys": ["v", "v1", "v2"],
               "focusKeys": ["v2"],
