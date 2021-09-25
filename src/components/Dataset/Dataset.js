@@ -18,7 +18,9 @@ const Dataset = ({
   keys=['v'],
   colorKeys={},
   from=StartYear, to=EndYear, height=100, width=100,
-  hidePercentage=false
+  hidePercentage=false,
+  displayPoints=true,
+  displayDashedLine=false,
 }) => {
   console.info('Dataset colorKeys', colorKeys)
   const Component = AvailableComponents[layout] || <div>Component not defined</div>
@@ -79,6 +81,8 @@ const Dataset = ({
             from={from}
             to={to}
             hidePercentage={hidePercentage}
+            displayPoints={displayPoints}
+            displayDashedLine={displayDashedLine}
           />
         )
         : null
@@ -107,7 +111,7 @@ const DebugDataset = ({
   colorKeys={},
   from=StartYear, to=EndYear,
   height=100, width=100,
-  hidePercentage, children
+  hidePercentage, displayDashedLine, children
 }) => {
   const { item, error, status } = useGetDataset({ url : `/datasets/${id}.json`, delay: 100})
   // console.info('DebugDataset', item, error, status)
@@ -122,7 +126,7 @@ const DebugDataset = ({
   } else if (status === StatusSuccess) {
     return (
       <>
-      <Dataset data={item} id={id} layout={layout} colorKeys={colorKeys} keys={keys} from={from} to={to} height={height} width={width} hidePercentage={hidePercentage}/>
+      <Dataset data={item} id={id} layout={layout} colorKeys={colorKeys} keys={keys} from={from} to={to} height={height} width={width} hidePercentage={hidePercentage} displayDashedLine={displayDashedLine}/>
       {children}
       </>
     )

@@ -16,6 +16,7 @@ const Lines = ({
   hidePercentage,
   width, height,
   displayPoints=true,
+  displayDashedLine=true,
   marginTop=50,
   marginBottom=20,
   marginLeft=50,
@@ -109,6 +110,7 @@ const Lines = ({
             strokeWidth={1}
             fill={'transparent'}
             displayPoints={displayPoints}
+            displayDashedLine={displayDashedLine}
             strokeColor={groupValues[i].color}
           />
         ))}

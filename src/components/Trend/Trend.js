@@ -39,6 +39,7 @@ const Trend = ({
   marginRight=50,
   marginTop=50,
   displayPoints=false,
+  displayDashedLine=false,
 }) => {
   const [pointer, setPointer] = useSpring(() => ({ x:0, y:0, xValue:0, config: config.stiff  }))
   const svgHeight = height - 100
@@ -196,6 +197,7 @@ const Trend = ({
               strokeWidth={1}
               fill={'transparent'}
               displayPoints={displayPoints}
+              displayDashedLine={displayDashedLine}
               strokeColor={strokeColor}
             />
           )

@@ -26,6 +26,7 @@ class TrendLineGraphics extends React.Component {
       strokeWidth=1,
       strokeColor='black',
       displayPoints=false,
+      displayDashedLine=false
     } = this.props;
     const x = (d) => d[xProp]
     const y = (d) => d[yProp]
@@ -54,7 +55,7 @@ class TrendLineGraphics extends React.Component {
           strokeWidth={strokeWidth}
           stroke={isVisible? strokeColor: 'var(--data-background)'}
           strokeOpacity={2}
-          strokeDasharray={displayPoints ? '3,5' : 'none'}
+          strokeDasharray={displayDashedLine ? '3,5' : 'none'}
           curve={displayPoints ? curveLinear : curveMonotoneX}
           strokeLinecap="round"
         />

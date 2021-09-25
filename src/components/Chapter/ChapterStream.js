@@ -86,6 +86,8 @@ const ChapterStream = ({ numStartAt, modules = [], height, backgroundColor, onSt
                         width={width}
                         keys={par.datasetKeys}
                         colorKeys={par.datasetColorKeys}
+                        displayPoints={par.datasetDisplayPoints}
+                        displayDashedLine={par.datasetDisplayDashedLine}
                         hidePercentage={par.datasetHidePercentage}
                         layout={par.datasetLayout}
                         from={Array.isArray(par.datasetExtent) ? par.datasetExtent[0] : par.from}

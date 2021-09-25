@@ -86,6 +86,7 @@ const ChapterVisualisations = ({
           </div>
           <Component
             displayPoints={displayPoints}
+            displayDashedLine={true}
             themeDatasetId={themeDatasetId}
             from={paragraph?.from}
             to={paragraph?.to}
