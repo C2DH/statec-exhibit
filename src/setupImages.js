@@ -27,6 +27,9 @@ fs.readdir(sourcePath, async(err, files) => {
     ...MediaIndex
   }
   for (let filename of files) {
+    if (filename === '.DS_Store') {
+      continue
+    }
     const sourceFilepath = path.join(sourcePath, filename)
     mediaIndex.images[filename] = {
       ...mediaIndex.images[filename],
