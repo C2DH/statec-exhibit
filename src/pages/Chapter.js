@@ -47,6 +47,7 @@ const Section = ({ section, height, width, backgroundColor}) => {
       }}>
         <ChapterVisualisations
           displayPoints={!!section.displayPoints}
+          displayDashedLine={!!section.displayDashedLine}
           numStartAt={section.numStartAt}
           themeDatasetId={sectionDataset.id}
           keys={Object.keys(sectionDataset.legend).filter(k => k !== 't')}

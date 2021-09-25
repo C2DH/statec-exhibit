@@ -258,6 +258,7 @@
     {
       "dataset": "FamilyComposition",
       "displayPoints": true,
+      "displayDashedLine": true,
       "modules": [
         {
           "title": "Composition de ménages",
@@ -341,9 +342,11 @@
           ]
         }
       ]
-    }, {
+    },
+    {
       "dataset":  "StructureAge",
       "displayPoints": true,
+      "displayDashedLine": true,
       "modules": [
         {
           "title": "Espérance de vie et vieillissement",

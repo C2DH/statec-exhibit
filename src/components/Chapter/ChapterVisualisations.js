@@ -13,6 +13,7 @@ const ChapterVisualisations = ({
   themeDatasetId='themeDatasetId',
   component='Trend',
   displayPoints=false,
+  displayDashedLine=false,
   keys=['v'], legend, data=[], modules=[], height=100, width=100, step,
   numStartAt=0,
   marginLeft=100
@@ -86,7 +87,7 @@ const ChapterVisualisations = ({
           </div>
           <Component
             displayPoints={displayPoints}
-            displayDashedLine={true}
+            displayDashedLine={displayDashedLine}
             themeDatasetId={themeDatasetId}
             from={paragraph?.from}
             to={paragraph?.to}
