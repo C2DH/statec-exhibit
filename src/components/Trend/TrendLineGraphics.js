@@ -54,6 +54,7 @@ class TrendLineGraphics extends React.Component {
           strokeWidth={strokeWidth}
           stroke={isVisible? strokeColor: 'var(--data-background)'}
           strokeOpacity={2}
+          strokeDasharray={displayPoints ? '3,5' : 'none'}
           curve={displayPoints ? curveLinear : curveMonotoneX}
           strokeLinecap="round"
         />
