@@ -9,33 +9,42 @@ const getHeight = () => window.innerHeight
     || document.documentElement.clientHeight
     || document.body.clientHeight;
 
-const getWindowDimensions = () => ({
-  width: getWidth(),
-  height: getHeight()
-})
+const getWindowDimensions = (isMobile) => {
+  const width = getWidth()
+  const height = getHeight()
+  return {
+    width,
+    height,
+    isPortrait: width <= height,
+    viewport: [width,height].join('x')
+  }
+}
 /*
   Based on
   https://dev.to/vitaliemaldur/resize-event-listener-using-react-hooks-1k0c
   consulted on 2021-02-26
 */
-export function useCurrentWindowDimensions({delay = 250} = {}) {
+export function useCurrentWindowDimensions({ isMobile, delay = 250} = {}) {
   let [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
+  const {height} = windowDimensions
   useEffect(() => {
     let timeoutId = null;
     const resizeListener = () => {
       clearTimeout(timeoutId);
       timeoutId = setTimeout(() => {
         const dims = getWindowDimensions()
-        console.info('useCurrentWindowDimensions updated.', dims)
+        console.info('useCurrentWindowDimensions updating:', dims, isMobile)
+        if (isMobile && height > 0) {
+          return
+        }
         setWindowDimensions(dims)
       }, delay);
     };
     window.addEventListener('resize', resizeListener);
-
     return () => {
       window.removeEventListener('resize', resizeListener);
     }
-  }, [delay])
+  }, [isMobile, delay, height])
   return windowDimensions;
 }
 

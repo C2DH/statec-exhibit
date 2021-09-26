@@ -3,7 +3,7 @@ import chapter01 from '../data/themes/theme-01.json'
 import chapter02 from '../data/themes/theme-02.json'
 import { useStore } from '../store'
 import { useCurrentWindowDimensions } from '../hooks'
-import { getIsMobileWithTablet } from '../logic/viewport'
+import { isMobile, getIsMobileWithTablet } from '../logic/viewport'
 import CurrentYearExplorer from '../components/CurrentYearExplorer'
 import ChapterCover from '../components/Chapter/ChapterCover'
 import ChapterWideParagraphs from '../components/Chapter/ChapterWideParagraphs'
@@ -19,7 +19,7 @@ const AvailableChapters = Object.freeze({
 })
 const DefaultThemeId = String(chapter01.id)
 
-const Section = ({ section, height, width, backgroundColor}) => {
+const Section = ({ section, height, width, backgroundColor, isMobile}) => {
   const [step, setStep] = useState(null)
 
   const sectionDataset = useMemo(() => {
@@ -42,23 +42,25 @@ const Section = ({ section, height, width, backgroundColor}) => {
         modules={section.modules}
         onStepChange={stepChangeHandler}
       />
-      <div className="Chapter_visualisationWrapper" style={{
-        flexGrow: 1,
-      }}>
-        <ChapterVisualisations
-          displayPoints={!!section.displayPoints}
-          displayDashedLine={!!section.displayDashedLine}
-          numStartAt={section.numStartAt}
-          themeDatasetId={sectionDataset.id}
-          keys={Object.keys(sectionDataset.legend).filter(k => k !== 't')}
-          legend={sectionDataset.legend}
-          data={sectionDataset.values || []}
-          width={width}
-          height={height}
-          modules={section.modules || []}
-          step={step}
-        />
-      </div>
+      {!isMobile ? (
+        <div className="Chapter_visualisationWrapper" style={{
+          flexGrow: 1,
+        }}>
+          <ChapterVisualisations
+            displayPoints={!!section.displayPoints}
+            displayDashedLine={!!section.displayDashedLine}
+            numStartAt={section.numStartAt}
+            themeDatasetId={sectionDataset.id}
+            keys={Object.keys(sectionDataset.legend).filter(k => k !== 't')}
+            legend={sectionDataset.legend}
+            data={sectionDataset.values || []}
+            width={width}
+            height={height}
+            modules={section.modules || []}
+            step={step}
+          />
+        </div>
+      ):null}
     </div>
   )
 }
@@ -67,8 +69,9 @@ const Chapter = ({ match: { params: { chapterId }}}) => {
   // get the available chapter if vailable; otherwise Chapter 1 ;)
   const chapter = AvailableChapters[String(chapterId)] ?? AvailableChapters[DefaultThemeId];
   // calcumlate height on Resize after a 250mx throttle
-  const { width, height } = useCurrentWindowDimensions()
   const isMobileWithTablet = getIsMobileWithTablet()
+
+  const { width, height } = useCurrentWindowDimensions({isMobile})
   // collect all hotspots in the theme (Chapter)
   // result in a list of objects containing year "t" and module index "idx",
   // e.g. { t: 1984, idx:2 }
@@ -126,6 +129,7 @@ const Chapter = ({ match: { params: { chapterId }}}) => {
           section={section}
           height={height}
           width={width}
+          isMobile={isMobile}
           backgroundColor={chapter.backgroundColor}
         />
       ))}
