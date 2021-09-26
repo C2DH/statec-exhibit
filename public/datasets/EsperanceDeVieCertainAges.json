@@ -1,0 +1,58 @@
+{
+  "id": "EsperanceDeVieCertainAges",
+  "title": "B344 Espérances de vie à certains âges",
+  "timeformat": "YYYY",
+  "legend": {
+    "t": "year",
+    "l": "periode concernée",
+    "v": "age",
+    "v1": "hommes",
+    "v2": "femmes"
+  },
+  "source": "STATEC",
+  "description": "Définition: Nombre moyen d'années qu'un groupe d'individus peut s'attendre à vivre",
+  "values": [
+    {
+      "t": 1948,
+      "l": "1946-48",
+      "v": 60,
+      "v1": 14.1,
+      "v2": 16.9
+    },
+    {
+      "t": 1982,
+      "l": "1980-82",
+      "v": 60,
+      "v1": 16.0,
+      "v2": 20.7
+    },
+    {
+      "t": 1992,
+      "l": "1990-92",
+      "v": 60,
+      "v1": 18.4,
+      "v2": 22.7
+    },
+    {
+      "t": 2002,
+      "l": "2000-02",
+      "v": 60,
+      "v1": 19.5,
+      "v2": 23.8
+    },
+    {
+      "t": 2012,
+      "l": "2010-12",
+      "v": 60,
+      "v1": 21.6,
+      "v2": 25.4
+    },
+    {
+      "t": 2019,
+      "l": "2017-2019",
+      "v": 60,
+      "v1": 22.6,
+      "v2": 26.1
+    }
+  ]
+}

@@ -6,6 +6,7 @@ import Compare from '../Compare'
 import Lines from '../Lines'
 import { useGetDataset } from '../../logic/dataset'
 import { Loader} from 'react-feather'
+import DownloadDataButton from '../DownloadDataButton'
 
 const AvailableComponents = Object.freeze({
   'Flowers': Flower,
@@ -101,6 +102,7 @@ const Dataset = ({
         ))
         : null
       }
+
     </div>
   )
 }
@@ -128,6 +130,9 @@ const DebugDataset = ({
       <>
       <Dataset data={item} id={id} layout={layout} colorKeys={colorKeys} keys={keys} from={from} to={to} height={height} width={width} hidePercentage={hidePercentage} displayDashedLine={displayDashedLine}/>
       {children}
+      <div className="pa3 pl5-l">
+      <DownloadDataButton label="" values={item.values} legend={item.legend} />
+      </div>
       </>
     )
   }

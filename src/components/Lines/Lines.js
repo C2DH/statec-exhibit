@@ -8,7 +8,6 @@ import TrendAxisLeftGraphics from '../Trend/TrendAxisLeftGraphics'
 import { StartYear, EndYear } from '../../constants'
 import { getClosestDatumIdxFromX } from '../../logic/dataset'
 
-
 const Lines = ({
   groupValues=[],
   minValue, maxValue,
@@ -145,7 +144,9 @@ const Lines = ({
             {d.legend}&nbsp;
           </label>
         ))}
+
       </figcaption>
+
     </figure>
     </div>
   )
