@@ -72,7 +72,7 @@ const ChapterStream = ({ numStartAt, modules = [], height, backgroundColor, onSt
                   />
                   {par.figures
                     ? par.figures.map((figure, i) => (
-                      <div className="pb5 pl5 pr0" key={i}>
+                      <div className="pb5 pl5-l pl3-m pr0" key={i}>
                         <ChapterParagraphCover cover={figure} width={width - 64} height={height/2} />
                       </div>
                     ))
@@ -93,7 +93,7 @@ const ChapterStream = ({ numStartAt, modules = [], height, backgroundColor, onSt
                         from={Array.isArray(par.datasetExtent) ? par.datasetExtent[0] : par.from}
                         to={Array.isArray(par.datasetExtent) ? par.datasetExtent[1]: par.to}
                       >
-                        <label className="db pl5 pv3 f6 i" dangerouslySetInnerHTML={{__html: par.datasetLegend }} />
+                        <label className="db pl5-l pl3 pv3 f6 i" dangerouslySetInnerHTML={{__html: par.datasetLegend }} />
                       </Dataset>
                     )
                     : null

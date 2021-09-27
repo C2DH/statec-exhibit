@@ -167,7 +167,7 @@
           "to": 1947,
           "visibleKeys": ["v1"],
           "colorKeys": { "v1": "var(--t1-colorkeys-primary)" },
-          "text": "La Deuxième Guerre mondiale a des répercussions importantes dans le domaine démographique. <br></br> La mortalité augmente (victimes directes de la guerre, conditions de subsistance difficiles), la natalité diminue. Entre 1935 et 1947, la population résidente passe de <b>297.000</b> à <b>291.000</b>.",
+          "text": "La Deuxième Guerre mondiale a des répercussions importantes dans le domaine démographique. <br> La mortalité augmente (victimes directes de la guerre, conditions de subsistance difficiles), la natalité diminue. Entre 1935 et 1947, la population résidente passe de <b>297&nbsp;000</b> à <b>291&nbsp;000</b>.",
           "figures": [{ "id": "statec_001.png" }]
         },
         {
@@ -175,7 +175,7 @@
           "to": 1990,
           "visibleKeys": ["v1"],
           "colorKeys": { "v1": "var(--t1-colorkeys-primary)" },
-          "text": "A partir du milieu des années 1960, le solde naturel diminue fortement. Ce n'est pas dû à des « accidents » de l'histoire (comme les crises économiques ou sanitaires ou les deux guerres mondiales), mais à une baisse structurelle importante de la fécondité (c'est-à-dire du nombre d'enfants par femme).<br/></br/>Le nombre de naissances passe de <b class='bold'>5 297</b> en 1965 à <b class='bold'>3 915</b> en 1976. <br/>En 1976, le solde naturel est de - 600 (c'est-à-dire qu'il y a 600 décès de plus que de naissances), alors qu'en 1965 le solde fut encore très positif (+ 1 250).",
+          "text": "A partir du milieu des années 1960, le solde naturel diminue fortement. Ce n'est pas dû à des « accidents » de l'histoire (comme les crises économiques ou sanitaires ou les deux guerres mondiales), mais à une baisse structurelle importante de la fécondité (c'est-à-dire du nombre d'enfants par femme).<br/>Le nombre de naissances passe de <b class='bold'>5 297</b> en 1965 à <b class='bold'>3 915</b> en 1976. <br/>En 1976, le solde naturel est de - 600 (c'est-à-dire qu'il y a 600 décès de plus que de naissances), alors qu'en 1965 le solde fut encore très positif (+ 1 250).",
           "dataset": "FertilityRatesByAge",
           "datasetLayout": "Lines",
           "datasetLegend": "Indicateur de fecondité du Luxembourg, Belgique et Portugal (1970-1990)<br/><a href='https://statistiques.public.lu/fr/methodologie/definitions/I/indicatconjonfecondite/index.html' target='_blank'>(en savoir plus sur cet indicateur)</a>",
@@ -201,7 +201,7 @@
           "focusKeys": ["v","v1","v2"],
           "colorKeys": { "v": "var(--t1-colorkeys-secondary)", "v1": "var(--t1-colorkeys-primary)", "v2": "var(--t1-colorkeys-tertiary)" },
           "dataset": false,
-          "text": "Pays pauvre au 19ème siècle (jusque dans les années 1890), le Luxembourg connaît structurellement des soldes migratoires négatifs, <em>c'est-à-dire des excès des départs sur les arrivées</em> comme la plupart des pays européens. <br/><br/> Au milieu du 19ème siècle, l'économie luxembourgeoise est encore une économie de subsistance et les variations de production agraire ont des répercussions directes et parfois douloureuses sur les conditions de vie des habitants qui partent nombreux à certaines périodes.",
+          "text": "Pays pauvre au 19ème siècle (jusque dans les années 1890), le Luxembourg connaît structurellement des soldes migratoires négatifs, <em>c'est-à-dire des excès des départs sur les arrivées</em> comme la plupart des pays européens. <br/> Au milieu du 19ème siècle, l'économie luxembourgeoise est encore une économie de subsistance et les variations de production agraire ont des répercussions directes et parfois douloureuses sur les conditions de vie des habitants qui partent nombreux à certaines périodes.",
           "figures": [{ "id": "redline_poster_TAGEBLATT_20070612.png" }]
         },
         {
@@ -275,7 +275,7 @@
           "to": 1921,
           "visibleKeys": ["v2"],
           "colorKeys": { "v2": "var(--t1-colorkeys-tertiary)" },
-          "text":"Avec le début de la guerre, de nombreux ouvriers étrangers quittent le pays. Vers les années 1917-1919, cette tendance se retourne (mais de façon modeste) et il y a de nouveau plus d'arrivées que de départs.  A la suite du traité de Versailles, le Luxembourg quitte le Zollverein et  doit se réorienter économiquement (le traité de l'UEBL est signé en 1921). Les capitaux allemands quittent le Luxembourg et sont remplacés par des capitaux belges et français. Les difficultés économiques et les tensions sociales qui les accompagnent pendant les années 1920-1921 se reflètent dans une nouvelle poussée de l'émigration.   Ce sont d'ailleurs souvent les travailleurs étrangers qui (re) partent et jouent le rôle de « soupape de sécurité » permettant notamment de maintenir le chômage à des niveaux assez faibles au Grand-Duché. La même chose se reproduit d'ailleurs à la suite de la crise mondiale de 1929.",
+          "text":"Avec le début de la guerre, de nombreux ouvriers étrangers quittent le pays. Vers les années 1917-1919, cette tendance se retourne (mais de façon modeste) et il y a de nouveau plus d'arrivées que de départs.  A la suite du traité de Versailles, le Luxembourg quitte le Zollverein et  doit se réorienter économiquement (le traité de l'UEBL est signé en 1921). Les capitaux allemands quittent le Luxembourg et sont remplacés par des capitaux belges et français. <br />Les difficultés économiques et les tensions sociales qui les accompagnent pendant les années 1920-1921 se reflètent dans une nouvelle poussée de l'émigration.   Ce sont d'ailleurs souvent les travailleurs étrangers qui (re) partent et jouent le rôle de « soupape de sécurité » permettant notamment de maintenir le chômage à des niveaux assez faibles au Grand-Duché. La même chose se reproduit d'ailleurs à la suite de la crise mondiale de 1929.",
           "figures": [{ "id": "esch-strike-march-1921.jpeg" }]
         },
         {
@@ -291,14 +291,14 @@
           "to": 1945,
           "visibleKeys": ["v2"],
           "colorKeys": { "v2": "var(--t1-colorkeys-tertiary)" },
-          "text": "La crise mondiale de 1929 fait que les départs (notamment des ouvriers étrangers, à majorité italienne) en 1930 et 1931 sont massifs de sorte que le solde migratoire annuel redevient très déficitaire. Passagèrement, avec une légère reprise économique dans les années 1936-1938, le nombre d'arrivées dépasse à nouveau les départs sans atteindre les sommets des années 1920. Mais avec l'entrée dans la deuxième guerre mondiale, le déficit migratoire au Luxembourg atteint son niveau le plus élevé depuis l'indépendance du pays.  A la sortie de la guerre, les arrivées commencent de nouveau à dépasser les départs et désormais les soldes resteront positifs, le Luxembourg devenant ainsi – globalement - un pays d'immigration. Mais le solde migratoire ne reflète pas la dynamique des migrations et on ne devrait pas oublier qu'à côté des arrivées, les départs atteignent également des proportions importantes."
+          "text": "La crise mondiale de 1929 fait que les départs (notamment des ouvriers étrangers, à majorité italienne) en 1930 et 1931 sont massifs de sorte que le solde migratoire annuel redevient très déficitaire. Passagèrement, avec une légère reprise économique dans les années 1936-1938, le nombre d'arrivées dépasse à nouveau les départs sans atteindre les sommets des années 1920. Mais avec l'entrée dans la deuxième guerre mondiale, le déficit migratoire au Luxembourg atteint son niveau le plus élevé depuis l'indépendance du pays.  <br/>A la sortie de la guerre, les arrivées commencent de nouveau à dépasser les départs et désormais les soldes resteront positifs, le Luxembourg devenant ainsi – globalement - un pays d'immigration. Mais le solde migratoire ne reflète pas la dynamique des migrations et on ne devrait pas oublier qu'à côté des arrivées, les départs atteignent également des proportions importantes."
         },
         {
           "from":1970,
           "to": 1985,
           "visibleKeys": ["v2"],
           "colorKeys": { "v2": "var(--t1-colorkeys-tertiary)" },
-          "text":"La première moitié des années 1970 voit un véritable « boom » de la sidérurgie allant de pair avec une croissance exceptionnelle de l'économie en général. Le recours à la main-d'œuvre étrangère s'intensifie à cette époque. Avec la première crise pétrolière de 1975 débute une période de ralentissement qui s'étend jusqu'au milieu des années 1980. Ce ralentissement va de pair avec une immigration en berne, sans pour autant que le solde migratoire devienne fortement négatif. En d'autres mots, l'immigration diminue sans s'essouffler totalement.",
+          "text":"La première moitié des années 1970 voit un véritable « boom » de la sidérurgie allant de pair avec une croissance exceptionnelle de l'économie en général. Le recours à la main-d'œuvre étrangère s'intensifie à cette époque. Avec la première crise pétrolière de 1975 débute une période de ralentissement qui s'étend jusqu'au milieu des années 1980. <br/>Ce ralentissement va de pair avec une immigration en berne, sans pour autant que le solde migratoire devienne fortement négatif. En d'autres mots, l'immigration diminue sans s'essouffler totalement.",
           "hotspots": [
             {
               "t": 1973,

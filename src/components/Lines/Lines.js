@@ -8,7 +8,6 @@ import TrendAxisLeftGraphics from '../Trend/TrendAxisLeftGraphics'
 import { StartYear, EndYear } from '../../constants'
 import { getClosestDatumIdxFromX } from '../../logic/dataset'
 
-
 const Lines = ({
   groupValues=[],
   minValue, maxValue,
@@ -136,7 +135,7 @@ const Lines = ({
           axisOffsetLeft={width - marginRight}
         />
       </svg>
-      <figcaption className="db pl5">
+      <figcaption className="db pl5-l pl3">
         {groupValues.map((d, i) => (
           <label key={i}>
             <span className="colorpoint dib mr1" style={{
@@ -145,7 +144,9 @@ const Lines = ({
             {d.legend}&nbsp;
           </label>
         ))}
+
       </figcaption>
+
     </figure>
     </div>
   )

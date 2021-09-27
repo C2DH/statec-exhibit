@@ -26,7 +26,7 @@ const DownloadDataButton = ({ label, legend = {}, values, debug=false }) => {
   ].join('\n')
   const handleDebugClick = () => {
     console.info('headers', headers)
-    console.info('data', data)
+    console.info('data:\n', data)
   }
 
   if (debug) {
@@ -47,7 +47,7 @@ const DownloadDataButton = ({ label, legend = {}, values, debug=false }) => {
       href={`data:text/csv;charset=utf-8,${encodeURIComponent(data)}`}
       download={filename}
     >
-      .csv ⇣
+      download .csv ⇣
     </a>
   )
 }
