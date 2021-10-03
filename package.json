@@ -27,6 +27,7 @@
     "react-device-detect": "^1.12.1",
     "react-dom": "^16.13.0",
     "react-feather": "^2.0.9",
+    "react-helmet": "^6.1.0",
     "react-i18next": "^11.7.3",
     "react-jss": "^10.1.1",
     "react-move": "^6.1.0",
