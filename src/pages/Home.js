@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import { Helmet } from 'react-helmet'
 import { useTranslation } from 'react-i18next'
 import { useSpring, a } from 'react-spring'
 import { useStore } from '../store'
@@ -37,6 +38,13 @@ const Home = () => {
   // {t('number', { n: 129822.4325 })}
   return (
     <div className="Home">
+      <Helmet>
+        <meta property="og:title" content={t('pagesHomeTitleOG')} />
+        <meta property="og:description" content={t('pagesHomeDescriptionOG')} />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content={`${window.location.protocol}//${window.location.host}/0.landing.jpg`} />
+        <meta property="og:url" content={window.location} />
+      </Helmet>
       <div className="absolute w-100 with-vertical-line" style={{zIndex: -1}}>
       <ChapterCover height={isMobileWithTablet ? 600: height} cover={{ id: '0.landing.jpg'}} untitled/>
       </div>

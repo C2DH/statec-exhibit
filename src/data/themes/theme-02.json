@@ -2,6 +2,7 @@
   "id": "family",
   "chapterIndex": "2",
   "title": "Famille et ménage",
+  "description": "Au 19ème siècle, le taux de natalité (les naissances rapportées à la population) se tasse.",
   "dataset": "population-natural-growth-details",
   "backgroundColor": "var(--theme-02)",
   "cover": {

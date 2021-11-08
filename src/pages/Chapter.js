@@ -12,6 +12,7 @@ import ChapterFooter from '../components/Chapter/ChapterFooter'
 import ChapterVisualisations from '../components/Chapter/ChapterVisualisations'
 import ChapterQrCode from '../components/Chapter/ChapterQrCode'
 import '../styles/components/chapter.scss'
+import { Helmet } from 'react-helmet'
 
 const AvailableChapters = Object.freeze({
   [chapter01.id]: chapter01,
@@ -110,6 +111,13 @@ const Chapter = ({ match: { params: { chapterId }}}) => {
   console.info('Chapter #chapterSections',chapterSections)
   return (
     <div className="Chapter">
+      <Helmet>
+        <meta property="og:title" content={chapter.title} />
+        <meta property="og:description" content={chapter.description} />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content={`${window.location.protocol}//${window.location.host}${chapter.cover.url}`} />
+        <meta property="og:url" content={window.location} />
+      </Helmet>
       <CurrentYearExplorer width={width} height={height}/>
       <div className="relative w-100 h-100 with-vertical-line">
       <ChapterCover
