@@ -37,7 +37,44 @@ We use spacer 3 for small, 4 for medium and unsurprisingly 5 for large.
 
 ## Contents
 
-### How to add a dataset to a section?
+### How to add a new chapter?
+add the relevant info in the constants file, use the existing chapters as blueprint:
+
+```javascript
+export const ChapterRoutesWithIndex = [
+  ChapterRouteIndex,
+  ChapterRouteCountryOfMigration,
+  ChapterRouteFamily,
+  ...
+  YourNewChapter,
+]
+
+export const ChapterRoutes = [
+  ChapterRouteCountryOfMigration,
+  ChapterRouteFamily,
+  ...
+  YourNewChapter
+]
+```
+
+Add the relevant theme file in data/themes containing at least these fields:
+```json
+{
+  "id": "id of the chapter",
+  "chapterIndex": "233",
+  "title": "Emploi et travail",
+  "backgroundColor": "#FDFD9B",
+  "cover": {
+    "url": "/233.cap233.jpg",
+    "caption": "...",
+    "source": "..."
+  },
+  "sections": [],
+  "modules": []
+}
+```
+
+### How to add a dataset and text contents to a section?
 The content is organised in `chapter`, `section`, `paragraph`. The `section` is
 responsible of delivering the dataset for the main visualisation and each paragraph
 *can* change the variables visualised.

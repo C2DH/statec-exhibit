@@ -18,15 +18,26 @@ sections: [
   'Espérance de vie et vieillissement'
 ]}
 
+export const ChapterRouteEmployment = { to: '/employment', label: 'ChapterRouteEmployment', title: 'Emploi et travail', favicon: 'data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAADI67QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA',
+  sections: [
+    'Les concepts de classement de l’emploi et du travail : une grande complexité',
+    'Les sources des statistiques du travail',
+    'Vers une économie des services ',
+    'Vers une société salariale'
+  ]
+}
+
 export const ChapterRoutesWithIndex = [
   ChapterRouteIndex,
   ChapterRouteCountryOfMigration,
-  ChapterRouteFamily
+  ChapterRouteFamily,
+  ChapterRouteEmployment,
 ]
 
 export const ChapterRoutes = [
   ChapterRouteCountryOfMigration,
-  ChapterRouteFamily
+  ChapterRouteFamily,
+  ChapterRouteEmployment
 ]
 
 export const StartYear = 1839

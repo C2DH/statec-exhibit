@@ -103,6 +103,7 @@ const Trend = ({
         marginLeft={marginLeft}
         marginRight={marginRight}
         focusKeys={focusKeys}
+        scaleX={scaleX}
       />
       <TrendPointers
         hotspots={hotspots}

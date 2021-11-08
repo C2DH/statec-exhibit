@@ -1,6 +1,7 @@
 import React, { useEffect, useMemo, useState } from 'react'
 import chapter01 from '../data/themes/theme-01.json'
 import chapter02 from '../data/themes/theme-02.json'
+import chapter03 from '../data/themes/theme-03.json'
 import { useStore } from '../store'
 import { useCurrentWindowDimensions } from '../hooks'
 import { isMobile, getIsMobileWithTablet } from '../logic/viewport'
@@ -17,6 +18,7 @@ import { Helmet } from 'react-helmet'
 const AvailableChapters = Object.freeze({
   [chapter01.id]: chapter01,
   [chapter02.id]: chapter02,
+  [chapter03.id]: chapter03
 })
 const DefaultThemeId = String(chapter01.id)
 
@@ -69,6 +71,7 @@ const Section = ({ section, height, width, backgroundColor, isMobile}) => {
 const Chapter = ({ match: { params: { chapterId }}}) => {
   // get the available chapter if vailable; otherwise Chapter 1 ;)
   const chapter = AvailableChapters[String(chapterId)] ?? AvailableChapters[DefaultThemeId];
+  const { dataset:chapterDataset } = chapter
   // calcumlate height on Resize after a 250mx throttle
   const isMobileWithTablet = getIsMobileWithTablet()
 
@@ -103,9 +106,12 @@ const Chapter = ({ match: { params: { chapterId }}}) => {
   }, [changeBackgroundColor, changeCurrentChapterStructure, chapter.backgroundColor, chapterId, chapterSections])
 
   const themeDataset = useMemo(() => {
-    console.info(`Chapter loading dataset ${chapter.dataset}.json`)
-    return require(`../data/datasets/${chapter.dataset}.json`)
-  }, [chapter])
+    if(!chapterDataset) {
+      return null
+    }
+    console.info(`Chapter loading dataset ${chapterDataset}.json`)
+    return require(`../data/datasets/${chapterDataset}.json`)
+  }, [chapterDataset])
 
   console.info('Chapter #chapterHotspots n.', chapterHotspots.length, themeDataset)
   console.info('Chapter #chapterSections',chapterSections)

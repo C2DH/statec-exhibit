@@ -2701,6 +2701,47 @@
       "base64": "data:image/png;base64,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",
       "aspectRatio": 3.2177083333333334,
       "isPortrait": false
+    },
+    "travailleurs-haut-fourneau-1900.jpg": {
+      "caption": "Travailleurs de haut-fourneau vers 1900.",
+      "provenance": "© Ville de Dudelange - Fonds Arbed",
+      "resolutions": {
+        "medium-w": {
+          "url": "/media/images/travailleurs-haut-fourneau-1900.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/travailleurs-haut-fourneau-1900.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/travailleurs-haut-fourneau-1900.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 1080,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/travailleurs-haut-fourneau-1900.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 960
+          }
+        }
+      },
+      "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAUCAIAAAD+/qGQAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEhklEQVQ4yzWU1y9mURTFz5OQaMPoffTejTZE77230XvvLXpntIhEECFEPBCihkh4kBDxQuJN8CDiz5jf3JvZDyf3O+fstddae59P2NraBgcHx8XFeXt7u7i4uLu7Ozk5WVtbm5ubm5iYmJmZGRoaWllZ/ZKCD11dXV9fXy4bGRlxgVM+jI2Nf0hBop2dnbOzswgPD+/o6Dg4OOjv729vbyfB3t6eGyCympqa6unpARcUFBQZGQkJbW1tNzc3ahsYGIDIqq+vzweXraSwtLTkVJSWloaEhCQmJnZ3d4+MjKSkpPj7+0OEBAsLC4pTgHs1NTXchCm4gYGBjo6OwHENREMpoMx9VEKZUwE7try8vK6vryFOWXC/S8G+p6cnzsCip6envr6eBDL9/PzkLErK0KZSmEthY2Pzjy9nWMbZ4uLiysoKCdCHlExHR0eHFeiGhgZwfXx8QkNDY2JisIJEsGSX+ZB9kFcHBwdBJpIxUVNTk87QOixGF2f0U0tLi3x2JicnqUobsKu8vJwjeMkEZdaE3A/8xQrxTQoNDQ01NTVlZWXQcYAy9BOCMEV7UlLSwsLCzs7O29vb0dERR0FS8EEzXV1duQMP/AUREzw8PAQoYAEKurq6upYUfNOx31Lg5szMDKC0dHBwkLEBC77k05Wf/4NvUhCBRVFRUUJFRQU4+KqqqtIKarCjqKiIlbGxsdgC66mpqdnZ2crKyvT09MzMzISEBCDQC0G0s9JeGZRNuP/DxbuSkhJ+KykpoQUgbtA0FMGLkerr60NvamoqBeLj49PS0kBn8rkgvxrYkEUD6RizFBAQEB0dLVC3trbGgYKCQm5uLj9zcnI4g0VZWRm4WVlZwNEr+Obl5dXW1i4tLdFhfHCTAq8ojA+URCXfRUVFoqKiAu/Qzmzl5+cXFxczZ7wrRJEwOjrKc6Bec3MzNCnAisscYUhycjJaCwoKeKj8rK6ulp8Mz0dQv7W1FXPTpfgjBegIxCZmC5rkAM2AUwMudXV1iEABylh5MuBmZGQMDAzQBhRgt6A4BSFCKSaG7gPR1NSEd0gDlMIRERGsQ0NDwFES+xgyxFFveHiYyQMOiyCERSjIzs4WLy8v+DA2Nsbo4CmDDRw5DDzHPAdeGr3Fa14E+729vfQARIAwNFcKRFByfn4elsvLy7e3t4JR54vbYWFhSMB43KH70AeRq42NjTjODp3AKMS2tbXJ1BgYtLLPqKCD+7yg+/v7j48PcXNzg2qMg39VVVWqFIWFhdQfHx+fnp7mnwxcSMEFjnt7e8fHx/Sts7Nzc3OTlw0n6mGxXH5/f5/RFNvb2xsbG7u7u3jEbwrQxrm5Ob4Rjg88MBpIr7EYamhvaWmhGNBdXV0c0RI2GRjMYXNiYgLTBQ+ffKiRg6Fwpz+IZaUS9ahB02HHq1tdXcWEra2t09NTykCTxvKI+fvmG750mPE4OzsTDw8PV1dXJycnh4eHrOfn5xcXF+zc3d3hFKdPT0+Pj4/Pz8+vr6/v7++sn5+fX19fXEY7ci8vLzGHKYQm/V9fX+faX7xINsszV7wCAAAAAElFTkSuQmCC",
+      "aspectRatio": 1.4645833333333333,
+      "isPortrait": false
     }
   }
 }

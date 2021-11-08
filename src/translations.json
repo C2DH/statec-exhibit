@@ -34,6 +34,7 @@
       "ChapterRouteIndex": "Accueil",
       "ChapterRouteCountryOfMigration": "Un pays de migrations",
       "ChapterRouteFamily": "Famille et ménage",
+      "ChapterRouteEmployment": "Emploi et travail",
       "demographicBalance": "person",
       "demographicBalance_plural": "people",
       "demographicBalanceWithCount": "<b>{{count}}</b> person en {{year}}",
@@ -100,6 +101,9 @@
       "datasetStructureAgeExtentv1": "min: <b class='bold'>{{kMin, 2}}%</b> en {{tMin}}<br/> max: <b class='bold'>{{kMax, 2}}%</b> en {{tMax}}",
       "datasetStructureAgeExtentv2": "min: <b class='bold'>{{kMin, 2}}%</b> en {{tMin}}<br/> max: <b class='bold'>{{kMax, 2}}%</b> en {{tMax}}",
       "datasetWeddingsDivorces": "",
+      "datasetEmploymentTotal": "Nombre de personnes emploié",
+      "datasetEmploymentTotalLegendValuev": "Emploi total",
+      "datasetEmploymentTotalExtentv": "min: <b class='bold'>{{kMin, 2}}</b> en {{tMin}}<br/> max: <b class='bold'>{{kMax, 2}}</b> en {{tMax}}",
       "hotspotLabel": "Bookmark"
     }
   }

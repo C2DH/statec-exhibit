@@ -1,0 +1,161 @@
+{
+  "id": "employment",
+  "chapterIndex": "3",
+  "title": "Emploi et travail",
+  "backgroundColor": "#FDFD9B",
+  "cover": {
+    "url": "/3.cap3.jpg",
+    "caption": "Travaux ans la rue Aldringen en 1954. Théo Mey / Photothèque de la Ville de Luxembourg",
+    "source": "Théo Mey / Photothèque de la Ville de Luxembourg"
+  },
+  "introductions": [
+    {
+      "text": "Ce n’est qu’à partir du recensement de 1871 que l’on dispose de données statistiquement exploitables concernant l’activité et l’emploi. D’une manière générale, les critères de classement des activités professionnelles et du travail ne sont cependant pas univoques."
+    },
+    {
+      "text": "On peut classer les personnes actives selon le statut professionnel ou « position sociale »; le secteur d’activité (agriculture, industries, services, …) ou la profession (boucher, boulanger, instituteur, fondeur aux hauts-fourneaux, ….)"
+    },
+    {
+      "text":"Cette grande panoplie de classements possibles et imaginables reflète la complexité de toute analyse du marché du travail. Dans ce domaine, l’activité professionnelle n’est qu’un des aspects à étudier. Les relations du travail (par exemple, la position dans la hiérarchie, les responsabilités, …) font cependant partie intégrante du statut professionnel et « complexifie » l’analyse statistique. "
+    },
+    {
+      "text": "A titre d’exemple, lors du recensement professionnel et industriel de 1907, la catégorie des  « indépendants » comprend évidemment les propriétaires et entrepreneurs, mais on y intègre également les employés occupant une position dirigeante, donc des salariés. A une catégorisation basée sur la propriété des moyens de production est donc organiquement mêlée une catégorisation résultant de la hiérarchie dans les relations du travail, la « position sociale », disait-on à l’époque. Du moment que l’on dépasse le simple dénombrement et que l’on essaie d’établir – sur base d’un concept sociologique, par exemple – des constantes permettant d’établir des groupes socio-professionnels, des « classes sociales » ou encore des « milieux » sociaux, les choses se compliquent. "
+    }
+  ],
+  "sections": [
+    {
+      "dataset": "EmploymentTotal",
+      "displayPoints": true,
+      "displayDashedLine": true,
+      "modules": [
+        {
+          "title": "L’évolution générale de l’emploi",
+          "paragraphs": [
+            {
+              "from": 1840,
+              "to": 1947,
+              "visibleKeys": ["v"],
+              "focusKeys": ["v"],
+              "text": "L’emploi au Luxembourg est le reflet de la croissance économique. Jusque dans les années 1980, l’augmentation de l’emploi est plutôt modérée. On passe de 123 000 personnes actives en 1907 à environ 134 000 en 1947. Entre 1907 et 1947 (contrairement à la période récente), la part des étrangers dans l’emploi se tasse un peu. En 1907, sur une population active de 123.116 personnes, on compte près de 21 000 étrangers, alors qu’en 1947 il y a 15 300 étrangers sur 134 200 personnes actives. C’est le signe d’une économie prise dans les remous de la première guerre mondiale, de la crise de 1929 (qui impacte le Luxembourg à partir de 1930) et de la deuxième guerre mondiale qui font rechuter là chaque fois la croissance et l’emploi et qui font de ces années une période instable pendant laquelle les étrangers jouent le rôle de soupape de sécurité. Par ailleurs, la part des femmes dans l’emploi est stable au cours de période : 36 699 femmes actives en 1907 et 38 725 en 1947. "
+            },
+            {
+              "from": 1947,
+              "to": 1990,
+              "visibleKeys": ["v"],
+              "focusKeys": ["v"],
+              "text": "A partir de la fin de la deuxième guerre mondiale, l’économie luxembourgeoise entre dans une période de croissance économique continue jusqu’au milieu des années 1970. Ce sont les « Trente Glorieuses ». C’est la sidérurgie qui porte cette croissance, mais une politique volontariste de diversification économique et industrielle est également mise en œuvre (GoodYear, Dupont de Nemours, par exemple). Au Grand-Duché l’emploi passe de 134.000 personnes actives en 1947 et à 160.000 en 1985. D’ailleurs, contrairement à ce qui s’était passé dans la première moitié du 20ème siècle, l’emploi ne se contracte plus. Même lors de la  crise des années 1975-1985 (crises pétrolières, crise de la sidérurgie), l’emploi au Luxembourg stagne plutôt qu’il ne recule (158.800 en 1975 et 160.000 en 1985)."
+            },
+            {
+              "from": 1980,
+              "to": 2020,
+              "visibleKeys": ["v"],
+              "focusKeys": ["v"],
+              "text": "A partir du milieu de années 1980, on assiste à une accélération foudroyante de l’emploi qui passe de 158.000 personnes en 1980 à 472.000 en 2020. Le nombre de postes de travail a donc triplé en une quarantaine d’années, alors que de 1907 à 1980 (c’est à-dire pendant quelque 70 ans) l’augmentation ne fut que d’environ 30%. C’est le secteur financier et les services aux entreprises (dont la composition est très diversifiée allant du nettoyage aux sociétés d’avocats et sociétés de consultance) qui prennent le relais de l’industrie sidérurgique comme moteur de la croissance. Cette croissance de l’emploi pose évidemment des questions au niveau notamment des infrastructures routières et de mobilité en général."
+            },
+            {
+              "from": 1980,
+              "to": 2020,
+              "visibleKeys": ["v"],
+              "focusKeys": ["v"],
+              "text": "Le réservoir purement national de main-d’œuvre ne pouvait suffire à prendre les postes de travail créés à partir des années 1980. C’est la main d’oeuvre immigrée et, de plus en plus, les travailleurs frontaliers qui rendent possible cette évolution.  Les frontaliers occupent aujourd’hui quelque 40% de l’emploi au Luxembourg. Aujourd’hui, autour de 197.000 personnes travaillant au Luxembourg traversent les frontières chaque jour.",
+              "dataset": "NationalEmployment1960-2022",
+              "datasetLayout": "Lines",
+              "datasetKeys": ["v", "v1"],
+              "datasetColorKeys": { "v": "var(--dataset-t2-v)", "v1": "var(--dataset-t2-v1)"},
+              "datasetExtent": [1960, 2021],
+              "datasetLegend": "Indicateur conjoncturel de fécondité et seuil de remplacement des générations"
+            },
+            {
+              "from": 1980,
+              "to": 2020,
+              "visibleKeys": ["v"],
+              "focusKeys": ["v"],
+              "text": "La croissance depuis les années 1980 de l’emploi au Grand-Duché est exceptionnelle, comme le révèle le différentiel avec les autres pays européens. En 2020, dans l’économie luxembourgeoise, le nombre de personnes en emploi est de 260% plus élevé qu’en 1960. Suivent assez loin des pays comme l’Irlande ou les Pays-Bas qui peuvent faire état d’une augmentation de 100% de l’emploi. Au Portugal, on note un plus de seulement 11% entre 1960 et 2020. C’est ce différentiel qui contribue à expliquer la dynamique migratoire au Grand-Duché."
+            }
+          ]
+        },
+        {
+          "title": "Les sources des statistiques du travail",
+          "paragraphs": [
+            {
+              "from": 1840,
+              "to": 1871,
+              "visibleKeys": ["v", "v1", "v2", "v3"],
+              "focusKeys": ["v", "v1", "v2", "v3"],
+              "text": "Jusqu’au dernier quart du 19ème siècle, les statistiques « sociales » luxembourgeoises s’intéressent peu à la question de l’activité professionnelle et de l’emploi. Jusqu’à cette époque, on vit encore dans une société où l’agriculture domine largement le tissu économique et où les autres activités économiques sont en grande partie artisanales. Ce sont d’abord les recensements qui fournissent des données sur le travail. Dans les recensements de 1871, on ne dispose que du classement selon les professions et le « reclassement » selon les secteurs d’activité n’est donc qu’une approximation. Cela d’autant plus que, les réponses de sont pas assez précises dans beaucoup de cas. D’ailleurs, en 1871, on demande aux recensés d’indiquer soit leur profession, soit la branche d’activité (« Beruf-oder Gewerbezweig »). ",
+              "hotspots": [
+                {
+                  "t": 1871,
+                  "text": "Recensement"
+                }
+              ],
+              "figures": [{
+                "caption" : "Source : Archives nationales, recensement de 1871"
+              }]
+            },
+            {
+              "from": 1840,
+              "to": 1871,
+              "visibleKeys": ["v", "v1", "v2", "v3"],
+              "focusKeys": ["v", "v1", "v2", "v3"],
+              "text": "La question consacrée au travail dans le recensement de 1871 va un peu plus loin en ajoutant un élément, à savoir la profession accessoire éventuelle (« Berufs-oder Gewerbezweig ; mit Erwerb verbundene Nebenbeschäftigungen ; Arbeits und Dienstverhältnis – der über 14 jahre alten Personen »). Cette question répond évidemment à une réalité socio-professionnelle, à savoir le fait que beaucoup d’ouvriers, par exemple, avaient également une activité agricole accessoire permettant de joindre les deux bouts à la fin du mois ou de simplement manger à leur fin avec leur famille. Mais comme cette question n’est pas véritablement codifiée, les recensés n’y ont pas répondu en détail. Ils se sont limités généralement à mentionner la profession principale du « chef de famille ».",
+              "figures": [
+                {
+                  "caption": "Machines et instruments de travail agricoles au 19ème siècle"
+                },
+                {
+                  "id": "ICO-3-1-04638.png",
+                  "caption": "..."
+                },
+                {
+                  "caption": "Une moissonneuse-batteuse contemproraine en action"
+                }
+              ]
+            },
+            {
+              "from": 1907,
+              "to": 1935,
+              "text": "Le recensement professionnel et industriel de 1907 est la première véritable enquête statistique qui s’intéresse de plus près au marché du travail. Cela résulte du fait que l’emploi est en train de muter avec une sidérurgie, et donc un nombre d’ouvriers et d’employés salariés, en croissance significative. Cette enquête s’inscrit également dans un contexte international favorable à de telles études et s’appuie d’ailleurs sur une enquête allemande qui est réalisée à la même époque. A noter que la proximité économique avec l’Allemagne (« Zollverein ») se traduit également avec une « proximité statistique ». La date a été d’ailleurs choisie pour être en harmonie avec l’enquête très similaire faite en Allemagne. Contrairement au recensement de 1871, les questions sur la branche d’activité et sur la profession sont clairement séparées en 1907, tout comme la question de la profession accessoire. Les explications méthodologiques sont assez détaillées, mais des codifications précises (chiffrées) dans le questionnaire (donc dès l’origine) concernant les branches d’activité ou les professions manquent toujours. Les classements doivent donc être effectués a posteriori. La publication des résultats de l’enquête – un travail consistant d’une douzaine de volumes - s’étire d’ailleurs de 1910 à 1913.",
+              "figures": [
+                {
+                  "caption": "Questionnaire du recensement industriel et professionnel de 1907 (extrait consacré aux professions)"
+                }
+              ]
+            },
+            {
+              "from": 1907,
+              "to": 1935,
+              "text": "A titre d’exemple, une des recommandations qui accompagnent le questionnaire de l’enquête de 1907 est formulée ainsi :  « Des expressions telles que fabricant, négociant, commerçant, ingénieur, contre-maître, machiniste, chauffeur, ouvrier, ne suffisent pas à cet effet, il faut l'indication de la branche spéciale de la fabrication, du métier, du commerce ou de telle autre profession dans laquelle la personne en question est occupée, ainsi, p. ex. manufacture de cigares, manufacture de gants, fabrique de coffres-forts, fonderie, commerce de matériaux de constructions, etc. ». La méthodologie de classification des professions de 1907 compte 6 grandes divisions (A. Agriculture, B. Industries, C. Commerce, transports, cafés et auberges D. Services domestiques, E. Services de l’Etat et des communes, services ecclésiastiques et professions libérales ; F. Personnes sans profession et sans indication de profession. Sur ces 6 grandes divisions se greffent 26 groupes et pas de moins 218 classes de professions. A vrai dire Il d’agit plutôt d’une classification hybride (secteurs d’activité – professions). En effet, certaines activités professionnelles (notamment parmi les employés) sont très comparables dans le commerce, dans les industries et dans les services publics (même si les conditions de travail peuvent différer). Par exemple dans le domaine de l’organisation et de la comptabilité les activités professionnelles sont souvent similaires dans toutes ces divisions. ",
+              "figures": [{"id": "travailleurs-haut-fourneau-1900.jpg"}]
+            },
+            {
+              "from": 1907,
+              "to": 1935,
+              "text": "En d’autres mots, un travail important et méticuleux est demandé à la fois aux agents engagés par les communes chargées alors (comme aujourd’hui) de la distribution des questionnaires et de la récolte des réponses (et des conseils donnés aux recensés) et aux fonctionnaires de la Commission permanente de statistique. Cet organisme est créé en 1900, notamment en vue de l’exécution de ce ce grand recensement de 1907.  Il s’agit du premier organisme statistique professionnel, c’est-à-dire disposant de ressources humaines (notamment un secrétaire et des « commis » prévus par un acte législatif de 1904) qui s’occupent exclusivement de statistiques.",
+              "figures":[{"caption":"Loi du 25 juin 1900 prévoyant la création d’un service statistique (extrait)"}]
+            },
+            {
+              "from": 1907,
+              "to": 1935,
+              "text": "Le recensement de 1907 contient, pour la première fois, des demandes sur les conditions de travail (repos hebdomadaire ou mensuel, durée de travail) et sur une éventuelle incapacité de travail. Cette question est liée à l’introduction en 1911 de l’assurance vieillesse invalidité. Il s’agit donc d’un début de ce que l’on appelle aujourd’hui la « evidence-based policy ».  En 1907, sur les 43.080 ouvriers que l’on compte dans les principales branches économiques, 30.818 ont un jour de repos par semaine, le reste des ouvriers et employés a même moins de jours de repos. En outre, quelque 90% de l’ensemble des employés et ouvriers travaillent 10 heures et plus par jour. La journée de 8 heures n’est imposée qu’après la première guerre mondiale et une réglementation concernant les jours de repos est introduite à la même époque.",
+              "figures":[{"caption":"Durée de travail, en 1907"}]
+            },
+            {
+              "from": 1907,
+              "to": 1935,
+              "text": "L’enquête de 1907 essaie également de déterminer les parts de la population dépendant des différentes professions. C’est une vue plutôt « sociologique » qui tente en quelque sorte de mesurer l’impact des différentes branches économiques sur la société luxembourgeoise dans son ensemble. A titre d’exemple, dans l’agriculture on compte 52.807 « individus actifs » (dont 22.191 femmes), mais le total des personnes dépendant de cette branche est de 88.470 personnes, dont 46.537 femmes. Dans la branche industrielle des mines et hauts fourneaux, le nombre d’individus actifs est de 15.154 personnes (dont seulement 4 femmes). Le total des personnes dépendantes des mines et hauts-fourneaux est de 32.72 dont seulement 11.673 femmes, signe que cette branche fonctionne en partie avec des ouvriers étrangers souvent célibataires ou vivant sans leur famille. Cette approche, c’est-à-dire celle de relier les personnes non-actives d’un ménage aux actifs (par branche) est également le reflet de la représentation de la société – et de la famille – où le père travaille et fait vivre la famille et la « mère au foyer ». ",
+              "figures":[{"caption":"Individus actifs et personnes dépendant de la profession, 1907"}]
+            },
+            {
+              "from": 1907,
+              "to": 1935,
+              "text": "Les recensements et les enquêtes effectuées depuis le début du 20ème siècle au Luxembourg s’adressent généralement aux résidents. Il est d’autant plus remarquable que l’enquête professionnelle et industrielle de 1907 – adressée aux patrons –  prévoit une question concernant les personnes « travaillant dans des exploitations du Grand-Duché, alors qu’ils habitent au-delà de la frontière. » Il s’agit d’un signe montrant l’imprtance du phénomène du travail frontaleir dès cette époque. Aujourd’hui au Luxembourg, une seule enquête, à savoir l’enquête sur la structure des salaires (Structure of Earnings Survey, SES) tient compte de l’emploi frontalier. A noter que comme cette partie de l’enquête de 1907, la SES s’adresse également aux entreprises et non pas aux individus. Par contre, l’enquête européenne sur les forces de travail (EFT) existant depuis le début des années 1980 au Luxembourg ne s’adresse qu’aux individus résidents. Les taux de chômage et les taux d’emploi et d’activité calculés sur la base de l’enquête sur les forces de travail ne concernent donc que les résidents. Aujourd’hui, comme l’enquête sur la structure des salaires n’est réalisée que tous les 4 ans, les informations les plus actuelles sur l’évolution de l’emploi frontalier sont issues des fichiers administratifs de la sécurité sociale.",
+              "figures":[{"caption": "Le questionnaire concernant les frontaliers dans le recensement industriel et professionnel de 1907"}]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "modules": []
+}

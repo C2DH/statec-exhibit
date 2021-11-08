@@ -18,7 +18,7 @@ const MediaImage = ({
   const media = MediaIndex.images[id]
   const mediaUrl = media
     ? media.resolutions[resolution].url
-    : '';
+    : 'https://via.placeholder.com/500.png/2b219f/ffc09d?text=...';
   const mediaBase64 = media?.base64
   const { isLoading } = useImage(mediaUrl, 50);
   const backgroundImage = `url(${isLoading ? mediaBase64 : mediaUrl})`
@@ -39,10 +39,10 @@ const MediaImage = ({
   let aspectRatioBoxStyle = {
     height: 0,
     width: 'auto',
-    paddingTop: `${1/media.aspectRatio * 100}%`
+    paddingTop: media ? `${1/media.aspectRatio * 100}%` : "100%"
   }
 
-  if (media.isPortrait) {
+  if (media?.isPortrait) {
     const availableHeight = Math.min(height, width / media.aspectRatio)
     aspectRatioBoxStyle = {
       width: availableHeight * media.aspectRatio,
@@ -63,7 +63,7 @@ const MediaImage = ({
     > {displayTitle && !!title.length && <h2 className="textContainerTitle">{title}</h2>}
       <div className="MediaImage_aspectRatioBox relative" style={aspectRatioBoxStyle}>
         <div className="absolute w-100 h-100 top-0 left-0" onClick={clickHandler}>
-          <MediaImagePicture isLoading={isLoading} isPortrait={media.isPortrait} aspectRatio={media.aspectRatio} padding={padding} mediaBase64={mediaBase64} backgroundImage={backgroundImage} />
+          <MediaImagePicture isLoading={isLoading} isPortrait={media?.isPortrait} aspectRatio={media?.aspectRatio} padding={padding} mediaBase64={mediaBase64} backgroundImage={backgroundImage} />
         </div>
       </div>
       <figcaption
