@@ -4,6 +4,7 @@ import {StartYear, EndYear, StatusFetching, StatusIdle, StatusSuccess } from '..
 import Flower from '../Flower'
 import Compare from '../Compare'
 import Lines from '../Lines'
+import Stacks from '../Stacks'
 import { useGetDataset } from '../../logic/dataset'
 import { Loader} from 'react-feather'
 import DownloadDataButton from '../DownloadDataButton'
@@ -11,7 +12,8 @@ import DownloadDataButton from '../DownloadDataButton'
 const AvailableComponents = Object.freeze({
   'Flowers': Flower,
   'Compare': Compare,
-  'Lines': Lines
+  'Lines': Lines,
+  'Stacks': Stacks
 })
 
 const Dataset = ({
@@ -19,6 +21,7 @@ const Dataset = ({
   keys=['v'],
   colorKeys={},
   from=StartYear, to=EndYear, height=100, width=100,
+  range=null,
   hidePercentage=false,
   displayPoints=true,
   displayDashedLine=false,
@@ -70,13 +73,14 @@ const Dataset = ({
   }, [data, keys, from, to]);
   return (
     <div style={{overflow: 'hidden', width:width}}>
-      {['Compare', 'Lines'].includes(layout)
+      {['Compare', 'Lines', 'Stacks'].includes(layout)
         ? (
           <Component
             datasetId={id}
             groupValues={groupValues}
-            minValue={minValue}
-            maxValue={maxValue}
+            values={data.values}
+            minValue={range ? range[0] : minValue}
+            maxValue={range ? range[1] : maxValue}
             height={height}
             width={width}
             from={from}
@@ -113,6 +117,8 @@ const DebugDataset = ({
   colorKeys={},
   from=StartYear, to=EndYear,
   height=100, width=100,
+  // null or Array
+  range=null,
   hidePercentage, displayDashedLine, children
 }) => {
   const { item, error, status } = useGetDataset({ url : `/datasets/${id}.json`, delay: 100})
@@ -128,7 +134,19 @@ const DebugDataset = ({
   } else if (status === StatusSuccess) {
     return (
       <>
-      <Dataset data={item} id={id} layout={layout} colorKeys={colorKeys} keys={keys} from={from} to={to} height={height} width={width} hidePercentage={hidePercentage} displayDashedLine={displayDashedLine}/>
+      <Dataset
+        data={item}
+        id={id}
+        layout={layout}
+        colorKeys={colorKeys}
+        keys={keys}
+        from={from}
+        to={to}
+        height={height} width={width}
+        hidePercentage={hidePercentage}
+        displayDashedLine={displayDashedLine}
+        range={range}
+      />
       {children}
       <div className="pa3 pl5-l">
       <DownloadDataButton label="" values={item.values} legend={item.legend} />
