@@ -101,9 +101,9 @@
       "datasetStructureAgeExtentv1": "min: <b class='bold'>{{kMin, 2}}%</b> en {{tMin}}<br/> max: <b class='bold'>{{kMax, 2}}%</b> en {{tMax}}",
       "datasetStructureAgeExtentv2": "min: <b class='bold'>{{kMin, 2}}%</b> en {{tMin}}<br/> max: <b class='bold'>{{kMax, 2}}%</b> en {{tMax}}",
       "datasetWeddingsDivorces": "",
-      "datasetEmploymentTotal": "Nombre de personnes emploié",
+      "datasetEmploymentTotal": "Nombre de personnes employées",
       "datasetEmploymentTotalLegendValuev": "Emploi total",
-      "datasetEmploymentTotalExtentv": "min: <b class='bold'>{{kMin, 2}}</b> en {{tMin}}<br/> max: <b class='bold'>{{kMax, 2}}</b> en {{tMax}}",
+      "datasetEmploymentTotalExtentv": "min: <b class='bold'>{{kMin, 2}}</b> personnes en {{tMin}}<br/> max: <b class='bold'>{{kMax, 2}}</b> personnes en {{tMax}}",
       "hotspotLabel": "Bookmark"
     }
   }
