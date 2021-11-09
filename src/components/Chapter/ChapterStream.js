@@ -92,6 +92,7 @@ const ChapterStream = ({ numStartAt, modules = [], height, backgroundColor, onSt
                         layout={par.datasetLayout}
                         from={Array.isArray(par.datasetExtent) ? par.datasetExtent[0] : par.from}
                         to={Array.isArray(par.datasetExtent) ? par.datasetExtent[1]: par.to}
+                        range={par.datasetRange}
                       >
                         <label className="db pl5-l pl3 pv3 f6 i" dangerouslySetInnerHTML={{__html: par.datasetLegend }} />
                       </Dataset>
