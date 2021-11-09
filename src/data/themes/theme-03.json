@@ -153,6 +153,24 @@
               "figures":[{"caption": "Le questionnaire concernant les frontaliers dans le recensement industriel et professionnel de 1907"}]
             }
           ]
+        }, {
+          "title": "Vers une économie des services",
+          "paragraphs": [
+            {
+              "from": 1871,
+              "to": 2020,
+              "visibleKeys": ["v"],
+              "focusKeys": ["v"],
+              "text": "L’emploi dans l’agriculture est en déclin sur le long terme.  En 1871, l’agriculture constitue quelque 60% de l’emploi total. En 1907, la part dépasse à peine les 40% et au début des années 1960, le pourcentage se situe déjà en-dessous des 20%. Aujourd’hui, la part de ce secteur dans l’emploi se situe en-dessous de 1% . En chiffres absolus, en 1871, environ 53 000 personnes sont actives dans l’agriculture en 1907, contre seulement 3.70 en 2010.",
+              "dataset": "EconomicSectorsEmployment",
+              "datasetLayout": "Stacks",
+              "datasetKeys": ["v", "v1", "v2"],
+              "datasetColorKeys": { "v": "var(--dataset-t2-v)", "v1": "var(--dataset-t2-v1)", "v2": "red"},
+              "datasetExtent": [1871, 2021],
+              "datasetRange": [0, 100],
+              "datasetLegend": "Part des secteurs économiques dans l'emploi total, 1871-2020"
+            }
+          ]
         }
       ]
     }
