@@ -50,7 +50,7 @@
       "legendPopulationBalanceDetails": "= {{v1}} + {{v4}}",
       "downloadAsCSV": "download as CSV",
       "number": "{{ n,2 }}",
-      "percentage": "{{ n,2 }} %",
+      "percentage": "{{ n,2 }}%",
       "AboutTitle": "A propos",
       "AboutIntroduction": "<i>Framing Luxembourg</i> est une exposition virtuelle retraçant l'histoire que les statistiques permettent de raconter sur le Luxembourg.",
       "AboutConcept": "Les thèmes et les jeux de données ont été conçus par Paul Zahlen et Benoît Majerus du C²DH. <br/><br/> Le site web s'adresse à un large spectre d’utilisateurs. Il sera développé et enrichi dans les années à venir.",
@@ -104,6 +104,12 @@
       "datasetEmploymentTotal": "Nombre de personnes employées",
       "datasetEmploymentTotalLegendValuev": "Emploi total",
       "datasetEmploymentTotalExtentv": "min: <b class='bold'>{{kMin, 2}}</b> personnes en {{tMin}}<br/> max: <b class='bold'>{{kMax, 2}}</b> personnes en {{tMax}}",
+      "datasetEmploymentTotalExtentv1": "min: <b class='bold'>{{kMin, 2}}</b> personnes en {{tMin}}<br/> max: <b class='bold'>{{kMax, 2}}</b> personnes en {{tMax}}",
+      "datasetEmploymentTotalExtentv2": "min: <b class='bold'>{{kMin, 2}}</b> personnes en {{tMin}}<br/> max: <b class='bold'>{{kMax, 2}}</b> personnes en {{tMax}}",
+      "datasetEmploymentTotalExtentv3": "min: <b class='bold'>{{kMin, 2}}</b> personnes en {{tMin}}<br/> max: <b class='bold'>{{kMax, 2}}</b> personnes en {{tMax}}",
+      "datasetEmploymentTotalLegendValuev1": "Agriculture",
+      "datasetEmploymentTotalLegendValuev2": "Industrie et construction",
+      "datasetEmploymentTotalLegendValuev3": "Services",
       "hotspotLabel": "Bookmark"
     }
   }
