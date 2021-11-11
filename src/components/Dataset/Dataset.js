@@ -25,6 +25,7 @@ const Dataset = ({
   hidePercentage=false,
   displayPoints=true,
   displayDashedLine=false,
+  numericTranslationLabel='number'
 }) => {
   console.info('Dataset colorKeys', colorKeys)
   const Component = AvailableComponents[layout] || <div>Component not defined</div>
@@ -88,6 +89,7 @@ const Dataset = ({
             hidePercentage={hidePercentage}
             displayPoints={displayPoints}
             displayDashedLine={displayDashedLine}
+            numericTranslationLabel={numericTranslationLabel}
           />
         )
         : null
@@ -119,6 +121,7 @@ const DebugDataset = ({
   height=100, width=100,
   // null or Array
   range=null,
+  numericTranslationLabel='number',
   hidePercentage, displayDashedLine, children
 }) => {
   const { item, error, status } = useGetDataset({ url : `/datasets/${id}.json`, delay: 100})
@@ -145,6 +148,7 @@ const DebugDataset = ({
         height={height} width={width}
         hidePercentage={hidePercentage}
         displayDashedLine={displayDashedLine}
+        numericTranslationLabel={numericTranslationLabel}
         range={range}
       />
       {children}
