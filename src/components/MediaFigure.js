@@ -1,6 +1,16 @@
 import React from 'react'
 import { useImage } from '../hooks'
+import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
 
+const MediaZoomableFigure = ({
+  src
+}) => (
+  <TransformWrapper>
+    <TransformComponent>
+      <img className="shadow" src={src} alt="test" />
+    </TransformComponent>
+  </TransformWrapper>
+)
 const MediaFigure = ({
   media,
   resolution = 'large-h',
@@ -20,12 +30,12 @@ const MediaFigure = ({
           overflow: 'hidden',
           backgroundImage: `url(${media.base64})`,
         }}/>
+
         <div className="MediaImagePicture_picture" style={{
           opacity: isLoading ? 0: 1,
-          backgroundSize: 'contain',
-          backgroundPosition: 'left',
-          backgroundImage: `url(${mediaUrl}`,
-        }}/>
+        }}>
+          <MediaZoomableFigure src={mediaUrl}/>
+        </div>
       </div>
     </div>
   )
