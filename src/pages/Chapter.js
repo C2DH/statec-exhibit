@@ -61,6 +61,7 @@ const Section = ({ section, height, width, backgroundColor, isMobile}) => {
             height={height}
             modules={section.modules || []}
             step={step}
+            numericTranslationLabel={section.numericTranslationLabel}
           />
         </div>
       ):null}

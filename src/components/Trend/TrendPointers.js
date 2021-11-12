@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next'
 import {ArrowRight, Eye} from 'react-feather'
 import { useStore } from '../../store'
 import { getClosestDatumIdxFromX } from '../../logic/dataset'
-
+import TrendTooltip from './TrendTooltip'
 
 const TrendPointers = ({
   themeDatasetId='themeDatasetId',
@@ -20,6 +20,7 @@ const TrendPointers = ({
   // paragraph from and to, if any
   from,
   to,
+  numericTranslationLabel,
 }) => {
   const { t } = useTranslation()
   const {changeCurrentDatum, currentYearExplorerOpen } = useStore(state => state)
@@ -136,7 +137,8 @@ const TrendPointers = ({
         onMouseEnter={() => setIsVisible(true)}
         onMouseLeave={mouseLeaveHandler}
       />
-      <div className="TrendLegend absolute" style={{
+      {value ? (
+        <div className="TrendLegend absolute" style={{
         position: 'absolute',
         width: 50,
         top: 2,
@@ -145,21 +147,14 @@ const TrendPointers = ({
         opacity: isVisible && value ? 1 : 0,
         transform: value ? `translate(${value.x + marginLeft}px, 0px)` : null,
       }}>
-        <div style={{
-          position: 'absolute',
-          width: 1,
-          left: 25,
-          top: marginTop + 2,
-          bottom: marginTop * 2,
-          backgroundColor: 'var(--accent)'
-        }}/>
+
         <span className="pv1 ph2" style={{
           color: 'var(--primary)',
           borderRadius: 2,
           backgroundColor:'var(--secondary)'
-        }}>{currentYear}</span>
+        }}>{value.t}</span>
       </div>
-
+    ): null}
       {value && isVisible ? visibleKeys.map((key) => {
         const isOnFocus = focusKeys.includes(key)
         const radius = isOnFocus ? 12 : 6
@@ -211,15 +206,15 @@ const TrendPointers = ({
                   borderColor: colorKeys[key],
                   borderWidth: 2
                 }}>{t(`dataset${themeDatasetId}LegendValue${key}`, {from, to})}</h3>
-
-                <p className="mv0" key={key} dangerouslySetInnerHTML={{
-                  __html: t(`dataset${themeDatasetId}Extent${key}`, {
-                    kMin: focusValuesExtents[i].kMin,
-                    kMax: focusValuesExtents[i].kMax,
-                    tMin: focusValuesExtents[i].vMin?.t,
-                    tMax: focusValuesExtents[i].vMax?.t,
-                  })
-                }} />
+                {focusValuesExtents[i].vMin !== Math.Infinity
+                ? (<p className="mv0" key={key} dangerouslySetInnerHTML={{
+                    __html: t(`dataset${themeDatasetId}Extent${key}`, {
+                      kMin: focusValuesExtents[i].kMin,
+                      kMax: focusValuesExtents[i].kMax,
+                      tMin: focusValuesExtents[i].vMin?.t,
+                      tMax: focusValuesExtents[i].vMax?.t,
+                    })
+                }} />):null}
               </div>
           )
         })}
@@ -227,36 +222,20 @@ const TrendPointers = ({
         </div>
         {children}
       </div>
-      <div className="TrendPointers_legend absolute pa3" style={{
-        top: 0,
-        display: value ? 'block' : 'none',
-        opacity: isVisible && value ? 1: 0,
-        transform: value
-          ? `translate(${value.x + marginLeft}px, ${height - marginTop}px)`
-          : `translate(${marginLeft}px, ${height- marginTop}px)`,
-      }}>
-
-      {value
-        ? focusKeys.map((key) => {
-          return (
-            <div className="TrendPointers_legend_key w100" key={key}>
-              <div className="flex items-end justify-between w100">
-                <div>
-                  {colorKeys[key]
-                    ? (<span className="TrendPointers_legend_key_circle" style={{backgroundColor: colorKeys[key]}}></span>)
-                    : null
-                  }
-                  {t(`dataset${themeDatasetId}LegendValue${key}`)}
-                </div>
-                <div className="tr ml2" style={{
-                  color: 'var(--white)'
-                }}>{t('number', { n: value[key] })}</div>
-              </div>
-            </div>
-          )})
-        : null
-      }
-      </div>
+      <TrendTooltip
+        className="TrendPointers_legend absolute pa3"
+        datasetId={themeDatasetId}
+        marginLeft={marginLeft}
+        marginTop={marginTop}
+        availableWidth={width}
+        availableHeight={height}
+        isVisible={isVisible}
+        value={value}
+        keys={focusKeys}
+        numericTranslationLabel={numericTranslationLabel}
+        // dict of {key:color}
+        colors={colorKeys}
+      />
     </div>
   )
 }

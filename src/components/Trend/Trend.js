@@ -40,6 +40,7 @@ const Trend = ({
   marginTop=50,
   displayPoints=false,
   displayDashedLine=false,
+  numericTranslationLabel='number'
 }) => {
   const [pointer, setPointer] = useSpring(() => ({ x:0, y:0, xValue:0, config: config.stiff  }))
   const svgHeight = height - 100
@@ -85,6 +86,7 @@ const Trend = ({
   const numTicks = Math.round(svgWidth / 80)
   return (
     <div className="Trend" onMouseMove={updateMousePosition}>
+      {/* red line animated pointer */}
       <animated.div style={{
         position: 'absolute',
         backgroundColor: 'var(--accent)',
@@ -123,6 +125,7 @@ const Trend = ({
         left={left}
         top={top}
         values={values}
+        numericTranslationLabel={numericTranslationLabel}
       >
         <DownloadDataButton label="test" values={data} legend={legend} />
       </TrendPointers>
