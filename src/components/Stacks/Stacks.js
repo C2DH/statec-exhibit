@@ -107,7 +107,7 @@ const Stacks = ({
       <svg height={height} width={width}>
       <g transform={`translate(${marginLeft}, ${marginTop})`}>
         {series.map((d,i) => (
-          <path d={areaGen(d)} fill={scaledGroupValues[i].color}/>
+          <path key={i} d={areaGen(d)} fill={scaledGroupValues[i].color}/>
         ))}
         </g>
         <TrendAxisBottomGraphics
