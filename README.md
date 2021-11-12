@@ -86,6 +86,9 @@ As an example, let's have a look at one of the current themes:
   "sections": [
     {
       "dataset": "population-natural-growth-details",
+      "numericTranslationLabel": "number",
+      "displayPoints": true,
+      "displayDashedLine": true,
       "modules": [
         {
           "title": "Naissance: un taux de natalité en baisse sur deux cents ans",
