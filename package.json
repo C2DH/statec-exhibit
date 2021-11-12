@@ -66,6 +66,9 @@
     ]
   },
   "devDependencies": {
+    "chalk": "^4.1.2",
+    "jimp": "^0.16.1",
+    "png-to-ico": "^2.1.2",
     "prettier": "^2.0.5",
     "sass": "^1.32.12",
     "sharp": "^0.26.2"
