@@ -28,6 +28,7 @@
       "dataset": "EmploymentTotal",
       "displayPoints": true,
       "displayDashedLine": true,
+      "numericTranslationLabel": "number",
       "modules": [
         {
           "title": "L’évolution générale de l’emploi",
@@ -81,8 +82,8 @@
             {
               "from": 1840,
               "to": 1871,
-              "visibleKeys": ["v", "v1", "v2", "v3"],
-              "focusKeys": ["v", "v1", "v2", "v3"],
+              "visibleKeys": ["v"],
+              "focusKeys": ["v"],
               "text": "Jusqu’au dernier quart du 19ème siècle, les statistiques « sociales » luxembourgeoises s’intéressent peu à la question de l’activité professionnelle et de l’emploi. Jusqu’à cette époque, on vit encore dans une société où l’agriculture domine largement le tissu économique et où les autres activités économiques sont en grande partie artisanales. Ce sont d’abord les recensements qui fournissent des données sur le travail. Dans les recensements de 1871, on ne dispose que du classement selon les professions et le « reclassement » selon les secteurs d’activité n’est donc qu’une approximation. Cela d’autant plus que, les réponses de sont pas assez précises dans beaucoup de cas. D’ailleurs, en 1871, on demande aux recensés d’indiquer soit leur profession, soit la branche d’activité (« Beruf-oder Gewerbezweig »). ",
               "hotspots": [
                 {
@@ -97,8 +98,8 @@
             {
               "from": 1840,
               "to": 1871,
-              "visibleKeys": ["v", "v1", "v2", "v3"],
-              "focusKeys": ["v", "v1", "v2", "v3"],
+              "visibleKeys": ["v"],
+              "focusKeys": ["v"],
               "text": "La question consacrée au travail dans le recensement de 1871 va un peu plus loin en ajoutant un élément, à savoir la profession accessoire éventuelle (« Berufs-oder Gewerbezweig ; mit Erwerb verbundene Nebenbeschäftigungen ; Arbeits und Dienstverhältnis – der über 14 jahre alten Personen »). Cette question répond évidemment à une réalité socio-professionnelle, à savoir le fait que beaucoup d’ouvriers, par exemple, avaient également une activité agricole accessoire permettant de joindre les deux bouts à la fin du mois ou de simplement manger à leur fin avec leur famille. Mais comme cette question n’est pas véritablement codifiée, les recensés n’y ont pas répondu en détail. Ils se sont limités généralement à mentionner la profession principale du « chef de famille ».",
               "figures": [
                 {
@@ -116,6 +117,9 @@
             {
               "from": 1907,
               "to": 1935,
+              "visibleKeys": ["v", "v1"],
+              "focusKeys": ["v", "v1"],
+              "colorKeys": { "v": "var(--secondary)", "v1": "var(--datakey-v1)" },
               "text": "Le recensement professionnel et industriel de 1907 est la première véritable enquête statistique qui s’intéresse de plus près au marché du travail. Cela résulte du fait que l’emploi est en train de muter avec une sidérurgie, et donc un nombre d’ouvriers et d’employés salariés, en croissance significative. Cette enquête s’inscrit également dans un contexte international favorable à de telles études et s’appuie d’ailleurs sur une enquête allemande qui est réalisée à la même époque. A noter que la proximité économique avec l’Allemagne (« Zollverein ») se traduit également avec une « proximité statistique ». La date a été d’ailleurs choisie pour être en harmonie avec l’enquête très similaire faite en Allemagne. Contrairement au recensement de 1871, les questions sur la branche d’activité et sur la profession sont clairement séparées en 1907, tout comme la question de la profession accessoire. Les explications méthodologiques sont assez détaillées, mais des codifications précises (chiffrées) dans le questionnaire (donc dès l’origine) concernant les branches d’activité ou les professions manquent toujours. Les classements doivent donc être effectués a posteriori. La publication des résultats de l’enquête – un travail consistant d’une douzaine de volumes - s’étire d’ailleurs de 1910 à 1913.",
               "figures": [
                 {
@@ -126,30 +130,45 @@
             {
               "from": 1907,
               "to": 1935,
+              "visibleKeys": ["v", "v1", "v2", "v3"],
+              "focusKeys": ["v", "v1", "v2", "v3"],
+              "colorKeys": { "v": "var(--secondary)", "v1": "var(--datakey-v1)", "v2": "var(--datakey-v)", "v3": "var(--t1-colorkeys-tertiary)" },
               "text": "A titre d’exemple, une des recommandations qui accompagnent le questionnaire de l’enquête de 1907 est formulée ainsi :  « Des expressions telles que fabricant, négociant, commerçant, ingénieur, contre-maître, machiniste, chauffeur, ouvrier, ne suffisent pas à cet effet, il faut l'indication de la branche spéciale de la fabrication, du métier, du commerce ou de telle autre profession dans laquelle la personne en question est occupée, ainsi, p. ex. manufacture de cigares, manufacture de gants, fabrique de coffres-forts, fonderie, commerce de matériaux de constructions, etc. ». La méthodologie de classification des professions de 1907 compte 6 grandes divisions (A. Agriculture, B. Industries, C. Commerce, transports, cafés et auberges D. Services domestiques, E. Services de l’Etat et des communes, services ecclésiastiques et professions libérales ; F. Personnes sans profession et sans indication de profession. Sur ces 6 grandes divisions se greffent 26 groupes et pas de moins 218 classes de professions. A vrai dire Il d’agit plutôt d’une classification hybride (secteurs d’activité – professions). En effet, certaines activités professionnelles (notamment parmi les employés) sont très comparables dans le commerce, dans les industries et dans les services publics (même si les conditions de travail peuvent différer). Par exemple dans le domaine de l’organisation et de la comptabilité les activités professionnelles sont souvent similaires dans toutes ces divisions. ",
               "figures": [{"id": "travailleurs-haut-fourneau-1900.jpg"}]
             },
             {
               "from": 1907,
               "to": 1935,
+              "visibleKeys": ["v", "v1", "v2", "v3"],
+              "focusKeys": ["v", "v1", "v2", "v3"],
+              "colorKeys": { "v": "var(--secondary)", "v1": "var(--datakey-v1)", "v2": "var(--datakey-v)", "v3": "var(--t1-colorkeys-tertiary)" },
               "text": "En d’autres mots, un travail important et méticuleux est demandé à la fois aux agents engagés par les communes chargées alors (comme aujourd’hui) de la distribution des questionnaires et de la récolte des réponses (et des conseils donnés aux recensés) et aux fonctionnaires de la Commission permanente de statistique. Cet organisme est créé en 1900, notamment en vue de l’exécution de ce ce grand recensement de 1907.  Il s’agit du premier organisme statistique professionnel, c’est-à-dire disposant de ressources humaines (notamment un secrétaire et des « commis » prévus par un acte législatif de 1904) qui s’occupent exclusivement de statistiques.",
               "figures":[{"caption":"Loi du 25 juin 1900 prévoyant la création d’un service statistique (extrait)"}]
             },
             {
               "from": 1907,
               "to": 1935,
+              "visibleKeys": ["v", "v1", "v2", "v3"],
+              "focusKeys": ["v", "v1", "v2", "v3"],
+              "colorKeys": { "v": "var(--secondary)", "v1": "var(--datakey-v1)", "v2": "var(--datakey-v)", "v3": "var(--t1-colorkeys-tertiary)" },
               "text": "Le recensement de 1907 contient, pour la première fois, des demandes sur les conditions de travail (repos hebdomadaire ou mensuel, durée de travail) et sur une éventuelle incapacité de travail. Cette question est liée à l’introduction en 1911 de l’assurance vieillesse invalidité. Il s’agit donc d’un début de ce que l’on appelle aujourd’hui la « evidence-based policy ».  En 1907, sur les 43.080 ouvriers que l’on compte dans les principales branches économiques, 30.818 ont un jour de repos par semaine, le reste des ouvriers et employés a même moins de jours de repos. En outre, quelque 90% de l’ensemble des employés et ouvriers travaillent 10 heures et plus par jour. La journée de 8 heures n’est imposée qu’après la première guerre mondiale et une réglementation concernant les jours de repos est introduite à la même époque.",
               "figures":[{"caption":"Durée de travail, en 1907"}]
             },
             {
               "from": 1907,
               "to": 1935,
+              "visibleKeys": ["v", "v1", "v2", "v3"],
+              "focusKeys": ["v", "v1", "v2", "v3"],
+              "colorKeys": { "v": "var(--secondary)", "v1": "var(--datakey-v1)", "v2": "var(--datakey-v)", "v3": "var(--t1-colorkeys-tertiary)" },
               "text": "L’enquête de 1907 essaie également de déterminer les parts de la population dépendant des différentes professions. C’est une vue plutôt « sociologique » qui tente en quelque sorte de mesurer l’impact des différentes branches économiques sur la société luxembourgeoise dans son ensemble. A titre d’exemple, dans l’agriculture on compte 52.807 « individus actifs » (dont 22.191 femmes), mais le total des personnes dépendant de cette branche est de 88.470 personnes, dont 46.537 femmes. Dans la branche industrielle des mines et hauts fourneaux, le nombre d’individus actifs est de 15.154 personnes (dont seulement 4 femmes). Le total des personnes dépendantes des mines et hauts-fourneaux est de 32.72 dont seulement 11.673 femmes, signe que cette branche fonctionne en partie avec des ouvriers étrangers souvent célibataires ou vivant sans leur famille. Cette approche, c’est-à-dire celle de relier les personnes non-actives d’un ménage aux actifs (par branche) est également le reflet de la représentation de la société – et de la famille – où le père travaille et fait vivre la famille et la « mère au foyer ». ",
               "figures":[{"caption":"Individus actifs et personnes dépendant de la profession, 1907"}]
             },
             {
               "from": 1907,
               "to": 1935,
+              "visibleKeys": ["v", "v1", "v2", "v3"],
+              "focusKeys": ["v", "v1", "v2", "v3"],
+              "colorKeys": { "v": "var(--secondary)", "v1": "var(--datakey-v1)", "v2": "var(--datakey-v)", "v3": "var(--t1-colorkeys-tertiary)" },
               "text": "Les recensements et les enquêtes effectuées depuis le début du 20ème siècle au Luxembourg s’adressent généralement aux résidents. Il est d’autant plus remarquable que l’enquête professionnelle et industrielle de 1907 – adressée aux patrons –  prévoit une question concernant les personnes « travaillant dans des exploitations du Grand-Duché, alors qu’ils habitent au-delà de la frontière. » Il s’agit d’un signe montrant l’imprtance du phénomène du travail frontaleir dès cette époque. Aujourd’hui au Luxembourg, une seule enquête, à savoir l’enquête sur la structure des salaires (Structure of Earnings Survey, SES) tient compte de l’emploi frontalier. A noter que comme cette partie de l’enquête de 1907, la SES s’adresse également aux entreprises et non pas aux individus. Par contre, l’enquête européenne sur les forces de travail (EFT) existant depuis le début des années 1980 au Luxembourg ne s’adresse qu’aux individus résidents. Les taux de chômage et les taux d’emploi et d’activité calculés sur la base de l’enquête sur les forces de travail ne concernent donc que les résidents. Aujourd’hui, comme l’enquête sur la structure des salaires n’est réalisée que tous les 4 ans, les informations les plus actuelles sur l’évolution de l’emploi frontalier sont issues des fichiers administratifs de la sécurité sociale.",
               "figures":[{"caption": "Le questionnaire concernant les frontaliers dans le recensement industriel et professionnel de 1907"}]
             }
@@ -160,8 +179,9 @@
             {
               "from": 1871,
               "to": 2020,
-              "visibleKeys": ["v"],
-              "focusKeys": ["v"],
+              "visibleKeys": ["v", "v1", "v2", "v3"],
+              "focusKeys": ["v", "v1", "v2", "v3"],
+              "colorKeys": { "v": "var(--secondary)", "v1": "var(--datakey-v1)", "v2": "var(--datakey-v)", "v3": "var(--t1-colorkeys-tertiary)" },
               "text": "L’emploi dans l’agriculture est en déclin sur le long terme.  En 1871, l’agriculture constitue quelque 60% de l’emploi total. En 1907, la part dépasse à peine les 40% et au début des années 1960, le pourcentage se situe déjà en-dessous des 20%. Aujourd’hui, la part de ce secteur dans l’emploi se situe en-dessous de 1% . En chiffres absolus, en 1871, environ 53 000 personnes sont actives dans l’agriculture en 1907, contre seulement 3.70 en 2010.",
               "dataset": "EconomicSectorsEmployment",
               "datasetLayout": "Stacks",
@@ -175,11 +195,17 @@
             {
               "from": 1907,
               "to": 1947,
+              "visibleKeys": ["v", "v1", "v2", "v3"],
+              "focusKeys": ["v", "v1", "v2", "v3"],
+              "colorKeys": { "v": "var(--secondary)", "v1": "var(--datakey-v1)", "v2": "var(--datakey-v)", "v3": "var(--t1-colorkeys-tertiary)" },
               "text": "[...] Néanmoins, pour les années 1907-1947, cette analyse est basée sur les résultats des recensements de la population. Pour ces années est un peu biaisée par la prise en compte des aidants familiaux."
             },
             {
               "from": 1871,
               "to": 2020,
+              "visibleKeys": ["v", "v1", "v2", "v3"],
+              "focusKeys": ["v", "v1", "v2", "v3"],
+              "colorKeys": { "v": "var(--secondary)", "v1": "var(--datakey-v1)", "v2": "var(--datakey-v)", "v3": "var(--t1-colorkeys-tertiary)" },
               "text": "Le déclin de l’emploi dans l’agriculture ne doit pas cacher les gains de productivité en agriculture. La taille moyenne des exploitations agricoles passe de moins de 4 ha en 1907 à plus de 70 ha aujourd’hui. La production totale de lait qui fut de 102.000 tonnes en 1913 est de 447.000 t. en 2020, avec à peu près le même nombre de vaches laitières, autour de 55.000 à ces deux dates. La production de lait par vache fut de moins de 2.000 kg par an et par vache laitière en 1913 et de quelque 8.200 kg. en 2020.  Après la deuxième guerre mondiale, la mécanisation de l’agriculture est fulgurante. Le nombre de tracteurs passe de 1.392 en 1950 à 8.900 à la fin des années 1980. En revanche, le nombre de chevaux dégringole de quelque 17.000 à la veille de la deuxième guerre mondiale à moins de 3.000 à la fin des années 1980 (et il s’agit en très grande partie de chevaux tenus pour des activités de loisirs aujourd’hui)"
             }
           ]
