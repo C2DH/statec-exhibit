@@ -16,7 +16,8 @@ const ChapterVisualisations = ({
   displayDashedLine=false,
   keys=['v'], legend, data=[], modules=[], height=100, width=100, step,
   numStartAt=0,
-  marginLeft=100
+  marginLeft=100,
+  numericTranslationLabel='number',
 }) => {
   const ref = useRef();
   const { t } = useTranslation()
@@ -88,6 +89,7 @@ const ChapterVisualisations = ({
           <Component
             displayPoints={displayPoints}
             displayDashedLine={displayDashedLine}
+            numericTranslationLabel={numericTranslationLabel}
             themeDatasetId={themeDatasetId}
             from={paragraph?.from}
             to={paragraph?.to}
