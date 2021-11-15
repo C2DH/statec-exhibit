@@ -122,6 +122,7 @@ const DebugDataset = ({
   // null or Array
   range=null,
   numericTranslationLabel='number',
+  displayPoints=true,
   hidePercentage, displayDashedLine, children
 }) => {
   const { item, error, status } = useGetDataset({ url : `/datasets/${id}.json`, delay: 100})
@@ -148,6 +149,7 @@ const DebugDataset = ({
         height={height} width={width}
         hidePercentage={hidePercentage}
         displayDashedLine={displayDashedLine}
+        displayPoints={displayPoints}
         numericTranslationLabel={numericTranslationLabel}
         range={range}
       />
