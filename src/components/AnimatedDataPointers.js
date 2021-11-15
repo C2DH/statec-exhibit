@@ -65,7 +65,7 @@ const AnimatedPointers = ({
             color: 'var(--white)',
             borderRadius: 4,
             border: "1px solid var(--secondary)",
-            
+            whiteSpace: 'nowrap'
           }}>{d.values[closestIdx][d.key] === null ? '(NA)' : t(numericTranslationLabel, { n: d.values[closestIdx][d.key]})}</span>
           </div>
         </div>
