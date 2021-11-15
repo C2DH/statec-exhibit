@@ -22,6 +22,7 @@ const Lines = ({
   marginLeft=50,
   marginRight=20,
   from=StartYear, to=EndYear,
+  numericTranslationLabel='number',
 }) => {
   const windowDimensions = [width, height].join(',')
   const [pointer, setPointer] = useSpring(() => ({ pos:[0, 0], config: config.stiff  }))
@@ -64,6 +65,7 @@ const Lines = ({
       offsetTop={marginTop}
       offsetLeft={marginLeft}
       data={scaledGroupValues}
+      numericTranslationLabel={numericTranslationLabel}
       closestIdx={pointer.pos.interpolate((x,y) => {
         if (!scaledGroupValues[0]) return 0
         const closestIdx = getClosestDatumIdxFromX({
