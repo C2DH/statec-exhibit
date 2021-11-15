@@ -240,7 +240,30 @@
             {
               "from": 1907,
               "to": 2020,
+              "visibleKeys": ["v", "v2"],
+              "focusKeys": ["v", "v2"],
+              "colorKeys": { "v": "var(--secondary)", "v1": "var(--datakey-v1)", "v2": "var(--datakey-v)", "v3": "var(--t1-colorkeys-tertiary)" },
               "text": "Selon le recensement professionnel industriel du 12 juin 1907 (une première du genre), 66663 personnes exercent une activité accessoire, dont 48 719 dans l’agriculture. De ces 48 719 cas d’activité accessoire dans l’agriculture, 30 630 (63%) sont exercés par des ouvriers. Le recensement de 1960 indique encore 630 (7,6%) agriculteurs-patrons exerçant à titre accessoire sur un total de 8 284. (Gérard Trausch : Histoire économique du Luxembourg 1815-2015, STATEC, 2017)"
+            }
+          ]
+        },
+        {
+          "title": "Vers une société salariale ",
+          "paragraphs": [
+            {
+              "from": 1871,
+              "to": 2020,
+              "visibleKeys": ["v", "v1", "v2", "v3"],
+              "focusKeys": ["v", "v1", "v2", "v3"],
+              "colorKeys": { "v": "var(--secondary)", "v1": "var(--datakey-v1)", "v2": "var(--datakey-v)", "v3": "var(--t1-colorkeys-tertiary)" },
+              "text": "Vers 1850, il y a peu de « salariés » au sens actuel du terme, même si l’emploi de « journaliers », c’est-à-dire des personnes travaillant dans l’agriculture, dans l’artisanat ou encore des travaux d’infrastructure (chemins de fer, p.ex.) et rémunérés par journée (des emplois précaires dans la terminologie d’aujourd’hui) tend à se développer."
+            }, {
+              "from": 1871,
+              "to": 2020,
+              "visibleKeys": ["v", "v1", "v2", "v3"],
+              "focusKeys": ["v", "v1", "v2", "v3"],
+              "colorKeys": { "v": "var(--secondary)", "v1": "var(--datakey-v1)", "v2": "var(--datakey-v)", "v3": "var(--t1-colorkeys-tertiary)" },
+              "text": "Une autre catégorie « professionnelle) utilisée à la fin du 19ème siècle et au début du 20ème siècle est celle des aidants familiaux, souvent des épouses travaillant dans l’entreprise familiale agricole ou artisanale. Comme la rationalité purement économique – et productiviste - s’impose à partir de la fin  du 19ème siècle et avec force après la deuxième guerre mondiale, toutes les catégories d’activités non-rémunérées sont éliminées des statistiques de l’emploi et de l’activité professionnelle. Dans cette logique, le travail domestique n’est – statistiquement – pas pris en compte."
             }
           ]
         }
