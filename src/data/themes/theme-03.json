@@ -201,12 +201,46 @@
               "text": "[...] Néanmoins, pour les années 1907-1947, cette analyse est basée sur les résultats des recensements de la population. Pour ces années est un peu biaisée par la prise en compte des aidants familiaux."
             },
             {
-              "from": 1871,
+              "from": 1907,
               "to": 2020,
-              "visibleKeys": ["v", "v1", "v2", "v3"],
-              "focusKeys": ["v", "v1", "v2", "v3"],
+              "visibleKeys": ["v", "v1"],
+              "focusKeys": ["v", "v1"],
               "colorKeys": { "v": "var(--secondary)", "v1": "var(--datakey-v1)", "v2": "var(--datakey-v)", "v3": "var(--t1-colorkeys-tertiary)" },
-              "text": "Le déclin de l’emploi dans l’agriculture ne doit pas cacher les gains de productivité en agriculture. La taille moyenne des exploitations agricoles passe de moins de 4 ha en 1907 à plus de 70 ha aujourd’hui. La production totale de lait qui fut de 102.000 tonnes en 1913 est de 447.000 t. en 2020, avec à peu près le même nombre de vaches laitières, autour de 55.000 à ces deux dates. La production de lait par vache fut de moins de 2.000 kg par an et par vache laitière en 1913 et de quelque 8.200 kg. en 2020.  Après la deuxième guerre mondiale, la mécanisation de l’agriculture est fulgurante. Le nombre de tracteurs passe de 1.392 en 1950 à 8.900 à la fin des années 1980. En revanche, le nombre de chevaux dégringole de quelque 17.000 à la veille de la deuxième guerre mondiale à moins de 3.000 à la fin des années 1980 (et il s’agit en très grande partie de chevaux tenus pour des activités de loisirs aujourd’hui)"
+              "text": "Le déclin de l’emploi dans l’agriculture ne doit pas cacher les gains de productivité en agriculture. La taille moyenne des exploitations agricoles passe de moins de 4 ha en 1907 à plus de 70 ha aujourd’hui. La production totale de lait qui fut de 102.000 tonnes en 1913 est de 447.000 t. en 2020, avec à peu près le même nombre de vaches laitières, autour de 55.000 à ces deux dates. La production de lait par vache fut de moins de 2.000 kg par an et par vache laitière en 1913 et de quelque 8.200 kg. en 2020.  Après la deuxième guerre mondiale, la mécanisation de l’agriculture est fulgurante. Le nombre de tracteurs passe de 1.392 en 1950 à 8.900 à la fin des années 1980. En revanche, le nombre de chevaux dégringole de quelque 17.000 à la veille de la deuxième guerre mondiale à moins de 3.000 à la fin des années 1980 (et il s’agit en très grande partie de chevaux tenus pour des activités de loisirs aujourd’hui)",
+              "dataset": "MilkProduction",
+              "datasetLayout": "Lines",
+              "datasetLegend": "Rendement laitier, 1913-2020",
+              "datasetNumericTranslationLabel": "kg"
+            },
+            {
+              "from": 1907,
+              "to": 2020,
+              "visibleKeys": ["v", "v2"],
+              "focusKeys": ["v", "v2"],
+              "colorKeys": { "v": "var(--secondary)", "v1": "var(--datakey-v1)", "v2": "var(--datakey-v)", "v3": "var(--t1-colorkeys-tertiary)" },
+              "text": "La part des personnes travaillant dans l’industrie, qui fut d’environ 20% de l’emploi total en 1870, atteint près de 40% dès 1907, suite surtout à l’augmentation de l’emploi dans les mines de fer et les usines sidlérurrgiques.. Au cours de cette dernière années, sur un emploi total de quelque 123.000 personnes, un peu plus de 47.000 travaillent dans l’industrie. Après la deuxième guerre mondiale, la reconstruction est synonyme d’un certain boom de l’emploi.",
+              "dataset": "EmploymentGrowth",
+              "datasetLayout": "Lines",
+              "datasetLegend": "Croissance de l'emploi dans quelques pays européens, 1960-2020 (1960 = 100)",
+              "datasetExtent": [1960, 2021],
+              "datasetDisplayPoints": false,
+              "datasetNumericTranslationLabel": "percentage",
+              "datasetKeys": ["v", "v1", "v2", "v3", "v4"],
+              "datasetColorKeys": { "v": "var(--dataset-t2-v)", "v1": "var(--dataset-t2-v1)", "v2": "red"}
+            },
+            {
+              "from": 1907,
+              "to": 2020,
+              "visibleKeys": ["v", "v2"],
+              "focusKeys": ["v", "v2"],
+              "colorKeys": { "v": "var(--secondary)", "v1": "var(--datakey-v1)", "v2": "var(--datakey-v)", "v3": "var(--t1-colorkeys-tertiary)" },
+              "text": "L’industrie sidérurgique ne se développe véritablement qu’à partir des années 1880 avec la possibilité qu’offre désormais le procédé Thomas (1879) de transformer la fonte phosphoreuse (produite à partir de la minette luxembourgeoise) en acier de bonne qualité. L’ascension de la sidérurgie fut d’autant plus fulgurante que dans d’autres régions européennes.",
+              "figures": [{ "caption": "Montage du nouveau sac à poussière du haut-fourneau /AnLux, Arbed ph00025" }]
+            },
+            {
+              "from": 1907,
+              "to": 2020,
+              "text": "Selon le recensement professionnel industriel du 12 juin 1907 (une première du genre), 66663 personnes exercent une activité accessoire, dont 48 719 dans l’agriculture. De ces 48 719 cas d’activité accessoire dans l’agriculture, 30 630 (63%) sont exercés par des ouvriers. Le recensement de 1960 indique encore 630 (7,6%) agriculteurs-patrons exerçant à titre accessoire sur un total de 8 284. (Gérard Trausch : Histoire économique du Luxembourg 1815-2015, STATEC, 2017)"
             }
           ]
         }
