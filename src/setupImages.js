@@ -49,7 +49,7 @@ fs.readdir(sourcePath, async(err, files) => {
       const targetFilepath = path.join(targetPath, targetFilename)
       console.log(sourceFilepath, `--> [${size}] ${targetFilepath}`)
       mediaIndex.images[filename].resolutions[size] = {
-        url: path.join(mediaUrl, targetFilename),
+        url: path.join(mediaUrl, targetFilename).replace('\\','/'), 
         params: { size, width, height }
       };
       await sharp(sourceFilepath)
