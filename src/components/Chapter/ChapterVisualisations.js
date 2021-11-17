@@ -35,6 +35,13 @@ const ChapterVisualisations = ({
   const paragraph = step
     ? paragraphs.find(d => step.paragraphId === d.paragraphId)
     : null
+  let hotspots = []
+  if (paragraph) {
+    hotspots = paragraph.hotspots ?? []
+  }
+  if (modules && step) {
+    hotspots = hotspots.concat(modules[step.moduleId].hotspots ?? [])
+  }
   // reload bounding box whenever height or width changes
   useEffect(() => {
     if (ref && ref.current) {
@@ -94,7 +101,7 @@ const ChapterVisualisations = ({
             from={paragraph?.from}
             to={paragraph?.to}
             paragraphId={paragraph?.paragraphId}
-            hotspots={paragraph?.hotspots}
+            hotspots={hotspots}
             data={data}
             availableKeys={paragraph?.availableKeys ? paragraph.availableKeys: keys}
             focusKeys={paragraph?.focusKeys ? paragraph.focusKeys : paragraph?.visibleKeys }
