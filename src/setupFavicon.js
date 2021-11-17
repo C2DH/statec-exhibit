@@ -7,7 +7,7 @@ const hex = process.argv.slice(2).shift().trim()
 console.log("color chosen", hex, chalk.supportsColor? '(preview)' : 'no preview available')
 const h = hex.replace('#', '0x');
 const size = 16
-const color = parseInt(`0x${h}FF`)
+const color = 0xFDFD9BFF // parseInt(`0x${h}FF`)
 
 for(let i = 0; i < size; i++){
   log(chalk.bgHex(hex).bold('  '.repeat(size)));
