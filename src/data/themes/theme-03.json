@@ -87,6 +87,13 @@
         },
         {
           "title": "Les sources des statistiques du travail",
+          "hotspots": [
+            {
+              "t": 1907,
+              "title": "Recensement professionnel et industriel",
+              "text": "Première véritable enquête statistique qui s’intéresse de plus près au marché du travail"
+            }
+          ],
           "paragraphs": [
             {
               "from": 1840,
@@ -94,12 +101,6 @@
               "visibleKeys": ["v"],
               "focusKeys": ["v"],
               "text": "Jusqu’au dernier quart du 19ème siècle, les statistiques « sociales » luxembourgeoises s’intéressent peu à la question de l’activité professionnelle et de l’emploi. Jusqu’à cette époque, on vit encore dans une société où l’agriculture domine largement le tissu économique et où les autres activités économiques sont en grande partie artisanales. Ce sont d’abord les recensements qui fournissent des données sur le travail. Dans les recensements de 1871, on ne dispose que du classement selon les professions et le « reclassement » selon les secteurs d’activité n’est donc qu’une approximation. Cela d’autant plus que, les réponses de sont pas assez précises dans beaucoup de cas. D’ailleurs, en 1871, on demande aux recensés d’indiquer soit leur profession, soit la branche d’activité (« Beruf-oder Gewerbezweig »). ",
-              "hotspots": [
-                {
-                  "t": 1871,
-                  "text": "Recensement"
-                }
-              ],
               "figures": [{
                 "caption" : "Source : Archives nationales, recensement de 1871"
               }]
