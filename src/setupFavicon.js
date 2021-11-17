@@ -6,7 +6,7 @@ const log = console.log;
 const hex = process.argv.slice(2).shift().trim()
 console.log("color chosen", hex, chalk.supportsColor? '(preview)' : 'no preview available')
 const h = hex.replace('#', '0x');
-const size = 1
+const size = 16
 const color = parseInt(`0x${h}FF`)
 
 for(let i = 0; i < size; i++){
@@ -21,7 +21,7 @@ new Jimp(size, size, (err, image) => {
 
   for(let x = 0; x < size; x++) {
     for(let y = 0; y < size; y++) {
-      image.setPixelColor(0xFDFD9BFF, x, y);
+      image.setPixelColor(color, x, y);
     }
   }
   image.write('test.png', (err) => {
