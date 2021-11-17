@@ -38,7 +38,16 @@
               "to": 1947,
               "visibleKeys": ["v"],
               "focusKeys": ["v"],
-              "text": "L’emploi au Luxembourg est le reflet de la croissance économique. Jusque dans les années 1980, l’augmentation de l’emploi est plutôt modérée. On passe de 123 000 personnes actives en 1907 à environ 134 000 en 1947. Entre 1907 et 1947 (contrairement à la période récente), la part des étrangers dans l’emploi se tasse un peu. En 1907, sur une population active de 123.116 personnes, on compte près de 21 000 étrangers, alors qu’en 1947 il y a 15 300 étrangers sur 134 200 personnes actives. C’est le signe d’une économie prise dans les remous de la première guerre mondiale, de la crise de 1929 (qui impacte le Luxembourg à partir de 1930) et de la deuxième guerre mondiale qui font rechuter là chaque fois la croissance et l’emploi et qui font de ces années une période instable pendant laquelle les étrangers jouent le rôle de soupape de sécurité. Par ailleurs, la part des femmes dans l’emploi est stable au cours de période : 36 699 femmes actives en 1907 et 38 725 en 1947. "
+              "text": "L’emploi au Luxembourg est le reflet de la croissance économique. Jusque dans les années 1980, l’augmentation de l’emploi est plutôt modérée. On passe de 123 000 personnes actives en 1907 à environ 134 000 en 1947. Entre 1907 et 1947 (contrairement à la période récente), la part des étrangers dans l’emploi se tasse un peu. En 1907, sur une population active de 123.116 personnes, on compte près de 21 000 étrangers, alors qu’en 1947 il y a 15 300 étrangers sur 134 200 personnes actives. C’est le signe d’une économie prise dans les remous de la première guerre mondiale, de la crise de 1929 (qui impacte le Luxembourg à partir de 1930) et de la deuxième guerre mondiale qui font rechuter là chaque fois la croissance et l’emploi et qui font de ces années une période instable pendant laquelle les étrangers jouent le rôle de soupape de sécurité. Par ailleurs, la part des femmes dans l’emploi est stable au cours de période : 36 699 femmes actives en 1907 et 38 725 en 1947. ",
+              "figures": [
+                {
+                  "id": "picture_1.png",
+                  "caption": "La crise en 1931"
+                },
+                {
+                  "caption": "Une moissonneuse-batteuse contemproraine en action"
+                }
+              ]
             },
             {
               "from": 1947,
