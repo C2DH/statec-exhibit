@@ -40,7 +40,7 @@ const ChapterVisualisations = ({
     hotspots = paragraph.hotspots ?? []
   }
   if (modules && step) {
-    hotspots = hotspots.concat(modules[step.moduleId].hotspots ?? [])
+    hotspots = hotspots.concat(modules[step.moduleId]?.hotspots ?? [])
   }
   // reload bounding box whenever height or width changes
   useEffect(() => {
