@@ -2783,6 +2783,47 @@
       "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAUCAIAAAA/ees8AAAACXBIWXMAAA7DAAAOwwHHb6hkAAAA6klEQVQY001QC47FIAjk/rdo0k1bFQWrtptebkd5z+4kEmRg+NCyLOu6Hsex7xvstm2IwKHW2n3fOeckklK6rut5HkSo1vN5fmtRd/wEv7VWWqtXKxSCR3qMHDmoJlXp1YkJclDI/5CShODIO5fPU0RU9RyAH/xB3nsEjUC6cRw8MfsMXZUUWST2zldVYcq5K9RahoOKXEovohijiZQCLs9OL4HPdGBp33eMGwdkLG9On8o+sKZTa+0VzGyJtt3bA4RJ6xe2E24Vxq3ipGWgT2WECQIfwtSnRegzFd7cAJAv+rjOuXHKF8j7Ay67SixGTJgGAAAAAElFTkSuQmCC",
       "aspectRatio": 0.39166666666666666,
       "isPortrait": true
+    },
+    "LW_Foto_copyright_Lucien_Wolff_Luxemburger_Wort_2019.jpeg": {
+      "caption": "Luxembourg Pride Week",
+      "provenance": "© 2021 Luxemburger Wort – Photographe : Lucien Wolff – Tous droits réservés – Des licences d’utilisation de droits d’auteur peuvent être obtenues à travers www.luxorr.lu ",
+      "resolutions": {
+        "medium-w": {
+          "url": "/media/images/LW_Foto_copyright_Lucien_Wolff_Luxemburger_Wort_2019.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/LW_Foto_copyright_Lucien_Wolff_Luxemburger_Wort_2019.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/LW_Foto_copyright_Lucien_Wolff_Luxemburger_Wort_2019.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 1080,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/LW_Foto_copyright_Lucien_Wolff_Luxemburger_Wort_2019.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 960
+          }
+        }
+      },
+      "base64": "data:image/png;base64,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",
+      "aspectRatio": 1.5,
+      "isPortrait": false
     }
   }
 }
