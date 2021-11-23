@@ -2824,6 +2824,580 @@
       "base64": "data:image/png;base64,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",
       "aspectRatio": 1.5,
       "isPortrait": false
+    },
+    "picture_3p1-2.jpg": {
+      "caption": "L’usine de Dupont de Nemours en 2020",
+      "provenance": "CC BY-SA 4.0",
+      "resolutions": {
+        "medium-w": {
+          "url": "/media/images/picture_3p1-2.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/picture_3p1-2.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/picture_3p1-2.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 1080,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/picture_3p1-2.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 960
+          }
+        }
+      },
+      "base64": "data:image/png;base64,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",
+      "aspectRatio": 1.3583333333333334,
+      "isPortrait": false
+    },
+    "picture_3p1-3.jpg": {
+      "caption": "Une autoroute luxembourgeoise en 2020",
+      "provenance": "Photo RL / Pierre Heckler",
+      "resolutions": {
+        "medium-w": {
+          "url": "/media/images/picture_3p1-3.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/picture_3p1-3.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/picture_3p1-3.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 1080,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/picture_3p1-3.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 960
+          }
+        }
+      },
+      "base64": "data:image/png;base64,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",
+      "aspectRatio": 1.5,
+      "isPortrait": false
+    },
+    "Picture_3p2-1.png": {
+      "caption": "Questionnaire du recensement de 1871",
+      "provenance": "Archives nationales, recensement de 1871",
+      "resolutions": {
+        "medium-w": {
+          "url": "/media/images/Picture_3p2-1.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/Picture_3p2-1.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/Picture_3p2-1.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 1080,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/Picture_3p2-1.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 960
+          }
+        }
+      },
+      "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAUCAIAAAAcIrrpAAAACXBIWXMAAAsTAAALEwEAmpwYAAADRElEQVQ4y02UyU4iQBCG++28e+PEwYtREy+jQRFcJ9ETRLmMaEIIGlzC4IIbIAooqyyyDYszLmGG+BTzTZd2pg6d6uqqv/6q6m7lcrkikcjh4WEoFPquZX9/ny1rMBjc2dkJBAI+n291dXVubm55efmrlpWVlcXFxYWFBYfD4XQ65+fnl5aWRkZG1MXFxfPzc6fT6fV6T09PP7X80oLd6BMTE6Ojo263e2NjY319neAvWoCwWq0Wi2VsbGx8fFxdXl7i3Wg0ms1mu90Gt63lhxZROM3n861Wq9vtskWp1+vlcrlUKhUKhfv7+9vbW+iTUl1dXb28vBBwd3cH05ubm3Q6HYvF8ECJRqNYEokEK8ajoyMsp6enKKxnZ2e0BT0cDtOcqakphdPr6yukiCfV9fU1kejYc7kcbZVgMtFW+ogCIj09Pj6m3aCA5ff7CaQDKh6PCxzMqbehpVqtVioVqshms5lMRpien58TTw7ykQNc0pycnMCRTBTHiBSFAEdTHh4eylrgWCwWgcOCQrysgJIglUqhsCaTSWkCQJxyxNwVZ29vb4wVFLjAi66jPD4+EgOoEGSFoFDGoVarUQ2KJGPLKVdHEQMcVwQ48oCCH0acWCUGmtJQsoLIWJk48yU3QKx0iZKnp6cVqMIOPyJxBZGcbEEEDmp0AHbkA4VgHMxdqWgBjjtvs9kU5AWOCTCQphbCBFcEixABBTeOBK6mReAY+szMjCK5wGFibWkRXAGV0gAlUkYvFnQDh5FiZ2dnFXUxWcOO1cDxAPAmmLkDZ1AQLIYpPig0jYfxAccoMOGEq8CxBU5qxI4icBIvLw8dfzKh07R/cLRf2EmDDQtpEM0GiC2KOIBlRlHVwrhYmdva2toHHPmlWOk3gpOMGD+40yC2pvz/e5fXwgw+4PhRAMIVUPOpgChtko+EcUkRcorF/D0ydx6y3W5X3CaSEwNcR0tXS0+L6Bx5PJ7NzU0oyGXkYhPINqWFG87b5ytUAL2/v/f7/cFg8OdTfn8KdlboDw0NTU5Omk9QxiqVFrTAia9FUfA3LV6vd3t7m3+c34Y7ubu7u7e3d3BwwG+BMjw8jCe/CP8KXySlQSehBWqsPJutra2/s2au6ihDvQIAAAAASUVORK5CYII=",
+      "aspectRatio": 1.3145833333333334,
+      "isPortrait": false
+    },
+    "Picture_3p2-2a.png": {
+      "caption": "Machines et instruments de travail agricoles au 19ème siècle",
+      "provenance": "Photo RL / Pierre Heckler",
+      "resolutions": {
+        "medium-w": {
+          "url": "/media/images/Picture_3p2-2a.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/Picture_3p2-2a.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/Picture_3p2-2a.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 1080,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/Picture_3p2-2a.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 960
+          }
+        }
+      },
+      "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAUCAYAAACXtf2DAAAACXBIWXMAAA7DAAAOwwHHb6hkAAADsElEQVQ4y22VR0suXRCE5ye6F1y5FLf6DxRMCxERA4IBc845X3POOeecA1qXp+DId+EbmPfMnOnu6q7q02/0/f2tn58fcfHMzfX19eX77e1Nr6+ven9/9/PLy8vv3vPzs/eD7f9dUQiIYbiOj4+1u7ur6+tr33d3d14vLi5839zc6OnpySsgn5+fOj8/tx3v2B4eHur29lbR2tqaVldXdX9/r66uLvX29urk5MRVkRWBcJiZmbHd5uam8Hl4ePinitPTU62srKi4uFgjIyOam5vT4uKiIpw3Njbs0NHR8QtAdlCxv7+vs7MzjY6OamJiQn/+/NH8/Lz3t7a2tLe35ySOjo4MQubEJB77EZtXV1empKamxqjQQAZQtb6+7vL5TgUEPTg4cDCeAdrZ2bE2UHR5eamysjK1tra6ElOEYX9/vwoLC9Xd3W0dCAwYGW5vb5saVvanpqZcBYGhFhuS4Du0AkbSsBBRCmWREZlTKtQQaGlpSVlZWaqqqtLAwIBaWlrU19enpqYmpaamKj09XcvLy64IHygh856eHu8B6ArY6Ozs1PT0tIEQDwP4jo+PV1JSkkpKSpSSkqLS0lIDAZCYmGhtAs0kh9BQyTPMRI+Pj/+0I+XSGRhAy+TkpLMHjIxwrqur+20ItCF76ACEhBcWFtwY6Bjxw+bs7KwaGhqcAWcDY8DCYeMdTQgKGBUDQoI0A0FJkEZpb2+3JvhH8E5mvCAaK5kTEAf6nyrYr6+vV2Njo3lHaHTikCEqoFAMEJ1FDBKIKI0gfASdzOCVrABAOPq/ra3N54NDRSt+fHy426AWOmnNgoIC5eXlKTs7WzExMdYoIjPKBgAKoAsndAitWV1d7RNaUVHhTAnEM9/DeEAXxB8fHzfVJGsNmBdkTfvRYkNDQy4bJ7iHQsDHxsbcbWjFexgx2GDPBa20NracE2JElIwTcwiA8vJytyhlowmnERppXYJxcbgYL1QHlQRGbKoBmCSJ5wrCNGW4IRbtNTw8bAdOd2ZmpkWlQijAuba2VmlpacrIyFBRUZE1CVc42cTyuOYkh3mC6snJyYqNjTX64OCgcnNz1dzc7O6hiyorKw0GKIJiDwNUwzcAc3Jy7A9YxGmjHFYyi4uL83hAcOZSQkKCBYUqKKRboJHxkZ+f73EBMPoASAMwSmgcUwQKJf73pougiBv+w58N9DG3oIAzQNXhTydohD+sQJHHNQZsEoCVE8jNc/hfCLMGAFYASYwO5B1fxA7/eOGZb38B1WmTxNyzkZcAAAAASUVORK5CYII=",
+      "aspectRatio": 1.2260416666666667,
+      "isPortrait": false
+    },
+    "picture_3p2-2b.png": {
+      "caption": "Une moissonneuse-batteuse contemporaine en action",
+      "provenance": "Placeholder Copyright",
+      "resolutions": {
+        "medium-w": {
+          "url": "/media/images/picture_3p2-2b.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/picture_3p2-2b.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/picture_3p2-2b.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 1080,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/picture_3p2-2b.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 960
+          }
+        }
+      },
+      "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACUAAAAUCAYAAAAKuPQLAAAACXBIWXMAACHVAAAh1QEEnLSdAAAJHElEQVRIxz1W6VcaeRblH+oPMz3nzNKdpNNJTOy4GxEUF0ABEVQUEFllURQFlU1ARRHEfQNlURDENd1ZnOnuM/9N3XlUz8yHd+qcoorfrfvuve9xYspG7Gi4ONBxcWLiI23vQW62D5duKYpeBa58SpT8clwHlbgND+OG6m5NjfsNLR7Wx/C4qcXHpAmPyUk87DhwtzeH2103bnYXUNlZxPW2B6UtNwoJNy5ic8iuOZEO23G8bMd+0IG9gAM7PjuSHiOzYRnEqd/KcEI93yEqeoZY/3NsyX9EUvkjDkbf4HSiDiljHc4tjcg7WnAx046CpwsFbz8KAQWKwSEUQ2MoRHS4XDPictWEQnQShXUbe82vmJALG3AW1CMVNCEVMODEp8exz4ADnxHJRT02XVqsW+WIjvMRH6tn4gPfI2UVMJxwz/dY63uOhPwVtpWvcaCuxamxCenJD8g4O5GZ7UHGI0PGq0I2MI5MyID8qhWXUTsKGw4Uq0VALtcI0JoZxaiFBVTadKC8OYVifAb52Cxym7M4izpxErJi36PBjlOJA4cY6akOpC1NONa8YRKib+lsHsNZ6/sBMfkbbI3UIqltxrahAztWEXYcUuzNKHA0P4rTRS3OAhPIhozIVUGF9XSt1gQyyzpixEiATATUjNCUCsnwLBLhGcR9ZiT9JmTi8zgO23Ds1yNLkrj0SXDpESJHHUiPv8bhyAucjr9lTnVvUHRLGI5voAHBoTaERvlY0fViwyxBwibDrlOBQ9cQjueHcOIZxbF7BKceqgUVznxqZIPjuCBGKolpXG85qRw4iuhhM/RDMyLElL4L5oE6hGfoue1FFnA5MoKKX4wLZxsyxp+QMb1D0dmM8kIncrYmZk/2V5wbuQzHLWuBX8lFWN2FqF6IDYMQmyYxtix9iFvE2LZJCeAgAVPhPKBDPmJg23S1YUE5bsfekhaZyAR+3nfBrGxGY82fsaR6Rh9YC3Hra+x4DajEzCh5RSjMtuOC2LlycXEfFuMu1IfiPB9nE29xoHjGbHV/Q+x1M5wFaROWBlrhVbTBp/yAZWJsbbwbCbOYbd/JghpnXg2yyxOsVljdrFtISzbcEDtLxj64R5sR1PNItDwEDG3o4LVB1PQ9Ino+KgsCAtGK6wUeHlYk+GVTiY8bCtz4e1FwNON8oganmjdITdQyZ5MNuN0wMBx7Vy1mxfVYHGzFiqYLsSpLtv/pSUV6Gvs/qBxp6WLFiKt1K65iNpSo7renUaH2HQaMWHEMwqepx9HUO1xSi+4X2/EY6sGXLSW+7GoIzCBuAz0oz7WhRG3LT75HxtKAIrm6FJQwaVsr8i4pw5khQG5ZMwESIGYUse2LV1milh3ODSO1qEZ6ScNqKBcm+69WmZokd9lZLZWTMygSe/nFIZzbO3Fufo/bhVYCMoJfT014OqTWxodwF+jFtZuL6/k2XDlbcFlto68P9zEVyoF+nJkbmS3p33EwKSZNSRqxONCCsIro13WzekpWmZqW48ilRGphjECNIUNxkIuQw8j+xQ07Cy6zQCawCXBCEZKbbiMWhHjaURMYC/55pCdmCEyoH3f+HgIlRGVRgLK7A5WAGA/xMTxsUs65BST4umo2MtHBmmrskKaIJR+1bpkcGNX1sO1L2iTYtktxUNUUue48SLZfMSPt0+JohgAbuDjU1CJrrmMP+LKrxm9nFvyatvzRpuggCVmKu2pVwZC7SiTom2Affk5q8fnQiNu1QRTmBbiYasXBeB3iOi5z5OCjtDLBcJZGhViStyI0wqNkFSCqFSBuEmG3yhRFweH8MMtcTN1KefYa+6OvkLc24DHSj6+HOio9PiVH8bgqw91yHx4iEjysKfC4riBg/aj4emgcKfB5T48vRxbcEztXS0JczvCQtX/ACbV8z9GNrEfEpJxdKEeN/wU12Ab/UDtlFe+PSLBKyYFdCJHFwwM/IUFJnzK8x7W3B7/ER/B0MIGvR2aagYN0aC9bN1S3y9SW1QG2bqsA1+R4OjLi96wTn3YncLOiwHWAYmCOh7S5CUfTQpx7JOzoyvsGmeycALerY6QplRCLQ3wEVHx4CZinvx6uzpfwdv6DRs8PyDo+4DYowqeEir52HPfrQzScJbhZlrDM3IfEZG8h+8wdMXO3MkAsKUngegIzhS8HBnpnGPfRYZT9fchMcZFy9uJ8SYliQEaAxMgFaOj7xEzGVk/DX8FwZhWdcPTWwdjyDOaGv2CJ+y0N5hfI2SlbfCLcV1uxqUIlJENxsRelpV6U6T4LIihmGaoQqJK3l32mCqIK5unEzL73uDGMh9goDfNunFq5OHaKkPUPoUSOK/gHcbmspHZ2I+fkMmlybsmvZDhaXi107/6E6fffYF1MU9pQj+JCL9lVTCAohRdEyM/ykXe2U/pSEFKmVOhPyhSKJXJOcb4T5aAUH7e0+D0zhV9TNnyMj/7xMbHqmqNEziVAzk0tCmlps1DQwSKUV1S4o7XnmsRfIEeSe5mUsRbl0AjDmeuqQUDwHbZH3uLcwUPeLaTJzcOO6i1ODQ04t7Yia/tAq0sn8tO0vrj4pIkOXLo6UCANVFvzdDLJAvqYUBNbUjxGq4BGUKCPyrh6UYyMU64ZUVqW4covITGTDBLjuI3IiPluXEzT/xNTKXM9sq5+hrM5zsO+vpkWPbKlikr5BsmhV5QbNTjWvqNVopFyqJnWixZySxvOCGRmmofrkByf9g14Op3EY2KMDcJygCJglUZIRImsW0w5Jqf56EBpXYci/X7hJ5Y2DLiNjZGGhLgitnMUCef2FgLfySTkz2nJpNmX0LTRPvUS630vkJS8oMH4Eml1DfLGeuRN9chZP1AeNaLoaKXxIKCxIcXvFAX/TpnxG+nnEwn/Y0SKzyTuz9WwrLLhleE+bsLXkzlibAz3ETmxqMfXYwf+tT+Bz1EZfg6LUJlvx42ng52DKV0tcyT/G42nXoYz3PIKoy0/QsevgUHwFqbudzB3v8Wk6CdYKe1tVNa+OthlTXCpO+GlDPOaRXCNdWKKQnde0wkPxYeb8s2lFsCh5GNmvB/zZgVmVB2YU3dgRiuEZ1IOr4Xua+jeKBdzYzxMK1royodN2kDn1jAT7c/h00uY/wAXSZZ1Zv8NhwAAAABJRU5ErkJggg==",
+      "aspectRatio": 1.8572916666666666,
+      "isPortrait": false
+    },
+    "Picture_3p2-3.png": {
+      "caption": "Questionnaire du recensement industriel et professionnel de 1907 (extrait consacré aux professions)",
+      "provenance": "Placeholder Copyright",
+      "resolutions": {
+        "medium-w": {
+          "url": "/media/images/Picture_3p2-3.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/Picture_3p2-3.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/Picture_3p2-3.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 1080,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/Picture_3p2-3.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 960
+          }
+        }
+      },
+      "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAUCAYAAACTQC2+AAAACXBIWXMAAAsTAAALEwEAmpwYAAACwUlEQVRIx7XV547cMAwE4H3/p7vb67333rsYf1zT5wRJgPyIAUJaiuJwhrR30lqLj4+P+E9P+/z8zHUC6P39Paxvb2/x+voaLy8vac/Pz/mbn/H5zV9WsUxM3WEdSAJ1udvE5uLiIo6OjmJnZ2dYDw4OYn9/P+34+DjW1tZiOp3mWvuNjY3Y2tqKzc3NWFlZiaWlpVhYWIj19fWM6fK029vbGRDZHCwvL8fq6mqcnp6m3d/fp93c3MTd3V0CSwiAT0FnZ2e57u3txe7ubszNzQ05Dg8PnTcMUzqyuXBychJXV1d5CaOnp6eUAVsX+RcXFzOZwrBRnDsKOT8/j8fHx7xDhe3t7ejYNGcJ5JB5OAWpjt7A7ZmL2MzPz2fVpAHKT1qM9QlbhfBdXl62zuLr66tNJLy+vo6Hh4ehJ+SgLWb9hQTTBz1wLq4AydQzyFg+gKTrScyGgUwFWPKZGskBFVNAWEhsCJjY6glGClagdnQsG8AEAqBCvajmSlCyqRSIy5LZO8dGz9xRnHiFYgSYr8vZnOfUaR5NOQSiKpkkZKqmA8IMez6JJTWZ/GSrdxArQ9bZt3QOjG1V4TI5JMOGKQS4pBSQhOSSSGotCU2fHIA7f3M+9AiYL0NdBshXk1hM8kYXx7pJytj6atjzKUKstXtHW39v9sKSD4i9Aw0kg0dFrH/xfnoU456kFQ9slO8bSHXjR6DDAiCXFat6IZkYv4stqcTyjXK2fj9jhEG9uCZN400hCY23xjPJqvFMPyquvixMPuAdcH7rhk+Q5qlSRUbYW16VmkYJTeToq5wyY1o+ez79crefwCbnwKj0RdNeVQrw1GSNe1QDwdc3PfdkV0T1yN9EP1QzoJqYmjpjWhdLqtJ+bPVFqSEqpmKthmH4ev+uGoysktVASCRmPN6q/ROjAhoY/VplJfnb73+wYep+AGTSwOYP/6zpAAAAAElFTkSuQmCC",
+      "aspectRatio": 1.284375,
+      "isPortrait": false
+    },
+    "Picture_3p2-5.png": {
+      "caption": "Loi du 25 juin 1900 prévoyant la création d’un service statistique (extrait)",
+      "provenance": "Placeholder Copyright",
+      "resolutions": {
+        "medium-w": {
+          "url": "/media/images/Picture_3p2-5.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/Picture_3p2-5.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/Picture_3p2-5.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 1080,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/Picture_3p2-5.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 960
+          }
+        }
+      },
+      "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAUCAYAAACEYr13AAAACXBIWXMAACHVAAAh1QEEnLSdAAACVElEQVQ4y02U526qMQyGc9tcUPnBHSDgBwgKYo/SsvdugbLKjk8e66QqUhTjOH5HrM/I/99+v5fNZiPb7VZ+fn40d7vdZL1ea3w8HuXxePhyja21YnwiGo1KMBiUUCgkiURCc41GQ15eXrQwHA5LJBKRSqUi2WxWPj4+tMbQ6X6/K9rlcpHz+fzLIJ1OSyAQ0Dy5w+EgX19fcjqdtE4ZkGi1WorW7/dlNBrJ29ubdDod6Xa7EovF9BzkarX6e1YoFFSeAXm322mDZrMp7+/vUq/X9dA3wRf2wWCgAL1eT5bLpTI31+tVDYLJdDqV+Xwuk8lEPj8/1VR2mHGJnQXYbDZTGQb36TYcDvUAFJDZyXt2mUxGpSABlp6ZoYgCFk1Yq9VKvr+/9WkXi4XUajVF5gwJxOPxWI1VBqBhCt3RDwJ+kEdaLpdTA0ulkprpnxJ5Bp10hRJoMOISMRTxxdOmKe/fbrc1VgkwgI7XjVlQ5RUwFyk05wJS2IvFospgHgzoJKBIATSRgSc0xTgvDynUUkMjmht0UAhFFs/DxJGHHTFUkYS55JFJjhlSBpgCKp1hQpzP55URyDwh/1nEqVRKx1wnEb00ABkEj8RAsWMyOZDJ+WHjsk4ijuOq1wsjzMQkLv2dRD+hfpyRaHgBjIEuy88BUjijeTwel9fXV0kmk5r3M6ENHBXrnsk6FOs6W0fRuvG1TpJ19C3njpl1Uq1jpjXkufN8Pq1BB3r8M+IF7vKdcAW68KJcLusi5pwx9l8ky3IfDUV2z2b5+byP3SXr9Gvd37N/CyiR0lRcV8wAAAAASUVORK5CYII=",
+      "aspectRatio": 0.7989583333333333,
+      "isPortrait": true
+    },
+    "Picture_3p2-6.png": {
+      "caption": "Durée de travail, en 1907",
+      "provenance": "Placeholder Copyright, Heft 24",
+      "resolutions": {
+        "medium-w": {
+          "url": "/media/images/Picture_3p2-6.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/Picture_3p2-6.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/Picture_3p2-6.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 1080,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/Picture_3p2-6.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 960
+          }
+        }
+      },
+      "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAUCAYAAABmvqYOAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC20lEQVQ4y23VB25jMQwE0H//ewUBnMTpvXc7sdN7kVaPAR3vYgUQ+rLE4XBIyd3d3V29uLioe3t79fT0tB4fH9ezs7N6e3tbh8Nhvby8jN+Pjo7i3OHhYT04OKi7u7thg8Ggrq2thZ9zJycnxZmnp6fScQbs4NXVVR2NRvXm5qY+Pj7W+/v7+B6Px/X6+jrW5+fnAZKzvc3NzQmphlEQeX5+Lh0nwDYeHh6CMYZAAWBh38yAcGb7+/uxhuE8Yo1sgfP9/V262kYpxcJnzAIYDjcGUo3gTEBSOIO5fcBvb29BYn19vTRJYJbu6+uLPhMdHUx5rF9fX+vHx0fMAvt+f38P+/z8jGwFRWBra6tubGwU64ZbOg4OYvDy8hJa05Hjzs5O6GwtKKA0jcBkQR77wFdWVorfQhYgyUIW0gNmYA5IYEFlyJKEWQBMYZhbLQoMaocsgKXLrLGgJwbJMpn7VkCykU9mGkCBSdP8ig5sgUuHCUcHOBlaU2dYM5lwEAw7e2Zy2PM7SVoxZRt93oL/dkt2jJkMGGEDFMvsEiRcruxzlpdLW7a9opOaCqWTJmcO0jamexo7JhsFZn63v7y8XLe3txWx9no9nVLn5+dLM+T+1ty3IRCTKmeFNbvmbiMTBJgA5FhaWor99nvhN9GcBNjn5SHF9MUhz/QFyj2/Z5YIyM7bQqa4/vRVlHSge+rMmRNZAGBL43y8MF5dXZ0wl0VjXaxDFmDkyKIywPk4+c6Hi8lOnWSrFVlmykdB+bS+/ynodMvRGgtZkEAALLVr3kqF9xyY1Ss7S0ZeRcEaiZ9W/He4fcCkxxQutZ2uARCEdI9zSLhENA/mJHF1MWFGFo6GOkOncF5YWIhAdNZuWrDf74fNzMzUxcXFeLh0TRRUC0ov32TBMMPIIWBmBhQg2XybATuT4I1IQSb+if4ni4Iwh1Ma4NkRs7OzcWlkNTc3F/chwfU5edrjVf4Av3ep3cnxn1wAAAAASUVORK5CYII=",
+      "aspectRatio": 1.1375,
+      "isPortrait": false
+    },
+    "Picture_3p2-7.png": {
+      "caption": "Individus actifs et personnes dépendant de la profession, 1907",
+      "provenance": "Placeholder Copyright, Heft 22",
+      "resolutions": {
+        "medium-w": {
+          "url": "/media/images/Picture_3p2-7.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/Picture_3p2-7.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/Picture_3p2-7.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 1080,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/Picture_3p2-7.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 960
+          }
+        }
+      },
+      "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAUCAIAAADp3DFZAAAACXBIWXMAAAsTAAALEwEAmpwYAAAClElEQVQ4y23U625aQQwE4H3/10IISMIttAkhXAIUCjSEACkgILQfaylSpfrHao/XHo/HuyetVqvX19fL5fLnX+P5/Pw8Ho+z2ez9/X25XPb7/Xq9/vDw0Ol0np6e5vP5r2zCUkRHwvl8tjmdTvaBy7PMtt/vJd/c3HS73ZeXF4jQbXq93sfHR4rKgiaTyWKxkPAzmzN+iIgItVar1UKhgEWz2by9vR0OhzzFYnE6naZztv92xByNRqMf2bRTqVRAfM8G7vHxsVar0ST9zrbZbEBytVotzO/v751tt1sU0CYBLGRx9GkF6lNT1mtHuuhlG4/H37IJkvP29hb6Kdhut6fZIpjAiGgHO9TgJkF2ij8/P/v2KVQFOTTCCHkoQOkKXYBgnkajAcg6GAwSkXSrF/B6kQPLHuh6vTYslWXGRKAIgIJyNVvInDDkNULRNg5M0YEKmgckAAva+QwsxcRQEGLsk4+ARNIehVU2uurCKlkc1aJHqsFFSlXBNlcuaoK4u7vjohZso4lLGWmKixEKCIRVv46UJKgjTK9csJAPJfQXIcf8XEW3jn5OhTkSSSM3TX6pVKpk408xnUBRR6si9E8IohwOB5Ub2ZDiVxnxeA1mYgP6OmmCOxANJW6H96mjYCRONa3FnYIShakpsZ8tfbnK5TIviPDElYs3LTl0xU4BelvdqbjWjhL+kgmsoDTHdJGgI6/JEzcF9fFSUyY5JdvEPVIAUNKe+lDAeU2RSVSrp+gTLwGitWYPC1l7oujAkX0KRbjiauNlHCqbd8wIumYlCIhHGBffXwIDp/wp7oj8eOkxeEJizhmXImbEzxmXkxOEYdtfUdTc7XZki1+EoahGCMw1iEs8nHjHOoorG3/P6ADBv/y9uiRvmhpDAAAAAElFTkSuQmCC",
+      "aspectRatio": 1.1614583333333333,
+      "isPortrait": false
+    },
+    "Picture_3p2-8.png": {
+      "caption": "Le questionnaire concernant les frontaliers dans le recensement industriel et professionnel de 1907",
+      "provenance": "Placeholder Copyright, Heft 21",
+      "resolutions": {
+        "medium-w": {
+          "url": "/media/images/Picture_3p2-8.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/Picture_3p2-8.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/Picture_3p2-8.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 1080,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/Picture_3p2-8.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 960
+          }
+        }
+      },
+      "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAUCAYAAABmvqYOAAAACXBIWXMAACHVAAAh1QEEnLSdAAADGElEQVQ4y1XVh1JjMQwF0Pf/XwUMvUMSSKgJhN57t9dHxNndzHjsJ8vSvVey03x/f+e3t7d8dXWV2+127nQ6udfr5d3d3dzv93On3Qn74eFh3t/fz+vr63lvby93u90Y/FdXV/PKykqce3h4SE9PTzmVX/Pz85Pf398j+GAwiIB1Pj4+joC+j46O8unpadgPDg7yyclJrC8uLmLNh39Zp9vb21x+qZFla2srkDkElfVwOBwHZrNmr3ts29vbkdS3eZQgnZ+f/yJ/fX3NNzc3mYHD/f19Znt8fAxG1sbHx0cGhC8Z2V5eXmLNbm2UdTIH8s/Pz/z8/ByUaCs7dGtra3lnZyfs/2rMp9bEvpnNmgKFTTo7O/sNDhG0EAlEV2u6cVKLWg/aYujbHj/+bJeXlwGq+CVgSy1Tg4KikKFqCRn9dQZdHYJ6Y2MjtLfXarViNqB2TpISK4n39fWVmpEhENSDtDf3B/3oCAejLUvboS5JbdkqlW/sCqMoaEGfGoErTQGgqF0DnaRkq63Ht8pojxwYX19fR9KSMIKH5pxtcHLYkMioGtO/9vfi4mIwZJ+amsoLCwt5fn4+WEBfQCUMIngtBnoqL6gia7G7u7tIIDipaC84hNBaT0xM5NnZ2ZCGXUH5RUHRJ8Xy8nLMgnsSFHp6ejqkgbrX7eXNzc0oMIQkmZycjIAKL7i5+Cc++r1RIJRsogsp5C6JN8N+qwQVRO+PAgQI31BjICCAc3NzSazSfanR28PjYWzQFLpauKWlpXGLAYCZgP/KQu+ZmZlgw19BgSwAfzUXiE6oGpCTxUvH0fWmuTUmkAEFtYJKCPmo2EnicbdE4UpQCBzyU1CHa3CoMZKwvphVc+glhb6ATIBEcG1joM2RDPpYh7gDAkFi6Ci+7BjX17Q+0RgVnwgesriublVpQ9c2lZ73NnjZkuylTZM3ujDUYl7S5GApeNJuhl9hGr5Fhb9ProwyoenW6RZSQe673mC14Ff+acZ73iOSGr6rv06SrCkd4kbFgK4kC4Qe/RLsvzUG1toMS76GW4m58/7mDMH/AFSjjozaMZqpAAAAAElFTkSuQmCC",
+      "aspectRatio": 1.171875,
+      "isPortrait": false
+    },
+    "Picture_3p3-1.png": {
+      "caption": "Le monde agricole en photos à la fin des années 1930",
+      "provenance": "Placeholder Copyright",
+      "resolutions": {
+        "medium-w": {
+          "url": "/media/images/Picture_3p3-1.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/Picture_3p3-1.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/Picture_3p3-1.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 1080,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/Picture_3p3-1.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 960
+          }
+        }
+      },
+      "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAUCAYAAACTQC2+AAAACXBIWXMAAAsTAAALEwEAmpwYAAAE3klEQVRIx1WV10uXfxTH/S+6E6GLLrSLKBHMCLqJoroqE0UxwmhAGVE2aVFoFipGaZO2hUVDGzYclRYtzfZW21a2LM067z6vo19//YQPz/P4nOeM9zjfqObmZj18+FDPnj1TS0uLnj9/3n+ePHmiR48e6cGDB5FjN2/e1O3bty3E2r1793hvkXhiyfX48WO/5z3579y5oyiStbW1qb293YN4fvPmjVpbW/1K8MWLF3Xu3DkdPHjQLly4oC9fvlhXVxfF9P79e/v165c6Ozv14cMHnvXu3TvP19HRoe/fv+vnz5+Kevr0qV69euUvKysrdfr0aZHs7Nmzqqmp0ZkzZ7Rz505t3rxZixYtsg0bNujjx4/W3d1tV69e1axZs2z+/Pk6evSoN3Py5EmVlZWJuOvXr3uh0FhvodevX3uhy5cvq7y8nIQeXFtbq+rqau3atUvHjx9XY2Oj3b17l04tdGlXrlzR2LFjbfLkyVq3bp03uG/fPq1cudKfgfnHjx+9hcAWiBgZKPbu3ashQ4ZozJgx3tXEiROVlpamvLw8ILSmpiZ9/vzZQgKrr6/X8OHDbdq0aVq1apVPXlJSotzcXB0+fNh5olCIVxQiePv2rR8gLC0t1ciRIzVs2DBNmTJFc+bM0ahRo7Rw4UKgMIj9+vWrQwfRI0aMsAULFjjsixcv1uzZs7V7927nFZ7hLsT3QkcRoLt165ZjvH79em3ZskUbN25EAM7P2rVr4c3hopAkq6ur80JMfuPGDWVnZys9PV1wtn37dkeIib59+/b/QpBZVVXl3JAEfiK4A13o1OAqfGi/f/+2wJm2bdtmCIbugfLQoUPOKWKC+6BOL+aF4IhC165dE0qiu+AVlzZTkuDUqVP98g5wGIdOe3p6DGUhZWAyY9j//sJ7L+YcUShI1q8vX7707uALgfA/Ouub2sCbInipL84oQhz8gQTn0qVLrmJyBD4VBY4Rc/27CSLmpRGm7nO/MTmFgjndR2FilzyWiI2N1eDBgxUXF6eEhASNHj3ai/7580dRdMU0SJDEvNi/f79DSHImA76GhgZXHfDCEYK4f/++8vPzbe7cuTpy5IiLIDo6WgMGDED2rmAaduiY6NOnTz4VIoCPY8eOuUHh6MSJE14YFQWvGB+zfkICI27Tpk22Y8cO7dmzxwWAvGNiYpSUlKQDBw54s76CXrx44bAx1datW91wmI2PV69e7WYlCf8vKiqyiooK9XnIZs6cyXvLyMhws6I2kk+dOlWJiYn+DOw+ERVZESzEpUuXio9wNjBMnz5dkyZNUlZWljIzM5WSkmLLli1TWKIWoLQJEyZgbCMpK2fJkiX9ph03bhzTOh0uBgrBD6e4uNiD582bp8LCQoeQiZKTk53s8LFhyiBhJrOhQ4dq4MCBNmjQII0fP17x8fGaMWMGvHmhFStWOEfBc73yBjpOQUGBIJau8M358+eZQmvWrNHy5csVEvdPFPh0EYQ1Zampqf4daOTk5HjDrC7yQY2rjhvEgD8wKW4HVyTOLkMU+AGiw1oyxIHiKMYffLHNWbTBuJjYIkuXe6xATL/qKASWOBmH43auPPPDxmG/EdP3w+ck8/zvicTyHc+sH19BcITiKBb5deQKZ6wYGuCeGEzaZ27vlAn4XWI6Dp3zzDTccyWO61+dc5LYQL+ZzQAAAABJRU5ErkJggg==",
+      "aspectRatio": 1.296875,
+      "isPortrait": false
+    },
+    "Picture_3p3-5.jpg": {
+      "caption": "Montage du nouveau sac à poussière du haut-fourneau II de l’usine de Dudelange, 1928.08.23",
+      "provenance": "Archives nationales de Luxembourg (ANLux), Arbed-Ph-00025",
+      "resolutions": {
+        "medium-w": {
+          "url": "/media/images/Picture_3p3-5.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/Picture_3p3-5.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/Picture_3p3-5.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 1080,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/Picture_3p3-5.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 960
+          }
+        }
+      },
+      "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAUCAIAAAAyZ5t7AAAACXBIWXMAAAsTAAALEwEAmpwYAAADYUlEQVQozyVS+1NSaRg+/8LOtFPTzdZEA0HkdiAUNGAjMWldsTKxi9WuZug2jGnSCFki65Ttbi66bTcpSSlQI3MdrTTJCaup1dJA5VzhnEP94Iz+bh/2zTPvD+88zzfP+74PhBMRgkRjTDRKkd9AMzGaoSiaXgNDM3EyGkNQFMLxxen3k76eTr/3ht93s89z3e1q7759zX2n/b7L+cB93XXr2tjoAIHjEIbPB5557WeL/a6GoW7LvfbqArWAn7ZZlpmsknMKteKULetaGk1xhoJQNDzx1Pu3/eQzX/OLAcfEI0dH6ymFLF3CZ6myMk6UagXsbRct1fE4BSFI6Pmw54r1yOjDS+P9LSOepqnhy5aa/RzW1iwJ+4Rxj6lc96DLQRA48BoOTvQ7GspaG8ud9oqHN+oDfsdwj02nksCZrDyV6HiJ6nHv1TWvWPj1xMD53wyVR3XmysJ/20zBoctjfS0Xao1iXkqWmCMXpTrbLDQVBb/Oj494Ksp+/LUsr6RQWXE4r66qCGiqjhXszhEK01My2Ult9lqajiWoI4PuArVQmrlDyE0WcJP57B94aUkyITtbki7isrisTa0XzQwTgzA0NPzorkEnVcI8mM9SwGyNkq/TiLW7RCIeS5yRCmdsd161UBQJ4Vho0HenOH+nsUidI+PmyrmAt0clytdI1AqggXNlnD9bzyUMkMTCoK8rS5RWZlBpsvkH9Iqak/qDPyn1WqlSzoOFnKRN620Na3slifn/BlzZwtS9Gli/G646mm805B4u3qWUcoDjDE5K0sbvbZaaBBVFPr0N9F9pPAJG7ums9d6s36eVHtinEPGSZQKWVJC6dcN3FyzVDDhsZHH25ainw/5LU61xzNs85LaWFuWcP7O/9OccoDEWqdTy9L9+P0fR0cRYj7239BqB1VxSf9pgKt/bXGfsdprdnWd7/6l74m4a7bVOPe1CEyHEQoGRnkqjpt5ksJkPtdmOu/6oue80++82Drlt432OF75Lb57fQzEMhHAxsvAx/DE49+HV/NxUeDY48y7w4f3L2enJuenJ2f8nP80EF0IzCIJAKLaIYhEgAkAwFKQdwzEyGiVIEidA/ClQIwhoIxCz9j7H4zRNg8rQ9JfPX1ZWVpaXl5eWllZXV18Fg9YmW3uH8ysKHdLp9WvsygAAAABJRU5ErkJggg==",
+      "aspectRatio": 0.7041666666666667,
+      "isPortrait": true
+    },
+    "Picture_3p3-7a.jpg": {
+      "caption": "Ban de Gasperich ",
+      "provenance": "© Félix Giorgetti",
+      "resolutions": {
+        "medium-w": {
+          "url": "/media/images/Picture_3p3-7a.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/Picture_3p3-7a.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/Picture_3p3-7a.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 1080,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/Picture_3p3-7a.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 960
+          }
+        }
+      },
+      "base64": "data:image/png;base64,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",
+      "aspectRatio": 1.5552083333333333,
+      "isPortrait": false
+    },
+    "Picture_3p3-7b.jpg": {
+      "caption": "Ban de Gasperich ",
+      "provenance": "© Félix Giorgetti",
+      "resolutions": {
+        "medium-w": {
+          "url": "/media/images/Picture_3p3-7b.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/Picture_3p3-7b.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/Picture_3p3-7b.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 1080,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/Picture_3p3-7b.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 960
+          }
+        }
+      },
+      "base64": "data:image/png;base64,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",
+      "aspectRatio": 1.5552083333333333,
+      "isPortrait": false
     }
   }
 }

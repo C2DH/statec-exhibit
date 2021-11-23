@@ -43,9 +43,6 @@
                 {
                   "id": "picture_1.png",
                   "caption": "La crise en 1931"
-                },
-                {
-                  "caption": "Une moissonneuse-batteuse contemproraine en action"
                 }
               ]
             },
@@ -54,14 +51,26 @@
               "to": 1990,
               "visibleKeys": ["v"],
               "focusKeys": ["v"],
-              "text": "A partir de la fin de la deuxième guerre mondiale, l’économie luxembourgeoise entre dans une période de croissance économique continue jusqu’au milieu des années 1970. Ce sont les « Trente Glorieuses ». C’est la sidérurgie qui porte cette croissance, mais une politique volontariste de diversification économique et industrielle est également mise en œuvre (GoodYear, Dupont de Nemours, par exemple). Au Grand-Duché l’emploi passe de 134.000 personnes actives en 1947 et à 160.000 en 1985. D’ailleurs, contrairement à ce qui s’était passé dans la première moitié du 20ème siècle, l’emploi ne se contracte plus. Même lors de la  crise des années 1975-1985 (crises pétrolières, crise de la sidérurgie), l’emploi au Luxembourg stagne plutôt qu’il ne recule (158.800 en 1975 et 160.000 en 1985)."
+              "text": "A partir de la fin de la deuxième guerre mondiale, l’économie luxembourgeoise entre dans une période de croissance économique continue jusqu’au milieu des années 1970. Ce sont les « Trente Glorieuses ». C’est la sidérurgie qui porte cette croissance, mais une politique volontariste de diversification économique et industrielle est également mise en œuvre (GoodYear, Dupont de Nemours, par exemple). Au Grand-Duché l’emploi passe de 134.000 personnes actives en 1947 et à 160.000 en 1985. D’ailleurs, contrairement à ce qui s’était passé dans la première moitié du 20ème siècle, l’emploi ne se contracte plus. Même lors de la  crise des années 1975-1985 (crises pétrolières, crise de la sidérurgie), l’emploi au Luxembourg stagne plutôt qu’il ne recule (158.800 en 1975 et 160.000 en 1985).",
+              "figures": [
+                {
+                  "id": "picture_3p1-2.jpg",
+                  "caption": "L’usine de Dupont de Nemours en 2020"
+                }
+              ]
             },
             {
               "from": 1980,
               "to": 2020,
               "visibleKeys": ["v"],
               "focusKeys": ["v"],
-              "text": "A partir du milieu de années 1980, on assiste à une accélération foudroyante de l’emploi qui passe de 158.000 personnes en 1980 à 472.000 en 2020. Le nombre de postes de travail a donc triplé en une quarantaine d’années, alors que de 1907 à 1980 (c’est à-dire pendant quelque 70 ans) l’augmentation ne fut que d’environ 30%. C’est le secteur financier et les services aux entreprises (dont la composition est très diversifiée allant du nettoyage aux sociétés d’avocats et sociétés de consultance) qui prennent le relais de l’industrie sidérurgique comme moteur de la croissance. Cette croissance de l’emploi pose évidemment des questions au niveau notamment des infrastructures routières et de mobilité en général."
+              "text": "A partir du milieu de années 1980, on assiste à une accélération foudroyante de l’emploi qui passe de 158.000 personnes en 1980 à 472.000 en 2020. Le nombre de postes de travail a donc triplé en une quarantaine d’années, alors que de 1907 à 1980 (c’est à-dire pendant quelque 70 ans) l’augmentation ne fut que d’environ 30%. C’est le secteur financier et les services aux entreprises (dont la composition est très diversifiée allant du nettoyage aux sociétés d’avocats et sociétés de consultance) qui prennent le relais de l’industrie sidérurgique comme moteur de la croissance. Cette croissance de l’emploi pose évidemment des questions au niveau notamment des infrastructures routières et de mobilité en général.",
+              "figures": [
+                {
+                  "id": "picture_3p1-3.jpg",
+                  "caption": "Une autoroute luxembourgeoise en 2020"
+                }
+              ]
             },
             {
               "from": 1980,
@@ -101,9 +110,12 @@
               "visibleKeys": ["v"],
               "focusKeys": ["v"],
               "text": "Jusqu’au dernier quart du 19ème siècle, les statistiques « sociales » luxembourgeoises s’intéressent peu à la question de l’activité professionnelle et de l’emploi. Jusqu’à cette époque, on vit encore dans une société où l’agriculture domine largement le tissu économique et où les autres activités économiques sont en grande partie artisanales. Ce sont d’abord les recensements qui fournissent des données sur le travail. Dans les recensements de 1871, on ne dispose que du classement selon les professions et le « reclassement » selon les secteurs d’activité n’est donc qu’une approximation. Cela d’autant plus que, les réponses de sont pas assez précises dans beaucoup de cas. D’ailleurs, en 1871, on demande aux recensés d’indiquer soit leur profession, soit la branche d’activité (« Beruf-oder Gewerbezweig »). ",
-              "figures": [{
-                "caption" : "Source : Archives nationales, recensement de 1871"
-              }]
+              "figures": [
+                {
+                  "id": "Picture_3p2-1.png",
+                  "caption": "Questionnaire du recensement de 1871"
+                }
+              ]
             },
             {
               "from": 1840,
@@ -113,6 +125,7 @@
               "text": "La question consacrée au travail dans le recensement de 1871 va un peu plus loin en ajoutant un élément, à savoir la profession accessoire éventuelle (« Berufs-oder Gewerbezweig ; mit Erwerb verbundene Nebenbeschäftigungen ; Arbeits und Dienstverhältnis – der über 14 jahre alten Personen »). Cette question répond évidemment à une réalité socio-professionnelle, à savoir le fait que beaucoup d’ouvriers, par exemple, avaient également une activité agricole accessoire permettant de joindre les deux bouts à la fin du mois ou de simplement manger à leur fin avec leur famille. Mais comme cette question n’est pas véritablement codifiée, les recensés n’y ont pas répondu en détail. Ils se sont limités généralement à mentionner la profession principale du « chef de famille ».",
               "figures": [
                 {
+                  "id": "Picture_3p2-2a.png",
                   "caption": "Machines et instruments de travail agricoles au 19ème siècle"
                 },
                 {
@@ -120,6 +133,7 @@
                   "caption": "..."
                 },
                 {
+                  "id": "picture_3p2-2b.png",
                   "caption": "Une moissonneuse-batteuse contemproraine en action"
                 }
               ]
@@ -133,6 +147,7 @@
               "text": "Le recensement professionnel et industriel de 1907 est la première véritable enquête statistique qui s’intéresse de plus près au marché du travail. Cela résulte du fait que l’emploi est en train de muter avec une sidérurgie, et donc un nombre d’ouvriers et d’employés salariés, en croissance significative. Cette enquête s’inscrit également dans un contexte international favorable à de telles études et s’appuie d’ailleurs sur une enquête allemande qui est réalisée à la même époque. A noter que la proximité économique avec l’Allemagne (« Zollverein ») se traduit également avec une « proximité statistique ». La date a été d’ailleurs choisie pour être en harmonie avec l’enquête très similaire faite en Allemagne. Contrairement au recensement de 1871, les questions sur la branche d’activité et sur la profession sont clairement séparées en 1907, tout comme la question de la profession accessoire. Les explications méthodologiques sont assez détaillées, mais des codifications précises (chiffrées) dans le questionnaire (donc dès l’origine) concernant les branches d’activité ou les professions manquent toujours. Les classements doivent donc être effectués a posteriori. La publication des résultats de l’enquête – un travail consistant d’une douzaine de volumes - s’étire d’ailleurs de 1910 à 1913.",
               "figures": [
                 {
+                  "id": "Picture_3p2-3.png",
                   "caption": "Questionnaire du recensement industriel et professionnel de 1907 (extrait consacré aux professions)"
                 }
               ]
@@ -153,7 +168,12 @@
               "focusKeys": ["v", "v1", "v2", "v3"],
               "colorKeys": { "v": "var(--secondary)", "v1": "var(--datakey-v1)", "v2": "var(--datakey-v)", "v3": "var(--t1-colorkeys-tertiary)" },
               "text": "En d’autres mots, un travail important et méticuleux est demandé à la fois aux agents engagés par les communes chargées alors (comme aujourd’hui) de la distribution des questionnaires et de la récolte des réponses (et des conseils donnés aux recensés) et aux fonctionnaires de la Commission permanente de statistique. Cet organisme est créé en 1900, notamment en vue de l’exécution de ce ce grand recensement de 1907.  Il s’agit du premier organisme statistique professionnel, c’est-à-dire disposant de ressources humaines (notamment un secrétaire et des « commis » prévus par un acte législatif de 1904) qui s’occupent exclusivement de statistiques.",
-              "figures":[{"caption":"Loi du 25 juin 1900 prévoyant la création d’un service statistique (extrait)"}]
+              "figures": [
+                {
+                  "id": "Picture_3p2-5.png",
+                  "caption": "Loi du 25 juin 1900 prévoyant la création d’un service statistique (extrait)"
+                }
+              ]
             },
             {
               "from": 1907,
@@ -162,7 +182,12 @@
               "focusKeys": ["v", "v1", "v2", "v3"],
               "colorKeys": { "v": "var(--secondary)", "v1": "var(--datakey-v1)", "v2": "var(--datakey-v)", "v3": "var(--t1-colorkeys-tertiary)" },
               "text": "Le recensement de 1907 contient, pour la première fois, des demandes sur les conditions de travail (repos hebdomadaire ou mensuel, durée de travail) et sur une éventuelle incapacité de travail. Cette question est liée à l’introduction en 1911 de l’assurance vieillesse invalidité. Il s’agit donc d’un début de ce que l’on appelle aujourd’hui la « evidence-based policy ».  En 1907, sur les 43.080 ouvriers que l’on compte dans les principales branches économiques, 30.818 ont un jour de repos par semaine, le reste des ouvriers et employés a même moins de jours de repos. En outre, quelque 90% de l’ensemble des employés et ouvriers travaillent 10 heures et plus par jour. La journée de 8 heures n’est imposée qu’après la première guerre mondiale et une réglementation concernant les jours de repos est introduite à la même époque.",
-              "figures":[{"caption":"Durée de travail, en 1907"}]
+              "figures": [
+                {
+                  "id": "Picture_3p2-6.png",
+                  "caption": "Durée de travail, en 1907"
+                }
+              ]
             },
             {
               "from": 1907,
@@ -171,7 +196,12 @@
               "focusKeys": ["v", "v1", "v2", "v3"],
               "colorKeys": { "v": "var(--secondary)", "v1": "var(--datakey-v1)", "v2": "var(--datakey-v)", "v3": "var(--t1-colorkeys-tertiary)" },
               "text": "L’enquête de 1907 essaie également de déterminer les parts de la population dépendant des différentes professions. C’est une vue plutôt « sociologique » qui tente en quelque sorte de mesurer l’impact des différentes branches économiques sur la société luxembourgeoise dans son ensemble. A titre d’exemple, dans l’agriculture on compte 52.807 « individus actifs » (dont 22.191 femmes), mais le total des personnes dépendant de cette branche est de 88.470 personnes, dont 46.537 femmes. Dans la branche industrielle des mines et hauts fourneaux, le nombre d’individus actifs est de 15.154 personnes (dont seulement 4 femmes). Le total des personnes dépendantes des mines et hauts-fourneaux est de 32.72 dont seulement 11.673 femmes, signe que cette branche fonctionne en partie avec des ouvriers étrangers souvent célibataires ou vivant sans leur famille. Cette approche, c’est-à-dire celle de relier les personnes non-actives d’un ménage aux actifs (par branche) est également le reflet de la représentation de la société – et de la famille – où le père travaille et fait vivre la famille et la « mère au foyer ». ",
-              "figures":[{"caption":"Individus actifs et personnes dépendant de la profession, 1907"}]
+              "figures": [
+                {
+                  "id": "Picture_3p2-7.png",
+                  "caption": "Individus actifs et personnes dépendant de la profession, 1907"
+                }
+              ]
             },
             {
               "from": 1907,
@@ -180,7 +210,12 @@
               "focusKeys": ["v", "v1", "v2", "v3"],
               "colorKeys": { "v": "var(--secondary)", "v1": "var(--datakey-v1)", "v2": "var(--datakey-v)", "v3": "var(--t1-colorkeys-tertiary)" },
               "text": "Les recensements et les enquêtes effectuées depuis le début du 20ème siècle au Luxembourg s’adressent généralement aux résidents. Il est d’autant plus remarquable que l’enquête professionnelle et industrielle de 1907 – adressée aux patrons –  prévoit une question concernant les personnes « travaillant dans des exploitations du Grand-Duché, alors qu’ils habitent au-delà de la frontière. » Il s’agit d’un signe montrant l’imprtance du phénomène du travail frontaleir dès cette époque. Aujourd’hui au Luxembourg, une seule enquête, à savoir l’enquête sur la structure des salaires (Structure of Earnings Survey, SES) tient compte de l’emploi frontalier. A noter que comme cette partie de l’enquête de 1907, la SES s’adresse également aux entreprises et non pas aux individus. Par contre, l’enquête européenne sur les forces de travail (EFT) existant depuis le début des années 1980 au Luxembourg ne s’adresse qu’aux individus résidents. Les taux de chômage et les taux d’emploi et d’activité calculés sur la base de l’enquête sur les forces de travail ne concernent donc que les résidents. Aujourd’hui, comme l’enquête sur la structure des salaires n’est réalisée que tous les 4 ans, les informations les plus actuelles sur l’évolution de l’emploi frontalier sont issues des fichiers administratifs de la sécurité sociale.",
-              "figures":[{"caption": "Le questionnaire concernant les frontaliers dans le recensement industriel et professionnel de 1907"}]
+              "figures": [
+                {
+                  "id": "Picture_3p2-8.png",
+                  "caption": "Le questionnaire concernant les frontaliers dans le recensement industriel et professionnel de 1907"
+                }
+              ]
             }
           ]
         }, {
@@ -200,7 +235,13 @@
               "datasetExtent": [1871, 2021],
               "datasetRange": [0, 100],
               "datasetLegend": "Part des secteurs économiques dans l'emploi total, 1871-2020",
-              "datasetNumericTranslationLabel": "percentage"
+              "datasetNumericTranslationLabel": "percentage",
+              "figures": [
+                {
+                  "id": "Picture_3p3-1.png",
+                  "caption": "Le monde agricole en photos à la fin des années 1930"
+                }
+              ]
             },
             {
               "from": 1907,
@@ -245,7 +286,13 @@
               "focusKeys": ["v", "v2"],
               "colorKeys": { "v": "var(--secondary)", "v1": "var(--datakey-v1)", "v2": "var(--datakey-v)", "v3": "var(--t1-colorkeys-tertiary)" },
               "text": "L’industrie sidérurgique ne se développe véritablement qu’à partir des années 1880 avec la possibilité qu’offre désormais le procédé Thomas (1879) de transformer la fonte phosphoreuse (produite à partir de la minette luxembourgeoise) en acier de bonne qualité. L’ascension de la sidérurgie fut d’autant plus fulgurante que dans d’autres régions européennes.",
-              "figures": [{ "caption": "Montage du nouveau sac à poussière du haut-fourneau /AnLux, Arbed ph00025" }]
+              "figures": [{ "caption": "Montage du nouveau sac à poussière du haut-fourneau /AnLux, Arbed ph00025" }],
+              "figures": [
+                {
+                  "id": "Picture_3p3-5.jpg",
+                  "caption": "Montage du nouveau sac à poussière du haut-fourneau II de l’usine de Dudelange, 1928.08.23"
+                }
+              ]
             },
             {
               "from": 1907,
@@ -254,9 +301,9 @@
               "focusKeys": ["v", "v2"],
               "colorKeys": { "v": "var(--secondary)", "v1": "var(--datakey-v1)", "v2": "var(--datakey-v)", "v3": "var(--t1-colorkeys-tertiary)" },
               "text": "Selon le recensement professionnel industriel du 12 juin 1907 (une première du genre), 66663 personnes exercent une activité accessoire, dont 48 719 dans l’agriculture. De ces 48 719 cas d’activité accessoire dans l’agriculture, 30 630 (63%) sont exercés par des ouvriers. Le recensement de 1960 indique encore 630 (7,6%) agriculteurs-patrons exerçant à titre accessoire sur un total de 8 284. (Gérard Trausch : Histoire économique du Luxembourg 1815-2015, STATEC, 2017)"
-            }
-          ]
-        },
+              }
+            ]
+          },
         {
           "title": "Vers une société salariale ",
           "paragraphs": [
