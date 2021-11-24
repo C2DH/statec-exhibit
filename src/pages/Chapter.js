@@ -2,6 +2,7 @@ import React, { useEffect, useMemo, useState } from 'react'
 import chapter01 from '../data/themes/theme-01.json'
 import chapter02 from '../data/themes/theme-02.json'
 import chapter03 from '../data/themes/theme-03.json'
+import chapter04 from '../data/themes/theme-04.json'
 import { useStore } from '../store'
 import { useCurrentWindowDimensions } from '../hooks'
 import { isMobile, getIsMobileWithTablet } from '../logic/viewport'
@@ -18,7 +19,8 @@ import { Helmet } from 'react-helmet'
 const AvailableChapters = Object.freeze({
   [chapter01.id]: chapter01,
   [chapter02.id]: chapter02,
-  [chapter03.id]: chapter03
+  [chapter03.id]: chapter03,
+  [chapter04.id]: chapter04
 })
 const DefaultThemeId = String(chapter01.id)
 
@@ -153,7 +155,7 @@ const Chapter = ({ match: { params: { chapterId }}}) => {
         paragraphs={chapter.conclusions || []}
       />
       <ChapterFooter isMobileWithTablet={isMobileWithTablet} chapterIndex={chapter.chapterIndex}/>
-      <ChapterQrCode isMobileWithTablet={isMobileWithTablet} chapterIndex={chapter.chapterIndex}
+      {chapter.displayQRcode ? <ChapterQrCode isMobileWithTablet={isMobileWithTablet} chapterIndex={chapter.chapterIndex}
         style={{
           position: 'fixed',
           bottom: 20,
@@ -161,7 +163,7 @@ const Chapter = ({ match: { params: { chapterId }}}) => {
           width: 75,
           height: 75,
         }}
-      />
+      />:null}
     </div>
   )
 }
