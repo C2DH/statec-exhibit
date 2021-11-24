@@ -12,7 +12,7 @@ const TableOfContents = ({ color='white' }) => {
         <section className="mt4" key={i}>
         <Link className="no-underline" style={{color}} to={route.to}  replace>
           <div className="tl menu-title underline" >{t('chapterNumber', { n: i + 1 })}</div>
-          <h1 className="ma0 pa0 mb0 f3 f2-m f1-l" style={{color}}>{t(route.label)}</h1>
+          <h1 className="ma0 pa0 mb0 f3 f2-m f1-l" style={{color}}>{route.title}</h1>
         </Link>
         {Array.isArray(route.sections)
           ? <ol className="mv0">

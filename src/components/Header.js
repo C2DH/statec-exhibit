@@ -51,7 +51,7 @@ const Header = () => {
       <div className="Header_centerLink">
         <Link to={'/'}>{t('FramingLuxembourg')}</Link>
         {currentChapter
-          ? <span>&nbsp;/&nbsp;{t(currentChapter.label)}</span>
+          ? <span>&nbsp;/&nbsp;{currentChapter.title}</span>
           : null
         }
       </div>
