@@ -39,7 +39,7 @@ const ChapterVisualisations = ({
   if (paragraph) {
     hotspots = paragraph.hotspots ?? []
   }
-  if (modules && step) {
+  if (modules && step && step.moduleId) {
     hotspots = hotspots.concat(modules[step.moduleId]?.hotspots ?? [])
   }
   // reload bounding box whenever height or width changes

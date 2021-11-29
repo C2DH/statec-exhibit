@@ -4,7 +4,7 @@
   "timeformat": "YYYY",
   "legend": {
     "t": "année",
-    "v": "Emploi total",
+    "v": "Emploi total (avec les frontaliers)",
     "v1": "Emploi national (résidents)"
   },
   "values": [
