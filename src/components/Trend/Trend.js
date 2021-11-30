@@ -19,6 +19,7 @@ const Trend = ({
   paragraphId='-1,-1',
   legend={},
   data=[],
+  dateExtent=[StartDate, EndDate],
   from, to,
   // availableKeys: to computate the extent
   availableKeys=['v'],
@@ -47,7 +48,7 @@ const Trend = ({
   const svgWidth = Math.max(0, width)
   const windowDimensions = [svgWidth, svgHeight].join(',')
   const scaleX = scaleTime()
-      .domain([StartDate, EndDate])
+      .domain(dateExtent)
       // - marginLeft*2 to accomodate for the left and right axis
       .range([0, svgWidth - marginLeft - marginRight])
   const [xMin, xMax] = useMemo(()  => {

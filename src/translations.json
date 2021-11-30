@@ -113,6 +113,9 @@
       "datasetEmploymentTotalLegendValuev1": "Agriculture",
       "datasetEmploymentTotalLegendValuev2": "Industrie et construction",
       "datasetEmploymentTotalLegendValuev3": "Services",
+      "datasetUnemployment": "Taux de chômage (%)",
+      "datasetUnemploymentLegendValuev": "Taux de chômage",
+      "datasetUnemploymentExtentv": "min: <b class='bold'>{{kMin, 2}}</b> % en {{tMin}}<br/> max: <b class='bold'>{{kMax, 2}}</b> % en {{tMax}}",
       "hotspotLabel": "Bookmark"
     }
   }

@@ -29,7 +29,8 @@ export const ChapterRouteEmployment = { to: '/employment', label: 'ChapterRouteE
 
 export const ChapterRouteUnemployment = { to: '/unemployment', label: 'ChapterRouteUnemployment', title: 'La question du chômage', favicon: 'data:image/x-icon;base64,AAABAAEAEBAAAAEAIAAoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACb/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==',
   sections: [
-    ''
+    'Les « non occupées » dans les recensements',
+    'La modernisation des secours de chômage'
   ]
 }
 

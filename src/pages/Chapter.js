@@ -13,6 +13,8 @@ import ChapterStream from '../components/Chapter/ChapterStream'
 import ChapterFooter from '../components/Chapter/ChapterFooter'
 import ChapterVisualisations from '../components/Chapter/ChapterVisualisations'
 import ChapterQrCode from '../components/Chapter/ChapterQrCode'
+import { StartDate, EndDate } from '../constants'
+
 import '../styles/components/chapter.scss'
 import { Helmet } from 'react-helmet'
 
@@ -36,6 +38,12 @@ const Section = ({ section, height, width, backgroundColor, isMobile}) => {
     console.info('@stepChangeHandler', step)
     setStep(step)
   }
+
+  const dateExtent = useMemo(() => {
+    return Array.isArray(section.datasetExtent)
+      ? section.datasetExtent.map(d => new Date(`${d}-01-01`))
+      : [StartDate, EndDate]
+  }, [section])
 
   return (
     <div className="Section Chapter_streamWrapper flex">
@@ -63,6 +71,7 @@ const Section = ({ section, height, width, backgroundColor, isMobile}) => {
             height={height}
             modules={section.modules || []}
             step={step}
+            dateExtent={dateExtent}
             numericTranslationLabel={section.numericTranslationLabel}
           />
         </div>

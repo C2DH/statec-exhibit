@@ -4,6 +4,8 @@ import ChapterModulesGraphics from './ChapterModulesGraphics'
 import Trend from '../Trend'
 import Points from '../Points'
 
+import { StartDate, EndDate } from '../../constants'
+
 const AvailablesComponents = {
   Points: Points,
   Trend: Trend
@@ -18,6 +20,7 @@ const ChapterVisualisations = ({
   numStartAt=0,
   marginLeft=100,
   numericTranslationLabel='number',
+  dateExtent=[StartDate, EndDate]
 }) => {
   const ref = useRef();
   const { t } = useTranslation()
@@ -42,6 +45,7 @@ const ChapterVisualisations = ({
   if (modules && step && step.moduleId) {
     hotspots = hotspots.concat(modules[step.moduleId]?.hotspots ?? [])
   }
+  console.info('STOCAZZO', dateExtent)
   // reload bounding box whenever height or width changes
   useEffect(() => {
     if (ref && ref.current) {
@@ -68,7 +72,7 @@ const ChapterVisualisations = ({
       height: height - 100,
     }}>
       <div style={{marginLeft: marginLeft / 2}}>
-        <ChapterModulesGraphics modules={modules} numStartAt={numStartAt} step={step}/>
+        <ChapterModulesGraphics dateExtent={dateExtent} modules={modules} numStartAt={numStartAt} step={step}/>
       </div>
       <div ref={ref} style={{
         flexGrow: 1,
@@ -112,6 +116,7 @@ const ChapterVisualisations = ({
             width={size.width}
             left={size.left}
             top={size.top}
+            dateExtent={dateExtent}
           />
         </div>
       </div>
