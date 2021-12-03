@@ -2808,7 +2808,7 @@
           "url": "/media/images/LW_Foto_copyright_Lucien_Wolff_Luxemburger_Wort_2019.large-w.jpg",
           "params": {
             "size": "large-w",
-            "width": 1080,
+            "width": 2000,
             "height": null
           }
         },
@@ -2817,7 +2817,7 @@
           "params": {
             "size": "large-h",
             "width": null,
-            "height": 960
+            "height": 2000
           }
         }
       },
@@ -2948,9 +2948,9 @@
       "aspectRatio": 1.3145833333333334,
       "isPortrait": false
     },
-    "Picture_3p2-2a.png": {
+    "Picture_3p2-2a.jpg": {
       "caption": "Machines et instruments de travail agricoles au 19ème siècle",
-      "provenance": "Photo RL / Pierre Heckler",
+      "provenance": "Walker Art Library / Alamy Banque D'Images",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/Picture_3p2-2a.medium-w.jpg",
@@ -2972,7 +2972,7 @@
           "url": "/media/images/Picture_3p2-2a.large-w.jpg",
           "params": {
             "size": "large-w",
-            "width": 1080,
+            "width": 2000,
             "height": null
           }
         },
@@ -2981,15 +2981,15 @@
           "params": {
             "size": "large-h",
             "width": null,
-            "height": 960
+            "height": 2000
           }
         }
       },
-      "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAUCAYAAACXtf2DAAAACXBIWXMAAA7DAAAOwwHHb6hkAAADsElEQVQ4y22VR0suXRCE5ye6F1y5FLf6DxRMCxERA4IBc845X3POOeecA1qXp+DId+EbmPfMnOnu6q7q02/0/f2tn58fcfHMzfX19eX77e1Nr6+ven9/9/PLy8vv3vPzs/eD7f9dUQiIYbiOj4+1u7ur6+tr33d3d14vLi5839zc6OnpySsgn5+fOj8/tx3v2B4eHur29lbR2tqaVldXdX9/r66uLvX29urk5MRVkRWBcJiZmbHd5uam8Hl4ePinitPTU62srKi4uFgjIyOam5vT4uKiIpw3Njbs0NHR8QtAdlCxv7+vs7MzjY6OamJiQn/+/NH8/Lz3t7a2tLe35ySOjo4MQubEJB77EZtXV1empKamxqjQQAZQtb6+7vL5TgUEPTg4cDCeAdrZ2bE2UHR5eamysjK1tra6ElOEYX9/vwoLC9Xd3W0dCAwYGW5vb5saVvanpqZcBYGhFhuS4Du0AkbSsBBRCmWREZlTKtQQaGlpSVlZWaqqqtLAwIBaWlrU19enpqYmpaamKj09XcvLy64IHygh856eHu8B6ArY6Ozs1PT0tIEQDwP4jo+PV1JSkkpKSpSSkqLS0lIDAZCYmGhtAs0kh9BQyTPMRI+Pj/+0I+XSGRhAy+TkpLMHjIxwrqur+20ItCF76ACEhBcWFtwY6Bjxw+bs7KwaGhqcAWcDY8DCYeMdTQgKGBUDQoI0A0FJkEZpb2+3JvhH8E5mvCAaK5kTEAf6nyrYr6+vV2Njo3lHaHTikCEqoFAMEJ1FDBKIKI0gfASdzOCVrABAOPq/ra3N54NDRSt+fHy426AWOmnNgoIC5eXlKTs7WzExMdYoIjPKBgAKoAsndAitWV1d7RNaUVHhTAnEM9/DeEAXxB8fHzfVJGsNmBdkTfvRYkNDQy4bJ7iHQsDHxsbcbWjFexgx2GDPBa20NracE2JElIwTcwiA8vJytyhlowmnERppXYJxcbgYL1QHlQRGbKoBmCSJ5wrCNGW4IRbtNTw8bAdOd2ZmpkWlQijAuba2VmlpacrIyFBRUZE1CVc42cTyuOYkh3mC6snJyYqNjTX64OCgcnNz1dzc7O6hiyorKw0GKIJiDwNUwzcAc3Jy7A9YxGmjHFYyi4uL83hAcOZSQkKCBYUqKKRboJHxkZ+f73EBMPoASAMwSmgcUwQKJf73pougiBv+w58N9DG3oIAzQNXhTydohD+sQJHHNQZsEoCVE8jNc/hfCLMGAFYASYwO5B1fxA7/eOGZb38B1WmTxNyzkZcAAAAASUVORK5CYII=",
-      "aspectRatio": 1.2260416666666667,
+      "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAUCAIAAAD3FQHqAAAACXBIWXMAAC4jAAAuIwF4pT92AAADc0lEQVQ4y1XUx0tuSRAF8PtHutKNG3Enbly59blUUBQVRkQUPx1UzDmLoGPOOeecxjG/9/tuzzyYWjR9u6tOnTpVfaOf/7f39/fLy8u7u7uHh4fn5+d/Ynt8fPw7tqenJ4efn5/39/c8+X9/f7++vn7GFn19fX18fLhw6u7q6mp7e/v6+toGnBi4Pu0h+rQKcXJzc/Py8gL65OTE3iY6Pj5eWFi4vb0dGRnp7+/3CZr3U2yLi4urq6t7e3sSnJ+fh2AO9ru7u7W1ta2trSsrK9PT05JF7nZ2dvAcGxtrbm7mJInPo6MjCTj9FZt83Pb390FAvI7t4uLid4JkjdQRfHh42NTUNDc3B956cHCwubl5dnaG5tbWFlKgFbuxscHTiWJDXZ2dnS0tLUNDQ6AjF+vr6zMzM9XV1R0dHeCFYSFm5z/DZWlpySFniLigrPCX2OiFYFIvbXInPrB4e3uTHKmKioqqqqrh4WGZe3t7pSksLMzPz5+cnOSGF8/R0dGuri4JJFZKBH5gYKCnp2d8fFwtlAJK75ycnMzMzEQiUVRUFEBt0tPTGxoabmIjDjUHBwdPT09h6W+EpAvVIu+IXmgCnZqa0lbNhavMzti6u7vX1tZeY5MSF42GZfUZcaWXotra2ubn5/UbHLJh6GRbXl5ubGxUzsTEBB8xsgq2kryurg6W/iZ5oapg6oayUTCl5ACBGh0NSkFBAZlmZ2clM/2mbzY2iPwJTwEISe2FYSenPPKTVptUwVVR6hUMXac8DCsiulFZWflHbBkZGSkpKRJHLvr6+gxqGEhA0MXTwuAYFFWYmERsxAqTTPL6+nrtIiIHn8n5oj0gWpDZhkaazRsRM6U0flZw3ooKnHu5mJKVLM4xCofJt00F8O3t7TU1NYqlLuE4oQxUMqUFsozM4bU7oVFIhorHG33HFrpGddTMMcS8vDwly2n61EKHkpKS4uLi8vJy5QfthHBGyh6nf+feEEAx2WlpaYqlS1lZGaZ+A3/GpgmYerPZ2dk8wUE3w6WlpTIhBTf5z9EUReljampqbm6uJrjOysryjEIJsIyYZ1RbU5P/40ddIgFIWwCRxUhzU3hkXgyIKSOTabI3dfKE/0l4H3TxSMlKfidCwp+WJtpqo0z1JWv8/fO16o5VEpILcBiguYX+hhMO4Tb8zSHw/wW6ofWJ5jt9lgAAAABJRU5ErkJggg==",
+      "aspectRatio": 1.2465,
       "isPortrait": false
     },
-    "picture_3p2-2b.png": {
+    "claas-2147239.jpg": {
       "caption": "Une moissonneuse-batteuse contemporaine en action",
       "provenance": "Placeholder Copyright",
       "resolutions": {
@@ -3397,6 +3397,45 @@
       },
       "base64": "data:image/png;base64,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",
       "aspectRatio": 1.5552083333333333,
+      "isPortrait": false
+    },
+    "claas-2147239.jpg": {
+      "resolutions": {
+        "medium-w": {
+          "url": "/media/images/claas-2147239.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/claas-2147239.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/claas-2147239.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 2000,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/claas-2147239.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 2000
+          }
+        }
+      },
+      "base64": "data:image/png;base64,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",
+      "aspectRatio": 1.5,
       "isPortrait": false
     }
   }

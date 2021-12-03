@@ -137,11 +137,11 @@
               "text": "La question consacrée au travail dans le recensement de 1871 va un peu plus loin en ajoutant un élément, à savoir la profession accessoire éventuelle («&nbsp;Berufs-oder Gewerbezweig ; mit Erwerb verbundene Nebenbeschäftigungen ; Arbeits und Dienstverhältnis – der über 14 jahre alten Personen&nbsp;»). Cette question répond évidemment à une réalité socio-professionnelle, à savoir le fait que beaucoup d’ouvriers, par exemple, avaient également une activité agricole accessoire permettant de joindre les deux bouts à la fin du mois ou de simplement manger à leur faim avec leur famille. Mais comme cette question n’est pas véritablement codifiée, les recensés n’y ont pas répondu en détail. Ils se sont limités généralement à mentionner la profession principale du «&nbsp;chef de famille&nbsp;».",
               "figures": [
                 {
-                  "id": "Picture_3p2-2a.png",
+                  "id": "Picture_3p2-2a.jpg",
                   "caption": "Machines et instruments de travail agricoles au 19ème siècle"
                 },
                 {
-                  "id": "picture_3p2-2b.png",
+                  "id": "claas-2147239.jpg",
                   "caption": "Une moissonneuse-batteuse contemproraine en action"
                 }
               ]
@@ -562,7 +562,7 @@
               "visibleKeys": ["v", "v2"],
               "focusKeys": ["v", "v2"],
               "colorKeys": { "v": "var(--secondary)", "v1": "var(--datakey-v1)", "v2": "var(--datakey-v)", "v3": "var(--t1-colorkeys-tertiary)" },
-              "text": "On utilise souvent le terme de « désindustrialisation » pour qualifier l’évolution des structures économiques sur le long terme dans les pays dits « développés » comme le Luxembourg. Cette vision où le concept de « déclin industriel » est sous-jacent, doit être nuancée. En effet, d’une part, les industries dites « traditionnelles » (comme la sidérurgie et même les mines fer) se sont adaptées de façon continue par des innovations et des améliorations de la productivité. A titre d’exemple, la production de laminés par ouvrier dans les laminoirs (la productivité technique) est passée de 243 t. en 1921 à 919 t. en 1988. Plus récemment, la filière des hauts-fourneaux a été abandonnée au profit de la filière électrique. Sans ces investissements, il ne serait pas concevable que la sidérurgie eût gardé une présence aussi importante au Luxembourg. Aujourd’hui la branche de « métallurgie » (définie dans le cadre des comptes nationaux) occupe …. personnes. D’autre part, le Luxembourg, dans le cadre de sa politique de développement économique - la Société nationale de crédit et d’investissement est fondée en 1977 – a créé des emplois (ou plutôt contribué à créer les conditions de la création dedans de nouvelles branches industrielles. ",
+              "text": "On utilise souvent le terme de « désindustrialisation » pour qualifier l’évolution des structures économiques sur le long terme dans les pays dits « développés » comme le Luxembourg. Cette vision où le concept de « déclin industriel » est sous-jacent, doit être nuancée. En effet, d’une part, les industries dites « traditionnelles » (comme la sidérurgie et même les mines fer) se sont adaptées de façon continue par des innovations et des améliorations de la productivité. A titre d’exemple, la production de laminés par ouvrier dans les laminoirs (la productivité technique) est passée de 243 t. en 1921 à 919 t. en 1988. Plus récemment, la filière des hauts-fourneaux a été abandonnée au profit de la filière électrique. Sans ces investissements, il ne serait pas concevable que la sidérurgie eût gardé une présence aussi importante au Luxembourg. Aujourd’hui la branche de « métallurgie » (définie dans le cadre des comptes nationaux) occupe … personnes. D’autre part, le Luxembourg, dans le cadre de sa politique de développement économique - la Société nationale de crédit et d’investissement est fondée en 1977 – a créé des emplois (ou plutôt contribué à créer les conditions de la création de nouvelles branches industrielles. ",
               "figures": [
                 {
                   "caption": "La SNCI dans la presse. Source: <a href='https://viewer.eluxemburgensia.lu/ark:70795/jrz7dq/pages/28/articles/DTL467?search=diversification%20économique%20Luxembourg' target='_blank'>eluxemburgensia</a>"
