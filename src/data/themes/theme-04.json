@@ -25,12 +25,12 @@
       "focusKeys": ["v"],
       "modules": [
         {
-          "title": "Les « non occupées » dans les recensements",
+          "title": "Le concept du chômage en construction",
           "paragraphs": [
             {
               "visibleKeys": ["v"],
               "focusKeys": ["v"],
-              "text": "Lors de la discussion du budget de 1905 des membres de la Chambre des députés proposent de combiner le recensement ordinaire de la population avec un recensement professionnel et y joindre le relèvement des sans travail en ajoutant la durée du chômage dont ils souffraient effectivement. Le recensement de 1905 contient effectivement la question si les personnes sont « occupées » ou au cas où elles ne sont pas occupées si c’est «<em> en suite d'incapacité de travail passagère ou en suite de quelle autre cause?</em> ». D’après les documents disponibles, ces questions ne sont pas exploitées statistiquement par la « Commission permanente de statistique » de l’époque... ",
+              "text": "Lors de la discussion du budget de 1905 des membres de la Chambre des députés proposent de combiner le recensement ordinaire de la population avec un recensement professionnel et y joindre le relèvement des sans travail en ajoutant la durée du chômage dont ils souffraient effectivement. Le recensement de 1905 contient effectivement la question si les personnes sont « occupées » ou au cas où elles ne sont pas occupées si c’est « en suite d'incapacité de travail passagère ou en suite de quelle autre cause? ». D’après les documents disponibles, ces questions ne sont pas exploitées statistiquement par la « Commission permanente de statistique » de l’époque... ",
               "from": 1907,
               "to": 1947,
               "figures": [
@@ -41,7 +41,7 @@
               ]
             },
             {
-              "text": "Avant la première guerre mondiale, la « non-activité » professionnelle (voulue ou non-voulue) ne semble pas encore être considérée au Luxembourg comme phénomène mettant en cause l’équilibre social. L’absence de statistiques sur le chômage à cette époque en est le reflet. On semble considérer que, dans une société où le travail indépendant est omniprésent (artisanat, agriculture), les personnes non-actives participent organiquement aux revenus des autres membres de leur ménage. L’ajustement aux fluctuations du marché du travail salarié se fait d’ailleurs aussi par le biais de la flexibilité de la main-d’œuvre étrangère (et. Luxembourgeoise) qui allait chercher du travail dans les usines et les mines de la région Sarre-Lorraine-Luxembourg. Mais la question du chômage – et de l’indemnisation du chômage - commence évidemment à se poser dès la fin du 19ème siècle.",
+              "text": "Avant la première guerre mondiale, la « non-activité » professionnelle (voulue ou non-voulue) ne semble pas encore être considérée au Luxembourg comme phénomène mettant en cause l’équilibre social. L’absence de statistiques sur le chômage à cette époque en est le reflet On semble considérer que, dans une société où le travail indépendant est omniprésent (artisanat, agriculture), les personnes non-actives participent organiquement aux revenus des autres membres de leur ménage. L’ajustement aux fluctuations du marché du travail salarié se fait d’ailleurs aussi par le biais de la flexibilité de la main-d’œuvre étrangère (et luxembourgeoise) qui allait chercher du travail dans les usines et les mines de la région Sarre-Lorraine-Luxembourg. Mais la question du chômage – et de l’indemnisation du chômage - commence évidemment à se poser dès la fin du 19ème siècle.",
               "from": 1907,
               "to": 1947,
               "visibleKeys": ["v"],
@@ -54,7 +54,7 @@
               ]
             },
             {
-              "text": "Le fait qu’un « marché » du travail (salarié) au sens propre du terme est en train de naître au tournant des 19ème et 20ème siècle apparaît dans le fait qu’une une réglementation concernant les bureaux de placement est mise en place (loi du 2 mai 1913 concernant la réglementation des bureaux de placement et arrêté du 21 août 1913). Certains y voient l’ancêtre de l’administration de l’emploi (ADEM, aujourd’hui Administration du développement de l’emploi). Il s’agit en fait plutôt d’une préfiguration de ce que l’on appelle aujourd’hui agences d’intérim ou agences de recrutement gérées par des intérêts privés.  Cela correspond au libéralisme triomphant de ces années-là. Il semble que ce genre de « Arbeitsvermittlung » ait été courante à l’époque et que la réglementation ne fait que suivre le mouvement. Qui dit recrutement et intermédiaires de recrutement, dit également implicitement existence du chômage (même s’il est souvent temporaire). Cependant, comme il s’agit d’organismes privés, les données statistiques sur l’activité de ces organismes font défaut.",
+              "text": "Le fait qu’un « marché » du travail (salarié) au sens propre du terme est en train de naître au tournant des 19ème et 20ème siècle apparaît dans le fait qu’une une réglementation concernant les bureaux de placement est mise en place (loi du 2 mai 1913 concernant la réglementation des bureaux de placement et arrêté du 21 août 1913). Certains y voient l’ancêtre de l’administration de l’emploi (ADEM, aujourd’hui Administration du développement de l’emploi). Il s’agit en fait plutôt d’une préfiguration de ce que l’on appelle aujourd’hui agences d’intérim ou agences de recrutement gérées par des intérêts privés. Cela correspond au libéralisme triomphant de ces années là. Il semble que ce genre de « Arbeitsvermittlung » ait été courante à l’époque et que la réglementation ne fait que suivre le mouvement. Qui dit recrutement et intermédiaires de recrutement, dit également implicitement existence du chômage (même s’il est souvent temporaire). Cependant, comme il s’agit d’organismes privés, les données statistiques sur l’activité de ces organismes font défaut.",
               "from": 1907,
               "to": 1947,
               "visibleKeys": ["v"],
@@ -67,7 +67,7 @@
               ]
             },
             {
-              "text": "Avec la première guerre mondiale, l’ « individualisation économique » (corollaire de l’extension de la relation salariale) se meut en « individualisation sociale » poussée par les difficultés résultant d’une économie de guerre (perte du travail, approvisionnement aléatoire, augmentation des prix, … ). Un peu paradoxalement, la mise en place des institutions de sécurité sociale et son caractère assurentiel contribuent à cette individualisation (mis à part les allocations familiales introduites par la loi après la deuxième guerre mondiale). Les prestations sociales sont liées à l’individu (et au travail de cet individu). Le chômage est désormais perçu comme danger pour la cohésion de la société et les premières indemnisations de chômage sont créées par l’arrêté grand-ducal du 6 août 1921 (mettant en œuvre la loi du même jour concernant le financement des indemnités de chômage). La mise en place des prestations de chômage est évidemment aussi liée à l’organisation du mouvement ouvrier pendant les années de la première guerre mondiale et après cette guerre. ",
+              "text": "Avec la première guerre mondiale, l’ « individualisation économique » (corollaire de l’extension de la relation salariale) se meut en « individualisation sociale » poussée par les difficultés résultant d’une économie de guerre (perte du travail, approvisionnement aléatoire, augmentation des prix, … ). Un peu paradoxalement, la mise en place des institutions de sécurité sociale et son caractère assurantiel contribuent à cette individualisation (mis à part les allocations familiales introduites par la loi après la deuxième guerre mondiale). Les prestations sociales sont liées à l’individu (et au travail de cet individu). Le chômage est désormais perçu comme danger pour la cohésion de la société et les premières indemnisations de chômage sont créées par l’arrêté grand-ducal du 6 août 1921 (mettant en œuvre la loi du même jour concernant le financement des indemnités de chômage). La mise en place des prestations de chômage est évidemment aussi liée à l’organisation du mouvement ouvrier pendant les années de la première guerre mondiale et après cette guerre.",
               "from": 1921,
               "to": 1947,
               "visibleKeys": ["v"],
@@ -93,39 +93,6 @@
                   "caption": "Arrêté grand-ducal du 6 août 1921 portant réglementation des secours de chômage. <br/> Source : <a href='https://legilux.public.lu/eli/etat/leg/agd/1921/08/06/n2/jo' target='_blank'>Legilux</a>"
                 }
               ]
-            },
-            {
-              "text": "La crise économique suivant la première guerre mondiale fait du chômage un fait social majeur, avec un maximum de 1 558 chômeurs indemnisés en 1921.  Si dans les années 1920, le chômage (indemnisé) redevient un phénomène assez marginal (l’économie est en phase ascendante), ce n’est plus le cas au début des années 1930 (la crise économique mondiale atteignant alors le Luxembourg). Le nombre de chômeurs indemnisés atteint un maximum de 2 159. Dans la deuxième moitié des années 1930, le chômage redevient assez rare avant de rebondir à la veille de la deuxième guerre mondiale.",
-              "from": 1900,
-              "to": 1947,
-              "visibleKeys": ["v"],
-              "focusKeys": ["v"],
-              "dataset": "UnemploymentNumbers",
-              "datasetLayout": "Lines",
-              "datasetDisplayPoints": true,
-              "datasetKeys": ["v1", "v2"],
-              "datasetColorKeys": { "v1": "var(--dataset-t2-v)", "v2": "var(--dataset-t2-v1)"},
-              "datasetExtent": [1920, 1940],
-              "datasetLegend": "Nombre de chômeurs de 1921 à 1939. Source : STATEC, L’économie luxembourgeoise au 20ème siècle, Luxembourg, 1999",
-              "figures": [
-                {
-                  "id": "Picture_4p1-6.png",
-                  "caption": "Arrêté grand-ducal du 6 août 1921 portant réglementation des secours de chômage. <br/> Source : <a href='https://legilux.public.lu/eli/etat/leg/agd/1921/08/06/n2/jo' target='_blank'>Legilux</a>"
-                }
-              ]
-            },
-            {
-              "from": 1947,
-              "to": 1970,
-              "text": "Après la deuxième guerre mondiale, un élan de « solidarité nationale et sociale » traverse le Luxembourg comme d’autres pays. Les allocations familiales sont introduites de façon institutionnelle par la loi du 20 octobre 1947. Par l’arrêté grand-ducal du 24 mai 1945, la condition d’indigence rendant le chômeur éligible pour les indemnités est supprimée et l’Office national du travail est créé. La responsabilité passe donc du niveau local au niveau national. Concrètement, la question du chômage disparaît cependant de l’agenda socio-politique.<br/> Dans ce sens les « Trente Glorieuses » portent bien leur nom. Les observateurs, comme, Carlo Hemmer, notent d’ailleurs que la croissance de la population autochtone n’est pas suffisante pour répondre à l’offre de travail de la part des entreprises (l’ajustement se fait par l’immigration), ce qui a certainement favorisé l’absence de chômage visible et déclaré.",
-              "visibleKeys": ["v"],
-              "focusKeys": ["v"],
-              "figures": [
-                {
-                  "id": "Picture_4p1-7.png",
-                  "caption": "Source : D'Letzebuerger Land du 25 août 1972 <a href='' target='_blank'>eluxemburgensia</a>"
-                }
-              ]
             }
           ]
         }
@@ -141,14 +108,13 @@
       "datasetExtent": [1970, 2020],
       "modules": [
         {
-          "title": "La modernisation des secours de chômage",
-          "subheading": "C’est à partir de la crise pétrolière de 1974 et ses répercussions sur l’économie mondiale (et plus spécifiquementt sur la sidérurgie luxembourgeoise) que la question du chômage commence à se concrétiser au Grand-Duché. Au niveau légal, c’est en 1975-1976 qu’une modernisation des secours de chômage intervient.",
+          "title": "La définition administrative du chômage",
           "paragraphs": [
             {
               "from": 1970,
               "to": 1976,
               "colorKeys": { "v": "var(--secondary)", "v1": "var(--datakey-v1)", "v2": "var(--datakey-v)"},
-              "text": "Par la loi du 26 juillet 1975 des allocations en cas de chômage partiel de source conjoncturelle sont introduites, en même temps que les « travaux extraordinaires d’intérêt général » (EIG) à charge de l’Etat. La loi du 21 février 1976 concerne l’organisation et le fonctionnement de l’Administration de l’emploi, ADEM (qui remplace l’Office national du travail).",
+              "text": "La crise économique suivant la première guerre mondiale fait du chômage un fait social majeur, avec un maximum de 1.558 chômeurs indemnisés en 1921. Si dans les années 1920, le chômage (indemnisé) redevient un phénomène assez marginal (l’économie est en phase ascendante), ce n’est plus le cas au début des années 1930 (la crise économique mondiale atteignant alors le Luxembourg). Le nombre de chômeurs indemnisés atteint un maximum de 2.159. Dans la deuxième moitié des années 1930, le chômage redevient assez rare avant de rebondir à la veille de la deuxième guerre mondiale.",
               "figures": [
                 {
                   "id": "Picture_4p2-1.png",
