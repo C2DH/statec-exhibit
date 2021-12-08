@@ -2990,11 +2990,9 @@
       "isPortrait": false
     },
     "claas-2147239.jpg": {
-      "caption": "Une moissonneuse-batteuse contemporaine en action",
-      "provenance": "Placeholder Copyright",
       "resolutions": {
         "medium-w": {
-          "url": "/media/images/picture_3p2-2b.medium-w.jpg",
+          "url": "/media/images/claas-2147239.medium-w.jpg",
           "params": {
             "size": "medium-w",
             "width": 640,
@@ -3002,7 +3000,7 @@
           }
         },
         "medium-h": {
-          "url": "/media/images/picture_3p2-2b.medium-h.jpg",
+          "url": "/media/images/claas-2147239.medium-h.jpg",
           "params": {
             "size": "medium-h",
             "width": null,
@@ -3010,24 +3008,24 @@
           }
         },
         "large-w": {
-          "url": "/media/images/picture_3p2-2b.large-w.jpg",
+          "url": "/media/images/claas-2147239.large-w.jpg",
           "params": {
             "size": "large-w",
-            "width": 1080,
+            "width": 2000,
             "height": null
           }
         },
         "large-h": {
-          "url": "/media/images/picture_3p2-2b.large-h.jpg",
+          "url": "/media/images/claas-2147239.large-h.jpg",
           "params": {
             "size": "large-h",
             "width": null,
-            "height": 960
+            "height": 2000
           }
         }
       },
-      "base64": "data:image/png;base64,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",
-      "aspectRatio": 1.8572916666666666,
+      "base64": "data:image/png;base64,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",
+      "aspectRatio": 1.5,
       "isPortrait": false
     },
     "Picture_3p2-3.png": {
@@ -3399,10 +3397,12 @@
       "aspectRatio": 1.5552083333333333,
       "isPortrait": false
     },
-    "claas-2147239.jpg": {
+    "Picture_4p1-1.png": {
+      "caption": "Arrêté du 30 septembre 1905 prescrivant un recensement général de la population du Grand-Duché au 1er décembre 1905",
+      "provenance": "Legilux",
       "resolutions": {
         "medium-w": {
-          "url": "/media/images/claas-2147239.medium-w.jpg",
+          "url": "/media/images/Picture_4p1-1.medium-w.jpg",
           "params": {
             "size": "medium-w",
             "width": 640,
@@ -3410,7 +3410,7 @@
           }
         },
         "medium-h": {
-          "url": "/media/images/claas-2147239.medium-h.jpg",
+          "url": "/media/images/Picture_4p1-1.medium-h.jpg",
           "params": {
             "size": "medium-h",
             "width": null,
@@ -3418,7 +3418,7 @@
           }
         },
         "large-w": {
-          "url": "/media/images/claas-2147239.large-w.jpg",
+          "url": "/media/images/Picture_4p1-1.large-w.jpg",
           "params": {
             "size": "large-w",
             "width": 2000,
@@ -3426,7 +3426,7 @@
           }
         },
         "large-h": {
-          "url": "/media/images/claas-2147239.large-h.jpg",
+          "url": "/media/images/Picture_4p1-1.large-h.jpg",
           "params": {
             "size": "large-h",
             "width": null,
@@ -3434,8 +3434,459 @@
           }
         }
       },
-      "base64": "data:image/png;base64,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",
-      "aspectRatio": 1.5,
+      "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAUCAYAAABWMrcvAAAACXBIWXMAABYlAAAWJQFJUiTwAAAB8UlEQVQ4yz2Th47CQAxE8//fBaLXEHroPUBoQgIh+/zMhUgrO7v2eDzrDdS+8Xisk8lED4eDrtdr9+M41vl87v50OtXVaiWz2Uwvl4sESZJopVLRarWqURQpBwRhScImh0TP57Msl0u9Xq8SPJ9P7fV62ul0HN02QdPT6aScPR4P37vdbsL++/3+JjWbTV0sFrrZbLTVavl/GIba7/cdDNDRaCT4x+PxS6/dbnsQ9LAc4mPpqdvtarlclth63+/3ElCaw0aj4YjZoh/oIhJJticAuRBpmmq9XndEU8gpGaoOBgNPQiAA7Vw4s16/SQTRC0iggo6Pqvz/L4E6KgamilcBpdlo0rAnIQyJiMKe+QLIdruVwDIdsVgsuiUAYegTiuxBL+pEgrr3+12C1+vl3AlgUZEK+MPh0EWBnv0LgE6PC0OIrBfo/Ad5MiBUIonqLjlC5PN5FwKZSQSR6gRRjbEyKwhm8/ntiR9QSURiAlmoxaJH7gl/t9tJwIyF7VBLpZI3TQAA2QBDjX2jKbVajVGTgOdAD1DBQouKWZ9UpE+j7RPxEwJUUNikEsEEsrIXwMAS5wObnlMtFAqemFWgRyyXDUgulyPGL9fpWaYHIDGoSIwPiNMdx78x4uw35QRnz5qesNllc24PT20IBPv5fOQPjnmesjzEIw4AAAAASUVORK5CYII=",
+      "aspectRatio": 0.6435,
+      "isPortrait": true
+    },
+    "Picture_4p1-2.png": {
+      "caption": "Le chômage avant la première guerre selon le journal « Der arme Teufel » d’obédience social-démocate (extrait du journal du 24.8.1913)",
+      "provenance": "Placeholder Copyright",
+      "resolutions": {
+        "medium-w": {
+          "url": "/media/images/Picture_4p1-2.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/Picture_4p1-2.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/Picture_4p1-2.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 2000,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/Picture_4p1-2.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 2000
+          }
+        }
+      },
+      "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAUCAIAAADQu4ACAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA7klEQVQozzWRW5aEIAxE2f96fCE0Iiof9jm6pb5JzdRHrLwrGGqtrbVt2/Z9rw7c8zyJhI8DdhwHUSwcUkoJKSU+Oed1XWUBQXhQU3EQEic9z7PlKMEmR4xxWZZxHCGBEhKqpYgQBEvQ9vFBpFq1j1bkBHUwhAXDMEzTBGGA3cBHaQmWQokIFEZfgAad3xycbzNplwoN0AzsnxZJ1a1ybWZ2KCqozt5Mr4zPJh4TS5SI6dT76leQkHpydh96CPXeVXRdFy4506kF0q0bsAiEWB+1uwOOxYXYTOaUf+hQ5hPEhq/jfd/nee77pqM74D+0GZIHO7CJCAAAAABJRU5ErkJggg==",
+      "aspectRatio": 0.472,
+      "isPortrait": true
+    },
+    "Picture_4p1-3.png": {
+      "caption": "Les « bureaux de placement » (1913)",
+      "provenance": "Legilux",
+      "resolutions": {
+        "medium-w": {
+          "url": "/media/images/Picture_4p1-3.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/Picture_4p1-3.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/Picture_4p1-3.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 2000,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/Picture_4p1-3.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 2000
+          }
+        }
+      },
+      "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAUCAIAAADgN5EjAAAACXBIWXMAAAsTAAALEwEAmpwYAAACTklEQVQ4yz3TWVMqQQwF4P7/v8o3rUJZZIZNWURRUNxlkfV+dOqah66edJJzcpJJk8nk5uam2+0Oh8P7+/vxeDwajdwHg0G/399ud/P53OXx8dGT+/f39+vr63K5TLPZ7PLystFoTKfTSTaXp2yedrudKv1sasl8fn5+eHhYLBYJWiPbxcVFtVpttVo8nU4HERGbzeY2Wydbu91uNpsCTplooBcnkEDG5+vr6+3tbb/f85dF2W611VO31+s5gSdk6vU6NPV4gZdlGYXlrFer62z8AsCK9Aoj6QcZ3JyiNRNUo9vf31/C3N3dub+8vOCiT4AntrLVFuokA1gILq1s+kQKznXzGhceT0VRyE9XV1dnZ2dOEZKjE+Dylfv5+cHNBUDMjAoCPj8/k5tiZEQGJcXwfH9/Px6Ph8OBQnRar9cGiGFcVqsVLie2OpRMA4BkCJGCsz7hl9n44aPqVD1hCD1UCSMSkqbiVFs5r91uL+SI2Z7YbrdbEdhK0Cry3owXJcleCYsXPbXjEut10lZoLI0z1iXmFlLJj9GHB3/xMIwnkUS0HmLj8ZFprY/ZKFQWRayKDkU+TZ+EoZMwVqNSqZyfn0eEy8fHR2SS11+jw9vbfqz+PJsGE/a+4chBLGqjELthDD7xLEBn81SrVk+bgDHMP9Hi51TLp5MS5tHNi8VqtZqRqD6bzhJVVeKKGdazuXimGdpefcbqxczr9Rrxk4XiHWaDbAYhL0Cf5hmNxN9TFGILfkuW/PWGZlc2/01vcXJ6Vd4knIqSk9Oo+P8Bf2npXJJw7/gAAAAASUVORK5CYII=",
+      "aspectRatio": 0.9385,
+      "isPortrait": true
+    },
+    "Picture_4p1-4a.tif": {
+      "caption": "Ouvriers ayant contribué à la construction du Pont du Pfaffenthal  en 1921",
+      "provenance": "Photothèque de la Ville de Luxembourg (extrait de STATEC, L’économie luxembourgeoise au 20ème siècle, Luxembourg, 1999)",
+      "resolutions": {
+        "medium-w": {
+          "url": "/media/images/Picture_4p1-4a.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/Picture_4p1-4a.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/Picture_4p1-4a.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 2000,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/Picture_4p1-4a.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 2000
+          }
+        }
+      },
+      "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAUCAYAAAB8gkaAAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAGNUlEQVRIxy1VZ1NbVxR8/yofksw4ifMpGSfuBkQVXQUJ9d4rKiChhjpCCCFLFsa4xza4YOJMMpNxJrEd569s9j77w50nvXfvOXt295wr7bc28eh2A9vVFNwuI/q7JRiNGvi8NjidJqTW/MhlotjbzqG2lUZyLYBw0IlQwIFSbg2RsBuZdATVUhqZVBC7zZz8PZUIIBhwcjlQ5bleZwuSSHR8r439dh7D/TIO+zXEoh5YratQqeYYzIMwV2ItiGDQLf8XYNwE8vBwF4NuFcNeHa36JmZmp1CvZFAuJmA2ryAa8cDjtqDTyuPZgy6kx3fauDfcxt5OgQcrTFpCgwf8fgdWV9XweKwI+J3w++wwmbQyavG9lEuQhQoqhRQe3G4jEffLe/LZOEHsoLOdR4XV7hDEnUEDLx73IYkPu9sF5DbXUMwnZTSZdBiRiBflfAKxkAthUrFOOiuFJO4OmrjZLpP2LIo8Uy6k0e9UEI96cX/YwpOjjkx9d6eEdDKEfRaxVVjD0/usbLhfQ7m0jng8iAIPulwW+IgwEHAhGfPBalmFXq+C12WG1axHlQnbjRwKrECtXsDy8hxatSx0K8tYi/pIYYq6FWR6E0wapyStehbxmBdSQVQT88PlscFLukwM6HFbYbHo5QAeJtdql7GqVzP4Emx83yVFKR6en1didnYGqbgPIyPXSLkDdrtJ1klU3WT10zMTlKaAP14eQgoEXTAzgBBdpZ6H02FEmk7y8oCXJrDTKBFWmY4HEKKORVaUoj5T0+Ok14kAWXDajTKYzcwa37lwY/QGdXbIJrtw8SdsJAOkcQ9SdiPKA6zKbYaZBtBqFukkHYLcLIIJxD4m9nsd2CAt2XQUPo8dHuFGGutOrybTa7cZUKMcPq8dS0tziFFzjWYJI6PXyIaOjOkgJRnAxo06IlNRg7HxUdIzI28U9E1OjsFqWmEbLFITL1Z0KoyPj0HLvQn+F2thYZbvRlHKRtGjMSrUrV7OwGTUwrSqgnJ2EorJcUi3douosy8cdgMMBi2MtPvighImgwZ63TJsRFTMxDBKalTL89Bpl3DlyiUoxkbIwCqBGplMSWBLKLD5M+kQXKxaVKYjsIX5KVI+hvEpBaTju7s46lVRzsVRJaLeThG/HGzj5G4Hh90y9jkRXNRkgdXOKidgIJgbpHZyfIRBzaTYioXFWWq+QhpTMkMWAnTSWEI3PyeRlka7fOMqpL1GBr1WDgedEjr1DPYamxiwN4asWADIJIKkQ4d2NYOj/Qr10eHy5YvU8ioRT8hMKJWTdO7SJ4ZoMDPbxUN317fWObaC0BlWMCEq83nMqORjGHBc7VTW0edoEcmEtX0eCyzkXc9AG3EvShsRuG2r+OrrL2Fg7xkNargcJowqRjCiGEWa+ismxuSZmM/G5Gqvkn6DScdWokHCQTuiIQf7yQg/g8dDwuY+BjFSn2XEgg64mECjmpdpFI68dvUSJmiIpYVpKPgUprrOoGYaKcJpI4ZwKhlENOxiKxk4ynxQaxchJYg4HHLKvSD4DbINPC6TLK6WjvRTEz+nh4PIfE4jiuthOfnFyz/jOnU49923+Ob78zh3/jxpVcBp08Nm1SNOg9zjUH961EI2yYrpaqnHK6ZGrkubMWRTIdQ4x7K8KsQsLDBwkdSZSYNSOS271MlAwqlzc9MyxRq2wMjYdfxw4UfMKOk8LiuBNXmt6OjmCJlTc1h8ce4cpN+fdPHmUQen99t4ertJYxTQqWXQLCVxQJPsN7IyCDG29DoNLEwsJsbYuAKjXJPTk1CTgSmCmZiZ4k2hgTBdkpqr2Q5zi3PQMul1air9/aKPv57fxNuTHt6f3uLvPn57vIeH/SoeDWoYcq71eXGKpF26tVVOs+oAdXZTD0G3ho2ukQdDjj2WJxsJJgpT6xhvkI1UQJbIyu/Sh9MB3r/qy+vdS/Ec4B3X2xMBYiBXfXzYxJNhHcOdPI66W3RrnlUX+LuE23vFzy2TQZtuFuYSEhx0imiUEug2RWtluWcd0sezIT6e3ZLXf7+K35/Wv6+H+PD6AB9O+Tw9wD8vhwQwwJ/Hfbwi5WcPOzg52sazw4b8fE4jPPsM6vjONk4ftGWQJ0dNnD1q483jXfwPWAR1ZEmxkcYAAAAASUVORK5CYII=",
+      "aspectRatio": 1.33,
+      "isPortrait": false
+    },
+    "Picture_4p1-4b.png": {
+      "caption": "Discours de Pierre Krier, le 1er mai 1932 à Esch-sur-Alzette",
+      "provenance": "OGBL ",
+      "resolutions": {
+        "medium-w": {
+          "url": "/media/images/Picture_4p1-4b.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/Picture_4p1-4b.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/Picture_4p1-4b.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 2000,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/Picture_4p1-4b.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 2000
+          }
+        }
+      },
+      "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAUCAYAAAADU1RxAAAACXBIWXMAACHVAAAh1QEEnLSdAAAHuElEQVRIxyVVaVdTWRbNX+qP2q0logwyJhDCEDIQyDzP80xGQkLCDAIOIKigqFUOBWVXrV6ru2utsuwqy267/8vdvd/zw1n3vvvuu2ffvfc5T/HwXg2fPrzG51/f4d8fL+R4fLiCv70/4fobxlt8/vg9vvz2A/776a/43x8/Mt7jy6dL/P3HI3z5/QIff36BD/845/w9/sN9Unz+VTrrkuMl/vhwgZ8uHuPF2Q5+++Udfv+F7/71Ez7881t8+PkCCr1RhWLei53NHI4eLOHBQQ3log8ryxE83Kvg+H4Np49qeMp4cdrCm+dtXJy38e75Cs6Oqrh8uYbXz1bw7fMOfnizg8vvtuXx/ds9XL7ex5sXu3h5toWH95axu1XCyaMOzp5u4vGjVbQaMRzstaCwOmZgZ4R8BqTidtQqISxVQ9wQxe5GDgc7BTy4m8eDvRxOHpYJqIpvHy8x6jg/ruHVyRLOT+r47mkD3z9fxbsXG3j7agPvXu3g9fk2Xp5u4uzJJh49XMHh/SYOdqtYb2d4yQQvy8tvLUOxYJlCMGRGhOHzmeB26xENLyAcNCEWWUAqZkY6YUY2ZUYmaUYhbUW16EC95MRSxYWVJS9W6h50Gn60G0GstWLYaCewuZrCeieDTiuF5XqECf2oLAZ5wbAMYHUljVLBg7u7TShm9UosWCZhdWgRSziZ2I75hUmY5tVwOSYR8usZBoYO8bARmfgCssmvUczYUV90o1XzY7niR7MexGqTIDpJbBHE1noWa7y1RHu1FEQu7cL2RkFmZXMtL4PY3mpAMa0dxbR2BBIjoYgVkZgdc/MTcBJUKmaRN9bLQTSYoNOKol7xYq1JqZhgbyuPZyctPD1q4v7uIg73q/QAZXi+jWfHbbw628CbVwd4crKOfcrQXIoSWAFPjtewt1ORwR0fbUAxMTmAMXUfDCY1fIF5+IML0BnGYCIbXp9RjkjYgmLOjVo5gGzagYpkXB7QaSVxymSnj1rY3yrg8KAqG/HV2SbBtemHDZyerDFRW04sAWg3kzg56sgmlUCcP7sHhWq8H6OqHmh1SlhsM7CRAcPcGIymcThcOsybNfK6zz+PUNACq12LAOeZpBNh+iiTdqO0GMBiMUDto2SOHmnEcXivjvt7VTIXkiV5cNAgiDxBJOTnRi2CYMCE9bU6mdAMQTM1zNsr5cQSCMkjLo9BBmG1z8ghAZGe3d45GtmCWNhOYAvw+E009QJyGQ/N60Eu5SZTIdRKMSZKoFKJEFySFVGkGbMEUsTGapZ7woiGrNi/24ZibGIAo+N9BDEuJ3KyOqSkAR4sySN5Zd48yXUDPKweC5mIhG2IRx1cn4LZOgO3a1a+2cpyHNmMm/6J4f5+HQd3a6RcqpICPdDAUi2JDoHsbFTYm8L8To/19SoUQ5Sif+gmNJNDNKRGZsJim5YB+AIL0BvVslElANKaVE2SJGbrFCRTG+bUMphY1EIZEojT2NVyiI2vRSANVMpRbK4vUo5lSpHG3nYNx4cdZLN+zC2o0emUoRgY7UFX758xONwN7ayKN5+WjWl36mQQFpuUcJpG1cgM6Y3jfK/GjE6FEVUvRpS9NHY/D9QgRZ84yEosaqX52ri3V5errbWcokcaaC+nWSV1PGHXzFA+Sf7aUo4gmPxGz1V0MQZGumUwQyO3uEENK+UxzI1jRquEcqwPM7NKPk9wHIXbY0I04uBhPqTTXkQ4T7DP1KsJpOiNeNxGwwYRT7po2jBZyCCfC6JcCmNrrYRQ2Coz3lmlHHcGu9B35xuMMsnoWD8mNIOsFJUsgVQl0txk/uoLi1Uyp0FmRj64lafGOTQbaXbLHLtlnv+gmgzC5dHLTMYTLjZBF0EbYbOTpZgTAVaZVG1emnx3hx2zu/8aBuiJCc2APKpoUptjFpMzQ9AbVDAz+Zxpgp3UyrJ0yeCCNK3ElNRZsykfIkGp7VvhcevY8s2IRyxs/zok4i62fwvMNLfdOUt2HPIvQm8c47cayj+CxVICCkmGHjIxrOyRQUg9Q+qgJibT6kbp9CgSMSvmmdRIaaYJTqsbRoS672yWkeTNPG4jCrkAXKygCMtX+mOG2fSKhYD8P0qzbKXekuYlbLYZGYRmaoB+uolcPgrF9dtX0Dt4A7f6/oJegukf6KInbsoo1Zo+9vwAfzw+AhuSP5zVj0IzPUD9HQSYgN83BwMPDTN5JuNFgBLks144aVA7Te1wfu010ujzzMFO49tYWerJPvT0X0EyFYDi2q1r4mbfN6Kr55pQjvcKr1svElGLCAWMQq9XiVndqLDapuWRNxDsG4JyCR3fqcZ7xMzssCAwQdaEmfs8HqNoLiVENu0W/sC8cLj0giUtvP55fqcVc/Nq7h0RBCF6+q+KeDIoFDduX8Ugq+F69xXS0wWtdgAzM4OYmrqDiYleSnQN4xO36ZVb8lw51i3HBG+iHO+mmW/y+RZU6ttkbxheSpJnw8qzBJ3ssJrpOyznYUqghI4h+WxM3SPnut71J5rUCUUs4RfJVEjEkgGi8otUJiiS6aAIR7wiEvNwzSviCS/3SO8CIl+MikwuJGgoUViMiVwhwjEuz4scV1bKotUuC5aeaLZKolDknnxElMpJUaokRXO5KMqVlHxGIukTd/c2xP8BHyE5+EvtnI4AAAAASUVORK5CYII=",
+      "aspectRatio": 1.6555,
+      "isPortrait": false
+    },
+    "Picture_4p1-5.png": {
+      "caption": "Arrêté grand-ducal du 6 août 1921 portant réglementation des secours de chômage (Extrait)",
+      "provenance": "Legilux",
+      "resolutions": {
+        "medium-w": {
+          "url": "/media/images/Picture_4p1-5.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/Picture_4p1-5.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/Picture_4p1-5.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 2000,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/Picture_4p1-5.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 2000
+          }
+        }
+      },
+      "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAUCAYAAAAHpoRMAAAACXBIWXMAACHVAAAh1QEEnLSdAAADC0lEQVRIx7WWB2/jMAyF8///WZDZ7DS7zd57x7x8Qp7rNM5dg+IMEKQlWSIfHylHLPB4nucLz/F4tEqlYp1Ox1arlfX7fXt/f7darWYfHx/2+fnpNGuazaZ1u11rt9vO5hvm6vW6lctlW6/XD2fcxJOOLJdLm8/ndj6fLew5HA7+HHq/37sxBGd532w2tt1ubbfbOcFmHOGdQJ7tj383J73IZDJxEY1GIxuPxzYcDq3X69l0OvXfQQQ9GAyM9disRzgkJNoHlC+Xi1uLln0Tj3f8iXBQo9Fw0CKkAGm1Wv44aQBu7Gq16mzN4ZwclPNoxuSwbIJhLhj4VTyQc86ACgdwYKlU8m00/EDjHDa5l7OsQUCRgBAdAKpP+OEEJEI5A19ms5kP59+eb5s4AerT6eQkAL298DxyhsgEn+AFVuaIHpKGRfv0hH/wKBQZIoL9HAjslCYlS0ooTeUb+P/H490ics5QopQ3fEmlUlYsFi2ZTFo6nXa2iIqG1CI2jsInNOVLH0EWi4UrZfYMasaZ5136ls4vZOAByOCMnEgkEpbJZJyOxWJOsHEWHY1G3Vg8HvcFxyE2iEJ2UEYzjtP5fN5vmJwl8l/J/uUMUak54bGaFzbjvBMFnAlGRbTYipoG+Os0QVK1e0GNzeEcQhpf2PhluasmDqUvwAPgQ3K5nIMXaIEVZ4GUFiAyU2W6b8JK/pVq8p2BRKSCzXGI/KoT8w4H6LhUGGVPOtTSf9Kbfpopv5pICwdC2kKh4HQ2m7W3tzffhrzYQVKyVmiylsoCPdKL0FCDwhitAs6hGbtDRrkmFSpl3UXBa0GVouuCedKJE6QThxH2YC+4qMv1dge5xkq6ZZORO2ewaXxwgYZHH2EzUkWkCOPSwXE4oypTheldPYboVRQal/2QJqCDwPo/CdMSnFYbQP+WMw/XAXCBBhpIsSGz7itQUjUxj+OgCDf0S6D/m+DvAd/r90L3nNazh1J4FY/g3C8EE8orC3GAjfSxcqxLE0R0S+um/n5rh82F3ezIFXGPVF5T5/0B3cJv3VqLk8wAAAAASUVORK5CYII=",
+      "aspectRatio": 1.7275,
+      "isPortrait": false
+    },
+    "Picture_4p1-6.png": {
+      "caption": "Le chômage indemnisé de  1921 à 1939",
+      "provenance": " STATEC (extrait de STATEC, L’économie luxembourgeoise au 20ème siècle, Luxembourg, 1999)",
+      "resolutions": {
+        "medium-w": {
+          "url": "/media/images/Picture_4p1-6.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/Picture_4p1-6.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/Picture_4p1-6.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 2000,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/Picture_4p1-6.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 2000
+          }
+        }
+      },
+      "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAUCAYAAAB4d5a9AAAACXBIWXMAAAsTAAALEwEAmpwYAAAFLklEQVQ4y1WVWXfaVhSF+addzUqcpssDMwYBQkgCJCEEAjGJeTLYGE+xm6RpV/rDyu6+185DH866V0Kc7+x9jq4i3542OOwm2G9CHK7GuFmF2C0H2K9H2C76WM+6WE4DTEMfs1Gbawth18Vk0MSo10C/48jrcb+JYVDHYhLg7maOu930+PVxi6fb5THy/XmHl/s1E/dxuxkRNJGgaxlDbOY9rKZdrvx9N8P9zQK32ykOjPvrOQ7XMxk7Pi/u7/n/a+ZhchBy3C4GiPz4usePr7f45887rq/x9x+3WIqqWe1y3GGVHkE9PB7WMtEdkz/fbfB8v8HLwxWeDiv4DRPNui7VbFnQ82EllWxm3WPkr5drfGd8+7zDF9788rDl/hprVi8g96z+8+0Kj/uVVNH1LQxo0TXtvKG9++1Egru+TVAVYc/DYtTBw80ST/sFJiww8ni7wNVqhM16jPVqjNl0iN1mhvVyjOm4j3AYoN9vw/c9ue/1fLQ7TXjNOiynBqNiwG97qDfqcBsurLoNzTBgVCt4odoHWhl52M+xWY6wYsznIbxWA7PJQEa/10a320KHSeuuI/ee58J2LAmo1EzkS0W4no2qVeX1a+SKKoplTfZsxUGIPNyIqkOsFyHmsyEaXh2TUY+QPnpdHwEBfrvBKh0EQQsuK63JhCZV6FDUAiy7grKhyzAqJrKFggwxRCP2KPJIJQKwmg8xn/alDeMwkBBRud9yCbbhujbatMUWAFpkmDo0vYSSpqJS1VGkooJahKqVuC8RWObEDjHmeEu7BEDEghCHycJBh/3oocvK236DFtm0qCqBtl2FSYCuawQUoRRy0E0N+WKeUSBAxWUuh0tFwYbDEzQqiDyx8T+VCEiLiUZs8GTEB4KmTOy5Fpw3iGW9QsplVqzmkVWyKOsqcvksI0doHol0GunsJdbjgBATkc+HJTYCMnuF2GzogL2YCgj70aJ9br2GKi1peg5qtYpUodGmfEFBPJWgRXlWnyHwEtlcFqfRKEEpzIctdL3qmxKqWM44UeMurXEwpl0TqumwBwJSpwqN1giY6IcAqLQnnUnjPBZDsZhDMp3gdYprCp/OzpC5TGPCY6dll1+nSygQgMmww0pNdDsextwHnKqm6AenR8krEmYYGlROVIG9SCQTOL24QJ5WJZJxApK4iEfx/rdPci8my6uVELnj4Th/A4T9Fm3hy8XEXb+OFtcG+2FbfB8IsWsGe8EpogpFyUrI76w6R6ti8RgSiTjOoud4d/JRqhrydGjZ2k8IGz1sY9hrosrZF5CAENepSIsERNglIKVSgcAcE1/KRGcX51AIiRMiIkYlv56cIE0lPa+CpkUlh21IqzqYhR2MqMTkOLabDo9wvoC2ycQ6LKlAhWNx1WgVIdlsBqlU8n+QWCyKaOwCv7z/QJUxdDlZlpZFZL8eyG/FuO9jEHgyYZtKRAiAyfGUidmDKgtQuSpUkaEKYZGAZLNpRDlRAnJ6dop3H05YQBxtnsrV0iUiN8seFvwQzXniTvnhGQUuQp6yA56qvaaFtmvCr/MYt3W0eco2HQMNqwzX0uFUNTiVkgybYRkqDDV3NErKUTzvO+WjWcwcI6vQg2vm4VYKaFZpic4p4nWtxJcsl4BZSMlVSZ1B517jvpCJopSNQ1OSvH+OXPIM5be9Vc7JAmd97+g7OirME7ma+Og4ZficgjZXjyCfs920VMILEipCeFspZWQSEcIGq6zAKKah55MsrIjArbDZtSOPkqN4Cetm4ahmY//+B7cDNYF9FLX6AAAAAElFTkSuQmCC",
+      "aspectRatio": 1.246,
+      "isPortrait": false
+    },
+    "Picture_4p1-7.png": {
+      "caption": "Placeholder Caption",
+      "provenance": "e-luxemburgensia. D’Letzebuerger Land du 25 août 1972",
+      "resolutions": {
+        "medium-w": {
+          "url": "/media/images/Picture_4p1-7.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/Picture_4p1-7.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/Picture_4p1-7.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 2000,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/Picture_4p1-7.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 2000
+          }
+        }
+      },
+      "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAUCAIAAADZUCB4AAAACXBIWXMAAAsTAAALEwEAmpwYAAABMElEQVQoz02S15XDMAwE2X9nVrCyraynTm7I8dHGB4WwuwBEhnmej+O4rus8T89933GOZNu2retKMrzf72EYlmXhfL1ehH3fE07TNI5j27Zk7vsOMMh6og2aGgRkQIAmiXyAPSYDR0fKmQZBGmF4Pp94XdcN/wYCNEqW6romjHqAmqZBckqmHq3Bka+qikwgVgYSo0BzvoxDL+JyO6YWh482uDYZeuQjzuEo0BTf8QmbZKhGvS6ZW4NTQz/vASfAEGprCJTFgcCnb8Q5jWuK++2rXpyvT6aet5kvQ72iKPADDHmqciX+ZyzP89lDydxaPe/NlT964tDj/YjgReW+2AfnUgj7nNTO+5Zl+dUD5Kuxl2NB/u7Lx59OzbtyJsLH42HfiENj+zFXoeCv4dyT/QEorIbDoZoKawAAAABJRU5ErkJggg==",
+      "aspectRatio": 0.675,
+      "isPortrait": true
+    },
+    "Picture_4p2-1.png": {
+      "caption": "La réforme des secours de chômage 1975-1976",
+      "provenance": "eluxemburgensia. Lëtzebuerger land du 28 février 1975",
+      "resolutions": {
+        "medium-w": {
+          "url": "/media/images/Picture_4p2-1.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/Picture_4p2-1.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/Picture_4p2-1.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 2000,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/Picture_4p2-1.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 2000
+          }
+        }
+      },
+      "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAUCAYAAABWMrcvAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB1ElEQVQ4y02TucpqUQyF96P6BloIimAhYquFYKGihaLYiCCiOM/zPE/vksuXS+QvQpK9s9ZKcvZxr9dLns+nvN/vn32/X/XcfT4fjfHk1+tVHIDj8ajJ4/HQC/z9flcjvt1uatxx5jjcbDay3+9VETudTrLdbmU+n8tyuZTVaiW73U4JMAdyvV5rEYr4w+EgpVJJcrmcNJtN6ff7StBoNKRarYpDFhBMqKFKXCwWJZlMSjwel3w+L4VCQVKplMaOWWiBQlSIsUQiIbFYTLxer4RCIQkGgxIIBCSbzYq7XC4ynU5lsVhosc0RjUYlEomIz+cTj8cj4XBY/H6/qrvz+Syj0UiBs9lMPe2Wy2VtMZPJSDqdlkqlIrVaTedybGo8HiuALZkq87EYtsVimJWc+h+IQi5sxRgxJHRC2xY70AQoATQlQLSJJyeGhDoFoWTsBsbbrMPhUJVM/adk7NYeuYGNFA+BY0hj5DvZXLTDMiaTiXQ6nZ/iYDD4r0TCpTHjYYUM3+v1tAZPrkqgAdkcxDCbmUK73dY7BXFoH5dDhsYsx/4qKqjb7epLNlYrsvbq9brOZQv5bc/a++shgZ2XzRNqtVp6pm8P4+FilpvZX01H9uv8A0VFU2vHOOkfAAAAAElFTkSuQmCC",
+      "aspectRatio": 0.6635,
+      "isPortrait": true
+    },
+    "Picture_4p2-2.png": {
+      "caption": "La question des statistiques du chômage au niveau européen en 1975",
+      "provenance": "e-luxemburgensia. Lëtzebuerger Land, du 19 septembre 1975",
+      "resolutions": {
+        "medium-w": {
+          "url": "/media/images/Picture_4p2-2.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/Picture_4p2-2.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/Picture_4p2-2.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 2000,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/Picture_4p2-2.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 2000
+          }
+        }
+      },
+      "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAUCAYAAABf2RdVAAAACXBIWXMAABYlAAAWJQFJUiTwAAABGklEQVQoz02SWY6DQAxE+/6nAQFhTQiLALFJiAM58zxT0Xw43djlsqs6YZom67rOhmHw8zxPj+u6PO77ttD3vTVNY3Vd2+v1srZtrSxLez6ffo7jaIEfWCgKDKPu8zxbIFFVlYPe77ffKYrZQRRJQE8ShqIoPMfJlC9I4wD/B5EPKsJCgXEsnOe5PR4P3y9IEUBOqRObj8MC+cSd5WmEsZIFFCkQ7EMDILFhtjMx4tv9E4yWT85ENx/q1OJpmlqSJL6Cq0MJBakEzHcURb6COy6AHBdrHMfeFCjIRCkDoNHuk95Oo/S4sOmxg5IAZGz1Nx42V6fnkEIVuWdZ9qtO/miEAChGnS++LIvt+27Hcdi2bR7cCf5L67raB1WsRAJWt2MUAAAAAElFTkSuQmCC",
+      "aspectRatio": 0.461,
+      "isPortrait": true
+    },
+    "Picture_4p2-3.png": {
+      "caption": "Résolution de la Conférence Internationale des statisticiens du travail de 1982",
+      "provenance": "Source Organisation intrnationale du TZravail (accessible sen intégralité à partir de ",
+      "resolutions": {
+        "medium-w": {
+          "url": "/media/images/Picture_4p2-3.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/Picture_4p2-3.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/Picture_4p2-3.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 2000,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/Picture_4p2-3.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 2000
+          }
+        }
+      },
+      "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAUCAYAAAC9BQwsAAAACXBIWXMAACHVAAAh1QEEnLSdAAABwElEQVQ4y5WT144DMQhF/f+/lt57771XJWY5SIx2N08ZCRljyuXCBNHveDzKYDD4I61WS+r1uunD4dDOfr8vu92OEAkxRkH+f5fLRc7n88fb+/02W+DyeDwsE7Lf72W73crhcDDBdr/fPxJbIA84UeF0Ohl0BB1x++12MySv10sCDvRSq9WkWq2aVCoVKZfLZueOjq3ZbEqn07GkgWqLxcIaH41GMh6PEzJ+nwh+QKdyAALVGo2GZUYnM4lwJhnCnSTdbtfaCpBBeR57vV5C+2q1kvV6LfP53M7NZmO25XIp1+tVAtFkIYgAnICEA46TySQJdLsF+iho+JsvED2bzSyzQ/XevE9O19ko6xEYTg6nC3dG4GOCMGylUskWJIA5lUpJJpORfD4vhUJBstlsMktsxWJR0um06fjSry0A5Dir6E490LgzW9hndMB8Pp8SWKHpdGqCk29Hu922zcFGX5wIbySwHoECfu/LV4/+6MlXzt+THnO5nDm4E0GuIyRG0LEbqzrHqPijjiPqWOxU2B+iHERdgKj9Rt3VaL8VCwCrQPPsXsGZphJQYReUgWilNyqTlk3ZtOwufufN79pj/AF4cAhgIGBxlAAAAABJRU5ErkJggg==",
+      "aspectRatio": 0.705,
+      "isPortrait": true
+    },
+    "Picture_4p2-5.png": {
+      "caption": "Taux de chômage (en % de la population active de 15 à 74 ans) en Europe, 2000 et 2020",
+      "provenance": "Taux de chômage (en % de la population active de 15 à 74 ans) en Europe, 2000 et 2020",
+      "resolutions": {
+        "medium-w": {
+          "url": "/media/images/Picture_4p2-5.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/Picture_4p2-5.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/Picture_4p2-5.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 2000,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/Picture_4p2-5.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 2000
+          }
+        }
+      },
+      "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAUCAIAAAAGHlpnAAAACXBIWXMAAAsTAAALEwEAmpwYAAADH0lEQVQ4y21U+U8TQRjt/+wPavwBDJcootEIKlAKtRwWKVcLCGlqLVDQAEaOHlCh9AKl0J3dnWOP+na31FKZTL7Mzr7vzfuOGZdhGKZpVu1BFUmqXCqyVL0Z+KvrumkPfAquytKVTK5M08AnLIaLc0YZj+7+WYyXFuPFULywuFlc3joPxUuRnT9c6ABVTX07VZ6O5ufWCnOxvD+Smwzn/JF8WRIgcjFKKxWpf+ZX+2iieyzZPZZ64nNmMlOQcZLQNI0rnyLZh+/320YOHw8fDodOpiL5hfUCAoASl+Bcksi7+UyXL/lsIuVMrIeCJ5puQKmGQDQW3CiA9/lkui+QuZaFHYXpWJcQvCKRvplM22gCnpg4v9VzOL9eBELXDQEOrs6v5QHo9Ca8n7PYhDtsjULTBJEVnInDX/jTL/xHvR/TWJ+XVZtC1yBGZ4ubBWz2TKRmYkXb0cpkjYIxel2RBhdOno6n4QwK4MZWz1SmORURQhNMWYiddYwetI/sBzeK9n4DhaFrRJahomci/WrqCBkdW81yzXAQsJYKofqjpQfuX/fdx+Gdy2YKIQQhSv9MpvNDsutD8k3guFSmVgg3FKg653x341vIN7U0MX1RvHA8/1EQIjnp7PAmWocPvifLlucNApZSimC/Rnc87gWPO1QqXTZTUFUFhWfpFIl4O5u5Itzat53ruUBFglsXbeOnA8slhZv2Ef+lEypa3IewQqv1e52CMSa4EtrItQztTX85cyoNyD8K9J5E5JGlU9TMt3JWvw51CisVlMzFcvf79wLRfI2iepsCgQwGT9q9ic2DsoOo3g6EMwV3BzKjP343AUynwUHx0n8MRFMtaulEIEwORHP3+n7eTUEZlYhVkd6PKdzLRud6X+iCzq/lHg0cZPLkThUMN/X1pyPvcraxcxsDQXfOxvId3uRlhd1BwRnDHWn3HUd2bJHGbQrTVFUqKJkMZ9H7ENQk0w6EUoWQ5EqAXFcae8a4qQveC1NnS5vF8PZvG1A1myhUayimVNI4EodWZiqleAFsK/APfYFnqXwtE5laPWJtKsDhF9ZQ8BcEuKTNqipy4wAAAABJRU5ErkJggg==",
+      "aspectRatio": 1.131,
       "isPortrait": false
     }
   }

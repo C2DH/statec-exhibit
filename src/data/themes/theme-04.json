@@ -35,6 +35,7 @@
               "to": 1947,
               "figures": [
                 {
+                  "id": "Picture_4p1-1.png",
                   "caption": "Arrêté du 30 septembre 1905 prescrivant un recensement général de la population du Grand-Duché au 1er décembre 1905"
                 }
               ]
@@ -47,6 +48,7 @@
               "focusKeys": ["v"],
               "figures": [
                 {
+                  "id": "Picture_4p1-2.png",
                   "caption": "Le chômage avant la première guerre selon le journal « Der arme Teufel » d’obédience social-démocate (extrait du journal du 24.8.1913)"
                 }
               ]
@@ -59,6 +61,7 @@
               "focusKeys": ["v"],
               "figures": [
                 {
+                  "id": "Picture_4p1-3.png",
                   "caption": "Les « bureaux de placement » (1913). Source : <a href='https://data.legilux.public.lu/file/eli-etat-leg-memorial-1913-58-fr-pdf.pdf' target='_blank'>Legilux</a>"
                 }
               ]
@@ -71,9 +74,11 @@
               "focusKeys": ["v"],
               "figures": [
                 {
+                  "id": "Picture_4p1-4a.tif",
                   "caption": "Ouvriers ayant contribué à la construction du Pont du Pfaffenthal  en 1921. <br /> Source : Photothèque de la Ville de Luxembourg (extrait de STATEC, L’économie luxembourgeoise au 20ème siècle, Luxembourg, 1999)"
                 },
                 {
+                  "id": "Picture_4p1-4b.png",
                   "caption": "Discours de Pierre Krier, le 1er mai 1932 à Esch-sur-Alzette. Source : <a href='http://www.ogbl.lu/blog/le-1er-mai-jour-de-lutte-et-de-fete-pour-le-mouvement-syndical/' target='_blank'>OGBL</a>"
                 }
               ]
@@ -84,6 +89,7 @@
               "to": 1947,
               "figures": [
                 {
+                  "id": "Picture_4p1-5.png",
                   "caption": "Arrêté grand-ducal du 6 août 1921 portant réglementation des secours de chômage. <br/> Source : <a href='https://legilux.public.lu/eli/etat/leg/agd/1921/08/06/n2/jo' target='_blank'>Legilux</a>"
                 }
               ]
@@ -103,6 +109,7 @@
               "datasetLegend": "Nombre de chômeurs de 1921 à 1939. Source : STATEC, L’économie luxembourgeoise au 20ème siècle, Luxembourg, 1999",
               "figures": [
                 {
+                  "id": "Picture_4p1-6.png",
                   "caption": "Arrêté grand-ducal du 6 août 1921 portant réglementation des secours de chômage. <br/> Source : <a href='https://legilux.public.lu/eli/etat/leg/agd/1921/08/06/n2/jo' target='_blank'>Legilux</a>"
                 }
               ]
@@ -115,6 +122,7 @@
               "focusKeys": ["v"],
               "figures": [
                 {
+                  "id": "Picture_4p1-7.png",
                   "caption": "Source : D'Letzebuerger Land du 25 août 1972 <a href='' target='_blank'>eluxemburgensia</a>"
                 }
               ]
@@ -143,6 +151,7 @@
               "text": "Par la loi du 26 juillet 1975 des allocations en cas de chômage partiel de source conjoncturelle sont introduites, en même temps que les « travaux extraordinaires d’intérêt général » (EIG) à charge de l’Etat. La loi du 21 février 1976 concerne l’organisation et le fonctionnement de l’Administration de l’emploi, ADEM (qui remplace l’Office national du travail).",
               "figures": [
                 {
+                  "id": "Picture_4p2-1.png",
                   "caption": "La réforme des secours de chômage 1975-1976. Source: D'Lëtzebuerger land du 28 février 1975<a href='' target='_blank'>eluxemburgensia</a>"
                 }
               ]
@@ -153,6 +162,7 @@
               "text": "En ce qui concerne les statistiques su chômage, dès les années 1960 on avait pris conscience au niveau européen de la nécessité d’harmoniser ces statistiques pour des raisons de comparabilité. Dans les pays européens, les données sur le chômage sont, jusque-là, essentiellement basées sur des critères administratifs et légaux qui divergent évidemment d’un pays à l’autre. Une première tentative d'enquête sur les forces de travail au niveau de l’Europe des 6 remonte à 1960.  Jusqu'en 1968, elle n’est pas renouvelée et le Luxembourg est absent de cette dernière tentative. Avec l’élargissement européen en 1973, un règlement sur l’organisation de l'enquête est adopté par le Conseil de ministres européen. Des enquêtes bisannuelles sont initiées (1975, 1977, 1979 et 1981), mais le Luxembourg est absent de celle de 1981.",
               "figures": [
                 {
+                  "id": "Picture_4p2-2.png",
                   "caption": "La question des statistiques du chômage au niveau européen en 1975.<br/> Source : e-luxemburgensia Lëtzebuerger Land, du 19 septembre 1975"
                 }
               ]
@@ -163,6 +173,7 @@
               "text": "Les définitions utilisées dans les premières enquêtes européennes sur les forces de travail sont imprécises. Une terminologie et des concepts communs sur le plan international n’existent pas. En 1982, la 13ème conférence internationale des statisticiens du travail, qui se tient dans le cadre de de l'Organisation internationale du travail (OIT, BIT), prend une résolution concernant les statistiques de la population active, de l'emploi, du chômage et du sous- emploi. La catégorisation statistique est précisée. C’est donc à partir de cette date que des statistiques sur le chômage et l’emploi cohérentes et comparables dans le temps et entre pays européens sont publiées. Au Luxembourg – comme dans beaucoup d’autres pays européens - deux séries sur le chômage coexistent à partir de ce moment, une série du chômage administratif (chômeurs inscrits) et une série basée sur l’enquête EFT (qualifiée aussi « chômage au sens du BIT »). Un chômeur au sens du Bureau International du Travail (BIT) est une personne âgée de 15 ans ou plus sans emploi durant une semaine donnée ; disponible pour travailler dans les deux semaines ; qui a effectué, au cours des quatre dernières semaines, une démarche active de recherche d’emploi ou a trouvé un emploi qui commence dans les trois mois.",
               "figures": [
                 {
+                  "id": "Picture_4p2-3.png",
                   "caption": "Résolution de la Conférence Internationale des statisticiens du travail de 1982 (extrait).<br/>Source : <a href='https://www.ilo.org/wcmsp5/groups/public/---dgreports/---stat/documents/normativeinstrument/wcms_087482.pdf' target='_blank'>Organisation intrnationale du Travail</a>"
                 }
               ]
@@ -178,6 +189,7 @@
               "text": "Jusque dans les années 2000, le chômage reste un phénomène social moins poignant au Luxembourg que dans les autres pays européens. Aujourd’hui ce n’est plus le cas et le Luxembourg se situe plutôt en milieu de peloton en termes de taux de chômage calculé par rapport à la population active. Cependant un autre indicateur est tout aussi significatif que le taux de chômage global, à savoir le taux de chômage de longue durée. Le taux de chômage de longue durée est le pourcentage de personnes au chômage depuis au moins 12 mois dans la population active. Or, dans ce domaine le Luxembourg fait mieux. En 2020, ce taux est de  est de 1.7% au Grand-Duché, soit en-dessous de celui de la Belgique (2,3%) et assez proche de celui de l’Allemagne (1.1%), pays beaucoup mieux situésque le Luxembourg concernant le taux de chômage général.",
               "figures": [
                 {
+                  "id": "Picture_4p2-5.png",
                   "caption": "Taux de chômage (en % de la population active de 15 à 74 ans) en Europe, 2000 et 2020"
                 }
               ]
