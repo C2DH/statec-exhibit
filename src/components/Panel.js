@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import { useHistory } from 'react-router-dom'
 import { useCurrentWindowDimensions, useURLSearchParams } from '../hooks'
 import { ArrowLeftCircle, ArrowRightCircle, X } from 'react-feather'
+import { setBodyNoScroll } from '../logic/viewport'
+import '../styles/components/panel.scss'
 
 const Panel = ({ name='table-of-contents', children, left=false, color='white' }) => {
   const { width, height } = useCurrentWindowDimensions()
@@ -9,10 +11,25 @@ const Panel = ({ name='table-of-contents', children, left=false, color='white' }
   const history = useHistory()
   const qs = useURLSearchParams()
 
+  const closeButtonClickHandler = () => {
+    console.debug('[Panel]', name, '@closeButtonClickHandler')
+    setBodyNoScroll(false)
+    history.replace({
+      search: null,
+      hash: window.location.hash
+    })
+  }
+
   useEffect(() => {
-    console.info('location changed:', qs.get('panel'));
+    console.debug('[Panel]', name, '@useEffect location changed to:', qs.get('panel'));
     const panelName = qs.get('panel')
     setIsOpen(panelName === name)
+    if (panelName === name) {
+      setBodyNoScroll(true)
+    }
+    if (!panelName) {
+      setBodyNoScroll(false)
+    }
   }, [qs, name])
 
   return (
@@ -24,13 +41,26 @@ const Panel = ({ name='table-of-contents', children, left=false, color='white' }
       transition: 'transform 0.6s cubic-bezier(0.83, 0, 0.17, 1)',
       transform: `translateX(${isOpen ? 0 : (left ? 100 : -100)}%)`,
     }}>
-      <button className={`Panel_closeButton absolute pa3 bg-transparent bw0 ${left ? 'right-0': 'left-0'}`} onClick={() => history.replace({ search: null, hash: window.location.hash })}>
+      <button
+        className={`Panel_closeButton absolute bg-transparent bw0 ${left ? 'right-0': 'left-0'}`}
+        onClick={closeButtonClickHandler}
+      >
         {left ? <ArrowRightCircle strokeWidth={1} size={25} color={color}/> : <ArrowLeftCircle strokeWidth={1} size={25} color={color}/> }
       </button>
-      <button className={`Panel_closeButton absolute pa3 bg-transparent bw0 ${left ? 'left-0': 'right-0'}`} onClick={() => history.replace({ search: null, hash: window.location.hash })}>
+      <button
+        className={`Panel_closeButton absolute bg-transparent bw0 ${left ? 'left-0': 'right-0'}`}
+        onClick={closeButtonClickHandler}
+      >
         <X size={25} color={color}/>
       </button>
-      {children}
+      <div className="Panel_scrollableContentLine mh3 mh4-m mh5-l" style={{
+        backgroundColor: color,
+      }}/>
+      <div className="Panel_scrollableContent ph3 ph4-m ph5-l" style={{
+        color,
+      }}>
+        {children}
+      </div>
     </div>
   )
 }
