@@ -54,6 +54,7 @@ const Section = ({ section, height, width, backgroundColor, isMobile}) => {
         width={width}
         modules={section.modules}
         onStepChange={stepChangeHandler}
+        className={isMobile ? 'force-full-width': ''}
       />
       {!isMobile ? (
         <div className="Chapter_visualisationWrapper" style={{
@@ -167,10 +168,10 @@ const Chapter = ({ match: { params: { chapterId }}}) => {
       {chapter.displayQRcode ? <ChapterQrCode isMobileWithTablet={isMobileWithTablet} chapterIndex={chapter.chapterIndex}
         style={{
           position: 'fixed',
-          bottom: 20,
-          right: 20,
-          width: 75,
-          height: 75,
+          bottom: 10,
+          right: 10,
+          width: 100,
+          height: 100,
         }}
       />:null}
     </div>
