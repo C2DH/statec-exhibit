@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import { Scrollama, Step } from 'react-scrollama'
 import ChapterParagraph from './ChapterParagraph'
-import ChapterParagraphCover from './ChapterParagraphCover'
+import ChapterParagraphFigure from './ChapterParagraphFigure'
 import Dataset from '../Dataset'
 import { getParagraphIdFromIndices } from '../../logic/navigation'
 import { useBoundingClientRect } from '../../hooks'
@@ -10,7 +10,7 @@ const Echo = () => {
   console.error('Missing function handler')
 }
 
-const ChapterStream = ({ numStartAt, modules = [], height, backgroundColor, onStepChange=Echo}) => {
+const ChapterStream = ({ numStartAt, modules = [], height, backgroundColor, onStepChange=Echo, className}) => {
   const [{ width }, ref] = useBoundingClientRect()
   const [activeStep, setActiveStep]= useState({
     paragraphId: '0,0',
@@ -42,7 +42,7 @@ const ChapterStream = ({ numStartAt, modules = [], height, backgroundColor, onSt
   }
 
   return (
-    <div className="ChapterStream" ref={ref}>
+    <div className={`ChapterStream ${className}`} ref={ref}>
     {modules.map((mod, i) => (
       <div className="ChapterStream_module" key={i}>
         <h2 className="pt1 pt3-m pa3 pa5-l pr0-l pt4-l pb0 pb0-l mv0" style={{
@@ -72,9 +72,12 @@ const ChapterStream = ({ numStartAt, modules = [], height, backgroundColor, onSt
                   />
                   {par.figures
                     ? par.figures.map((figure, i) => (
-                      <div className="pb5 pl5-l pl3-m pr0" key={i}>
-                        <ChapterParagraphCover cover={figure} width={width - 64} height={height/2} />
-                      </div>
+                      <ChapterParagraphFigure
+                        key={i}
+                        width={width - 64}
+                        height={height/2}
+                        figure={figure}
+                      />
                     ))
                     : null
                   }
