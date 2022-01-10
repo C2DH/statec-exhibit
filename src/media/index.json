@@ -3070,8 +3070,8 @@
       "isPortrait": false
     },
     "Picture_3p2-5.png": {
-      "caption": "Loi du 25 juin 1900 prévoyant la création d’un service statistique (extrait)",
-      "provenance": "Placeholder Copyright",
+      "caption": "Loi du 25 juin 1900 publié 27 août 1900 prévoyant la création d’un service statistique (extrait)",
+      "provenance": "Source: <a target='_blank' href='http://data.legilux.public.lu/eli/etat/leg/loi/1900/06/25/n1/jo'>Legilux</a>",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/Picture_3p2-5.medium-w.jpg",
@@ -4004,6 +4004,170 @@
       },
       "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAUCAIAAADdpfBFAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB00lEQVQoz02SOa7CQBBE55hcBM6AiAjICEiQECkiRIgdg8HY2Oy7xA7iDP/ZZcGfYDTTXVVd3TPmdrtdLpfz+fx8Pq/X6+FwWCwW7MvlcrVabTYb4u/3+/V67fd783g8uLPD2W63nufZtj2fzyeTieM44/H4dDqh9fl8jsejud/vQNmRBEEa9Gg0CoIAeWhEOCOPltntdlxmsxl1g2hRHbFGo5HJZCqVCq7gTKfT4XBoYPi+77ouOGlDwwPQdDqdTCa/qRiNV0LIA8ID2lwLhUKxWMzlcoDQhkA2dgJBISrSgGVZqVQqkUiUy2X4frQoa9brNVB43CkHutlsZrPZUqmUz+er1SpMggA4GOqKiiRRyWsmKqvu8Rb6RlujxbcXLdCDwYCcOiOCFgCCMRox+UGDIvJKBDR2AWCj0+kYnsCNlibK03AmxxmCvGlW7XY7RKsKAuygZYAFTnEOoEkZ1SUKh4Rmb0WLeK/X+/J5XcOYiWp2drQwCgg0h263qwN7vV43DAgxhDUKFjk1IFq/3+dKi7Va7ecED6Rh0tz/IjpAaLVacZcQ9GAkZIm04uwIYTVE86t4F/RoHKh64CBvegGV5UeEaBoFrU+sL6CP/o1LDut/PUDVhvHzDdsAAAAASUVORK5CYII=",
       "aspectRatio": 0.7345,
+      "isPortrait": true
+    },
+    "pierre-werner-statement-steel-industry.png": {
+      "caption": "Déclarations de Monsieur Pierre Werner, Président du Gouvernement, sur la situation de la sidérurgie luxembourgeoise",
+      "provenance": "Source: <a href='https://www.cvce.eu/en/obj/statements_by_pierre_werner_on_the_situation_of_the_luxembourg_steel_industry_luxembourg_8_february_and_3_april_1983-en-bde9ae82-138b-4624-9325-a8ee3ec596d0.html' target='_blank'><i>Bulletin de documentation.</i> Luxembourg : dir. de publ. Service Information et Presse-Ministère d'État. 4 avril, n° 3/1983, pp. 22-25.</a><br/>Archives familiales Pierre Werner, Luxembourg.<br/>Copyright: (c) Service Information et Presse du Gouvernement luxembourgeois",
+      "resolutions": {
+        "medium-w": {
+          "url": "/media/images/pierre-werner-statement-steel-industry.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/pierre-werner-statement-steel-industry.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/pierre-werner-statement-steel-industry.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 2000,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/pierre-werner-statement-steel-industry.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 2000
+          }
+        }
+      },
+      "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAUCAYAAAC9BQwsAAAACXBIWXMAABYlAAAWJQFJUiTwAAAB20lEQVQ4y02U167CQAxE9/+/CtF7C72FDgESisSz0ZkrR/fBOHjt8Xi8SXg+n4bdbjc7nU7yj8fD7ve7pWkqjxF/vV72/X4VD1mWKXA+n206nVoURTabzWw0GtlisbD5fC7bbrdGbl74+XzUIY5jGw6HVigUrFaryYrFopXLZSuVSgLdbDYqpJE6QuV6vVqSJDk1ABkBUIyzy+WiuDrSpd1uW7/fl3W7XXmoQ8//DwYDGbnL5dJCp9OxRqNhzWbTWq2Wnjk8Ho+iT6zX6+XG7IfDwQJJzEFBvV5XYqVSyQvpiFjr9Vpi4TkLqAgVKIO4Wq10yHx4gOlCHn48Hv91JBFE0DiAP+q93295mMDi/2rYd+CQZJAmk4ntdjspjOyI43uFtrNRRw6ggzgIBQC0kX6/34sFhezRmQEemAsqFLN05gUEVLqwAjrBim48AxgoogAAqPqsLJwkAH0MusKG8bTHarWa7xL5iUEHEOKAEqcIg4lujl9ozGlx7fCAAsQIeGcV/E2gAKl9yRRCjUvhHTGeAVGhz+nqEuPygw5VL0IomuADPyRThJGMGOwSAAA5pxMMfF0BRBcHWniSuY8UEgOQ+TBfXeD1AZ2FswI+ERhXzj8h/k7yzEuMDj9l795k7XCAhwAAAABJRU5ErkJggg==",
+      "aspectRatio": 0.6825,
+      "isPortrait": true
+    },
+    "chambre-deputes-loi-travail.png": {
+      "caption": "Avis commun de la Chambre du travail et de la Chambre des employés privés concernant le statut unique entrant en vigueur en 2008.",
+      "provenance": "Source : <a href='https://chd.lu/wps/PA_ArchiveSolR/FTSShowAttachment?mime=application%2fpdf&id=09DC8A5F2119D910025E67D60CABAB65$AE3FBFD575268C0E23AA4A52FF0AF383&fn=09DC8A5F2119D910025E67D60CABAB65$AE3FBFD575268C0E23AA4A52FF0AF383.pdf'>Chambre des députés</a>",
+      "resolutions": {
+        "medium-w": {
+          "url": "/media/images/chambre-deputes-loi-travail.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/chambre-deputes-loi-travail.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/chambre-deputes-loi-travail.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 2000,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/chambre-deputes-loi-travail.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 2000
+          }
+        }
+      },
+      "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAUCAYAAAC58NwRAAAACXBIWXMAABYlAAAWJQFJUiTwAAABxUlEQVQoz2VTaXOCUAz0//8tp186jvWoeOANKFi5QcVrm037qEyZyTx57iabTWg9n0+YMM/pfEZeFPX7K6aFl6csS6zWGwyHI3S7PXjeDkVRvkLQyvMcaZbJHwUyOV3PU+But8d26yBNMyURk+cFWo/HAwxmXyyWmE5nWEsV214ocblcaTKDU0n3+x3HY4it48CyJkpYCNC254iiuCFLCSxF0HgyxVyq7Pc+9r6PqqpwuVQ4iwlMWhMo5+Ojj3b7DZ1OF+PxRKW5rgfHcTUZMTXhdDrhc2Th/b2D/mCIfn+oIBK+vo5akSoaFdikZY2x2WxVP4FBcIAfBPD9QKRd/gjX61Uk2JjObJ0Ds69WayRJgjj+CWJqApvi5TEMdRZ0jMG7KI71LEX2C+EiA0o1K4fV6w00JuIaJWZZrn3WBA6Ee2JOZg9Eu9kjY2m9S2woDCNdi1BkUTvfVb/8jqKo2cPtdlPtLM9V4IosfyfN4CwaLlFKcDjAEd+5bCSzCle8ksxMWE/a7Dkv6L3juuo/F48n7+heg2AaYna6RLcoiTPheyGD/VeBQc8Jnolu7hJ72QghSdJm06YKL/lBEWCCM6iqa435BmLHkGZm+xO0AAAAAElFTkSuQmCC",
+      "aspectRatio": 0.614,
+      "isPortrait": true
+    },
+    "conseil-etat-caisse-pension-29-janvier-1931.png": {
+      "caption": "Projet d'arrêté grand-ducal portant règlement pour l'exécution de l'article 3, alinéa 2, de la loi du 29 janvier 1931 concernant la création d'une caisse de pension des employés privés (Préparation de l’avis du Conseil d’Etat). ",
+      "provenance": "Source: <a href='https://query.an.etat.lu/Query/detail.aspx?ID=474254' target='_blank'>Archives nationales, Dossier M-02308 (Conseil d’Etat)</a><br/>N.B : Il s’agit de l’arrêté fixant une limite de rémunération pour le calcul des cotisation.",
+      "resolutions": {
+        "medium-w": {
+          "url": "/media/images/conseil-etat-caisse-pension-29-janvier-1931.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/conseil-etat-caisse-pension-29-janvier-1931.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/conseil-etat-caisse-pension-29-janvier-1931.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 2000,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/conseil-etat-caisse-pension-29-janvier-1931.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 2000
+          }
+        }
+      },
+      "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAUCAYAAAC9BQwsAAAACXBIWXMAABYlAAAWJQFJUiTwAAACbUlEQVQ4y11TaU8aURSdf1dt0jahGnesyjDAsFhaRbRxAWYFlG1W6G89Pfc9wNQPJ7PknneWO2N4jU/wmrsY/f6K8c03vN0VMLnfU/deaxdOYwdu6zNczvjtLwhvCniyd2C8PRxg8ucIce8c08cTOL++o/ezgKBzgAHvB+0C/Nt9LJ7PEL2cY/50imFnD0bUKyLtX2DlmyQWEdwdIeyeIOhy4OEU7i2f788QD0rInCuSi3h7OISRDi6QeyUs/TJix0TsWogcwq1izuusX0bkVZH4NaR+BQlFZnRmpM4lcqqlvgyZaiDxbeTDJpKgTtjIwgbSsI404AEUEttG5mpiwtPk9LlTUYi8GuZKtYqFW8OCz5FXQUxF6cNQNoMyFauY9MqYDSxM+5YaFtJ0oA9RZMZImTNmTmOpiJayISRRW1Ap8uwtOaJ1BSpmbklnzFTGMq2SuCbJcMx8MYcFkjVlTskrsWaPx5qYeaYm0tZmOFWFvCP268iGdSUy5d7XiiayQCtlbFOQj1rqKqTNu2zYQM4+1B5z94o7NFVGIW4UZFBUJGvC5+X4moc1VJFbYs4din8pY6MiimnY5Epq70Ra3RKlpUy+iDUxV5Zamsh7eZcEPGjc2ipOVEYSE6+iLMnCN1a1YoOLt9VBq9c23zWxCq13Yubr+qXVj+XoNml/eK0+OyFureZhTTUmO/xIFKxerxXy0Zp4fwBj8XKJWc/C+LmK0ZP1n9UNpBjdah1/mfFViEHnFF7nHF7XhHNXoqqtLGlVjeW4pTGy1X+rrAadQwz5485FmZj3LvlfsjCXuyUSicJ1afC5/wPj7j7+AcbeuhMRHgh/AAAAAElFTkSuQmCC",
+      "aspectRatio": 0.685,
+      "isPortrait": true
+    },
+    "ark_70795-4zn911-pages-6.jpg": {
+      "caption": "La représentation de la vie des femmes à la sortie de la deuxième guerre mondiale (extrait du Luxemburger Wort du 23 mai 1946, P.6).",
+      "provenance": "Source : <a href='https://viewer.eluxemburgensia.lu/ark:70795/4zn911/pages/6' target='_blank'>eluxemburgensia</a>",
+      "resolutions": {
+        "medium-w": {
+          "url": "/media/images/ark_70795-4zn911-pages-6.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/ark_70795-4zn911-pages-6.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/ark_70795-4zn911-pages-6.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 2000,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/ark_70795-4zn911-pages-6.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 2000
+          }
+        }
+      },
+      "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAUCAIAAAAyZ5t7AAAACXBIWXMAAAsTAAALEwEAmpwYAAAB6ElEQVQozz2TSYoCURBE856Ch9CdgojiyuEAegJBEERw70obnGfLqrIs23mecNnPyu7OhfzKHxkZGT+VxWKxWq0Oh8PxeDydTuv1ervdknFd9/1+3+/30WjUbDb7/b5Mp1PTNOfzOTXL5RLEtxckb7ebZVmxWCydTqdSKZlMJmSh2Ww2u91O0bZtA3q9XuPxOJFIFAqFUqkkpOADt9/v0cCZDE1A8wnU7/dXKpVqtSp8zGYzOqISbuVzHAd6BFDp8/ni8Xg4HJZerwcaKHdA4VMoBz6BttttxkLnL1TvKHC9oA8FTGwYBrZcLpfr9SqdTmc4HJpewKEzcaaYX2roxpkrgR/PqAYBq+0FF0xJH/qSVApptVrdbpdeXOADv8rHAUrKUAwxBYJkNOgQBAahDPX0oR7FOgBP+NE6GAxoYXjBgUdWGdqBdwGKHlECfU99MOx0vCCPEvzmioYfVjRATDvEsRyWF9DreqgwCqRerzMZKa7h/jcI0cqHdFrhrnx50Wg08EHlKqXaSTEgXSYpFou5XC4ajYZCoVqtxiiqXump2f2FZLPZTCYTDAYDgQBrodbocqnT5/NZl05YmUgkks/ny+VyMplkLPrCp6ygcVT/GoJKdgAvn88nBKQQp78k4WNRsO/xePwAMJfJI4SVfu8AAAAASUVORK5CYII=",
+      "aspectRatio": 0.72,
       "isPortrait": true
     }
   }
