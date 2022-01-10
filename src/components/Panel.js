@@ -5,7 +5,14 @@ import { ArrowLeftCircle, ArrowRightCircle, X } from 'react-feather'
 import { setBodyNoScroll } from '../logic/viewport'
 import '../styles/components/panel.scss'
 
-const Panel = ({ name='table-of-contents', children, left=false, color='white' }) => {
+const Panel = ({
+  name='table-of-contents',
+  left=false,
+  color='white',
+  withLine=false,
+  Component,
+  children,
+}) => {
   const { width, height } = useCurrentWindowDimensions()
   const [isOpen, setIsOpen ] = useState(false)
   const history = useHistory()
@@ -53,13 +60,22 @@ const Panel = ({ name='table-of-contents', children, left=false, color='white' }
       >
         <X size={25} color={color}/>
       </button>
-      <div className="Panel_scrollableContentLine mh3 mh4-m mh5-l" style={{
-        backgroundColor: color,
-      }}/>
-      <div className="Panel_scrollableContent ph3 ph4-m ph5-l" style={{
+      {withLine
+        ? (
+          <div className="Panel_scrollableContentLine mh3 mh4-m mh5-l" style={{
+            backgroundColor: color,
+          }}/>
+        )
+        : null
+      }
+      <div className="Panel_scrollableContent ph3 ph4-m ph5-l w-100" style={{
+        height: height - 50,
         color,
       }}>
-        {children}
+      {Component
+        ? <Component color={color} height={height} width={width} />
+        : children
+      }
       </div>
     </div>
   )
