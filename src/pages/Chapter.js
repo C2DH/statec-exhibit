@@ -167,13 +167,13 @@ const Chapter = ({ match: { params: { chapterId }}}) => {
         paragraphs={chapter.conclusions || []}
       />
       <ChapterFooter isMobileWithTablet={isMobileWithTablet} chapterIndex={chapter.chapterIndex}/>
-      {chapter.displayQRcode ? <ChapterQrCode isMobileWithTablet={isMobileWithTablet} chapterIndex={chapter.chapterIndex}
+      {chapter.displayQRcode ? <ChapterQrCode isMobileWithTablet={isMobileWithTablet} chapterId={chapter.id}
         style={{
           position: 'fixed',
           bottom: 10,
           right: 10,
-          width: 100,
-          height: 100,
+          width: 75,
+          height: 75,
         }}
       />:null}
     </div>
