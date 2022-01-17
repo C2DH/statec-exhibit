@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import MediaIndex from '../media/index.json'
 import { useURLSearchParams } from '../hooks'
-import MediaFigure from './MediaFigure'
+import MediaViewerFigure from './MediaViewerFigure'
 import '../styles/components/mediaViewer.scss'
-
+import {useBoundingClientRect} from '../hooks'
 
 const MediaViewer = ({ color, width, height }) => {
   const qs = useURLSearchParams()
   const [ media, setMedia ] = useState(null)
+  const [{ height:mediaFigureHeight, width:mediaFigureWidth}, ref] = useBoundingClientRect()
 
   useEffect(() => {
     const id = qs.get('id')
@@ -21,15 +22,31 @@ const MediaViewer = ({ color, width, height }) => {
     return null
   }
   return (
-    <figure className="MediaViewer ma0 h-100 w-100 flex flex-column" style={{color}}>
-      <MediaFigure media={media} className="mh5 mt5" style={{ flexGrow: 1, overflow: 'hidden'}} />
-      <figcaption className="mh5 mb4" style={{ flexShrink: '1' }}>
+    <figure
+      className="MediaViewer ma0 pa0 w-100 h-100 flex flex-column"
+      style={{ color }}
+    >
+      <div ref={ref} style={{
+        flexGrow: 1,
+        boxShadow: `0px 0px 16px #120d55`
+      }}>
+        {media ? (
+          <MediaViewerFigure
+            resolutions='large-h'
+            media={media}
+            height={mediaFigureHeight}
+            width={mediaFigureWidth}
+            color={color}
+          />
+        ): null}
+      </div>
+      <figcaption className="mh0 pb3" style={{ flexShrink: '1', maxHeight: height * .12 }}>
         {media.caption
-          ? <h2 style={{color}} dangerouslySetInnerHTML={{__html:media.caption }}></h2>
+          ? <h2 className="mb1" style={{color}} dangerouslySetInnerHTML={{__html:media.caption }}></h2>
           : null
         }
         {media.provenance
-          ?  <p style={{color}} dangerouslySetInnerHTML={{__html:media.provenance }}></p>
+          ?  <p className="ma0" style={{color}} dangerouslySetInnerHTML={{__html:media.provenance }}></p>
           : null
         }
       </figcaption>

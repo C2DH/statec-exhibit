@@ -1,6 +1,8 @@
 import React, { useEffect, useMemo, useState } from 'react'
 import chapter01 from '../data/themes/theme-01.json'
 import chapter02 from '../data/themes/theme-02.json'
+import chapter03 from '../data/themes/theme-03.json'
+import chapter04 from '../data/themes/theme-04.json'
 import { useStore } from '../store'
 import { useCurrentWindowDimensions } from '../hooks'
 import { isMobile, getIsMobileWithTablet } from '../logic/viewport'
@@ -11,12 +13,16 @@ import ChapterStream from '../components/Chapter/ChapterStream'
 import ChapterFooter from '../components/Chapter/ChapterFooter'
 import ChapterVisualisations from '../components/Chapter/ChapterVisualisations'
 import ChapterQrCode from '../components/Chapter/ChapterQrCode'
+import { StartDate, EndDate } from '../constants'
+
 import '../styles/components/chapter.scss'
 import { Helmet } from 'react-helmet'
 
 const AvailableChapters = Object.freeze({
   [chapter01.id]: chapter01,
   [chapter02.id]: chapter02,
+  [chapter03.id]: chapter03,
+  [chapter04.id]: chapter04
 })
 const DefaultThemeId = String(chapter01.id)
 
@@ -33,6 +39,12 @@ const Section = ({ section, height, width, backgroundColor, isMobile}) => {
     setStep(step)
   }
 
+  const dateExtent = useMemo(() => {
+    return Array.isArray(section.datasetExtent)
+      ? section.datasetExtent.map(d => new Date(`${d}-01-01`))
+      : [StartDate, EndDate]
+  }, [section])
+
   return (
     <div className="Section Chapter_streamWrapper flex">
       <ChapterStream
@@ -42,6 +54,7 @@ const Section = ({ section, height, width, backgroundColor, isMobile}) => {
         width={width}
         modules={section.modules}
         onStepChange={stepChangeHandler}
+        className={isMobile ? 'force-full-width': ''}
       />
       {!isMobile ? (
         <div className="Chapter_visualisationWrapper" style={{
@@ -59,6 +72,8 @@ const Section = ({ section, height, width, backgroundColor, isMobile}) => {
             height={height}
             modules={section.modules || []}
             step={step}
+            dateExtent={dateExtent}
+            numericTranslationLabel={section.numericTranslationLabel}
           />
         </div>
       ):null}
@@ -69,6 +84,7 @@ const Section = ({ section, height, width, backgroundColor, isMobile}) => {
 const Chapter = ({ match: { params: { chapterId }}}) => {
   // get the available chapter if vailable; otherwise Chapter 1 ;)
   const chapter = AvailableChapters[String(chapterId)] ?? AvailableChapters[DefaultThemeId];
+  const { dataset:chapterDataset } = chapter
   // calcumlate height on Resize after a 250mx throttle
   const isMobileWithTablet = getIsMobileWithTablet()
 
@@ -103,9 +119,12 @@ const Chapter = ({ match: { params: { chapterId }}}) => {
   }, [changeBackgroundColor, changeCurrentChapterStructure, chapter.backgroundColor, chapterId, chapterSections])
 
   const themeDataset = useMemo(() => {
-    console.info(`Chapter loading dataset ${chapter.dataset}.json`)
-    return require(`../data/datasets/${chapter.dataset}.json`)
-  }, [chapter])
+    if(!chapterDataset) {
+      return null
+    }
+    console.info(`Chapter loading dataset ${chapterDataset}.json`)
+    return require(`../data/datasets/${chapterDataset}.json`)
+  }, [chapterDataset])
 
   console.info('Chapter #chapterHotspots n.', chapterHotspots.length, themeDataset)
   console.info('Chapter #chapterSections',chapterSections)
@@ -146,15 +165,15 @@ const Chapter = ({ match: { params: { chapterId }}}) => {
         paragraphs={chapter.conclusions || []}
       />
       <ChapterFooter isMobileWithTablet={isMobileWithTablet} chapterIndex={chapter.chapterIndex}/>
-      <ChapterQrCode isMobileWithTablet={isMobileWithTablet} chapterIndex={chapter.chapterIndex}
+      {chapter.displayQRcode ? <ChapterQrCode isMobileWithTablet={isMobileWithTablet} chapterIndex={chapter.chapterIndex}
         style={{
           position: 'fixed',
-          bottom: 20,
-          right: 20,
-          width: 75,
-          height: 75,
+          bottom: 10,
+          right: 10,
+          width: 100,
+          height: 100,
         }}
-      />
+      />:null}
     </div>
   )
 }

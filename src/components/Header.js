@@ -14,6 +14,14 @@ const Header = () => {
   const history = useHistory()
   const pathname = history.location.pathname
   const currentChapter = ChapterRoutes.find(d => d.to === pathname)
+
+  const openPanel = (name='table-of-contents') => {
+    history.push({
+      search: `?panel=${name}`,
+      hash: window.location.hash.replace('#', ''),
+    })
+  }
+
   // CHANGE favicon and title BASED ON CURRENT CHAPTER
   useEffect(() => {
     try {
@@ -41,24 +49,18 @@ const Header = () => {
       backgroundColor,
     }}>
       <div className="Header_sideLinkWrapper w-100 flex items-center justify-space-between">
-      <div className="Header_sideLink" onClick={() => history.push({
-        search: '?panel=table-of-contents',
-        hash: window.location.hash.replace('#', ''),
-      })}>
+      <div className="Header_sideLink" onClick={() => openPanel('table-of-contents')}>
         <span className="db dn-ns">{t('tableOfContentsMobile')}</span>
         <span className="dn db-ns">{t('tableOfContents')}</span>
       </div>
       <div className="Header_centerLink">
         <Link to={'/'}>{t('FramingLuxembourg')}</Link>
         {currentChapter
-          ? <span>&nbsp;/&nbsp;{t(currentChapter.label)}</span>
+          ? <span>&nbsp;/&nbsp;{currentChapter.title}</span>
           : null
         }
       </div>
-      <div className="Header_sideLink tr" onClick={() => history.push({
-        search: '?panel=about',
-        hash: window.location.hash.replace('#', '')
-      })}>
+      <div className="Header_sideLink tr" onClick={() => openPanel('about')}>
         {t('AboutTitle')}
       </div>
       </div>

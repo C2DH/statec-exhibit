@@ -2,6 +2,7 @@ import React, { useMemo } from 'react'
 import { animated, useSpring, config } from 'react-spring'
 import { scaleLinear } from 'd3-scale'
 import AnimatedDataPointers from '../AnimatedDataPointers'
+import DatasetLegend from '../Dataset/DatasetLegend'
 import TrendLineGraphics from '../Trend/TrendLineGraphics'
 import TrendAxisBottomGraphics from '../Trend/TrendAxisBottomGraphics'
 import TrendAxisLeftGraphics from '../Trend/TrendAxisLeftGraphics'
@@ -21,6 +22,7 @@ const Lines = ({
   marginLeft=50,
   marginRight=20,
   from=StartYear, to=EndYear,
+  numericTranslationLabel='number',
 }) => {
   const windowDimensions = [width, height].join(',')
   const [pointer, setPointer] = useSpring(() => ({ pos:[0, 0], config: config.stiff  }))
@@ -63,6 +65,7 @@ const Lines = ({
       offsetTop={marginTop}
       offsetLeft={marginLeft}
       data={scaledGroupValues}
+      numericTranslationLabel={numericTranslationLabel}
       closestIdx={pointer.pos.interpolate((x,y) => {
         if (!scaledGroupValues[0]) return 0
         const closestIdx = getClosestDatumIdxFromX({
@@ -135,18 +138,7 @@ const Lines = ({
           axisOffsetLeft={width - marginRight}
         />
       </svg>
-      <figcaption className="db pl5-l pl3">
-        {groupValues.map((d, i) => (
-          <label key={i}>
-            <span className="colorpoint dib mr1" style={{
-              backgroundColor: d.color
-            }}></span>
-            {d.legend}&nbsp;
-          </label>
-        ))}
-
-      </figcaption>
-
+      <DatasetLegend values={groupValues}/>
     </figure>
     </div>
   )

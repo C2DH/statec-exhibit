@@ -22,7 +22,9 @@ body {
   transition: background-color .6s ease-in-out;
   line-height: 1.5;
 }
-
+body.noscroll{
+  overflow: hidden;
+}
 :root {
   --primary: #ffc09d;
   --secondary: #2b219f;
@@ -124,6 +126,9 @@ a {
   animation: rotate 2s linear infinite;
 }
 
+.scrollable{
+  overflow: scroll;
+}
 .with-vertical-line:after{
   position: absolute;
   content: '';

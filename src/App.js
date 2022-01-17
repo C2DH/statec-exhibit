@@ -16,15 +16,13 @@ const AppPanels = () => {
 
   return (
     <>
-      <Panel name='about' left color={color}>
+      <Panel name='about' left color={color} withLine>
         <About color={color}/>
       </Panel>
-      <Panel name='table-of-contents' color={color}>
+      <Panel name='table-of-contents' color={color} withLine>
         <TableOfContents color={color}/>
       </Panel>
-      <Panel name='viewer' color={color}>
-        <MediaViewer color={color} />
-      </Panel>
+      <Panel name='viewer' color={color} Component={MediaViewer} />
     </>
   )
 }

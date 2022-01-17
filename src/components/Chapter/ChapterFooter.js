@@ -33,7 +33,7 @@ const ChapterFooter = ({ chapterIndex=0, isMobileWithTablet=true }) => {
                 marginTop: '10px',
                 marginBottom: '80px',
               }}
-            ><Link to={nextRoute.to}>{t(nextRoute.label)}</Link></h2>
+            ><Link to={nextRoute.to}>{nextRoute.title}</Link></h2>
           </>
         )}
         {idx > 1 && (
@@ -53,7 +53,7 @@ const ChapterFooter = ({ chapterIndex=0, isMobileWithTablet=true }) => {
                 marginTop: '10px',
                 marginBottom: '80px',
               }}
-            ><Link to={previousRoute.to}>{t(previousRoute.label)}</Link></h2>
+            ><Link to={previousRoute.to}>{previousRoute.title}</Link></h2>
           </>
         )}
         <div className="flex items-center justify-center ph4 mv4 mv3-ns">

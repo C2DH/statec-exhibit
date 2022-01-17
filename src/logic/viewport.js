@@ -1,6 +1,6 @@
 import { isMobile, isTablet } from 'react-device-detect';
 
-const getIsMobileWithTablet = () => isMobile
+export const getIsMobileWithTablet = () => isMobile
   ? isTablet
     ? window.innerWidth < window.innerHeight
       ? true
@@ -8,7 +8,11 @@ const getIsMobileWithTablet = () => isMobile
     : true
   : false
 
+export const setBodyNoScroll = (noscroll=true) => {
+  document.body.classList.toggle('noscroll', noscroll)
+}
+
 export {
-  getIsMobileWithTablet,
-  isMobile
+  isMobile,
+  isTablet
 }

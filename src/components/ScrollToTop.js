@@ -13,7 +13,7 @@ const ScrollToTop = () => {
     // } else {
     } else {
       timer = setTimeout(() => {
-        window.dispatchEvent(new Event('resize'))
+        // window.dispatchEvent(new Event('resize'))
         const id = hash.replace('#', '');
         const element = document.getElementById(id);
         console.info('ScrollToTop: reaching id =', id);

@@ -18,7 +18,6 @@ const ChapterWideParagraphs= ({ paragraphs=[], prefix='', height=200 }) => {
     <div className="ChapterWideParagraphs">
       <Scrollama
         onStepEnter={onStepEnter}
-        threshold={0}
       >
       {paragraphs.map(({ text }, i) => (
         <Step data={i} key={i}>

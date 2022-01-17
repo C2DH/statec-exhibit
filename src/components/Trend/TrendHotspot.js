@@ -12,6 +12,7 @@ const TrendHotspot = ({ x, year, text='', active, height=0, marginTop=0, marginB
       <div className="TrendHotspot_point" style={{
         left: x,
         top: marginTop,
+        cursor: 'pointer'
       }}>
         <Bookmark style={{position:'absolute', top:3, left:3}} size={10} color='var(--primary)'/>
       </div>

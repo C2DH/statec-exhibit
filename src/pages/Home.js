@@ -94,7 +94,7 @@ const Home = () => {
                   marginBottom: '80px',
                 }}
               >
-                <Link to={route.to}>{t(route.label)}&nbsp;</Link>
+                <Link to={route.to}>{route.title}&nbsp;</Link>
                 <ArrowUpRight />
               </h2>
             </div>

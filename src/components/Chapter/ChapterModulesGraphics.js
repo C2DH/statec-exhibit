@@ -4,19 +4,21 @@ import { scaleTime } from 'd3-scale'
 import moment from 'moment'
 import { getParagraphIdFromIndices } from '../../logic/navigation'
 
-const scaleX = scaleTime()
-  .domain([StartDate, EndDate])
-  .range([0, 100]);
 
-const ChapterModulesGraphics = ({ numStartAt=0, modules=[], timeFormat='YYYY', step}) => {
+
+const ChapterModulesGraphics = ({ dateExtent=[StartDate, EndDate], numStartAt=0, modules=[], timeFormat='YYYY', step}) => {
+  const scaleX = scaleTime()
+    .domain([dateExtent[0], dateExtent[1]])
+    .range([0, 100]);
+
   const values = useMemo(() => {
     return modules.reduce((acc, mod, i) => acc.concat(mod.paragraphs.map((par, j) => {
       const from = par.from
         ? moment(par.from, timeFormat).startOf('year')
-        : StartDate
+        : dateExtent[0]
       const to = par.to
         ? moment(par.to, timeFormat).startOf('year')
-        : EndDate
+        : dateExtent[1]
       return {
         from: par.from,
         to: par.to,
@@ -26,15 +28,15 @@ const ChapterModulesGraphics = ({ numStartAt=0, modules=[], timeFormat='YYYY', s
         paragraphId: getParagraphIdFromIndices(i+numStartAt,j)
       }
     })), [])
-  }, [modules, timeFormat, numStartAt])
+  }, [modules, timeFormat, dateExtent, scaleX, numStartAt])
 
   return (
     <div className="ChapterModulesGraphics">
       <div className="ChapterModulesGraphics_startDate">
-        <span>{StartDate.year()}</span>
+        <span>{ dateExtent[0] instanceof Date ?  dateExtent[0].getFullYear():  dateExtent[0].year()}</span>
       </div>
       <div className="ChapterModulesGraphics_endDate">
-        <span>{EndDate.year()}</span>
+        <span>{dateExtent[1] instanceof Date ?  dateExtent[1].getFullYear():  dateExtent[1].year()}</span>
       </div>
       <div className="ChapterModulesGraphics_rail" style={{height: Math.max(50,modules.length * 10 + 20)}}>
 

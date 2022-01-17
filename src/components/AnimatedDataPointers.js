@@ -1,5 +1,7 @@
 import React from 'react'
 import { animated } from 'react-spring'
+import { useTranslation } from 'react-i18next'
+
 
 const AnimatedPointers = ({
   availableWidth=100,
@@ -7,8 +9,10 @@ const AnimatedPointers = ({
   offsetTop=0, offsetLeft=0,
   data=[],
   closestIdx=0,
-  color = 'var(--secondary)'
+  color = 'var(--secondary)',
+  numericTranslationLabel='number'
 }) => {
+  const { t } = useTranslation()
   if (!data.length || !data[0]) {
     return null
   }
@@ -42,6 +46,8 @@ const AnimatedPointers = ({
             width: 10,
             height: 10,
             borderRadius: 10,
+            border: "1px solid var(--secondary)",
+
             marginLeft:-5,
             marginTop: -5,
             backgroundColor: d.color,
@@ -57,8 +63,10 @@ const AnimatedPointers = ({
             backgroundColor: d.color,
             fontSize : 12,
             color: 'var(--white)',
-            borderRadius: 4
-          }}>{d.values[closestIdx][d.key] === null ? '(NA)' : d.values[closestIdx][d.key]}</span>
+            borderRadius: 4,
+            border: "1px solid var(--secondary)",
+            whiteSpace: 'nowrap'
+          }}>{d.values[closestIdx][d.key] === null ? '(NA)' : t(numericTranslationLabel, { n: d.values[closestIdx][d.key]})}</span>
           </div>
         </div>
       )

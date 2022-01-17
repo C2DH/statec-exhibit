@@ -67,6 +67,8 @@
   h2 > span{
     display: block;
     // border-bottom: 1px solid;
+    // .ChapterStream_module h2{
+    font-size: 1.3rem;
   }
   h2 > span:before{
     margin-right: 10px;
@@ -235,6 +237,12 @@
   }
   .ChapterStream{
     width: 40%;
+    &.force-full-width{
+      width: 100%;
+    }
+  }
+  .ChapterStream_module h2{
+    font-size: 1.3rem;
   }
   .ChapterCover_wrapper {
     h1 {
@@ -284,6 +292,12 @@
   }
   .ChapterStream{
     width: 30%;
+    &.force-full-width{
+      width: 100%;
+    }
+  }
+  .ChapterStream_module h2 > span {
+    font-size: 1.5rem;
   }
   .ChapterCover_wrapper {
     h1 {

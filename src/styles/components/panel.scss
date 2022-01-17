@@ -1,0 +1,31 @@
+.Panel_scrollableContent{
+  position: absolute;
+  overflow: auto;
+  bottom: 0;
+  top: 50px;
+  padding-top: 1rem;
+  z-index:0;
+}
+.Panel_scrollableContentLine{
+  position: absolute;
+  right: 0;
+  height: 1px;
+  left: 0;
+  top: 50px;
+}
+
+.Panel_closeButton{
+  z-index: 1;
+  height: 50px;
+  cursor: pointer;
+  svg{
+    position: absolute;
+    top: 12px;
+  }
+  &.left-0 svg{
+    left: 12px;
+  }
+  &.right-0 svg{
+    right: 12px;
+  }
+}

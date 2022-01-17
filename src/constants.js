@@ -18,15 +18,37 @@ sections: [
   'Espérance de vie et vieillissement'
 ]}
 
+export const ChapterRouteEmployment = { to: '/employment', label: 'ChapterRouteEmployment', title: 'Emploi et travail', favicon: 'data:image/x-icon;base64,AAABAAEAEBAAAAEAIAAoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACb/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==',
+  sections: [
+    'Les concepts de classement de l’emploi et du travail : une grande complexité',
+    'Les sources des statistiques du travail',
+    'Vers une économie des services ',
+    'Vers une société salariale'
+  ]
+}
+
+export const ChapterRouteUnemployment = { to: '/unemployment', label: 'ChapterRouteUnemployment', title: 'La question du chômage', favicon: 'data:image/x-icon;base64,AAABAAEAEBAAAAEAIAAoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACb/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==',
+  sections: [
+    'Le concept du chômage en construction',
+    'La définition administrative du chômage',
+    'Le chômage : un fait social et son traitement statistique'
+  ]
+}
+
+
 export const ChapterRoutesWithIndex = [
   ChapterRouteIndex,
   ChapterRouteCountryOfMigration,
-  ChapterRouteFamily
+  ChapterRouteFamily,
+  ChapterRouteEmployment,
+  ChapterRouteUnemployment,
 ]
 
 export const ChapterRoutes = [
   ChapterRouteCountryOfMigration,
-  ChapterRouteFamily
+  ChapterRouteFamily,
+  ChapterRouteEmployment,
+  ChapterRouteUnemployment,
 ]
 
 export const StartYear = 1839

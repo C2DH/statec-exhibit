@@ -19,6 +19,7 @@ const Trend = ({
   paragraphId='-1,-1',
   legend={},
   data=[],
+  dateExtent=[StartDate, EndDate],
   from, to,
   // availableKeys: to computate the extent
   availableKeys=['v'],
@@ -40,13 +41,14 @@ const Trend = ({
   marginTop=50,
   displayPoints=false,
   displayDashedLine=false,
+  numericTranslationLabel='number'
 }) => {
   const [pointer, setPointer] = useSpring(() => ({ x:0, y:0, xValue:0, config: config.stiff  }))
   const svgHeight = height - 100
   const svgWidth = Math.max(0, width)
   const windowDimensions = [svgWidth, svgHeight].join(',')
   const scaleX = scaleTime()
-      .domain([StartDate, EndDate])
+      .domain(dateExtent)
       // - marginLeft*2 to accomodate for the left and right axis
       .range([0, svgWidth - marginLeft - marginRight])
   const [xMin, xMax] = useMemo(()  => {
@@ -85,6 +87,7 @@ const Trend = ({
   const numTicks = Math.round(svgWidth / 80)
   return (
     <div className="Trend" onMouseMove={updateMousePosition}>
+      {/* red line animated pointer */}
       <animated.div style={{
         position: 'absolute',
         backgroundColor: 'var(--accent)',
@@ -103,6 +106,7 @@ const Trend = ({
         marginLeft={marginLeft}
         marginRight={marginRight}
         focusKeys={focusKeys}
+        scaleX={scaleX}
       />
       <TrendPointers
         hotspots={hotspots}
@@ -122,6 +126,7 @@ const Trend = ({
         left={left}
         top={top}
         values={values}
+        numericTranslationLabel={numericTranslationLabel}
       >
         <DownloadDataButton label="test" values={data} legend={legend} />
       </TrendPointers>

@@ -4,6 +4,8 @@ import ChapterModulesGraphics from './ChapterModulesGraphics'
 import Trend from '../Trend'
 import Points from '../Points'
 
+import { StartDate, EndDate } from '../../constants'
+
 const AvailablesComponents = {
   Points: Points,
   Trend: Trend
@@ -16,7 +18,9 @@ const ChapterVisualisations = ({
   displayDashedLine=false,
   keys=['v'], legend, data=[], modules=[], height=100, width=100, step,
   numStartAt=0,
-  marginLeft=100
+  marginLeft=100,
+  numericTranslationLabel='number',
+  dateExtent=[StartDate, EndDate]
 }) => {
   const ref = useRef();
   const { t } = useTranslation()
@@ -34,6 +38,14 @@ const ChapterVisualisations = ({
   const paragraph = step
     ? paragraphs.find(d => step.paragraphId === d.paragraphId)
     : null
+  let hotspots = []
+  if (paragraph) {
+    hotspots = paragraph.hotspots ?? []
+  }
+  if (modules && step && step.moduleId) {
+    hotspots = hotspots.concat(modules[step.moduleId]?.hotspots ?? [])
+  }
+  console.info('STOCAZZO', dateExtent)
   // reload bounding box whenever height or width changes
   useEffect(() => {
     if (ref && ref.current) {
@@ -60,7 +72,7 @@ const ChapterVisualisations = ({
       height: height - 100,
     }}>
       <div style={{marginLeft: marginLeft / 2}}>
-        <ChapterModulesGraphics modules={modules} numStartAt={numStartAt} step={step}/>
+        <ChapterModulesGraphics dateExtent={dateExtent} modules={modules} numStartAt={numStartAt} step={step}/>
       </div>
       <div ref={ref} style={{
         flexGrow: 1,
@@ -88,11 +100,12 @@ const ChapterVisualisations = ({
           <Component
             displayPoints={displayPoints}
             displayDashedLine={displayDashedLine}
+            numericTranslationLabel={numericTranslationLabel}
             themeDatasetId={themeDatasetId}
             from={paragraph?.from}
             to={paragraph?.to}
             paragraphId={paragraph?.paragraphId}
-            hotspots={paragraph?.hotspots}
+            hotspots={hotspots}
             data={data}
             availableKeys={paragraph?.availableKeys ? paragraph.availableKeys: keys}
             focusKeys={paragraph?.focusKeys ? paragraph.focusKeys : paragraph?.visibleKeys }
@@ -103,6 +116,7 @@ const ChapterVisualisations = ({
             width={size.width}
             left={size.left}
             top={size.top}
+            dateExtent={dateExtent}
           />
         </div>
       </div>
