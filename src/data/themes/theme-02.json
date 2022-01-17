@@ -5,7 +5,7 @@
   "displayQRcode": true,
   "description": "Au 19ème siècle, le taux de natalité (les naissances rapportées à la population) se tasse.",
   "dataset": "population-natural-growth-details",
-  "backgroundColor": "var(--theme-02)",
+  "backgroundColor": "#b4ebc8",
   "cover": {
     "url": "/2.cap2.jpg",
     "caption": "Groupe de personnes, fête de famille, baptême devant une ferme.",

@@ -4,6 +4,7 @@
   "title": "La question du chômage",
   "description": "...",
   "backgroundColor": "#ffd597",
+  "displayQRcode": true,
   "cover": {
     "url": "/4.cap4.jpg",
     "caption": "Travaux ans la rue Aldringen en 1954. Théo Mey / Photothèque de la Ville de Luxembourg",

@@ -115,15 +115,7 @@ const Home = () => {
           />
         </div>
       </div>
-      <ChapterQrCode isMobileWithTablet={isMobileWithTablet} chapterIndex={0}
-        style={{
-          position: 'fixed',
-          bottom: 20,
-          right: 20,
-          width: 75,
-          height: 75,
-        }}
-      />
+      <ChapterQrCode isMobileWithTablet={isMobileWithTablet} chapterId="index" />
     </div>
 
   )

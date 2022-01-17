@@ -136,6 +136,8 @@ const Chapter = ({ match: { params: { chapterId }}}) => {
         <meta property="og:type" content="website" />
         <meta property="og:image" content={`${window.location.protocol}//${window.location.host}${chapter.cover.url}`} />
         <meta property="og:url" content={window.location} />
+        <meta name="theme-color" content={chapter.backgroundColor} media="(prefers-color-scheme: light)"/>
+        <meta name="theme-color" content={chapter.backgroundColor} media="(prefers-color-scheme: dark)"/>
       </Helmet>
       <CurrentYearExplorer width={width} height={height}/>
       <div className="relative w-100 h-100 with-vertical-line">
@@ -165,13 +167,13 @@ const Chapter = ({ match: { params: { chapterId }}}) => {
         paragraphs={chapter.conclusions || []}
       />
       <ChapterFooter isMobileWithTablet={isMobileWithTablet} chapterIndex={chapter.chapterIndex}/>
-      {chapter.displayQRcode ? <ChapterQrCode isMobileWithTablet={isMobileWithTablet} chapterIndex={chapter.chapterIndex}
+      {chapter.displayQRcode ? <ChapterQrCode isMobileWithTablet={isMobileWithTablet} chapterId={chapter.id}
         style={{
           position: 'fixed',
           bottom: 10,
           right: 10,
-          width: 100,
-          height: 100,
+          width: 75,
+          height: 75,
         }}
       />:null}
     </div>

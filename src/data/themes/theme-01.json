@@ -3,7 +3,8 @@
   "chapterIndex": "1",
   "title": "Un pays de migrations",
   "dataset": "GlobalBalanceDetails",
-  "backgroundColor": "var(--theme-01)",
+  "displayQRcode": true,
+  "backgroundColor": "#bfe8ed",
   "description": "La population du Luxembourg a plus que triplé depuis 1839 (date de l'indépendance du pays). De quelque 170.000 habitants en 1839, la population du Grand-Duché est passée à plus de 630.000 aujourd'hui...",
   "cover": {
     "id": "1.cap1.jpg",
