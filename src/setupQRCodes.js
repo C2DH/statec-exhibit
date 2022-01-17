@@ -8,6 +8,19 @@ const themesDir = './src/data/themes'
 const qrcodesDir = './public'
 const host = 'https://statec-streams.netlify.app'
 const darkColor = '#2b219f' // var(--secondary)
+const lightColor = '#ffc09d' // var(--primary)
+const opts = {
+  type: 'svg',
+  errorCorrectionLevel: 'H',
+  margin: 1,
+  width: 20,
+  small: true,
+  color: {
+    dark: darkColor,
+    light: lightColor,
+  }
+}
+
 
 fs.readdir(themesDir)
   .then(async (files) => {
@@ -21,12 +34,10 @@ fs.readdir(themesDir)
   .then(async (themes) => {
     for (let theme of themes) {
       const themeUrl = String(new URL(theme.id, host))
-      console.info(themeUrl)
-      const xml = await qrcode.toString(themeUrl,{
-        type: 'svg',
-        errorCorrectionLevel: 'H',
-        margin: 1,
-        width: 50,
+      console.log('generating qrcode for:', theme.id)
+      console.log(' - url:', themeUrl)
+      const xml = await qrcode.toString(themeUrl, {
+        ...opts,
         color: {
           dark: darkColor,
           light: theme.backgroundColor
@@ -34,7 +45,17 @@ fs.readdir(themesDir)
       })
       // save xml to file
       const filepath = path.join(qrcodesDir, `qrcode-${theme.id}.svg`)
+      console.log(' - output', filepath)
       await fs.writeFile(filepath, xml)
-      console.log(theme.id, 'saved in', filepath)
     }
+  }).then(async() => {
+    // generate qrcode for the homepage
+    console.log('generating qrcode for the homepage')
+    console.log(' - url:', host)
+
+    const xml = await qrcode.toString(host, opts)
+    // save xml to file
+    const filepath = path.join(qrcodesDir, 'qrcode-index.svg')
+    console.log(' - output', filepath)
+    await fs.writeFile(filepath, xml)
   })
