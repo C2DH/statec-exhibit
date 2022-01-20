@@ -3768,7 +3768,7 @@
     },
     "Picture_4p2-2.png": {
       "caption": "La question des statistiques du chômage au niveau européen en 1975",
-      "provenance": "e-luxemburgensia. Lëtzebuerger Land, du 19 septembre 1975",
+      "provenance": "e-luxemburgensia. D'Letzebuerger Land du 25 août 1972",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/Picture_4p2-2.medium-w.jpg",
@@ -3807,12 +3807,12 @@
       "aspectRatio": 0.461,
       "isPortrait": true
     },
-    "Picture_4p2-3.png": {
-      "caption": "Résolution de la Conférence Internationale des statisticiens du travail de 1982",
-      "provenance": "Source Organisation intrnationale du TZravail (accessible sen intégralité à partir de ",
+    "picture_4p2-3.png": {
+      "caption": "La question des statistiques du chômage au niveau européen en 1975.",
+      "provenance": "Lëtzebuerger Land, du 19 septembre 1975. <br/> Source : e-luxemburgensia",
       "resolutions": {
         "medium-w": {
-          "url": "/media/images/Picture_4p2-3.medium-w.jpg",
+          "url": "/media/images/picture_4p2-3.medium-w.jpg",
           "params": {
             "size": "medium-w",
             "width": 640,
@@ -3820,7 +3820,7 @@
           }
         },
         "medium-h": {
-          "url": "/media/images/Picture_4p2-3.medium-h.jpg",
+          "url": "/media/images/picture_4p2-3.medium-h.jpg",
           "params": {
             "size": "medium-h",
             "width": null,
@@ -3828,7 +3828,7 @@
           }
         },
         "large-w": {
-          "url": "/media/images/Picture_4p2-3.large-w.jpg",
+          "url": "/media/images/picture_4p2-3.large-w.jpg",
           "params": {
             "size": "large-w",
             "width": 2000,
@@ -3836,7 +3836,7 @@
           }
         },
         "large-h": {
-          "url": "/media/images/Picture_4p2-3.large-h.jpg",
+          "url": "/media/images/picture_4p2-3.large-h.jpg",
           "params": {
             "size": "large-h",
             "width": null,

@@ -120,6 +120,7 @@
               "text": "La crise économique suivant la première guerre mondiale fait du chômage un fait social majeur, avec un maximum de 1 558 chômeurs indemnisés en 1921. Si dans les années 1920, le chômage (indemnisé) redevient un phénomène assez marginal (l’économie est en phase ascendante), ce n’est plus le cas au début des années 1930 (la crise économique mondiale atteignant alors le Luxembourg). Le nombre de chômeurs indemnisés atteint un maximum de 2&nbsp;159. Dans la deuxième moitié des années 1930, le chômage redevient assez rare avant de rebondir à la veille de la deuxième guerre mondiale.",
               "figures": [
                 {
+                  "id": "Picture_4p2-1.png",
                   "caption": "La politique sociale du gouvernement Reuter (Extrait du journal L’Indépendance ) <br/> Source : <a href='https://viewer.eluxemburgensia.lu/ark:70795/8d4j0p/pages/2/articles/DTL52?search=chômage%201921' target='_blank'>e-luxemburgensia</a>"
                 }
               ]
@@ -128,7 +129,7 @@
               "from": 1973,
               "to": 1981,
               "text": "Après la deuxième guerre mondiale, un élan de « solidarité nationale et sociale » traverse le Luxembourg comme d’autres pays. Les allocations familiales sont introduites de façon institutionnelle par la loi du 20 octobre 1947. Par l’arrêté grand-ducal du 24 mai 1945, la condition d’indigence rendant le chômeur éligible pour les indemnités est supprimée et l’Office national du travail est créé. La responsabilité passe donc du niveau local au niveau national. Concrètement, la question du chômage disparaît cependant de l’agenda socio-politique. Dans ce sens les « Trente Glorieuses » portent bien leur nom. Les observateurs, comme, Carlo Hemmer, notent d’ailleurs que la croissance de la population autochtone n’est pas suffisante pour répondre à l’offre de travail de la part des entreprises (l’ajustement se fait par l’immigration), ce qui a certainement favorisé l’absence de chômage visible et déclaré.",
-              "figures":[{ "caption": "Source : D'Letzebuerger Land du 25 août 1972 <br/>Source eluxemburgensia"}]
+              "figures":[{ "id": "Picture_4p2-2.png", "caption": "L’ajustement se fait par l’immigration <br/> Source : <a href='https://viewer.eluxemburgensia.lu/ark:70795/rfzswk/pages/3/articles/DTL100' target='_blank'>e-luxemburgensia</a>"}]
             }
           ],
           "removed_paragraphs": [
@@ -138,7 +139,7 @@
               "text": "En ce qui concerne les statistiques su chômage, dès les années 1960 on avait pris conscience au niveau européen de la nécessité d’harmoniser ces statistiques pour des raisons de comparabilité. Dans les pays européens, les données sur le chômage sont, jusque-là, essentiellement basées sur des critères administratifs et légaux qui divergent évidemment d’un pays à l’autre. Une première tentative d'enquête sur les forces de travail au niveau de l’Europe des 6 remonte à 1960.  Jusqu'en 1968, elle n’est pas renouvelée et le Luxembourg est absent de cette dernière tentative. Avec l’élargissement européen en 1973, un règlement sur l’organisation de l'enquête est adopté par le Conseil de ministres européen. Des enquêtes bisannuelles sont initiées (1975, 1977, 1979 et 1981), mais le Luxembourg est absent de celle de 1981.",
               "figures": [
                 {
-                  "id": "Picture_4p2-2.png",
+                  "id": "picture_4p3-2.png",
                   "caption": "La question des statistiques du chômage au niveau européen en 1975.<br/> Source : e-luxemburgensia Lëtzebuerger Land, du 19 septembre 1975"
                 }
               ]
@@ -178,7 +179,7 @@
               "from": 1973,
               "to": 1981,
               "text": "En ce qui concerne les statistiques su chômage, dès les années 1960 on avait pris conscience au niveau européen de la nécessité d’harmoniser ces statistiques pour des raisons de comparabilité. Dans les pays européens, les données sur le chômage sont, jusque-là, essentiellement basées sur des critères administratifs et légaux qui divergent évidemment d’un pays à l’autre. Une première tentative d'enquête sur les forces de travail au niveau de l’Europe des 6 remonte à 1960. Jusqu'en 1968, elle n’est pas renouvelée et le Luxembourg est absent de cette dernière tentative. Avec l’élargissement européen en 1973, un règlement sur l’organisation de l'enquête est adopté par le Conseil de ministres européen. Des enquêtes bisannuelles sont initiées (1975, 1977, 1979 et 1981), mais le Luxembourg est absent de celle de 1981.",
-              "figures": [{"caption": "La question des statistiques du chômage au niveau européen en 1975.  Lëtzebuerger Land, du 19 septembre 1975. <br/> Source : e-luxemburgensia"}]
+              "figures": [{"id": "picture_4p3-2.png", "caption": "La question des statistiques du chômage au niveau européen en 1975.  Lëtzebuerger Land, du 19 septembre 1975. <br/> Source : e-luxemburgensia"}]
             },
             {
               "from": 1982,
