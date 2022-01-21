@@ -61,11 +61,18 @@ const ChapterStream = ({ numStartAt, modules = [], height, backgroundColor, onSt
         >
           {mod.paragraphs.map((par, j) => {
             const paragraphId = getParagraphIdFromIndices(i+numStartAt,j)
+            let datasetFrom = null
+            let datasetTo = null
+            if (par.dataset){
+              datasetFrom = Array.isArray(par.datasetExtent) ? par.datasetExtent[0] : par.from
+              datasetTo = Array.isArray(par.datasetExtent) ? par.datasetExtent[1]: par.to
+            }
             return (
               <Step data={paragraphId} key={paragraphId}>
                 <div className={`ChapterStream_paragraph ${activeStep.paragraphId === paragraphId ? 'active' : ''}`}>
                   <div className="anchor" id={`p${paragraphId}`}></div>
                   <ChapterParagraph
+                    memoId={paragraphId}
                     paragraph={par} height={height}
                     withFigures={par.figures?.length}
                     subheading={j===0 && mod.subheading ? mod.subheading : null}
@@ -84,6 +91,12 @@ const ChapterStream = ({ numStartAt, modules = [], height, backgroundColor, onSt
                   {par.dataset
                     ? (
                       <Dataset
+                        memoId={[
+                          par.dataset,
+                          height, width,
+                          datasetFrom,
+                          datasetTo
+                        ].join('')}
                         id={par.dataset}
                         height={height/3}
                         width={width}
@@ -94,8 +107,8 @@ const ChapterStream = ({ numStartAt, modules = [], height, backgroundColor, onSt
                         hidePercentage={par.datasetHidePercentage}
                         numericTranslationLabel={par.datasetNumericTranslationLabel}
                         layout={par.datasetLayout}
-                        from={Array.isArray(par.datasetExtent) ? par.datasetExtent[0] : par.from}
-                        to={Array.isArray(par.datasetExtent) ? par.datasetExtent[1]: par.to}
+                        from={datasetFrom}
+                        to={datasetTo}
                         range={par.datasetRange}
                       >
                         <label className="db pl5-l pl3 pv3 f6 i" dangerouslySetInnerHTML={{__html: par.datasetLegend }} />
