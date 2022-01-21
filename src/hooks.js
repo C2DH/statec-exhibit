@@ -113,7 +113,7 @@ export function useOnScreen({ threshold = [0, 1], rootMargin='0% 0% 0% 0%'} = {}
     rootMargin
   })
   useEffect(() => {
-    observer.observe(ref.current, { threshold })
+    observer.observe(ref.current)
     // Remove the observer as soon as the component is unmounted
     return () => { observer.disconnect() }
     // eslint-disable-next-line
