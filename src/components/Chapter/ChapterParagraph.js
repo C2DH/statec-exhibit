@@ -23,4 +23,6 @@ const ChapterParagraph = ({ paragraph, height=0, withFigures=false, subheading }
   </div>
 )
 
-export default React.memo(ChapterParagraph)
+export default React.memo(ChapterParagraph, (prevProps, nextProps) => {
+  return prevProps.memoId === nextProps.memoId
+})
