@@ -166,4 +166,6 @@ const DebugDataset = ({
     </div>
   )
 }
-export default DebugDataset
+export default React.memo(DebugDataset, (prevProps, nextProps) => {
+  return prevProps.memoId === nextProps.memoId
+})
