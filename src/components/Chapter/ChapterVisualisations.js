@@ -45,7 +45,6 @@ const ChapterVisualisations = ({
   if (modules && step && step.moduleId) {
     hotspots = hotspots.concat(modules[step.moduleId]?.hotspots ?? [])
   }
-  console.info('STOCAZZO', dateExtent)
   // reload bounding box whenever height or width changes
   useEffect(() => {
     if (ref && ref.current) {
