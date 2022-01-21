@@ -42,7 +42,7 @@ export const useGetDataset = ({ url, allowCached=true, delay=0}) => {
     error: null,
     status: StatusIdle
   });
-  console.info('useGetDataset url:', url, 'response', response)
+  console.debug('[useGetDataset] url:', url, 'response', response)
 
   useEffect(() => {
     let cancelRequest = false
@@ -62,7 +62,7 @@ export const useGetDataset = ({ url, allowCached=true, delay=0}) => {
         status: StatusFetching
       });
       if (cache.current[url] && allowCached=== true) {
-          console.log('useGetDataset allowCached url:', url)
+          console.debug('[useGetDataset] allowCached url:', url)
           const data = cache.current[url];
           data.cached = true;
           if (cancelRequest) return;
@@ -72,7 +72,7 @@ export const useGetDataset = ({ url, allowCached=true, delay=0}) => {
             status: StatusSuccess
           });
       } else {
-          console.log('useGetDataset load fresh url:', url)
+          console.debug('[useGetDataset] load fresh url:', url)
           return axios.get(url)
             .then(({data}) => {
               cache.current[url] = data // set response in cache;
