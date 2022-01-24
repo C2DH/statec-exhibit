@@ -8,6 +8,7 @@ import '../styles/components/panel.scss'
 const Panel = ({
   name='table-of-contents',
   left=false,
+  backgroundColor='var(--dark)',
   color='white',
   withLine=false,
   Component,
@@ -33,16 +34,15 @@ const Panel = ({
     setIsOpen(panelName === name)
     if (panelName === name) {
       setBodyNoScroll(true)
-    }
-    if (!panelName) {
+    } else if (!panelName) {
       setBodyNoScroll(false)
     }
   }, [qs, name])
 
   return (
     <div className="Panel" dataname={name} style={{
-      width, height,
-      backgroundColor: 'var(--dark)',
+      width, height: height + 100,
+      backgroundColor,
       position: 'fixed',
       zIndex:1002,
       transition: 'transform 0.6s cubic-bezier(0.83, 0, 0.17, 1)',
@@ -73,7 +73,7 @@ const Panel = ({
         color,
       }}>
       {Component
-        ? <Component color={color} height={height} width={width} />
+        ? <Component color={color} height={height} width={width} qs={qs} />
         : children
       }
       </div>
