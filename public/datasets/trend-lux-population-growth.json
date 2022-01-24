@@ -1,0 +1,37 @@
+{
+  "title": "Annual percentage growth rate of GDP at market prices based on constant local currency",
+  "subheading": "Aggregates are based on constant 2010 U.S. dollars. GDP is the sum of gross value added by all resident producers in the economy plus any product taxes and minus any subsidies not included in the value of the products. It is calculated without making deductions for depreciation of fabricated assets or for depletion and degradation of natural resources.",
+  "source": "World Bank national accounts data, and OECD National Accounts data files",
+  "timeformat": "YYYY",
+  "legend": {
+    "v": "Annual growth (n. of people)"
+  },
+  "values": [
+    {"t": "1875", "v": 0},
+    {"t": "1880", "v": 4412},
+    {"t": "1890", "v": 1518},
+    {"t": "1900", "v": 24866},
+    {"t": "1910", "v": 23937},
+    {"t": "1922", "v": 876},
+    {"t": "1930", "v": 39226},
+    {"t": "1935", "v": -3080},
+    {"t": "1947", "v": -5921},
+    {"t": "1960", "v": 23897},
+    {"t": "1966", "v": 19901},
+    {"t": "1970", "v": 5051},
+    {"t": "1981", "v": 24761},
+    {"t": "1991", "v": 19798},
+    {"t": "2001", "v": 55100},
+    {"t": "2010", "v": 62600},
+    {"t": "2011", "v": 10300},
+    {"t": "2012", "v": 12500},
+    {"t": "2013", "v": 12100},
+    {"t": "2014", "v": 12700},
+    {"t": "2015", "v": 13300},
+    {"t": "2016", "v": 13002},
+    {"t": "2017", "v": 14665},
+    {"t": "2018", "v": 11338},
+    {"t": "2019", "v": 11889},
+    {"t": "2020", "v": 12214}
+  ]
+}
