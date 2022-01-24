@@ -325,7 +325,21 @@
               ]
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "dataset": "ProfessionalStatus",
+      "displayPoints": true,
+      "displayDashedLine": true,
+      "numericTranslationLabel": "percentage",
+      "colorKeys": {
+        "v": "var(--secondary)",
+        "v1": "red",
+        "v2": "var(--t1-colorkeys-tertiary)",
+        "v3": "darkorange"
+      },
+      "modules": [
         {
           "title": "Vers une société salariale",
           "subheading": "Autour de 1850, il y a peu de « salariés » au sens actuel du terme, même si l’emploi de « journaliers », c’est-à-dire des personnes travaillant dans l’agriculture, dans l’artisanat ou encore des travaux d’infrastructure (chemins de fer, p.ex.) et rémunérés par journée (des emplois précaires dans la terminologie d’aujourd’hui) tend à se développer. Mais d’une manière générale, jusqu’au tournant des 19ème et 20ème siècle, les catégories artisanales d’avant la révolution industrielle restent prédominantes. L’industrialisation va de pair avec une « massification » de l’emploi salarié.<br/><br/>Une première approche du marché du travail du point de vue de la relation de travail (salarié ou indépendant) peut se baser sur les recensements de la population. La répartition ne va cependant pas de soi. Pour les recensements de 1871 et de 1907, on classe les gens uniquement selon les professions ; dans les recensements ultérieurs c’est le secteur d’activité qui est le critère prépondérant. En outre, pour les recensements de 1871, 1907 et 1935, un pourcentage important d’enquêtés n’a pas fourni d’indications assez précises pour être classés dans une catégorie ou dans une autre. Pour les recensements depuis 1970, la répartition selon la relation du travail n’est plus possible. Ce sont désormais les statistiques de la comptabilité nationale (basés sur les fichiers de la sécurité sociale tenant compte des frontaliers) qui permettent la distinction entre salariat et indépendants.",
@@ -333,18 +347,16 @@
             {
               "from": 1900,
               "to": 2020,
-              "visibleKeys": ["v", "v3"],
-              "focusKeys": ["v", "v3"],
-              "colorKeys": { "v": "var(--secondary)", "v3": "var(--t1-colorkeys-tertiary)" },
+              "visibleKeys": ["v", "v2", "v3"],
+              "focusKeys": ["v", "v2", "v3"],
               "text": "Sur le long terme, le nombre de personnes indiquant un statut d’indépendant (et/ou de patron) tend à se tasser. En 1907, la part des indépendants est encore de quelque 27%. Cette part est pratiquement divisée par deux jusqu’en 1970  (14%). Cette évolution est imputable en grande partie à la décroissance de l’emploi agricole. En 1907, on compte 33.725 indépendants et patrons, dont 16.860 dans l’agriculture et la viticulture. En 1970, le nombre d’indépendants n’est plus que d’environ 18 000 dont 5 800 agriculteurs. Les salariés (ouvriers en employés) constituent 50% de la population active en 1907, mais 80% en 1970. ",
               "figures":[{ "id": "polaschman7.jpg", "caption": "Pol Aschmann. Milchmann letzte Fahrt, 8-8-1958, © Photothèque de la Ville de Luxembourg" }]
             },
             {
               "from": 1900,
               "to": 1970,
-              "visibleKeys": ["v", "v3"],
-              "focusKeys": ["v", "v3"],
-              "colorKeys": { "v": "var(--secondary)", "v3": "var(--t1-colorkeys-tertiary)" },
+              "visibleKeys": ["v", "v2", "v3"],
+              "focusKeys": ["v", "v2", "v3"],
               "text": "Contrairement à la perception intuitive que l’on pourrait avoir eu égard à l’importance de l’industrie sidérurgique du pays, l’augmentation proportionnelle du salariat de 1907 à 1970 n’est pas due à la croissance de la part des ouvriers (qui reste stable autour de 50%), mais à celle des employés et des fonctionnaires dont le pourcentage dans la population active passe de 5% en 1907 à 35% en 1970.",
               "figures": [
                 {
@@ -359,9 +371,8 @@
             {
               "from": 1900,
               "to": 1970,
-              "visibleKeys": ["v", "v3"],
-              "focusKeys": ["v", "v3"],
-              "colorKeys": { "v": "var(--secondary)", "v3": "var(--t1-colorkeys-tertiary)" },
+              "visibleKeys": ["v", "v2", "v3"],
+              "focusKeys": ["v", "v2", "v3"],
               "text": "Il n’existe pas de véritable « statut » d’ouvrier et d’employé au 19ème siècle. Les relations du travail sont gouvernées par le code civil dont l’article 1710 dit assez sommairement : « Le louage d'ouvrage est un contrat par lequel l'une des parties s'engage à faire quelque chose pour l'autre, moyennant un prix convenu entre elles ». La formulation de « louage d’ouvrage » reflète à la fois une vue libérale du fonctionnement d’une économie (les gens « louent » leur travail) et de relents historiques de la période antérieure marquée par l’artisanat (artisans indépendants) et la rémunération des prestations à l’ouvrage. Dans la sidérurgie et dans les mines de fer le travail au rendement reste d’ailleurs très répandu jusqu’à la deuxième guerre mondiale. ",
               "figures": [
                 {
@@ -373,9 +384,8 @@
             {
               "from": 1900,
               "to": 1970,
-              "visibleKeys": ["v", "v3"],
-              "focusKeys": ["v", "v3"],
-              "colorKeys": { "v": "var(--secondary)", "v3": "var(--t1-colorkeys-tertiary)" },
+              "visibleKeys": ["v", "v2", "v3"],
+              "focusKeys": ["v", "v2", "v3"],
               "text": "Même s’il n’y a pas de véritable contrat de travail au 19ème siècle, il y a une tendance marquée vers une réglementation des relations du travail après l’indépendance du Grand-Duché. En 1860-1861 est introduit le « livret ouvrier » qui permet de « suivre » le travail des ouvriers très mobiles à l’époque. Puis, on tente de protéger les personnes « vulnérables », les enfants et les femmes. La loi du 6 décembre 1876 interdit le travail des enfants avant l’âge de 12 ans « en dehors de leur famille ». Une loi du même jour interdit l’emploi des femmes dans les mines. Mais ce n’est que par la loi du 31 octobre 1919 qu’un statut de salarié est introduit et ce sont les employés qui sont les premiers à en bénéficier et non pas les ouvriers qui doivent attendre 1970) avant de disposer d’un statut spécifique. Finalement, en 2008, la distinction entre ouvriers et employés - qui devient de plus en plus artificielle avec le temps – fait place au « statut unique » de salarié.",
               "figures": [
                 {
@@ -387,9 +397,8 @@
             {
               "from": 1900,
               "to": 1970,
-              "visibleKeys": ["v", "v3"],
-              "focusKeys": ["v", "v3"],
-              "colorKeys": { "v": "var(--secondary)", "v3": "var(--t1-colorkeys-tertiary)" },
+              "visibleKeys": ["v", "v2", "v3"],
+              "focusKeys": ["v", "v2", "v3"],
               "text": "Réponse à la croissance du salariat, le premier quart du 20ème siècle est aussi la période de mise en place de la législation de protection sociale (en 1901, l’assurance-maladie, en 1902, l’assurance-accidents et l’assurance pension et invalidité des ouvriers en 1911) et de la réglementation des conditions de travail en relation avec le renforcement des syndicats pendant la première guerre mondiale et l’agitation sociale la suivant. Le développement du système de sécurité sociale avant la deuxième guerre mondiale se reflète également dans la mise en place du régime d’assurance-pension des employés en 1931.",
               "figures": [
                 {
@@ -401,9 +410,8 @@
             {
               "from": 1900,
               "to": 1970,
-              "visibleKeys": ["v", "v3"],
-              "focusKeys": ["v", "v3"],
-              "colorKeys": { "v": "var(--secondary)", "v3": "var(--t1-colorkeys-tertiary)" },
+              "visibleKeys": ["v", "v2", "v3"],
+              "focusKeys": ["v", "v2", "v3"],
               "text": "Les décisions prises après la première guerre mondiale concernent l’introduction de la journée de 8 heures pour les ouvriers dans les industries occupant plus de 20 ouvriers (1918), le statut des employés privés (1919) prévoyant notamment des congés et la journée de 8 heures pour ceux-ci ; des secours de chômage (1921) ; la sécurité des travailleurs (création de l’Inspection du travail industriel en 1902) et la santé et la sécurité dans l’industrie et la construction (1924), la représentation des ouvriers dans l’entreprise (arrêté du 28 avril 1919 création les conseils d’usine, abrogé en 1921, puis création des délégations ouvrières par la loi du 8 mai 1925); la représentation des employés dans l’entreprise (statut du 31 octobre 1919 créant un « comité de délégation » dans les entreprises occupant plus de 15 ouvriers ; la création d’une Chambre des employés privés et d’une Chambre du Travail (loi du 4 avril 1924).",
               "figures": [
                 {
@@ -415,9 +423,8 @@
             {
               "from": 1900,
               "to": 1970,
-              "visibleKeys": ["v", "v3"],
-              "focusKeys": ["v", "v3"],
-              "colorKeys": { "v": "var(--secondary)", "v3": "var(--t1-colorkeys-tertiary)" },
+              "visibleKeys": ["v", "v2", "v3"],
+              "focusKeys": ["v", "v2", "v3"],
               "text": "L’augmentation de l’emploi peut être alimentée soit par les migrations (immigration et/ou frontaliers), soit par la propension des résidents de prendre un emploi. Dès l’année 1900, dans les commentaires de la Commission permanente de statistique sur les résultats des recensements, on trouve des analyses sur l’emploi « potentiel » en distinguant un âge dit « productif » et un « âge improductif ». Les délimitations de ces deux groupes n’est d’ailleurs pas univoque. Pour l’âge dit productif, les statisticiens de l’époque hésitent par exemple entre les classes d’âge 15-60 ans et 18-65 ans. Dans les analyses statistiques du début du 19ème siècle transparaît l’aspect moral attribué au travail, considéré comme utile pour l’individu, mais également comme un devoir envers la famille et la société.",
               "figures": [
                 {
@@ -428,9 +435,8 @@
             {
               "from": 1940,
               "to": 1970,
-              "visibleKeys": ["v", "v3"],
-              "focusKeys": ["v", "v3"],
-              "colorKeys": { "v": "var(--secondary)", "v3": "var(--t1-colorkeys-tertiary)" },
+              "visibleKeys": ["v", "v2", "v3"],
+              "focusKeys": ["v", "v2", "v3"],
               "text": "Sur le long terme, le travail  salarié  s’est largement répandu dans la société. Les auteurs de la Commission permanente de statistique, en commentant les résultats – concernant les résidents - du recensement de 1907 (fascicule 22 des publications de la Commission permanente de statistique) notent encore que : «… la population active est de 110 566 ou de 47,86% de la population totale. Dans ce nombre l’élément masculin est compris avec 86 320 et l’élément féminin avec 33 246 personnes, c’est-à-dire les actifs masculins forment 34,55% de la population totale et les actifs féminins 13,31% de la population totale ». Au début du 20ème siècle, le taux d’activité se situe donc en-dessous de 50% de la population. Les femmes sont beaucoup moins présentes sur le marché du travail (salarié) que les hommes et il faut attendre les années 1960-1970 pour voir l’emploi féminin se développer. En 2020, le taux d’emploi global atteint plus de 67%, soit près de 20 points de plus qu’au début du 20ème siècle.",
               "figures": [
                 {
@@ -442,9 +448,8 @@
             {
               "from": 1980,
               "to": 2020,
-              "visibleKeys": ["v", "v3"],
-              "focusKeys": ["v", "v3"],
-              "colorKeys": { "v": "var(--secondary)", "v3": "var(--t1-colorkeys-tertiary)" },
+              "visibleKeys": ["v", "v2", "v3"],
+              "focusKeys": ["v", "v2", "v3"],
               "text": "Sur la base de l’enquête sur les forces de travail (une enquête harmonisée au niveau européen existant depuis les années 1970), il est possible d’avoir une vue un peu plus détaillée sur les taux d’emploi. Sans surprise, le niveau de formation est propice à l’emploi.. Dans la classe d’âge des jeunes (15-24 ans), le taux d’emploi n’est que de 25% aujourd’hui et il est en recul depuis le début des années 1980 (où il fut encore de plus de 55%). Il s’agit d’une conséquence de la prolongation de la scolarité. Pour la classe d’âge des 50-64 ans, le taux d’emploi est en forte augmentation et les étrangers (migrant généralement au Luxembourg pour le travail) ont un taux d’emploi plus élevé que les Luxembourgeois. Finalement, le taux d’emploi des femmes se rapproche de celui des hommes et on peut lui imputer l’augmentation générale du taux d’emploi.",
               "figures": [
                 {
@@ -455,9 +460,8 @@
             {
               "from": 1900,
               "to": 1970,
-              "visibleKeys": ["v", "v3"],
-              "focusKeys": ["v", "v3"],
-              "colorKeys": { "v": "var(--secondary)", "v3": "var(--t1-colorkeys-tertiary)" },
+              "visibleKeys": ["v", "v2", "v3"],
+              "focusKeys": ["v", "v2", "v3"],
               "text": "En ce qui concerne le travail à temps partiel, depuis les années 1980 on peut distinguer 3 périodes : 1. Du milieu des années 1980 au milieu des années 1990, le temps partiel reste relativement marginal ; pour les hommes très faible (entre 1 et 2%), pour les femmes beaucoup plus élevé (17-19% en moyenne), mais sans véritable augmentation, ; 2. du milieu des années 1990 au milieu des années 2000, l’emploi à temps partiel des femmes augmente très fortement, ce qui explique une grande partie de l’augmentation générale du taux d’emploi dans cette période ; 3. finalement, à partir de 2005, le temps partiel des femmes à tendance à se tasser, alors que celui des hommes augmente (sans toutefois atteindre des proportions importantes). D’une manière générale c’est plutôt le travail à temps complet qui se développe, phénomène que l’on peut lier notamment à la disponibilité des structures d’accueil pour enfants.",
               "datasetLegend": "Travail à temps partiel selon le sexe, 1983-2020"
             }
