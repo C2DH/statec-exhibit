@@ -17,6 +17,7 @@ const ChapterVisualisations = ({
   displayPoints=false,
   displayDashedLine=false,
   keys=['v'], legend, data=[], modules=[], height=100, width=100, step,
+  colorKeys={},
   numStartAt=0,
   marginLeft=100,
   numericTranslationLabel='number',
@@ -108,7 +109,7 @@ const ChapterVisualisations = ({
             data={data}
             availableKeys={paragraph?.availableKeys ? paragraph.availableKeys: keys}
             focusKeys={paragraph?.focusKeys ? paragraph.focusKeys : paragraph?.visibleKeys }
-            colorKeys={paragraph?.colorKeys}
+            colorKeys={paragraph?.colorKeys || colorKeys}
             visibleKeys={paragraph?.visibleKeys ? paragraph.visibleKeys : paragraph?.availableKeys || keys}
             legend={legend}
             height={size.height}
