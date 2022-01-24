@@ -147,7 +147,8 @@ export function useMousePosition() {
 
 
 export const useURLSearchParams = () => {
-  return new URLSearchParams(useLocation().search);
+  const location = useLocation()
+  return new URLSearchParams(location.search);
 }
 
 /**
