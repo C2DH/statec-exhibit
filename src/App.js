@@ -1,5 +1,6 @@
 import React, {Suspense} from 'react'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import { QueryParamProvider } from 'use-query-params'
 import MainBackground from './components/MainBackground'
 import ScrollToTop from './components/ScrollToTop'
 import Header from './components/Header'
@@ -10,6 +11,9 @@ import About from './components/About'
 import MediaViewer from './components/MediaViewer'
 import Panel from './components/Panel'
 import { useStore } from './store'
+import { isMobile } from './logic/viewport'
+
+const VisualisationViewer = React.lazy(() => import ('./components/VisualisationViewer'))
 
 const AppPanels = () => {
   const color = useStore(state => state.backgroundColor)
@@ -23,12 +27,20 @@ const AppPanels = () => {
         <TableOfContents color={color}/>
       </Panel>
       <Panel name='viewer' color={color} Component={MediaViewer} />
+      {isMobile && (
+        <Panel name='vis' backgroundColor={color} color='var(--secondary)' >
+          <Suspense fallback='loading'>
+            <VisualisationViewer color='var(--secondary)' />
+          </Suspense>
+        </Panel>
+      )}
     </>
   )
 }
 const App = () => {
   return (
     <BrowserRouter>
+      <QueryParamProvider ReactRouterRoute={Route}>
       <ScrollToTop />
       <MainBackground />
       <AppPanels/>
@@ -39,6 +51,7 @@ const App = () => {
           <Route path="/:chapterId" component={Chapter} />
         </Switch>
       </Suspense>
+      </ QueryParamProvider>
     </BrowserRouter>
   );
 }
