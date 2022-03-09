@@ -121,7 +121,7 @@
     },
     "statec_002.png": {
       "caption": "Groupe de personnes, fête de famille, baptême devant une ferme (s.d.)",
-      "provenance": "Archives de la Ville de Dudelange - Fonds Jean-Pierre Conrardy",
+      "provenance": "Source: Archives de la Ville de Dudelange, Fonds Jean-Pierre Conrardy",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/statec_002.medium-w.jpg",
@@ -1270,7 +1270,7 @@
     },
     "HISAAJ000008N01.jpg": {
       "caption": "Défilé de mariage, fin 19ème siècle.",
-      "provenance": "© Luik / HISAAJ000008 / Fonds HISAAJ Commune de Feulen (Collection du CNA)",
+      "provenance": "Source: © Luik, HISAAJ000008, Fonds HISAAJ Commune de Feulen (Collection du CNA)",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/HISAAJ000008N01.medium-w.jpg",
@@ -1557,7 +1557,7 @@
     },
     "HISAAJ000588N01.jpg": {
       "caption": "Couple en studio, fin 19ème siècle.",
-      "provenance": "© Klein / HISAAJ000588 / Fonds HISAAJ Commune de Feulen (Collection du CNA)",
+      "provenance": "Source: © Klein, HISAAJ000588, Fonds HISAAJ Commune de Feulen (Collection du CNA)",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/HISAAJ000588N01.medium-w.jpg",
@@ -1598,7 +1598,7 @@
     },
     "wedding-bettel-wort-2015.jpg": {
       "caption": "Mariage de Xavier Bettel, 2015",
-      "provenance": "Copyright: Guy Jallay, Luxemburger Wort, 2015",
+      "provenance": "Source: © 2015 Guy Jallay, Luxemburger Wort",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/wedding-bettel-wort-2015.medium-w.jpg",
@@ -1679,8 +1679,8 @@
       "isPortrait": false
     },
     "forum-137-1992-le-mythe-du-suicide-demographique.png": {
-      "caption": "Le rapport Calot provoque des discussions animés et critiques dans la société luxembourgeoise. Couverture <i>Forum</i> n. 137, juillet 1992 (illustration Roger Folmer).",
-      "provenance": "Source : <a href='https://www.forum.lu/issue/le-mythe-du-suicide-demographique' target='_blank'>Forum.lu</a>",
+      "caption": "Le rapport Calot provoque des discussions animés et critiques dans la société luxembourgeoise. ",
+      "provenance": "Source: © Roger Folmer, Couverture Forum n. 137, juillet 1992, <a href='https://www.forum.lu/issue/le-mythe-du-suicide-demographique' target='_blank'>Forum.lu</a>",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/forum-137-1992-le-mythe-du-suicide-demographique.medium-w.jpg",
@@ -1761,8 +1761,8 @@
       "isPortrait": false
     },
     "ark_70795_gq9f7z_pages_11.jpg": {
-      "caption": "Gérard Calot (à gauche). Lëtzebuerger Land du 30 mars 1979, p.11.",
-      "provenance": "Source : <a href='https://viewer.eluxemburgensia.lu/ark:70795/gq9f7z/pages/11?search=%2a' target='_blank'>eLuxemburgensia</a>",
+      "caption": "Gérard Calot (à gauche)",
+      "provenance": "Source : Lëtzebuerger Land du 30 mars 1979, p.11, <a href='https://viewer.eluxemburgensia.lu/ark:70795/gq9f7z/pages/11?search=%2a' target='_blank'>eLuxemburgensia</a>",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/ark_70795_gq9f7z_pages_11.medium-w.jpg",
@@ -2092,7 +2092,7 @@
     },
     "article_numbreuses_au_Lux.png": {
       "caption": "Oeuvre pour les familles nombreuses au Luxembourg",
-      "provenance": "<i>L'indépendance luxembourgeoise</i>, édition de 17h, 11 mars 1926",
+      "provenance": "Source: L'indépendance luxembourgeoise, édition de 17h, 11 mars 1926",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/article_numbreuses_au_Lux.medium-w.jpg",
@@ -2133,7 +2133,7 @@
     },
     "bulletin_familles_nombreuses_2.jpg": {
       "caption": "Bulletin du recensement de la population de 1843 (commune d'Alscheid). Exemple d'une famille nombreuse",
-      "provenance": "Archives nationales, Recensements de la population",
+      "provenance": "Source: Archives nationales, Recensements de la population",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/bulletin_familles_nombreuses_2.medium-w.jpg",
@@ -2174,7 +2174,7 @@
     },
     "Planning_familial.png": {
       "caption": "Publicité \"Planning Familial\"",
-      "provenance": "<em>Lëtzebuerger Land</em> du 6 avril 1990, p.7 (<a href='https://viewer.eluxemburgensia.lu/ark:70795/7xs200/pages/7/articles/DTL128?search=%2a' target='_blank'>eLuxemburgensia</a>)",
+      "provenance": "Source: Lëtzebuerger Land, 6 avril 1990, p.7, <a href='https://viewer.eluxemburgensia.lu/ark:70795/7xs200/pages/7/articles/DTL128?search=%2a' target='_blank'>eLuxemburgensia</a>",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/Planning_familial.medium-w.jpg",
@@ -2214,8 +2214,8 @@
       "isPortrait": true
     },
     "etat_civil_de_la_Ville_de_Luxembourg.png": {
-      "caption": "\"Renseignements variés\". <em>L'indépendance luxembourgeoise</em> du 12 septembre 1891, no. 255 & 256.",
-      "provenance": "Source: <a href='https://viewer.eluxemburgensia.lu/ark:70795/vjv0q7/pages/3/articles/DTL48?search=mariage'>eLuxemburgensia</a>",
+      "caption": "\"Renseignements variés\"",
+      "provenance": "Source: L'indépendance luxembourgeoise, 12 septembre 1891, no. 255 & 256, <a href='https://viewer.eluxemburgensia.lu/ark:70795/vjv0q7/pages/3/articles/DTL48?search=mariage'>eLuxemburgensia</a>",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/etat_civil_de_la_Ville_de_Luxembourg.medium-w.jpg",
@@ -2256,6 +2256,7 @@
     },
     "divorce_law.jpg": {
       "caption": "Loi du 20 septembre 1792 sur le divorce en France",
+      "provenance": "Source: Placeholder",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/divorce_law.medium-w.jpg",
@@ -2296,7 +2297,7 @@
     },
     "Image_Napoleon.jpg": {
       "caption": "Jean Baptiste Mauzaisse, \"Napoléon Ier couronné par le Temps, écrit le Code Civil\", 1883 ",
-      "provenance": "© RMN – musée du château de Malmaison / D. Arnaudet",
+      "provenance": "Source: © D. Arnaudet, musée du château de Malmaison (RMN)",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/Image_Napoleon.medium-w.jpg",
@@ -2337,7 +2338,7 @@
     },
     "statistique_le_divorce.jpg": {
       "caption": "Statistiques concernant le divorce. Demande du Ministre d'Etat aux officiers de l'état civil, 1904",
-      "provenance": "Archives nationales, Dossier J-057",
+      "provenance": "Source: Archives nationales, Dossier J-057",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/statistique_le_divorce.medium-w.jpg",
@@ -2378,7 +2379,7 @@
     },
     "manifestation_étudiants.jpg": {
       "caption": "Photo manifestation étudiants (fin des années 1960 / début des années 1970)",
-      "provenance": "Claude Wolf, <em>Tageblatt Lëtzebuerg</em>, 26 Septembre 2017",
+      "provenance": "Source: Claude Wolf, Tageblatt Lëtzebuerg, 26 Septembre 2017",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/manifestation_étudiants.medium-w.jpg",
@@ -2459,8 +2460,8 @@
       "isPortrait": true
     },
     "ark_70795_mgrvsx_pages_8.jpg": {
-      "caption": "René Clesse, <a href='https://viewer.eluxemburgensia.lu/ark:70795/mgrvsx/pages/8/articles/DTL288?search=Amiperas' target='_blank'>Das Alter, ein Sozialfall?</a>, article paru dans le <i>Lëtzebuerger Land</i> le 8 octobre 1982. N.B.: L'Amiperas (Amicale des personnes retraitées, âgées ou solitaires) est créée en 1963 au Luxembourg.",
-      "provenance": "source <a href='https://viewer.eluxemburgensia.lu/ark:70795/mgrvsx/pages/8/articles/DTL288?search=Amiperas' target='_blank'>eLuxemburgensia</a>",
+      "caption": "L'Amiperas (Amicale des personnes retraitées, âgées ou solitaires) est créée en 1963 au Luxembourg.",
+      "provenance": "Source: Das Alter, ein Sozialfall? René Clesse, Lëtzebuerger Land, 8 octobre 1982, <a href='https://viewer.eluxemburgensia.lu/ark:70795/mgrvsx/pages/8/articles/DTL288?search=Amiperas' target='_blank'>eLuxemburgensia</a>",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/ark_70795_mgrvsx_pages_8.medium-w.jpg",
@@ -2501,7 +2502,7 @@
     },
     "1899-img332athenee.jpg": {
       "caption": "L'Athénée, Luxembourg à la fin du 19ème siècle.",
-      "provenance": "Source : <a href='https://www.industrie.lu/athenee.html' target='_blank'>industrie.lu</a>",
+      "provenance": "Source: <a href='https://www.industrie.lu/athenee.html' target='_blank'>industrie.lu</a>",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/1899-img332athenee.medium-w.jpg",
@@ -2581,7 +2582,7 @@
     },
     "rentenmauer-eluxemburgensia.png": {
       "caption": "\"Mit dem Kopf durch die Rentenmauer\"",
-      "provenance": "Lëtzebuerger Land du 7 juin 2002, p.1,8-9",
+      "provenance": "Source: Lëtzebuerger Land du 7 juin 2002, p.1, 8-9",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/rentenmauer-eluxemburgensia.medium-w.jpg",
@@ -2622,7 +2623,7 @@
     },
     "PIB-depenses.png": {
       "caption": "Dépenses pour pensions en 2018 en % du PIB",
-      "provenance": "Source : Eurostat",
+      "provenance": "Source: Eurostat",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/PIB-depenses.medium-w.jpg",
@@ -2662,8 +2663,8 @@
       "isPortrait": false
     },
     "Athénée_de_Luxembourg_01.jpg": {
-      "caption": "L'Athénée, Luxembourg, 2010. Photo: <a href='https://commons.wikimedia.org/wiki/User:Cayambe' target='_blank'>Claude Meisch</a>",
-      "provenance": "Source: <a href='https://commons.wikimedia.org/wiki/File:Ath%C3%A9n%C3%A9e_de_Luxembourg_01.jpg' target='_blank'>wikimedia</a>",
+      "caption": "L'Athénée, Luxembourg, 2010",
+      "provenance": "Source: <a href='https://commons.wikimedia.org/wiki/User:Cayambe' target='_blank'>Claude Meisch</a>, <a href='https://commons.wikimedia.org/wiki/File:Ath%C3%A9n%C3%A9e_de_Luxembourg_01.jpg' target='_blank'>wikimedia</a>",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/Athénée_de_Luxembourg_01.medium-w.jpg",
@@ -2786,7 +2787,7 @@
     },
     "LW_Foto_copyright_Lucien_Wolff_Luxemburger_Wort_2019.jpeg": {
       "caption": "Luxembourg Pride Week",
-      "provenance": "© 2021 Luxemburger Wort – Photographe : Lucien Wolff – Tous droits réservés – Des licences d’utilisation de droits d’auteur peuvent être obtenues à travers www.luxorr.lu ",
+      "provenance": "Source: © 2021 Lucien Wolff, Luxemburger Wort",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/LW_Foto_copyright_Lucien_Wolff_Luxemburger_Wort_2019.medium-w.jpg",

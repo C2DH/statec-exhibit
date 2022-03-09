@@ -444,7 +444,7 @@
               "datasetKeys": ["v"],
               "datasetColorKeys": { "v":  "var(--secondary)"},
               "datasetExtent": [1870, 2021],
-              "datasetLegend": "Mortalité infantile, 1871-2020. <br/>Source : STATEC"
+              "datasetLegend": "Mortalité infantile, 1871-2020. <br/>Source: STATEC"
             },
             {
               "from": 1947,
@@ -459,7 +459,7 @@
               "datasetKeys": ["v1", "v2"],
               "datasetColorKeys": { "v1":  "var(--dataset-t2-v)", "v2": "var(--dataset-t2-v1)"},
               "datasetExtent": [1945, 2020],
-              "datasetLegend": "Espérance de vie à 60 ans, 1946-2019. <br/>Source : STATEC (extrait de <a href='https://statistiques.public.lu/stat/TableViewer/tableViewHTML.aspx?sCS_ChosenLang=fr&ReportId=12883'>Espérance de vie à certains âges 1946 - 2020</a>)"
+              "datasetLegend": "Espérance de vie à 60 ans, 1946-2019. <br/>Source: STATEC (extrait de <a href='https://statistiques.public.lu/stat/TableViewer/tableViewHTML.aspx?sCS_ChosenLang=fr&ReportId=12883'>Espérance de vie à certains âges 1946 - 2020</a>)"
             },
             {
               "from": 1947,
@@ -523,7 +523,7 @@
               "datasetKeys": ["v", "v2"],
               "datasetDisplayDashedLine": false,
               "datasetColorKeys": { "v2": "var(--dataset-t2-v)", "v": "var(--dataset-t2-v1)"},
-              "datasetLegend": "Espérance de vie des hommes et des femmes à 65 ans, 2005-2019. <br/>Source : Eurostat"
+              "datasetLegend": "Espérance de vie des hommes et des femmes à 65 ans, 2005-2019. <br/>Source: Eurostat"
             }, {
               "from": 2005,
               "to": 2020,
@@ -537,7 +537,7 @@
               "datasetLayout": "Lines",
               "datasetKeys": ["v2", "v3"],
               "datasetColorKeys": { "v3": "var(--dataset-t2-v)", "v2": "var(--dataset-t2-v1)"},
-              "datasetLegend": "Espérance de vie <b>en bonne santé</b> des hommes et des femmes à 65 ans, 2005-2019. <br/>Source : Eurostat"
+              "datasetLegend": "Espérance de vie <b>en bonne santé</b> des hommes et des femmes à 65 ans, 2005-2019. <br/>Source: Eurostat"
             }
           ]
         }
