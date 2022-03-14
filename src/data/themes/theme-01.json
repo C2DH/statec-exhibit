@@ -104,7 +104,7 @@
           "datasetLayout": "Lines",
           "datasetKeys": ["v","v1","v2","v3","v4"],
           "datasetExtent": [1850, 2000],
-          "datasetLegend": "Densité de la population en nombre d'habitants par kilomètre carré. <br/><a href='https://statistiques.public.lu/fr/methodologie/definitions/D/densitepopulation/index.html' target='_blank'>(en savoir plus sur cet indicateur)</a>",
+          "datasetLegend": "Densité de la population en nombre d'habitants par kilomètre carré. <br/><a href='https://statistiques.public.lu/fr/methodologie/definitions/D/densitepopulation/index.html' target='_blank'>(en savoir plus sur cet indicateur)</a> <br/>Source: STATEC",
           "datasetColorKeys": { "v": "#f171a1", "v1": "#fccd05", "v2": "#ff944a", "v3" : "#a64ac9", "v4" : "blue" }
         },
         {
@@ -115,7 +115,7 @@
           "focusKeys": ["v"],
           "dataset": "PopulationDensity",
           "datasetLayout": "Lines",
-          "datasetLegend": "Densité de la population en nombre d'habitants par kilomètre carré. <br/><a href='https://statistiques.public.lu/fr/methodologie/definitions/D/densitepopulation/index.html' target='_blank'>(en savoir plus sur cet indicateur)</a>",
+          "datasetLegend": "Densité de la population en nombre d'habitants par kilomètre carré. <br/><a href='https://statistiques.public.lu/fr/methodologie/definitions/D/densitepopulation/index.html' target='_blank'>(en savoir plus sur cet indicateur)</a> <br/>Source: STATEC",
           "datasetKeys": ["v","v1","v2","v3","v4"],
           "datasetExtent": [1990, 2021],
           "datasetColorKeys": { "v": "#f171a1", "v1": "#fccd05", "v2": "#ff944a", "v3" : "#a64ac9", "v4" : "blue"}
@@ -134,6 +134,7 @@
           "text": "Des années 1850 aux années 1960, les variations du <a href='https://statistiques.public.lu/fr/methodologie/definitions/S/soldetotal/index.html' target='_blank'>solde global</a> sont largement dues à l'impact des variations du <a href='https://statistiques.public.lu/fr/methodologie/definitions/S/soldenaturel/index.html' target='_blank'> solde naturel</a>, c'est-à-dire du jeu entre la mortalité et la natalité.",
           "dataset": "PopulationBalanceDetails",
           "datasetLayout": "Flowers",
+          "datasetLegend": "Source: STATEC",
           "datasetKeys": ["v2", "v3"]
         },
         {
@@ -146,6 +147,7 @@
           "figures": [{ "id": "courriergdl-1866-04-15-a-i0004.png" }],
           "dataset": "PopulationBalanceDetails",
           "datasetLayout": "Flowers",
+          "datasetLegend": "Source: STATEC",
           "datasetKeys": ["v3"]
         },
         {
@@ -180,7 +182,7 @@
           "text": "A partir du milieu des années 1960, le solde naturel diminue fortement. Ce n'est pas dû à des « accidents » de l'histoire (comme les crises économiques ou sanitaires ou les deux guerres mondiales), mais à une baisse structurelle importante de la fécondité (c'est-à-dire du nombre d'enfants par femme).<br/>Le nombre de naissances passe de <b class='bold'>5 297</b> en 1965 à <b class='bold'>3 915</b> en 1976. <br/>En 1976, le solde naturel est de - 600 (c'est-à-dire qu'il y a 600 décès de plus que de naissances), alors qu'en 1965 le solde fut encore très positif (+ 1 250).",
           "dataset": "FertilityRatesByAge",
           "datasetLayout": "Lines",
-          "datasetLegend": "Indicateur de fecondité du Luxembourg, Belgique et Portugal (1970-1990)<br/><a href='https://statistiques.public.lu/fr/methodologie/definitions/I/indicatconjonfecondite/index.html' target='_blank'>(en savoir plus sur cet indicateur)</a>",
+          "datasetLegend": "Indicateur de fecondité du Luxembourg, Belgique et Portugal (1970-1990)<br/><a href='https://statistiques.public.lu/fr/methodologie/definitions/I/indicatconjonfecondite/index.html' target='_blank'>(en savoir plus sur cet indicateur)</a> </br>Source: STATEC",
           "datasetKeys": ["v", "v1", "v2"],
           "datasetColorKeys": { "v": "#f171a1", "v1": "#a64ac9", "v2": "blue" }
         },
@@ -268,7 +270,7 @@
           "text": "Puis les Italiens, souvent des ouvriers mobiles (célibataires ou non-accompagnés par leurs familles), prennent le relais. La part de la population étrangère dans la population résidente est passée de 3% en 1871 à plus de 15% en 1910. En 1910, on compte 39&nbsp;723 étrangers au total au Luxembourg, dont 24&nbsp;134 hommes et 15&nbsp;589 femmes. En d’autres mots, parmi les étrangers, il y a à ce moment-là 55% hommes de plus que de femmes. Pour les Luxembourgeois, au contraire, les proportions des hommes et des femmes sont proches (moitié d’hommes, autour de 110&nbsp;000, et moitié de femmes, également quelque 110&nbsp;000).",
           "figures": [{ "id": "statec_003.png" }],
           "dataset": "ResidentsByNationality",
-          "datasetLegend": "Part des étrangers, 1875-1910",
+          "datasetLegend": "Part des étrangers, 1875-1910 </br>Source: STATEC",
           "datasetLayout": "Lines",
           "datasetExtent": [1875, 1910]
         },
@@ -317,7 +319,7 @@
           "dataset": "PopulationCompositionByNationalities",
           "datasetKeys": ["v1", "v2", "v3", "v4", "v5", "v6", "v8"],
           "datasetLayout": "Compare",
-          "datasetLegend": "Composition de la population étrangère au Luxembourg, 1970-1991",
+          "datasetLegend": "Composition de la population étrangère au Luxembourg, 1970-1991 </br>Source: STATEC",
           "hotspots": [
             {
               "text": "Accord entre le Grand-Duché de Luxembourg et la République portugaise relatif à l'emploi des travailleurs portugais au Luxembourg, signé le 20 mai 1970. Entré en vigueur le 14 avril 1972",
@@ -334,7 +336,7 @@
           "dataset": "PopulationCompositionByNationalities",
           "datasetKeys": ["v", "v2", "v3", "v4", "v5", "v6", "v8"],
           "datasetLayout": "Compare",
-          "datasetLegend": "Composition de la population étrangère au Luxembourg, 1991-2011"
+          "datasetLegend": "Composition de la population étrangère au Luxembourg, 1991-2011 </br>Source: STATEC"
         },
         {
           "from": 2008,
