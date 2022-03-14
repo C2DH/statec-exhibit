@@ -31,6 +31,10 @@
   font-size: 1.25rem;
   text-align: left;
 }
+
+.Home_Footer, .Home_Footer .Footer_statec {
+  margin-bottom: var(--spacer-5);
+}
 // -m
 @media screen and (min-width: 30em) {
   .Home_paragraphsWrapper{
