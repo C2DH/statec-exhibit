@@ -33,7 +33,9 @@ const VisualisationViewer = ({ color='white' }) => {
     return null
   }
   const keys = Object.keys(data ? data.legend : {}).filter(k => k !== 't')
-
+  const colorKeys = Array.isArray(chapter.sections)
+    ? chapter.sections[sectionId].colorKeys
+    : chapter.colorKeys
 
   return (
     <div style={{color}}>
@@ -46,6 +48,7 @@ const VisualisationViewer = ({ color='white' }) => {
           datasetId = {datasetId}
           data = {data}
           keys = {keys}
+          colorKeys={colorKeys}
           from = {from}
           to = {to}
           height = {height}

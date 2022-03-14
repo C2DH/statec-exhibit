@@ -27,6 +27,7 @@ const VisualisationViewerWrapper = ({
   datasetId,
   data,
   keys,
+  colorKeys,
   from,
   to,
   height,
@@ -70,7 +71,7 @@ const VisualisationViewerWrapper = ({
       data={data}
       id={datasetId}
       layout="Lines"
-      colorKeys={paragraph.colorKeys}
+      colorKeys={paragraph.colorKeys || colorKeys}
       keys={paragraph.visibleKeys || keys}
       from={withAllValues ? undefined : from}
       to={withAllValues ? undefined : to}
