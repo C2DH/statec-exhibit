@@ -1,5 +1,7 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
+import Footer from '../components/Footer'
+import '../styles/pages/about.css'
 
 
 const About = ({ color='white' }) => {
@@ -11,6 +13,8 @@ const About = ({ color='white' }) => {
       <div dangerouslySetInnerHTML={{ __html: t('AboutIntroduction')}} />
       <div dangerouslySetInnerHTML={{ __html: t('AboutConcept')}} />
       <div dangerouslySetInnerHTML={{ __html: t('AboutDevelopment')}} />
+
+      <Footer color={color} className="About_Footer flex flex-column items-start mv4 mv3-ns"/>
       </section>
     </div>
   )

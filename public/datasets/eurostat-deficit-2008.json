@@ -1,0 +1,19 @@
+{
+  "id": "eurostat-deficit-2008",
+  "title": "Euro area and EU27 government deficit (% of GDP)",
+  "source": "Eurostat",
+  "sourceUrl": "https://ec.europa.eu/eurostat/documents/2995521/5046142/2-22042010-BP-EN.PDF",
+  "timeFormat": "YYYY",
+  "legend": {
+    "t": "year",
+    "v": "Euro area (EA16)",
+    "v1":	"EU27",
+    "v2":	"Luxembourg"
+  },
+  "values": [
+    { "t": 2006, "v": 68.3, "v1": 61.4, "v2": 6.5},
+    { "t": 2007, "v": 66.0, "v1": 58.8, "v2": 6.7},
+    { "t": 2008, "v": 69.4, "v1": 61.6, "v2": 13.7},
+    { "t": 2009, "v": 78.7, "v1": 73.6, "v2": 14.5}
+  ]
+}
