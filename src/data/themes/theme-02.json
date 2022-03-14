@@ -294,7 +294,7 @@
               "datasetKeys": ["v", "v1"],
               "datasetColorKeys": { "v": "var(--dataset-t2-v)", "v1": "var(--dataset-t2-v1)"},
               "datasetExtent": [1900, 2021],
-              "datasetLegend": "Indicateur conjoncturel de fécondité et seuil de remplacement des générations"
+              "datasetLegend": "Indicateur conjoncturel de fécondité et seuil de remplacement des générations </br>Source: STATEC"
             },
             {
               "availableKeys": ["v4"],
@@ -308,7 +308,7 @@
               "datasetExtent": [1960, 2000],
               "datasetKeys": ["v", "v1", "v2"],
               "datasetColorKeys": { "v": "var(--dataset-t2-v)", "v1": "var(--dataset-t2-v1)"},
-              "datasetLegend": "Indicateur conjoncturel de fécondité 1967 - 2000",
+              "datasetLegend": "Indicateur conjoncturel de fécondité 1967 - 2000 </br>Source: STATEC",
               "datasetHidePercentage": true
             },
             {
@@ -323,7 +323,7 @@
               "datasetExtent": [1990, 2020],
               "datasetKeys": ["v1", "v2"],
               "datasetColorKeys": { "v2": "var(--dataset-t2-v)", "v1": "var(--dataset-t2-v1)"},
-              "datasetLegend": "Taux d'activité des hommes et des femmes au Luxembourg, 1993-2019"
+              "datasetLegend": "Taux d'activité des hommes et des femmes au Luxembourg, 1993-2019 </br>Source: STATEC"
             },
             {
               "availableKeys": ["v4"],
@@ -367,7 +367,7 @@
               "datasetKeys": ["v", "v1"],
               "datasetColorKeys": { "v": "var(--dataset-t2-v)", "v1": "var(--dataset-t2-v1)"},
               "datasetExtent": [1900, 2021],
-              "datasetLegend": "Espérance de vie à la naissance est le nombre moyen d'années qu'un groupe d'individus peut s'attendre à vivre à l'âge 0"
+              "datasetLegend": "Espérance de vie à la naissance est le nombre moyen d'années qu'un groupe d'individus peut s'attendre à vivre à l'âge 0 </br>Source: STATEC"
             },
             {
               "from": 1871,
@@ -410,7 +410,7 @@
               "datasetKeys": ["v", "v1", "v2"],
               "datasetColorKeys": {"v2": "var(--t2-colorkeys-primary)", "v": "var(--t2-colorkeys-secondary)", "v1":"var(--t2-colorkeys-tertiary)"},
               "datasetExtent": [1930, 2021],
-              "datasetLegend": "Nombre de personnes par classe d'âge"
+              "datasetLegend": "Nombre de personnes par classe d'âge </br>Source: STATEC"
             },
             {
               "from": 1871,

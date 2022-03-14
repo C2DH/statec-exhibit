@@ -81,7 +81,7 @@
               "datasetKeys": ["v", "v1"],
               "datasetColorKeys": { "v": "var(--dataset-t2-v)", "v1": "var(--dataset-t2-v1)"},
               "datasetExtent": [1960, 2021],
-              "datasetLegend": "L'emploi en milliers de personnes"
+              "datasetLegend": "L'emploi en milliers de personnes </br>Source: STATEC"
             },
             {
               "from": 1980,
