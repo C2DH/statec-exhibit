@@ -36,8 +36,7 @@
               "to": 1947,
               "figures": [
                 {
-                  "id": "Picture_4p1-1.png",
-                  "caption": "Arrêté du 30 septembre 1905 prescrivant un recensement général de la population du Grand-Duché au 1er décembre 1905"
+                  "id": "Picture_4p1-1.png"
                 }
               ]
             },
@@ -49,8 +48,7 @@
               "focusKeys": ["v"],
               "figures": [
                 {
-                  "id": "Picture_4p1-2.png",
-                  "caption": "Le chômage avant la première guerre selon le journal « Der arme Teufel » d’obédience social-démocate (extrait du journal du 24.8.1913)"
+                  "id": "Picture_4p1-2.png"
                 }
               ]
             },
@@ -62,8 +60,7 @@
               "focusKeys": ["v"],
               "figures": [
                 {
-                  "id": "Picture_4p1-3.png",
-                  "caption": "Les « bureaux de placement » (1913). Source : <a href='https://data.legilux.public.lu/file/eli-etat-leg-memorial-1913-58-fr-pdf.pdf' target='_blank'>Legilux</a>"
+                  "id": "Picture_4p1-3.png"
                 }
               ]
             },
@@ -75,12 +72,10 @@
               "focusKeys": ["v"],
               "figures": [
                 {
-                  "id": "Picture_4p1-4a.tif",
-                  "caption": "Ouvriers ayant contribué à la construction du Pont du Pfaffenthal  en 1921. <br /> Source : Photothèque de la Ville de Luxembourg (extrait de STATEC, L’économie luxembourgeoise au 20ème siècle, Luxembourg, 1999)"
+                  "id": "Picture_4p1-4a.tif"
                 },
                 {
-                  "id": "Picture_4p1-4b.png",
-                  "caption": "Discours de Pierre Krier, le 1er mai 1932 à Esch-sur-Alzette. Source : <a href='http://www.ogbl.lu/blog/le-1er-mai-jour-de-lutte-et-de-fete-pour-le-mouvement-syndical/' target='_blank'>OGBL</a>"
+                  "id": "Picture_4p1-4b.png"
                 }
               ]
             },
@@ -92,8 +87,7 @@
               "focusKeys": ["v"],
               "figures": [
                 {
-                  "id": "Picture_4p1-5.png",
-                  "caption": "Arrêté grand-ducal du 6 août 1921 portant réglementation des secours de chômage. <br/> Source : <a href='https://legilux.public.lu/eli/etat/leg/agd/1921/08/06/n2/jo' target='_blank'>Legilux</a>"
+                  "id": "Picture_4p1-5.png"
                 }
               ]
             }
@@ -120,8 +114,7 @@
               "text": "La crise économique suivant la première guerre mondiale fait du chômage un fait social majeur, avec un maximum de 1 558 chômeurs indemnisés en 1921. Si dans les années 1920, le chômage (indemnisé) redevient un phénomène assez marginal (l’économie est en phase ascendante), ce n’est plus le cas au début des années 1930 (la crise économique mondiale atteignant alors le Luxembourg). Le nombre de chômeurs indemnisés atteint un maximum de 2&nbsp;159. Dans la deuxième moitié des années 1930, le chômage redevient assez rare avant de rebondir à la veille de la deuxième guerre mondiale.",
               "figures": [
                 {
-                  "id": "Picture_4p2-1.png",
-                  "caption": "La politique sociale du gouvernement Reuter (Extrait du journal L’Indépendance ) <br/> Source : <a href='https://viewer.eluxemburgensia.lu/ark:70795/8d4j0p/pages/2/articles/DTL52?search=chômage%201921' target='_blank'>e-luxemburgensia</a>"
+                  "id": "Lindependance.png"
                 }
               ]
             },
@@ -129,7 +122,7 @@
               "from": 1973,
               "to": 1981,
               "text": "Après la deuxième guerre mondiale, un élan de « solidarité nationale et sociale » traverse le Luxembourg comme d’autres pays. Les allocations familiales sont introduites de façon institutionnelle par la loi du 20 octobre 1947. Par l’arrêté grand-ducal du 24 mai 1945, la condition d’indigence rendant le chômeur éligible pour les indemnités est supprimée et l’Office national du travail est créé. La responsabilité passe donc du niveau local au niveau national. Concrètement, la question du chômage disparaît cependant de l’agenda socio-politique. Dans ce sens les « Trente Glorieuses » portent bien leur nom. Les observateurs, comme, Carlo Hemmer, notent d’ailleurs que la croissance de la population autochtone n’est pas suffisante pour répondre à l’offre de travail de la part des entreprises (l’ajustement se fait par l’immigration), ce qui a certainement favorisé l’absence de chômage visible et déclaré.",
-              "figures":[{ "id": "Picture_4p2-2.png", "caption": "L’ajustement se fait par l’immigration <br/> Source : <a href='https://viewer.eluxemburgensia.lu/ark:70795/rfzswk/pages/3/articles/DTL100' target='_blank'>e-luxemburgensia</a>"}]
+              "figures":[{ "id": "Picture_4p2-2.png"}]
             }
           ],
           "removed_paragraphs": [
@@ -139,8 +132,7 @@
               "text": "En ce qui concerne les statistiques su chômage, dès les années 1960 on avait pris conscience au niveau européen de la nécessité d’harmoniser ces statistiques pour des raisons de comparabilité. Dans les pays européens, les données sur le chômage sont, jusque-là, essentiellement basées sur des critères administratifs et légaux qui divergent évidemment d’un pays à l’autre. Une première tentative d'enquête sur les forces de travail au niveau de l’Europe des 6 remonte à 1960.  Jusqu'en 1968, elle n’est pas renouvelée et le Luxembourg est absent de cette dernière tentative. Avec l’élargissement européen en 1973, un règlement sur l’organisation de l'enquête est adopté par le Conseil de ministres européen. Des enquêtes bisannuelles sont initiées (1975, 1977, 1979 et 1981), mais le Luxembourg est absent de celle de 1981.",
               "figures": [
                 {
-                  "id": "Picture_4p3-2.png",
-                  "caption": "La question des statistiques du chômage au niveau européen en 1975.<br/> Source : e-luxemburgensia Lëtzebuerger Land, du 19 septembre 1975"
+                  "id": "Picture_4p3-2.png"
                 }
               ]
             },
@@ -150,8 +142,7 @@
               "text": "Les définitions utilisées dans les premières enquêtes européennes sur les forces de travail sont imprécises. Une terminologie et des concepts communs sur le plan international n’existent pas. En 1982, la 13ème conférence internationale des statisticiens du travail, qui se tient dans le cadre de de l'Organisation internationale du travail (OIT, BIT), prend une résolution concernant les statistiques de la population active, de l'emploi, du chômage et du sous-emploi. La catégorisation statistique est précisée. C’est donc à partir de cette date que des statistiques sur le chômage et l’emploi cohérentes et comparables dans le temps et entre pays européens sont publiées. Au Luxembourg – comme dans beaucoup d’autres pays européens - deux séries sur le chômage coexistent à partir de ce moment, une série du chômage administratif (chômeurs inscrits) et une série basée sur l’enquête EFT (qualifiée aussi « chômage au sens du BIT »). Un chômeur au sens du Bureau International du Travail (BIT) est une personne âgée de 15 ans ou plus sans emploi durant une semaine donnée ; disponible pour travailler dans les deux semaines ; qui a effectué, au cours des quatre dernières semaines, une démarche active de recherche d’emploi ou a trouvé un emploi qui commence dans les trois mois.",
               "figures": [
                 {
-                  "id": "Picture_4p3-3.png",
-                  "caption": "Résolution de la Conférence Internationale des statisticiens du travail de 1982 (extrait).<br/>Source : <a href='https://www.ilo.org/wcmsp5/groups/public/---dgreports/---stat/documents/normativeinstrument/wcms_087482.pdf' target='_blank'>Organisation intrnationale du Travail</a>"
+                  "id": "picture_4p3-3.png"
                 }
               ]
             },
@@ -171,27 +162,26 @@
               "colorKeys": { "v": "var(--secondary)", "v1": "var(--datakey-v1)", "v2": "var(--datakey-v)"},
               "text": "C’est à partir de la crise pétrolière de 1974 et ses répercussions sur l’économie mondiale (et plus spécifiquement sur la sidérurgie luxembourgeoise) que la question du chômage commence à se concrétiser au Grand-Duché. Au niveau légal, c’est en 1975-1976 qu’une modernisation des secours de chômage intervient. Par la loi du 26 juillet 1975 des allocations en cas de chômage partiel de source conjoncturelle sont introduites, en même temps que les « travaux extraordinaires d’intérêt général » (EIG) à charge de l’Etat. La loi du 21 février 1976 concerne l’organisation et le fonctionnement de l’Administration de l’emploi, ADEM (qui remplace l’Office national du travail).",
               "figures": [{
-                "id": "Picture_4p2-1.png",
-                "caption": "La réforme des secours de chômage 1975-1976 dans D'Lëtzebuerger land du 28 février 1975. <br/> Source : <a href='' target='_blank'>e-luxemburgensia </a>"
+                "id": "Picture_4p2-1.png"
               }]
             },
             {
               "from": 1973,
               "to": 1981,
               "text": "En ce qui concerne les statistiques su chômage, dès les années 1960 on avait pris conscience au niveau européen de la nécessité d’harmoniser ces statistiques pour des raisons de comparabilité. Dans les pays européens, les données sur le chômage sont, jusque-là, essentiellement basées sur des critères administratifs et légaux qui divergent évidemment d’un pays à l’autre. Une première tentative d'enquête sur les forces de travail au niveau de l’Europe des 6 remonte à 1960. Jusqu'en 1968, elle n’est pas renouvelée et le Luxembourg est absent de cette dernière tentative. Avec l’élargissement européen en 1973, un règlement sur l’organisation de l'enquête est adopté par le Conseil de ministres européen. Des enquêtes bisannuelles sont initiées (1975, 1977, 1979 et 1981), mais le Luxembourg est absent de celle de 1981.",
-              "figures": [{"id": "Picture_4p3-2.png", "caption": "La question des statistiques du chômage au niveau européen en 1975.  Lëtzebuerger Land, du 19 septembre 1975. <br/> Source : <a href='https://viewer.eluxemburgensia.lu/ark:70795/tf06bg/pages/6/articles/DTL152' target='_blank'>e-luxemburgensia</a>"}]
+              "figures": [{"id": "picture_4p3-2.png"}]
             },
             {
               "from": 1982,
               "to": 2020,
               "text": "Les définitions utilisées dans les premières enquêtes européennes sur les forces de travail sont imprécises. Une terminologie et des concepts communs sur le plan international n’existent pas. En 1982, la 13ème conférence internationale des statisticiens du travail, qui se tient dans le cadre de de l'Organisation internationale du travail (OIT, BIT), prend une résolution concernant les statistiques de la population active, de l'emploi, du chômage et du sous- emploi. La catégorisation statistique est précisée. C’est donc à partir de cette date que des statistiques sur le chômage et l’emploi cohérentes et comparables dans le temps et entre pays européens sont publiées. Au Luxembourg – comme dans beaucoup d’autres pays européens - deux séries sur le chômage coexistent à partir de ce moment, une série du chômage administratif (chômeurs inscrits) et une série basée sur l’enquête EFT (qualifiée aussi «&nbsp;chômage au sens du BIT&nbsp;»).",
-              "figures": [{"id": "Picture_4p3-3.png", "caption": "Résolution de la Conférence Internationale des statisticiens du travail de 1982 (extrait). <br/> Source : <a href='https://www.ilo.org/wcmsp5/groups/public/---dgreports/---stat/documents/normativeinstrument/wcms_087482.pdf' target='_blank'>Organisation internationale du Travail</a>"}]
+              "figures": [{"id": "picture_4p3-3.png"}]
             },
             {
               "from": 1975,
               "to": 2015,
               "text": "Au Luxembourg, une première flambée du chômage intervient au cours de la décennie 1975-1985, marquée par les deux chocs pétroliers et la crise de la sidérurgie dont les effectifs se rétractent fortement. En 1974, près de 23 000 ouvriers travaillent encore dans la sidérurgie et les mines de fer. En 1987, leur nombre est tombé en-dessous des 10 000. Une deuxième et une troisième période de croissance du chômage sont liées aux ralentissements économiques du début des années 1990 et du début des années 2000. Puis la crise mondiale de 2008 se répercute sur le marché du travail du pays. Le taux de chômage qui dépasse à peine les 4% en 2007 atteint près de 7% en 2015.",
-                "figures": [{"id": "Picture_4p3-4.png", "caption": "Le chômage au Luxembourg en 1977. <br/> Source : <a href='https://viewer.eluxemburgensia.lu/ark:70795/r5bt26b21/pages/3/articles/DIVL376' target='_blank'>e-luxemburgensia</a>"}]
+                "figures": [{"id": "picture_4p3-4.png"}]
             },
             {
               "from": 2000,
@@ -199,8 +189,7 @@
               "text": "Jusque dans les années 2000, le chômage reste un phénomène social moins poignant au Luxembourg que dans les autres pays européens. Aujourd’hui ce n’est plus le cas et le Luxembourg se situe plutôt en milieu de peloton en termes de taux de chômage calculé par rapport à la population active.",
               "figures": [
                 {
-                  "id": "Picture_4p2-5.png",
-                  "caption": "Taux de chômage (en % de la population active de 15 à 74 ans) en Europe, 2000 et 2020"
+                  "id": "Picture_4p2-5.png"
                 }
               ]
             },

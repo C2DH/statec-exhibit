@@ -1803,7 +1803,7 @@
     },
     "wall_street_5372590938_e898f8d9be_o.jpg": {
       "caption": "La Bourse de New York à Wall Street après le krach de 1929 : un nettoyeur balaie le sol avec un balai, qui est plein de journaux et autres papiers froissés et déchirés.",
-      "provenance": "Source: Fotograaf onbekend, Nationaal Archief, Collectie Spaarnestad, SFA001018144",
+      "provenance": "Source: Fotograaf onbekend, Nationaal Archief, Collectie Spaarnestad, <a href='https://www.flickr.com/photos/nationaalarchief/5372590938/in/photolist-9bKW7f-7AJtqx-ovoobc-oweBS3-8RJPqR-7g9En5-oeJSn2-5gZ561-oc9Ys8-ounS8o-oubfNE-ovWGQa-oddKom-oxPkwT-wGneR5-ouHE6f-ouKi4p-otqpfL-odfNp5-xgmPsT-ovVVge-oxTtUX-owv75X-ovPLNi-oubhgE-odD3uz-oeJtJ7-6KC37N-odtaj7-owGZJK-oeH4ak-oeJmVB-oeJ5jm-odZMF4-ouJGMh-wY8FVF-oc8SPg-osFtFs-oeGWbv-of1vth-odnjKc-xsQfWA-rn7mBu-ouyGyt-owax5H-x2zot8-otpv2q-oePXxc-tjcJfA-oszAMd' target='_blank'>SFA001018144</a>",
       "url": "https://www.flickr.com/photos/nationaalarchief/5372590938/in/photolist-9bKW7f-7AJtqx-ovoobc-oweBS3-8RJPqR-7g9En5-oeJSn2-5gZ561-oc9Ys8-ounS8o-oubfNE-ovWGQa-oddKom-oxPkwT-wGneR5-ouHE6f-ouKi4p-otqpfL-odfNp5-xgmPsT-ovVVge-oxTtUX-owv75X-ovPLNi-oubhgE-odD3uz-oeJtJ7-6KC37N-odtaj7-owGZJK-oeH4ak-oeJmVB-oeJ5jm-odZMF4-ouJGMh-wY8FVF-oc8SPg-osFtFs-oeGWbv-of1vth-odnjKc-xsQfWA-rn7mBu-ouyGyt-owax5H-x2zot8-otpv2q-oePXxc-tjcJfA-oszAMd",
       "resolutions": {
         "medium-w": {
@@ -1927,7 +1927,7 @@
     },
     "HISAEZ000342V01_traite.jpg": {
       "caption": "Placeholder Caption",
-      "provenance": "Placeholder Copyright",
+      "provenance": "Source: Placeholder",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/HISAEZ000342V01_traite.medium-w.jpg",
@@ -2705,7 +2705,7 @@
     },
     "travailleurs-haut-fourneau-1900.jpg": {
       "caption": "Travailleurs de haut-fourneau vers 1900.",
-      "provenance": "© Ville de Dudelange - Fonds Arbed",
+      "provenance": "Source: © Ville de Dudelange - Fonds Arbed",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/travailleurs-haut-fourneau-1900.medium-w.jpg",
@@ -2746,7 +2746,7 @@
     },
     "picture_1.png": {
       "caption": "La crise en 1931",
-      "provenance": "Extrait de L’Indépendance luxembourgeoise du 14 décembre 1931",
+      "provenance": "Source: Extrait de L’Indépendance luxembourgeoise du 14 décembre 1931",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/picture_1.medium-w.jpg",
@@ -2869,7 +2869,7 @@
     },
     "picture_3p1-3.jpg": {
       "caption": "Une autoroute luxembourgeoise en 2020",
-      "provenance": "Photo RL / Pierre Heckler",
+      "provenance": "Source: iStock Photo",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/picture_3p1-3.medium-w.jpg",
@@ -2910,7 +2910,7 @@
     },
     "Picture_3p2-1.png": {
       "caption": "Questionnaire du recensement de 1871",
-      "provenance": "Archives nationales, recensement de 1871",
+      "provenance": "Source: Archives nationales, recensement de 1871",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/Picture_3p2-1.medium-w.jpg",
@@ -2951,7 +2951,7 @@
     },
     "Picture_3p2-2a.jpg": {
       "caption": "Machines et instruments de travail agricoles au 19ème siècle",
-      "provenance": "Walker Art Library / Alamy Banque D'Images",
+      "provenance": "Source: Walker Art Library, Alamy Banque D'Images",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/Picture_3p2-2a.medium-w.jpg",
@@ -2991,6 +2991,8 @@
       "isPortrait": false
     },
     "claas-2147239.jpg": {
+      "caption": "Une moissonneuse-batteuse contemporaine en action",
+      "provenance": "Copyright Placeholder",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/claas-2147239.medium-w.jpg",
@@ -3031,7 +3033,7 @@
     },
     "Picture_3p2-3.png": {
       "caption": "Questionnaire du recensement industriel et professionnel de 1907 (extrait consacré aux professions). Commission permanente de statistique, Recensement professionnel et industriel du 12 juin 1907, Travaux préparatoires et Exposé des méthodes, ",
-      "provenance": "Publications de la Commission permanente de Statistique, XXIème Fascicule, 1ère Série, Tome_ 1er",
+      "provenance": "Source: Publications de la Commission permanente de Statistique, XXIème Fascicule, 1ère Série, Tome_ 1er",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/Picture_3p2-3.medium-w.jpg",
@@ -3113,7 +3115,7 @@
     },
     "Picture_3p2-6.png": {
       "caption": "Durée de travail, en 1907",
-      "provenance": "Placeholder Copyright, Heft 24",
+      "provenance": "Source: « Les employés et ouvriers d’après la durée habituelle de travail journalier », dans : Publications de la Commission permanente de Statistique, XXIVe Fascicule - Recensement professionnel et industriel du 12 juin 1907, Ire série, Tome IVe, Ire Partie, page 100, Imprimerie P. Worré-Mertens, Luxembourg, 1913.",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/Picture_3p2-6.medium-w.jpg",
@@ -3154,7 +3156,7 @@
     },
     "Picture_3p2-7.png": {
       "caption": "Individus actifs et personnes dépendant de la profession, 1907",
-      "provenance": "Placeholder Copyright, Heft 22",
+      "provenance": "Source: « Répartition de la population sur les groupes de professions et par types de personnes actives », dans : Publications de la Commission permanente de Statistique, XXIIe Fascicule - Recensement professionnel et industriel du 12 juin 1907, Ire série, Tome IIe, Ire Partie, page 30, Imprimerie P. Worré-Mertens, Luxembourg, 1912.",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/Picture_3p2-7.medium-w.jpg",
@@ -3277,7 +3279,7 @@
     },
     "Picture_3p3-5.jpg": {
       "caption": "Montage du nouveau sac à poussière du haut-fourneau II de l’usine de Dudelange, 1928.08.23",
-      "provenance": "Archives nationales de Luxembourg (ANLux), Arbed-Ph-00025",
+      "provenance": "Source: Archives nationales de Luxembourg (ANLux), Arbed-Ph-00025",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/Picture_3p3-5.medium-w.jpg",
@@ -3400,7 +3402,7 @@
     },
     "Picture_4p1-1.png": {
       "caption": "Arrêté du 30 septembre 1905 prescrivant un recensement général de la population du Grand-Duché au 1er décembre 1905",
-      "provenance": "Legilux",
+      "provenance": "Source: Legilux",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/Picture_4p1-1.medium-w.jpg",
@@ -3441,7 +3443,7 @@
     },
     "Picture_4p1-2.png": {
       "caption": "Le chômage avant la première guerre selon le journal « Der arme Teufel » d’obédience social-démocate (extrait du journal du 24.8.1913)",
-      "provenance": "Placeholder Copyright",
+      "provenance": "Source: Placeholder Copyright",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/Picture_4p1-2.medium-w.jpg",
@@ -3482,7 +3484,7 @@
     },
     "Picture_4p1-3.png": {
       "caption": "Les « bureaux de placement » (1913)",
-      "provenance": "Legilux",
+      "provenance": "Source: <a href='https://data.legilux.public.lu/file/eli-etat-leg-memorial-1913-58-fr-pdf.pdf' target='_blank'>Legilux</a>",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/Picture_4p1-3.medium-w.jpg",
@@ -3523,7 +3525,7 @@
     },
     "Picture_4p1-4a.tif": {
       "caption": "Ouvriers ayant contribué à la construction du Pont du Pfaffenthal  en 1921",
-      "provenance": "Photothèque de la Ville de Luxembourg (extrait de STATEC, L’économie luxembourgeoise au 20ème siècle, Luxembourg, 1999)",
+      "provenance": "Source: Photothèque de la Ville de Luxembourg (extrait de STATEC, L’économie luxembourgeoise au 20ème siècle, Luxembourg, 1999)",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/Picture_4p1-4a.medium-w.jpg",
@@ -3564,7 +3566,7 @@
     },
     "Picture_4p1-4b.png": {
       "caption": "Discours de Pierre Krier, le 1er mai 1932 à Esch-sur-Alzette",
-      "provenance": "OGBL ",
+      "provenance": "Source: <a href='http://www.ogbl.lu/blog/le-1er-mai-jour-de-lutte-et-de-fete-pour-le-mouvement-syndical/' target='_blank'>OGBL</a>",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/Picture_4p1-4b.medium-w.jpg",
@@ -3605,7 +3607,7 @@
     },
     "Picture_4p1-5.png": {
       "caption": "Arrêté grand-ducal du 6 août 1921 portant réglementation des secours de chômage (Extrait)",
-      "provenance": "Legilux",
+      "provenance": "Source: <a href='https://legilux.public.lu/eli/etat/leg/agd/1921/08/06/n2/jo' target='_blank'>Legilux</a>",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/Picture_4p1-5.medium-w.jpg",
@@ -3728,7 +3730,7 @@
     },
     "Picture_4p2-1.png": {
       "caption": "La réforme des secours de chômage 1975-1976",
-      "provenance": "eluxemburgensia. Lëtzebuerger land du 28 février 1975",
+      "provenance": "Source: Lëtzebuerger land, 28 février 1975, <a href='https://viewer.eluxemburgensia.lu/ark:70795/8d4j0p/pages/2/articles/DTL52?search=chômage%201921' target='_blank'>e-luxemburgensia",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/Picture_4p2-1.medium-w.jpg",
@@ -3768,8 +3770,8 @@
       "isPortrait": true
     },
     "Picture_4p2-2.png": {
-      "caption": "La question des statistiques du chômage au niveau européen en 1975",
-      "provenance": "e-luxemburgensia. D'Letzebuerger Land du 25 août 1972",
+      "caption": "L’ajustement se fait par l’immigration",
+      "provenance": "Source: D'Letzebuerger Land, 25 août 1972, <a href='https://viewer.eluxemburgensia.lu/ark:70795/rfzswk/pages/3/articles/DTL100' target='_blank'>e-luxemburgensia</a>",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/Picture_4p2-2.medium-w.jpg",
@@ -3851,7 +3853,7 @@
     },
     "Picture_4p2-5.png": {
       "caption": "Taux de chômage (en % de la population active de 15 à 74 ans) en Europe, 2000 et 2020",
-      "provenance": "Taux de chômage (en % de la population active de 15 à 74 ans) en Europe, 2000 et 2020",
+      "provenance": "Source: Placeholder",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/Picture_4p2-5.medium-w.jpg",
@@ -3891,6 +3893,8 @@
       "isPortrait": false
     },
     "polaschman7.jpg": {
+      "caption": "Pol Aschmann. Milchmann letzte Fahrt, 8-8-1958",
+      "provenance": "Source: © Photothèque de la Ville de Luxembourg",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/polaschman7.medium-w.jpg",
@@ -3930,6 +3934,8 @@
       "isPortrait": false
     },
     "belval.jpg": {
+      "caption": "Usine de Belval",
+      "provenance": "Source: Placeholder",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/belval.medium-w.jpg",
@@ -3969,6 +3975,8 @@
       "isPortrait": false
     },
     "ark_70795_jrz7dq_pages_28.jpg": {
+      "caption": "La SNCI dans la presse",
+      "provenance": "Source: <a href='https://viewer.eluxemburgensia.lu/ark:70795/jrz7dq/pages/28/articles/DTL467?search=diversification%20économique%20Luxembourg' target='_blank'>eluxemburgensia</a>",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/ark_70795_jrz7dq_pages_28.medium-w.jpg",
@@ -4009,7 +4017,7 @@
     },
     "pierre-werner-statement-steel-industry.png": {
       "caption": "Déclarations de Monsieur Pierre Werner, Président du Gouvernement, sur la situation de la sidérurgie luxembourgeoise",
-      "provenance": "Source: <a href='https://www.cvce.eu/en/obj/statements_by_pierre_werner_on_the_situation_of_the_luxembourg_steel_industry_luxembourg_8_february_and_3_april_1983-en-bde9ae82-138b-4624-9325-a8ee3ec596d0.html' target='_blank'><i>Bulletin de documentation.</i> Luxembourg : dir. de publ. Service Information et Presse-Ministère d'État. 4 avril, n° 3/1983, pp. 22-25.</a><br/>Archives familiales Pierre Werner, Luxembourg.<br/>Copyright: (c) Service Information et Presse du Gouvernement luxembourgeois",
+      "provenance": "Source: <a href='https://www.cvce.eu/en/obj/statements_by_pierre_werner_on_the_situation_of_the_luxembourg_steel_industry_luxembourg_8_february_and_3_april_1983-en-bde9ae82-138b-4624-9325-a8ee3ec596d0.html' target='_blank'>Bulletin de documentation</a>, dir. de publ. Service Information et Presse-Ministère d'État. 4 avril, n° 3/1983, pp. 22-25. Archives familiales Pierre Werner, Luxembourg",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/pierre-werner-statement-steel-industry.medium-w.jpg",
@@ -4050,7 +4058,7 @@
     },
     "chambre-deputes-loi-travail.png": {
       "caption": "Avis commun de la Chambre du travail et de la Chambre des employés privés concernant le statut unique entrant en vigueur en 2008.",
-      "provenance": "Source : <a href='https://chd.lu/wps/PA_ArchiveSolR/FTSShowAttachment?mime=application%2fpdf&id=09DC8A5F2119D910025E67D60CABAB65$AE3FBFD575268C0E23AA4A52FF0AF383&fn=09DC8A5F2119D910025E67D60CABAB65$AE3FBFD575268C0E23AA4A52FF0AF383.pdf'>Chambre des députés</a>",
+      "provenance": "Source: <a href='https://chd.lu/wps/PA_ArchiveSolR/FTSShowAttachment?mime=application%2fpdf&id=09DC8A5F2119D910025E67D60CABAB65$AE3FBFD575268C0E23AA4A52FF0AF383&fn=09DC8A5F2119D910025E67D60CABAB65$AE3FBFD575268C0E23AA4A52FF0AF383.pdf'>Chambre des députés</a>",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/chambre-deputes-loi-travail.medium-w.jpg",
@@ -4090,8 +4098,8 @@
       "isPortrait": true
     },
     "conseil-etat-caisse-pension-29-janvier-1931.png": {
-      "caption": "Projet d'arrêté grand-ducal portant règlement pour l'exécution de l'article 3, alinéa 2, de la loi du 29 janvier 1931 concernant la création d'une caisse de pension des employés privés (Préparation de l’avis du Conseil d’Etat). ",
-      "provenance": "Source: <a href='https://query.an.etat.lu/Query/detail.aspx?ID=474254' target='_blank'>Archives nationales, Dossier M-02308 (Conseil d’Etat)</a><br/>N.B : Il s’agit de l’arrêté fixant une limite de rémunération pour le calcul des cotisation.",
+      "caption": "Projet d'arrêté grand-ducal portant règlement pour l'exécution de l'article 3, alinéa 2, de la loi du 29 janvier 1931 concernant la création d'une caisse de pension des employés privés (Préparation de l’avis du Conseil d’Etat)",
+      "provenance": "Source: <a href='https://query.an.etat.lu/Query/detail.aspx?ID=474254' target='_blank'>Archives nationales, Dossier M-02308 (Conseil d’Etat)</a>",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/conseil-etat-caisse-pension-29-janvier-1931.medium-w.jpg",
@@ -4132,7 +4140,7 @@
     },
     "ark_70795-4zn911-pages-6.jpg": {
       "caption": "La représentation de la vie des femmes à la sortie de la deuxième guerre mondiale (extrait du Luxemburger Wort du 23 mai 1946, P.6).",
-      "provenance": "Source : <a href='https://viewer.eluxemburgensia.lu/ark:70795/4zn911/pages/6' target='_blank'>eluxemburgensia</a>",
+      "provenance": "Source: <a href='https://viewer.eluxemburgensia.lu/ark:70795/4zn911/pages/6' target='_blank'>eluxemburgensia</a>",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/ark_70795-4zn911-pages-6.medium-w.jpg",
@@ -4250,6 +4258,8 @@
       "isPortrait": true
     },
     "picture_4p3-2.png": {
+      "caption": "La question des statistiques du chômage au niveau européen en 1975",
+      "provenance": "Source: Lëtzebuerger Land, 19 septembre 1975, <a href='https://persist.lu/ark:70795/tf06bg/pages/6/articles/DTL152' target='_blank'>eluxemburgensia</a>",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/picture_4p3-2.medium-w.jpg",
@@ -4289,6 +4299,8 @@
       "isPortrait": true
     },
     "picture_4p3-4.png": {
+      "caption": "Le chômage au Luxembourg en 1977",
+      "provenance": "Source: <a href='https://viewer.eluxemburgensia.lu/ark:70795/r5bt26b21/pages/3/articles/DIVL376' target='_blank'>e-luxemburgensia</a>",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/picture_4p3-4.medium-w.jpg",
@@ -4406,6 +4418,8 @@
       "isPortrait": true
     },
     "picture_4p3-3.png": {
+      "caption": "Résolution de la Conférence Internationale des statisticiens du travail de 1982 (extrait)",
+      "provenance": "Source: <a href='https://www.ilo.org/wcmsp5/groups/public/---dgreports/---stat/documents/normativeinstrument/wcms_087482.pdf' target='_blank'>Organisation internationale du Travail</a>",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/picture_4p3-3.medium-w.jpg",
@@ -4484,6 +4498,8 @@
       "isPortrait": false
     },
     "Picture_3p2-9.png": {
+      "caption": "Salaires annuel brut moyen selon la nationalité, resp. le lieu de résidence et le niveau d’éducation (Enquête structure des salaires de 2018. Pour un même niveau d’éducation, frontaliers et résidents étrangers gagnent moins que les résidents luxembourgeois",
+      "provenance": "Source: STATEC, <a href='https://statistiques.public.lu/catalogue-publications/regards/2020/PDF-14-2020.pdf ' targer='_blank'>Regards n° 14/2020</a>",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/Picture_3p2-9.medium-w.jpg",
@@ -4523,6 +4539,8 @@
       "isPortrait": false
     },
     "Picture_3p2-10.png": {
+      "caption": "Les salaires des ouvriers de la sidérurgie depuis 1914",
+      "provenance": "Source: STATEC, <a href='https://statistiques.public.lu/en/publications/series/statistiques-historiques/2014/statistiques-historiques/index.html' target='_blank'>Statistiques historiques, 1990</a>",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/Picture_3p2-10.medium-w.jpg",
@@ -4562,6 +4580,8 @@
       "isPortrait": true
     },
     "Picture_3p2-11.png": {
+      "caption": "Comparaison des revenus réels des travailleurs des industries de la Communauté, Etudes et documents, 1956",
+      "provenance": "Source: <a href='https://aei.pitt.edu/36264/1/A2411.pdf' target='_blank'>Etudes et documents, CECA</a>",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/Picture_3p2-11.medium-w.jpg",
@@ -4601,6 +4621,8 @@
       "isPortrait": false
     },
     "Picture_3p2-12.png": {
+      "caption": "La première publication scientifique détaillée concernant les questions de croissance au Luxembourg (1971).",
+      "provenance": "Source: <a href='https://statistiques.public.lu/fr/actualites/economie-finances/conjoncture/2013/08/20130821/cahiers48.pdf' target='_blank'>Cahiers, STATEC</a>",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/Picture_3p2-12.medium-w.jpg",
@@ -4640,6 +4662,8 @@
       "isPortrait": true
     },
     "Picture_3p2-13.png": {
+      "caption": "Les principes de classification de l’enquête sur les forces de travail.",
+      "provenance": "Source: Enquête communautaire sur les forces de travail, Population et conditions sociales, Méthodes et définitions, Luxembourg, 1999, <a href='https://ec.europa.eu/eurostat/documents/3859598/5826084/CA-19-98-536-FR.PDF.pdf/654c279c-e17d-4fb8-8d9d-d270e9e84603?t=1414780231000' target='_blank'>EUROSTAT</a>",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/Picture_3p2-13.medium-w.jpg",
@@ -4679,6 +4703,8 @@
       "isPortrait": false
     },
     "Picture_3p2-14.png": {
+      "caption": "La classification en dix grands groupes dans la classification-type des professions (CITP) de 1958 du BIT",
+      "provenance": "Source : <a href='https://www.ilo.org/public/libdoc/ilo/1958/58B09_81_fren.pdf' target='_blank'>Bureau international du travail, Classification type des professions, Genève, 1958</a>",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/Picture_3p2-14.medium-w.jpg",
@@ -4718,6 +4744,8 @@
       "isPortrait": false
     },
     "Picture_3p2-15.png": {
+      "caption": "Les « cols blancs » dominent la plus part des secteurs",
+      "provenance": "Source: <a href='https://statistiques.public.lu/catalogue-publications/regards/2020/PDF-17-2020.pdf' target='_blank'> STATEC, Polarisation croissante de l’emploi salarié au Luxembourg, N° 17/2020</a>",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/Picture_3p2-15.medium-w.jpg",
@@ -4757,6 +4785,8 @@
       "isPortrait": false
     },
     "Picture_3p3-2.png": {
+      "caption": "100 ans d’assurances privées",
+      "provenance": "Source: lalux",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/Picture_3p3-2.medium-w.jpg",
@@ -4796,6 +4826,8 @@
       "isPortrait": false
     },
     "Picture_3p3-3.jpg": {
+      "caption": "Mine de fer, Rumelange",
+      "provenance": "Source: <a href='https://www.mnm.lu/' target='_blank'>Musée National des Mines de Fer à Rumelange</a>",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/Picture_3p3-3.medium-w.jpg",
@@ -4835,6 +4867,8 @@
       "isPortrait": false
     },
     "Picture_3p4-3.png": {
+      "caption": "Femme d'agriculteurs et femme agriculteur ? (France, 1979)",
+      "provenance": "Source : <a href='https://www.europeana.eu/fr/item/2051908/data_euscreenXL_ina_RXC07041243' target='_blank'>INA, Europeana</a>",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/Picture_3p4-3.medium-w.jpg",
@@ -4874,6 +4908,8 @@
       "isPortrait": false
     },
     "Picture_3p4-16.png": {
+      "caption": "Première convention collective dans les banques",
+      "provenance": "Source: <a href='https://www.wort.lu/fr/economie/s-adapter-aux-nouvelles-realites-5b1791f2c1097cee25b8aade'>Luxemburger Wort</a>",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/Picture_3p4-16.medium-w.jpg",
@@ -4910,6 +4946,457 @@
       },
       "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAUCAIAAAALACogAAAACXBIWXMAAA7DAAAOwwHHb6hkAAADXElEQVQoz31TS08bVxS+fwDBkmbBnh2IH8CKTSseG4QQFCiEolAhQc0jQgLaWI0xT1FBVdigiLTENjg2rVO3phjXDwoKiNbghBhi45gYP+bO686dhz2kh0Tqrv10Fufe+c58Z75zBnnXO3ctn/s3+0JOg8/a413/7OCXrxRFffcfQMe7c2H/t6fBpdPQ98feucNt84uDRzKVJCFN2CThriQ+Rbi3kIhsUlNERCRN1W5UTc8Xbgr6O1nV4fU8+zbkHNr5sd1ruRt0DPg3enefdG0/br2MuJDAi4IgEiLxvABUKgOoJDK562gqcXqdfJm5Oku9eZG+egnB4wRiMSu+B8MwRBQz6QwReUpYSikhlEjQnAwJpQqVVSqxoCAQUZAkcguRgI4MNIJ5jmFZjFmcY3KCwGMMR44SBjEYcxyXy2YFuAYWxlBACRYFjud5RZbzmgahKoqmaQrFiPAZImRELv1vIhNGpiIYosp8XiXvQ/yQaCpFPmu3f+NeyDmw//P9P2z3fNa7z3998H9zOAo5Tw7dB/6nTx7NQhJ+/uw8EoLvjoUd0cMf4uGNyxPn679sF8eW6OFjfB1Brme/+QN//uRyDxhGJr7+5uNP6m0bDj0v77sfem0Dlu8+/d1232P5ctvS71n/4vJsBxmND8zmSZPp4djYWE1NzZ07H21tbeXz+R2v7/jvk9Dewd7efvQ89jqWSLxJgcWoq6uro6PDZDItLy8vLS2trKwcHR1hjFdXV3t6ejY3N4EYhYoYVCTAeVRXV1dfXz88PNzS0mI2mwcHBycmJiRJslqtbW1t09PTbrc7GAxGIpF4PA73aHx83Gg0zs/PNzY2VlVVVVZWtre3wwTW1taamppmZ2cXFhZA1uVy+Xy+bDaLamtrgVdWVlZaWlpRUVFeXt7a2prJZCYnJxsaGjo7O6emphYXF2dmZnp7ewOBAAIUFRUVFxeXlJRUV1dDMUhBr6Ojo+BBc3PzyMjI0NCQwWDo7u72eDzIbrc/tdsdDofT6YQzSAf8PoFn5+bm+/v7oWHwA3ru6+uDDsFAlC/o8EPoun6j3xRuoRcKGhGYeOzi7NWri/PzZDIJFkVOI+HwSTqVQAKX45hrYKiKoMof4na9VUVS1du1UxQZNgUmA3sBj/4BQnDZT9XTmeEAAAAASUVORK5CYII=",
       "aspectRatio": 0.814,
+      "isPortrait": true
+    },
+    "Picture_3p3-6.png": {
+      "caption": "La journée de 8 heures en 1918",
+      "provenance": "Source: Schmiede, Organ der Sozialdemokratischen Partei Luxemburgs, 22 November 1918, Jg. 2, nº 52",
+      "resolutions": {
+        "medium-w": {
+          "url": "/media/images/Picture_3p3-6.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/Picture_3p3-6.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/Picture_3p3-6.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 2000,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/Picture_3p3-6.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 2000
+          }
+        }
+      },
+      "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAABYlAAAWJQFJUiTwAAACf0lEQVQ4yz3U6VJqQQwE4PP2KJQbuIErLggqigouqOib5daXW/FHGM7MdKc7k5nm9fU13t7eMmazWdzd3cXNzU1cXFxEp9OJvb29aLVa0W63Y3d3N7rdblxfX8d4PI7b29vcD/v5+RlHR0fR+Hh/f4+Pj494fn5O0uFwGIeHh0myubkZa2trsb6+nmQ7Ozu5XmQCHuHJyUk0iKhcLpcZq9Uqrq6u/tQhODg4iF6vF/v7+9Hv92N7ezsWi0Xu/f7+TrKvr6901SBj8fLyMiaTSZKcnp5msGV8eHiIwWCQ65JJ4ptSrszN5/M4Pz+PBoHsVJioYFkSdbPOLhLzx8fHqZJiOMSUp2V/NjY2MgBKnU2VbGtrK+2wSQlX9Z9C51BOm+l0mhYQIndSFFBCgUNBTqmE1Bvto45yazBK1MhCKhBlNlFTas2fnZ0loIDWJffNhREuFT49Pf0BgBFRpdfMFQABkBiNRtk2RmK4ub+/T3xjM2tCoQEpKHIBXN+lkAg9qL04gU9CGZBU6/hPlYzaARiQCrV2SIjto7BOG2latlGBgW1itTI6gEpUtwdZ2Su19sOJpvpO3WRDzo5RAGsLbeKKCS2i9lrG/MvLS865AHkopYrKKrSo21FNXmqE3qxOoBRW8oYaC6xZpFY/1YHULZDUCQOLutcOrJT+KcQOqOBOHXm9JNVSsiOl2F7fSkIANziQ59XT7UD1orCtVvVOqpEbRYmL4IlTM3soe3x8zDlj46duSN0KbSN71bH61LuodvZKIDEXcFWqpkhYKKvGao16nalE4L/D8Xb+/Pzkeyh+f3//H4oPD6VHUnhw2WABsWTUOWnkQOoukFZp/Lf2DxBdiFnZLIeGAAAAAElFTkSuQmCC",
+      "aspectRatio": 0.9805,
+      "isPortrait": true
+    },
+    "Picture_3p3-7.png": {
+      "caption": "« Classes productives et improductives » (extrait du 11ème fascicule sur l’état de la population d’après le recensement de 1905 publié en 1906)",
+      "provenance": "Source: extrait du 11ème fascicule sur l’état de la population d’après le recensement de 1905 publié en 1906",
+      "resolutions": {
+        "medium-w": {
+          "url": "/media/images/Picture_3p3-7.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/Picture_3p3-7.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/Picture_3p3-7.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 2000,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/Picture_3p3-7.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 2000
+          }
+        }
+      },
+      "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAUCAIAAADdpfBFAAAACXBIWXMAAAsSAAALEgHS3X78AAADKElEQVQozxWNWW/jVACF/UN5YF54QYOKQNM0bTJppk3SJm4WN75ertd4i+3r6y37YrdJkybTAKUDD4zQIAESBfHCLyCVPh2dh+/oEGE4mKcPabq5ublfLLbL5fsX9mWx2XO32Kzvtrvt7mm3+/TTE7Gd2kkPDcJ43g9vJ9Fq3tskg206uk+Ge1bJaH0zXabJh8fH599+Jb5L0Vw9xRI5iqxZbC7H7v0Mb+f4IcG7FO0S58fU5MjscrH8759nYj5wxp0yNjnkex6yerE3iL3pMFjMe+k0SMfeD7dIbRdWq82/f/1NJGNv0KnYGot9HEfecBCOR+FsHE4GeBg7/dDazBzlurBYbv78/ZkYx3Ykl2wduh7G2A0jFIUojtxh3xu/gNZTV2sXx9PFx49/EP3ACMSzrgYR9v3Ai2Lc6+E49vp7Ircf2usZstgSDkZPHz4Road5wpnZgaZtI+T4gRvF3t6OQzcK7V5o3009B1Z0Cz98/wsRuKoHzyxNNB0HYxT4KAw9P3CiCMWhs7dvhjYSKoKir7c/E15XsrmirkKj23WQgzwH+47n29i3HVvrGlIPSUgo04BbrR8JXQEmKCgyp5mm7dqWvf+wbEfvWoptyrrK+hbnMMVWo3G7eE9oMq233yoi1zEM3dI1QzWsTkeTJJFRRFqCLVcDXbpQJ2tJek8oAqW2TgTIyJqmdBRFlTVdlVUoCUDkr0W+5XRo8zpfq5RmszUBwZVUP4I8ENWOrMqSLEqyAAXAshTPUiJHGSKlUbnLUnEyWRFcuyaSWcgzcH8uiVDgecgx7DUALZZucqChC5RO5SvFfH9wSzDUJaxmWIbmRJEXIAc5QRRYjqbbTfZlUNf2dit//jYTxQlBkWeg/DXdbrUBwzCA41me5/iXBAIEPNva20r9+N3JG+xPiKtytpn/olErkWT1irxoNmoAUDxHc3STB02WIiVAas2T08yBYUVErfBV5svPyu9yTbJEXZV50DBUqEu0wjZkpi62q5CqsNXstwevFRURrz5/9frg6Juj88PcZfaUzOSrb44rh7mLTP4yk6scnpQOj88vqi2akUTR+B9ZfkX/OuxiFQAAAABJRU5ErkJggg==",
+      "aspectRatio": 0.75,
+      "isPortrait": true
+    },
+    "679175_File0335.jpg": {
+      "caption": "Ouvriers de la sidérurgie au début du 20ème siècle",
+      "provenance": "Source: Archives de la Ville de Dudelange, Fonds Jean-Pierre Conrardy",
+      "resolutions": {
+        "medium-w": {
+          "url": "/media/images/679175_File0335.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/679175_File0335.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/679175_File0335.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 2000,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/679175_File0335.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 2000
+          }
+        }
+      },
+      "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAUCAIAAAAVyRqTAAAACXBIWXMAAC4jAAAuIwF4pT92AAAE/0lEQVQ4yzWVWSxeaxSG950YYh5iPmYxU0OpsThqnoOaqSqhilZNNRMJooZSoqKhIaaUSoi0SmqIC1TqwpUhRLgxnt6fp/9Ov4ud/X/f/tZ61/u+a/3C7e3twcHBz58/v337tru7293dXVZW9vLly+TkZH9/f29v738li3c/Pz83NzdPT8/o6Ojnz59XVFT4+vqmp6d7eXnp6OhoaWnx/EeydCRL6Ovr6+rqys/Pf/bsGaFHRkaioqIKCgrY4T45eHI/LCzM1dXVycnJzs4uLy+Pj+Pj44ny5MkTW1tbBQUFDQ0NZWVlTU1NXV1d9k1NTYWBgYGhoaHi4uJXr16tr6+Pj4+/fv0a4ISLjIx8+PChqqqqtrY2F7hsZGTU2dn5+fNnS0tL0lBKaGiog4MDLz4+PmlpaSEhISTu6ekBrsDv/v7+oqKihISE7e3tt2/fPn78WE9Pj1jwEBERQX5DQ0NuUk1SUhJ4R0dHjY2NTUxMiBseHk5BdXV18PPly5fZ2dn5+fm1tbWNjQ2B/L29vQSFhIWFhdTU1JycHKrmGvlhnMvEDQ4OfvToEZXZ29s3NDRkZGSoqalZWVkFBgZmZmai0ODg4PHx8eHh4a9fv/b29ra2toQHDx7ExcW9ePGiqalpbGyM0ogYEBAAXnQrLS0FJnJlZWVRVnl5Oc+ampo3b964u7tDLvBJmZubC+nt7e3Nzc1khczExESBnGg1NTV1dHT0/v17SK+trQ0KCqJ2IL+TLMDyAQzCG/sgpQhCUzHR8QbskQP1UAVJlJSU2BcAAiH4obGxEWjkpAJ+mpubc19kE/j37t2zsLAwMDDQ19fHBojBU15eXk2yCKSiooLg4ou6ujo5BC7wtZycHCpROGc4l+qsra0JyhFYAAU0pb+LiOxwnyi6kkVQNjliR1ZWVkpKSlpaWqAQVKI0AIIFZcCOh9CdCmJjY+EdZjw8PLCEjIwM9YKXfJiP6EDmnSenUEQavIhrASpAH/6rrKxEGXoPA5ADBugInqiRnZ2NSrzTdRSEaPQOUbCmjY0N/QksopMbO4CSDoJSxBdaW1vpAmpvaWnB1DQxZ2ZmZk+fPsWqtOLExAQdi3/IAVKaiCiUhf58w5McGKGqqorEfEC5fIMqAsVaSBYHpEI66KZNQAQhYkoookUxoigRlTk6OlIrGIlF1tPT07m5OVLSXMSljj8yAh4v4weKompsTuHwxWWg4eLq6uqYmBgcyTtEc0dRURHDYH/6CyPi1JOTkw8fPvA9XPENodBfgHKiiCRAHGfOzs5oay9ZdAfY6U8gI4Y4ScABV7Qynd3R0UGnTE5OUj1dBjMQQGgcIYCFEJSPMghIgXDq4uIimm94eJj5AKfYnzRswgk8MNSmp6dpCMbF8vKy6A1Cl5SUcBfIf7hmdGBndAcyZykpKW1tbUw+mAEsQ5xKP378CCGghge4vn//PqHZp1E3NzcZKegEDiRhh1OxPwW6nqFaX1/PMSoDk+qYU0zFr1+/8i+xs7Ozv7+/uLj46dMn/IBB0YYQEEUs5jAjnhf0YHQw9mAYNqBBWFlZ+f79O8MQ+n78+HF1dXV5ecnz5uaGP6Dr6+vfv39fSxZTbWlpiawzMzOkgSIqKywsxLJwCJniaINhWIVk4fz8/OLigufZ2ZkY7u7u7vbvIu5/kkVo8SeLD3Db6uoq/xuwRHSsyQhCDLHRsA3F/Q/mDKI1nremoAAAAABJRU5ErkJggg==",
+      "aspectRatio": 1.5025,
+      "isPortrait": false
+    },
+    "Picture_3p4-14.png": {
+      "caption": "Le questionnaire de l’enquête sur les employés de 1910",
+      "provenance": "Source: Commission pernanente de statistique",
+      "resolutions": {
+        "medium-w": {
+          "url": "/media/images/Picture_3p4-14.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/Picture_3p4-14.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/Picture_3p4-14.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 2000,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/Picture_3p4-14.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 2000
+          }
+        }
+      },
+      "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAUCAIAAAAcIrrpAAAACXBIWXMAAAsTAAALEwEAmpwYAAACaklEQVQ4y33U6VIiQRAEYN7/1QggNgBR7ltF5EZudj+m3IFV1v7RND1VWZlZNZP5/eM6n8+xx+F0Ov0cn/kZ6wtc7Hcjd7vdHbi3t7dut3s4HL5zPB6Pz8/PjUajXq//SlYulysUCv66LJVK2+02E6GTyaTZbA4Gg16v59lwOHR4fX29hdvv99VqVRqgx8fHWq0GqFwuu+z3+4I/Pj4yt7o2m83Ly8toNFqtVmxC54tqCZ1OR/50Oo0CdIiMXcyF3fv7OxQysRONF3b+yrGDSJswm81YoRhd/trX6zUsMfP5XPlMOBIyrXa77TxNlnsOoHwLR6Cd8bDicP67Lq3wg7No+3K55AJqAeEmqKUJcYPyeDxmN0YQ7aA/xfohll/0Pj09PTw8lJOFBZoMDmihikXf9arVaiksS4BEiMIuYrHVLPmAisWiczab1X5DkM/n3QsNsZIlkF+pVDBwCYJ39nSwLuy0HJCajCPHY0TEsZy06G+IIKqTLBrdRx/+eSv8VxCWZ3GFLyDR6RyEcXTxCxal4vVNr3BfJ+sqVgT7XS0WC7uextyBE5H2IQjy19zBQiKaFlUj8rMVKrNmmCx+O+sDj/kNOh0U9UKK+3GysAmgT7FOjJDpGfKwKEIwhsA57SxEYfHO4hj1xPCXpnA5E2aJUBZc6MX/7qdFcrATT1Bgxdhe2emjnhooEfGqERhzfzv0clgBLl5+wRxkFAYxCRd20bKgxhEySfBY2U2yorPxgcLL58RUGVKIcLmhtnigGnIRC5j3ab9J+PLhTJfM+OSEy+yO10lKvGfXz+cpWcdk/e+zfPdSfOrdH27xxAHeMLOMAAAAAElFTkSuQmCC",
+      "aspectRatio": 1.3025,
+      "isPortrait": false
+    },
+    "Picture_3p4-15.png": {
+      "caption": "Revendications de la Fédération des employés privés en 1922",
+      "provenance": "Source: Archives nationales, FIN 03575",
+      "resolutions": {
+        "medium-w": {
+          "url": "/media/images/Picture_3p4-15.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/Picture_3p4-15.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/Picture_3p4-15.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 2000,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/Picture_3p4-15.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 2000
+          }
+        }
+      },
+      "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAUCAYAAABWMrcvAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAC6ElEQVQ4yy2TW4/bVBSF/TuREBJ3qlKgrRh4AImfwBuV4IUXJHgBHirKdDK3eBLb8T22j4/vTuLYSZtCUUdFgBbrePqwdCxrf3vttX2sTU5PcDXXMTMNzB0bVzMd+vQMU13H5dzBdM53pgnDMhD4C3z9/c/QnoYTvCgt/CFNHFILh0jH3pugt0+oYzx1H+HgHWNn/46X4hw/fvsNtH55gUMVYChC9HmENnIgbR1icQW5mKIMHHTLOTahjuvKwQ/fPYC2JbQvXGwSE+t4hkFa2GUWhnSGXsxYfIaNf4LWfYzdcoJk+iu0LrqkQwDpGZAui6SHoQywzX2+d9FLG+vE4AQzNrOxCk6hrcNLPGlTdEVMJditcqw55iqLsM5CrFIPXeZjmznoWVOHU0LBBYYqxq5JRw2NxNBKrFnQEmqEiyqyKQtr6aNcWtBWwTl6QkMtsKPUuS0TbMoIGy5nJR20zNsmFrr0BtZan1AZY1+rESOUsUO5SIMFZGhC+gaywIBg3jpajM5aG6hF0KkQ6AhXiTuCcukg5/pzjpOHBgpqIyw0sUGIwbZ06ZucIyWEPBSx9wpyxyZVYjOLyeYejMkv0Jpgiq6WBDOGT+jijcV5zNAiYAMXtVpGbDPCEmcPf4JW+5d0YJ4q47ZiFJGClBMV+czlQPgWEmfG1bvQj3n3SveCDmKE6jRkBuUS3ECUCGwuxYLgx29jE9b5Q2i5fYZVLuimoCUydi4URBfBZ9VAjZktbXTSvYEyazKOtSklGqkgewQzQilPNZ7KqJzWwoZxSkiaj8fwCqzZsUx8VCJk9xDFq+eKZx5a6DMP9sUjaGL2G4Oa42jq6nRcu8rXyJhj39zFrhTcXoB9IxBenfA78UcbuJVnrcBfXYYXQ4Xr/QrXTzZ4+azDP39u8e/zHf4+bPHf8x5dsoB2+63XoHTnndfxyXtv4N6tN3H/9tv49M67+Ozj9/H53Vv48ugevrj/Eb46uoujDz/A/1aKgFcKAHDkAAAAAElFTkSuQmCC",
+      "aspectRatio": 0.6415,
+      "isPortrait": true
+    },
+    "image015.png": {
+      "caption": "Durée de travail, en 1907",
+      "provenance": "Source: « Les employés et ouvriers d’après la durée habituelle de travail journalier », dans : Publications de la Commission permanente de Statistique, XXIVe Fascicule - Recensement professionnel et industriel du 12 juin 1907, Ire série, Tome IVe, Ire Partie, page 100, Imprimerie P. Worré-Mertens, Luxembourg, 1913.",
+      "resolutions": {
+        "medium-w": {
+          "url": "/media/images/image015.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/image015.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/image015.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 2000,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/image015.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 2000
+          }
+        }
+      },
+      "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAUCAYAAABmvqYOAAAACXBIWXMAAA7DAAAOwwHHb6hkAAACrklEQVQ4y23UC09iQQwF4Pv//5iJREVFUUEUfAIqDwWU1+x+3ZRgspM087jT09P2zK0mk0l5fn4unU6nPD4+loeHh9iPx+Py9vZW+v1+eXp6Kt1uN9b39/dxt91uxzwYDMrFxUXp9XpxD4b1YrEoFQeX2HA4DMDRaFQ+Pz/LdDqNIO/v7/HNPgHM7OPjozSbzQB8eXmJYAh+f3+XCtjt7W2wBQjMJQGcYey7mXFkwDJbwQXJTOFsNptSlb9ju93GxjALYHCaz+cBICDjjJ07mPsOWBlubm7CZrNZYFbr9To2WN3d3YWTEnDATHqr1SqcBV4ul7H/+fkpfL++vnalSnAZB/N0wACAQIABaJo6K5Gg1sDcIQR7WWiy71dXV1F/5II5YCySEabADcyBCQzQmiGhru4KoFwwUinWRjCX3r5hKlWsgGGJWSpIcIahb8CBphxfX1//SREjjhqlgYbau6j7zLlA+5oHqByCOFfry8vL8GUIhlpypGKUAUMBsABuBrKvGI1LpgJaywZZJa6klcykbQBNLWPH0Uzvmpxa1zxn5+fnpV6vl+vr63J6ehprWFXWWaRkLjqTKmemudTQarUCROrWjUYjgpydncV3wfnFC01Z5bM3pJlPPF+pOZ+3b/bZRFkBRSLLpLSVrqY6HNKnmjoDijFnIAASFHMMU9tKw9yRWZRFKVj+AhgFJFNBmDO9ycfD8p+SmfKRmTNa3zU0L6q1OrqY6pABBSTw/kPSL+cpgpSs+7+kmIMztv7TUs4GMuXLxyKwXgFVHuWTgUy8+FCLFHSXGZmeDPJnxJnEzB7LyclJzEdHRyG/w8PDmJFh0VARpKcsUhEME8yBA5CB2T4b58z++Pg4wGq1WsiRPPO3+9+yqD1wIByx5QCMAQIKyNq3g4ODHTiFqcYf2rGy/4USsIAAAAAASUVORK5CYII=",
+      "aspectRatio": 1.137,
+      "isPortrait": false
+    },
+    "image016.png": {
+      "caption": "Individus actifs et personnes dépendant de la profession, 1907",
+      "provenance": "Source: « Répartition de la population sur les groupes de professions et par types de personnes actives », dans : Publications de la Commission permanente de Statistique, XXIIe Fascicule - Recensement professionnel et industriel du 12 juin 1907, Ire série, Tome IIe, Ire Partie, page 30, Imprimerie P. Worré-Mertens, Luxembourg, 1912.",
+      "resolutions": {
+        "medium-w": {
+          "url": "/media/images/image016.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/image016.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/image016.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 2000,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/image016.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 2000
+          }
+        }
+      },
+      "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAUCAYAAABmvqYOAAAACXBIWXMAAA7DAAAOwwHHb6hkAAACxUlEQVQ4y03VaVOqMQwF4P7/v+U3ERVFRUXcN1wQVFxAc+fJ3DAy02nfNj05OUlDu7y8jKOjo5hOp/H29havr6+r4Xs2m8XLy0uej0ajuLm5ieFwmGN7ezu63W7s7Ozk+uLiIs+vrq5isVhEi/+/39/feH9/j8/Pz/j6+or5fJ7gjOr39PQUDw8PeX52dhadTieJATw5OYnn5+f8HgwGSWgFDmQ8HucmtgXEYTl3GSin+/v7sba2lkDG1tZW3N/fx8bGRu5z2L6/v5PJX4Z/f0Cd/fz8rMI2gPd6vdjb24uDg4NkjP3h4WHuIdbI8PHxkWzu7u5ic3MzvdN0fX09o3FmYI3d9fV1Onh8fFw5c9f+7e1tap6y+ABUyTo/P4/j4+M8BEwKEvkWPob2OTEUhChgYIxcv99PvCYMmTYYnZ6e5mGxM4DLA1sScISEAcRdTnd3dxPcTKLGs/CVVDFQWti7gA3w5XK5Yica+osaGfZsqyTlwv1WbJRVJYd3jFwWAQ05KMkqPyULls6QIx2blMWBTaFImEMzGQyPqWaAmALiVEWQzR4C7sLi0F7jhcZCcUkkvHqRqqHq3eCUHJzUzIn7BS5qhK0bUIBmmzxyqCLI4hHR288FEbKvCmPvAZGT3s5p77tVEmlujX0xAE6O6jvAsASOOc3NwJy5Y82hBDfGvHg4leXKAfCqCOVHFraTySTXVYoVCXDE2KfmFZJZSXLGa+1LGOZaBKkkSy6qDylLazkRCTJygUBTfrwCpTmNqx0Y1vqL3gIYM7M72GMuWnuiLRxyteojDhhhBax6jmT69hOqaFRGNSrSuOv772PkpNlwYAM4/aq7AdHXOSFL/UFUFyQBKaq+K6H1MBtjYNVwyGSuJ83QZcb2JN26SrFaBDsqwKseny1XT8ewpDBLEB3rQWEusvqLs6arNWlEyYkI3PG4/gFsyYsSWRLepwAAAABJRU5ErkJggg==",
+      "aspectRatio": 1.16,
+      "isPortrait": false
+    },
+    "image017.png": {
+      "caption": "Le questionnaire concernant les frontaliers dans le recensement industriel et professionnel de 1907",
+      "provenance": "Source: Placeholder, Heft 21",
+      "resolutions": {
+        "medium-w": {
+          "url": "/media/images/image017.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/image017.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/image017.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 2000,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/image017.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 2000
+          }
+        }
+      },
+      "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAUCAYAAABmvqYOAAAACXBIWXMAACHVAAAh1QEEnLSdAAAC5ElEQVQ4yz3V51JCQQwF4Pv+L+UfG4gFKRZAAbsI9jaWlS8SmIlbsntycpK7Vr+/v8Xv7e2tHB4eloODg9Lv98toNCrj8Tjmx8fHsT4/P48zg8GgnJ2dleFwGMbf6XTKyclJ+fj4CINb+fP19VUeHh7K6elpHDACA2AOQKDLy8vYB351dRX+i4uLMPvs9va23N/fl5+fn1KJgk2CAGfmWNvHzBmXe71ejHyyTCKysuee+ff3d6k+Pz/Lzc1NGMdkMgmJXl9fC585e39/jxGrXDvz8vKyPGOdY8hCkufn50it2+0utW61Wgttx8ssrNvt9nzeizMywlwGfO7LEFYwBy764+NjpENL+k+n08hiNpuF0ZtPhvbTZ18g++REAtkl8+vr6/L09BQHMcEAW+wzm6Ojo7KzsxOXgWR3JKB77guCRDCfzqPf3d0FEyBZoASRTRZRyoKQwUiKNBIBVRMZ0b0SLc0FTIGxvb29uCAAv3E4Gi7ZWdOXLObNZjOyQ0TBq9mCOc2xZtb6FSD9E2Ay32s0GpGBmmxtbQXY9vZ2FDqzc0+LV0BY6ooBh8gKnUXzwThXq9XK2tpaMN/d3S0rKyulVq/FXB3I6ay7VWqreK12KxyKrMcB0ZdlO7bnZzBVI2O9Xg/5GEkFyOJWWaD+4P8Nya8LeHvBBFOgCDTmUpBDFqTY3NwMrRN8dXU1pJFZJUoWQ6BOtxNrl6WqEwRg9mmc4IJtbGyU9fX1uG8tIEyZVYqn+vkxMHrRfH9/P+TgB2wUUICcA3dOobEH7ruJguaXqD8dxNTPF4Yhqfi1phEwhtImQXaLQLIjibpFK2IkDYwVR0G0ZbYgS0lkwf//tE4iiHr1Fq+mMbONjyj7Od8HIF420vgZsfc8AHXJW42ZkWkAJhutCyfec8DYpTQcWAsgA+Dpc1kQD5Mz+STT15gPnjqG5rTU57RWiPzngKV9HSTNfHOcE1Qg2bofXTaXK5kzpP4AeSCSBi40V5AAAAAASUVORK5CYII=",
+      "aspectRatio": 1.172,
+      "isPortrait": false
+    },
+    "image018.png": {
+      "caption": "Placeholder Caption",
+      "provenance": "Source: Placeholder, Heft 32",
+      "resolutions": {
+        "medium-w": {
+          "url": "/media/images/image018.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/image018.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/image018.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 2000,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/image018.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 2000
+          }
+        }
+      },
+      "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAUCAYAAACeXl35AAAACXBIWXMAAA7DAAAOwwHHb6hkAAADZ0lEQVRIx03W127sMAwEUP//9+QhD0F63fTeNr333guDQ1wa14Ai2SJnyCGlTfP4+BiXl5exs7MTW1tbsb29Hbu7u7GyshKHh4exubmZ7/Y2Njbi4OAg1ycnJ+lj2DfYsrF3dnYW6+vr+b66upp2t7e30VxcXES3200iAxjjAudk9l5g7Pf39zMgs32ABe59b2+vfV9cXMyAbm5uojk+Po65ubk4OjpKI6SC4ATMYHN6epr7yCpIhL4LsIgF9PT0FOfn5znLyvrl5SXe39+j8efu7i7ZAQITjejMwESP1BCQGbhS2Bfs2tpaLCwsxPz8fJLaQwTbO2ykKenS0lJMTk6mk9pNTEyklMBnZ2djeno693ynhvXY2FjWjGTeyTY1NRUjIyMxMzPTrkdHR2NwcDD6+voyuEb04+PjGRlgg9Hw8HAOwL7ZHxoaShAAZiCkRSjA6+vrlLEGOX2TpfHx8RGNLmUsfev7+/vcZKw+MpIZWUgscvJQwjeABpl903Rm2fv28PCQePCzhvHv8XJ1ddUSen5+fjKr3t7edJAVciVQNw8yPr+/v9lEamsW1Pf3d0sIy9Mw9Hx9fSUhB3J43t7eUm7SAdUU5JW56PkAF4y17EisrpoOiR7RQNa42gw9oibb6+trm3Wn08ksOT4/P6fUAnEMKjulkEkdH7aCQFT15Iu08efz8zPTt8HRpmgAkRCpjgVmkEizCVAdEZQ67MhZwdunguBwNKVxDdnpJlkwqgtASwMWlDNLPhlUhjJiUw1n1FowcJNQh2p5ALIB4pEho7phkHAUjEBkggwglZDxLXl9t3bYzRJISbUvwjpPQNXOg1DkbJDa40xOnSr7ip4NUmskCJUGER+YSaibnDUZItaJdSw4aAQq2AcOiI8bqGRlz7caq5qL/AIwt4SirZsCmUNbsnKsu9RMQk6yJmk1GLCS3FyEyOwh1Jh5LJwZtUPkPgXEuAhJJRh2SJ0339yXygCMhGx0pQYzK0FlSFJY2TSyIo8sgACTMZkAkc034DKTFTCXdTUDO5lVlnypxId9/RLlr4V6cFZHc/06lIEuFXXVj6wAgOnYkrSkMwTCBun/R0S2ebXV4XdISbO8vJwOAJG73vxCOMwCVIKenp7o7+/PrAU6MDCQsgtYB5td9PWvCCUl8AcMcwa5o5iOGAAAAABJRU5ErkJggg==",
+      "aspectRatio": 1.4145,
+      "isPortrait": false
+    },
+    "L'indépendance_02101923.png": {
+      "caption": "La politique sociale du gouvernement Reuter",
+      "provenance": "Source: L’Indépendance, 2. octobre 1923, <a href='https://persist.lu/ark:70795/8d4j0p/pages/2/articles/DTL100' target='_blank'>e-luxemburgensia",
+      "resolutions": {
+        "medium-w": {
+          "url": "/media/images/L'indépendance_02101923.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/L'indépendance_02101923.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/L'indépendance_02101923.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 2000,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/L'indépendance_02101923.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 2000
+          }
+        }
+      },
+      "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAUCAIAAAA7jDsBAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABE0lEQVQoz11RW5LDIAzj/gdpmm7A+AVkT7cCp3ysJuMhFpaFnUSEiM7zzDkfx/v9Po/jeL2OnIuqpfu+e++qYmbNyewS/nHLoxFiQhYCtvB7s7vhQ6ZWMv0kXQCH0Ft1kPOsImx6pXV60BrhEvpUnoZUroQsMyPiXvfshqKqQsw4f9IundaajiG98fw6fNQ0Ru2dmpd78OgV12SZCcXZG+LLnTbPcFJrRYaoID70Y81L/OJGKYuOdz/t9YrDqqZJ8xfIYkzBAU/1P/GtBH3EtNWATYf4Q9cvQMdEY5SIaZcumrA9X4hFbHq+NaztgkmHTrjD1OwL5FtreJiwKIqxJXfa1eg1e2PHaOlW3MvoJXxFb+AP5hehYlsBubQAAAAASUVORK5CYII=",
+      "aspectRatio": 0.516,
+      "isPortrait": true
+    },
+    "Lindependance.png": {
+      "caption": "La politique sociale du gouvernement Reuter",
+      "provenance": "Source: L’Indépendance, 2. octobre 1923, <a href='https://persist.lu/ark:70795/8d4j0p/pages/2/articles/DTL100' target='_blank'>e-luxemburgensia",
+      "resolutions": {
+        "medium-w": {
+          "url": "/media/images/Lindependance.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/Lindependance.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/Lindependance.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 2000,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/Lindependance.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 2000
+          }
+        }
+      },
+      "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAUCAIAAAA7jDsBAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABE0lEQVQoz11RW5LDIAzj/gdpmm7A+AVkT7cCp3ysJuMhFpaFnUSEiM7zzDkfx/v9Po/jeL2OnIuqpfu+e++qYmbNyewS/nHLoxFiQhYCtvB7s7vhQ6ZWMv0kXQCH0Ft1kPOsImx6pXV60BrhEvpUnoZUroQsMyPiXvfshqKqQsw4f9IundaajiG98fw6fNQ0Ru2dmpd78OgV12SZCcXZG+LLnTbPcFJrRYaoID70Y81L/OJGKYuOdz/t9YrDqqZJ8xfIYkzBAU/1P/GtBH3EtNWATYf4Q9cvQMdEY5SIaZcumrA9X4hFbHq+NaztgkmHTrjD1OwL5FtreJiwKIqxJXfa1eg1e2PHaOlW3MvoJXxFb+AP5hehYlsBubQAAAAASUVORK5CYII=",
+      "aspectRatio": 0.516,
       "isPortrait": true
     }
   }
