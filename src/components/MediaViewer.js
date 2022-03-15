@@ -41,7 +41,7 @@ const MediaViewer = ({ isMobile=true, color, width, height }) => {
         ): null}
       </div>
       <figcaption className="mh0 pb3" style={{ flexShrink: '1', maxHeight: height * .25, overflow: 'scroll' }}>
-        {mediaFigureHeight}x{mediaFigureWidth} - {media.caption
+        {media.caption
           ? <h2 className="mb1" style={{color, marginTop: 0}} dangerouslySetInnerHTML={{__html:media.caption }}></h2>
           : null
         }
