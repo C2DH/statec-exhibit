@@ -26,7 +26,14 @@
 }
 .ZoomAndPanMedia_controls {
   position: absolute;
-  bottom: 58px;
+  bottom: -5px;
+  left: -5px;
+}
+
+.ZoomAndPanMedia_controls .flex{
+  background-color: var(--secondary);
+  /* border: 1px solid;
+  border-radius: 20px; */
 }
 
 .ZoomAndPanMedia_ControlsModal {
@@ -44,6 +51,7 @@
   justify-content: center;
   align-items: center;
   z-index: 100;
+  cursor: pointer;
 }
 
 .ZoomAndPanMedia_zoomResetButton {
@@ -56,4 +64,6 @@
   font-size: 20px;
   line-height: 24px;
   z-index: 100;
+
+  cursor: pointer;
 }

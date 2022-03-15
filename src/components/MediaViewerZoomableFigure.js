@@ -205,7 +205,7 @@ const MediaViewerZoomableFigure = ({
         </ReactHammer>
       </div>
     <div className="ZoomAndPanMedia_controls">
-      <div className="d-flex flex-row">
+      <div className="flex">
         <div
           className={`ZoomAndPanMedia_zoomButton cursor-pointer btn-zoom mb-2`}
           onClick={() => handleZoom(0.1)}

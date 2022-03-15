@@ -26,7 +26,7 @@ const AppPanels = () => {
       <Panel name='table-of-contents' color={color} withLine>
         <TableOfContents color={color}/>
       </Panel>
-      <Panel name='viewer' color={color} Component={MediaViewer} />
+      <Panel name='viewer' color={color} isMobile={isMobile} Component={MediaViewer} />
       {isMobile && (
         <Panel name='vis' backgroundColor={color} color='var(--secondary)' >
           <Suspense fallback='loading'>

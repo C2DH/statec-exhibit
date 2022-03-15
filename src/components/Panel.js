@@ -10,11 +10,12 @@ const Panel = ({
   left=false,
   backgroundColor='var(--dark)',
   color='white',
+  isMobile=false,
   withLine=false,
   Component,
   children,
 }) => {
-  const { width, height } = useCurrentWindowDimensions()
+  const { width, height } = useCurrentWindowDimensions({ isMobile })
   const [isOpen, setIsOpen ] = useState(false)
   const history = useHistory()
   const qs = useURLSearchParams()
@@ -52,7 +53,7 @@ const Panel = ({
         className={`Panel_closeButton absolute bg-transparent bw0 ${left ? 'right-0': 'left-0'}`}
         onClick={closeButtonClickHandler}
       >
-        {left ? <ArrowRightCircle strokeWidth={1} size={25} color={color}/> : <ArrowLeftCircle strokeWidth={1} size={25} color={color}/> }
+        {left ? <ArrowRightCircle strokeWidth={2} size={25} color={color}/> : <ArrowLeftCircle strokeWidth={2} size={25} color={color}/> }
       </button>
       <button
         className={`Panel_closeButton absolute bg-transparent bw0 ${left ? 'left-0': 'right-0'}`}
@@ -73,7 +74,7 @@ const Panel = ({
         color,
       }}>
       {Component
-        ? <Component color={color} height={height} width={width} qs={qs} />
+        ? <Component color={color} height={height} width={width} isMobile={isMobile} qs={qs} />
         : children
       }
       </div>

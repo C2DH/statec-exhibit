@@ -158,31 +158,55 @@ export const useURLSearchParams = () => {
  *     const [bbox, ref] = useBoundingClientRect()
  *     return (<div ref="ref"></div>)
  */
-export const useBoundingClientRect = () => {
+export const useBoundingClientRect = ({ isMobile=false } = {}) => {
   const ref = useRef();
   const [bbox, setBbox] = useState({
-    width: 0, height: 0, windowDimensions: '0x0'
+    width: 0, height: 0, windowDimensions: '0x0', orientation: null
   });
   const setCurrentBoundingClientRect = () => {
-    const boundingClientRect = ref && ref.current
+    const rect = ref && ref.current
       ? ref.current.getBoundingClientRect()
       : { width: 0, height: 0, windowDimensions: '0x0' }
-    const windowDimensions = `${boundingClientRect.width}x${boundingClientRect.height}`
+    const windowDimensions = `${rect.width}x${rect.height}`
+    const orientation = window.innerWidth < window.innerHeight
+      ? 'portrait'
+      : 'landscape'
+
+    if (isMobile && bbox.height > 0){
+      if (orientation === bbox.orientation) {
+        console.debug('useBoundingClientRect (isMobile) same orientation.')
+        return
+      }
+    }
     if (windowDimensions !== bbox.windowDimensions) {
       // extract one dimension by one dimension, the only way
       // as the result of el.getBoundingClientRect() returns a special object
       // of type ClientRect (or DomRect apparently)
-      const {top, right, bottom, left, width, height, x, y} = boundingClientRect
+      const {top, right, bottom, left, width, height, x, y} = rect
       setBbox({
         top, right, bottom, left, width, height, x, y,
         windowDimensions,
+        orientation
       })
     }
   };
+  if(isMobile) {
+    console.debug('useBoundingClientRect', bbox.windowDimensions)
+  }
   useEffect(() => {
+    let timeoutId = null;
+    const resizeListener = () => {
+      clearTimeout(timeoutId);
+      timeoutId = setTimeout(() => {
+        setCurrentBoundingClientRect()
+      }, 100);
+    };
     setCurrentBoundingClientRect()
-    window.addEventListener('resize', setCurrentBoundingClientRect);
-    return () => window.removeEventListener('resize', setCurrentBoundingClientRect);
+    window.addEventListener('resize', resizeListener);
+    return () => {
+      window.removeEventListener('resize', resizeListener);
+      clearTimeout(timeoutId);
+    }
   });
   return [bbox, ref];
 };

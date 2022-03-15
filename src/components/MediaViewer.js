@@ -5,10 +5,10 @@ import MediaViewerZoomableFigure from './MediaViewerZoomableFigure'
 import '../styles/components/mediaViewer.scss'
 import {useBoundingClientRect} from '../hooks'
 
-const MediaViewer = ({ isMobile=true, color, width, height }) => {
+const MediaViewer = ({ isMobile, color, width, height }) => {
   const qs = useURLSearchParams()
   const [ media, setMedia ] = useState(null)
-  const [{ height:mediaFigureHeight, width:mediaFigureWidth}, ref] = useBoundingClientRect({ isMobile })
+  const [{ height:mediaFigureHeight, width:mediaFigureWidth}, ref] = useBoundingClientRect()
 
   useEffect(() => {
     const id = qs.get('id')
@@ -40,7 +40,7 @@ const MediaViewer = ({ isMobile=true, color, width, height }) => {
           />
         ): null}
       </div>
-      <figcaption className="mh0 pb3" style={{ flexShrink: '1', maxHeight: height * .25, overflow: 'scroll' }}>
+      <figcaption className="mh0 pb3" style={{ flexShrink: '1', maxHeight: height * .15 }}>
         {media.caption
           ? <h2 className="mb1" style={{color, marginTop: 0}} dangerouslySetInnerHTML={{__html:media.caption }}></h2>
           : null
