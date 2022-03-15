@@ -2705,7 +2705,7 @@
     },
     "travailleurs-haut-fourneau-1900.jpg": {
       "caption": "Travailleurs de haut-fourneau vers 1900.",
-      "provenance": "© Ville de Dudelange - Fonds Arbed",
+      "provenance": "Source: © Ville de Dudelange - Fonds Arbed",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/travailleurs-haut-fourneau-1900.medium-w.jpg",
@@ -2746,7 +2746,7 @@
     },
     "picture_1.png": {
       "caption": "La crise en 1931",
-      "provenance": "Extrait de L’Indépendance luxembourgeoise du 14 décembre 1931",
+      "provenance": "Source: Extrait de L’Indépendance luxembourgeoise du 14 décembre 1931",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/picture_1.medium-w.jpg",
@@ -2869,7 +2869,7 @@
     },
     "picture_3p1-3.jpg": {
       "caption": "Une autoroute luxembourgeoise en 2020",
-      "provenance": "Photo RL / Pierre Heckler",
+      "provenance": "Source: Pierre Heckler, RL",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/picture_3p1-3.medium-w.jpg",
@@ -2910,7 +2910,7 @@
     },
     "Picture_3p2-1.png": {
       "caption": "Questionnaire du recensement de 1871",
-      "provenance": "Archives nationales, recensement de 1871",
+      "provenance": "Source: Archives nationales, recensement de 1871",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/Picture_3p2-1.medium-w.jpg",
@@ -2951,7 +2951,7 @@
     },
     "Picture_3p2-2a.jpg": {
       "caption": "Machines et instruments de travail agricoles au 19ème siècle",
-      "provenance": "Walker Art Library / Alamy Banque D'Images",
+      "provenance": "Source: Walker Art Library, Alamy Banque D'Images",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/Picture_3p2-2a.medium-w.jpg",
@@ -2991,6 +2991,8 @@
       "isPortrait": false
     },
     "claas-2147239.jpg": {
+      "caption": "Une moissonneuse-batteuse contemporaine en action",
+      "provenance": "Copyright Placeholder",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/claas-2147239.medium-w.jpg",
@@ -3031,7 +3033,7 @@
     },
     "Picture_3p2-3.png": {
       "caption": "Questionnaire du recensement industriel et professionnel de 1907 (extrait consacré aux professions). Commission permanente de statistique, Recensement professionnel et industriel du 12 juin 1907, Travaux préparatoires et Exposé des méthodes, ",
-      "provenance": "Publications de la Commission permanente de Statistique, XXIème Fascicule, 1ère Série, Tome_ 1er",
+      "provenance": "Source: Publications de la Commission permanente de Statistique, XXIème Fascicule, 1ère Série, Tome_ 1er",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/Picture_3p2-3.medium-w.jpg",
@@ -3113,7 +3115,7 @@
     },
     "Picture_3p2-6.png": {
       "caption": "Durée de travail, en 1907",
-      "provenance": "Placeholder Copyright, Heft 24",
+      "provenance": "Source: « Les employés et ouvriers d’après la durée habituelle de travail journalier », dans : Publications de la Commission permanente de Statistique, XXIVe Fascicule - Recensement professionnel et industriel du 12 juin 1907, Ire série, Tome IVe, Ire Partie, page 100, Imprimerie P. Worré-Mertens, Luxembourg, 1913.",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/Picture_3p2-6.medium-w.jpg",
@@ -3154,7 +3156,7 @@
     },
     "Picture_3p2-7.png": {
       "caption": "Individus actifs et personnes dépendant de la profession, 1907",
-      "provenance": "Placeholder Copyright, Heft 22",
+      "provenance": "Source: « Répartition de la population sur les groupes de professions et par types de personnes actives », dans : Publications de la Commission permanente de Statistique, XXIIe Fascicule - Recensement professionnel et industriel du 12 juin 1907, Ire série, Tome IIe, Ire Partie, page 30, Imprimerie P. Worré-Mertens, Luxembourg, 1912.",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/Picture_3p2-7.medium-w.jpg",
@@ -4523,6 +4525,8 @@
       "isPortrait": false
     },
     "Picture_3p2-10.png": {
+      "caption": "Les salaires des ouvriers de la sidérurgie depuis 1914",
+      "provenance": "Source: STATEC, <a href='https://statistiques.public.lu/en/publications/series/statistiques-historiques/2014/statistiques-historiques/index.html' target='_blank'>Statistiques historiques, 1990</a>",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/Picture_3p2-10.medium-w.jpg",
@@ -4562,6 +4566,8 @@
       "isPortrait": true
     },
     "Picture_3p2-11.png": {
+      "caption": "Comparaison des revenus réels des travailleurs des industries de la Communauté, Etudes et documents, 1956",
+      "provenance": "Source: <a href='https://aei.pitt.edu/36264/1/A2411.pdf' target='_blank'>Etudes et documents, CECA</a>",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/Picture_3p2-11.medium-w.jpg",
@@ -4601,6 +4607,8 @@
       "isPortrait": false
     },
     "Picture_3p2-12.png": {
+      "caption": "La première publication scientifique détaillée concernant les questions de croissance au Luxembourg (1971).",
+      "provenance": "Source: <a href='https://statistiques.public.lu/fr/actualites/economie-finances/conjoncture/2013/08/20130821/cahiers48.pdf' target='_blank'>Cahiers, STATEC</a>",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/Picture_3p2-12.medium-w.jpg",
@@ -4640,6 +4648,8 @@
       "isPortrait": true
     },
     "Picture_3p2-13.png": {
+      "caption": "Les principes de classification de l’enquête sur les forces de travail.",
+      "provenance": "Source: Enquête communautaire sur les forces de travail, Population et conditions sociales, Méthodes et définitions, Luxembourg, 1999, <a href='https://ec.europa.eu/eurostat/documents/3859598/5826084/CA-19-98-536-FR.PDF.pdf/654c279c-e17d-4fb8-8d9d-d270e9e84603?t=1414780231000' target='_blank'>EUROSTAT</a>",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/Picture_3p2-13.medium-w.jpg",
@@ -4679,6 +4689,8 @@
       "isPortrait": false
     },
     "Picture_3p2-14.png": {
+      "caption": "La classification en dix grands groupes dans la classification-type des professions (CITP) de 1958 du BIT",
+      "provenance": "Source : <a href='https://www.ilo.org/public/libdoc/ilo/1958/58B09_81_fren.pdf' target='_blank'>Bureau international du travail, Classification type des professions, Genève, 1958</a>",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/Picture_3p2-14.medium-w.jpg",
@@ -4718,6 +4730,8 @@
       "isPortrait": false
     },
     "Picture_3p2-15.png": {
+      "caption": "Les « cols blancs » dominent la plus part des secteurs",
+      "provenance": "Source: <a href='https://statistiques.public.lu/catalogue-publications/regards/2020/PDF-17-2020.pdf' target='_blank'> STATEC, Polarisation croissante de l’emploi salarié au Luxembourg, N° 17/2020</a>",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/Picture_3p2-15.medium-w.jpg",
