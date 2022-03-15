@@ -5150,6 +5150,170 @@
       "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAUCAYAAABWMrcvAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAC6ElEQVQ4yy2TW4/bVBSF/TuREBJ3qlKgrRh4AImfwBuV4IUXJHgBHirKdDK3eBLb8T22j4/vTuLYSZtCUUdFgBbrePqwdCxrf3vttX2sTU5PcDXXMTMNzB0bVzMd+vQMU13H5dzBdM53pgnDMhD4C3z9/c/QnoYTvCgt/CFNHFILh0jH3pugt0+oYzx1H+HgHWNn/46X4hw/fvsNtH55gUMVYChC9HmENnIgbR1icQW5mKIMHHTLOTahjuvKwQ/fPYC2JbQvXGwSE+t4hkFa2GUWhnSGXsxYfIaNf4LWfYzdcoJk+iu0LrqkQwDpGZAui6SHoQywzX2+d9FLG+vE4AQzNrOxCk6hrcNLPGlTdEVMJditcqw55iqLsM5CrFIPXeZjmznoWVOHU0LBBYYqxq5JRw2NxNBKrFnQEmqEiyqyKQtr6aNcWtBWwTl6QkMtsKPUuS0TbMoIGy5nJR20zNsmFrr0BtZan1AZY1+rESOUsUO5SIMFZGhC+gaywIBg3jpajM5aG6hF0KkQ6AhXiTuCcukg5/pzjpOHBgpqIyw0sUGIwbZ06ZucIyWEPBSx9wpyxyZVYjOLyeYejMkv0Jpgiq6WBDOGT+jijcV5zNAiYAMXtVpGbDPCEmcPf4JW+5d0YJ4q47ZiFJGClBMV+czlQPgWEmfG1bvQj3n3SveCDmKE6jRkBuUS3ECUCGwuxYLgx29jE9b5Q2i5fYZVLuimoCUydi4URBfBZ9VAjZktbXTSvYEyazKOtSklGqkgewQzQilPNZ7KqJzWwoZxSkiaj8fwCqzZsUx8VCJk9xDFq+eKZx5a6DMP9sUjaGL2G4Oa42jq6nRcu8rXyJhj39zFrhTcXoB9IxBenfA78UcbuJVnrcBfXYYXQ4Xr/QrXTzZ4+azDP39u8e/zHf4+bPHf8x5dsoB2+63XoHTnndfxyXtv4N6tN3H/9tv49M67+Ozj9/H53Vv48ugevrj/Eb46uoujDz/A/1aKgFcKAHDkAAAAAElFTkSuQmCC",
       "aspectRatio": 0.6415,
       "isPortrait": true
+    },
+    "image015.png": {
+      "caption": "Durée de travail, en 1907",
+      "provenance": "Source: « Les employés et ouvriers d’après la durée habituelle de travail journalier », dans : Publications de la Commission permanente de Statistique, XXIVe Fascicule - Recensement professionnel et industriel du 12 juin 1907, Ire série, Tome IVe, Ire Partie, page 100, Imprimerie P. Worré-Mertens, Luxembourg, 1913.",
+      "resolutions": {
+        "medium-w": {
+          "url": "/media/images/image015.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/image015.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/image015.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 2000,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/image015.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 2000
+          }
+        }
+      },
+      "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAUCAYAAABmvqYOAAAACXBIWXMAAA7DAAAOwwHHb6hkAAACrklEQVQ4y23UC09iQQwF4Pv//5iJREVFUUEUfAIqDwWU1+x+3ZRgspM087jT09P2zK0mk0l5fn4unU6nPD4+loeHh9iPx+Py9vZW+v1+eXp6Kt1uN9b39/dxt91uxzwYDMrFxUXp9XpxD4b1YrEoFQeX2HA4DMDRaFQ+Pz/LdDqNIO/v7/HNPgHM7OPjozSbzQB8eXmJYAh+f3+XCtjt7W2wBQjMJQGcYey7mXFkwDJbwQXJTOFsNptSlb9ju93GxjALYHCaz+cBICDjjJ07mPsOWBlubm7CZrNZYFbr9To2WN3d3YWTEnDATHqr1SqcBV4ul7H/+fkpfL++vnalSnAZB/N0wACAQIABaJo6K5Gg1sDcIQR7WWiy71dXV1F/5II5YCySEabADcyBCQzQmiGhru4KoFwwUinWRjCX3r5hKlWsgGGJWSpIcIahb8CBphxfX1//SREjjhqlgYbau6j7zLlA+5oHqByCOFfry8vL8GUIhlpypGKUAUMBsABuBrKvGI1LpgJaywZZJa6klcykbQBNLWPH0Uzvmpxa1zxn5+fnpV6vl+vr63J6ehprWFXWWaRkLjqTKmemudTQarUCROrWjUYjgpydncV3wfnFC01Z5bM3pJlPPF+pOZ+3b/bZRFkBRSLLpLSVrqY6HNKnmjoDijFnIAASFHMMU9tKw9yRWZRFKVj+AhgFJFNBmDO9ycfD8p+SmfKRmTNa3zU0L6q1OrqY6pABBSTw/kPSL+cpgpSs+7+kmIMztv7TUs4GMuXLxyKwXgFVHuWTgUy8+FCLFHSXGZmeDPJnxJnEzB7LyclJzEdHRyG/w8PDmJFh0VARpKcsUhEME8yBA5CB2T4b58z++Pg4wGq1WsiRPPO3+9+yqD1wIByx5QCMAQIKyNq3g4ODHTiFqcYf2rGy/4USsIAAAAAASUVORK5CYII=",
+      "aspectRatio": 1.137,
+      "isPortrait": false
+    },
+    "image016.png": {
+      "caption": "Individus actifs et personnes dépendant de la profession, 1907",
+      "provenance": "Source: « Répartition de la population sur les groupes de professions et par types de personnes actives », dans : Publications de la Commission permanente de Statistique, XXIIe Fascicule - Recensement professionnel et industriel du 12 juin 1907, Ire série, Tome IIe, Ire Partie, page 30, Imprimerie P. Worré-Mertens, Luxembourg, 1912.",
+      "resolutions": {
+        "medium-w": {
+          "url": "/media/images/image016.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/image016.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/image016.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 2000,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/image016.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 2000
+          }
+        }
+      },
+      "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAUCAYAAABmvqYOAAAACXBIWXMAAA7DAAAOwwHHb6hkAAACxUlEQVQ4y03VaVOqMQwF4P7/v+U3ERVFRUXcN1wQVFxAc+fJ3DAy02nfNj05OUlDu7y8jKOjo5hOp/H29havr6+r4Xs2m8XLy0uej0ajuLm5ieFwmGN7ezu63W7s7Ozk+uLiIs+vrq5isVhEi/+/39/feH9/j8/Pz/j6+or5fJ7gjOr39PQUDw8PeX52dhadTieJATw5OYnn5+f8HgwGSWgFDmQ8HucmtgXEYTl3GSin+/v7sba2lkDG1tZW3N/fx8bGRu5z2L6/v5PJX4Z/f0Cd/fz8rMI2gPd6vdjb24uDg4NkjP3h4WHuIdbI8PHxkWzu7u5ic3MzvdN0fX09o3FmYI3d9fV1Onh8fFw5c9f+7e1tap6y+ABUyTo/P4/j4+M8BEwKEvkWPob2OTEUhChgYIxcv99PvCYMmTYYnZ6e5mGxM4DLA1sScISEAcRdTnd3dxPcTKLGs/CVVDFQWti7gA3w5XK5Yica+osaGfZsqyTlwv1WbJRVJYd3jFwWAQ05KMkqPyULls6QIx2blMWBTaFImEMzGQyPqWaAmALiVEWQzR4C7sLi0F7jhcZCcUkkvHqRqqHq3eCUHJzUzIn7BS5qhK0bUIBmmzxyqCLI4hHR288FEbKvCmPvAZGT3s5p77tVEmlujX0xAE6O6jvAsASOOc3NwJy5Y82hBDfGvHg4leXKAfCqCOVHFraTySTXVYoVCXDE2KfmFZJZSXLGa+1LGOZaBKkkSy6qDylLazkRCTJygUBTfrwCpTmNqx0Y1vqL3gIYM7M72GMuWnuiLRxyteojDhhhBax6jmT69hOqaFRGNSrSuOv772PkpNlwYAM4/aq7AdHXOSFL/UFUFyQBKaq+K6H1MBtjYNVwyGSuJ83QZcb2JN26SrFaBDsqwKseny1XT8ewpDBLEB3rQWEusvqLs6arNWlEyYkI3PG4/gFsyYsSWRLepwAAAABJRU5ErkJggg==",
+      "aspectRatio": 1.16,
+      "isPortrait": false
+    },
+    "image017.png": {
+      "caption": "Le questionnaire concernant les frontaliers dans le recensement industriel et professionnel de 1907",
+      "provenance": "Source: Placeholder, Heft 21",
+      "resolutions": {
+        "medium-w": {
+          "url": "/media/images/image017.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/image017.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/image017.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 2000,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/image017.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 2000
+          }
+        }
+      },
+      "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAUCAYAAABmvqYOAAAACXBIWXMAACHVAAAh1QEEnLSdAAAC5ElEQVQ4yz3V51JCQQwF4Pv+L+UfG4gFKRZAAbsI9jaWlS8SmIlbsntycpK7Vr+/v8Xv7e2tHB4eloODg9Lv98toNCrj8Tjmx8fHsT4/P48zg8GgnJ2dleFwGMbf6XTKyclJ+fj4CINb+fP19VUeHh7K6elpHDACA2AOQKDLy8vYB351dRX+i4uLMPvs9va23N/fl5+fn1KJgk2CAGfmWNvHzBmXe71ejHyyTCKysuee+ff3d6k+Pz/Lzc1NGMdkMgmJXl9fC585e39/jxGrXDvz8vKyPGOdY8hCkufn50it2+0utW61Wgttx8ssrNvt9nzeizMywlwGfO7LEFYwBy764+NjpENL+k+n08hiNpuF0ZtPhvbTZ18g++REAtkl8+vr6/L09BQHMcEAW+wzm6Ojo7KzsxOXgWR3JKB77guCRDCfzqPf3d0FEyBZoASRTRZRyoKQwUiKNBIBVRMZ0b0SLc0FTIGxvb29uCAAv3E4Gi7ZWdOXLObNZjOyQ0TBq9mCOc2xZtb6FSD9E2Ay32s0GpGBmmxtbQXY9vZ2FDqzc0+LV0BY6ooBh8gKnUXzwThXq9XK2tpaMN/d3S0rKyulVq/FXB3I6ay7VWqreK12KxyKrMcB0ZdlO7bnZzBVI2O9Xg/5GEkFyOJWWaD+4P8Nya8LeHvBBFOgCDTmUpBDFqTY3NwMrRN8dXU1pJFZJUoWQ6BOtxNrl6WqEwRg9mmc4IJtbGyU9fX1uG8tIEyZVYqn+vkxMHrRfH9/P+TgB2wUUICcA3dOobEH7ruJguaXqD8dxNTPF4Yhqfi1phEwhtImQXaLQLIjibpFK2IkDYwVR0G0ZbYgS0lkwf//tE4iiHr1Fq+mMbONjyj7Od8HIF420vgZsfc8AHXJW42ZkWkAJhutCyfec8DYpTQcWAsgA+Dpc1kQD5Mz+STT15gPnjqG5rTU57RWiPzngKV9HSTNfHOcE1Qg2bofXTaXK5kzpP4AeSCSBi40V5AAAAAASUVORK5CYII=",
+      "aspectRatio": 1.172,
+      "isPortrait": false
+    },
+    "image018.png": {
+      "caption": "Placeholder Caption",
+      "provenance": "Source: Placeholder, Heft 32",
+      "resolutions": {
+        "medium-w": {
+          "url": "/media/images/image018.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/image018.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/image018.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 2000,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/image018.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 2000
+          }
+        }
+      },
+      "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAUCAYAAACeXl35AAAACXBIWXMAAA7DAAAOwwHHb6hkAAADZ0lEQVRIx03W127sMAwEUP//9+QhD0F63fTeNr333guDQ1wa14Ai2SJnyCGlTfP4+BiXl5exs7MTW1tbsb29Hbu7u7GyshKHh4exubmZ7/Y2Njbi4OAg1ycnJ+lj2DfYsrF3dnYW6+vr+b66upp2t7e30VxcXES3200iAxjjAudk9l5g7Pf39zMgs32ABe59b2+vfV9cXMyAbm5uojk+Po65ubk4OjpKI6SC4ATMYHN6epr7yCpIhL4LsIgF9PT0FOfn5znLyvrl5SXe39+j8efu7i7ZAQITjejMwESP1BCQGbhS2Bfs2tpaLCwsxPz8fJLaQwTbO2ykKenS0lJMTk6mk9pNTEyklMBnZ2djeno693ynhvXY2FjWjGTeyTY1NRUjIyMxMzPTrkdHR2NwcDD6+voyuEb04+PjGRlgg9Hw8HAOwL7ZHxoaShAAZiCkRSjA6+vrlLEGOX2TpfHx8RGNLmUsfev7+/vcZKw+MpIZWUgscvJQwjeABpl903Rm2fv28PCQePCzhvHv8XJ1ddUSen5+fjKr3t7edJAVciVQNw8yPr+/v9lEamsW1Pf3d0sIy9Mw9Hx9fSUhB3J43t7eUm7SAdUU5JW56PkAF4y17EisrpoOiR7RQNa42gw9oibb6+trm3Wn08ksOT4/P6fUAnEMKjulkEkdH7aCQFT15Iu08efz8zPTt8HRpmgAkRCpjgVmkEizCVAdEZQ67MhZwdunguBwNKVxDdnpJlkwqgtASwMWlDNLPhlUhjJiUw1n1FowcJNQh2p5ALIB4pEho7phkHAUjEBkggwglZDxLXl9t3bYzRJISbUvwjpPQNXOg1DkbJDa40xOnSr7ip4NUmskCJUGER+YSaibnDUZItaJdSw4aAQq2AcOiI8bqGRlz7caq5qL/AIwt4SirZsCmUNbsnKsu9RMQk6yJmk1GLCS3FyEyOwh1Jh5LJwZtUPkPgXEuAhJJRh2SJ0339yXygCMhGx0pQYzK0FlSFJY2TSyIo8sgACTMZkAkc034DKTFTCXdTUDO5lVlnypxId9/RLlr4V6cFZHc/06lIEuFXXVj6wAgOnYkrSkMwTCBun/R0S2ebXV4XdISbO8vJwOAJG73vxCOMwCVIKenp7o7+/PrAU6MDCQsgtYB5td9PWvCCUl8AcMcwa5o5iOGAAAAABJRU5ErkJggg==",
+      "aspectRatio": 1.4145,
+      "isPortrait": false
     }
   }
 }
