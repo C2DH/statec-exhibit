@@ -1,4 +1,5 @@
 import React, { useEffect, useMemo, useState } from 'react'
+import {useHistory} from 'react-router'
 import chapter01 from '../data/themes/theme-01.json'
 import chapter02 from '../data/themes/theme-02.json'
 import chapter03 from '../data/themes/theme-03.json'
@@ -18,7 +19,7 @@ import { StartDate, EndDate } from '../constants'
 import '../styles/components/chapter.scss'
 import { Helmet } from 'react-helmet'
 
-const AvailableChapters = Object.freeze({
+export const AvailableChapters = Object.freeze({
   [chapter01.id]: chapter01,
   [chapter02.id]: chapter02,
   [chapter03.id]: chapter03,
@@ -26,8 +27,17 @@ const AvailableChapters = Object.freeze({
 })
 const DefaultThemeId = String(chapter01.id)
 
-const Section = ({ section, height, width, backgroundColor, isMobile}) => {
+const Section = ({
+  section,
+  sectionId,
+  height,
+  width,
+  backgroundColor,
+  isMobile,
+  chapterId
+}) => {
   const [step, setStep] = useState(null)
+  const history = useHistory()
 
   const sectionDataset = useMemo(() => {
     console.info(`Section loading dataset ${section.dataset}.json`)
@@ -45,6 +55,18 @@ const Section = ({ section, height, width, backgroundColor, isMobile}) => {
       : [StartDate, EndDate]
   }, [section])
 
+  const intervalClickHandler = ({ from, to, paragraphIdx, moduleIdx }) => {
+
+    if (isMobile) {
+      history.push({
+        search: `?panel=vis&dataset=${section.dataset}&from=${from}&to=${to}&pos=${chapterId},${sectionId},${moduleIdx},${paragraphIdx}`,
+        hash: window.location.hash.replace('#', ''),
+      })
+    } else {
+      console.info('@TODO: open / close year indicator.')
+    }
+  }
+
   return (
     <div className="Section Chapter_streamWrapper flex">
       <ChapterStream
@@ -54,6 +76,7 @@ const Section = ({ section, height, width, backgroundColor, isMobile}) => {
         width={width}
         modules={section.modules}
         onStepChange={stepChangeHandler}
+        onIntervalClick={intervalClickHandler}
         className={isMobile ? 'force-full-width': ''}
       />
       {!isMobile ? (
@@ -66,6 +89,7 @@ const Section = ({ section, height, width, backgroundColor, isMobile}) => {
             numStartAt={section.numStartAt}
             themeDatasetId={sectionDataset.id}
             keys={Object.keys(sectionDataset.legend).filter(k => k !== 't')}
+            colorKeys={section.colorKeys}
             legend={sectionDataset.legend}
             data={sectionDataset.values || []}
             width={width}
@@ -155,6 +179,8 @@ const Chapter = ({ match: { params: { chapterId }}}) => {
       {chapterSections.map((section, i) => (
         <Section
           key={i}
+          sectionId={i}
+          chapterId={chapterId}
           section={section}
           height={height}
           width={width}

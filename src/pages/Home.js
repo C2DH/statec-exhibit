@@ -9,6 +9,7 @@ import { getIsMobileWithTablet } from '../logic/viewport'
 import { ChapterRoutes } from '../constants'
 import { ArrowUpRight, ArrowDown } from 'react-feather'
 import '../styles/pages/home.scss'
+import Footer from '../components/Footer'
 import ChapterCover from '../components/Chapter/ChapterCover'
 import ChapterQrCode from '../components/Chapter/ChapterQrCode'
 
@@ -100,21 +101,9 @@ const Home = () => {
             </div>
           ))}
         </div>
-        <div className="flex items-center justify-center ph4 mv4 mv3-ns">
-          <img
-            src="/statec-logo-blu.png"
-            alt="STATEC"
-            height={40}
-            className="mr2"
-          />
-          <img
-            src="/UNI_C2DH_blu.png"
-            alt="Luxembourg Centre for Contemporary and Digital History - University of Luxembourg"
-            height={40}
-            className="ml2"
-          />
-        </div>
+
       </div>
+      <Footer color="var(--secondary)" className="Home_Footer flex flex-column items-center mv4 mv3-ns"/>
       <ChapterQrCode isMobileWithTablet={isMobileWithTablet} chapterId="index" />
     </div>
 

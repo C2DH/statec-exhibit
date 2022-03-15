@@ -23,7 +23,7 @@ const AnimatedPointers = ({
       transform: `translate(${data[0].values[closestIdx].x + offsetLeft}px,0px)`,
       marginLeft: -25,
       width: 50,
-      zIndex: 1000,
+      zIndex: 12,
     }}>
       <span className="pa1" style={{
         backgroundColor: color,
