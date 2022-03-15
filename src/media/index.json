@@ -1803,8 +1803,7 @@
     },
     "wall_street_5372590938_e898f8d9be_o.jpg": {
       "caption": "La Bourse de New York à Wall Street après le krach de 1929 : un nettoyeur balaie le sol avec un balai, qui est plein de journaux et autres papiers froissés et déchirés.",
-      "provenance": "Source: Fotograaf onbekend, Nationaal Archief, Collectie Spaarnestad, SFA001018144",
-      "url": "https://www.flickr.com/photos/nationaalarchief/5372590938/in/photolist-9bKW7f-7AJtqx-ovoobc-oweBS3-8RJPqR-7g9En5-oeJSn2-5gZ561-oc9Ys8-ounS8o-oubfNE-ovWGQa-oddKom-oxPkwT-wGneR5-ouHE6f-ouKi4p-otqpfL-odfNp5-xgmPsT-ovVVge-oxTtUX-owv75X-ovPLNi-oubhgE-odD3uz-oeJtJ7-6KC37N-odtaj7-owGZJK-oeH4ak-oeJmVB-oeJ5jm-odZMF4-ouJGMh-wY8FVF-oc8SPg-osFtFs-oeGWbv-of1vth-odnjKc-xsQfWA-rn7mBu-ouyGyt-owax5H-x2zot8-otpv2q-oePXxc-tjcJfA-oszAMd",
+      "provenance": "Source: Fotograaf onbekend, Nationaal Archief, Collectie Spaarnestad, <a href='https://www.flickr.com/photos/nationaalarchief/5372590938/in/photolist-9bKW7f-7AJtqx-ovoobc-oweBS3-8RJPqR-7g9En5-oeJSn2-5gZ561-oc9Ys8-ounS8o-oubfNE-ovWGQa-oddKom-oxPkwT-wGneR5-ouHE6f-ouKi4p-otqpfL-odfNp5-xgmPsT-ovVVge-oxTtUX-owv75X-ovPLNi-oubhgE-odD3uz-oeJtJ7-6KC37N-odtaj7-owGZJK-oeH4ak-oeJmVB-oeJ5jm-odZMF4-ouJGMh-wY8FVF-oc8SPg-osFtFs-oeGWbv-of1vth-odnjKc-xsQfWA-rn7mBu-ouyGyt-owax5H-x2zot8-otpv2q-oePXxc-tjcJfA-oszAMd' target='_blank'>SFA001018144</a>",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/wall_street_5372590938_e898f8d9be_o.medium-w.jpg",
@@ -1927,7 +1926,7 @@
     },
     "HISAEZ000342V01_traite.jpg": {
       "caption": "Placeholder Caption",
-      "provenance": "Placeholder Copyright",
+      "provenance": "Source: Placeholder",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/HISAEZ000342V01_traite.medium-w.jpg",
@@ -2869,7 +2868,7 @@
     },
     "picture_3p1-3.jpg": {
       "caption": "Une autoroute luxembourgeoise en 2020",
-      "provenance": "Source: Pierre Heckler, RL",
+      "provenance": "Source: iStock Photo",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/picture_3p1-3.medium-w.jpg",
@@ -4498,6 +4497,8 @@
       "isPortrait": false
     },
     "Picture_3p2-9.png": {
+      "caption": "Salaires annuel brut moyen selon la nationalité, resp. le lieu de résidence et le niveau d’éducation (Enquête structure des salaires de 2018. Pour un même niveau d’éducation, frontaliers et résidents étrangers gagnent moins que les résidents luxembourgeois",
+      "provenance": "Source: STATEC, <a href='https://statistiques.public.lu/catalogue-publications/regards/2020/PDF-14-2020.pdf ' targer='_blank'>Regards n° 14/2020</a>",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/Picture_3p2-9.medium-w.jpg",
@@ -5314,6 +5315,88 @@
       "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAUCAYAAACeXl35AAAACXBIWXMAAA7DAAAOwwHHb6hkAAADZ0lEQVRIx03W127sMAwEUP//9+QhD0F63fTeNr333guDQ1wa14Ai2SJnyCGlTfP4+BiXl5exs7MTW1tbsb29Hbu7u7GyshKHh4exubmZ7/Y2Njbi4OAg1ycnJ+lj2DfYsrF3dnYW6+vr+b66upp2t7e30VxcXES3200iAxjjAudk9l5g7Pf39zMgs32ABe59b2+vfV9cXMyAbm5uojk+Po65ubk4OjpKI6SC4ATMYHN6epr7yCpIhL4LsIgF9PT0FOfn5znLyvrl5SXe39+j8efu7i7ZAQITjejMwESP1BCQGbhS2Bfs2tpaLCwsxPz8fJLaQwTbO2ykKenS0lJMTk6mk9pNTEyklMBnZ2djeno693ynhvXY2FjWjGTeyTY1NRUjIyMxMzPTrkdHR2NwcDD6+voyuEb04+PjGRlgg9Hw8HAOwL7ZHxoaShAAZiCkRSjA6+vrlLEGOX2TpfHx8RGNLmUsfev7+/vcZKw+MpIZWUgscvJQwjeABpl903Rm2fv28PCQePCzhvHv8XJ1ddUSen5+fjKr3t7edJAVciVQNw8yPr+/v9lEamsW1Pf3d0sIy9Mw9Hx9fSUhB3J43t7eUm7SAdUU5JW56PkAF4y17EisrpoOiR7RQNa42gw9oibb6+trm3Wn08ksOT4/P6fUAnEMKjulkEkdH7aCQFT15Iu08efz8zPTt8HRpmgAkRCpjgVmkEizCVAdEZQ67MhZwdunguBwNKVxDdnpJlkwqgtASwMWlDNLPhlUhjJiUw1n1FowcJNQh2p5ALIB4pEho7phkHAUjEBkggwglZDxLXl9t3bYzRJISbUvwjpPQNXOg1DkbJDa40xOnSr7ip4NUmskCJUGER+YSaibnDUZItaJdSw4aAQq2AcOiI8bqGRlz7caq5qL/AIwt4SirZsCmUNbsnKsu9RMQk6yJmk1GLCS3FyEyOwh1Jh5LJwZtUPkPgXEuAhJJRh2SJ0339yXygCMhGx0pQYzK0FlSFJY2TSyIo8sgACTMZkAkc034DKTFTCXdTUDO5lVlnypxId9/RLlr4V6cFZHc/06lIEuFXXVj6wAgOnYkrSkMwTCBun/R0S2ebXV4XdISbO8vJwOAJG73vxCOMwCVIKenp7o7+/PrAU6MDCQsgtYB5td9PWvCCUl8AcMcwa5o5iOGAAAAABJRU5ErkJggg==",
       "aspectRatio": 1.4145,
       "isPortrait": false
+    },
+    "L'indépendance_02101923.png": {
+      "caption": "La politique sociale du gouvernement Reuter",
+      "provenance": "Source: L’Indépendance, 2. octobre 1923, <a href='https://persist.lu/ark:70795/8d4j0p/pages/2/articles/DTL100' target='_blank'>e-luxemburgensia",
+      "resolutions": {
+        "medium-w": {
+          "url": "/media/images/L'indépendance_02101923.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/L'indépendance_02101923.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/L'indépendance_02101923.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 2000,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/L'indépendance_02101923.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 2000
+          }
+        }
+      },
+      "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAUCAIAAAA7jDsBAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABE0lEQVQoz11RW5LDIAzj/gdpmm7A+AVkT7cCp3ysJuMhFpaFnUSEiM7zzDkfx/v9Po/jeL2OnIuqpfu+e++qYmbNyewS/nHLoxFiQhYCtvB7s7vhQ6ZWMv0kXQCH0Ft1kPOsImx6pXV60BrhEvpUnoZUroQsMyPiXvfshqKqQsw4f9IundaajiG98fw6fNQ0Ru2dmpd78OgV12SZCcXZG+LLnTbPcFJrRYaoID70Y81L/OJGKYuOdz/t9YrDqqZJ8xfIYkzBAU/1P/GtBH3EtNWATYf4Q9cvQMdEY5SIaZcumrA9X4hFbHq+NaztgkmHTrjD1OwL5FtreJiwKIqxJXfa1eg1e2PHaOlW3MvoJXxFb+AP5hehYlsBubQAAAAASUVORK5CYII=",
+      "aspectRatio": 0.516,
+      "isPortrait": true
+    },
+    "Lindependance.png": {
+      "caption": "La politique sociale du gouvernement Reuter",
+      "provenance": "Source: L’Indépendance, 2. octobre 1923, <a href='https://persist.lu/ark:70795/8d4j0p/pages/2/articles/DTL100' target='_blank'>e-luxemburgensia",
+      "resolutions": {
+        "medium-w": {
+          "url": "/media/images/Lindependance.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/Lindependance.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/Lindependance.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 2000,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/Lindependance.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 2000
+          }
+        }
+      },
+      "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAUCAIAAAA7jDsBAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABE0lEQVQoz11RW5LDIAzj/gdpmm7A+AVkT7cCp3ysJuMhFpaFnUSEiM7zzDkfx/v9Po/jeL2OnIuqpfu+e++qYmbNyewS/nHLoxFiQhYCtvB7s7vhQ6ZWMv0kXQCH0Ft1kPOsImx6pXV60BrhEvpUnoZUroQsMyPiXvfshqKqQsw4f9IundaajiG98fw6fNQ0Ru2dmpd78OgV12SZCcXZG+LLnTbPcFJrRYaoID70Y81L/OJGKYuOdz/t9YrDqqZJ8xfIYkzBAU/1P/GtBH3EtNWATYf4Q9cvQMdEY5SIaZcumrA9X4hFbHq+NaztgkmHTrjD1OwL5FtreJiwKIqxJXfa1eg1e2PHaOlW3MvoJXxFb+AP5hehYlsBubQAAAAASUVORK5CYII=",
+      "aspectRatio": 0.516,
+      "isPortrait": true
     }
   }
 }

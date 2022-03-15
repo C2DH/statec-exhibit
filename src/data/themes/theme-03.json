@@ -64,8 +64,7 @@
               "text": "A partir du milieu de années 1980, on assiste à une accélération foudroyante de l’emploi qui passe de 158 000 personnes en 1980 à 472 000 en 2020. Le nombre de postes de travail a donc triplé en une quarantaine d’années, alors que de 1907 à 1980 (c’est à-dire pendant quelque 70 ans) l’augmentation ne fut que d’environ 30%. C’est le secteur financier et les services aux entreprises (dont la composition est très diversifiée allant du nettoyage aux sociétés d’avocats et sociétés de consultance) qui prennent le relais de l’industrie sidérurgique comme moteur de la croissance. Cette croissance de l’emploi pose évidemment des questions au niveau notamment des infrastructures routières et de la mobilité en général.",
               "figures": [
                 {
-                  "id": "picture_3p1-3.jpg",
-                  "caption": "Une autoroute luxembourgeoise en 2020"
+                  "id": "picture_3p1-3.jpg"
                 }
               ]
             },
@@ -229,8 +228,7 @@
               "text": "Aujourd’hui au Luxembourg, une seule enquête tient compte de l’emploi frontalier. Il s’agit de l’enquête sur la structure des salaires (Structure of Earnings Survey, SES) - qui a pour base le règlement cadre européen (CE) N° 530/1999 du Conseil du 9 mars 1999. Cette enquête s’adresse, comme celle de 1907, aux entreprises et non pas aux individus. Toutes les autres enquêtes ne s’adressent qu’aux résidents. Comme l’enquête sur la structure des salaires n’est réalisée que tous les 4 ans (en alternance avec l’enquête moins détaillée sur le coût de la main-d’œuvre) les informations les plus actuelles sur l’évolution de l’emploi frontalier sont issues des fichiers administratifs de la sécurité sociale.",
               "figures": [
                 {
-                  "id": "Picture_3p2-9.png",
-                  "caption": "Salaires annuel brut moyen selon la nationalité, resp. le lieu de résidence et le niveau d’éducation (Enquête structure des salaires de 2018. Pour un même niveau d’éducation, frontaliers et résidents étrangers gagnent moins que les résidents luxembourgeois.<br/>Source : STATEC, <a href='https://statistiques.public.lu/catalogue-publications/regards/2020/PDF-14-2020.pdf ' targer='_blank'>Regards n° 14/2020</a>"
+                  "id": "Picture_3p2-9.png"
                 }
               ]
             },
@@ -429,7 +427,8 @@
               "text": "Sur la base de l’enquête sur les forces de travail (une enquête harmonisée au niveau européen existant depuis les années 1970), il est possible d’avoir une vue un peu plus détaillée sur les taux d’emploi. Sans surprise, le niveau de formation est propice à l’emploi.. Dans la classe d’âge des jeunes (15-24 ans), le taux d’emploi n’est que de 25% aujourd’hui et il est en recul depuis le début des années 1980 (où il fut encore de plus de 55%). Il s’agit d’une conséquence de la prolongation de la scolarité. Pour la classe d’âge des 50-64 ans, le taux d’emploi est en forte augmentation et les étrangers (migrant généralement au Luxembourg pour le travail) ont un taux d’emploi plus élevé que les Luxembourgeois. Finalement, le taux d’emploi des femmes se rapproche de celui des hommes et on peut lui imputer l’augmentation générale du taux d’emploi.",
               "figures": [
                 {
-                  "caption": "Taux d’emploi, 1983-2020. <br/>Source : STATEC"
+                  "id": "",
+                  "caption": "Taux d’emploi, 1983-2020. <br/>Source: STATEC"
                 }
               ]
             },
