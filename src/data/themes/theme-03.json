@@ -327,7 +327,7 @@
               "focusKeys": ["v", "v3"],
               "colorKeys": { "v": "var(--secondary)", "v3": "var(--t1-colorkeys-tertiary)" },
               "text": "Sur le long terme, le nombre de personnes indiquant un statut d’indépendant (et/ou de patron) tend à se tasser. En 1907, la part des indépendants est encore de quelque 27%. Cette part est pratiquement divisée par deux jusqu’en 1970  (14%). Cette évolution est imputable en grande partie à la décroissance de l’emploi agricole. En 1907, on compte 33.725 indépendants et patrons, dont 16.860 dans l’agriculture et la viticulture. En 1970, le nombre d’indépendants n’est plus que d’environ 18 000 dont 5 800 agriculteurs. Les salariés (ouvriers en employés) constituent 50% de la population active en 1907, mais 80% en 1970. ",
-              "figures":[{ "id": "polaschman7.jpg", "caption": "Pol Aschmann. Milchmann letzte Fahrt, 8-8-1958, © Photothèque de la Ville de Luxembourg" }]
+              "figures":[{ "id": "polaschman7.jpg" }]
             },
             {
               "from": 1900,
@@ -338,8 +338,7 @@
               "text": "Contrairement à la perception intuitive que l’on pourrait avoir eu égard à l’importance de l’industrie sidérurgique du pays, l’augmentation proportionnelle du salariat de 1907 à 1970 n’est pas due à la croissance de la part des ouvriers (qui reste stable autour de 50%), mais à celle des employés et des fonctionnaires dont le pourcentage dans la population active passe de 5% en 1907 à 35% en 1970.",
               "figures": [
                 {
-                  "id": "Picture_3p3-2.png",
-                  "caption": "100 ans d’assurances privées <br/> Source: lalux"
+                  "id": "Picture_3p3-2.png"
                 }
               ],
               "prev": {
@@ -355,8 +354,7 @@
               "text": "Il n’existe pas de véritable « statut » d’ouvrier et d’employé au 19ème siècle. Les relations du travail sont gouvernées par le code civil dont l’article 1710 dit assez sommairement : « Le louage d'ouvrage est un contrat par lequel l'une des parties s'engage à faire quelque chose pour l'autre, moyennant un prix convenu entre elles ». La formulation de « louage d’ouvrage » reflète à la fois une vue libérale du fonctionnement d’une économie (les gens « louent » leur travail) et de relents historiques de la période antérieure marquée par l’artisanat (artisans indépendants) et la rémunération des prestations à l’ouvrage. Dans la sidérurgie et dans les mines de fer le travail au rendement reste d’ailleurs très répandu jusqu’à la deuxième guerre mondiale. ",
               "figures": [
                 {
-                  "id": "Picture_3p3-3.jpg",
-                  "caption": "Mine de fer, Rumelange. Source : <a href='https://www.mnm.lu/' target='_blank'>Musée National des Mines de Fer à Rumelange</a>"
+                  "id": "Picture_3p3-3.jpg"
                 }
               ]
             },
@@ -369,7 +367,6 @@
               "text": "Même s’il n’y a pas de véritable contrat de travail au 19ème siècle, il y a une tendance marquée vers une réglementation des relations du travail après l’indépendance du Grand-Duché. En 1860-1861 est introduit le « livret ouvrier » qui permet de « suivre » le travail des ouvriers très mobiles à l’époque. Puis, on tente de protéger les personnes « vulnérables », les enfants et les femmes. La loi du 6 décembre 1876 interdit le travail des enfants avant l’âge de 12 ans « en dehors de leur famille ». Une loi du même jour interdit l’emploi des femmes dans les mines. Mais ce n’est que par la loi du 31 octobre 1919 qu’un statut de salarié est introduit et ce sont les employés qui sont les premiers à en bénéficier et non pas les ouvriers qui doivent attendre 1970) avant de disposer d’un statut spécifique. Finalement, en 2008, la distinction entre ouvriers et employés - qui devient de plus en plus artificielle avec le temps – fait place au « statut unique » de salarié.",
               "figures": [
                 {
-                  "caption": "Avis commun de la Chambre du travail et de la Chambre des employés privés concernant le statut unique entrant en vigueur en 2008. <br/> Source : <a href='https://chd.lu/wps/PA_ArchiveSolR/FTSShowAttachment?mime=application%2fpdf&id=09DC8A5F2119D910025E67D60CABAB65$AE3FBFD575268C0E23AA4A52FF0AF383&fn=09DC8A5F2119D910025E67D60CABAB65$AE3FBFD575268C0E23AA4A52FF0AF383.pdf'>Chambre des députés</a>",
                   "id": "chambre-deputes-loi-travail.png"
                 }
               ]
@@ -396,8 +393,7 @@
               "text": "Les décisions prises après la première guerre mondiale concernent l’introduction de la journée de 8 heures pour les ouvriers dans les industries occupant plus de 20 ouvriers (1918), le statut des employés privés (1919) prévoyant notamment des congés et la journée de 8 heures pour ceux-ci ; des secours de chômage (1921) ; la sécurité des travailleurs (création de l’Inspection du travail industriel en 1902) et la santé et la sécurité dans l’industrie et la construction (1924), la représentation des ouvriers dans l’entreprise (arrêté du 28 avril 1919 création les conseils d’usine, abrogé en 1921, puis création des délégations ouvrières par la loi du 8 mai 1925); la représentation des employés dans l’entreprise (statut du 31 octobre 1919 créant un « comité de délégation » dans les entreprises occupant plus de 15 ouvriers ; la création d’une Chambre des employés privés et d’une Chambre du Travail (loi du 4 avril 1924).",
               "figures": [
                 {
-                  "caption": "La journée de 8 heures en 1918. Source: Schmiede, Organ der Sozialdemokratischen Partei Luxemburgs, 22 November 1918, Jg. 2, nº 52",
-                  "prev_caption": "« Classes productives et improductives » (extrait du 11ème fascicule sur l’état de la population d’après le recensement de 1905 publié en 1906)"
+                  "id": "Picture_3p3-6.png"
                 }
               ]
             },
@@ -410,7 +406,7 @@
               "text": "L’augmentation de l’emploi peut être alimentée soit par les migrations (immigration et/ou frontaliers), soit par la propension des résidents de prendre un emploi. Dès l’année 1900, dans les commentaires de la Commission permanente de statistique sur les résultats des recensements, on trouve des analyses sur l’emploi « potentiel » en distinguant un âge dit « productif » et un « âge improductif ». Les délimitations de ces deux groupes n’est d’ailleurs pas univoque. Pour l’âge dit productif, les statisticiens de l’époque hésitent par exemple entre les classes d’âge 15-60 ans et 18-65 ans. Dans les analyses statistiques du début du 19ème siècle transparaît l’aspect moral attribué au travail, considéré comme utile pour l’individu, mais également comme un devoir envers la famille et la société.",
               "figures": [
                 {
-                  "caption": "« Classes productives et improductives » (extrait du 11ème fascicule sur l’état de la population d’après le recensement de 1905 publié en 1906)"
+                  "id": "Picture_3p3-7.png"
                 }
               ]
             },
@@ -423,7 +419,6 @@
               "text": "Sur le long terme, le travail  salarié  s’est largement répandu dans la société. Les auteurs de la Commission permanente de statistique, en commentant les résultats – concernant les résidents - du recensement de 1907 (fascicule 22 des publications de la Commission permanente de statistique) notent encore que : «… la population active est de 110 566 ou de 47,86% de la population totale. Dans ce nombre l’élément masculin est compris avec 86 320 et l’élément féminin avec 33 246 personnes, c’est-à-dire les actifs masculins forment 34,55% de la population totale et les actifs féminins 13,31% de la population totale ». Au début du 20ème siècle, le taux d’activité se situe donc en-dessous de 50% de la population. Les femmes sont beaucoup moins présentes sur le marché du travail (salarié) que les hommes et il faut attendre les années 1960-1970 pour voir l’emploi féminin se développer. En 2020, le taux d’emploi global atteint plus de 67%, soit près de 20 points de plus qu’au début du 20ème siècle.",
               "figures": [
                 {
-                  "caption": "La représentation de la vie des femmes à la sortie de la deuxième guerre mondiale (extrait du Luxemburger Wort du 23 mai 1946, P.6).<br/> Source : <a href='https://viewer.eluxemburgensia.lu/ark:70795/4zn911/pages/6' target='_blank'>eluxemburgensia</a>",
                   "id": "ark_70795-4zn911-pages-6.jpg"
                 }
               ]
@@ -477,12 +472,11 @@
               "datasetColorKeys": { "v": "var(--dataset-t2-v)", "v1": "var(--dataset-t2-v1)", "v2": "red"},
               "datasetExtent": [1871, 2021],
               "datasetRange": [0, 100],
-              "datasetLegend": "Part des secteurs économiques dans l'emploi total, 1871-2020",
+              "datasetLegend": "Part des secteurs économiques dans l'emploi total, 1871-2020 </br>Source: STATEC",
               "datasetNumericTranslationLabel": "percentage",
               "figures": [
                 {
-                  "id": "Picture_3p3-1.png",
-                  "caption": "Le monde agricole en photos à la fin des années 1930"
+                  "id": "Picture_3p3-1.png"
                 }
               ]
             },
@@ -500,8 +494,7 @@
               "text": "Cette évolution à la baisse de l’emploi dans l’agriculture est donc particulièrement prononcée pour les aidants familiaux. Il s’agit probablement d’une évolution reflétant la réalité. La productivité augmente et le travail agricole des femmes des exploitants peut avoir perdu en volume, du moins dans une partie des exploitations agricoles. Mais, du point de vue méthodologique, il y a quelques doutes. Le traitement des « aidants » varie au sein d’un même recensement et au cours du temps. Les femmes des exploitants agricoles sont parfois considérées d’office comme « aidants familiaux » et dans d’autres cas c’est la déclaration du recensé qui s’impose. Par ailleurs, certains hésitent à se déclarer « aidant familial » craignant de tomber sous l’impôt.",
               "figures": [
                 {
-                  "id": "Picture_3p4-3.png",
-                  "caption": "Femme d'agriculteurs et femme agriculteur ? (France, 1979). <br/> Source : <a href='https://www.europeana.eu/fr/item/2051908/data_euscreenXL_ina_RXC07041243' target='_blank'>INA, Europeana</a>"
+                  "id": "Picture_3p4-3.png"
                 }
               ]
             },
@@ -514,7 +507,7 @@
               "text": "Le déclin de l’emploi dans l’agriculture ne doit pas cacher les gains de productivité dans cette branche. La taille moyenne des exploitations agricoles passe de moins de 4 ha en 1907 à plus de 70 ha aujourd’hui. La production totale de lait qui fut de 102 000 tonnes en 1913 est de 447 000 tonnes en 2020, avec à peu près le même nombre de vaches laitières, autour de 55 000 à ces deux dates. La production de lait par vache fut de moins de 2 000 kg par an et par vache laitière en 1913 et de quelque 8 200 kg. en 2020. Après la deuxième guerre mondiale, la mécanisation de l’agriculture est fulgurante. Le nombre de tracteurs passe de 1.392 en 1950 à 8 900 à la fin des années 1980.",
               "dataset": "MilkProduction",
               "datasetLayout": "Lines",
-              "datasetLegend": "Rendement laitier, 1913-2020",
+              "datasetLegend": "Rendement laitier, 1913-2020 </br>Source: STATEC",
               "datasetNumericTranslationLabel": "kg"
             },
             {
@@ -526,7 +519,7 @@
               "text": "La part des personnes travaillant dans l’industrie, qui fut d’environ 20% de l’emploi total en 1871, atteint près de 40% dès 1907, suite surtout à l’augmentation des postes de travail dans les mines de fer et les usines sidérurgiques. Pour cette dernière année, sur un emploi total de quelque 123 000 personnes actives, un peu plus de 47 000 travaillent dans l’industrie. Le recensement professionnel et industriel du 12 juin 1907 contient également une question sur les activités accessoires, signe que les activités multiples (permettant de joindre les deux bouts) sont la règle à l’époque, notamment pour les ouvriers de la sidérurgie et des mines de fer. En 1907, 66 663 personnes ont une activité accessoire, parmi lesquelles 48 719 dans l’agriculture. Selon le recensement de 1960, encore 630 (7,6%) agriculteurs font cette activité à titre accessoire sur 8 280 agriculteurs au total.",
               "figures": [
                 {
-                  "caption": "Ouvriers de la sidérurgie au début du 20ème siècle. Source : Archives de la Ville de Dudelange – Fonds Jean-Pierre Conrardy"
+                  "id": "679175_File0335.jpg"
                 }
               ]
             },
@@ -537,7 +530,7 @@
               "focusKeys": ["v", "v2"],
               "colorKeys": { "v": "var(--secondary)", "v1": "var(--datakey-v1)", "v2": "var(--datakey-v)", "v3": "var(--t1-colorkeys-tertiary)" },
               "text": "L’industrie sidérurgique ne se développe véritablement qu’à partir des années 1880 avec la possibilité qu’offre désormais le procédé Thomas (1879) de transformer la fonte phosphoreuse (produite à partir de la minette luxembourgeoise) en acier de bonne qualité. L’ascension de la sidérurgie est fulgurante avec la construction des grandes usines intégrées (de la fonte aux produits laminés) dont la première fut construite à Dudelange entre 1880 et 1885. Juste avant la première guerre mondiale, l’usine de Belval, une des plus modernes de l’époque, est construite. L’emploi ouvrier dans l’industrie sidérurgie et minière passe de 13.651 en 1908 (dont 5 438 dans les mines de fer) à à 19 168 en 1913 (dont 5.807 dans les mines de fer).",
-              "figures": [{ "id": "belval.jpg", "caption": "Usine de Belval. http://www.nicau.be/belval.html"}]
+              "figures": [{ "id": "belval.jpg"}]
             },
             {
               "from": 1907,
@@ -548,8 +541,7 @@
               "text": "Avec la guerre et ses suites (ralentissement économique, sortie du « Zollverein » et réorientation économique du pays, agitation sociale), les effectifs de l’industrie sidérurgique et minière reculent (15 469 en 1921, contre quelque 20.000 en 1913), avant de connaître une forte hausse avec la bonne conjoncture économique de la deuxième moitié des années 1920 (près de 29.000 ouvriers en 1929). C’est d’ailleurs le maximum d’ouvriers que l’industrie sidérurgique et minière atteindra dans son histoire.",
               "figures": [
                 {
-                  "id": "Picture_3p3-5.jpg",
-                  "caption": "Montage du nouveau sac à poussière du haut-fourneau II de l’usine de Dudelange, 1928.08.23"
+                  "id": "Picture_3p3-5.jpg"
                 }
               ]
             },
@@ -593,8 +585,7 @@
               "text": "On utilise souvent le terme de « désindustrialisation » pour qualifier l’évolution des structures économiques sur le long terme dans les pays dits « développés » comme le Luxembourg. Cette vision où le concept de « déclin industriel » est sous-jacent, doit être nuancée. En effet, d’une part, les industries dites « traditionnelles » (comme la sidérurgie et même les mines fer) se sont adaptées de façon continue par des innovations et des améliorations de la productivité. A titre d’exemple, la production de laminés par ouvrier dans les laminoirs (la productivité technique) est passée de 243 t. en 1921 à 919 t. en 1988. D’autre part, le Luxembourg, dans le cadre de sa politique de développement économique - la Société nationale de crédit et d’investissement est fondée en 1977 – a créé des emplois ou a contribué à créer les conditions de la création dedans de nouvelles branches industrielles.",
               "figures": [
                 {
-                  "id": "ark_70795_jrz7dq_pages_28.jpg",
-                  "caption": "La SNCI dans la presse. Source: <a href='https://viewer.eluxemburgensia.lu/ark:70795/jrz7dq/pages/28/articles/DTL467?search=diversification%20économique%20Luxembourg' target='_blank'>eluxemburgensia</a>"
+                  "id": "ark_70795_jrz7dq_pages_28.jpg"
                 }
               ]
             },
@@ -623,7 +614,7 @@
               "text": "Dans l’historiographie économique et sociale, l’industrie sidérurgique et minière – qui a effectivement joué un rôle central dans l’histoire du Luxembourg - a tendance à rendre toutes les autres branches économiques moins importantes qu’elles ne l’étaient réellement. Le secteur des services, plus particulièrement, est sous-estimé concernant son envergure dans le cadre du marché du travail. Ce n’est pas par hasard que la Commission permanente de statistique s’est intéressée très tôt à la condition des employés en menant, en 1910, une enquête sur les conditions économiques des employés (« Privatbeamte »). Cette enquête était également destinée à la préparation de la loi sur les pensions des employés privés (il faudra cependant jusqu’en 1931 pour que cette loi voie le jour)",
               "figures": [
                 {
-                  "caption": "Le questionnaire de l’enquête sur les employés de 1910. <br/> Source: Commission pernanente de statistique, Heft 34"
+                  "id": "Picture_3p4-14.png"
                 }
               ]
             },
@@ -636,7 +627,7 @@
               "text": "Ce n’est pas dans l’industrie, mais dans les services  (commerce, transports, administration) que la croissance de l’emploi est la plus importante dès le début du 20ème siècle. De 1907 à 1935 (années des recensements), le nombre d’emplois dans les services passe de 22.670 à 42.342 personnes, (20.000 emplois de plus), alors qu’au cours de la même période l’emploi dans l’industrie a augmenté de moins de 5.000 unités (de 47.262 en 1907 à 51.739 en 1935). Dans ce contexte, on peut noter que ce sont les employés (et non les ouvriers) auxquels est attribué un statut légal spécifique en 1919. Si le syndicalisme ouvrier s’est organisé de façon structurée en 1915-1916, le syndicalisme des employés a vu également le jour à cette époque. En 1918, est créée l’ « Luxemburger Bankbeamtenverein », aujourd’hui « ALEBA ». En 1920, c’est la FEP (Fédération des employés privés) qui voit le jour par la fusion d’associations d’employés créées déjà avant la première guerre mondiale ». En 1921, la FEP compte déjà 2 431 adhérents.",
               "figures": [
                 {
-                  "caption": "Revendications de la Fédération des employés privés en 1922. <br/> Source : Archives nationales, FIN 03575"
+                  "id": "Picture_3p4-15.png"
                 }
               ]
             },
@@ -649,8 +640,7 @@
               "text": "Dans les premières années après la deuxième guerre mondiale la progression de l’emploi dans les services est continue sans être exceptionnelle. Néanmoins, dès les années 1960, l’emploi dans les banques (euromarchés) et dans les assurances prend son envol. En 1947,les banques et les assurances occupent 11.732 personnes. En 1966, les entreprises dans cette branche ont un emploi de 18.422 personnes, soit 14% de la population active. En 1947, l’ensemble du secteur des services occupe 45.985 personnes. En 1970, il y en près de 20.000 de plus, avec un emploi de 64.700 personnes. La loi du 12 juin 1965 précise les procédures en matière de conventions collectives et introduit la notion de « représentativité nationale » des syndicats dans les négociations collectives. Des conventions collectives existent avant cette loi (notamment sur base de l’arrêté g.-d- du 23 janvier 1936 créant le Conseil national du travail, mais la loi de 1965 donne le signal pour la généralisation des conventions collectives notamment dans les services. En 1967, la première convention collective est signée pour le personnel des banques et une autre pour les assurances.",
               "figures": [
                 {
-                  "id": "Picture_3p4-16.png",
-                  "caption": "Première convention collective dans les banques. <br/> Source : <a href='https://www.wort.lu/fr/economie/s-adapter-aux-nouvelles-realites-5b1791f2c1097cee25b8aade'>Luxemburger Wort</a>"
+                  "id": "Picture_3p4-16.png"
                 }
               ]
             },
