@@ -3402,7 +3402,7 @@
     },
     "Picture_4p1-1.png": {
       "caption": "Arrêté du 30 septembre 1905 prescrivant un recensement général de la population du Grand-Duché au 1er décembre 1905",
-      "provenance": "Legilux",
+      "provenance": "Source: Legilux",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/Picture_4p1-1.medium-w.jpg",
@@ -3443,7 +3443,7 @@
     },
     "Picture_4p1-2.png": {
       "caption": "Le chômage avant la première guerre selon le journal « Der arme Teufel » d’obédience social-démocate (extrait du journal du 24.8.1913)",
-      "provenance": "Placeholder Copyright",
+      "provenance": "Source: Placeholder Copyright",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/Picture_4p1-2.medium-w.jpg",
@@ -3484,7 +3484,7 @@
     },
     "Picture_4p1-3.png": {
       "caption": "Les « bureaux de placement » (1913)",
-      "provenance": "Legilux",
+      "provenance": "Source: <a href='https://data.legilux.public.lu/file/eli-etat-leg-memorial-1913-58-fr-pdf.pdf' target='_blank'>Legilux</a>",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/Picture_4p1-3.medium-w.jpg",
@@ -3525,7 +3525,7 @@
     },
     "Picture_4p1-4a.tif": {
       "caption": "Ouvriers ayant contribué à la construction du Pont du Pfaffenthal  en 1921",
-      "provenance": "Photothèque de la Ville de Luxembourg (extrait de STATEC, L’économie luxembourgeoise au 20ème siècle, Luxembourg, 1999)",
+      "provenance": "Source: Photothèque de la Ville de Luxembourg (extrait de STATEC, L’économie luxembourgeoise au 20ème siècle, Luxembourg, 1999)",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/Picture_4p1-4a.medium-w.jpg",
@@ -3566,7 +3566,7 @@
     },
     "Picture_4p1-4b.png": {
       "caption": "Discours de Pierre Krier, le 1er mai 1932 à Esch-sur-Alzette",
-      "provenance": "OGBL ",
+      "provenance": "Source: <a href='http://www.ogbl.lu/blog/le-1er-mai-jour-de-lutte-et-de-fete-pour-le-mouvement-syndical/' target='_blank'>OGBL</a>",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/Picture_4p1-4b.medium-w.jpg",
@@ -3607,7 +3607,7 @@
     },
     "Picture_4p1-5.png": {
       "caption": "Arrêté grand-ducal du 6 août 1921 portant réglementation des secours de chômage (Extrait)",
-      "provenance": "Legilux",
+      "provenance": "Source: <a href='https://legilux.public.lu/eli/etat/leg/agd/1921/08/06/n2/jo' target='_blank'>Legilux</a>",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/Picture_4p1-5.medium-w.jpg",
@@ -3730,7 +3730,7 @@
     },
     "Picture_4p2-1.png": {
       "caption": "La réforme des secours de chômage 1975-1976",
-      "provenance": "eluxemburgensia. Lëtzebuerger land du 28 février 1975",
+      "provenance": "Source: Lëtzebuerger land, 28 février 1975, <a href='https://viewer.eluxemburgensia.lu/ark:70795/8d4j0p/pages/2/articles/DTL52?search=chômage%201921' target='_blank'>e-luxemburgensia",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/Picture_4p2-1.medium-w.jpg",
@@ -3770,8 +3770,8 @@
       "isPortrait": true
     },
     "Picture_4p2-2.png": {
-      "caption": "La question des statistiques du chômage au niveau européen en 1975",
-      "provenance": "e-luxemburgensia. D'Letzebuerger Land du 25 août 1972",
+      "caption": "L’ajustement se fait par l’immigration",
+      "provenance": "Source: D'Letzebuerger Land, 25 août 1972, <a href='https://viewer.eluxemburgensia.lu/ark:70795/rfzswk/pages/3/articles/DTL100' target='_blank'>e-luxemburgensia</a>",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/Picture_4p2-2.medium-w.jpg",
@@ -3853,7 +3853,7 @@
     },
     "Picture_4p2-5.png": {
       "caption": "Taux de chômage (en % de la population active de 15 à 74 ans) en Europe, 2000 et 2020",
-      "provenance": "Taux de chômage (en % de la population active de 15 à 74 ans) en Europe, 2000 et 2020",
+      "provenance": "Source: Placeholder",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/Picture_4p2-5.medium-w.jpg",
@@ -4258,6 +4258,8 @@
       "isPortrait": true
     },
     "picture_4p3-2.png": {
+      "caption": "La question des statistiques du chômage au niveau européen en 1975",
+      "provenance": "Source: Lëtzebuerger Land, 19 septembre 1975, <a href='https://persist.lu/ark:70795/tf06bg/pages/6/articles/DTL152' target='_blank'>eluxemburgensia</a>",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/picture_4p3-2.medium-w.jpg",
@@ -4297,6 +4299,8 @@
       "isPortrait": true
     },
     "picture_4p3-4.png": {
+      "caption": "Le chômage au Luxembourg en 1977",
+      "provenance": "Source: <a href='https://viewer.eluxemburgensia.lu/ark:70795/r5bt26b21/pages/3/articles/DIVL376' target='_blank'>e-luxemburgensia</a>",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/picture_4p3-4.medium-w.jpg",
@@ -4414,6 +4418,8 @@
       "isPortrait": true
     },
     "picture_4p3-3.png": {
+      "caption": "Résolution de la Conférence Internationale des statisticiens du travail de 1982 (extrait)",
+      "provenance": "Source: <a href='https://www.ilo.org/wcmsp5/groups/public/---dgreports/---stat/documents/normativeinstrument/wcms_087482.pdf' target='_blank'>Organisation internationale du Travail</a>",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/picture_4p3-3.medium-w.jpg",
