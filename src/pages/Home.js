@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet'
 import { useTranslation } from 'react-i18next'
 import { useSpring, a } from 'react-spring'
 import { useStore } from '../store'
-import { useCurrentWindowDimensions, useImage } from '../hooks'
+import { useCurrentWindowDimensions } from '../hooks'
 import { getIsMobileWithTablet } from '../logic/viewport'
 import { ChapterRoutes } from '../constants'
 import { ArrowUpRight, ArrowDown } from 'react-feather'
@@ -12,30 +12,20 @@ import '../styles/pages/home.scss'
 import Footer from '../components/Footer'
 import ChapterCover from '../components/Chapter/ChapterCover'
 import ChapterQrCode from '../components/Chapter/ChapterQrCode'
+import { isMobile } from '../logic/viewport'
 
 const Home = () => {
   const { t } = useTranslation()
-  const { height, width } = useCurrentWindowDimensions()
+  const { height, width } = useCurrentWindowDimensions({ isMobile })
   const [ props, setProps ] = useSpring(() => ({ opacity: 0, height, config: { mass: 1, tension: 50, friction: 10 } }))
-  const { isLoading } = useImage('/0.landing.jpg', 50);
   const isMobileWithTablet = getIsMobileWithTablet(width, height)
   const changeBackgroundColor = useStore(state => state.changeBackgroundColor)
 
   useEffect(() => {
     changeBackgroundColor('var(--primary)')
-  }, [changeBackgroundColor])
+    setProps({ opacity: 1 })
+  })
 
-  useEffect(() => {
-    if (!isLoading) {
-      setProps({ opacity: 1 })
-    }
-    // eslint-disable-next-line
-  }, [ isLoading ])
-
-  useEffect(() => {
-    setProps({ height })
-    // eslint-disable-next-line
-  }, [ height ])
   // {t('number', { n: 129822.4325 })}
   return (
     <div className="Home">
@@ -47,11 +37,16 @@ const Home = () => {
         <meta property="og:url" content={window.location} />
       </Helmet>
       <div className="absolute w-100 with-vertical-line" style={{zIndex: -1}}>
-      <ChapterCover height={isMobileWithTablet ? 600: height} cover={{ id: '0.landing.jpg'}} untitled/>
+      <ChapterCover
+        height={height}
+        cover={{ id: '0.landing.jpg'}}
+        untitled
+      />
       </div>
       <a.div className="mw9 center flex flex-column justify-center items-center pa4 ph5-l" style={{
         opacity: props.opacity,
-        height: props.height,
+        height,
+        pointerEvents: 'none'
       }}>
         <h1 className="f2 f1-m tc mv0 serif Home_title">
           <span dangerouslySetInnerHTML={{__html: t('pagesHomeTitle')}} />
