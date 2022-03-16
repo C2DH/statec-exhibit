@@ -430,12 +430,17 @@
               "visibleKeys": ["v", "v2", "v3"],
               "focusKeys": ["v", "v2", "v3"],
               "text": "Sur la base de l’enquête sur les forces de travail (une enquête harmonisée au niveau européen existant depuis les années 1970), il est possible d’avoir une vue un peu plus détaillée sur les taux d’emploi. Sans surprise, le niveau de formation est propice à l’emploi.. Dans la classe d’âge des jeunes (15-24 ans), le taux d’emploi n’est que de 25% aujourd’hui et il est en recul depuis le début des années 1980 (où il fut encore de plus de 55%). Il s’agit d’une conséquence de la prolongation de la scolarité. Pour la classe d’âge des 50-64 ans, le taux d’emploi est en forte augmentation et les étrangers (migrant généralement au Luxembourg pour le travail) ont un taux d’emploi plus élevé que les Luxembourgeois. Finalement, le taux d’emploi des femmes se rapproche de celui des hommes et on peut lui imputer l’augmentation générale du taux d’emploi.",
-              "figures": [
-                {
-                  "id": "",
-                  "caption": "Taux d’emploi, 1983-2020. <br/>Source: STATEC"
-                }
-              ]
+              "dataset": "TauxEmploi-1983-2020",
+              "datasetLayout": "Lines",
+              "datasetDisplayPoints": false,
+              "datasetKeys": ["v", "v1", "v2"],
+              "datasetColorKeys": {
+                "v": "var(--secondary)",
+                "v1": "var(--datakey-v1)",
+                "v2": "var(--datakey-v)"
+              },
+              "datasetNumericTranslationLabel": "percentage",
+              "datasetLegend": "Taux d’emploi, 1983-2020. <br/>Source: STATEC"
             },
             {
               "from": 1900,
