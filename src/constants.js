@@ -20,10 +20,10 @@ sections: [
 
 export const ChapterRouteEmployment = { to: '/employment', label: 'ChapterRouteEmployment', title: 'Emploi et travail', favicon: 'data:image/x-icon;base64,AAABAAEAEBAAAAEAIAAoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACb/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/m/39/5v9/f+b/f3/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==',
   sections: [
-    'Les concepts de classement de l’emploi et du travail : une grande complexité',
+    "L'évolution générale de l'emploi",
     'Les sources des statistiques du travail',
-    'Vers une économie des services ',
-    'Vers une société salariale'
+    'Vers une société salariale',
+    'Vers une économie des services '
   ]
 }
 

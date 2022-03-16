@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import MediaIndex from '../media/index.json'
 import { useURLSearchParams } from '../hooks'
-import MediaViewerFigure from './MediaViewerFigure'
+import MediaViewerZoomableFigure from './MediaViewerZoomableFigure'
 import '../styles/components/mediaViewer.scss'
 import {useBoundingClientRect} from '../hooks'
 
-const MediaViewer = ({ color, width, height }) => {
+const MediaViewer = ({ isMobile, color, width, height }) => {
   const qs = useURLSearchParams()
   const [ media, setMedia ] = useState(null)
   const [{ height:mediaFigureHeight, width:mediaFigureWidth}, ref] = useBoundingClientRect()
@@ -28,21 +28,21 @@ const MediaViewer = ({ color, width, height }) => {
     >
       <div ref={ref} style={{
         flexGrow: 1,
-        boxShadow: `0px 0px 16px #120d55`
       }}>
         {media ? (
-          <MediaViewerFigure
+          <MediaViewerZoomableFigure
             resolutions='large-h'
             media={media}
+            src={media?.resolutions['large-h'].url}
             height={mediaFigureHeight}
             width={mediaFigureWidth}
             color={color}
           />
         ): null}
       </div>
-      <figcaption className="mh0 pb3" style={{ flexShrink: '1', maxHeight: height * .12 }}>
+      <figcaption className="mh0 pb3" style={{ flexShrink: '1', maxHeight: height * .15 }}>
         {media.caption
-          ? <h2 className="mb1" style={{color}} dangerouslySetInnerHTML={{__html:media.caption }}></h2>
+          ? <h2 className="mb1" style={{color, marginTop: 0}} dangerouslySetInnerHTML={{__html:media.caption }}></h2>
           : null
         }
         {media.provenance
