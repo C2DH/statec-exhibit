@@ -6,7 +6,7 @@ const qrcode = require('qrcode')
 
 const themesDir = './src/data/themes'
 const qrcodesDir = './public'
-const host = 'https://statec-streams.netlify.app'
+const host = 'https://framingluxembourg.netlify.app'
 const darkColor = '#2b219f' // var(--secondary)
 const lightColor = '#ffc09d' // var(--primary)
 const opts = {
