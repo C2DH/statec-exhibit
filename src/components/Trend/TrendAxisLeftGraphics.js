@@ -31,8 +31,8 @@ class TrendAxisLeftGraphics extends React.Component {
             fill: 'rgba(0,0,0,.5)',
             textAnchor: 'end',
             fontSize: 12,
-            dx: '-1vw',
-            dy: '.5vh',
+            dx: '-10px',
+            dy: '5px',
           })}
           tickComponent={({ formattedValue, ...tickProps }) => (
             <text {...tickProps}>{formattedValue}</text>
