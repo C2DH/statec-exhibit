@@ -1,12 +1,12 @@
 {
   "id": "WeddingsDivorces",
-  "title": "B304 - Taux de nuptialité et de divortialité",
+  "title": "Taux de nuptialité et de divortialité",
   "timeformat": "YYYY",
   "legend": {
-    "v": "marriages for 1000 inhabitants",
-    "v1": "abs number of marriage",
-    "v2": "divorces for 1000 inhabitants",
-    "v3": "abs number of divorces"
+    "v": "Mariages pour 1000 habitants",
+    "v1": "Nombre absolu de mariages",
+    "v2": "Divorces pour 1000 habitants",
+    "v3": "Nombre absolu de divorces"
   },
   "values":[
     {"t":"1841", "v": 8.2, "v1": 1450, "v2":0, "v3": 1},
