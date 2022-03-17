@@ -49,14 +49,20 @@ export function useCurrentWindowDimensions({ isMobile, delay = 250} = {}) {
 }
 
 export const useImage = (src, delay=1000) => {
-    const [isLoading, setIsLoading] = useState(true);
-    const [error, setError] = useState(null);
-    const [hasStartedInitialFetch, setHasStartedInitialFetch] = useState(false);
+    const [result, setResult] = useState({
+      isLoading: false,
+      isLoaded: false,
+      error: null,
+      hasStartedInitialFetch: false
+    })
 
     useEffect(() => {
-      setHasStartedInitialFetch(true);
-      setError(false);
-      setIsLoading(true);
+      setResult({
+        isLoading: true,
+        isLoaded: false,
+        error: null,
+        hasStartedInitialFetch: true
+      })
       // Here's where the magic happens.
       const image = new Image();
       let timer1 = setTimeout(() => {
@@ -64,12 +70,21 @@ export const useImage = (src, delay=1000) => {
       }, delay);
 
       const handleError = (err) => {
-          setError(true);
+        setResult({
+          isLoading: true,
+          isLoaded: false,
+          error: err,
+          hasStartedInitialFetch: true
+        })
       };
 
       const handleLoad = () => {
-        setIsLoading(false);
-        setError(null);
+        setResult({
+          isLoading: false,
+          isLoaded: true,
+          error: null,
+          hasStartedInitialFetch: false
+        })
       };
 
       image.onerror = handleError;
@@ -82,7 +97,7 @@ export const useImage = (src, delay=1000) => {
       };
     }, [src, delay]);
 
-    return { isLoading, error, hasStartedInitialFetch };
+    return result;
 };
 
 /**

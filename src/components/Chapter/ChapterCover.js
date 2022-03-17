@@ -12,8 +12,9 @@ const ChapterCover = ({ cover={}, height=0, title='', chapterIndex=0, resolution
   const mediaUrl = media
     ? media.resolutions[resolution].url
     : cover.url;
-  const { isLoading } = useImage(mediaUrl, 500)
-  if (isLoading) {
+  const { isLoading, isLoaded } = useImage(mediaUrl, 500)
+  console.debug('[ChapterCover] isLoading', isLoading, isLoaded, height, mediaUrl)
+  if (!isLoaded) {
     return (
       <div className="ChapterCover flex items-center justify-center w-100" style={{ height }}>
         <div className="loader"><Loader color="var(--secondary)"/></div>
@@ -38,7 +39,7 @@ const ChapterCover = ({ cover={}, height=0, title='', chapterIndex=0, resolution
           style={{
             clipPath: props.backgroundClipPath,
             backgroundImage: `url(${mediaUrl})`,
-            opacity: props.opacity,
+            opacity: 1
           }}
         />
       )}
@@ -82,4 +83,6 @@ const ChapterCover = ({ cover={}, height=0, title='', chapterIndex=0, resolution
   )
 }
 
-export default React.memo(ChapterCover)
+export default React.memo(ChapterCover, (nextProps, prevProps) => {
+  return nextProps.cover?.id === prevProps.cover?.id
+})

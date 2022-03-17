@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet'
 import { useTranslation } from 'react-i18next'
-import { useSpring, a } from 'react-spring'
+import { useSpring, a, config } from 'react-spring'
 import { useStore } from '../store'
 import { useCurrentWindowDimensions } from '../hooks'
 import { getIsMobileWithTablet } from '../logic/viewport'
@@ -17,15 +17,20 @@ import { isMobile } from '../logic/viewport'
 const Home = () => {
   const { t } = useTranslation()
   const { height, width } = useCurrentWindowDimensions({ isMobile })
-  const [ props, setProps ] = useSpring(() => ({ opacity: 0, height, config: { mass: 1, tension: 50, friction: 10 } }))
+  const [ props, apiProps ] = useSpring(() => ({
+    opacity: 0,
+    config: config.slow
+  }))
   const isMobileWithTablet = getIsMobileWithTablet(width, height)
   const changeBackgroundColor = useStore(state => state.changeBackgroundColor)
 
   useEffect(() => {
     changeBackgroundColor('var(--primary)')
-    setProps({ opacity: 1 })
-  })
+    apiProps.start({ opacity: 1 })
+    // eslint-disable-next-line
+  }, [changeBackgroundColor])
 
+  console.debug('[Home] rendering', height)
   // {t('number', { n: 129822.4325 })}
   return (
     <div className="Home">
@@ -36,17 +41,17 @@ const Home = () => {
         <meta property="og:image" content={`${window.location.protocol}//${window.location.host}/0.landing.jpg`} />
         <meta property="og:url" content={window.location} />
       </Helmet>
-      <div className="absolute w-100 with-vertical-line" style={{zIndex: -1}}>
-      <ChapterCover
-        height={height}
-        cover={{ id: '0.landing.jpg'}}
-        untitled
-      />
+      <div className="relative w-100 with-vertical-line">
+        <ChapterCover
+          height={height}
+          cover={{ id:'0.landing.jpg', url: '/0.landing.jpg'}}
+          untitled
+        />
       </div>
-      <a.div className="mw9 center flex flex-column justify-center items-center pa4 ph5-l" style={{
+      <div className="absolute w-100" style={{ zIndex: 1, top: 0, height}}>
+      <a.div className="mw9 center flex flex-column justify-center items-center pa4 ph5-l h-100" style={{
         opacity: props.opacity,
         height,
-        pointerEvents: 'none'
       }}>
         <h1 className="f2 f1-m tc mv0 serif Home_title">
           <span dangerouslySetInnerHTML={{__html: t('pagesHomeTitle')}} />
@@ -57,9 +62,12 @@ const Home = () => {
         <div
           className="fw1 lh-title tc mt5 Home_scrolldown"
         >
-          Scroll down to explore <ArrowDown />{' '}
+          Scroll down to explore <div className="Home_scrolldownIcon">
+            <ArrowDown size={15}/>
+          </div>
         </div>
       </a.div>
+      </div>
       <div className="Home_paragraphsWrapper">
         <div className="center pa4 pt5-ns ph5-l">
           <h2 className="f2-ns f3 fw1 lh-title tc">

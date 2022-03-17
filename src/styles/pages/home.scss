@@ -26,6 +26,33 @@
 }
 .Home_scrolldown{
   font-size: 1rem;
+  position: relative;
+  padding-right: 20px;
+}
+
+
+.Home_scrolldownIcon{
+  position: absolute;
+  top: 0;
+  right: 0;
+  animation-duration: 1.5s;
+	animation-name: scrolldown;
+	animation-iteration-count: infinite;
+}
+
+@keyframes scrolldown {
+	0% {
+		opacity: 0;
+		transform: translate(0, -8px);
+	}
+	50% {
+		opacity: 1;
+		transform: translate(0, 0);
+	}
+	100% {
+		opacity: 0;
+		transform: translate(0, 8px);
+	}
 }
 .Home_paragraphsWrapper h2{
   font-size: 1.25rem;

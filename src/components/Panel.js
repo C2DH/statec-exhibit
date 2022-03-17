@@ -53,7 +53,7 @@ const Panel = ({
         className={`Panel_closeButton absolute bg-transparent bw0 ${left ? 'right-0': 'left-0'}`}
         onClick={closeButtonClickHandler}
       >
-        {left ? <ArrowRightCircle strokeWidth={2} size={25} color={color}/> : <ArrowLeftCircle strokeWidth={2} size={25} color={color}/> }
+        {left ? <ArrowRightCircle strokeWidth={1.5} size={25} color={color}/> : <ArrowLeftCircle strokeWidth={1.5} size={25} color={color}/> }
       </button>
       <button
         className={`Panel_closeButton absolute bg-transparent bw0 ${left ? 'left-0': 'right-0'}`}
@@ -70,7 +70,7 @@ const Panel = ({
         : null
       }
       <div className="Panel_scrollableContent ph3 ph4-m ph5-l w-100" style={{
-        height: height - 50,
+        height,
         color,
       }}>
       {Component

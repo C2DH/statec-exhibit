@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next'
 const TableOfContents = ({ color='white' }) => {
   const { t } = useTranslation()
   return (
-    <div className="TableOfContents">
+    <div className="TableOfContents pb5">
       <Link to="/" className="db " style={{color}} replace>{t('ChapterRouteIndex')}</Link>
       {ChapterRoutes.map((route, i) => (
         <section className="mt4" key={i}>

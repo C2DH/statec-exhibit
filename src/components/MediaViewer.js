@@ -8,7 +8,7 @@ import {useBoundingClientRect} from '../hooks'
 const MediaViewer = ({ isMobile, color, width, height }) => {
   const qs = useURLSearchParams()
   const [ media, setMedia ] = useState(null)
-  const [{ height:mediaFigureHeight, width:mediaFigureWidth}, ref] = useBoundingClientRect()
+  const [{ width:mediaFigureWidth}, ref] = useBoundingClientRect()
 
   useEffect(() => {
     const id = qs.get('id')
@@ -23,24 +23,24 @@ const MediaViewer = ({ isMobile, color, width, height }) => {
   }
   return (
     <figure
-      className="MediaViewer ma0 pa0 w-100 h-100 flex flex-column"
+      className="MediaViewer ma0 pa0 pb5 w-100"
       style={{ color }}
     >
       <div ref={ref} style={{
-        flexGrow: 1,
+        height: height * .80
       }}>
         {media ? (
           <MediaViewerZoomableFigure
             resolutions='large-h'
             media={media}
             src={media?.resolutions['large-h'].url}
-            height={mediaFigureHeight}
+            height={height * .80}
             width={mediaFigureWidth}
             color={color}
           />
         ): null}
       </div>
-      <figcaption className="mh0 pb3" style={{ flexShrink: '1', maxHeight: height * .15 }}>
+      <figcaption className="mh0 pb3">
         {media.caption
           ? <h2 className="mb1" style={{color, marginTop: 0}} dangerouslySetInnerHTML={{__html:media.caption }}></h2>
           : null
