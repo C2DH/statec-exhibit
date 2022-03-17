@@ -83,6 +83,4 @@ const ChapterCover = ({ cover={}, height=0, title='', chapterIndex=0, resolution
   )
 }
 
-export default React.memo(ChapterCover, (nextProps, prevProps) => {
-  return nextProps.cover?.id === prevProps.cover?.id
-})
+export default ChapterCover
