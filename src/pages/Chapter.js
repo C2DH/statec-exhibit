@@ -70,6 +70,7 @@ const Section = ({
   return (
     <div className="Section Chapter_streamWrapper flex">
       <ChapterStream
+        chapterId={chapterId}
         numStartAt={section.numStartAt}
         backgroundColor={backgroundColor}
         height={height}

@@ -10,7 +10,7 @@ const Echo = () => {
   console.error('Missing function handler')
 }
 
-const ChapterStream = ({ numStartAt, modules = [], height, backgroundColor, onStepChange=Echo, onIntervalClick=Echo, className}) => {
+const ChapterStream = ({ chapterId='', numStartAt, modules = [], height, backgroundColor, onStepChange=Echo, onIntervalClick=Echo, className}) => {
   const [{ width }, ref] = useBoundingClientRect()
   const [activeStep, setActiveStep]= useState({
     paragraphId: '0,0',
@@ -72,7 +72,7 @@ const ChapterStream = ({ numStartAt, modules = [], height, backgroundColor, onSt
                 <div className={`ChapterStream_paragraph ${activeStep.paragraphId === paragraphId ? 'active' : ''}`}>
                   <div className="anchor" id={`p${paragraphId}`}></div>
                   <ChapterParagraph
-                    memoId={paragraphId}
+                    memoId={chapterId + '.' + paragraphId}
                     paragraphId={paragraphId}
                     onIntervalClick={(e) => onIntervalClick({
                       ...e,
