@@ -1926,8 +1926,8 @@
       "isPortrait": false
     },
     "HISAEZ000342V01_traite.jpg": {
-      "caption": "Placeholder Caption",
-      "provenance": "Source: Placeholder",
+      "caption": "Photo de famille, Dommeldange",
+      "provenance": "Source: © Von Roesgen, Trina, HISAEZ000342, Fonds HISAEZ, Von Roesgen, Annik (Collection du CNA)",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/HISAEZ000342V01_traite.medium-w.jpg",
@@ -3524,7 +3524,7 @@
       "isPortrait": true
     },
     "Picture_4p1-4a.tif": {
-      "caption": "Ouvriers ayant contribué à la construction du Pont du Pfaffenthal  en 1921",
+      "caption": "Ouvriers ayant contribué à la construction du Pont du Pfaffenthal en 1921",
       "provenance": "Source: Photothèque de la Ville de Luxembourg (extrait de STATEC, L’économie luxembourgeoise au 20ème siècle, Luxembourg, 1999)",
       "resolutions": {
         "medium-w": {
@@ -5398,6 +5398,88 @@
       "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAUCAIAAAA7jDsBAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABE0lEQVQoz11RW5LDIAzj/gdpmm7A+AVkT7cCp3ysJuMhFpaFnUSEiM7zzDkfx/v9Po/jeL2OnIuqpfu+e++qYmbNyewS/nHLoxFiQhYCtvB7s7vhQ6ZWMv0kXQCH0Ft1kPOsImx6pXV60BrhEvpUnoZUroQsMyPiXvfshqKqQsw4f9IundaajiG98fw6fNQ0Ru2dmpd78OgV12SZCcXZG+LLnTbPcFJrRYaoID70Y81L/OJGKYuOdz/t9YrDqqZJ8xfIYkzBAU/1P/GtBH3EtNWATYf4Q9cvQMdEY5SIaZcumrA9X4hFbHq+NaztgkmHTrjD1OwL5FtreJiwKIqxJXfa1eg1e2PHaOlW3MvoJXxFb+AP5hehYlsBubQAAAAASUVORK5CYII=",
       "aspectRatio": 0.516,
       "isPortrait": true
+    },
+    "Bernhoeft_Charles_1899-01-0282.tif": {
+      "caption": "L'Athénée, Luxembourg à la fin du 19ème siècle.",
+      "provenance": "Source: <a href='https://www.industrie.lu/athenee.html' target='_blank'>industrie.lu</a>",
+      "resolutions": {
+        "medium-w": {
+          "url": "/media/images/Bernhoeft_Charles_1899-01-0282.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/Bernhoeft_Charles_1899-01-0282.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/Bernhoeft_Charles_1899-01-0282.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 2000,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/Bernhoeft_Charles_1899-01-0282.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 2000
+          }
+        }
+      },
+      "base64": "data:image/png;base64,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",
+      "aspectRatio": 1.5235,
+      "isPortrait": false
+    },
+    "Aschman_Pol_19582960_neg4.tif": {
+      "caption": "Milchmann letzte Fahrt",
+      "provenance": "Source: © Pol Aschmann, 8 août 1958, Photothèque de la Ville de Luxembourg",
+      "resolutions": {
+        "medium-w": {
+          "url": "/media/images/Aschman_Pol_19582960_neg4.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/Aschman_Pol_19582960_neg4.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/Aschman_Pol_19582960_neg4.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 2000,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/Aschman_Pol_19582960_neg4.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 2000
+          }
+        }
+      },
+      "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAACXBIWXMAAC4jAAAuIwF4pT92AAAEC0lEQVQ4yyVUa1MaZxjdP9VWY9QoxoiIgIgioggK3gW5CnJb7veLclEuCwq7gJJM2qiTJu108iGTy4e0005/RmaS5kOKQOzRzryzvLvsed7znOecJcxGg0mvPUwmwsFAJp2KR6Net8vncXtdZKlYrJycWC178WgkGg4dH2Uvfnp23epgtdvdTqdLGLS7WNlMOhGLHWezKBH0+9wu0kOSxXz+vNEI+LzH2UwO0EyaqVY/f/rSaX8DuNv9Ruh21QadhrTbDhMJulo5b5wFAz6/1xvw+fK5HJ5k06kazQBWpkolivrn85du56bd7tyCbRYz6bD7vJ5QMAB6p+VyMOCn7ghThQJWLBI+q9czqRT2oN36t91qtW+ZX3cIycz0zBRfr92NRcP53HGZolxOh9/rAQYlagzNVOnm2TlD0wA/aTa/fr3udG5aLZx8Q8gXpCI+jzfORhWIt7O5LhYJ15Qrmu2to0ymzjBPmo+hXKNeAxcw//3DH3/9+ffHj5/evX1HpJIJi8n44F4vnzOuUsjnZ2emJrlKxZJlz5g6SKq3N7Xq7Y1V5YpctqpUoHokFLTum6EepCU0W5vCSe5A7w+c0RFsVlcUmBOEMOl1L56/oE8rOs2O3+PJptOoaDLogFdvbawpl3EhQn7/hkrZ9/13o0MP2A9ZnEcPFyXideUKf2LcpNMHvf4lqQQtvH/7vsYwPz59evnsApMUCwXLsgXCabOpNze57LGB3h7WQD9rsB/4qQmOkMcV8iZHhwZBe148A0AmdXhSot68fkMV8h4XGQFt9Lm6rEBL0Azg4ft97JFh4PkTnHXVyqxQsCiZczudWvUO3oEXMJE9oyEWDkFOgj3CGmMNC7icKS5naV6CISWiUaVcDtlQC3TkUunVxSX6hAtMBr3VbK4ztdNS+eXznwn8PXS/TyTgD97rRflXv73CDCAE59Fof0/Phkql06gBkMyKYG/0aDXvwaePm81fX/5CDPb1QidoKOTzNtZUMNPV5RW8OSeaBimYTymX3Wo5whIJeMuyRa1mx2GzFgv587MGASXt1v1IMCjgTkhmROUShQigz0n22MKcWCadm50WwAJQRDYv0e9qAn4vzJc7ysJzBN6u0TSYoPA0fxKF7PsWg24XOcW0PS6X027dM+pt+2ZEFcYA+cOD5P/OJUCMdNjABLk16rV2qwW3CBbCdFIuN+p1BIsqFuBNRApnIJvgTFcqZ40GgeiiOOm0AXO3sXvdJHqORsLJRByDQTDBDoHBaaUihdjhzHqthqgTIOMiHS7S7nG7IuEQWgoF/fhBMMOhUDwWTR0ewMmFfA5glGDoKpDo9LZnh20fXcHPmDAWPiNAogpOTsRjgEG/O2ThpFTCJ6FaqaAFXPHwP3BTdJ37ERHCAAAAAElFTkSuQmCC",
+      "aspectRatio": 1.0005,
+      "isPortrait": false
     }
   }
 }

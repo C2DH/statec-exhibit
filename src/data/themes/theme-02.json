@@ -429,7 +429,7 @@
               "visibleKeys": ["v", "v1", "v2"],
               "focusKeys": ["v"],
               "colorKeys": {"v2": "var(--t2-colorkeys-primary)", "v": "var(--t2-colorkeys-secondary)", "v1":"var(--t2-colorkeys-tertiary)"},
-              "figures": [{ "id": "1899-img332athenee.jpg"}, {"id": "Athénée_de_Luxembourg_01.jpg"}]
+              "figures": [{ "id": "Bernhoeft_Charles_1899-01-0282.tif"}, {"id": "Athénée_de_Luxembourg_01.jpg"}]
             },
             {
               "from": 1871,
