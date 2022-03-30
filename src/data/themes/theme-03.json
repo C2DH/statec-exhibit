@@ -459,6 +459,12 @@
       "displayPoints": true,
       "displayDashedLine": true,
       "numericTranslationLabel": "number",
+      "colorKeys": {
+        "v": "var(--secondary)",
+        "v1": "var(--datakey-v1)",
+        "v2": "var(--datakey-v)",
+        "v3": "var(--t1-colorkeys-tertiary)"
+      },
       "modules": [
         {
           "title": "Vers une économie des services",
@@ -466,20 +472,23 @@
           "paragraphs": [
             {
               "from": 1871,
-              "to": 2020,
-              "visibleKeys": ["v", "v1"],
-              "focusKeys": ["v", "v1"],
-              "colorKeys": { "v": "var(--secondary)", "v1": "var(--datakey-v1)", "v2": "var(--datakey-v)", "v3": "var(--t1-colorkeys-tertiary)" },
+              "to": 1947,
+              "visibleKeys": ["v1", "v2", "v3"],
+              "focusKeys": ["v1", "v2", "v3"],
+
               "text": "L’emploi dans le secteur agricole est en déclin sur le long terme. En 1871, l’agriculture constitue quelque 60% de l’emploi total. En 1907, la part dépasse à peine les 40% et au début des années 1960, le pourcentage se situe déjà en-dessous des 20%. Aujourd’hui, la part de ce secteur dans l’emploi se situe en-dessous de 1% . En chiffres absolus, en 1871, environ 53 000 personnes sont actives dans l’agriculture, contre seulement 3 700 en 2010.",
               "dataset": "EconomicSectorsEmployment",
               "datasetLayout": "Stacks",
               "datasetKeys": ["v", "v1", "v2"],
-              "datasetColorKeys": { "v": "var(--dataset-t2-v)", "v1": "var(--dataset-t2-v1)", "v2": "red"},
+              "datasetColorKeys": {
+                "v": "var(--datakey-v1)",
+                "v1": "var(--datakey-v)",
+                "v2": "var(--dataset-t2-v1)"},
               "datasetExtent": [1871, 2021],
               "datasetRange": [0, 100],
               "datasetLegend": "Part des secteurs économiques dans l'emploi total, 1871-2020 </br>Source: STATEC",
               "datasetNumericTranslationLabel": "percentage",
-              "figures": [
+              "deprecatedFigures": [
                 {
                   "id": "Picture_3p3-1.png"
                 }
@@ -488,14 +497,27 @@
             {
               "from": 1907,
               "to": 1947,
-              "visibleKeys": ["v", "v1", "v2", "v3"],
-              "focusKeys": ["v", "v1", "v2", "v3"],
-              "colorKeys": { "v": "var(--secondary)", "v1": "var(--datakey-v1)", "v2": "var(--datakey-v)", "v3": "var(--t1-colorkeys-tertiary)" },
-              "text": "Les données statistiques sur l’emploi issues des recensements - surtout celles concernant l’agriculture - sont biaisées par la prise en compte des « aidants familiaux ». Il s’agit des membres de la famille d’un indépendant à la tête d’une entreprise agricole ou artisanale et qui ne sont pas salariés). En 1907, sur une population active agricole de 53.184 personnes, on compte 16 860 exploitants agricoles (31,7% de la population active agricole), 25 533 aidants agricoles non rémunérés (48%) et 10 791 salariés (20,3%). Jusqu’aux années 1990, la place de l’agriculture dans l’emploi tend à se réduire fortement. Le nombre d’ « aidants » agricoles n’est plus que de 966 en 1991 (soit 18% de l’emploi agricole, contre près de 50% en 1907)."
+              "visibleKeys": ["v1", "v2", "v3"],
+              "focusKeys": ["v1"],
+              "text": "Les données statistiques sur l’emploi issues des recensements - surtout celles concernant l’agriculture - sont biaisées par la prise en compte des « aidants familiaux ». Il s’agit des membres de la famille d’un indépendant à la tête d’une entreprise agricole ou artisanale et qui ne sont pas salariés). En 1907, sur une population active agricole de 53.184 personnes, on compte 16 860 exploitants agricoles (31,7% de la population active agricole), 25 533 aidants agricoles non rémunérés (48%) et 10 791 salariés (20,3%). Jusqu’aux années 1990, la place de l’agriculture dans l’emploi tend à se réduire fortement. Le nombre d’ « aidants » agricoles n’est plus que de 966 en 1991 (soit 18% de l’emploi agricole, contre près de 50% en 1907).",
+              "dataset": "EmploiSelonStatutProfessionnel",
+              "datasetKeys": ["v1", "v2", "v3", "v4"],
+              "datasetLayout": "Stacks",
+              "datasetNumericTranslationLabel": "percentage",
+              "datasetColorKeys": {
+                "v1": "var(--datakey-v1)",
+                "v2": "gold",
+                "v3": "var(--t1-colorkeys-tertiary)",
+                "v4": "var(--datakey-v)"
+              },
+              "datasetExtent": [1907, 1970],
+              "datasetRange": [0, 100]
             },
             {
               "from": 1907,
               "to": 2020,
+              "visibleKeys": ["v1", "v2", "v3"],
+              "focusKeys": ["v1"],
               "text": "Cette évolution à la baisse de l’emploi dans l’agriculture est donc particulièrement prononcée pour les aidants familiaux. Il s’agit probablement d’une évolution reflétant la réalité. La productivité augmente et le travail agricole des femmes des exploitants peut avoir perdu en volume, du moins dans une partie des exploitations agricoles. Mais, du point de vue méthodologique, il y a quelques doutes. Le traitement des « aidants » varie au sein d’un même recensement et au cours du temps. Les femmes des exploitants agricoles sont parfois considérées d’office comme « aidants familiaux » et dans d’autres cas c’est la déclaration du recensé qui s’impose. Par ailleurs, certains hésitent à se déclarer « aidant familial » craignant de tomber sous l’impôt.",
               "figures": [
                 {
@@ -506,9 +528,8 @@
             {
               "from": 1907,
               "to": 2020,
-              "visibleKeys": ["v", "v1"],
-              "focusKeys": ["v", "v1"],
-              "colorKeys": { "v": "var(--secondary)", "v1": "var(--datakey-v1)", "v2": "var(--datakey-v)", "v3": "var(--t1-colorkeys-tertiary)" },
+              "visibleKeys": ["v1", "v2", "v3"],
+              "focusKeys": ["v1"],
               "text": "Le déclin de l’emploi dans l’agriculture ne doit pas cacher les gains de productivité dans cette branche. La taille moyenne des exploitations agricoles passe de moins de 4 ha en 1907 à plus de 70 ha aujourd’hui. La production totale de lait qui fut de 102 000 tonnes en 1913 est de 447 000 tonnes en 2020, avec à peu près le même nombre de vaches laitières, autour de 55 000 à ces deux dates. La production de lait par vache fut de moins de 2 000 kg par an et par vache laitière en 1913 et de quelque 8 200 kg. en 2020. Après la deuxième guerre mondiale, la mécanisation de l’agriculture est fulgurante. Le nombre de tracteurs passe de 1.392 en 1950 à 8 900 à la fin des années 1980.",
               "dataset": "MilkProduction",
               "datasetLayout": "Lines",
@@ -518,9 +539,8 @@
             {
               "from": 1907,
               "to": 1947,
-              "visibleKeys": ["v", "v2"],
-              "focusKeys": ["v", "v2"],
-              "colorKeys": { "v": "var(--secondary)", "v1": "var(--datakey-v1)", "v2": "var(--datakey-v)", "v3": "var(--t1-colorkeys-tertiary)" },
+              "visibleKeys": ["v1", "v2", "v3"],
+              "focusKeys": ["v2"],
               "text": "La part des personnes travaillant dans l’industrie, qui fut d’environ 20% de l’emploi total en 1871, atteint près de 40% dès 1907, suite surtout à l’augmentation des postes de travail dans les mines de fer et les usines sidérurgiques. Pour cette dernière année, sur un emploi total de quelque 123 000 personnes actives, un peu plus de 47 000 travaillent dans l’industrie. Le recensement professionnel et industriel du 12 juin 1907 contient également une question sur les activités accessoires, signe que les activités multiples (permettant de joindre les deux bouts) sont la règle à l’époque, notamment pour les ouvriers de la sidérurgie et des mines de fer. En 1907, 66 663 personnes ont une activité accessoire, parmi lesquelles 48 719 dans l’agriculture. Selon le recensement de 1960, encore 630 (7,6%) agriculteurs font cette activité à titre accessoire sur 8 280 agriculteurs au total.",
               "figures": [
                 {
@@ -530,19 +550,17 @@
             },
             {
               "from": 1907,
-              "to": 2020,
-              "visibleKeys": ["v", "v2"],
-              "focusKeys": ["v", "v2"],
-              "colorKeys": { "v": "var(--secondary)", "v1": "var(--datakey-v1)", "v2": "var(--datakey-v)", "v3": "var(--t1-colorkeys-tertiary)" },
+              "to": 1947,
+              "visibleKeys": ["v1", "v2", "v3"],
+              "focusKeys": ["v2"],
               "text": "L’industrie sidérurgique ne se développe véritablement qu’à partir des années 1880 avec la possibilité qu’offre désormais le procédé Thomas (1879) de transformer la fonte phosphoreuse (produite à partir de la minette luxembourgeoise) en acier de bonne qualité. L’ascension de la sidérurgie est fulgurante avec la construction des grandes usines intégrées (de la fonte aux produits laminés) dont la première fut construite à Dudelange entre 1880 et 1885. Juste avant la première guerre mondiale, l’usine de Belval, une des plus modernes de l’époque, est construite. L’emploi ouvrier dans l’industrie sidérurgie et minière passe de 13.651 en 1908 (dont 5 438 dans les mines de fer) à à 19 168 en 1913 (dont 5.807 dans les mines de fer).",
               "figures": [{ "id": "belval.jpg"}]
             },
             {
               "from": 1907,
-              "to": 2020,
-              "visibleKeys": ["v", "v2"],
-              "focusKeys": ["v", "v2"],
-              "colorKeys": { "v": "var(--secondary)", "v1": "var(--datakey-v1)", "v2": "var(--datakey-v)", "v3": "var(--t1-colorkeys-tertiary)" },
+              "to": 1947,
+              "visibleKeys": ["v1", "v2", "v3"],
+              "focusKeys": ["v2"],
               "text": "Avec la guerre et ses suites (ralentissement économique, sortie du « Zollverein » et réorientation économique du pays, agitation sociale), les effectifs de l’industrie sidérurgique et minière reculent (15 469 en 1921, contre quelque 20.000 en 1913), avant de connaître une forte hausse avec la bonne conjoncture économique de la deuxième moitié des années 1920 (près de 29.000 ouvriers en 1929). C’est d’ailleurs le maximum d’ouvriers que l’industrie sidérurgique et minière atteindra dans son histoire.",
               "figures": [
                 {
@@ -551,28 +569,25 @@
               ]
             },
             {
-              "from": 1907,
-              "to": 2020,
-              "visibleKeys": ["v", "v2"],
-              "focusKeys": ["v", "v2"],
-              "colorKeys": { "v": "var(--secondary)", "v1": "var(--datakey-v1)", "v2": "var(--datakey-v)", "v3": "var(--t1-colorkeys-tertiary)" },
+              "from": 1915,
+              "to": 1947,
+              "visibleKeys": ["v1", "v2", "v3"],
+              "focusKeys": ["v2"],
               "text": "La crise économique mondiale débutant en 1929 touche le Luxembourg à partir de 1930. Le personnel ouvrier de l’industrie sidérurgique et minière se rétracte en passant de 28.983 en 1929 à 17.559 en 1935 avant de rebondir un peu avant la deuxième guerre mondiale. D’une manière générale, dans l’entre-deux-guerres (c’est-à-dire à moyen terme), la dynamique de l’emploi industriel (et de sa composante la plus importante qu’est sidérurgie) est médiocre. Entre 1907 et 1935, l’industrie et la construction dans leur ensemble créent seulement quelque 5.000 emplois (47.262 emplois en 1907 et 51.739 en 1935). La part de l’industrie et de la construction dans le total de la population active reste stable autour de 38% de la population active totale entre 1907 et 1935. Les cinq années de croissance importante de l’emploi industriel précédant la crise de 1929-1930 constituent une parenthèse.",
               "datasetLegend": "Source : STATEC (sur base des données fournies par l’Inspection du travail et des mines) N.B. : Les données pour les années de la deuxième guerre mondiale manquent"
             },
             {
               "from": 1947,
               "to": 1970,
-              "visibleKeys": ["v", "v2"],
-              "focusKeys": ["v", "v2"],
-              "colorKeys": { "v": "var(--secondary)", "v1": "var(--datakey-v1)", "v2": "var(--datakey-v)", "v3": "var(--t1-colorkeys-tertiary)" },
+              "visibleKeys": ["v1", "v2", "v3"],
+              "focusKeys": ["v2"],
               "text": "Après la deuxième guerre mondiale, la reconstruction est synonyme d’un léger « boom » de l’emploi industriel qui passe de 53 253 en 1947 à 61 900 personnes, soit une part de près de 45% de la population active en 1970 contre un peu moins de 40% en 1947. Ce n’est d’ailleurs pas seulement la sidérurgie qui est responsable de ce frémissement à la hausse. La main-d’œuvre ouvrière dans l’industrie sidérurgique et minière passe effectivement de 17 811 à 22 911 en 1970. C’est un plus de 5 000 personnes. Mais le nombre d’ouvriers dans cette branche en 1970 ne dépasse pas celui de 1929. L’emploi industriel augmente également à cause des nouvelles industries (caoutchouc, chimie, fibres synthétiques, …) créées dans les années 1950-1970."
             },
             {
               "from": 1970,
               "to": 1990,
-              "visibleKeys": ["v", "v2"],
-              "focusKeys": ["v", "v2"],
-              "colorKeys": { "v": "var(--secondary)", "v1": "var(--datakey-v1)", "v2": "var(--datakey-v)", "v3": "var(--t1-colorkeys-tertiary)" },
+              "visibleKeys": ["v1", "v2", "v3"],
+              "focusKeys": ["v2"],
               "text": "Avec la crise des années 1975-1985 commence une période au cours de laquelle la part de l’emploi industriel danas l’emploi total diminue fortement. De 44% de l’emploi total en 1970, la part de l’industrie et de la construction passe environ 30% en 1990 et à quelque 18% en 2020. Changement d’époque, l’industrie sidérurgique et minière qui avait dominé le tissu industriel perd des emplois (de 22 747 ouvriers en 1974 à 11 018 emplois en 1985). L’industrie minière avait déjà souffert avant la crise sidérurgique, notamment de la concurrence de minerai plus riche en fer d’autres régions du monde. La dernière mine de fer luxembourgeoise ferme dès 1981.",
               "figures": [
                 {
@@ -584,9 +599,8 @@
             {
               "from": 1970,
               "to": 1990,
-              "visibleKeys": ["v", "v2"],
-              "focusKeys": ["v", "v2"],
-              "colorKeys": { "v": "var(--secondary)", "v1": "var(--datakey-v1)", "v2": "var(--datakey-v)", "v3": "var(--t1-colorkeys-tertiary)" },
+              "visibleKeys": ["v1", "v2", "v3"],
+              "focusKeys": ["v2"],
               "text": "On utilise souvent le terme de « désindustrialisation » pour qualifier l’évolution des structures économiques sur le long terme dans les pays dits « développés » comme le Luxembourg. Cette vision où le concept de « déclin industriel » est sous-jacent, doit être nuancée. En effet, d’une part, les industries dites « traditionnelles » (comme la sidérurgie et même les mines fer) se sont adaptées de façon continue par des innovations et des améliorations de la productivité. A titre d’exemple, la production de laminés par ouvrier dans les laminoirs (la productivité technique) est passée de 243 t. en 1921 à 919 t. en 1988. D’autre part, le Luxembourg, dans le cadre de sa politique de développement économique - la Société nationale de crédit et d’investissement est fondée en 1977 – a créé des emplois ou a contribué à créer les conditions de la création dedans de nouvelles branches industrielles.",
               "figures": [
                 {
@@ -597,25 +611,22 @@
             {
               "from": 1970,
               "to": 1990,
-              "visibleKeys": ["v", "v2"],
-              "focusKeys": ["v", "v2"],
-              "colorKeys": { "v": "var(--secondary)", "v1": "var(--datakey-v1)", "v2": "var(--datakey-v)", "v3": "var(--t1-colorkeys-tertiary)" },
+              "visibleKeys": ["v1", "v2", "v3"],
+              "focusKeys": ["v2"],
               "text": "A partir du milieu des années 1980, l’emploi dans l’industrie (y compris les branches électricité, eau et industries extractives) se maintient entre 35 000 et 40 000 personnes. C’est dans la construction que l’impact de la croissance économique exceptionnelle des dernières trois décennies (tout au plus ralentie par la crise de 2008) ainsi que l’impact de la croissance démographique se manifeste le plus clairement. L’emploi dans la construction passe de moins de 20 000 au milieu des années 1980 à environ 50 000 aujourd’hui."
             },
             {
               "from": 1970,
               "to": 1990,
-              "visibleKeys": ["v", "v3"],
-              "focusKeys": ["v", "v3"],
-              "colorKeys": { "v": "var(--secondary)", "v1": "var(--datakey-v1)", "v2": "var(--datakey-v)", "v3": "var(--t1-colorkeys-tertiary)" },
+              "visibleKeys": ["v1", "v2", "v3"],
+              "focusKeys": ["v3"],
               "text": "L’évolution générale de la part des services dans l’emploi total est très claire. Ces services représentent aujourd’hui environ 80% de l’emploi, alors qu’en 1871 leur part dans l’emploi se situa autour de 20%. Dans l’histoire récente ce sont évidemment les banques, les assurances et autres services financiers et plus généralement les « services aux entreprises » (dont la panoplie va du nettoyage, aux sociétés d’avocats ou de consultance), souvent des entreprises dépendant du secteur financier, qui sont largement responsables de l’augmentation de l’emploi dans le secteur tertiaire. S’y ajoutent des branches comme les télécommunications (par exemple la SES) ou encore les transports (logistique) qui se sont développés au cours des dernières décennies. L’expansion de l’emploi dans le secteur public et para-public est également notable."
             },
             {
               "from": 1907,
               "to": 1935,
-              "visibleKeys": ["v", "v3"],
-              "focusKeys": ["v", "v3"],
-              "colorKeys": { "v": "var(--secondary)", "v1": "var(--datakey-v1)", "v2": "var(--datakey-v)", "v3": "var(--t1-colorkeys-tertiary)" },
+              "visibleKeys": ["v1", "v2", "v3"],
+              "focusKeys": ["v3"],
               "text": "Dans l’historiographie économique et sociale, l’industrie sidérurgique et minière – qui a effectivement joué un rôle central dans l’histoire du Luxembourg - a tendance à rendre toutes les autres branches économiques moins importantes qu’elles ne l’étaient réellement. Le secteur des services, plus particulièrement, est sous-estimé concernant son envergure dans le cadre du marché du travail. Ce n’est pas par hasard que la Commission permanente de statistique s’est intéressée très tôt à la condition des employés en menant, en 1910, une enquête sur les conditions économiques des employés (« Privatbeamte »). Cette enquête était également destinée à la préparation de la loi sur les pensions des employés privés (il faudra cependant jusqu’en 1931 pour que cette loi voie le jour)",
               "figures": [
                 {
@@ -626,9 +637,8 @@
             {
               "from": 1970,
               "to": 1990,
-              "visibleKeys": ["v", "v2"],
-              "focusKeys": ["v", "v2"],
-              "colorKeys": { "v": "var(--secondary)", "v1": "var(--datakey-v1)", "v2": "var(--datakey-v)", "v3": "var(--t1-colorkeys-tertiary)" },
+              "visibleKeys": ["v1", "v2", "v3"],
+              "focusKeys": ["v2", "v3"],
               "text": "Ce n’est pas dans l’industrie, mais dans les services  (commerce, transports, administration) que la croissance de l’emploi est la plus importante dès le début du 20ème siècle. De 1907 à 1935 (années des recensements), le nombre d’emplois dans les services passe de 22.670 à 42.342 personnes, (20.000 emplois de plus), alors qu’au cours de la même période l’emploi dans l’industrie a augmenté de moins de 5.000 unités (de 47.262 en 1907 à 51.739 en 1935). Dans ce contexte, on peut noter que ce sont les employés (et non les ouvriers) auxquels est attribué un statut légal spécifique en 1919. Si le syndicalisme ouvrier s’est organisé de façon structurée en 1915-1916, le syndicalisme des employés a vu également le jour à cette époque. En 1918, est créée l’ « Luxemburger Bankbeamtenverein », aujourd’hui « ALEBA ». En 1920, c’est la FEP (Fédération des employés privés) qui voit le jour par la fusion d’associations d’employés créées déjà avant la première guerre mondiale ». En 1921, la FEP compte déjà 2 431 adhérents.",
               "figures": [
                 {
@@ -637,11 +647,10 @@
               ]
             },
             {
-              "from": 1970,
+              "from": 1947,
               "to": 1990,
-              "visibleKeys": ["v", "v2"],
-              "focusKeys": ["v", "v2"],
-              "colorKeys": { "v": "var(--secondary)", "v1": "var(--datakey-v1)", "v2": "var(--datakey-v)", "v3": "var(--t1-colorkeys-tertiary)" },
+              "visibleKeys": ["v1", "v2", "v3"],
+              "focusKeys": ["v2", "v3"],
               "text": "Dans les premières années après la deuxième guerre mondiale la progression de l’emploi dans les services est continue sans être exceptionnelle. Néanmoins, dès les années 1960, l’emploi dans les banques (euromarchés) et dans les assurances prend son envol. En 1947,les banques et les assurances occupent 11.732 personnes. En 1966, les entreprises dans cette branche ont un emploi de 18.422 personnes, soit 14% de la population active. En 1947, l’ensemble du secteur des services occupe 45.985 personnes. En 1970, il y en près de 20.000 de plus, avec un emploi de 64.700 personnes. La loi du 12 juin 1965 précise les procédures en matière de conventions collectives et introduit la notion de « représentativité nationale » des syndicats dans les négociations collectives. Des conventions collectives existent avant cette loi (notamment sur base de l’arrêté g.-d- du 23 janvier 1936 créant le Conseil national du travail, mais la loi de 1965 donne le signal pour la généralisation des conventions collectives notamment dans les services. En 1967, la première convention collective est signée pour le personnel des banques et une autre pour les assurances.",
               "figures": [
                 {
@@ -652,9 +661,8 @@
             {
               "from": 1990,
               "to": 2020,
-              "visibleKeys": ["v", "v2"],
-              "focusKeys": ["v", "v2"],
-              "colorKeys": { "v": "var(--secondary)", "v1": "var(--datakey-v1)", "v2": "var(--datakey-v)", "v3": "var(--t1-colorkeys-tertiary)" },
+              "visibleKeys": ["v1", "v2", "v3"],
+              "focusKeys": ["v3"],
               "text": "L‘emploi dans les services, aiguillonné par le secteur financier, explose littéralement à partir des années 1970. En 2020, 380 600 personnes travaillent dans les services, contre 64 700 en 1970. La part des services dans l’emploi passe de 47% à 81% en au cours de cette période. Le secteur tertiaire est en réalité un secteur très diversifié allant des services de sécurité, aux télécommunications, aux transports, aux finances …",
               "datasetLegend": "Emploi dans les différents secteurs économiques, 1907-2020"
             }

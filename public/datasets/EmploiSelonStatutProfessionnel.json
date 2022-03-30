@@ -1,0 +1,20 @@
+{
+  "id": "EmploiSelonStatutProfessionnel",
+  "title": "L'emploi au Luxembourg selon le statut professionnel, 1907-1970",
+  "timeformat": "YYYY",
+  "legend": {
+    "t": "année",
+    "v": "Total (chiffre absolue)",
+    "v1": "Indépendants et Patrons",
+    "v2":	"Aidants familiaux",
+    "v3":	"Employés et fonctionnaires",
+    "v4":	"Ouvriers et apprentis"
+  },
+  "values": [
+    {"t": 1907, "v":123116, "v1": 27.39286527, "v2": 22.33178466, "v3": 4.471392833, "v4": 45.80395724 },
+    {"t": 1935, "v":134847, "v1": 22.43728077, "v2": 20.17694127, "v3": 13.63174561, "v4": 43.75403235 },
+    {"t": 1947, "v":135139, "v1": 19.27496874, "v2": 17.49679959, "v3": 16.36463197, "v4": 46.23387771 },
+    {"t": 1960, "v":130587, "v1": 17.147955, "v2": 9.902210787, "v3": 25.70929725, "v4": 45.62322436 },
+    {"t": 1970, "v":129255, "v1": 13.86251983, "v2": 3.22695447, "v3": 34.95725504, "v4": 47.16413292 }
+  ]
+}
