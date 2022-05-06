@@ -2539,6 +2539,18 @@
     semver "^7.3.2"
     tsutils "^3.17.1"
 
+"@use-gesture/core@10.2.12":
+  version "10.2.12"
+  resolved "https://registry.yarnpkg.com/@use-gesture/core/-/core-10.2.12.tgz#036cb8d0dc01f1b546d5a839a9ba681a92e40814"
+  integrity sha512-BIZ9Zyo2xFyLS8pYyhawa5upNpshLTSBVTek+56EqgCp/j95YfZI7PtgwHmm0cm+0HNqeq8FHkhFmJlbj4Pg3Q==
+
+"@use-gesture/react@^10.2.12":
+  version "10.2.12"
+  resolved "https://registry.yarnpkg.com/@use-gesture/react/-/react-10.2.12.tgz#45a0b04534b05220417e2d633d0ddf1dacc9ac36"
+  integrity sha512-ykNZWRjwesSirhaBmcAWveHyivXn/E5/R4kY6i8+cDtklKuPM91oFEML9tV5CRBuGJONY/rxD+JVNs/SOwfp4w==
+  dependencies:
+    "@use-gesture/core" "10.2.12"
+
 "@vx/axis@^0.0.196":
   version "0.0.196"
   resolved "https://registry.yarnpkg.com/@vx/axis/-/axis-0.0.196.tgz#b1987b79d0b3c4845a610bbea3db60075ff78edc"
