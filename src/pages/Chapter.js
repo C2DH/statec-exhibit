@@ -66,7 +66,7 @@ const Section = ({
       console.info('@TODO: open / close year indicator.')
     }
   }
-
+  console.debug('[Section], dataset:', section)
   return (
     <div className="Section Chapter_streamWrapper flex">
       <ChapterStream
@@ -89,9 +89,11 @@ const Section = ({
             displayDashedLine={!!section.displayDashedLine}
             numStartAt={section.numStartAt}
             themeDatasetId={sectionDataset.id}
+            themeBackgroundColor={backgroundColor}
             keys={Object.keys(sectionDataset.legend).filter(k => k !== 't')}
             colorKeys={section.colorKeys}
             legend={sectionDataset.legend}
+            component={section.datasetComponent || 'Trend'}
             data={sectionDataset.values || []}
             width={width}
             height={height}

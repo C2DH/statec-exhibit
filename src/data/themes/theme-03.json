@@ -98,7 +98,14 @@
               "datasetColorKeys": { "v": "var(--dataset-t2-v)", "v1": "var(--dataset-t2-v1)", "v2": "red"}
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "dataset": "TimelineOfficialStatistics",
+      "datasetComponent": "Timeline",
+      "datasetExtent": [1890,2020],
+      "modules": [
         {
           "title": "Les sources des statistiques du travail",
           "hotspots": [

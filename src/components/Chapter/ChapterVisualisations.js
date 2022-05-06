@@ -3,12 +3,14 @@ import { useTranslation } from 'react-i18next'
 import ChapterModulesGraphics from './ChapterModulesGraphics'
 import Trend from '../Trend'
 import Points from '../Points'
+import Timeline from '../Timeline'
 
 import { StartDate, EndDate } from '../../constants'
 
 const AvailablesComponents = {
   Points: Points,
-  Trend: Trend
+  Trend: Trend,
+  Timeline: Timeline
 }
 
 const ChapterVisualisations = ({
@@ -16,6 +18,7 @@ const ChapterVisualisations = ({
   component='Trend',
   displayPoints=false,
   displayDashedLine=false,
+  themeBackgroundColor='var(--primary)',
   keys=['v'], legend, data=[], modules=[], height=100, width=100, step,
   colorKeys={},
   numStartAt=0,
@@ -117,6 +120,7 @@ const ChapterVisualisations = ({
             left={size.left}
             top={size.top}
             dateExtent={dateExtent}
+            themeBackgroundColor={themeBackgroundColor}
           />
         </div>
       </div>

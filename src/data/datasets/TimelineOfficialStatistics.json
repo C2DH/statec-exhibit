@@ -1,0 +1,41 @@
+{
+  "id": "TimelineOfficialStatistics",
+  "title": "Les institutions de la statistique « officielle » au Luxembourg",
+  "timeformat": "YYYY",
+  "legend": {
+    "t": "année"
+  },
+  "source": "STATEC",
+  "values": [
+    {
+      "t": 1900,
+      "title": "Création de la Commission permanente de statistique",
+      "subheading": "(« Ständige Kommission für Statistik »)"
+    },
+    {
+      "t": 1923,
+      "title": "Création de l'Office de statistique",
+      "subheading": "(du point de vue légal, il s’agit de la même institution qui a changé d’appellation en 1923)"
+    },
+    {
+      "t": 1945,
+      "title": "Création de l'Office de la statistique générale et du Service d’études et de documentation économiques",
+      "subheading": "Deux organismes sont crées en 1945.",
+      "description":"L’arrêté grand-ducal du 2 août 1945 crée l’Office de la statistique générale qui a pour mission « l’exécution de tous les travaux statistiques nécessaires à l’orientation efficace, rapide et constante des pouvoirs publics ». Dès le 27 juillet 1945, un arrêté avait été créé le Service d’études et de documentation économiques dont les attributions sont essentiellement l’analyse et les études économiques."
+    },
+    {
+      "t": 1962,
+      "title": "Création du Service central de la statistique et des études économiques (STATEC)",
+      "subheading": "Par la loi du 9 juillet 1962 est créé le STATEC qui est issu de la fusion des deux organismes créés en 1945.",
+      "description": "Les fonctions purement statistiques (enquêtes, travaux de compilation statistiques, …) et la fonction des études sont donc désormais réunies."
+    },
+    {
+      "t": 2011,
+      "title": "Institut national de la statistique et des études économiques (STATEC)",
+      "subheading":"Réforme de 2011.",
+      "description": "La réforme de 2011 -  loi du 10 juillet 2011 – renforce les fonctions de coordination et de centralisation statistique du STATEC et consolide ses attributions dans le domaine de la recherche et des études."
+
+
+    }
+  ]
+}
