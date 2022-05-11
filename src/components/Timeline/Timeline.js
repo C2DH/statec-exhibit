@@ -22,7 +22,6 @@ const Timeline = ({
   themeBackgroundColor='var(--primary)',
   ...rest
 }) => {
-  console.debug('[Timeline]', data, paragraphId, dateExtent[1]-dateExtent[0] )
   const svgWidth = width - marginLeft - marginRight
   // convert ms to years
   const yearSpans = parseInt(EndDate - StartDate, 10) / 31556952000
@@ -33,19 +32,28 @@ const Timeline = ({
       // - marginLeft*2 to accomodate for the left and right axis
       .range([0, width - marginLeft - marginRight])
   const scaleX = scaleTime()
-    .domain(dateExtent)
-    .range(range)
+      .clamp(true)
+      .domain(dateExtent)
+      .range(range)
 
   const [{ x, y }, api] = useSpring(() => ({ x: 0, y:0 }))
   const bind = useDrag(
     ({ down, offset: [mx, my] }) => {
       api.start({ x: mx, y:my })
     },
-
   )
-  if(svgWidth < 0) {
+
+  React.useEffect(() => {
+    console.debug('[Timeline] @useEffect', from, to )
+    if (typeof from === 'number') {
+      const nx = scaleX(moment(from, 'YYYY').startOf('year')) + 50
+      api.start({ x: -nx, y:0 })
+    }
+  }, [from, to, api, scaleX])
+  if(svgWidth < 0 || paragraphId === '-1,-1') {
     return null
   }
+  console.debug('[Timeline]', paragraphId, from, to )
 
   return (<>
     <div className="Timeline absolute ba" style={{
@@ -88,8 +96,8 @@ const Timeline = ({
           y,
           zIndex:1
         }}>
-        {data.map(d => (
-          <div className="absolute top-0 left-0 bl" style={{
+        {data.map((d, i) => (
+          <div key={i} className="absolute top-0 left-0 bl" style={{
             height,
             transform: `translateX(${scaleX(moment(d.t, 'YYYY').startOf('year')) + 50}px)`
           }}>
@@ -98,13 +106,17 @@ const Timeline = ({
               left: 0,
               backgroundColor: 'transparent' ,
               color: 'var(--secondary)',
-              pointerEvents: 'none',
+              pointerEvents: 'auto',
             }}>
               {d.t}
               <h2 className="bb" style={{color: 'inherit'}}>{d.title}</h2>
-              <p>{d.subheading}</p>
+              <p dangerouslySetInnerHTML={{
+                __html: d.subheading
+              }}/>
               {typeof d.description === 'string' && (
-                <p className="f7">{d.description}</p>
+                <p className="f7" dangerouslySetInnerHTML={{
+                  __html: d.description
+                }}/>
               )}
             </div>
           </div>

@@ -150,7 +150,7 @@
               ]
             },
             {
-              "from": 1907,
+              "from": 1900,
               "to": 1935,
               "visibleKeys": ["v", "v1"],
               "focusKeys": ["v", "v1"],
@@ -163,7 +163,7 @@
               ]
             },
             {
-              "from": 1907,
+              "from": 1900,
               "to": 1935,
               "visibleKeys": ["v", "v1", "v2", "v3"],
               "focusKeys": ["v", "v1", "v2", "v3"],
@@ -172,7 +172,7 @@
               "figures": [{"id": "travailleurs-haut-fourneau-1900.jpg"}]
             },
             {
-              "from": 1907,
+              "from": 1900,
               "to": 1935,
               "visibleKeys": ["v", "v1", "v2", "v3"],
               "focusKeys": ["v", "v1", "v2", "v3"],
@@ -185,7 +185,7 @@
               ]
             },
             {
-              "from": 1907,
+              "from": 1900,
               "to": 1935,
               "visibleKeys": ["v", "v1", "v2", "v3"],
               "focusKeys": ["v", "v1", "v2", "v3"],
@@ -198,7 +198,7 @@
               ]
             },
             {
-              "from": 1907,
+              "from": 1900,
               "to": 1935,
               "visibleKeys": ["v", "v1", "v2", "v3"],
               "focusKeys": ["v", "v1", "v2", "v3"],
@@ -211,7 +211,7 @@
               ]
             },
             {
-              "from": 1907,
+              "from": 1900,
               "to": 1935,
               "visibleKeys": ["v", "v1", "v2", "v3"],
               "focusKeys": ["v", "v1", "v2", "v3"],
@@ -227,7 +227,7 @@
               ]
             },
             {
-              "from": 1907,
+              "from": 1900,
               "to": 1935,
               "visibleKeys": ["v", "v1", "v2", "v3"],
               "focusKeys": ["v", "v1", "v2", "v3"],
@@ -291,8 +291,8 @@
               ]
             },
             {
-              "from": 1951,
-              "to": 1980,
+              "from": 2007,
+              "to": 2020,
               "visibleKeys": ["v", "v1", "v2", "v3"],
               "focusKeys": ["v", "v1", "v2", "v3"],
               "colorKeys": { "v": "var(--secondary)", "v1": "var(--datakey-v1)", "v2": "var(--datakey-v)", "v3": "var(--t1-colorkeys-tertiary)" },
@@ -304,8 +304,8 @@
               ]
             },
             {
-              "from": 1951,
-              "to": 1980,
+              "from": 2007,
+              "to": 2020,
               "visibleKeys": ["v", "v1", "v2", "v3"],
               "focusKeys": ["v", "v1", "v2", "v3"],
               "colorKeys": { "v": "var(--secondary)", "v1": "var(--datakey-v1)", "v2": "var(--datakey-v)", "v3": "var(--t1-colorkeys-tertiary)" },
