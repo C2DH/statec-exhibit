@@ -23,6 +23,7 @@ const VisualisationViewerWrapper = ({
   color,
   chapter,
   sectionModule,
+  sectionDatasetComponent = 'Lines',
   paragraph,
   datasetId,
   data,
@@ -39,38 +40,40 @@ const VisualisationViewerWrapper = ({
   return (
     <>
     <h1 className="f4 ma0 pa0 pb0 mb3 normal">{sectionModule.title}</h1>
-    <div className="flex inline-flex items-center ba br3 pa1 mb3">
-      <div className="ph2"><Eye size={14} /></div>
+    {sectionDatasetComponent === 'Lines' && (
+      <div className="flex inline-flex items-center ba br3 pa1 mb3">
+        <div className="ph2"><Eye size={14} /></div>
 
-      <RangeButton
-        color={color}
-        from={paragraph.from}
-        to={paragraph.to}
-        onClick={() => set(false)}
-        className=""
-        isActive={!withAllValues}
-      >
-        <span className="ml1 mr1">{from}</span>
-        <ArrowRight size={14}/>
-        <span className="ml1 mr1">{to}</span>
-      </RangeButton>
-      <RangeButton
-        color={color}
-        from={StartYear}
-        to={EndYear}
-        className=""
-        onClick={() => set(true)}
-        isActive={withAllValues}
-      >
-        voir tout
-      </RangeButton>
-    </div>
+        <RangeButton
+          color={color}
+          from={paragraph.from}
+          to={paragraph.to}
+          onClick={() => set(false)}
+          className=""
+          isActive={!withAllValues}
+        >
+          <span className="ml1 mr1">{from}</span>
+          <ArrowRight size={14}/>
+          <span className="ml1 mr1">{to}</span>
+        </RangeButton>
+        <RangeButton
+          color={color}
+          from={StartYear}
+          to={EndYear}
+          className=""
+          onClick={() => set(true)}
+          isActive={withAllValues}
+        >
+          voir tout
+        </RangeButton>
+      </div>
+    )}
     <label className="db mb3 f6 i" dangerouslySetInnerHTML={{__html: t(`dataset${data.id}`) }} />
 
     <BaseDataset
       data={data}
       id={datasetId}
-      layout="Lines"
+      layout={sectionDatasetComponent}
       colorKeys={paragraph.colorKeys || colorKeys}
       keys={paragraph.visibleKeys || keys}
       from={withAllValues ? undefined : from}

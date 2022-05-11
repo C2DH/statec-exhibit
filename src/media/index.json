@@ -5480,6 +5480,47 @@
       "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAACXBIWXMAAC4jAAAuIwF4pT92AAAEC0lEQVQ4yyVUa1MaZxjdP9VWY9QoxoiIgIgioggK3gW5CnJb7veLclEuCwq7gJJM2qiTJu108iGTy4e0005/RmaS5kOKQOzRzryzvLvsed7znOecJcxGg0mvPUwmwsFAJp2KR6Net8vncXtdZKlYrJycWC178WgkGg4dH2Uvfnp23epgtdvdTqdLGLS7WNlMOhGLHWezKBH0+9wu0kOSxXz+vNEI+LzH2UwO0EyaqVY/f/rSaX8DuNv9Ruh21QadhrTbDhMJulo5b5wFAz6/1xvw+fK5HJ5k06kazQBWpkolivrn85du56bd7tyCbRYz6bD7vJ5QMAB6p+VyMOCn7ghThQJWLBI+q9czqRT2oN36t91qtW+ZX3cIycz0zBRfr92NRcP53HGZolxOh9/rAQYlagzNVOnm2TlD0wA/aTa/fr3udG5aLZx8Q8gXpCI+jzfORhWIt7O5LhYJ15Qrmu2to0ymzjBPmo+hXKNeAxcw//3DH3/9+ffHj5/evX1HpJIJi8n44F4vnzOuUsjnZ2emJrlKxZJlz5g6SKq3N7Xq7Y1V5YpctqpUoHokFLTum6EepCU0W5vCSe5A7w+c0RFsVlcUmBOEMOl1L56/oE8rOs2O3+PJptOoaDLogFdvbawpl3EhQn7/hkrZ9/13o0MP2A9ZnEcPFyXideUKf2LcpNMHvf4lqQQtvH/7vsYwPz59evnsApMUCwXLsgXCabOpNze57LGB3h7WQD9rsB/4qQmOkMcV8iZHhwZBe148A0AmdXhSot68fkMV8h4XGQFt9Lm6rEBL0Azg4ft97JFh4PkTnHXVyqxQsCiZczudWvUO3oEXMJE9oyEWDkFOgj3CGmMNC7icKS5naV6CISWiUaVcDtlQC3TkUunVxSX6hAtMBr3VbK4ztdNS+eXznwn8PXS/TyTgD97rRflXv73CDCAE59Fof0/Phkql06gBkMyKYG/0aDXvwaePm81fX/5CDPb1QidoKOTzNtZUMNPV5RW8OSeaBimYTymX3Wo5whIJeMuyRa1mx2GzFgv587MGASXt1v1IMCjgTkhmROUShQigz0n22MKcWCadm50WwAJQRDYv0e9qAn4vzJc7ysJzBN6u0TSYoPA0fxKF7PsWg24XOcW0PS6X027dM+pt+2ZEFcYA+cOD5P/OJUCMdNjABLk16rV2qwW3CBbCdFIuN+p1BIsqFuBNRApnIJvgTFcqZ40GgeiiOOm0AXO3sXvdJHqORsLJRByDQTDBDoHBaaUihdjhzHqthqgTIOMiHS7S7nG7IuEQWgoF/fhBMMOhUDwWTR0ewMmFfA5glGDoKpDo9LZnh20fXcHPmDAWPiNAogpOTsRjgEG/O2ThpFTCJ6FaqaAFXPHwP3BTdJ37ERHCAAAAAElFTkSuQmCC",
       "aspectRatio": 1.0005,
       "isPortrait": false
+    },
+    "convention-collective-de-travail-1968.jpg": {
+      "caption": "Première convention collective dans les banques",
+      "provenance": "Source: <a href='https://www.wort.lu/fr/economie/s-adapter-aux-nouvelles-realites-5b1791f2c1097cee25b8aade'>Luxemburger Wort</a>",
+      "resolutions": {
+        "medium-w": {
+          "url": "/media/images/convention-collective-de-travail-1968.medium-w.jpg",
+          "params": {
+            "size": "medium-w",
+            "width": 640,
+            "height": null
+          }
+        },
+        "medium-h": {
+          "url": "/media/images/convention-collective-de-travail-1968.medium-h.jpg",
+          "params": {
+            "size": "medium-h",
+            "width": null,
+            "height": 480
+          }
+        },
+        "large-w": {
+          "url": "/media/images/convention-collective-de-travail-1968.large-w.jpg",
+          "params": {
+            "size": "large-w",
+            "width": 2000,
+            "height": null
+          }
+        },
+        "large-h": {
+          "url": "/media/images/convention-collective-de-travail-1968.large-h.jpg",
+          "params": {
+            "size": "large-h",
+            "width": null,
+            "height": 2000
+          }
+        }
+      },
+      "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAUCAIAAAAyZ5t7AAAACXBIWXMAAAsTAAALEwEAmpwYAAACWElEQVQoz0WS63KbMBCFef836bSJ004ncXwDJIHBdpxyFwLHGU+bpIFYSICc/OuqpOnMmR1Ynf12dTECuVt21OtyV6SuzHxVgFanwuuYw9NVm29Uue7YmqdG0O1Il9k8Gh/8ycMGi5QounwtzCr8vnNmDxugeH3uHWMjUnuzDsf3/pdwfhYtxvcr6xgvquBq759Hs1G8mB7Wfs98nhmh2jsdJTJDIrNFhtvcVSWSFLUUQ+QJ5rGn2EpkxlYUTg/LhfO6cz/0pqNzKl3FvFPhn0q/SY1bsSM9c/oCFgYNpg8tVemBVaRG2O9xl+OOEVWA/ptUOWRwzzQbqD+6PVHMGdoNrd/u/krPQKDmFcYolmAN+v20Dsa/bq6fttMqmB/jSRVMq3BeR/OXaPK0vTysYMfLJjG2spj83n67cz+F08+pOSrIOUOjAl+U5Ixa57l9dfCtY+jAud4IhrrMaunlz/XV4834cTui5OvOO2ObUbGa1QGcD5YpOUaaarWpJRO7o1gxdGLT53BWJ9fPdNEw1DOzSZBMtBWotoitJrYEFGRQgN5KfCqQojrTJLBk8ghVgbZaAv4Tc7C21OpzWzEbeCIzeQLXbvOY1OE/qswGq44dBStSursNGR7ZTfw+qy1TgGleS03o0GaARL2+F9TluiePcB0YfpUimcLjAKSWSIBkS10JPhCA4LAwzLrhFAaAu9VgAdYUDd/dO9UWKRYJhgFuZYma2JGZIyluYv20WzDlOsLLbBLwEUjCtm45gwrnGBHYJo8I7IDHDo9dcLyEuA5d+G6SZRX+ASCGxFFO7pM3AAAAAElFTkSuQmCC",
+      "aspectRatio": 0.703,
+      "isPortrait": true
     }
   }
 }

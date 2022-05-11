@@ -620,6 +620,14 @@
               "to": 1990,
               "visibleKeys": ["v1", "v2", "v3"],
               "focusKeys": ["v2"],
+              "dataset": "EmploiIndustrieConstructions1970-2020",
+              "datasetLayout": "Lines",
+              "datasetDisplayPoints": false,
+              "datasetKeys": ["v1", "v2"],
+              "datasetColorKeys": { "v1": "var(--dataset-t2-v)", "v2": "var(--dataset-t2-v1)"},
+              "datasetExtent": [1970, 2020],
+              "datasetNumericTranslationLabel": "percentage",
+              "datasetLegend": "Emploi dans l'industrie et dans la construction, 1970-2020 </br>Source: STATEC",
               "text": "A partir du milieu des années 1980, l’emploi dans l’industrie (y compris les branches électricité, eau et industries extractives) se maintient entre 35 000 et 40 000 personnes. C’est dans la construction que l’impact de la croissance économique exceptionnelle des dernières trois décennies (tout au plus ralentie par la crise de 2008) ainsi que l’impact de la croissance démographique se manifeste le plus clairement. L’emploi dans la construction passe de moins de 20 000 au milieu des années 1980 à environ 50 000 aujourd’hui."
             },
             {
@@ -661,7 +669,7 @@
               "text": "Dans les premières années après la deuxième guerre mondiale la progression de l’emploi dans les services est continue sans être exceptionnelle. Néanmoins, dès les années 1960, l’emploi dans les banques (euromarchés) et dans les assurances prend son envol. En 1947,les banques et les assurances occupent 11.732 personnes. En 1966, les entreprises dans cette branche ont un emploi de 18.422 personnes, soit 14% de la population active. En 1947, l’ensemble du secteur des services occupe 45.985 personnes. En 1970, il y en près de 20.000 de plus, avec un emploi de 64.700 personnes. La loi du 12 juin 1965 précise les procédures en matière de conventions collectives et introduit la notion de « représentativité nationale » des syndicats dans les négociations collectives. Des conventions collectives existent avant cette loi (notamment sur base de l’arrêté g.-d- du 23 janvier 1936 créant le Conseil national du travail, mais la loi de 1965 donne le signal pour la généralisation des conventions collectives notamment dans les services. En 1967, la première convention collective est signée pour le personnel des banques et une autre pour les assurances.",
               "figures": [
                 {
-                  "id": "Picture_3p4-16.png"
+                  "id": "convention-collective-de-travail-1968.jpg"
                 }
               ]
             },
