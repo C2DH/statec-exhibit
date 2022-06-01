@@ -1,7 +1,12 @@
 version: '3.7'
 services:
   app:
-    image: c2dhunilu/statec-exhibit:latest
+    container_name: statec-exhibit
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      PUBLIC_LOCATION_ORIGIN: "${PUBLIC_LOCATION_ORIGIN:-http://localhost:8080}"
     volumes:
       - app-files:/app-files:z
     # Every time container is launched this would just copy static files
@@ -14,7 +19,7 @@ services:
       /bin/sh -c "rm -rf /app-files/* &&
                   echo 'Files in /app-files :' &&
                   ls -lat /app-files/ &&
-                  cp -r /app/build/* /app-files/ &&
+                  cp -r /app/* /app-files/ &&
                   echo 'Files in /app-files :' &&
                   ls -lat /app-files/"
   nginx:

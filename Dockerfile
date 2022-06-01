@@ -5,7 +5,7 @@ ARG GIT_BRANCH
 ARG GIT_REVISION
 ARG PUBLIC_LOCATION_ORIGIN
 
-WORKDIR /statec-exhibit
+WORKDIR /app
 
 COPY package.json .
 COPY yarn.lock .
@@ -27,5 +27,5 @@ RUN yarn build
 RUN yarn setup-qr-codes
 
 FROM busybox
-WORKDIR /statec-exhibit
-COPY --from=builder /statec-exhibit/build ./
+WORKDIR /app
+COPY --from=builder /app/build ./
