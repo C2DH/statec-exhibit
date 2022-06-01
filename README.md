@@ -134,3 +134,15 @@ has both a link and a label. The label refers to the translatable property in th
 ```javascript
 const ChapterRouteFamily = { to:'/family', label: 'ChapterRouteFamily'}
 ```
+
+### How to update the QR codes?
+
+QR codes need to be updated anytime the host change using the command:
+```
+REACT_APP_PUBLIC_LOCATION_ORIGIN="https://framingluxembourg.lu" yarn setup-qr-codes
+```
+The sript will eventually create the qr code for the homepage and one qr code
+per theme using the desired location origin.
+The resulting svg files will be placed in the `/public` folder.
+The command is automatically executed when creating an image, see the `Dockerfile`
+for further info.
