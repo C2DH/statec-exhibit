@@ -455,7 +455,18 @@
               "visibleKeys": ["v", "v2", "v3"],
               "focusKeys": ["v", "v2", "v3"],
               "text": "En ce qui concerne le travail à temps partiel, depuis les années 1980 on peut distinguer 3 périodes : 1. Du milieu des années 1980 au milieu des années 1990, le temps partiel reste relativement marginal ; pour les hommes très faible (entre 1 et 2%), pour les femmes beaucoup plus élevé (17-19% en moyenne), mais sans véritable augmentation, ; 2. du milieu des années 1990 au milieu des années 2000, l’emploi à temps partiel des femmes augmente très fortement, ce qui explique une grande partie de l’augmentation générale du taux d’emploi dans cette période ; 3. finalement, à partir de 2005, le temps partiel des femmes à tendance à se tasser, alors que celui des hommes augmente (sans toutefois atteindre des proportions importantes). D’une manière générale c’est plutôt le travail à temps complet qui se développe, phénomène que l’on peut lier notamment à la disponibilité des structures d’accueil pour enfants.",
-              "datasetLegend": "Travail à temps partiel selon le sexe, 1983-2020"
+              "datasetLegend": "",
+              "dataset": "PartTimeEmploymentBySexAndAge",
+              "datasetLayout": "Lines",
+              "datasetDisplayPoints": true,
+              "datasetKeys": ["v", "v1", "v2"],
+              "datasetExtent": [1983, 2020],
+              "datasetColorKeys": {
+                "v": "var(--secondary)",
+                "v1": "var(--datakey-v1)",
+                "v2": "var(--datakey-v)"
+              },
+              "datasetNumericTranslationLabel": "percentage"
             }
           ]
         }
@@ -518,7 +529,8 @@
                 "v4": "var(--datakey-v)"
               },
               "datasetExtent": [1907, 1970],
-              "datasetRange": [0, 100]
+              "datasetRange": [0, 100],
+              "datasetLegend": "L'emploi au Luxembourg selon le statut professionnel, 1907-1970"
             },
             {
               "from": 1907,
