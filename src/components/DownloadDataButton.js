@@ -8,12 +8,12 @@ const slugify = (text, separator='-') => {
         .replace(/[\u0300-\u036f]/g, '')   // remove all previously split accents
         .toLowerCase()
         .trim()
-        .replace(/[^a-z0-9 ]/g, '')   // remove all chars not letters, numbers and spaces (to be replaced)
+        .replace(/[^a-z0-9- ]/g, '')   // remove all chars not letters, numbers and spaces (to be replaced)
         .replace(/\s+/g, separator);
 }
 
 const DownloadDataButton = ({ label, legend = {}, values, debug=false }) => {
-  const filename = React.useMemo(() => `${slugify(label)}.csv`, [label])
+  const filename = `${slugify(label)}.csv`
   const { t } = useTranslation()
   if (!Array.isArray(values) || !values.length) {
     return null
@@ -45,7 +45,7 @@ const DownloadDataButton = ({ label, legend = {}, values, debug=false }) => {
       padding: '0 4px'
     }}
       href={`data:text/csv;charset=utf-8,${encodeURIComponent(data)}`}
-      download={filename}
+      download={`framingluxembourg-${filename}`}
     >
       download .csv ⇣
     </a>

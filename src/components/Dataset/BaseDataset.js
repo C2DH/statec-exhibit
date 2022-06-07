@@ -4,17 +4,20 @@ import Flower from '../Flower'
 import Compare from '../Compare'
 import Lines from '../Lines'
 import Stacks from '../Stacks'
+import MobileTimeline from '../Timeline/MobileTimeline'
 import { StartYear, EndYear } from '../../constants'
 
 const AvailableComponents = Object.freeze({
   'Flowers': Flower,
   'Compare': Compare,
   'Lines': Lines,
-  'Stacks': Stacks
+  'Stacks': Stacks,
+  'Timeline': MobileTimeline
 })
 
 const BaseDataset = ({
-  data, id='', layout='Flowers',
+  data, id='',
+  layout='Flowers',
   keys=['v'],
   colorKeys={},
   from=StartYear,
@@ -98,6 +101,16 @@ const BaseDataset = ({
         )
         : null
       }
+      {layout === 'Timeline' && (
+        <Component
+          themeDatasetId={[id,from,to].join(',')}
+          data={data.values}
+          height={height}
+          width={width}
+          from={from}
+          to={to}
+        />
+      )}
       {layout === 'Flowers' ? groupValues.map((g, i) => (
           <div key={`${layout}-${i}`}>
             <Component

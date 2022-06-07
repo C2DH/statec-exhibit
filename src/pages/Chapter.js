@@ -89,6 +89,7 @@ const Section = ({
             displayDashedLine={!!section.displayDashedLine}
             numStartAt={section.numStartAt}
             themeDatasetId={sectionDataset.id}
+            sectionDatasetTitle={sectionDataset.title}
             themeBackgroundColor={backgroundColor}
             keys={Object.keys(sectionDataset.legend).filter(k => k !== 't')}
             colorKeys={section.colorKeys}
@@ -111,22 +112,10 @@ const Section = ({
 const Chapter = ({ match: { params: { chapterId }}}) => {
   // get the available chapter if vailable; otherwise Chapter 1 ;)
   const chapter = AvailableChapters[String(chapterId)] ?? AvailableChapters[DefaultThemeId];
-  const { dataset:chapterDataset } = chapter
   // calcumlate height on Resize after a 250mx throttle
   const isMobileWithTablet = getIsMobileWithTablet()
 
   const { width, height } = useCurrentWindowDimensions({isMobile})
-  // collect all hotspots in the theme (Chapter)
-  // result in a list of objects containing year "t" and module index "idx",
-  // e.g. { t: 1984, idx:2 }
-  const chapterHotspots = useMemo(() => {
-    const hotspots = chapter.modules
-      .reduce((acc, d, i) => acc.concat((d.moduleHotspots || []).map(h => ({
-        ...h,
-        idx: i
-      }))), [])
-    return hotspots
-  }, [chapter])
 
   let counter = 0
   const chapterSections = Array.isArray(chapter.sections)
@@ -145,15 +134,6 @@ const Chapter = ({ match: { params: { chapterId }}}) => {
     changeCurrentChapterStructure(chapterId, chapterSections)
   }, [changeBackgroundColor, changeCurrentChapterStructure, chapter.backgroundColor, chapterId, chapterSections])
 
-  const themeDataset = useMemo(() => {
-    if(!chapterDataset) {
-      return null
-    }
-    console.info(`Chapter loading dataset ${chapterDataset}.json`)
-    return require(`../data/datasets/${chapterDataset}.json`)
-  }, [chapterDataset])
-
-  console.info('Chapter #chapterHotspots n.', chapterHotspots.length, themeDataset)
   console.info('Chapter #chapterSections',chapterSections)
   return (
     <div className="Chapter">

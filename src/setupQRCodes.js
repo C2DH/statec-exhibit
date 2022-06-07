@@ -6,7 +6,7 @@ const qrcode = require('qrcode')
 
 const themesDir = './src/data/themes'
 const qrcodesDir = './public'
-const host = 'https://framingluxembourg.netlify.app'
+const host = process.env.REACT_APP_PUBLIC_LOCATION_ORIGIN || 'https://framingluxembourg.lu'
 const darkColor = '#2b219f' // var(--secondary)
 const lightColor = '#ffc09d' // var(--primary)
 const opts = {

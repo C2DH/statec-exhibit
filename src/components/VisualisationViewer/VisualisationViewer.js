@@ -21,6 +21,10 @@ const VisualisationViewer = ({ color='white' }) => {
   const sectionModule = Array.isArray(chapter.sections)
     ? chapter.sections[sectionId].modules[moduleIdx]
     : chapter.modules[moduleIdx]
+  const sectionDatasetComponent = Array.isArray(chapter.sections)
+    ? chapter.sections[sectionId].datasetComponent
+    : 'Lines'
+
   const paragraph = sectionModule.paragraphs[paragraphIdx]
   // const keys = (qs.get('to') || 'v').split(',')
   console.debug('[VisualisationViewer] paragraph', paragraph)
@@ -43,6 +47,7 @@ const VisualisationViewer = ({ color='white' }) => {
         <VisualisationViewerWrapper
           chapter={chapter}
           sectionModule={sectionModule}
+          sectionDatasetComponent={sectionDatasetComponent}
           paragraph={paragraph}
           color={color}
           datasetId = {datasetId}

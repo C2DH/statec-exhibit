@@ -134,3 +134,55 @@ has both a link and a label. The label refers to the translatable property in th
 ```javascript
 const ChapterRouteFamily = { to:'/family', label: 'ChapterRouteFamily'}
 ```
+
+### How to update the QR codes?
+
+QR codes need to be updated anytime the host change using the command:
+```
+REACT_APP_PUBLIC_LOCATION_ORIGIN="https://framingluxembourg.lu" yarn setup-qr-codes
+```
+The sript will eventually create the qr code for the homepage and one qr code
+per theme using the desired location origin.
+The resulting svg files will be placed in the `/public` folder.
+The command is automatically executed when creating an image, see the `Dockerfile`
+for further info.
+
+### Docker: quick how to
+
+You can test the latest official image @c2dhunilu using the given docker-compose file:
+
+```
+docker-compose down --remove-orphans && \
+NGINX_PORT=8080 BUILD_IMAGE=c2dhunilu/statec-exhibit BUILD_TAG=latest docker-compose up -d
+```
+
+To build your own image, please be aware that QR codes need to be adjusted, too,
+by using the `PUBLIC_LOCATION_ORIGIN` env to provide the QR script with the correct HOST.
+Using our Makefile:
+
+```
+PUBLIC_LOCATION_ORIGIN=http://localhost:8080 \
+BUILD_IMAGE=dockeruser/yourdockerimage \
+BUILD_TAG=latest \
+make build-docker-image
+```
+
+inspect your new image to check that the build run correctly:
+```
+docker run -ti --entrypoint=sh dockeruser/yourdockerimage
+```
+
+Then run your image:
+
+```
+docker-compose down --remove-orphans && \
+NGINX_PORT=8080 BUILD_IMAGE=dockeruser/yourdockerimage BUILD_TAG=latest docker-compose up
+```
+
+You can also create an `.env` file based on the `.env.example` available:
+
+```
+NGINX_PORT=8080
+BUILD_IMAGE=dockeruser/yourdockerimage
+BUILD_TAG=latest
+```

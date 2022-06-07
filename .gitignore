@@ -29,3 +29,5 @@ yarn-error.log*
 src/media/**/*
 !src/media/.gitkeep
 !src/media/index.json
+
+.env
