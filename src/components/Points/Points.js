@@ -27,6 +27,7 @@ const useValues = ({data, scaleX, scaleY, availableKeys}) => useMemo(() => data.
 
 const Points = ({
   themeDatasetId='themeDatasetId',
+  sectionDatasetTitle='',
   paragraphId='-1,-1',
   legend={},
   data=[],
@@ -82,7 +83,7 @@ const Points = ({
       top={top}
       values={values}
     >
-      <DownloadDataButton label="test" values={data} legend={legend} />
+      <DownloadDataButton label={sectionDatasetTitle} values={data} legend={legend} />
     </TrendPointers>
     </div>
   )

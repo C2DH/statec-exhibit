@@ -16,6 +16,7 @@ import {animated, useSpring, config} from 'react-spring'
 
 const Trend = ({
   themeDatasetId='themeDatasetId',
+  sectionDatasetTitle='',
   paragraphId='-1,-1',
   legend={},
   data=[],
@@ -128,7 +129,7 @@ const Trend = ({
         values={values}
         numericTranslationLabel={numericTranslationLabel}
       >
-        <DownloadDataButton label="test" values={data} legend={legend} />
+        <DownloadDataButton label={sectionDatasetTitle} values={data} legend={legend} />
       </TrendPointers>
       <svg
         className="Trend_svg"

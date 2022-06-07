@@ -9,6 +9,7 @@ export const getIsMobileWithTablet = () => isMobile
   : false
 
 export const setBodyNoScroll = (noscroll=true) => {
+  console.debug('setBodyNoScroll noscroll:', noscroll)
   document.body.classList.toggle('noscroll', noscroll)
 }
 

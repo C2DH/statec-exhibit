@@ -89,6 +89,7 @@ const Section = ({
             displayDashedLine={!!section.displayDashedLine}
             numStartAt={section.numStartAt}
             themeDatasetId={sectionDataset.id}
+            sectionDatasetTitle={sectionDataset.title}
             themeBackgroundColor={backgroundColor}
             keys={Object.keys(sectionDataset.legend).filter(k => k !== 't')}
             colorKeys={section.colorKeys}

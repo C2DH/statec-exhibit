@@ -15,6 +15,7 @@ const AvailablesComponents = {
 
 const ChapterVisualisations = ({
   themeDatasetId='themeDatasetId',
+  sectionDatasetTitle='',
   component='Trend',
   displayPoints=false,
   displayDashedLine=false,
@@ -105,6 +106,7 @@ const ChapterVisualisations = ({
             displayDashedLine={displayDashedLine}
             numericTranslationLabel={numericTranslationLabel}
             themeDatasetId={themeDatasetId}
+            sectionDatasetTitle={sectionDatasetTitle}
             from={paragraph?.from}
             to={paragraph?.to}
             paragraphId={paragraph?.paragraphId}

@@ -104,7 +104,7 @@
           "datasetLayout": "Lines",
           "datasetKeys": ["v","v1","v2","v3","v4"],
           "datasetExtent": [1850, 2000],
-          "datasetLegend": "Densité de la population en nombre d'habitants par kilomètre carré. <br/><a href='https://statistiques.public.lu/fr/methodologie/definitions/D/densitepopulation/index.html' target='_blank' rel='noopener noreferrer'>(en savoir plus sur cet indicateur)</a> <br/>Source: STATEC",
+          "datasetLegend": "Densité de la population en nombre d'habitants par kilomètre carré. <br/><a href='https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Glossary:Population_density' target='_blank' rel='noopener noreferrer'>(en savoir plus sur cet indicateur)</a> <br/>Source: STATEC",
           "datasetColorKeys": { "v": "#f171a1", "v1": "#fccd05", "v2": "#ff944a", "v3" : "#a64ac9", "v4" : "blue" }
         },
         {
@@ -115,7 +115,7 @@
           "focusKeys": ["v"],
           "dataset": "PopulationDensity",
           "datasetLayout": "Lines",
-          "datasetLegend": "Densité de la population en nombre d'habitants par kilomètre carré. <br/><a href='https://statistiques.public.lu/fr/methodologie/definitions/D/densitepopulation/index.html' target='_blank' rel='noopener noreferrer'>(en savoir plus sur cet indicateur)</a> <br/>Source: STATEC",
+          "datasetLegend": "Densité de la population en nombre d'habitants par kilomètre carré. <br/><a href='https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Glossary:Population_density' target='_blank' rel='noopener noreferrer'>(en savoir plus sur cet indicateur)</a> <br/>Source: STATEC",
           "datasetKeys": ["v","v1","v2","v3","v4"],
           "datasetExtent": [1990, 2021],
           "datasetColorKeys": { "v": "#f171a1", "v1": "#fccd05", "v2": "#ff944a", "v3" : "#a64ac9", "v4" : "blue"}

@@ -47,7 +47,7 @@ const Dataset = ({
       />
       {children}
       <div className="pa3 pl5-l">
-      <DownloadDataButton label="" values={item.values} legend={item.legend} />
+      <DownloadDataButton label={id} values={item.values} legend={item.legend} />
       </div>
       </>
     )
