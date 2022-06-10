@@ -1,5 +1,4 @@
 import React, { useRef, useEffect, useState, useMemo } from 'react'
-import { useTranslation } from 'react-i18next'
 import ChapterModulesGraphics from './ChapterModulesGraphics'
 import Trend from '../Trend'
 import Points from '../Points'
@@ -29,7 +28,6 @@ const ChapterVisualisations = ({
   dateExtent=[StartDate, EndDate]
 }) => {
   const ref = useRef();
-  const { t } = useTranslation()
   const [size, setSize] = useState({ left: 0, width: 0, height: 0 });
   const paragraphs = useMemo(() => {
     return modules.reduce((acc, mod, i) => acc.concat(mod.paragraphs.map((par, j) => {
