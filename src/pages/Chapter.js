@@ -90,6 +90,7 @@ const Section = ({
             numStartAt={section.numStartAt}
             themeDatasetId={sectionDataset.id}
             sectionDatasetTitle={sectionDataset.title}
+            sectionComponentLegend={section.componentLegend}
             themeBackgroundColor={backgroundColor}
             keys={Object.keys(sectionDataset.legend).filter(k => k !== 't')}
             colorKeys={section.colorKeys}
@@ -118,13 +119,12 @@ const Chapter = ({ match: { params: { chapterId }}}) => {
   const { width, height } = useCurrentWindowDimensions({isMobile})
 
   let counter = 0
-  const chapterSections = Array.isArray(chapter.sections)
-    ? chapter.sections.map(d => {
-      d.numStartAt = +counter
-      counter += d.modules.length
-      return d
-    })
-    : [{ dataset: chapter.dataset, modules: chapter.modules, numStartAt:0 }]
+
+  const chapterSections = (chapter.sections || []).map(d => {
+    d.numStartAt = +counter
+    counter += d.modules.length
+    return d
+  })
 
   const changeBackgroundColor = useStore(state => state.changeBackgroundColor)
   const changeCurrentChapterStructure = useStore(state => state.changeCurrentChapterStructure)

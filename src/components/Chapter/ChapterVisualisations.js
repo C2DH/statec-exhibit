@@ -16,6 +16,7 @@ const AvailablesComponents = {
 const ChapterVisualisations = ({
   themeDatasetId='themeDatasetId',
   sectionDatasetTitle='',
+  sectionComponentLegend='',
   component='Trend',
   displayPoints=false,
   displayDashedLine=false,
@@ -43,13 +44,29 @@ const ChapterVisualisations = ({
   const paragraph = step
     ? paragraphs.find(d => step.paragraphId === d.paragraphId)
     : null
+
+  const currentModule = step
+    ? modules[step.moduleId]
+    : null
   let hotspots = []
   if (paragraph) {
     hotspots = paragraph.hotspots ?? []
   }
-  if (modules && step && step.moduleId) {
-    hotspots = hotspots.concat(modules[step.moduleId]?.hotspots ?? [])
+  if (currentModule) {
+    hotspots = hotspots.concat(currentModule.hotspots ?? [])
   }
+  // Legend will be visualized right of the main visualisation component
+  let currentComponentLegend = ''
+  if (paragraph && paragraph.componentLegend) {
+    currentComponentLegend = paragraph.componentLegend
+  } else if (currentModule && currentModule.componentLegend) {
+    currentComponentLegend = currentModule.componentLegend
+  } else if (sectionComponentLegend.length > 0) {
+    currentComponentLegend = sectionComponentLegend
+  } else {
+    currentComponentLegend = `not found: dataset${themeDatasetId}`
+  }
+
   // reload bounding box whenever height or width changes
   useEffect(() => {
     if (ref && ref.current) {
@@ -97,8 +114,8 @@ const ChapterVisualisations = ({
               transform: 'translateX(-50%) translateY(-50%) rotate(90deg)'
             }}>
               <div  className="absolute tc" style={{ width: size.height, marginLeft: -size.height/2}}>
-            { t(`dataset${themeDatasetId}`) }
-            </div>
+              { currentComponentLegend }
+              </div>
             </div>
           </div>
           <Component

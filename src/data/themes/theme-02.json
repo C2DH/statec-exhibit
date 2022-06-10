@@ -25,6 +25,7 @@
   "sections": [
     {
       "dataset": "population-natural-growth-details",
+      "componentLegend": "Taux de natalité (‰)",
       "modules": [
         {
           "title": "La natalité en recul sur le long terme",
@@ -104,6 +105,7 @@
       "modules": [
         {
           "title": "Mariages",
+          "componentLegend": "Nombre de mariages par 1000 habitants",
           "paragraphs": [
             {
               "availableKeys": ["v"],
@@ -160,6 +162,7 @@
         },
         {
           "title": "Divorces",
+          "componentLegend": "Nombre de divorces par année",
           "paragraphs": [
             {
               "availableKeys": ["v3"],
@@ -233,6 +236,7 @@
               "colorKeys": {"v3": "var(--accent)"},
               "from": 1975,
               "to": 2018,
+              "componentLegend": "Nombre de événements par année",
               "text": "Même si le nombre de divorces avait tendance à augmenter tendanciellement depuis le début du 20ème siècle, les conditions très restrictives et les procédures lourdes des divorces pour faute expliquent que leur nombre reste faible. C'est la loi du 5 décembre 1975 qui établit les bases du divorce par consentement mutuel qui est à l'origine de l'augmentation très importante du nombre. De 229 divorces en 1975 on passe à 1453 en 2014."
             },
             {
@@ -242,6 +246,7 @@
               "colorKeys": {"v3": "var(--accent)"},
               "from": 2018,
               "to": 2020,
+              "componentLegend": "Nombre de événements par année",
               "text": "A partir de 2018, c'est essentiellement sur la base de la loi 27 juin 2018 (dont le projet remonte néanmoins à 2003) que les divorces sont prononcés. A partir de cette loi, le droit luxembourgeois ne connaît au fond plus que deux types de divorce: le divorce par consentement mutuel et le divorce pour rupture irrémédiable des relations conjugales, même si le divorce pour faute ( « pour cause déterminée ») est prévu dans quelques rares cas de figure."
             },
             {
@@ -251,6 +256,7 @@
               "colorKeys": {"v3": "var(--accent)"},
               "from": 1950,
               "to": 2020,
+              "componentLegend": "Nombre de événements par année",
               "text": "En 2020, le nombre de divorces atteint 80% du nombre de mariages, alors que le pourcentage correspondant est de 6% en 1950. Par ailleurs, le divorce a tendance à intervenir plus tard après le mariage. En 1950, quelque 17% des divorces interviennent après 20 années de mariage; en 2020, le pourcentage correspondant atteint 23%."
             }
           ]
@@ -261,6 +267,7 @@
       "dataset": "FamilyComposition",
       "displayPoints": true,
       "displayDashedLine": true,
+      "componentLegend": "Nombre de personnes par ménage",
       "modules": [
         {
           "title": "Composition de ménages",
@@ -349,6 +356,7 @@
       "dataset":  "StructureAge",
       "displayPoints": true,
       "displayDashedLine": true,
+      "componentLegend": "Proportion dans la population totale (%)",
       "modules": [
         {
           "title": "Espérance de vie et vieillissement",

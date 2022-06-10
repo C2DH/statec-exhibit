@@ -2,7 +2,6 @@
   "id": "a-country-of-migration",
   "chapterIndex": "1",
   "title": "Un pays de migrations",
-  "dataset": "GlobalBalanceDetails",
   "displayQRcode": true,
   "backgroundColor": "#bfe8ed",
   "description": "La population du Luxembourg a plus que triplé depuis 1839 (date de l'indépendance du pays). De quelque 170.000 habitants en 1839, la population du Grand-Duché est passée à plus de 630.000 aujourd'hui...",
@@ -24,326 +23,323 @@
       "text": "Si les migrations sont aujourd'hui considérées comme un élément central de l'histoire du Luxembourg, les données statistiques pour les deux derniers siècles sont fragmentaires. Ce n'est qu'en 1871 que la notion d'étranger apparaît dans les recensements et ce n'est que depuis les années 1960 que nous disposons de chiffres plus détaillés d'entrées et de sorties de différentes nationalités."
     }
   ],
-  "modules": [
+  "sections": [
     {
-      "title": "Une croissance démographique exceptionnelle sur le long terme.",
-      "paragraphs": [
+      "dataset": "GlobalBalanceDetails",
+      "componentLegend": "Nombre de personnes par année",
+      "modules": [
         {
-          "from": 1840,
-          "to": 1890,
-          "text": "L'ensemble de la période allant de l'indépendance du Grand-Duché en 1839 jusqu'aux années 1890 est marquée par une croissance démographique relativement lente liée à une croissance économique hésitante et des conditions de vie qui restent précaires.",
-          "figures": [{ "id": "statec_021.png" }],
-          "visibleKeys": ["v"],
-          "focusKeys": ["v"],
-          "hotspots": [
+          "title": "Une croissance démographique exceptionnelle sur le long terme.",
+          "datasetLegend": "STOCAZZO MODULE",
+          "paragraphs": [
             {
-              "t": 1854,
-              "text": "Difficulté de récolte"
+              "from": 1840,
+              "to": 1890,
+              "text": "L'ensemble de la période allant de l'indépendance du Grand-Duché en 1839 jusqu'aux années 1890 est marquée par une croissance démographique relativement lente liée à une croissance économique hésitante et des conditions de vie qui restent précaires.",
+              "figures": [{ "id": "statec_021.png" }],
+              "visibleKeys": ["v"],
+              "focusKeys": ["v"]
             },
             {
-              "t": 1866,
-              "text": "Une épidemie de Cholera frappe le pays"
-            }
-          ]
-        },
-        {
-          "from": 1891,
-          "to": 1910,
-          "text": "À partir de la fin des années 1890, les capitaux allemands (le Luxembourg fait partie du Zollverein à partir de 1842) investissent massivement dans la sidérurgie (Differdange, Belval etc.) contribuant ainsi à l'expansion économique qui va de pair avec une croissance importante de la population dont le nombre passe de 210.000 en 1890 à 260.000 en 1910. Un <b>pays d'émigration</b> commence à devenir un <b>pays d'immigration</b>, même si beaucoup de résidents du Luxembourg continuent à partir à l'étranger.",
-          "figures": [{ "id": "statec_006.png" }],
-          "visibleKeys": ["v"],
-          "focusKeys": ["v"]
-        },
-        {
-          "from": 1929,
-          "to": 1940,
-          "text": "En 1930, la crise économique mondiale, qui a débuté en 1929 par le krach de Wall Street, commence à avoir un impact au Luxembourg. Le chômage augmente, la production sidérurgique diminue, les comptes publics sont sous tension. La population diminue de 1930 à 1935  (quelque 300 personnes en moins), puis rebondit dans des proportions modestes dans la deuxième moitié des années 1930 avant de replonger suite à l'éclatement de la deuxième guerre mondiale.",
-          "figures": [{ "id": "manif-1936-01-26.tif" }],
-          "visibleKeys": ["v"],
-          "focusKeys": ["v"],
-          "hotspots": [
-            {
-              "t": 1929,
-              "title": "Début de la Grande Dépression, la plus grande crise économique du XXe siècle.",
-              "text": "Le krach se déroula à la Bourse de New York entre le jeudi 24 octobre et le mardi 29 octobre 1929."
-            }
-          ]
-        },
-        {
-          "from": 1980,
-          "to": 2007,
-          "text": "À partir des années 1980, le Luxembourg entre dans un cycle de croissance effrénée basée sur le secteur bancaire et financier qui a vu se développer en parallèle un secteur des services aux entreprises très varié (du nettoyage aux sociétés de consultance, ...) très gourmand en main-d'œuvre à la fois qualifiée et non-qualifiée.  A cette demande de main-d'œuvre, ce n'est que la main-d'œuvre immigrée qui a pu y répondre.",
-          "figures": [{   "id": "statec_013.tif" }],
-          "visibleKeys": ["v"],
-          "focusKeys": ["v"]
-        },
-        {
-          "from": 2008,
-          "to": 2020,
-          "text": "En 2008, la crise financière se déclenche et n'épargne pas le Luxembourg. Les pouvoirs publics doivent notamment intervenir dans le sauvetage des banques systémiques. Néanmoins, même si la récession est profonde, le Luxembourg est assez résilient. La croissance démographique, toujours due à l'immigration, ne fut que marginalement affectée par ces évènements. La pression sur le marché du logement est non-négligeable et les infrastructures publiques (notamment dans le domaine de la mobilité) doivent suivre cette évolution. Le solde global a souffert de l'effet <a href='https://fr.wikipedia.org/wiki/Pand%C3%A9mie_de_Covid-19' target='_blank' rel='noopener noreferrer'>Coronavirus</a> en 2020, mais il reste largement positif.",
-          "visibleKeys": ["v"],
-          "focusKeys": ["v"],
-          "hotspots": [
-            {
-              "t": 2008,
-              "text": "Crise économique (SUBPRIMES)"
+              "from": 1891,
+              "to": 1910,
+              "text": "À partir de la fin des années 1890, les capitaux allemands (le Luxembourg fait partie du Zollverein à partir de 1842) investissent massivement dans la sidérurgie (Differdange, Belval etc.) contribuant ainsi à l'expansion économique qui va de pair avec une croissance importante de la population dont le nombre passe de 210.000 en 1890 à 260.000 en 1910. Un <b>pays d'émigration</b> commence à devenir un <b>pays d'immigration</b>, même si beaucoup de résidents du Luxembourg continuent à partir à l'étranger.",
+              "figures": [{ "id": "statec_006.png" }],
+              "visibleKeys": ["v"],
+              "focusKeys": ["v"]
             },
             {
-              "t": 2020,
-              "text": "Covid-19"
-            }
-          ]
-        },
-        {
-          "from": 1945,
-          "to": 1990,
-          "text": "La croissance démographique au Grand-Duché connaît des différences régionales prononcées. Jusque vers les années 1970-1980, ce sont deux régions ou territoires qui concentrent le gros de l'augmentation de la population. Il s'agit des centres économiques du pays, c'est-à-dire le canton d'Esch-sur-Alzette et le canton de Luxembourg avec, en son centre, la Ville de Luxembourg.",
-          "visibleKeys": ["v"],
-          "focusKeys": ["v"],
-          "dataset": "PopulationDensity",
-          "datasetLayout": "Lines",
-          "datasetKeys": ["v","v1","v2","v3","v4"],
-          "datasetExtent": [1850, 2000],
-          "datasetLegend": "Densité de la population en nombre d'habitants par kilomètre carré. <br/><a href='https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Glossary:Population_density' target='_blank' rel='noopener noreferrer'>(en savoir plus sur cet indicateur)</a> <br/>Source: STATEC",
-          "datasetColorKeys": { "v": "#f171a1", "v1": "#fccd05", "v2": "#ff944a", "v3" : "#a64ac9", "v4" : "blue" }
-        },
-        {
-          "from": 1990,
-          "to": 2021,
-          "text": "Dans la Ville de Luxembourg et le canton de Luxembourg, la population augmente de façon continue avec une accélération à partir des années 1990. Dans le canton d'Esch-sur-Alzette, on note un dynamisme démographique important à partir de l'essor de la sidérurgie autour des années 1880 jusqu'à la crise économique mondiale à la fin des années 1920, puis une stagnation relative jusque dans les années 1980. A partir des années 1990, on assiste (comme dans toutes les régions du pays)à une accélération de l'augmentation de la population dans la région d'Esch-sur-Alzette. Dans la plupart des cantons du Nord et de l'Est du pays, pendant plus d'une centaine d'années (de 1850 aux années 1970), l'évolution démographique est peu dynamique et parfois même négative. L'accélération de la croissance démographique à partir des années 1990 se répercute dans tous les cantons du pays.",
-          "visibleKeys": ["v"],
-          "focusKeys": ["v"],
-          "dataset": "PopulationDensity",
-          "datasetLayout": "Lines",
-          "datasetLegend": "Densité de la population en nombre d'habitants par kilomètre carré. <br/><a href='https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Glossary:Population_density' target='_blank' rel='noopener noreferrer'>(en savoir plus sur cet indicateur)</a> <br/>Source: STATEC",
-          "datasetKeys": ["v","v1","v2","v3","v4"],
-          "datasetExtent": [1990, 2021],
-          "datasetColorKeys": { "v": "#f171a1", "v1": "#fccd05", "v2": "#ff944a", "v3" : "#a64ac9", "v4" : "blue"}
-        }
-      ]
-    },
-    {
-      "title": "Une histoire à deux variables?",
-      "paragraphs": [
-        {
-          "from": 1850,
-          "to": 1960,
-          "visibleKeys": ["v1", "v"],
-          "focusKeys": ["v1", "v"],
-          "colorKeys": { "v": "var(--t1-colorkeys-secondary)", "v1": "var(--t1-colorkeys-primary)", "v2": "var(--t1-colorkeys-tertiary)" },
-          "text": "Des années 1850 aux années 1960, les variations du <a href='https://statistiques.public.lu/fr/methodologie/definitions/S/soldetotal/index.html' target='_blank' rel='noopener noreferrer'>solde global</a> sont largement dues à l'impact des variations du <a href='https://statistiques.public.lu/fr/methodologie/definitions/S/soldenaturel/index.html' target='_blank' rel='noopener noreferrer'> solde naturel</a>, c'est-à-dire du jeu entre la mortalité et la natalité.",
-          "dataset": "PopulationBalanceDetails",
-          "datasetLayout": "Flowers",
-          "datasetLegend": "Source: STATEC",
-          "datasetKeys": ["v2", "v3"]
-        },
-        {
-          "from": 1860,
-          "to": 1870,
-          "visibleKeys": ["v1"],
-          "focusKeys": ["v1"],
-          "colorKeys": { "v1": "var(--t1-colorkeys-primary)" },
-          "text": "La mortalité augmente fortement suite à l'épidémie de choléra qui sévit en 1866 et cette croissance des décès n'est pas compensée par la natalité. Comme en même temps les gens partent à l'étranger, le Luxembourg perd des habitants à cette époque. En 1866 la population recule de 3.500 habitants. En 1867, la perte d'habitants est similaire, mais c'est l'émigration seule qui en est responsable.",
-          "figures": [{ "id": "courriergdl-1866-04-15-a-i0004.png" }],
-          "dataset": "PopulationBalanceDetails",
-          "datasetLayout": "Flowers",
-          "datasetLegend": "Source: STATEC",
-          "datasetKeys": ["v3"]
-        },
-        {
-          "from": 1915,
-          "to": 1920,
-          "visibleKeys": ["v1"],
-          "colorKeys": { "v1": "var(--t1-colorkeys-primary)" },
-          "text": "Après 1866, les années 1917-1918 sont la deuxième période au cours de laquelle la variation naturelle de la population est négative. Cela résulte à la fois de l'augmentation de la mortalité et d'une diminution des naissances. Le solde naturel passe de +2.600 en 1913 à -1.200 en 1918.",
-          "figures": [{ "id": "statec_011.tif" }]
-        },
-        {
-          "from": 1916,
-          "to": 1939,
-          "visibleKeys": ["v1"],
-          "colorKeys": { "v1": "var(--t1-colorkeys-primary)" },
-          "text": "La baisse de la natalité pendant les années de la Première guerre mondiale résulte évidemment des conditions de vie précaires de la guerre (difficultés de ravitaillement, par exemple). Mais est tout autant structurelle que conjoncturelle. En d'autres mots, depuis la fin du 19ème siècle le nombre d'enfants par femme (la fécondité) diminue et la remontée - passagère -  du solde naturel dans les années 1920 ne doit pas cacher ce phénomène qui se manifeste clairement dans les années 1930.",
-          "figures": [{ "id": "statec_020.jpg" }]
-        },
-        {
-          "from": 1939,
-          "to": 1947,
-          "visibleKeys": ["v1"],
-          "colorKeys": { "v1": "var(--t1-colorkeys-primary)" },
-          "text": "La Deuxième Guerre mondiale a des répercussions importantes dans le domaine démographique. <br> La mortalité augmente (victimes directes de la guerre, conditions de subsistance difficiles), la natalité diminue. Entre 1935 et 1947, la population résidente passe de <b>297&nbsp;000</b> à <b>291&nbsp;000</b>.",
-          "figures": [{ "id": "statec_001.png" }]
-        },
-        {
-          "from": 1965,
-          "to": 1990,
-          "visibleKeys": ["v1"],
-          "colorKeys": { "v1": "var(--t1-colorkeys-primary)" },
-          "text": "A partir du milieu des années 1960, le solde naturel diminue fortement. Ce n'est pas dû à des « accidents » de l'histoire (comme les crises économiques ou sanitaires ou les deux guerres mondiales), mais à une baisse structurelle importante de la fécondité (c'est-à-dire du nombre d'enfants par femme).<br/>Le nombre de naissances passe de <b class='bold'>5 297</b> en 1965 à <b class='bold'>3 915</b> en 1976. <br/>En 1976, le solde naturel est de - 600 (c'est-à-dire qu'il y a 600 décès de plus que de naissances), alors qu'en 1965 le solde fut encore très positif (+ 1 250).",
-          "dataset": "FertilityRatesByAge",
-          "datasetLayout": "Lines",
-          "datasetLegend": "Indicateur de fecondité du Luxembourg, Belgique et Portugal (1970-1990)<br/><a href='https://statistiques.public.lu/fr/methodologie/definitions/I/indicatconjonfecondite/index.html' target='_blank' rel='noopener noreferrer'>(en savoir plus sur cet indicateur)</a> </br>Source: STATEC",
-          "datasetKeys": ["v", "v1", "v2"],
-          "datasetColorKeys": { "v": "#f171a1", "v1": "#a64ac9", "v2": "blue" }
-        },
-        {
-          "from": 1965,
-          "to": 1990,
-          "visibleKeys": ["v1"],
-          "colorKeys": { "v1": "var(--t1-colorkeys-primary)" },
-          "text": "S'en suivent des joutes polémiques sur un hypothétique « suicide démographique ». Les projections se sont finalement avérées comme erronées. Dès 1990, le solde naturel remonte à + 1 163. Mais à la fin des années 1970, l'augmentation du taux de fécondité et l'arrivée massive d'une population jeune et en état de procréer est difficile à prévoir."
-        }
-      ]
-    },
-    {
-      "title": "Une histoire à trois variables!",
-      "paragraphs": [
-        {
-          "from": 1839,
-          "to": 1890,
-          "visibleKeys": ["v","v1","v2"],
-          "focusKeys": ["v","v1","v2"],
-          "colorKeys": { "v": "var(--t1-colorkeys-secondary)", "v1": "var(--t1-colorkeys-primary)", "v2": "var(--t1-colorkeys-tertiary)" },
-          "dataset": false,
-          "text": "Pays pauvre au 19ème siècle (jusque dans les années 1890), le Luxembourg connaît structurellement des soldes migratoires négatifs, <em>c'est-à-dire des excès des départs sur les arrivées</em> comme la plupart des pays européens. <br/> Au milieu du 19ème siècle, l'économie luxembourgeoise est encore une économie de subsistance et les variations de production agraire ont des répercussions directes et parfois douloureuses sur les conditions de vie des habitants qui partent nombreux à certaines périodes.",
-          "figures": [{ "id": "redline_poster_TAGEBLATT_20070612.png" }]
-        },
-        {
-          "from": 1890,
-          "to": 1960,
-          "visibleKeys": ["v2"],
-          "colorKeys": { "v2": "var(--t1-colorkeys-tertiary)" },
-          "text": "A partir des années 1890 jusqu'après la deuxième guerre mondiale, les périodes de solde migratoire positif, resp. négatif, se suivent. Les pics positifs du solde migratoire (excès des arrivées sur les départs) reflètent les périodes de croissance économique substantielle au Luxembourg et les pics négatifs (excès des départs) sont liés aux guerres, resp., aux crises ou ralentissements économiques.",
-          "figures": [{ "id": "wall_street_5372590938_e898f8d9be_o.jpg" }],
-          "hotspots": [
+              "from": 1929,
+              "to": 1940,
+              "text": "En 1930, la crise économique mondiale, qui a débuté en 1929 par le krach de Wall Street, commence à avoir un impact au Luxembourg. Le chômage augmente, la production sidérurgique diminue, les comptes publics sont sous tension. La population diminue de 1930 à 1935  (quelque 300 personnes en moins), puis rebondit dans des proportions modestes dans la deuxième moitié des années 1930 avant de replonger suite à l'éclatement de la deuxième guerre mondiale.",
+              "figures": [{ "id": "manif-1936-01-26.tif" }],
+              "visibleKeys": ["v"],
+              "focusKeys": ["v"],
+              "hotspots": [
+                {
+                  "t": 1929,
+                  "title": "Début de la Grande Dépression, la plus grande crise économique du XXe siècle.",
+                  "text": "Le krach se déroula à la Bourse de New York entre le jeudi 24 octobre et le mardi 29 octobre 1929."
+                }
+              ]
+            },
             {
-              "t": 1929,
-              "title": "Début de la Grande Dépression, la plus grande crise économique du 20ème siècle.",
-              "text": "Le krach se déroula à la Bourse de New York entre le jeudi 24 octobre et le mardi 29 octobre 1929."
-            }
-          ]
-        },
-        {
-          "from": 1960,
-          "to": 2020,
-          "visibleKeys": ["v2"],
-          "colorKeys": { "v2": "var(--t1-colorkeys-tertiary)" },
-          "text": "À partir des années 1960, le Luxembourg devient largement un pays d'immigration avec, en règle générale, un solde migratoire positif important à l'exception des années de crise économique 1975-1985. L'immigration était d'abord allemande au 19ème siècle (sidérurgie et mines), puis italienne dès les années 1890. A partir de la fin des années 1960, ce sont les Portugais qui deviennent la composante la plus importante de l'immigration. Ils arrivent souvent avec leurs familles et travaillent dans la construction.",
-          "figures": [{ "id": "681959_File5445.jpg"}],
-          "oldfigures": [{ "id": "statec_015.png" }, { "id": "statec_022.jpg" }, { "id": "681959_File5445.jpg"}]
-        }
-      ]
-    },
-    {
-      "title": "Un pays de migrations multiples",
-      "paragraphs": [
-        {
-          "from": 1840,
-          "to": 1880,
-          "visibleKeys": ["v2"],
-          "colorKeys": { "v2": "var(--t1-colorkeys-tertiary)" },
-          "text": "Entre 1840 et 1914 un nombre important de Luxembourgeois quittent leur pays vers les pays voisins (essentiellement la France et en moindre mesure la Belgique) mais également vers l'Outre-Mer. Les Etats-Unis exercent une forte attraction mais il y également des Luxembourgeois qui partent pour l'Amérique du Sud ou les colonies européennes notamment au Congo. Les pics des départs (soldes migratoires très négatifs) se situent au milieu des années 1850 (caractérisées par des récoltes insuffisantes) et dans les années 1866-1867 (conséquence de la crise sanitaire que constitue l'épidémie du choléra).",
-          "figures": [{ "id": "Du_Luxembourg_en_Argentine.jpeg" }],
-          "note": "add article in german + translation + article sur la migration en argentine"
-        },
-        {
-          "from": 1880,
-          "to": 1890,
-          "visibleKeys": ["v2"],
-          "colorKeys": { "v2": "var(--t1-colorkeys-tertiary)" },
-          "text": "Les années 1880 sont plutôt une période d'expansion économique due notamment au développement de la sidérurgie qui profite de l'invention du <a href='https://fr.wikipedia.org/wiki/Proc%C3%A9d%C3%A9_Thomas' target='_blank' rel='noopener noreferrer'>procédé Thomas-Gilchrist</a> permettant la transformation de la fonte phosphoreuse, produite à partir de la minette luxembourgeoise, en acier de bonne qualité.  L'émigration continue cependant à atteindre un niveau important, ce qui explique un solde migratoire négatif. C'est le signe que les mouvements migratoires ne résultent pas seulement de l'évolution économique au Grand-Duché, mais également de l'attrait d'autres pays.",
-          "figures": [{ "id": "statec_010.png" },{ "id": "Converter_basic_lining_Rheinstahl.png" }],
-          "notes": "convertisseur Thomas da cambiare"
-        },
-        {
-          "from": 1890,
-          "to": 1900,
-          "visibleKeys": ["v2"],
-          "colorKeys": { "v2": "var(--t1-colorkeys-tertiary)" },
-          "text": "Pour la première fois depuis l'indépendance du pays, le solde migratoire, l'excès des arrivées sur les départs, devient résolument positif à la fin des années 1890, résultat logique du développement économique qui a pris de la vitesse dans le pays.  En ce qui concerne la composition de l'immigration, jusque dans les années 1890, elle est constituée majoritairement d'Allemands travaillant soit dans la sidérurgie soit dans les mines de fer."
-        },
-        {
-          "from": 1880,
-          "to": 1913,
-          "visibleKeys": ["v2"],
-          "colorKeys": { "v2": "var(--t1-colorkeys-tertiary)" },
-          "text": "Puis les Italiens, souvent des ouvriers mobiles (célibataires ou non-accompagnés par leurs familles), prennent le relais. La part de la population étrangère dans la population résidente est passée de 3% en 1871 à plus de 15% en 1910. En 1910, on compte 39&nbsp;723 étrangers au total au Luxembourg, dont 24&nbsp;134 hommes et 15&nbsp;589 femmes. En d’autres mots, parmi les étrangers, il y a à ce moment-là 55% hommes de plus que de femmes. Pour les Luxembourgeois, au contraire, les proportions des hommes et des femmes sont proches (moitié d’hommes, autour de 110&nbsp;000, et moitié de femmes, également quelque 110&nbsp;000).",
-          "figures": [{ "id": "statec_003.png" }],
-          "dataset": "ResidentsByNationality",
-          "datasetLegend": "Part des étrangers, 1875-1910 </br>Source: STATEC",
-          "datasetLayout": "Lines",
-          "datasetExtent": [1875, 1910]
-        },
-        {
-          "from": 1914,
-          "to": 1921,
-          "visibleKeys": ["v2"],
-          "colorKeys": { "v2": "var(--t1-colorkeys-tertiary)" },
-          "text":"Avec le début de la guerre, de nombreux ouvriers étrangers quittent le pays. Vers les années 1917-1919, cette tendance se retourne (mais de façon modeste) et il y a de nouveau plus d'arrivées que de départs.  A la suite du traité de Versailles, le Luxembourg quitte le Zollverein et  doit se réorienter économiquement (le traité de l'UEBL est signé en 1921). Les capitaux allemands quittent le Luxembourg et sont remplacés par des capitaux belges et français. <br />Les difficultés économiques et les tensions sociales qui les accompagnent pendant les années 1920-1921 se reflètent dans une nouvelle poussée de l'émigration.   Ce sont d'ailleurs souvent les travailleurs étrangers qui (re) partent et jouent le rôle de « soupape de sécurité » permettant notamment de maintenir le chômage à des niveaux assez faibles au Grand-Duché. La même chose se reproduit d'ailleurs à la suite de la crise mondiale de 1929.",
-          "figures": [{ "id": "esch-strike-march-1921.jpeg" }]
-        },
-        {
-          "from": 1922,
-          "to": 1929,
-          "visibleKeys": ["v2"],
-          "colorKeys": { "v2": "var(--t1-colorkeys-tertiary)" },
-          "text": "Au cours des années 1922-1929, la sidérurgie connaît une évolution favorable. Les entreprises luxembourgeoise créent de l'emploi et engagent de nouveau beaucoup de travailleurs venant de l'étranger. Leur nombre d'étrangers passe de 33. 000 en 1922 (13% de la population)à 56.000 en 1930 (près de 20% de la population). Les Italiens sont désormais majoritaires.",
-          "figures": [{ "id": "statec_017.png" }]
-        },
-        {
-          "from": 1929,
-          "to": 1945,
-          "visibleKeys": ["v2"],
-          "colorKeys": { "v2": "var(--t1-colorkeys-tertiary)" },
-          "text": "La crise mondiale de 1929 fait que les départs (notamment des ouvriers étrangers, à majorité italienne) en 1930 et 1931 sont massifs de sorte que le solde migratoire annuel redevient très déficitaire. Passagèrement, avec une légère reprise économique dans les années 1936-1938, le nombre d'arrivées dépasse à nouveau les départs sans atteindre les sommets des années 1920. Mais avec l'entrée dans la deuxième guerre mondiale, le déficit migratoire au Luxembourg atteint son niveau le plus élevé depuis l'indépendance du pays.  <br/>A la sortie de la guerre, les arrivées commencent de nouveau à dépasser les départs et désormais les soldes resteront positifs, le Luxembourg devenant ainsi – globalement - un pays d'immigration. Mais le solde migratoire ne reflète pas la dynamique des migrations et on ne devrait pas oublier qu'à côté des arrivées, les départs atteignent également des proportions importantes."
-        },
-        {
-          "from":1970,
-          "to": 1985,
-          "visibleKeys": ["v2"],
-          "colorKeys": { "v2": "var(--t1-colorkeys-tertiary)" },
-          "text":"La première moitié des années 1970 voit un véritable « boom » de la sidérurgie allant de pair avec une croissance exceptionnelle de l'économie en général. Le recours à la main-d'œuvre étrangère s'intensifie à cette époque. Avec la première crise pétrolière de 1975 débute une période de ralentissement qui s'étend jusqu'au milieu des années 1980. <br/>Ce ralentissement va de pair avec une immigration en berne, sans pour autant que le solde migratoire devienne fortement négatif. En d'autres mots, l'immigration diminue sans s'essouffler totalement.",
-          "hotspots": [
+              "from": 1980,
+              "to": 2007,
+              "text": "À partir des années 1980, le Luxembourg entre dans un cycle de croissance effrénée basée sur le secteur bancaire et financier qui a vu se développer en parallèle un secteur des services aux entreprises très varié (du nettoyage aux sociétés de consultance, ...) très gourmand en main-d'œuvre à la fois qualifiée et non-qualifiée.  A cette demande de main-d'œuvre, ce n'est que la main-d'œuvre immigrée qui a pu y répondre.",
+              "figures": [{   "id": "statec_013.tif" }],
+              "visibleKeys": ["v"],
+              "focusKeys": ["v"]
+            },
             {
-              "t": 1973,
-              "text": "Le premier choc pétrolier, une crise mondiale des prix du pétrole, débute en 1973 à la suite du pic de production de pétrole"
-            }
-          ]
-        },
-        {
-          "from": 1970,
-          "to": 1991,
-          "visibleKeys": ["v2"],
-          "colorKeys": { "v2": "var(--t1-colorkeys-tertiary)" },
-          "text": "En tendance la composante italienne de l'immigration commence à se contracter dès les années 1960 ; ce qui est également dû à l'évolution relativement favorable de l'économie italienne (salaires en hausse, chômage en baisse). C'est l'immigration du Portugal - pays avec lequel un traité de main-d'œuvre est signé - qui prend le relais. Cette immigration est essentiellement familiale et elle permet de répondre – du moins à ses débuts – à la demande de main-d'œuvre dans la construction De 1971 à 1991, la part des Portugais dans la population de nationalité étrangère passe de 9 % à 34%, alors que la part des Italiens évolue en sens inverse, de 38% à 17%.",
-          "dataset": "PopulationCompositionByNationalities",
-          "datasetKeys": ["v1", "v2", "v3", "v4", "v5", "v6", "v8"],
-          "datasetLayout": "Compare",
-          "datasetLegend": "Composition de la population étrangère au Luxembourg, 1970-1991 </br>Source: STATEC",
-          "hotspots": [
+              "from": 2008,
+              "to": 2020,
+              "text": "En 2008, la crise financière se déclenche et n'épargne pas le Luxembourg. Les pouvoirs publics doivent notamment intervenir dans le sauvetage des banques systémiques. Néanmoins, même si la récession est profonde, le Luxembourg est assez résilient. La croissance démographique, toujours due à l'immigration, ne fut que marginalement affectée par ces évènements. La pression sur le marché du logement est non-négligeable et les infrastructures publiques (notamment dans le domaine de la mobilité) doivent suivre cette évolution. Le solde global a souffert de l'effet <a href='https://fr.wikipedia.org/wiki/Pand%C3%A9mie_de_Covid-19' target='_blank' rel='noopener noreferrer'>Coronavirus</a> en 2020, mais il reste largement positif.",
+              "visibleKeys": ["v"],
+              "focusKeys": ["v"],
+              "hotspots": [
+                {
+                  "t": 2008,
+                  "text": "Crise économique (SUBPRIMES)"
+                },
+                {
+                  "t": 2020,
+                  "text": "Covid-19"
+                }
+              ]
+            },
             {
-              "text": "Accord entre le Grand-Duché de Luxembourg et la République portugaise relatif à l'emploi des travailleurs portugais au Luxembourg, signé le 20 mai 1970. Entré en vigueur le 14 avril 1972",
-              "t": 1972
+              "from": 1945,
+              "to": 1990,
+              "text": "La croissance démographique au Grand-Duché connaît des différences régionales prononcées. Jusque vers les années 1970-1980, ce sont deux régions ou territoires qui concentrent le gros de l'augmentation de la population. Il s'agit des centres économiques du pays, c'est-à-dire le canton d'Esch-sur-Alzette et le canton de Luxembourg avec, en son centre, la Ville de Luxembourg.",
+              "visibleKeys": ["v"],
+              "focusKeys": ["v"],
+              "dataset": "PopulationDensity",
+              "datasetLayout": "Lines",
+              "datasetKeys": ["v","v1","v2","v3","v4"],
+              "datasetExtent": [1850, 2000],
+              "datasetLegend": "Densité de la population en nombre d'habitants par kilomètre carré. <br/><a href='https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Glossary:Population_density' target='_blank' rel='noopener noreferrer'>(en savoir plus sur cet indicateur)</a> <br/>Source: STATEC",
+              "datasetColorKeys": { "v": "#f171a1", "v1": "#fccd05", "v2": "#ff944a", "v3" : "#a64ac9", "v4" : "blue" }
+            },
+            {
+              "from": 1990,
+              "to": 2021,
+              "text": "Dans la Ville de Luxembourg et le canton de Luxembourg, la population augmente de façon continue avec une accélération à partir des années 1990. Dans le canton d'Esch-sur-Alzette, on note un dynamisme démographique important à partir de l'essor de la sidérurgie autour des années 1880 jusqu'à la crise économique mondiale à la fin des années 1920, puis une stagnation relative jusque dans les années 1980. A partir des années 1990, on assiste (comme dans toutes les régions du pays)à une accélération de l'augmentation de la population dans la région d'Esch-sur-Alzette. Dans la plupart des cantons du Nord et de l'Est du pays, pendant plus d'une centaine d'années (de 1850 aux années 1970), l'évolution démographique est peu dynamique et parfois même négative. L'accélération de la croissance démographique à partir des années 1990 se répercute dans tous les cantons du pays.",
+              "visibleKeys": ["v"],
+              "focusKeys": ["v"],
+              "dataset": "PopulationDensity",
+              "datasetLayout": "Lines",
+              "datasetLegend": "Densité de la population en nombre d'habitants par kilomètre carré. <br/><a href='https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Glossary:Population_density' target='_blank' rel='noopener noreferrer'>(en savoir plus sur cet indicateur)</a> <br/>Source: STATEC",
+              "datasetKeys": ["v","v1","v2","v3","v4"],
+              "datasetExtent": [1990, 2021],
+              "datasetColorKeys": { "v": "#f171a1", "v1": "#fccd05", "v2": "#ff944a", "v3" : "#a64ac9", "v4" : "blue"}
             }
           ]
         },
         {
-          "from": 1991,
-          "to": 2021,
-          "visibleKeys": ["v2"],
-          "colorKeys": { "v2": "var(--t1-colorkeys-tertiary)" },
-          "text": "C'est la diversité des origines des migrants à partir des années 1990 qui doit être relevée. Les migrants viennent des pays voisins (la part des Français dans la population augmente), mais désormais également de nombreux pays non-européens (États-Unis, Inde, Chine, par exemple).    Les migrants de pays qui avaient déjà une histoire d'immigration au Luxembourg (Portugal, Italie) sont également assez nombreux au sein de la vague d'immigration récente. Répondant à la demande d'une économie désormais largement tertiarisée, le profil des qualifications et des formations des immigrés est également de plus en plus diversifié ; ils occupent à la fois des emplois hautement qualifiés et des emplois peu qualifiés.",
-          "dataset": "PopulationCompositionByNationalities",
-          "datasetKeys": ["v", "v2", "v3", "v4", "v5", "v6", "v8"],
-          "datasetLayout": "Compare",
-          "datasetLegend": "Composition de la population étrangère au Luxembourg, 1991-2011 </br>Source: STATEC"
+          "title": "Une histoire à deux variables?",
+          "paragraphs": [
+            {
+              "from": 1850,
+              "to": 1960,
+              "visibleKeys": ["v1", "v"],
+              "focusKeys": ["v1", "v"],
+              "colorKeys": { "v": "var(--t1-colorkeys-secondary)", "v1": "var(--t1-colorkeys-primary)", "v2": "var(--t1-colorkeys-tertiary)" },
+              "text": "Des années 1850 aux années 1960, les variations du <a href='https://statistiques.public.lu/fr/methodologie/definitions/S/soldetotal/index.html' target='_blank' rel='noopener noreferrer'>solde global</a> sont largement dues à l'impact des variations du <a href='https://statistiques.public.lu/fr/methodologie/definitions/S/soldenaturel/index.html' target='_blank' rel='noopener noreferrer'> solde naturel</a>, c'est-à-dire du jeu entre la mortalité et la natalité.",
+              "dataset": "PopulationBalanceDetails",
+              "datasetLayout": "Flowers",
+              "datasetLegend": "Source: STATEC",
+              "datasetKeys": ["v2", "v3"]
+            },
+            {
+              "from": 1860,
+              "to": 1870,
+              "visibleKeys": ["v1"],
+              "focusKeys": ["v1"],
+              "colorKeys": { "v1": "var(--t1-colorkeys-primary)" },
+              "text": "La mortalité augmente fortement suite à l'épidémie de choléra qui sévit en 1866 et cette croissance des décès n'est pas compensée par la natalité. Comme en même temps les gens partent à l'étranger, le Luxembourg perd des habitants à cette époque. En 1866 la population recule de 3.500 habitants. En 1867, la perte d'habitants est similaire, mais c'est l'émigration seule qui en est responsable.",
+              "figures": [{ "id": "courriergdl-1866-04-15-a-i0004.png" }],
+              "dataset": "PopulationBalanceDetails",
+              "datasetLayout": "Flowers",
+              "datasetLegend": "Source: STATEC",
+              "datasetKeys": ["v3"]
+            },
+            {
+              "from": 1915,
+              "to": 1920,
+              "visibleKeys": ["v1"],
+              "colorKeys": { "v1": "var(--t1-colorkeys-primary)" },
+              "text": "Après 1866, les années 1917-1918 sont la deuxième période au cours de laquelle la variation naturelle de la population est négative. Cela résulte à la fois de l'augmentation de la mortalité et d'une diminution des naissances. Le solde naturel passe de +2.600 en 1913 à -1.200 en 1918.",
+              "figures": [{ "id": "statec_011.tif" }]
+            },
+            {
+              "from": 1916,
+              "to": 1939,
+              "visibleKeys": ["v1"],
+              "colorKeys": { "v1": "var(--t1-colorkeys-primary)" },
+              "text": "La baisse de la natalité pendant les années de la Première guerre mondiale résulte évidemment des conditions de vie précaires de la guerre (difficultés de ravitaillement, par exemple). Mais est tout autant structurelle que conjoncturelle. En d'autres mots, depuis la fin du 19ème siècle le nombre d'enfants par femme (la fécondité) diminue et la remontée - passagère -  du solde naturel dans les années 1920 ne doit pas cacher ce phénomène qui se manifeste clairement dans les années 1930.",
+              "figures": [{ "id": "statec_020.jpg" }]
+            },
+            {
+              "from": 1939,
+              "to": 1947,
+              "visibleKeys": ["v1"],
+              "colorKeys": { "v1": "var(--t1-colorkeys-primary)" },
+              "text": "La Deuxième Guerre mondiale a des répercussions importantes dans le domaine démographique. <br> La mortalité augmente (victimes directes de la guerre, conditions de subsistance difficiles), la natalité diminue. Entre 1935 et 1947, la population résidente passe de <b>297&nbsp;000</b> à <b>291&nbsp;000</b>.",
+              "figures": [{ "id": "statec_001.png" }]
+            },
+            {
+              "from": 1965,
+              "to": 1990,
+              "visibleKeys": ["v1"],
+              "colorKeys": { "v1": "var(--t1-colorkeys-primary)" },
+              "text": "A partir du milieu des années 1960, le solde naturel diminue fortement. Ce n'est pas dû à des « accidents » de l'histoire (comme les crises économiques ou sanitaires ou les deux guerres mondiales), mais à une baisse structurelle importante de la fécondité (c'est-à-dire du nombre d'enfants par femme).<br/>Le nombre de naissances passe de <b class='bold'>5 297</b> en 1965 à <b class='bold'>3 915</b> en 1976. <br/>En 1976, le solde naturel est de - 600 (c'est-à-dire qu'il y a 600 décès de plus que de naissances), alors qu'en 1965 le solde fut encore très positif (+ 1 250).",
+              "dataset": "FertilityRatesByAge",
+              "datasetLayout": "Lines",
+              "datasetLegend": "Indicateur de fecondité du Luxembourg, Belgique et Portugal (1970-1990)<br/><a href='https://statistiques.public.lu/fr/methodologie/definitions/I/indicatconjonfecondite/index.html' target='_blank' rel='noopener noreferrer'>(en savoir plus sur cet indicateur)</a> </br>Source: STATEC",
+              "datasetKeys": ["v", "v1", "v2"],
+              "datasetColorKeys": { "v": "#f171a1", "v1": "#a64ac9", "v2": "blue" }
+            },
+            {
+              "from": 1965,
+              "to": 1990,
+              "visibleKeys": ["v1"],
+              "colorKeys": { "v1": "var(--t1-colorkeys-primary)" },
+              "text": "S'en suivent des joutes polémiques sur un hypothétique « suicide démographique ». Les projections se sont finalement avérées comme erronées. Dès 1990, le solde naturel remonte à + 1 163. Mais à la fin des années 1970, l'augmentation du taux de fécondité et l'arrivée massive d'une population jeune et en état de procréer est difficile à prévoir."
+            }
+          ]
         },
         {
-          "from": 2008,
-          "to": 2021,
-          "visibleKeys": ["v2"],
-          "colorKeys": { "v2": "var(--t1-colorkeys-tertiary)" },
-          "text": "La crise qui frappe l'économie mondiale à partir de 2008 et qui se répercute sur le Luxembourg trouve son reflet dans un recul (très passager) de l'excédent migratoire au Grand-Duché.  Dans la période qui suit, le solde migratoire atteint cependant des niveaux jamais atteints jusque-là (dépassant les 10 000), signe à la fois de la résilience de l'économie luxembourgeoise et des difficultés économiques et sociales des pays d'où viennent les migrants. La dynamique des migrations (vers et hors du Luxembourg) a également augmenté. Pendant certaines années on compte plus de 20 000 arrivées et autour de 10 000 départs. C'est également le reflet d'un marché du travail en expansion et caractérisé par une grande flexibilité. Le solde migratoire a souffert de l'effet <a href='https://fr.wikipedia.org/wiki/Pand%C3%A9mie_de_Covid-19' target='_blank' rel='noopener noreferrer'>Coronavirus</a> en 2020, mais il reste largement positif, avec un excédent de plus de 7 000 personnes"
+          "title": "Une histoire à trois variables!",
+          "paragraphs": [
+            {
+              "from": 1839,
+              "to": 1890,
+              "visibleKeys": ["v","v1","v2"],
+              "focusKeys": ["v","v1","v2"],
+              "colorKeys": { "v": "var(--t1-colorkeys-secondary)", "v1": "var(--t1-colorkeys-primary)", "v2": "var(--t1-colorkeys-tertiary)" },
+              "dataset": false,
+              "text": "Pays pauvre au 19ème siècle (jusque dans les années 1890), le Luxembourg connaît structurellement des soldes migratoires négatifs, <em>c'est-à-dire des excès des départs sur les arrivées</em> comme la plupart des pays européens. <br/> Au milieu du 19ème siècle, l'économie luxembourgeoise est encore une économie de subsistance et les variations de production agraire ont des répercussions directes et parfois douloureuses sur les conditions de vie des habitants qui partent nombreux à certaines périodes.",
+              "figures": [{ "id": "redline_poster_TAGEBLATT_20070612.png" }]
+            },
+            {
+              "from": 1890,
+              "to": 1960,
+              "visibleKeys": ["v2"],
+              "colorKeys": { "v2": "var(--t1-colorkeys-tertiary)" },
+              "text": "A partir des années 1890 jusqu'après la deuxième guerre mondiale, les périodes de solde migratoire positif, resp. négatif, se suivent. Les pics positifs du solde migratoire (excès des arrivées sur les départs) reflètent les périodes de croissance économique substantielle au Luxembourg et les pics négatifs (excès des départs) sont liés aux guerres, resp., aux crises ou ralentissements économiques.",
+              "figures": [{ "id": "wall_street_5372590938_e898f8d9be_o.jpg" }],
+              "hotspots": [
+                {
+                  "t": 1929,
+                  "title": "Début de la Grande Dépression, la plus grande crise économique du 20ème siècle.",
+                  "text": "Le krach se déroula à la Bourse de New York entre le jeudi 24 octobre et le mardi 29 octobre 1929."
+                }
+              ]
+            },
+            {
+              "from": 1960,
+              "to": 2020,
+              "visibleKeys": ["v2"],
+              "colorKeys": { "v2": "var(--t1-colorkeys-tertiary)" },
+              "text": "À partir des années 1960, le Luxembourg devient largement un pays d'immigration avec, en règle générale, un solde migratoire positif important à l'exception des années de crise économique 1975-1985. L'immigration était d'abord allemande au 19ème siècle (sidérurgie et mines), puis italienne dès les années 1890. A partir de la fin des années 1960, ce sont les Portugais qui deviennent la composante la plus importante de l'immigration. Ils arrivent souvent avec leurs familles et travaillent dans la construction.",
+              "figures": [{ "id": "681959_File5445.jpg"}],
+              "oldfigures": [{ "id": "statec_015.png" }, { "id": "statec_022.jpg" }, { "id": "681959_File5445.jpg"}]
+            }
+          ]
+        },
+        {
+          "title": "Un pays de migrations multiples",
+          "paragraphs": [
+            {
+              "from": 1840,
+              "to": 1880,
+              "visibleKeys": ["v2"],
+              "colorKeys": { "v2": "var(--t1-colorkeys-tertiary)" },
+              "text": "Entre 1840 et 1914 un nombre important de Luxembourgeois quittent leur pays vers les pays voisins (essentiellement la France et en moindre mesure la Belgique) mais également vers l'Outre-Mer. Les Etats-Unis exercent une forte attraction mais il y également des Luxembourgeois qui partent pour l'Amérique du Sud ou les colonies européennes notamment au Congo. Les pics des départs (soldes migratoires très négatifs) se situent au milieu des années 1850 (caractérisées par des récoltes insuffisantes) et dans les années 1866-1867 (conséquence de la crise sanitaire que constitue l'épidémie du choléra).",
+              "figures": [{ "id": "Du_Luxembourg_en_Argentine.jpeg" }],
+              "note": "add article in german + translation + article sur la migration en argentine"
+            },
+            {
+              "from": 1880,
+              "to": 1890,
+              "visibleKeys": ["v2"],
+              "colorKeys": { "v2": "var(--t1-colorkeys-tertiary)" },
+              "text": "Les années 1880 sont plutôt une période d'expansion économique due notamment au développement de la sidérurgie qui profite de l'invention du <a href='https://fr.wikipedia.org/wiki/Proc%C3%A9d%C3%A9_Thomas' target='_blank' rel='noopener noreferrer'>procédé Thomas-Gilchrist</a> permettant la transformation de la fonte phosphoreuse, produite à partir de la minette luxembourgeoise, en acier de bonne qualité.  L'émigration continue cependant à atteindre un niveau important, ce qui explique un solde migratoire négatif. C'est le signe que les mouvements migratoires ne résultent pas seulement de l'évolution économique au Grand-Duché, mais également de l'attrait d'autres pays.",
+              "figures": [{ "id": "statec_010.png" },{ "id": "Converter_basic_lining_Rheinstahl.png" }],
+              "notes": "convertisseur Thomas da cambiare"
+            },
+            {
+              "from": 1890,
+              "to": 1900,
+              "visibleKeys": ["v2"],
+              "colorKeys": { "v2": "var(--t1-colorkeys-tertiary)" },
+              "text": "Pour la première fois depuis l'indépendance du pays, le solde migratoire, l'excès des arrivées sur les départs, devient résolument positif à la fin des années 1890, résultat logique du développement économique qui a pris de la vitesse dans le pays.  En ce qui concerne la composition de l'immigration, jusque dans les années 1890, elle est constituée majoritairement d'Allemands travaillant soit dans la sidérurgie soit dans les mines de fer."
+            },
+            {
+              "from": 1880,
+              "to": 1913,
+              "visibleKeys": ["v2"],
+              "colorKeys": { "v2": "var(--t1-colorkeys-tertiary)" },
+              "text": "Puis les Italiens, souvent des ouvriers mobiles (célibataires ou non-accompagnés par leurs familles), prennent le relais. La part de la population étrangère dans la population résidente est passée de 3% en 1871 à plus de 15% en 1910. En 1910, on compte 39&nbsp;723 étrangers au total au Luxembourg, dont 24&nbsp;134 hommes et 15&nbsp;589 femmes. En d’autres mots, parmi les étrangers, il y a à ce moment-là 55% hommes de plus que de femmes. Pour les Luxembourgeois, au contraire, les proportions des hommes et des femmes sont proches (moitié d’hommes, autour de 110&nbsp;000, et moitié de femmes, également quelque 110&nbsp;000).",
+              "figures": [{ "id": "statec_003.png" }],
+              "dataset": "ResidentsByNationality",
+              "datasetLegend": "Part des étrangers, 1875-1910 </br>Source: STATEC",
+              "datasetLayout": "Lines",
+              "datasetExtent": [1875, 1910]
+            },
+            {
+              "from": 1914,
+              "to": 1921,
+              "visibleKeys": ["v2"],
+              "colorKeys": { "v2": "var(--t1-colorkeys-tertiary)" },
+              "text":"Avec le début de la guerre, de nombreux ouvriers étrangers quittent le pays. Vers les années 1917-1919, cette tendance se retourne (mais de façon modeste) et il y a de nouveau plus d'arrivées que de départs.  A la suite du traité de Versailles, le Luxembourg quitte le Zollverein et  doit se réorienter économiquement (le traité de l'UEBL est signé en 1921). Les capitaux allemands quittent le Luxembourg et sont remplacés par des capitaux belges et français. <br />Les difficultés économiques et les tensions sociales qui les accompagnent pendant les années 1920-1921 se reflètent dans une nouvelle poussée de l'émigration.   Ce sont d'ailleurs souvent les travailleurs étrangers qui (re) partent et jouent le rôle de « soupape de sécurité » permettant notamment de maintenir le chômage à des niveaux assez faibles au Grand-Duché. La même chose se reproduit d'ailleurs à la suite de la crise mondiale de 1929.",
+              "figures": [{ "id": "esch-strike-march-1921.jpeg" }]
+            },
+            {
+              "from": 1922,
+              "to": 1929,
+              "visibleKeys": ["v2"],
+              "colorKeys": { "v2": "var(--t1-colorkeys-tertiary)" },
+              "text": "Au cours des années 1922-1929, la sidérurgie connaît une évolution favorable. Les entreprises luxembourgeoise créent de l'emploi et engagent de nouveau beaucoup de travailleurs venant de l'étranger. Leur nombre d'étrangers passe de 33. 000 en 1922 (13% de la population)à 56.000 en 1930 (près de 20% de la population). Les Italiens sont désormais majoritaires.",
+              "figures": [{ "id": "statec_017.png" }]
+            },
+            {
+              "from": 1929,
+              "to": 1945,
+              "visibleKeys": ["v2"],
+              "colorKeys": { "v2": "var(--t1-colorkeys-tertiary)" },
+              "text": "La crise mondiale de 1929 fait que les départs (notamment des ouvriers étrangers, à majorité italienne) en 1930 et 1931 sont massifs de sorte que le solde migratoire annuel redevient très déficitaire. Passagèrement, avec une légère reprise économique dans les années 1936-1938, le nombre d'arrivées dépasse à nouveau les départs sans atteindre les sommets des années 1920. Mais avec l'entrée dans la deuxième guerre mondiale, le déficit migratoire au Luxembourg atteint son niveau le plus élevé depuis l'indépendance du pays.  <br/>A la sortie de la guerre, les arrivées commencent de nouveau à dépasser les départs et désormais les soldes resteront positifs, le Luxembourg devenant ainsi – globalement - un pays d'immigration. Mais le solde migratoire ne reflète pas la dynamique des migrations et on ne devrait pas oublier qu'à côté des arrivées, les départs atteignent également des proportions importantes."
+            },
+            {
+              "from":1970,
+              "to": 1985,
+              "visibleKeys": ["v2"],
+              "colorKeys": { "v2": "var(--t1-colorkeys-tertiary)" },
+              "text":"La première moitié des années 1970 voit un véritable « boom » de la sidérurgie allant de pair avec une croissance exceptionnelle de l'économie en général. Le recours à la main-d'œuvre étrangère s'intensifie à cette époque. Avec la première crise pétrolière de 1975 débute une période de ralentissement qui s'étend jusqu'au milieu des années 1980. <br/>Ce ralentissement va de pair avec une immigration en berne, sans pour autant que le solde migratoire devienne fortement négatif. En d'autres mots, l'immigration diminue sans s'essouffler totalement.",
+              "hotspots": [
+                {
+                  "t": 1973,
+                  "text": "Le premier choc pétrolier, une crise mondiale des prix du pétrole, débute en 1973 à la suite du pic de production de pétrole"
+                }
+              ]
+            },
+            {
+              "from": 1970,
+              "to": 1991,
+              "visibleKeys": ["v2"],
+              "colorKeys": { "v2": "var(--t1-colorkeys-tertiary)" },
+              "text": "En tendance la composante italienne de l'immigration commence à se contracter dès les années 1960 ; ce qui est également dû à l'évolution relativement favorable de l'économie italienne (salaires en hausse, chômage en baisse). C'est l'immigration du Portugal - pays avec lequel un traité de main-d'œuvre est signé - qui prend le relais. Cette immigration est essentiellement familiale et elle permet de répondre – du moins à ses débuts – à la demande de main-d'œuvre dans la construction De 1971 à 1991, la part des Portugais dans la population de nationalité étrangère passe de 9 % à 34%, alors que la part des Italiens évolue en sens inverse, de 38% à 17%.",
+              "dataset": "PopulationCompositionByNationalities",
+              "datasetKeys": ["v1", "v2", "v3", "v4", "v5", "v6", "v8"],
+              "datasetLayout": "Compare",
+              "datasetLegend": "Composition de la population étrangère au Luxembourg, 1970-1991 </br>Source: STATEC",
+              "hotspots": [
+                {
+                  "text": "Accord entre le Grand-Duché de Luxembourg et la République portugaise relatif à l'emploi des travailleurs portugais au Luxembourg, signé le 20 mai 1970. Entré en vigueur le 14 avril 1972",
+                  "t": 1972
+                }
+              ]
+            },
+            {
+              "from": 1991,
+              "to": 2021,
+              "visibleKeys": ["v2"],
+              "colorKeys": { "v2": "var(--t1-colorkeys-tertiary)" },
+              "text": "C'est la diversité des origines des migrants à partir des années 1990 qui doit être relevée. Les migrants viennent des pays voisins (la part des Français dans la population augmente), mais désormais également de nombreux pays non-européens (États-Unis, Inde, Chine, par exemple).    Les migrants de pays qui avaient déjà une histoire d'immigration au Luxembourg (Portugal, Italie) sont également assez nombreux au sein de la vague d'immigration récente. Répondant à la demande d'une économie désormais largement tertiarisée, le profil des qualifications et des formations des immigrés est également de plus en plus diversifié ; ils occupent à la fois des emplois hautement qualifiés et des emplois peu qualifiés.",
+              "dataset": "PopulationCompositionByNationalities",
+              "datasetKeys": ["v", "v2", "v3", "v4", "v5", "v6", "v8"],
+              "datasetLayout": "Compare",
+              "datasetLegend": "Composition de la population étrangère au Luxembourg, 1991-2011 </br>Source: STATEC"
+            },
+            {
+              "from": 2008,
+              "to": 2021,
+              "visibleKeys": ["v2"],
+              "colorKeys": { "v2": "var(--t1-colorkeys-tertiary)" },
+              "text": "La crise qui frappe l'économie mondiale à partir de 2008 et qui se répercute sur le Luxembourg trouve son reflet dans un recul (très passager) de l'excédent migratoire au Grand-Duché.  Dans la période qui suit, le solde migratoire atteint cependant des niveaux jamais atteints jusque-là (dépassant les 10 000), signe à la fois de la résilience de l'économie luxembourgeoise et des difficultés économiques et sociales des pays d'où viennent les migrants. La dynamique des migrations (vers et hors du Luxembourg) a également augmenté. Pendant certaines années on compte plus de 20 000 arrivées et autour de 10 000 départs. C'est également le reflet d'un marché du travail en expansion et caractérisé par une grande flexibilité. Le solde migratoire a souffert de l'effet <a href='https://fr.wikipedia.org/wiki/Pand%C3%A9mie_de_Covid-19' target='_blank' rel='noopener noreferrer'>Coronavirus</a> en 2020, mais il reste largement positif, avec un excédent de plus de 7 000 personnes"
+            }
+          ]
         }
       ]
     }

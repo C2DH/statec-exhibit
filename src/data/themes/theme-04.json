@@ -23,6 +23,7 @@
       "displayPoints": true,
       "displayDashedLine": true,
       "numericTranslationLabel": "number",
+      "componentLegend": "Nombre de personnes employées",
       "visibleKeys": ["v"],
       "focusKeys": ["v"],
       "modules": [
@@ -104,6 +105,7 @@
       "visibleKeys": ["v"],
       "focusKeys": ["v"],
       "datasetExtent": [1970, 2020],
+      "componentLegend": "Taux de chômage (%)",
       "modules": [
         {
           "title": "La définition administrative du chômage",

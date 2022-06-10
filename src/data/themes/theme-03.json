@@ -27,6 +27,7 @@
       "displayPoints": true,
       "displayDashedLine": true,
       "numericTranslationLabel": "number",
+      "componentLegend": "Nombre de personnes employées",
       "modules": [
         {
           "title": "L’évolution générale de l’emploi",
@@ -105,6 +106,7 @@
       "dataset": "TimelineOfficialStatistics",
       "datasetComponent": "Timeline",
       "datasetExtent": [1890,2020],
+      "componentLegend": "Chronologie",
       "modules": [
         {
           "title": "Les sources des statistiques du travail",
@@ -326,6 +328,7 @@
       "displayPoints": true,
       "displayDashedLine": true,
       "numericTranslationLabel": "percentage",
+      "componentLegend": "Pourcentage de la population active",
       "colorKeys": {
         "v": "var(--secondary)",
         "v1": "red",
@@ -478,6 +481,7 @@
       "displayPoints": true,
       "displayDashedLine": true,
       "numericTranslationLabel": "number",
+      "componentLegend": "Nombre de personnes employées",
       "colorKeys": {
         "v": "var(--secondary)",
         "v1": "var(--datakey-v1)",
