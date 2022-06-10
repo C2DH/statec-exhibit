@@ -6,7 +6,7 @@
   },
   "description": "Difference between the number of births and the number of deaths for the given year compared to population",
   "source": "STATEC",
-  "sourceUrl": "https://statistiques.public.lu/stat/TableViewer/tableView.aspx?ReportId=12868&IF_Language=eng&MainTheme=2&FldrName=2",
+  "sourceUrl": "https://lustat.statec.lu/vis?fs[0]=Thèmes%2C1%7CPopulation%20et%20emploi%23B%23%7CMouvement%20de%20la%20population%23B3%23&pg=0&fc=Thèmes&df[ds]=release&df[id]=DF_B2110&df[ag]=LU1&df[vs]=1.0&pd=2015%2C2021&dq=.A",
   "values": [
     {"t": "1840", "v": 15.89442815},
 {"t": "1841", "v": 16.8081298},

@@ -459,7 +459,7 @@
               "datasetKeys": ["v1", "v2"],
               "datasetColorKeys": { "v1":  "var(--dataset-t2-v)", "v2": "var(--dataset-t2-v1)"},
               "datasetExtent": [1945, 2020],
-              "datasetLegend": "Espérance de vie à 60 ans, 1946-2019. <br/>Source: STATEC (extrait de <a href='https://statistiques.public.lu/stat/TableViewer/tableViewHTML.aspx?sCS_ChosenLang=fr&ReportId=12883'>Espérance de vie à certains âges 1946 - 2020</a>)"
+              "datasetLegend": "Espérance de vie à 60 ans, 1946-2019. <br/>Source: STATEC (extrait de <a href='https://lustat.statec.lu/vis?tm=espérance%20de%20vie&pg=0&df[ds]=release&df[id]=DF_B2209&df[ag]=LU1&df[vs]=1.0&pd=2015%2C2020&dq=S01..A&ly[rw]=AGE'>Espérance de vie à certains âges 1946 - 2020</a>)"
             },
             {
               "from": 1947,
