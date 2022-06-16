@@ -17,7 +17,7 @@
       "text": "La population du Luxembourg a plus que triplé depuis 1839 (date de l'indépendance du pays). De quelque 170.000 habitants en 1839, la population du Grand-Duché est passée à plus de 630.000 aujourd'hui."
     },
     {
-      "text": "Dans ce qui suit on jette d'abord un regard sur les variables qui déterminent l'évolution de la population du pays : le <a href='https://statistiques.public.lu/fr/methodologie/definitions/S/soldetotal/index.html' target='_blank' rel='noopener noreferrer'><em>solde global</em></a> de la population qui est déterminé par le <a href='https://statistiques.public.lu/fr/methodologie/definitions/S/soldenaturel/index.html' target='_blank' rel='noopener noreferrer'><em>solde naturel</em></a> (excès ou déficit des naissances sur les décès) et le <a href='https://statistiques.public.lu/fr/methodologie/definitions/S/soldemigratoire/index.html' target='_blank' rel='noopener noreferrer'><em>solde migratoire</em></a> (excès ou déficit du nombre de personnes immigrées par rapport aux personnes émigrées)."
+      "text": "Dans ce qui suit on jette d'abord un regard sur les variables qui déterminent l'évolution de la population du pays : le <a href='https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Glossary:Population_change' target='_blank' rel='noopener noreferrer'><em>solde global</em></a> de la population qui est déterminé par le <a href='https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Glossary:Natural_population_change/fr' target='_blank' rel='noopener noreferrer'><em>solde naturel</em></a> (excès ou déficit des naissances sur les décès) et le <a href='https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Glossary:Migration' target='_blank' rel='noopener noreferrer'><em>solde migratoire</em></a> (excès ou déficit du nombre de personnes immigrées par rapport aux personnes émigrées)."
     },
     {
       "text": "Si les migrations sont aujourd'hui considérées comme un élément central de l'histoire du Luxembourg, les données statistiques pour les deux derniers siècles sont fragmentaires. Ce n'est qu'en 1871 que la notion d'étranger apparaît dans les recensements et ce n'est que depuis les années 1960 que nous disposons de chiffres plus détaillés d'entrées et de sorties de différentes nationalités."
@@ -125,7 +125,7 @@
               "visibleKeys": ["v1", "v"],
               "focusKeys": ["v1", "v"],
               "colorKeys": { "v": "var(--t1-colorkeys-secondary)", "v1": "var(--t1-colorkeys-primary)", "v2": "var(--t1-colorkeys-tertiary)" },
-              "text": "Des années 1850 aux années 1960, les variations du <a href='https://statistiques.public.lu/fr/methodologie/definitions/S/soldetotal/index.html' target='_blank' rel='noopener noreferrer'>solde global</a> sont largement dues à l'impact des variations du <a href='https://statistiques.public.lu/fr/methodologie/definitions/S/soldenaturel/index.html' target='_blank' rel='noopener noreferrer'> solde naturel</a>, c'est-à-dire du jeu entre la mortalité et la natalité.",
+              "text": "Des années 1850 aux années 1960, les variations du <a href='https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Glossary:Population_change' target='_blank' rel='noopener noreferrer'>solde global</a> sont largement dues à l'impact des variations du <a href='https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Glossary:Natural_population_change/fr' target='_blank' rel='noopener noreferrer'> solde naturel</a>, c'est-à-dire du jeu entre la mortalité et la natalité.",
               "dataset": "PopulationBalanceDetails",
               "datasetLayout": "Flowers",
               "datasetLegend": "Source: STATEC",
@@ -176,7 +176,7 @@
               "text": "A partir du milieu des années 1960, le solde naturel diminue fortement. Ce n'est pas dû à des « accidents » de l'histoire (comme les crises économiques ou sanitaires ou les deux guerres mondiales), mais à une baisse structurelle importante de la fécondité (c'est-à-dire du nombre d'enfants par femme).<br/>Le nombre de naissances passe de <b class='bold'>5 297</b> en 1965 à <b class='bold'>3 915</b> en 1976. <br/>En 1976, le solde naturel est de - 600 (c'est-à-dire qu'il y a 600 décès de plus que de naissances), alors qu'en 1965 le solde fut encore très positif (+ 1 250).",
               "dataset": "FertilityRatesByAge",
               "datasetLayout": "Lines",
-              "datasetLegend": "Indicateur de fecondité du Luxembourg, Belgique et Portugal (1970-1990)<br/><a href='https://statistiques.public.lu/fr/methodologie/definitions/I/indicatconjonfecondite/index.html' target='_blank' rel='noopener noreferrer'>(en savoir plus sur cet indicateur)</a> </br>Source: STATEC",
+              "datasetLegend": "Indicateur de fecondité du Luxembourg, Belgique et Portugal (1970-1990)<br/><a href='https://www.insee.fr/fr/metadonnees/definition/c1963' target='_blank' rel='noopener noreferrer'>(en savoir plus sur cet indicateur)</a> </br>Source: STATEC",
               "datasetKeys": ["v", "v1", "v2"],
               "datasetColorKeys": { "v": "#f171a1", "v1": "#a64ac9", "v2": "blue" }
             },
