@@ -31,3 +31,4 @@ src/media/**/*
 !src/media/index.json
 
 .env
+!src/.env

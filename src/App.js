@@ -8,6 +8,8 @@ import Home from './pages/Home'
 import Chapter from './pages/Chapter'
 import TableOfContents from './components/TableOfContents'
 import About from './components/About'
+import Anaylitcs from './components/Analytics'
+import CookieConsent from './components/CookieConsent'
 import MediaViewer from './components/MediaViewer'
 import Panel from './components/Panel'
 import { useStore } from './store'
@@ -40,6 +42,8 @@ const AppPanels = () => {
 const App = () => {
   return (
     <BrowserRouter>
+      <CookieConsent />
+      <Anaylitcs />
       <QueryParamProvider ReactRouterRoute={Route}>
       <ScrollToTop />
       <MainBackground />

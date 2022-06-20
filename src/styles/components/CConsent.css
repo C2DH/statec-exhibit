@@ -1,0 +1,65 @@
+.CConsent{
+  position: fixed;
+  display: block;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  background-color: var(--secondary);
+  z-index: 1090;
+  /* var(--zindex--cookieconsent); */
+}
+.CConsent_analytics{
+  cursor: pointer;
+}
+.CConsent_analytics_switch{
+  position: relative;
+  height: 30px;
+}
+.CConsent_analytics_switch::after {
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid;
+  border-radius: 24px;
+
+  z-index: -1;
+  content: "";
+  opacity: .9;
+}
+.CConsent button {
+  background-color: var(--secondary);
+  color: inherit;
+  border-color: inherit;
+  cursor: pointer;
+  position: relative;
+}
+.CConsent button::after {
+  position: absolute;
+  top: 2px;
+  right: -.25rem;
+  bottom: -.25rem;
+  left: .25rem;
+  border: 1px solid;
+  border-radius: .25rem;
+  z-index: -1;
+  content: "";
+  opacity: .47;
+}
+.CConsent a {
+  color: inherit;
+}
+
+.CConsent:not(body):not(html){
+  display: block !important;
+}
+/* -m */
+@media screen and (min-width: 30em) {
+  .CConsent{
+    bottom: 10px;
+    width: 50%;
+    left: 50%;
+    margin-left: -25%;
+  }
+}

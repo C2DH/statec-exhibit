@@ -5,3 +5,8 @@
 .About_Footer .Footer_unilu {
 margin-left: -15px;
 }
+
+
+.About_switch{
+  background-color: var(--secondary);
+}

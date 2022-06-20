@@ -29,6 +29,10 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>Framing Luxembourg</title>
+    <% if (process.env.REACT_APP_GOOGLE_SITE_VERIFICATION) { %>
+        <!-- use google meta -->
+        <meta name="google-site-verification" content="%REACT_APP_GOOGLE_SITE_VERIFICATION%" />
+    <% } %>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>

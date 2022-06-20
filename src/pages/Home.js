@@ -38,7 +38,7 @@ const Home = () => {
         <meta property="og:title" content={t('pagesHomeTitleOG')} />
         <meta property="og:description" content={t('pagesHomeDescriptionOG')} />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content={`${window.location.protocol}//${window.location.host}/0.landing.jpg`} />
+        <meta property="og:image" content={`${window.location.origin}/screenshot.png`} />
         <meta property="og:url" content={window.location} />
       </Helmet>
       <div className="relative w-100 with-vertical-line">

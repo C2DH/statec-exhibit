@@ -73,6 +73,7 @@ body.noscroll{
   // filckr pink
   --datakey-v2: #CCF5AC;
   --data-background: #86b9d4;
+  --zindex--cookieconsent: 1000;
 }
 // chapter colors
 :root {
@@ -143,4 +144,21 @@ a {
   position: relative;
   top: -200px;
   visibility: hidden;
+}
+
+.extra-border{
+  position: relative;
+  border-radius: 7px;
+}
+.extra-border::after {
+  position: absolute;
+  top: 2px;
+  right: -.25rem;
+  bottom: -.25rem;
+  left: 2px;
+  border: 1px solid;
+  border-radius: 8px;
+  z-index: -1;
+  content: "";
+  opacity: .47;
 }
