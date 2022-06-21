@@ -62,7 +62,7 @@ const CConsent = () => {
           }
         </div>
         <div className="ml2">
-          {t('cookieConsentAnalytics')}
+          {t('cookieConsentAnalyticsToo')}
         </div>
       </div>
       <div className="mb2 mt3 tc">

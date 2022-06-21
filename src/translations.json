@@ -131,7 +131,8 @@
       "readMoreCookieConsent": "En savoir plus",
       "actionCookieConsent": "Accepter",
       "textCookieConsent": "Nous utilisons des cookies pour améliorer votre expérience. En poursuivant votre navigation sur ce site, vous acceptez l'utilisation de cookies. Pour plus d'informations, veuillez visiter la page <a href='?panel=about'>à propos</a>.",
-      "cookieConsentAnalytics": "Partage ces données",
+      "cookieConsentAnalyticsToo": "J'accepte aussi l'usage de Google Analitycs",
+      "cookieConsentAnalytics": "J'accepte l'usage de Google Analitycs",
       "AboutCookieCustomise": "Personnaliser vos cookies",
       "AboutCookieCustomiseDescription": "Nous utilisons les services de Google Analytics pour comprendre le comportement des visiteurs de notre site. Pour plus d'informations, veuillez visiter la page : <a href='https://support.google.com/analytics/answer/6004245?hl=fr' target='_blank' rel='noreferrer'>politique de confidentialité de Google Analytics</a>"
     }
