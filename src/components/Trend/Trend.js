@@ -156,7 +156,17 @@ const Trend = ({
             <stop offset="100%" stopColor={'#A9ECD9'} stopOpacity={0} />
           </linearGradient>
         </defs>
-
+        <g transform={`translate(${marginLeft}, ${marginTop})`}>
+          <line
+            className="toZero"
+            x1={0}
+            x2={svgWidth - marginLeft - marginRight}
+            y1={scaleY(0)}
+            y2={scaleY(0)}
+            stroke={'rgba(0,0,0,0.5'}
+            strokeWidth={1}
+          ></line>
+        </g>
         <TrendAxisBottomGraphics
           id={themeDatasetId}
           windowDimensions={windowDimensions}
@@ -179,11 +189,7 @@ const Trend = ({
         />
         {visibleKeys.map((key) => {
           const isFocusKey = focusKeys.includes(key)
-          const strokeColor = isFocusKey
-            ? colorKeys[key]
-              ? colorKeys[key]
-              : 'var(--secondary)'
-            : 'var(--data-background)'
+          const strokeOpacity = isFocusKey ? 1 : .25
           return (
             <TrendLineGraphics
               id={paragraphId}
@@ -204,7 +210,8 @@ const Trend = ({
               fill={'transparent'}
               displayPoints={displayPoints}
               displayDashedLine={displayDashedLine}
-              strokeColor={strokeColor}
+              strokeColor={colorKeys[key] || 'var(--secondary)'}
+              strokeOpacity={strokeOpacity}
             />
           )
         })}
@@ -237,6 +244,7 @@ const Trend = ({
             />
           )}): null
         }
+
       </svg>
     </div>
   )
