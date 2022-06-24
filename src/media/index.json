@@ -3527,7 +3527,7 @@
     },
     "Picture_4p1-4a.tif": {
       "caption": "Ouvriers ayant contribué à la construction du Pont du Pfaffenthal en 1921",
-      "provenance": "Source: Photothèque de la Ville de Luxembourg (extrait de STATEC, L’économie luxembourgeoise au 20ème siècle, Luxembourg, 1999)",
+      "provenance": "Source: Clement Jean 1921, Photothèque de la Ville de Luxembourg (extrait de STATEC, L’économie luxembourgeoise au 20ème siècle, Luxembourg, 1999)",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/Picture_4p1-4a.medium-w.jpg",
@@ -3549,7 +3549,7 @@
           "url": "/media/images/Picture_4p1-4a.large-w.jpg",
           "params": {
             "size": "large-w",
-            "width": 2000,
+            "width": 2500,
             "height": null
           }
         },
@@ -3558,12 +3558,12 @@
           "params": {
             "size": "large-h",
             "width": null,
-            "height": 2000
+            "height": 2500
           }
         }
       },
-      "base64": "data:image/png;base64,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",
-      "aspectRatio": 1.33,
+      "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAUCAIAAAAcIrrpAAAACXBIWXMAAC4jAAAuIwF4pT92AAAFM0lEQVQ4yyVUB1NaWRh9/2izaxJLjApWRJGiIqOixt4FNRaKiNgF7GCvIGLvCEqMBiX2xJJEEzNGl53JzmQys4kmGY17xDd33tx3373nO+d833eJRfMzRW3d4NDwnGHeMG/Eu6evX6sb1AzoTIuLs3MG/fDI8OgY5odv3tps//z8+fPm5ubq6ur79+839uf37994X1xcrFmthGV1rbu3r72za2RsfGp6Bm98AqtPozUYjWPjE/3ageHR0YnJqc3t7eP37//79g2HLy8vP//7+Q7u+vr6DvTDyQmxarUeHx9Pz8x29fRiKJR1srLy+samqZlZ/BoaHgHx0fGJnt6+iakp0Fzf2Hi9t7e1vb3ywvLlyxcA/fr16w4RbwKQZ2dnRpOpta2jtb2jWd0ilZWVVVTp9EMgC9bQrlK3iiXSJpVap9e3tLWD/tDI6Jr15fsPH87Oz2022+WPH3dMCfA//fRpe2entr6Bl52rrGsoFIorqmpgX2+/BnDq1jbwxaJAJIbLCNPYrAK0adG8tbOjG9TPGgx7+/vAha237A4ODwd0g+WVVQlJybzsnMTk1JLSsn6NFpIrq+UASknLEIolQnEROGIRoIgNQ6HaYDQNDOqRwwWzef/ggNjZ3Z03msAfO2oUyvTMLAYrODUtA1wysnix8QmV1TVyZV0WP0dUJElOTU/P5DU0qarlysYm1fjkFICmZ2fNS0ura9bdV68I87Mlo2lBO6CrqlHIFbXQlZaRmcXPznmaV1JafqcLksFX1dKKDYiKCTg2NDZ3dvesb2wuLS9vbG69fXd0m1nUgX5oGDty8wtAAbpy8wpAAUQkUhmMT0hKyc59mldQqKitB/1iqayjq1sqK5Ura+saGlFYltXVo+Pjk48f3x0dEQJxUVtHZ1WNPDo2LoIbBcT8AgHgCoUiuFlaXoGTcA2f8AHEwyO5vf39GVl8zIE+Pjk5MzcHdgeHb+AbAToQAm0xsfHM4BAMHGNzwuFdWUVlUkoqggEUc0ywiJCsEDYGdqakpUMvqhI98+r1aySAsK6vw4gauaKiqjouIRG2yUrLq+UKex4SQ9hhUA2lSDFcQ+ACgTCMEx4YRI9PTEIlBDFYyrp6/BrUD4mKiglg5RcKVOqWsYkJ1BSadOn5Mj5Bp6u7BxSy4aVAVFZeCY44ll8olEhLEFtaIsvNyw8MYjQ0NYvEko7Orls4OpPl60cJZXNAqh7ZUrcIRUWZPD78Qn3x+NlQFBkVAy4wvk+jQd7EkmIUw/PlFUCgKTXaAay8sFj+ttkIX4q/r58/NZAWEEgLZYdxo2PYYRyEhRBuVHQWj89gshCMRmcgXrNKDfuwE2WPJoNlKxYLLpHVtbXT09OvX78SKFQ/CtXTy9vN3YMVHMIKDqUGBCanpDJZwWDt40txfeyGvxGR3PiExKiYJ0F0BqJr7V3Ez8l9ubGBnr24vLi6vsJdQCDfgHB1c3/o6OTyyDWIwQyiM6OiY7BIZzDdPUgeJDKJTEYMDH9qgKOTE4PFYrPDnF0eISHtnZ2ou3N7w95eAcGhYcBxJ3mSvHw8yF5kL2+4SQ2gIWUR3GiKP5UTHgG9jo5ODx4gojPgPEgksqcXfvn4+hUUCrhRMeh0XD+3FxQ66UlcAgMaaXQanRlAo1OogS6uj8me3pBpR3ABTbjrgSUf3z//cvjj3r2HjsB3ggnQDgbePn7FJbKFRTOBrgznRnPCI5kh7BA2B6QAisz4+FEgx+E+AB1vJw73YQUmQMd5O01nWOFmHziLYnq29Px/2vxbX9vgP6MAAAAASUVORK5CYII=",
+      "aspectRatio": 1.3208,
       "isPortrait": false
     },
     "Picture_4p1-4b.png": {
@@ -5403,7 +5403,7 @@
     },
     "Bernhoeft_Charles_1899-01-0282.tif": {
       "caption": "L'Athénée, Luxembourg à la fin du 19ème siècle.",
-      "provenance": "Source: <a href='https://www.industrie.lu/athenee.html' target='_blank' rel='noopener noreferrer'>industrie.lu</a>",
+      "provenance": "Source: Bernhoeft Charles 1899, Photothèque de la Ville de Luxembourg.",
       "resolutions": {
         "medium-w": {
           "url": "/media/images/Bernhoeft_Charles_1899-01-0282.medium-w.jpg",
@@ -5425,7 +5425,7 @@
           "url": "/media/images/Bernhoeft_Charles_1899-01-0282.large-w.jpg",
           "params": {
             "size": "large-w",
-            "width": 2000,
+            "width": 2500,
             "height": null
           }
         },
@@ -5434,12 +5434,12 @@
           "params": {
             "size": "large-h",
             "width": null,
-            "height": 2000
+            "height": 2500
           }
         }
       },
       "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAUCAIAAAAVyRqTAAAACXBIWXMAAC4jAAAuIwF4pT92AAAGsElEQVQ4yy1TaVBUVxp9NVVTo44yYZjEBQQ1IZoZMjYxghGIGSDRhBlFgtAQSNsLiI3dKDsqe9NCAyI0qEgyzkxVykkMSGJGRVl7f6/f1vtO7wvdzSJYppJfuZCpOvXVffe9e875zncf5HcaMFRM4hICE+OYBMekJCEjcRkCz8HwnFQ2q4DFJKnQaVGNBlOplGo1RhAwiskxTD4+MTn+dGpsYubRjBgmNTaH3W4iXEbYY0aCTi3ksGpgxSyOilGlCMPl4BhJIiQJI0qpApHMiKZmxTMoJgWkpApFcZggUSWmUCBSRCn77unk6ONnDyamHs+I5LjK6XK4bRq/FfOuU6shjQqWy6aU8CyOyzFcQZAIQSqBAFgjqGxiauLJ5BMMlz6bfgI0cAIBAjj4gFSqVCgwodOgJgNhNpJBr/XlkufFkmc1OB9yqlZ8RghXzs3MPEIQiQKWiGWzMoUYBaRKqUwhksOSr8fu3xv9hlTBd7/619jDB8Dp/0lVSr2OwAlYp8P1OlytVnpd5rVFz/OgYzXkXAlYQk4CwlHJxORjOSwFJ1u6BQMjd0RSEfArks5J5JLBL0e6hAOjD8eFI8PfjI8+nX6mxEBWcqCNYQp8Iz0cV4Dc3XbjWtgNeFfDzuchx7LfBMkV4lv//PLe6H3e9d6TRcV5TBanoaG9t6dFIKhtayuprCpil5/lcEEtr627wu+4N/YthiMwIkEQKYopdDrSbNZqtbjbYVoNu54H59fCLqDxYtEN9fVfpxxNyaPTP8nLz8w+nV1c/HFe/uflF7KoBWAn+7PPsvKpubSzhaWlRefOcevrO/quf//4h9HvH/x37P5/vr4n6O9r5vNqmxonnj16uexdDlhXQ+uZAAGot7crMSXlU9rn72VkHklPz2cwqEwGp67uQm1tdVMTsNnU2VnT0nyFzwdNDP/77uAXd6qbm4D8obT3D1AoUbuit/0x6je/23TtGu/ntYWwx7gSsK4szAP70K0vhv9OzU/NzIjdt+/NhAQam32Z31HX1lrb2lrX1lbf3n65Y/2xpqWFc/nywJ1hEHp7b3dJBTdmz54/REa+tnPn9l27Nm/d1t3N/2k1EPIYlv2WdfaABbox2L9j796IyFc2b9myeevW5GPHGFwOp76OXVPFrq7iNtQBy4UsFpPLqWxu6hkSVjc1llReYnK5O6KjI6OiQN0Vu3tLRMTQzRs/rniCbv2Sz7TkNy8HzNDgTeE7yUmpH7x/POtE+keZf9qxI/LVV+Pi33gnLfV8TWVjJ6+4rPREbi5opaq5qVnQWdl45WRhAYgO+I2Ji3s3LfXgkeRXXtve2dX+44obUC/6TBswQv1D/ZQjyYdTjmblZNPKSk7m5hzLzChm0Nq7eI38lvq2q2fOFiUcfhfQgdzyGHQ65wLzIre8tuosuyw5I/3PiZTt0dFvJR0evHnj5Yon5DUC0jCofjPUKbi2DfQVE/37iIjY+HhKclLa8Q9P5GQzzpdQaYXHjqczzjML6MW5RYWnC6n/yD9DZTHz6LQCFuNUIRVY/gvlYHTs7pj4eEE3b8O1LuzVhwG7zwTxuzoioqJ279sLcPC9ZJADJTXl8N8+2J9ISUg6lHg0ic5m8ft7OoV9vL6eho72Bl5rdfPVkksVrItc1kUwlZrSyoqMUydvDQ+8WLQH3dqw1wB4110LBLzfbtoEXMe8vm/Pgf1xB/ZH7dwJ6ut/fTvhSFIW9Uwug0bjsFmVFaXVl5iXuIyL3LLa6qLy858y6Dl02oe5OenZpyhpqfzONhDIglsf8hpC6+xGqPdG9/a42DcT3nr7UGJSWkraRxmnC86UVrDrW6/yeq91C3sGRwZv370NILwz1H9bODAy1DXQw7/e1chvu9LRUlbJLT7HTDueKRzqfQkC8RiCHu2izwAAqfG5yamHcvkkqpzFMZFWLbNbSbdd47SpXPMqqwmDUbkMkak1mN2mtVsILSnxOrQuG+mw4A4rAXZsZlyvVVj0Cp9d5bHhIY/WZ1OG3Woo7CLXFkwrCxags+QzLvlNG0MAUwbKRtCgzaKyGAmrCbebMEzyPy067TDCBnzKZUbseplFLZ7XyYzErB6bBnBbUK8N81kVQYcS8lrgwIYI4AL/0jpAUutrPQAY95JPv+w3hNwai0ZswKc9VtQ3T4IadGkXnGq/XQVuBWC0qkXo3LgBn3HoxEEHFnQRkNeq9FqRgA0Ju1RLG2Y3GDeo3dqgSwNOhjzgSukCDtyiEQFTQA+8Apu/wmGUO41yPfrUZYJVku/Qya90slGXSfYLzuhgev0WvvcAAAAASUVORK5CYII=",
-      "aspectRatio": 1.5235,
+      "aspectRatio": 1.5232,
       "isPortrait": false
     },
     "Aschman_Pol_19582960_neg4.tif": {
