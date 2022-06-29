@@ -66,7 +66,7 @@ const Section = ({
       console.info('@TODO: open / close year indicator.')
     }
   }
-  console.debug('[Section], dataset:', section)
+  // console.debug('[Section], dataset:', section)
   return (
     <div className="Section Chapter_streamWrapper flex">
       <ChapterStream
