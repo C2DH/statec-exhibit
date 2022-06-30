@@ -158,11 +158,11 @@ const TrendPointers = ({
       {value && isVisible ? visibleKeys.map((key) => {
         const isOnFocus = focusKeys.includes(key)
         const radius = isOnFocus ? 12 : 6
-        const backgroundColor = isOnFocus
-          ? colorKeys[key]
-            ? colorKeys[key]
-            : 'var(--secondary)'
-          : `var(--data-background)`
+        // const backgroundColor = isOnFocus
+        //   ? colorKeys[key]
+        //     ? colorKeys[key]
+        //     : 'var(--secondary)'
+        //   : `var(--data-background)`
 
         return (
           <div className="TrendPointers_valuePoint" key={key} style={{
@@ -177,7 +177,7 @@ const TrendPointers = ({
             // border: isOnFocus
             //   ? '2px solid var(--secondary)'
             //   : '1px solid var(--secondary)',
-            backgroundColor,
+            backgroundColor: colorKeys[key],
             transform: `translate(${value.x + marginLeft}px, ${value.ys[key] + marginTop}px)`
           }}/>
         )

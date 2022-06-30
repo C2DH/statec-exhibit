@@ -27,10 +27,10 @@
     {
       "dataset": "GlobalBalanceDetails",
       "componentLegend": "Nombre de personnes par année",
+      "colorKeys": { "v": "var(--t1-colorkeys-secondary)", "v1": "var(--t1-colorkeys-primary)", "v2": "var(--t1-colorkeys-tertiary)" },
       "modules": [
         {
           "title": "Une croissance démographique exceptionnelle sur le long terme.",
-          "datasetLegend": "STOCAZZO MODULE",
           "paragraphs": [
             {
               "from": 1840,
@@ -134,7 +134,7 @@
             {
               "from": 1860,
               "to": 1870,
-              "visibleKeys": ["v1"],
+              "visibleKeys": ["v1", "v"],
               "focusKeys": ["v1"],
               "colorKeys": { "v1": "var(--t1-colorkeys-primary)" },
               "text": "La mortalité augmente fortement suite à l'épidémie de choléra qui sévit en 1866 et cette croissance des décès n'est pas compensée par la natalité. Comme en même temps les gens partent à l'étranger, le Luxembourg perd des habitants à cette époque. En 1866 la population recule de 3.500 habitants. En 1867, la perte d'habitants est similaire, mais c'est l'émigration seule qui en est responsable.",
@@ -147,7 +147,8 @@
             {
               "from": 1915,
               "to": 1920,
-              "visibleKeys": ["v1"],
+              "visibleKeys": ["v1", "v"],
+              "focusKeys": ["v1"],
               "colorKeys": { "v1": "var(--t1-colorkeys-primary)" },
               "text": "Après 1866, les années 1917-1918 sont la deuxième période au cours de laquelle la variation naturelle de la population est négative. Cela résulte à la fois de l'augmentation de la mortalité et d'une diminution des naissances. Le solde naturel passe de +2.600 en 1913 à -1.200 en 1918.",
               "figures": [{ "id": "statec_011.tif" }]
@@ -155,7 +156,8 @@
             {
               "from": 1916,
               "to": 1939,
-              "visibleKeys": ["v1"],
+              "visibleKeys": ["v1", "v"],
+              "focusKeys": ["v1"],
               "colorKeys": { "v1": "var(--t1-colorkeys-primary)" },
               "text": "La baisse de la natalité pendant les années de la Première guerre mondiale résulte évidemment des conditions de vie précaires de la guerre (difficultés de ravitaillement, par exemple). Mais est tout autant structurelle que conjoncturelle. En d'autres mots, depuis la fin du 19ème siècle le nombre d'enfants par femme (la fécondité) diminue et la remontée - passagère -  du solde naturel dans les années 1920 ne doit pas cacher ce phénomène qui se manifeste clairement dans les années 1930.",
               "figures": [{ "id": "statec_020.jpg" }]
@@ -163,7 +165,8 @@
             {
               "from": 1939,
               "to": 1947,
-              "visibleKeys": ["v1"],
+              "visibleKeys": ["v1", "v"],
+              "focusKeys": ["v1"],
               "colorKeys": { "v1": "var(--t1-colorkeys-primary)" },
               "text": "La Deuxième Guerre mondiale a des répercussions importantes dans le domaine démographique. <br> La mortalité augmente (victimes directes de la guerre, conditions de subsistance difficiles), la natalité diminue. Entre 1935 et 1947, la population résidente passe de <b>297&nbsp;000</b> à <b>291&nbsp;000</b>.",
               "figures": [{ "id": "statec_001.png" }]
@@ -171,7 +174,8 @@
             {
               "from": 1965,
               "to": 1990,
-              "visibleKeys": ["v1"],
+              "visibleKeys": ["v1", "v"],
+              "focusKeys": ["v1"],
               "colorKeys": { "v1": "var(--t1-colorkeys-primary)" },
               "text": "A partir du milieu des années 1960, le solde naturel diminue fortement. Ce n'est pas dû à des « accidents » de l'histoire (comme les crises économiques ou sanitaires ou les deux guerres mondiales), mais à une baisse structurelle importante de la fécondité (c'est-à-dire du nombre d'enfants par femme).<br/>Le nombre de naissances passe de <b class='bold'>5 297</b> en 1965 à <b class='bold'>3 915</b> en 1976. <br/>En 1976, le solde naturel est de - 600 (c'est-à-dire qu'il y a 600 décès de plus que de naissances), alors qu'en 1965 le solde fut encore très positif (+ 1 250).",
               "dataset": "FertilityRatesByAge",
@@ -183,7 +187,8 @@
             {
               "from": 1965,
               "to": 1990,
-              "visibleKeys": ["v1"],
+              "visibleKeys": ["v1", "v"],
+              "focusKeys": ["v1"],
               "colorKeys": { "v1": "var(--t1-colorkeys-primary)" },
               "text": "S'en suivent des joutes polémiques sur un hypothétique « suicide démographique ». Les projections se sont finalement avérées comme erronées. Dès 1990, le solde naturel remonte à + 1 163. Mais à la fin des années 1970, l'augmentation du taux de fécondité et l'arrivée massive d'une population jeune et en état de procréer est difficile à prévoir."
             }
@@ -197,7 +202,6 @@
               "to": 1890,
               "visibleKeys": ["v","v1","v2"],
               "focusKeys": ["v","v1","v2"],
-              "colorKeys": { "v": "var(--t1-colorkeys-secondary)", "v1": "var(--t1-colorkeys-primary)", "v2": "var(--t1-colorkeys-tertiary)" },
               "dataset": false,
               "text": "Pays pauvre au 19ème siècle (jusque dans les années 1890), le Luxembourg connaît structurellement des soldes migratoires négatifs, <em>c'est-à-dire des excès des départs sur les arrivées</em> comme la plupart des pays européens. <br/> Au milieu du 19ème siècle, l'économie luxembourgeoise est encore une économie de subsistance et les variations de production agraire ont des répercussions directes et parfois douloureuses sur les conditions de vie des habitants qui partent nombreux à certaines périodes.",
               "figures": [{ "id": "redline_poster_TAGEBLATT_20070612.png" }]
@@ -205,8 +209,8 @@
             {
               "from": 1890,
               "to": 1960,
-              "visibleKeys": ["v2"],
-              "colorKeys": { "v2": "var(--t1-colorkeys-tertiary)" },
+              "visibleKeys": ["v","v1","v2"],
+              "focusKeys": ["v2"],
               "text": "A partir des années 1890 jusqu'après la deuxième guerre mondiale, les périodes de solde migratoire positif, resp. négatif, se suivent. Les pics positifs du solde migratoire (excès des arrivées sur les départs) reflètent les périodes de croissance économique substantielle au Luxembourg et les pics négatifs (excès des départs) sont liés aux guerres, resp., aux crises ou ralentissements économiques.",
               "figures": [{ "id": "wall_street_5372590938_e898f8d9be_o.jpg" }],
               "hotspots": [

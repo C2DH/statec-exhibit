@@ -17,14 +17,15 @@ class TrendLineGraphics extends React.Component {
       marginTop,
       values,
       // height,
-      width,
+      // width,
       // fill,
-      scaleY,
+      // scaleY,
       xProp='x',
       yProp='y',
-      isVisible=true,
+      // isVisible=true,
       strokeWidth=1,
       strokeColor='black',
+      strokeOpacity=1,
       displayPoints=false,
       displayDashedLine=false
     } = this.props;
@@ -53,8 +54,8 @@ class TrendLineGraphics extends React.Component {
           x={x}
           y={y}
           strokeWidth={strokeWidth}
-          stroke={isVisible? strokeColor: 'var(--data-background)'}
-          strokeOpacity={2}
+          stroke={strokeColor}
+          strokeOpacity={strokeOpacity}
           strokeDasharray={displayDashedLine ? '3,5' : 'none'}
           curve={displayPoints ? curveLinear : curveMonotoneX}
           strokeLinecap="round"
@@ -73,15 +74,17 @@ class TrendLineGraphics extends React.Component {
           y1={negative ? trendHeight : 1} y2={negative ? trendHeight : 1}
           stroke={red} strokeWidth={1}></line>
       */}
+      {/*
         <line
           className="toZero"
           x1={0}
-          x2={width - marginLeft * 2}
+          x2={width - marginLeft}
           y1={scaleY(0)}
           y2={scaleY(0)}
           stroke={'rgba(0,0,0,0.5'}
           strokeWidth={1}
         ></line>
+        */}
       </g>
     );
   }
