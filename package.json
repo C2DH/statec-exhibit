@@ -48,7 +48,7 @@
   },
   "scripts": {
     "start": "env-cmd -f src/.env react-scripts start",
-    "build": "env-cmd -f src/.env react-scripts build",
+    "build": "env-cmd -f src/.env react-scripts build && echo '/* /index.html  200' | cat >build/_redirects",
     "build-ci": "CI= env-cmd -f src/.env react-scripts build",
     "build-noindex": "env-cmd -f src/.env react-scripts build && echo 'User-agent: *\nDisallow: /' | cat > build/robots.txt && echo '/* /index.html  200' | cat >build/_redirects",
     "test": "react-scripts test",
